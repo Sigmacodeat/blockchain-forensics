@@ -1,0 +1,8 @@
+rules:
+  - id: TYP-003
+    name: DEX Sandwich Pattern (Heuristic)
+    version: "1"
+    severity: medium
+    enabled: true
+    tags: [dex, mev, sandwich]
+    condition: "('mev' in metadata) and ('sandwich_score' in metadata['mev']) and (metadata['mev']['sandwich_score'] >= 0.7)"

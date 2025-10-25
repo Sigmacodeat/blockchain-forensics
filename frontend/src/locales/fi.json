@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Varaa demo",
+      "pricing": "Näytä hinnat",
+      "subtitle": "Aloita nyt ilmaisen demon kanssa tai ota yhteyttä tiimiimme",
+      "title": "Aloita nyt"
+    },
+    "header": {
+      "badge": "Meistä",
+      "subtitle": "Kehitämme johtavaa yritystason alustaa Blockchain Intelligence -palveluille, joka tukee lainvalvontaviranomaisia, VASP-yhtiöitä ja finanssilaitoksia kryptorikollisuuden torjunnassa.",
+      "title": "Blockchain-forensiikan tulevaisuus"
+    },
+    "mission": {
+      "desc": "Teemme blockchain-transaktioista läpinäkyviä ja jäljitettäviä. Tavoitteenamme on taistella kryptorikollisuutta vastaan ja antaa laillisille markkinaosapuolille työkalut vaatimustenmukaisuuden täyttämiseen ja riskien minimoimiseen.",
+      "title": "Meidän missiomme"
+    },
+    "seo": {
+      "description": "Rakennamme johtavan yritystason alustan blockchain-forensiikalle: vaatimustenmukaisuus, tutkinta ja tiedustelu maailmanlaajuisesti.",
+      "title": "Meistä | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "badge": "Luvuissa",
+      "blockchains": "Blockchainit",
+      "enterprise_customers": "Yritysasiakkaat",
+      "recovered_assets": "Palautetut varat",
+      "sla_guaranteed": "SLA:n takuulla",
+      "supported": "tuetut",
+      "supported_by_tech": "tekniikkamme tukemana",
+      "title": "Meidän vaikutuksemme",
+      "uptime": "Käyttöaika",
+      "worldwide": "maailmanlaajuisesti"
+    },
+    "team": {
+      "badge": "Asiantuntemus",
+      "compliance": {
+        "desc": "Sääntelyasiantuntijat AML/CFT- ja kansainvälisten sanktioiden alalla",
+        "h1": "Entiset sääntelijät",
+        "h2": "AML-asiantuntijat",
+        "h3": "Oikeudelliset neuvonantajat",
+        "title": "Vaatimustenmukaisuus ja oikeudelliset asiat"
+      },
+      "forensics": {
+        "desc": "Entiset lainvalvonnan edustajat, joilla on vuosien kokemus kryptorikostutkinnasta",
+        "h1": "FBI/BKA-alumni",
+        "h2": "Darknet-toiminnot",
+        "h3": "Varojen palautus",
+        "title": "Forensiikkavelhot"
+      },
+      "subtitle": "Asiantuntijoita blockchain-forensiikasta, lainvalvonnasta, FinTechistä ja koneoppimisesta",
+      "tech": {
+        "desc": "Insinöörejä johtavista teknologiayrityksistä blockchain-osaamisella",
+        "h1": "Entiset FAANG-työntekijät",
+        "h2": "Blockchain-ydinkehittäjät",
+        "h3": "Turvallisuusasiantuntijat",
+        "title": "Teknologia-osaajat"
+      },
+      "title": "Meidän tiimimme"
+    },
+    "trust": {
+      "badge": "Luottamus",
+      "ce": {
+        "desc": "Top-10-pörssit AML- ja transaktioseurantaan",
+        "title": "Kryptopörssit"
+      },
+      "fi": {
+        "desc": "Ensimmäisen tason pankit kryptovaluutta-altistuksella",
+        "title": "Pankit ja FinTechit"
+      },
+      "le": {
+        "desc": "FBI, Europol, kansalliset lainvalvontaviranomaiset",
+        "title": "Lainvalvonta"
+      },
+      "reg": {
+        "desc": "Rahoitusvalvojaviranomaiset markkinavalvonnalle",
+        "title": "Sääntelijät"
+      },
+      "subtitle": "Johtavat organisaatiot maailmanlaajuisesti luottavat teknologiaamme",
+      "title": "Kenelle luotamme"
+    },
+    "values": {
+      "badge": "Arvomme",
+      "compliance": {
+        "desc": "GDPR-, eIDAS- ja OFAC-yhteensopiva. Ymmärrämme sääntelyvaatimukset ja integroimme ne.",
+        "title": "Vaatimustenmukaisuus ensin"
+      },
+      "customer": {
+        "desc": "Tiivis yhteistyö lainvalvonnan ja teollisuuden kanssa. Teidän tarpeenne ovat tiekarttamme.",
+        "title": "Asiakaslähtöisyys"
+      },
+      "global": {
+        "desc": "100+ blockchainia, monikielinen tuki ja kattavuus kansainvälisillä sanktiolistoilla.",
+        "title": "Globaali kattavuus"
+      },
+      "innovation": {
+        "desc": "Huipputeknologia: AI/ML, graafi-analytiikka ja reaaliaikainen käsittely parhaiden tulosten saavuttamiseksi.",
+        "title": "Innovaatiot"
+      },
+      "team": {
+        "desc": "Monialainen tiimi forensiikka-asiantuntijoista, kehittäjistä ja vaatimustenmukaisuusasiantuntijoista.",
+        "title": "Tiimityö"
+      },
+      "title": "Mitä meitä ajaa",
+      "trust": {
+        "desc": "Yritystason turvallisuus SOC2/ISO27001-sertifikaateilla. Tietosi ovat turvassa kanssamme.",
+        "title": "Luottamus ja turvallisuus"
+      }
+    },
+    "vision": {
+      "desc": "Maailma, jossa blockchain-teknologia voi saavuttaa koko potentiaalinsa – läpinäkyvä, turvallinen ja vaatimustenmukainen. Rakennamme infrastruktuurin tulevaisuudelle, jossa digitaaliset varat yleistyvät ilman rikollisuuden edistämistä.",
+      "title": "Meidän visionsa"
+    }
+  },
+  "accessibility": {
+    "activate": "Aktivoi",
+    "close_dialog": "Sulje dialogi",
+    "font_size": "Fontin koko",
+    "font_size_large": "Suuri fontin koko",
+    "font_size_normal": "Normaali fontin koko",
+    "font_size_xlarge": "Erittäin suuri fontin koko",
+    "high_contrast_detected": "Korkea kontrasti havaittu",
+    "keyboard_shortcuts": "Pikanäppäimet",
+    "navigate_backward": "Siirry taaksepäin",
+    "navigate_forward": "Siirry eteenpäin",
+    "no_system_preferences": "Ei havaittu erityisiä järjestelmäasetuksia",
+    "reduced_motion_detected": "Vähentynyt liike havaittu",
+    "settings": "Esteettömyysasetukset",
+    "skip_to_content": "Siirry sisältöön",
+    "system_preferences": "Järjestelmäasetukset"
+  },
+  "address_analysis": {
+    "title": "Osoitteen analyysi",
+    "wip_desc": "Osoitteen analyysin kuvaus on työn alla",
+    "wip_title": "Osoitteen analyysi on työn alla"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI-agentit",
+      "app_name": "Sovelluksen nimi",
+      "cross_chain": "Ristiketju",
+      "max_trace_depth": "Maksimiseurannan syvyys",
+      "ml_clustering": "ML-klusterointi",
+      "title": "Asetukset",
+      "version": "Versio"
+    },
+    "disabled": "✗ Poistettu käytöstä",
+    "enabled": "✓ Käytössä",
+    "error": "Virhe",
+    "health": {
+      "connected": "✓ Yhdistetty",
+      "disconnected": "✗ Katkaistu",
+      "error": "Terveydentilan lataaminen epäonnistui",
+      "title": "Tietokannan terveys"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Hakee transaktioita Ethereum RPC:stä",
+        "ingesting": "Imurointi käynnissä...",
+        "placeholder": "0x...",
+        "start": "Aloita imurointi",
+        "success": "✓ Imurointi aloitettu taustalla",
+        "title": "Imuroi osoitetiedot"
+      },
+      "block": {
+        "help": "Tuo kaikki transaktiot lohkosta",
+        "ingesting": "Imurointi käynnissä...",
+        "placeholder": "Lohkon numero",
+        "start": "Aloita lohkon tuonti",
+        "success": "✓ Lohkon imurointi aloitettu",
+        "title": "Imuroi lohkodataa"
+      }
+    },
+    "stats": {
+      "db_size": "Tietokannan koko",
+      "title": "Järjestelmän tilastot",
+      "total_addresses": "Yhteensä osoitteita",
+      "total_traces": "Yhteensä jälkiä",
+      "total_transactions": "Yhteensä transaktioita"
+    },
+    "subtitle": "Seuranta, asetukset ja tietojen hallinta",
+    "tabs": {
+      "config": "Asetukset",
+      "ingestion": "Tietojen imurointi",
+      "overview": "Yleiskatsaus",
+      "users": "Käyttäjien hallinta"
+    },
+    "title": "Järjestelmän hallinta"
+  },
+  "agent": {
+    "cancel": "Peruuta",
+    "error": "Agentin virhe",
+    "error_unknown": "Tuntematon agentin virhe",
+    "examples": {
+      "1": "Esimerkki 1",
+      "2": "Esimerkki 2",
+      "3": "Esimerkki 3",
+      "title": "Agentin esimerkit"
+    },
+    "instructions": "Agentin ohjeet",
+    "loading": "Agentin lataaminen...",
+    "placeholder": "Agentin paikka",
+    "retry": "Yritä uudelleen",
+    "send": "Lähetä",
+    "subtitle": "Agentin alaotsikko",
+    "title": "Agentin nimi",
+    "welcome": "Tervetuloa agenttiin"
+  },
+  "auth": {
+    "fields": {
+      "email": "Sähköposti",
+      "organization_opt": "Organisaatio (valinnainen)",
+      "password": "Salasana",
+      "password_confirm": "Vahvista salasana",
+      "username": "Käyttäjänimi"
+    },
+    "forgot": {
+      "back_to_login": "Takaisin kirjautumiseen",
+      "dev_note": "Koska sähköpostipalvelua ei ole konfiguroitu, tarkista palvelimen lokit nollauslinkkiä varten.",
+      "dev_note_label": "Huomautus (kehitystila):",
+      "error": "Lähetys epäonnistui",
+      "info_sent": "Jos tälle sähköpostille on tili, nollauslinkki on lähetetty.",
+      "sent": "Nollauslinkki lähetetty!",
+      "submit": "Lähetä nollauslinkki",
+      "submitting": "Lähetetään...",
+      "subtitle": "Ei hätää! Syötä sähköpostiosoitteesi, niin lähetämme nollauslinkin.",
+      "title": "Unohditko salasanan?",
+      "title_sent": "Sähköposti lähetetty!"
+    },
+    "login": {
+      "failed": "Kirjautuminen epäonnistui",
+      "fill_all_fields": "Täytä kaikki kentät",
+      "forgot_password": "Unohditko salasanan?",
+      "google": "Kirjaudu Googlella",
+      "google_retry": "Yritä uudelleen Googlella",
+      "no_account": "Ei tiliä?",
+      "oauth_failed": "OAuth epäonnistui. Yritä uudelleen.",
+      "oauth_processing": "OAuth-kirjautumista käsitellään...",
+      "or": "tai",
+      "register_now": "Rekisteröidy nyt",
+      "remember_me": "Muista minut",
+      "submit": "Kirjaudu",
+      "submitting": "Kirjautuminen käynnissä...",
+      "subtitle": "Kirjaudu jatkaaksesi"
+    },
+    "placeholders": {
+      "email": "analyytikko@esimerkki.com",
+      "organization": "FBI, Chainalysis, jne.",
+      "password": "••••••••",
+      "username": "jani_analyytikko"
+    },
+    "register": {
+      "accept": "Hyväksyn",
+      "already": "Jo rekisteröitynyt?",
+      "and": "ja",
+      "failed": "Rekisteröinti epäonnistui",
+      "fill_all_fields": "Täytä kaikki pakolliset kentät",
+      "google": "Rekisteröidy Googlella",
+      "login_now": "Kirjaudu nyt",
+      "password_hint": "Vähintään 8 merkkiä",
+      "password_too_short": "Salasanan tulee olla vähintään 8 merkkiä pitkä",
+      "passwords_no_match": "Salasanat eivät täsmää",
+      "submit": "Rekisteröidy",
+      "submitting": "Rekisteröinti käynnissä...",
+      "subtitle": "Aloita forensinen analyysisi",
+      "title": "Luo tili"
+    }
+  },
+  "common": {
+    "access_denied": "Pääsy evätty (vain ylläpitäjät)",
+    "account": "Tili",
+    "back": "Takaisin",
+    "close": "Sulje",
+    "info": "Tiedot",
+    "language": "Kieli",
+    "loading": "Ladataan...",
+    "next": "Seuraava",
+    "page": "Sivu",
+    "prev": "Edellinen",
+    "refresh": "Päivitä",
+    "search": "Etsi",
+    "success": "Onnistui",
+    "theme": "Teema",
+    "view": "Näytä",
+    "wip": {
+      "title": "Tulossa pian",
+      "desc": "Tämä ominaisuus on vielä kehitysvaiheessa.",
+      "cta": "Lue lisää"
+    },
+    "start_free": "Aloita Ilmaiseksi",
+    "error": "Virhe",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "delete": "Poista",
+    "edit": "Muokkaa",
+    "create": "Luo",
+    "finish": "Valmis",
+    "open": "Avaa",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "confirm": "Vahvista",
+    "welcome": "Tervetuloa",
+    "dashboard": "Kojelauta",
+    "settings": "Asetukset",
+    "profile": "Profiili",
+    "logout": "Kirjaudu ulos",
+    "login": "Kirjaudu sisään",
+    "register": "Rekisteröidy",
+    "email": "Sähköposti",
+    "password": "Salasana",
+    "username": "Käyttäjänimi",
+    "documents": "Dokumentit",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Minimivaikeusaste",
+      "refresh": "Päivitä",
+      "title": "Ohjaimet",
+      "window": "Ikkuna",
+      "window_15m": "15 minuuttia",
+      "window_1h": "1 tunti",
+      "window_24h": "24 tuntia",
+      "window_2h": "2 tuntia",
+      "window_30m": "30 minuuttia",
+      "window_5m": "5 minuuttia"
+    },
+    "header": {
+      "subtitle": "Korrelaation alaotsikko",
+      "title": "Korrelaatio"
+    },
+    "overview": {
+      "active_rules": "Aktiiviset säännöt",
+      "analyzed": "Analysoitu",
+      "empty": "Tyhjä",
+      "found": "Löydetty",
+      "loading": "Ladataan...",
+      "min_sev": "Minimivaikeusaste",
+      "rate": "Nopeus",
+      "title": "Yleiskatsaus",
+      "window": "Ikkuna"
+    },
+    "rules": {
+      "empty": "Ei sääntöjä",
+      "footer": "Sääntöjen alatunniste",
+      "loading": "Ladataan sääntöjä...",
+      "min": "Minimi",
+      "minutes": "Minuutit",
+      "required_patterns": "Vaaditut kaavat",
+      "title": "Säännöt",
+      "window": "Ikkuna"
+    },
+    "sev": {
+      "critical": "Kriittinen",
+      "high": "Korkea",
+      "low": "Matala",
+      "medium": "Keskitaso"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Syykohtaisesti",
+        "by_type": "Tyypin mukaan",
+        "title": "Estojen erittely"
+      },
+      "rate": "Estojen nopeus",
+      "title": "Estot",
+      "top_entity": "Tärkein entiteetti",
+      "total": "Yhteensä"
+    },
+    "test": {
+      "add_alert": "Lisää hälytys",
+      "alerts_label": "Hälytysten tunniste",
+      "match": "Osuma",
+      "no_alerts": "Ei hälytyksiä",
+      "no_match": "Ei osumia",
+      "pick_rule": "Valitse sääntö",
+      "pick_rule_ph": "Säännön valintapaikka",
+      "result": "Tulos",
+      "run": "Suorita",
+      "testing": "Testaus käynnissä...",
+      "title": "Korrelaatiotesti"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Kopioi lähteestä",
+      "copy_mint": "Kopioi mint",
+      "export_csv": "Vie CSV:ksi",
+      "export_csv_page": "Vie sivun CSV:ksi",
+      "fetch": "Nouda"
+    },
+    "bitcoin": {
+      "block_title": "Lohkon nimi",
+      "compute": "Laske",
+      "decoded": "Dekoodattu",
+      "edges_title": "Reunojen nimi",
+      "height_ph": "Korkeuden paikka",
+      "ingest_edges": "Imuroi reunat",
+      "method_heuristic": "Heuristinen menetelmä",
+      "method_proportional": "Proportionaalinen menetelmä",
+      "normalized": "Normalisoitu",
+      "tx_title": "Transaktion nimi",
+      "txid_ph": "Transaktion ID:n paikka"
+    },
+    "compliance": {
+      "add_watch": "Lisää seurantaan",
+      "address_ph": "Osoitteen paikka",
+      "chain_ph": "Ketjun paikka",
+      "entries": "Merkinnät",
+      "error": "Virhe",
+      "filter_address_ph": "Osoitteen suodatuspaikka",
+      "filter_chain_ph": "Ketjun suodatuspaikka",
+      "list_watch": "Seurantalista",
+      "screen": "Näyttö",
+      "title": "Vaatimustenmukaisuus",
+      "watchlist": "Seurantalista"
+    },
+    "ethereum": {
+      "canonical": "Kanoniallinen",
+      "copy_hash": "Kopioi hajautus",
+      "decoded": "Dekoodattu",
+      "error": "Virhe",
+      "open_etherscan": "Avaa Etherscan",
+      "tx_hash_ph": "Transaktion hajautuspaikka",
+      "tx_title": "Transaktion nimi"
+    },
+    "ingest": {
+      "canonical_notice": "Kanoniallinen imurointi-ilmoitus",
+      "edges_notice": "Reunojen imurointi-ilmoitus",
+      "loading": "Ladataan..."
+    },
+    "labels": {
+      "add": "Lisää",
+      "address_ph": "Osoitteen paikka",
+      "category_ph": "Kategorian paikka",
+      "chain_ph": "Ketjun paikka",
+      "error": "Virhe",
+      "label_ph": "Tunnisteen paikka",
+      "lookup": "Etsi",
+      "title": "Tunnisteet"
+    },
+    "monitoring": {
+      "fetch": "Nouda",
+      "key_counters": "Keskeiset laskurit",
+      "title": "Seuranta"
+    },
+    "rpc_unavailable": "RPC ei saatavilla",
+    "solana": {
+      "canonical_error": "Kanoniallinen virhe",
+      "canonical_title": "Kanoniallisen imuroinnin nimi",
+      "error": "Virhe",
+      "ingest_canonical": "Imuroi kanonisesti",
+      "signature_ph": "Allekirjoituksen paikka",
+      "title": "Solanan nimi",
+      "transfers": "Siirrot"
+    },
+    "table": {
+      "actions": "Toiminnot",
+      "address": "Osoite",
+      "amount_ui": "Määrä UI",
+      "chain": "Ketju",
+      "created": "Luotu",
+      "decimals": "Desimaalit",
+      "fee": "Palkkio",
+      "from": "Lähteestä",
+      "from_vout": "Lähteestä vout",
+      "method": "Menetelmä",
+      "mint": "Mint",
+      "reason": "Syy",
+      "to": "Kohteeseen",
+      "to_vout": "Kohteeseen vout",
+      "value_btc": "Arvo BTC"
+    },
+    "totals": {
+      "page_sum": "Sivun summa",
+      "page_sum_btc": "Sivun summa BTC",
+      "total_amount": "Kokonaismäärä",
+      "total_value_btc": "Kokonaisarvo BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Toiminnot",
+    "active": "Aktiivinen",
+    "administration": "Hallinto",
+    "alert_aging": "Hälytysten ikääntyminen",
+    "alert_engine": "Hälytysmoottori",
+    "alert_monitoring": "Hälytysten seuranta",
+    "alert_overview": "Hälytysten yleiskatsaus",
+    "analyst_throughput": "Analyytikon läpäisykyky",
+    "audit_kpis": "Audit-KPI:t",
+    "backlog": "Jono",
+    "bucket_placeholder": "24h, 3d, 7d, >7d",
+    "buckets": "Lokerot",
+    "case_management": "Tapojen hallinta",
+    "connected": "Yhdistetty",
+    "correlation_analysis": "Korrelaatioanalyysi",
+    "database": "Tietokanta",
+    "database_response": "Tietokannan vasteaika",
+    "days": "Päivät",
+    "disconnected": "Katkaistu",
+    "failed_actions": "Epäonnistuneet toiminnot",
+    "false_positive_rate": "Väärän positiivisen osuus",
+    "fp": "FP",
+    "graph_db": "Graafitietokanta",
+    "graph_explorer": "Graafien tutkija",
+    "healthy": "Terve",
+    "inactive": "Epäaktiivinen",
+    "issues": "Ongelmat",
+    "last_24h": "Viimeiset 24 tuntia",
+    "last_update": "Viimeisin päivitys",
+    "mttr": "MTTR",
+    "open_alerts": "Avoimet hälytykset",
+    "open_cases": "Avoimet tapaukset",
+    "performance": "Suorituskyky",
+    "priority_distribution": "Prioriteettijakauma",
+    "quick_access": "Pikakäyttö",
+    "recent_alerts": "Viimeisimmät hälytykset",
+    "response_time": "Vasteaika",
+    "rule_effectiveness": "Sääntöjen tehokkuus",
+    "sanctions_hits": "Sanktio-osumat",
+    "service_status": "Palvelun tila",
+    "severity_breakdown": "Vaikeusasteen erittely",
+    "sla_breach_rate": "SLA-rikkomusaste",
+    "sla_hours": "SLA (tuntia)",
+    "status_breakdown": "Tilan erittely",
+    "success_rate": "Menestysprosentti",
+    "suppression_rate": "Estoprosentti",
+    "system_details": "Järjestelmän tiedot",
+    "system_load": "Järjestelmän kuormitus",
+    "system_overview": "Järjestelmän yleiskatsaus",
+    "system_status": "Järjestelmän tila",
+    "title": "SIGMACODE Blockchain Forensics Dashboard",
+    "total_alerts": "Yhteensä hälytyksiä",
+    "total_cases": "Yhteensä tapauksia",
+    "total_logs": "Yhteensä lokit",
+    "transaction_tracing": "Transaktioiden jäljitys",
+    "uptime": "Käyttöaika",
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "recent_activity": "Recent Activity",
+    "quick_actions": "Quick Actions",
+    "statistics": "Statistics",
+    "notifications": "Notifications",
+    "hero": {
+      "welcome": "Tervetuloa takaisin",
+      "subtitle": "Tässä mitä tutkimuksissasi tapahtuu tänään."
+    },
+    "quickActions": {
+      "title": "Pikatoiminnot",
+      "newTrace": "Uusi Jäljitys",
+      "newCase": "Uusi Tapaus",
+      "riskCheck": "Riskitarkistus",
+      "aiAgent": "AI-Agentti"
+    },
+    "stats": {
+      "cases": "Aktiiviset tapaukset",
+      "traces": "Jäljitykset tänään",
+      "alerts": "Hälytykset",
+      "uptime": "Käyttöaika"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytiikka"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Autonomiset agentit LangChain- ja GPT-4-integraatiolla",
+        "title": "AI-agentit"
+      },
+      "badge": "Tekoäly ja koneoppiminen",
+      "desc": "Koneoppimismallit poikkeamien havaitsemiseen, riskien arviointiin ja autonomisten AI-agenttien 24/7-tutkintaan.",
+      "pattern": {
+        "desc": "Petoskuvioiden tunnistus ja käyttäytymisanalyysi",
+        "title": "Kuvioiden tunnistus"
+      },
+      "risk": {
+        "desc": "ML-pohjainen riskinarviointi osoitteille ja transaktioille",
+        "title": "Riskinarviointi"
+      },
+      "smart_contract": {
+        "desc": "Bajtkoodin samankaltaisuus ja haavoittuvuuksien tunnistus",
+        "title": "Älykkäiden sopimusten analyysi"
+      },
+      "title": "Tekoälypohjainen analyysi"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "ML-pohjainen epätavallisten transaktiokuvioiden tunnistus",
+        "title": "Poikkeamien tunnistus"
+      },
+      "badge": "Reaaliaikainen seuranta",
+      "custom_rules": {
+        "desc": "Omat hälytyssäännöt Rule DSL:llä ja sääntömoottorilla",
+        "title": "Mukautetut säännöt"
+      },
+      "desc": "15+ muokattavaa hälytyssääntöä koneoppimisen avulla. Saat ilmoituksia sanktioista, sekoittamisesta, korkean arvon siirroista ja poikkeamista.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io ja muut sekoitussivustot",
+        "title": "Sekoittamisen tunnistus"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK-sanktioiden listat päivittäisillä päivityksillä",
+        "title": "Sanktioiden seulonta"
+      },
+      "title": "Älykäs hälytysmoottori"
+    },
+    "case": {
+      "badge": "Tutkimustyönkulku",
+      "desc": "Täydellinen tutkimushallinta todisteiden ketjulla, eIDAS-allekirjoituksilla ja oikeudessa kelpaavilla raporteilla.",
+      "eidas": {
+        "desc": "Kvalifioidut elektroniset allekirjoitukset EU-standardeilla",
+        "title": "eIDAS-allekirjoitukset"
+      },
+      "evidence": {
+        "desc": "Täydellinen todisteiden ketju oikeudessa kelpaaville todisteille",
+        "title": "Todisteiden ketju"
+      },
+      "export": {
+        "desc": "PDF/Excel-vienti aikaleimalla ja audit-tiedolla",
+        "title": "Vienti ja raportit"
+      },
+      "title": "Tapojen hallinta ja todisteiden ketju",
+      "tracking": {
+        "desc": "Rakennettu tapojen hallinta työnkulun tilalla",
+        "title": "Tapojen seuranta"
+      }
+    },
+    "cta": {
+      "demo": "Pyydä demo",
+      "pricing": "Näytä hinnat",
+      "subtitle": "Aloita nyt ilmaisen demon kanssa",
+      "title": "Valmis koko pakettiin?",
+      "start": "Aloita Ilmaiseksi"
+    },
+    "graph": {
+      "badge": "Graafi-intelligenssi",
+      "clustering": {
+        "desc": "Automaattinen liittyvien lompakoiden ryhmittely",
+        "title": "Lompakoiden ryhmittely"
+      },
+      "community": {
+        "desc": "Yhteisten etujen omaavien lompakkojen ryhmien tunnistus",
+        "title": "Yhteisöjen tunnistus"
+      },
+      "desc": "Neo4j-pohjainen graafitietokanta entiteettien ryhmittelyyn, yhteisöjen tunnistukseen ja visuaaliseen tutkimukseen.",
+      "labels": {
+        "desc": "Exchange/VASP/DeFi-tunnisteet yhteisöintelligenssilla",
+        "title": "Entiteettitunnisteet"
+      },
+      "title": "Entiteettien ratkaisu ja verkostoanalyysi",
+      "visual": {
+        "desc": "Interaktiivinen graafitutkija monimutkaisiin analyyseihin",
+        "title": "Visuaalinen tutkimus"
+      }
+    },
+    "header": {
+      "badge": "Täydellinen ominaisuusjoukko",
+      "cta_try": "Kokeile ilmaiseksi",
+      "subtitle": "Transaktioiden jäljityksestä AI-pohjaiseen analyysiin – kaikki työkalut ammattimaiseen tutkimukseen",
+      "title": "Täydellinen blockchain-forensiikkapaketti"
+    },
+    "security": {
+      "audit": {
+        "desc": "Täydelliset audit-tiedot vaatimustenmukaisuustodisteille",
+        "title": "Audit-lokit"
+      },
+      "badge": "Yritystason turvallisuus",
+      "desc": "Yritystason turvallisuus RBAC:lla, SSO/SAML:lla, audit-lokeilla ja GDPR-yhteensopivuudella.",
+      "privacy": {
+        "desc": "GDPR-yhteensopivuus PII-anonymisoinnilla",
+        "title": "Tietosuoja"
+      },
+      "rbac": {
+        "desc": "Granulaarinen roolipohjainen käyttöoikeuksien hallinta mukautetuilla rooleilla",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Yksittäinen kirjautuminen SAML 2.0:lla ja OAuth 2.0:lla",
+        "title": "SSO/SAML"
+      },
+      "title": "Turvallisuus ja vaatimustenmukaisuus"
+    },
+    "seo": {
+      "description": "Yritystason blockchain-forensiikka: Multi-chain jäljitys, tekoälyagentit, reaaliaikainen riskipisteytys ja compliance-työkalut.",
+      "title": "Ominaisuudet | Blockchain Forensics SIGMACODE"
+    },
+    "stats": {
+      "accuracy": "Tarkkuus",
+      "ai_agents": "AI-agentit",
+      "alert_rules": "Hälytyssäännöt",
+      "blockchains": "Blockchainit",
+      "bridges": "Siltaprotokollat",
+      "case_templates": "Tapapohjat",
+      "compliance": "Vaatimustenmukaisuus",
+      "encryption": "Salaus",
+      "entities": "Entiteetit",
+      "evidence_types": "Todistetyypit",
+      "false_positives": "Väärät positiiviset",
+      "max_depth": "Maksimiseurannan syvyys",
+      "ml_models": "ML-mallit",
+      "query_time": "Kyselyaika",
+      "relationships": "Suhteet",
+      "response_time": "Vasteaika",
+      "security_certs": "Turvallisuussertifikaatit",
+      "uptime_sla": "SLA-käyttöaika"
+    },
+    "tracing": {
+      "badge": "Transaktioiden jäljitys",
+      "bridge": {
+        "desc": "Automaattinen ristiketjusiltojen ja käärittyjen varojen tunnistus",
+        "title": "Siltatunnistus"
+      },
+      "cross_chain": {
+        "desc": "Tuki 100+ blockchainille: EVM, UTXO, Solana, Cosmos ja enemmän",
+        "title": "Ristiketjujäljitys"
+      },
+      "demixing": {
+        "desc": "Heuristinen analyysi Tornado Cashista, miksereistä ja yksityisvaluutoista",
+        "title": "Yksityisvaluuttojen erottelu"
+      },
+      "desc": "Jäljitä transaktioita kaikilla pääasiallisilla blockchaineilla. Sisältää ristiketjusiltatunnistuksen, yksityisvaluuttojen erottelun ja rekursiivisen eteenpäin/taaksepäin-jäljityksen.",
+      "recursive": {
+        "desc": "Eteenpäin/taaksepäin-jäljitys muokattavalla syvyydellä ja suodattimilla",
+        "title": "Rekursiivinen jäljitys"
+      },
+      "title": "Moniketjuinen transaktiointelligenssi"
+    },
+    "hero": {
+      "badge": "Ominaisuudet",
+      "title": "Yritystason Blockchain-Forensiikka",
+      "subtitle": "Kaikki työkalut joita tarvitset kryptorikolllisuuden tutkimiseen, vaatimustenmukaisuuden varmistamiseen ja liiketoimintasi suojaamiseen."
+    }
+  },
+  "footer": {
+    "blog": "Blogi",
+    "careers": "Ura",
+    "company": "Yritys",
+    "contact": "Yhteystiedot",
+    "imprint": "Jälki",
+    "legal": "Oikeudelliset",
+    "privacy": "Yksityisyys",
+    "product": "Tuote",
+    "request_demo": "Pyydä demo",
+    "rights_reserved": "Kaikki oikeudet pidätetään.",
+    "security": "Turvallisuus",
+    "tagline": "Blockchain-AI yritystason vaatimustenmukaisuuteen ja tutkimuksiin – turvallinen, nopea, oikeudessa kelpaava.",
+    "terms": "Käyttöehdot"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Aktiiviset solmut",
+      "avg_degree": "Keskimääräinen aste",
+      "density": "Verkon tiheys",
+      "total_edges": "Yhteensä reunat",
+      "total_nodes": "Yhteensä solmut"
+    },
+    "centrality": {
+      "taint": "Tahrinta",
+      "title": "Keskeisyysanalyysi"
+    },
+    "communities": {
+      "algorithm": "Algoritmi",
+      "avg_size": "Keskimääräinen koko",
+      "avg_taint": "Keskimääräinen tahrinta",
+      "empty": "Napsauta ",
+      "label_propagation": "Tunnisteen propagointi",
+      "loading": "Tunnistetaan yhteisöjä...",
+      "louvain": "Louvain (Modulaarisuus)",
+      "title": "Yhteisöjen tunnistus",
+      "total": "Yhteensä yhteisöjä"
+    },
+    "degree": {
+      "title": "Asteenjakauma",
+      "x": "Aste",
+      "y": "Lukumäärä"
+    },
+    "filters": {
+      "cross_chain": "Ristiketju (siltakerros)",
+      "from": "Alkaen (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Päättyen (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Edistyneet verkostoanalyysit ja kuvioiden tunnistus",
+      "title": "Graafi-analytiikka ja verkostoälykkyys"
+    },
+    "hubs": {
+      "in": "Sisään",
+      "out": "Ulos",
+      "title": "Verkoston keskukset (korkean asteen solmut)",
+      "total": "Yhteensä"
+    },
+    "loading": {
+      "stats": "Ladataan tilastoja..."
+    },
+    "patterns": {
+      "circle_length": "Kehän pituus",
+      "detected": "Tunnistetut kehät",
+      "empty_desc": "Tämä on hyvä merkki – ei ilmeisiä rahanpesukehiä löydetty",
+      "empty_title": "Ei tunnistettuja kehäkuvioita",
+      "high_risk": "Korkea riski",
+      "hops": "hyppyä",
+      "loading": "Tunnistetaan kuvioita...",
+      "more_addresses": "lisää osoitteita",
+      "risk_score": "Riskipisteet",
+      "title": "Kehäkuviot (mahdollinen rahanpesu)",
+      "total": "Yhteensä",
+      "total_value": "Kokonaishinta",
+      "tx_path": "Transaktion polku:"
+    },
+    "tabs": {
+      "communities": "Yhteisöjen tunnistus",
+      "overview": "Verkoston yleiskatsaus",
+      "patterns": "Kuvioiden tunnistus"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Klusterointi",
+      "clustering": "Klusterointi käynnissä...",
+      "pause_timeline": "Keskeytä aikajana",
+      "play_timeline": "Toista aikajana",
+      "title": "Tutkijan toiminnot"
+    },
+    "connected": {
+      "taint": "Tahrinta",
+      "title": "Yhdistetyt entiteetit",
+      "tx": "Transaktiot"
+    },
+    "graph": {
+      "connections": "Yhteydet",
+      "enter_address": "Syötä osoite",
+      "loading": "Ladataan graafia...",
+      "nodes": "Solmut",
+      "title": "Graafinäkymä"
+    },
+    "header": {
+      "subtitle": "Tutkijan alaotsikko",
+      "title": "Tutkija"
+    },
+    "path": {
+      "bridges": "Sillat",
+      "hops": "Hypyt",
+      "risk_score": "Riskipisteet",
+      "title": "Polku",
+      "total_value": "Kokonaishinta"
+    },
+    "search": {
+      "explore": "Tutki",
+      "placeholder": "Hakupaikka",
+      "title": "Haku"
+    },
+    "settings": {
+      "from": "Alkaen",
+      "hops_1": "1 hyppy",
+      "hops_2": "2 hyppyä",
+      "hops_3": "3 hyppyä",
+      "hops_4": "4 hyppyä",
+      "hops_5": "5 hyppyä",
+      "include_bridges": "Sisällytä sillat",
+      "max_hops": "Maksimihypyt",
+      "title": "Asetukset",
+      "to": "Päättyen"
+    },
+    "timeline": {
+      "empty": "Tyhjä aikajana",
+      "events": "Tapahtumat",
+      "risk": "Riski",
+      "select_address": "Valitse osoite",
+      "title": "Aikajana",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Pyydä demo nyt",
+      "pricing": "Näytä hinnat"
+    },
+    "cta2": {
+      "demo": "Pyydä ilmainen demo",
+      "pricing": "Näytä hinnat",
+      "subtitle": "Aloita nyt ilmaisen demon kanssa ja koe blockchain-forensiikan tulevaisuus",
+      "title": "Valmis yritystason blockchain-älykkyyteen?"
+    },
+    "features": {
+      "badge": "Ominaisuudet",
+      "subtitle": "Yritystason työkalut vaatimustenmukaisuuteen, tutkimuksiin ja riskienhallintaan",
+      "title": "Kaikki mitä tarvitset blockchain-forensiikkaan"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Blockchain Forensics",
+      "point1": "100+ blockchainia",
+      "point2": "OFAC/UN/EU-sanktiot",
+      "point3": "Reaaliaikainen seuranta",
+      "subtitle": "AI-ohjattu vaatimustenmukaisuus, tutkimukset ja riskien seuranta – reaaliajassa ja yritystasoilla.",
+      "title": "Yritystason blockchain-älykkyys"
+    },
+    "pricing": {
+      "badge": "Hinnat",
+      "subtitle": "Ilmaisista työkaluista yritystason ratkaisuihin – aloita nyt",
+      "title": "Joustavat paketit jokaiselle yrityskoolle",
+      "view_all": "Näytä kaikki hinnat"
+    },
+    "seo": {
+      "description": "AI-ohjattu vaatimustenmukaisuus, tutkimukset ja riskien seuranta – reaaliajassa ja yritystasoilla. SIGMACODE Blockchain Forensics.",
+      "title": "SIGMACODE | Yritystason blockchain-älykkyys"
+    },
+    "tech": {
+      "badge": "Teknologia",
+      "subtitle": "Yritystason infrastruktuuri maksimaaliseen suorituskykyyn ja turvallisuuteen",
+      "title": "Huippuluokan teknologiasarja"
+    },
+    "use_cases": {
+      "badge": "Käyttötapaukset",
+      "subtitle": "Lainvalvonnalta FinTechiin",
+      "title": "Oikea ratkaisu jokaiselle käyttötilanteelle"
+    }
+  },
+  "layout": {
+    "main_navigation": "Päänavigaatio",
+    "quick_search_title": "Pikahaku (Ctrl/⌘+K)",
+    "skip_to_content": "Siirry sisältöön",
+    "quick_search_placeholder": "Pikahaku...",
+    "quick_search_hint": "Vinkki: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Evästeilmoitus",
+    "title": "Evästeet ja tietosuoja",
+    "title_short": "Evästeet",
+    "description": "Käytämme välttämättömiä evästeitä sivuston toimintaan. Valinnaiset analytiikkaevästeet auttavat meitä ymmärtämään käyttöä ja parantamaan sivustoa. Voit hyväksyä kaikki evästeet tai sallia vain välttämättömät. Voit muuttaa valintaa milloin tahansa asetuksissa.",
+    "privacy_link": "Tietosuojaseloste",
+    "terms_link": "Käyttöehdot",
+    "imprint_link": "Juridiset tiedot",
+    "only_necessary": "Vain välttämättömät",
+    "accept_all": "Hyväksy kaikki",
+    "preferences": "Asetukset",
+    "save_preferences": "Tallenna asetukset",
+    "manage": "Evästeasetukset",
+    "analytics_title": "Analytiikkaevästeet",
+    "analytics_desc": "Auttaa ymmärtämään käyttöä sivuston parantamiseksi.",
+    "marketing_title": "Markkinointievästeet",
+    "marketing_desc": "Mahdollistaa personoidun sisällön ja tarjoukset.",
+    "all_optional_title": "Ota kaikki valinnaiset käyttöön",
+    "all_optional_desc": "Ottaa käyttöön analytiikka- ja markkinointievästeet."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Sulje",
+        "close_title": "Sulje hälytys",
+        "copy_alert_id_title": "Kopioi hälytys-ID",
+        "copy_entity": "Kopioi entiteetti",
+        "copy_entity_id_title": "Kopioi entiteetin ID",
+        "copy_id": "Kopioi ID",
+        "copy_rule": "Kopioi sääntö",
+        "copy_rule_id_title": "Kopioi säännön ID",
+        "details": "Tiedot",
+        "details_title": "Näytä tiedot",
+        "reset": "Nollaa"
+      },
+      "audit": {
+        "empty": "Ei tapahtumia",
+        "title": "Audit-tie"
+      },
+      "csv": {
+        "export_all": "CSV-vienti (kaikki)",
+        "export_all_title": "Vie kaikki suodatetut rivit CSV:ksi (palvelin)",
+        "export_page": "CSV-vienti (sivu)",
+        "export_page_title": "Vie sivu CSV:ksi",
+        "no_filtered_data": "Ei suodatettuja tietoja",
+        "no_page_data": "Ei tietoja tällä sivulla"
+      },
+      "empty": "Hälytyksiä ei löydy",
+      "filters": {
+        "all": "(kaikki)",
+        "search_label": "Haku (rule_id / entity_id)",
+        "search_placeholder": "Hae...",
+        "severity": "Vaikeusaste",
+        "source": "Lähde",
+        "source_persisted": "Pysyvä (KYT)",
+        "source_realtime": "Reaaliaikainen (Hälytysmoottori)",
+        "status": "Tila"
+      },
+      "kpi": {
+        "event_time_set": "Aseta tapahtuma-aika (first_seen_at)",
+        "event_time_title": "Tapahtuma-aika = first_seen_at",
+        "false_positive": "Merkitse vääräksi positiiviksi",
+        "title": "KPI-annotaatiot",
+        "true_positive": "Merkitse todeksi positiiviksi"
+      },
+      "loading": "Ladataan hälytyksiä...",
+      "modal": {
+        "alert_id": "Hälytys-ID",
+        "chain": "Ketju",
+        "context": "Konteksti",
+        "entity": "Entiteetti",
+        "rule_id": "Säännön ID",
+        "severity": "Vaikeusaste",
+        "title": "Hälytyksen tiedot"
+      },
+      "pagination": {
+        "next": "Seuraava",
+        "page": "Sivu",
+        "prev": "Edellinen"
+      },
+      "severity": {
+        "critical": "kriittinen",
+        "high": "korkea",
+        "low": "matala",
+        "medium": "keskitaso"
+      },
+      "status": {
+        "assigned": "määritetty",
+        "closed": "suljettu",
+        "open": "avoin",
+        "snoozed": "hiljennetty"
+      },
+      "subtitle": "Reaaliaikaiset säännöt ja pysyvät hälytykset (KYT)",
+      "table": {
+        "first": "ensimmäinen",
+        "last": "viimeinen"
+      },
+      "title": "Hälytysten seuranta",
+      "toasts": {
+        "copy_failed": "Kopiointi epäonnistui",
+        "disposition_failed": "Tilan asetus epäonnistui",
+        "disposition_set": "Tila asetettu",
+        "entity_copied": "Entiteetti kopioitu",
+        "event_time_failed": "Tapahtuma-ajan asetus epäonnistui",
+        "event_time_set": "Tapahtuma-aika asetettu",
+        "export_failed": "Palvelinvienti epäonnistui",
+        "export_started": "Palvelinvienti aloitettu",
+        "id_copied": "ID kopioitu",
+        "rule_copied": "Sääntö kopioitu"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Tietoa",
+    "analytics": "Analytiikka",
+    "close_menu": "Sulje navigaatio",
+    "dashboard": "Kojelauta",
+    "features": "Ominaisuudet",
+    "home": "Etusivu",
+    "logout": "Kirjaudu ulos",
+    "open_menu": "Avaa navigaatio",
+    "pricing": "Hinnoittelu",
+    "settings": "Asetukset",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Päivitä"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Ydint",
+        "title": "CPU-käyttö"
+      },
+      "db": {
+        "connected": "✓ Yhdistetty",
+        "disconnected": "✗ Katkaistu",
+        "response": "Vaste",
+        "title": "Tietokanta"
+      },
+      "memory": {
+        "available": "saatavilla",
+        "title": "Muistin käyttö"
+      },
+      "system_status": {
+        "healthy": "Terve",
+        "issues": "Ongelmat",
+        "title": "Järjestelmän tila",
+        "uptime": "Käyttöaika"
+      }
+    },
+    "common": {
+      "no": "Ei",
+      "yes": "Kyllä"
+    },
+    "header": {
+      "last_refresh": "Viimeisin päivitys",
+      "subtitle": "Laajamittainen järjestelmän suorituskyvyn, mittareiden ja SLO:iden seuranta",
+      "title": "Suorituskyky- ja observability-kojelauta"
+    },
+    "metrics": {
+      "empty": "Ei saatavilla mittaridataa",
+      "loading": "Ladataan mittareita...",
+      "max": "Maksimi",
+      "measurements": "Mittaukset",
+      "min": "Minimi",
+      "title": "Suorituskykymittarit (1 tunti)",
+      "trend": "Trend"
+    },
+    "recent_alerts": {
+      "empty": "Ei tuoreita hälytyksiä",
+      "title": "Viimeisimmät suorituskykyhälytykset"
+    },
+    "services": {
+      "active": "Aktiivinen",
+      "inactive": "Epäaktiivinen",
+      "title": "Palvelun tila"
+    },
+    "slo": {
+      "empty": "Ei saatavilla SLO-dataa",
+      "loading": "Ladataan SLO:ita...",
+      "threshold": "Kynnysarvo",
+      "title": "SLO-yhteensopivuus",
+      "violations": "Rikkomukset"
+    },
+    "system_details": {
+      "database": "Tietokanta",
+      "db_connected": "Yhdistetty",
+      "db_type": "Tyyppi",
+      "debug": "Debug",
+      "environment": "Ympäristö",
+      "log_level": "Lokitaso",
+      "mode": "Tila",
+      "platform": "Alusta",
+      "python_version": "Python-versio",
+      "response_time": "Vasteaika",
+      "system_info": "Järjestelmätiedot",
+      "title": "Järjestelmän tiedot",
+      "version": "Versio"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Lisäblockchainit",
+        "i2": "Lisäkäyttäjäpaikat",
+        "i3": "Premium-sanktiot (laajennetut listat)",
+        "i4": "Edistyneet vientiformaatit",
+        "i5": "Prioriteettituki",
+        "i6": "White-Label (Enterprise)",
+        "title": "Saatavilla olevat lisäosat"
+      },
+      "badge": "Joustavat laajennukset",
+      "overage": {
+        "extra_credits": "Lisäpisteet",
+        "monthly_cap": "Kuukausiraja",
+        "note": "Käytätkö enemmän kuin kiintiösi? Ei ongelmaa – ylitys laskutetaan automaattisesti.",
+        "title": "Ylityshinnat"
+      },
+      "subtitle": "Laajenna suunnitelma tarpeidesi mukaan",
+      "title": "Lisäosat ja ylitykset"
+    },
+    "card": {
+      "custom": "Mukautettu",
+      "desc_business": "Suurille tiimeille",
+      "desc_community": "Harrastajille ja avoimelle lähdekoodille",
+      "desc_enterprise": "Yrityksille ja sääntelijöille",
+      "desc_pro": "Kasvaville yrityksille",
+      "desc_starter": "Pienille tiimeille",
+      "per_month": "kuukaudessa",
+      "popular": "Suosituin",
+      "popular_label": "Suosituin",
+      "save_year": "Säästä ${{amount}}/vuosi"
+    },
+    "cta": {
+      "active_plan": "✓ Aktiivinen suunnitelma",
+      "contact_sales": "Ota yhteyttä myyntiin",
+      "demo": "Pyydä demo",
+      "more_about": "Lisää meistä",
+      "saving": "Tallennetaan...",
+      "set_tenant_plan": "Aseta vuokrasuunnitelmaksi",
+      "start_now": "Aloita nyt",
+      "subscribe": "Tilaa nyt",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Nykyinen suunnitelma",
+    "enterprise": {
+      "card_desc": "Yrityksille ja sääntelijöille",
+      "subtitle": "Mukautetut hinnat, SLA, integraatiot, On-Prem/VPC",
+      "title": "Finanssilaitoksille ja sääntelijöille"
+    },
+    "faq": {
+      "subtitle": "Ota yhteyttä myyntitiimiimme henkilökohtaista demoa varten",
+      "title": "Kysymyksiä?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchainit",
+      "cases": "Tapaukset",
+      "credits": "Pisteet/kuukausi",
+      "priority": "Prioriteetti",
+      "users": "Käyttäjät"
+    },
+    "header": {
+      "badge": "Joustavat hinnat",
+      "subtitle": "Ilmaisista yhteisötyökaluista yritystason White-Label-ratkaisuihin. Aloita tänään ja skaalaa kasvusi mukana.",
+      "title": "Oikea suunnitelma jokaiselle tiimille"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI-agentit",
+        "i2": "Graafi-analytiikka",
+        "i3": "Riskinarviointi",
+        "i4": "ML-mallit",
+        "title": "Edistyneet analytiikat"
+      },
+      "badge": "Mitä on mukana?",
+      "performance": {
+        "i1": "Reaaliaikaiset hälytykset",
+        "i2": "API-käyttö",
+        "i3": "Prioriteettijono",
+        "i4": "99,9 % käyttöaika",
+        "title": "Suorituskyky"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Audit-lokit",
+        "i4": "GDPR-yhteensopiva",
+        "title": "Turvallisuus ja vaatimustenmukaisuus"
+      },
+      "team": {
+        "i1": "Useita käyttäjiä",
+        "i2": "Tapojen hallinta",
+        "i3": "Todisteiden ketju",
+        "i4": "Yhteistyö",
+        "title": "Tiimitoiminnot"
+      },
+      "title": "Kaikki ominaisuudet katsottavissa"
+    },
+    "more": "lisää",
+    "seo": {
+      "description": "Reilu ja läpinäkyvä hinnoittelu blockchain-forensiikalle. Ilmaisesta Community-paketista Enterpriseen. Peruuta milloin tahansa.",
+      "title": "Hinnoittelu | Blockchain Forensics SIGMACODE"
+    },
+    "smb": {
+      "subtitle": "Itsepalvelusuunnitelmat startupeille ja keskisuurelle markkinalle",
+      "title": "Tiimeille ja yrityksille"
+    },
+    "toggle": {
+      "annual": "Vuosittain",
+      "monthly": "Kuukausittain",
+      "save": "Säästä {{pct}}%"
+    },
+    "top_features": "PARHAAT OMINAISUUDET",
+    "hero": {
+      "badge": "Hinnoittelu",
+      "title": "Yksinkertainen ja Läpinäkyvä Hinnoittelu",
+      "subtitle": "Valitse tarpeisiisi sopiva paketti. Kaikki paketit sisältävät ydinominaisuudet. Päivitä milloin tahansa."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Päivitä"
+    },
+    "audit": {
+      "empty": "Ei saatavilla audit-tie-tietueita",
+      "loading": "Ladataan audit-tietä...",
+      "title": "Viimeisimmät audit-tie-tietueet",
+      "user": "Käyttäjä",
+      "view_all": "Näytä kaikki →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Audit-tien eheys"
+      },
+      "failed_logins": {
+        "title": "Epäonnistuneet kirjautumisyritykset"
+      },
+      "gdpr": {
+        "title": "GDPR-yhteensopivuus"
+      },
+      "security_incidents": {
+        "title": "Turvallisuusinseridentit"
+      }
+    },
+    "common": {
+      "implemented": "Toteutettu",
+      "not_implemented": "Ei toteutettu",
+      "unknown": "Tuntematon"
+    },
+    "compliance": {
+      "anonymization": "Anonymisointi",
+      "certifications": "Sertifikaatit",
+      "consent_management": "Suostumuksen hallinta",
+      "data_portability": "Tietojen siirrettävyys",
+      "empty": "Ei saatavilla yhteensopivuustietoja",
+      "encryption": "Salaus",
+      "loading": "Ladataan yhteensopivuuden tilaa...",
+      "right_to_erasure": "Poistumisoikeus",
+      "title": "GDPR-yhteensopivuuden tila"
+    },
+    "header": {
+      "last_refresh": "Viimeisin päivitys",
+      "subtitle": "Audit-tiet, GDPR-yhteensopivuus ja turvallisuuden seuranta",
+      "title": "Turvallisuus- ja yhteensopivuuskojelauta"
+    },
+    "quick_actions": {
+      "audit_export": "Audit-vienti",
+      "compliance_report": "Yhteensopivuusraportti",
+      "gdpr_status": "GDPR-tila",
+      "incident_report": "Inseridenttiraportti",
+      "integrity_check": "Eheystarkistus",
+      "security_scan": "Turvallisuusskannaus",
+      "title": "Turvallisuus- ja yhteensopivuustoiminnot"
+    },
+    "retention": {
+      "days": "Päivät",
+      "empty": "Ei saatavilla säilytystietoja",
+      "title": "Tietojen säilytyksen yhteensopivuus",
+      "violations": {
+        "count": "Rikkomukset",
+        "days_old": "päivää vanha",
+        "more": "ja",
+        "more_suffix": "lisää",
+        "title": "Säilytysrikkomukset"
+      }
+    },
+    "security": {
+      "compliance_status": "Yhteensopivuuden tila",
+      "empty": "Ei saatavilla turvallisuustietoja",
+      "failed_logins": "Epäonnistuneet kirjautumiset",
+      "incidents": "Turvallisuusinseridentit",
+      "rate_limited_ips": "Nopeusrajoitetut IP-osoitteet",
+      "suspicious_activities": "Epäilyttävät toiminnot",
+      "title": "Turvallisuuden yleiskatsaus"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Avoimet hälytykset ikäryhmittäin (esim. 24h, 3d, 7d, >7d)",
+    "alert_engine": "Reaaliaikainen seuranta epäilyttävistä transaktioista ja kuvioista ML-algoritmeilla",
+    "alert_overview": "Kaikkien aktiivisten turvallisuushälytysten yleiskatsaus ja niiden vaikeusaste (Kriittinen/Korkea/Keskitaso/Matala)",
+    "analyst_throughput": "Tapausten määrä, jotka analyytikko on sulkenut valitulla aikavälillä",
+    "backlog": "Kaikkien avoimien (huomioimattomien) hälytysten ja avoimien tapausten kokonaismäärä",
+    "database": "PostgreSQL/TimescaleDB-yhteyden tila ja vasteaika aikasarjatiedoille",
+    "graph_db": "Neo4j-graafitietokanta monimutkaisten suhdeanalyysien ja verkostokartoituksen käyttöön",
+    "system_status": "Näyttää kaikkien järjestelmän komponenttien nykyisen tilan. Vihreä = Terve, Punainen = Havaittu ongelmia",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Saatavilla olevat kierrokset",
+    "completed": "valmistunut",
+    "finish": "Lopeta",
+    "no_tours_available": "Ei kierroksia saatavilla tälle sivulle",
+    "of": "of",
+    "select_tour_description": "Valitse kierros oppiaksesi alustan ominaisuuksista",
+    "skip": "Ohita",
+    "start": "tours.start",
+    "start_tour": "Aloita kierros",
+    "step": "Vaihe",
+    "steps": "vaiheita"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Tiedot",
+      "direction": "Suunta",
+      "error_title": "Virheen nimi",
+      "exec_time": "Suoritusaika",
+      "export": "Vienti",
+      "flow_graph": "Virtauskartta",
+      "high_risk": "Korkea riski",
+      "high_risk_title": "Korkean riskin nimi",
+      "loading": "Ladataan...",
+      "max_hop": "Maksimihyppy",
+      "not_found": "Ei löydy",
+      "report": "Raportti",
+      "sanctioned_title": "Sanktioitu nimi",
+      "sanctioned_warning": "Sanktioitu varoitus",
+      "source": "Lähde",
+      "taint": "Tahrinta",
+      "taint_model": "Tahrimamalli",
+      "title": "Tulos",
+      "total_edges": "Yhteensä reunat",
+      "total_nodes": "Yhteensä solmut"
+    },
+    "simple": {
+      "address_ph": "Osoitteen paikka",
+      "chain_btc": "BTC-ketju",
+      "chain_eth": "ETH-ketju",
+      "chain_sol": "SOL-ketju",
+      "cluster": {
+        "clustering": "Klusterointi",
+        "export_members": "Vie jäsenet",
+        "label": "Tunniste",
+        "lookup": "Etsi",
+        "member_address": "Jäsenen osoite",
+        "members": "Jäsenet",
+        "title": "Klusterin nimi"
+      },
+      "depth_ph": "Syvyyden paikka",
+      "edges": "Reunat",
+      "error_cluster": "Klusterointivirhe",
+      "error_trace": "Jäljitysvirhe",
+      "export_paths": "Vie polut",
+      "export_targets": "Vie kohteet",
+      "high_risk": "Korkea riski",
+      "model_fifo": "FIFO-malli",
+      "model_haircut": "Haircut-malli",
+      "model_proportional": "Proportionaalinen malli",
+      "nodes": "Solmut",
+      "run": "Suorita",
+      "summary": "Yhteenveto",
+      "th_path": "Polku",
+      "th_paths": "Polut",
+      "th_taint": "Tahrinta",
+      "th_target": "Kohde",
+      "threshold_ph": "Kynnyksen paikka",
+      "title": "Yksinkertainen jäljitys",
+      "tracing": "Jäljitys..."
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "Lompakon analyysin kuvaus",
+        "title": "Lompakon analyysin nimi",
+        "wip": "Lompakon analyysi on työn alla"
+      },
+      "export": {
+        "csv": "Vie CSV:ksi",
+        "desc": "Vientiä kuvaava teksti",
+        "json": "Vie JSON:ksi",
+        "pdf": "Vie PDF:ksi",
+        "section_export": "Vientiosio",
+        "section_import": "Tuontiosio",
+        "title": "Vienti"
+      },
+      "header": {
+        "title": "Lompakon testin nimi"
+      },
+      "import": {
+        "add_wallet": "Lisää lompakko",
+        "json": "Tuo JSON:sta",
+        "restore_backup": "Palauta varmuuskopio"
+      },
+      "multisig": {
+        "desc": "Multisignin kuvaus",
+        "title": "Multisignin nimi",
+        "wip": "Multisigni on työn alla"
+      },
+      "overview": {
+        "active_wallets": "Aktiiviset lompakot",
+        "activity": {
+          "liquidity": "Likviditeetti",
+          "nft": "NFT",
+          "receive": "Vastaanota"
+        },
+        "month_change": "Kuukauden muutos",
+        "multisig": "Multisigni",
+        "new_this_week": "Uusia tällä viikolla",
+        "recent": "Viimeisimmät",
+        "security_grade": "Turvallisuusluokitus",
+        "security_score": "Turvallisuusarvosana",
+        "status": {
+          "2fa": "2FA",
+          "active": "Aktiivinen",
+          "backup": "Varmuuskopio",
+          "backup_available": "Varmuuskopio saatavilla",
+          "hardware": "Laitteisto",
+          "hw_connected": "Laitteisto yhdistetty",
+          "recovery": "Palautus",
+          "secured": "Suojattu",
+          "title": "Lompakon tila"
+        },
+        "total_volume": "Kokonaistilavuus"
+      },
+      "sidebar": {
+        "title": "Lompakon sivupalkki"
+      },
+      "tabs": {
+        "analytics": "Analytiikka",
+        "crosschain": "Ristiketju",
+        "export": "Vienti",
+        "multisig": "Multisigni",
+        "nft": "NFT",
+        "overview": "Yleiskatsaus",
+        "transactions": "Transaktiot"
+      },
+      "transactions": {
+        "desc": "Transaktioiden kuvaus",
+        "export": "Vienti",
+        "title": "Transaktioiden nimi",
+        "wip": "Transaktiot ovat työn alla"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Web-analytiikka"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "Jäljitys"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "Osoite"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "Tarkista"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "Suorita",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "Verkossa",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Etusivu",
+    "features": "Ominaisuudet",
+    "about": "Tietoja",
+    "pricing": "Hinnoittelu",
+    "search": "Haku",
+    "dashboards": "Kojelaudat",
+    "monitoring": "Valvonta",
+    "legal": "Oikeudelliset tiedot",
+    "privacy": "Yksityisyys",
+    "terms": "Käyttöehdot",
+    "impressum": "Yhteystiedot"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

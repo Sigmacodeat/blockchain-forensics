@@ -1,0 +1,4 @@
+# Ignore generated SDK artifacts
+**/*
+# Allow keeping this .gitignore itself
+!.gitignore

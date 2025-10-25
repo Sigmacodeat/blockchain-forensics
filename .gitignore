@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+.pnp/
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.production
+.env-*            
+.env.*            
+.env-E            
+frontend/.env-*
+frontend/.env.*
+frontend/.env-E
+backend/.env*
+!.env.example
+!.env.production.example
+!backend/.env.example
+
+# Embedded repositories / vendor libs
+backend/lib/wallet-core/
+
+# Sensitive reports and local data
+security-reports/
+uploads/
+data/cases/
+frontend/playwright-report/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+
+# ML Models
+models/*.pkl
+models/*.json
+!models/.gitkeep
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# Docker
+docker-compose.override.yml
+
+# Local Netlify folder
+.netlify
+
+# Secret/backup env files
+*.bak.*
+*.backup
+backend/.env.backup

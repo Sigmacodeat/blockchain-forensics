@@ -1,0 +1,10 @@
+[
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x1F98431c8aD98523631AE4a59f267346ea31F984", "label": "Uniswap V3 Factory", "type": "factory"},
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640", "label": "USDC/WETH 0.05%", "type": "pool"},
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x6c6Bc977E13Df9b0de53b251522280BB72383700", "label": "DAI/USDC 0.01%", "type": "pool"},
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0xCbCDF9626bc03e24f779434178A73a0B4bad62ed", "label": "WBTC/WETH 0.30%", "type": "pool"},
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x4e68Ccd3E89f51C3074ca5072bbAC773960dFa36", "label": "USDC/WETH 0.30%", "type": "pool"},
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8", "label": "USDC/USDT 0.30%", "type": "pool"},
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x4d96369002fc5b9687ee924d458a7e5baa5df34e", "label": "WETH/USDT 0.30%", "type": "pool"},
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x7379e81228514a1D2A6Cf7559203998E20598346", "label": "DAI/WETH 0.30%", "type": "pool"}
+]

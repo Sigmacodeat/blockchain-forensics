@@ -1,0 +1,69 @@
+name: Webhook E2E (Node Example)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    services:
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping || exit 1"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps (webhook example)
+        working-directory: examples/webhooks/node
+        run: |
+          npm ci || npm install
+
+      - name: Start Listener
+        working-directory: examples/webhooks/node
+        env:
+          PORT: '3062'
+          REDIS_URL: 'redis://localhost:6379'
+          WEBHOOK_STREAM: 'webhook:events'
+        run: |
+          nohup npm run dev >/tmp/webhook-listener.log 2>&1 &
+          sleep 2
+
+      - name: Start Worker
+        working-directory: examples/webhooks/node
+        env:
+          REDIS_URL: 'redis://localhost:6379'
+          WEBHOOK_STREAM: 'webhook:events'
+          WEBHOOK_GROUP: 'webhook-workers'
+          METRICS_PORT: '9101'
+        run: |
+          nohup npm run worker >/tmp/webhook-worker.log 2>&1 &
+          sleep 2
+
+      - name: Run E2E Test
+        working-directory: examples/webhooks/node
+        env:
+          WEBHOOK_SECRET: 'replace-me'
+        run: npm run test:e2e
+
+      - name: Print logs on failure
+        if: failure()
+        run: |
+          echo '--- listener log ---'
+          sed -n '1,200p' /tmp/webhook-listener.log || true
+          echo '--- worker log ---'
+          sed -n '1,200p' /tmp/webhook-worker.log || true

@@ -1,0 +1,17 @@
+{
+  "glossary": {
+    "title": "Blockchain Glossar",
+    "subtitle": "Alle Begriffe einfach erklärt",
+    "search": "Begriff suchen...",
+    "noResults": "Keine Begriffe gefunden",
+    "terms": "Begriffe",
+    "beginner": "Für Anfänger optimiert",
+    "category": {
+      "all": "Alle",
+      "basic": "Basis",
+      "forensics": "Forensik",
+      "advanced": "Fortgeschritten",
+      "technical": "Technisch"
+    }
+  }
+}

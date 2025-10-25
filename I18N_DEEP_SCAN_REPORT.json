@@ -1,0 +1,2397 @@
+{
+  "timestamp": "2025-10-19T10:40:55.319Z",
+  "summary": {
+    "ok": 1,
+    "withIssues": 41,
+    "errors": 0,
+    "missing": 0,
+    "totalIssues": 1205
+  },
+  "results": [
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "status": "issues",
+      "issueCount": 46,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Wir entwickeln die führende Enterprise-Plattform für Blockchain Intelligence, di",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Wir bauen die führende Enterprise-Plattform für Blockchain-Forensik: Compliance,",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise Kunden",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.values.trust.desc",
+          "value": "Enterprise-Grade Security mit SOC2/ISO27001-Zertifizierungen. Ihre Daten sind be",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "common.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain-Forensik-Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.graph.community.title",
+          "value": "Community Detection",
+          "indicator": "Community"
+        },
+        {
+          "path": "features.graph.desc",
+          "value": "Neo4j-basierte Graph-Datenbank für Entity Clustering, Community Detection und Vi",
+          "indicator": "Community"
+        },
+        {
+          "path": "features.graph.labels.desc",
+          "value": "Exchange/VASP/DeFi-Labels mit Community Intelligence",
+          "indicator": "Community"
+        }
+      ]
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "status": "ok",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "code": "es",
+      "name": "Español",
+      "status": "issues",
+      "issueCount": 28,
+      "issues": [
+        {
+          "path": "admin.error",
+          "value": "Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "common.error",
+          "value": "Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "common.cancel",
+          "value": "Cancelar",
+          "indicator": "Cancel"
+        },
+        {
+          "path": "chat.error_fetch",
+          "value": "Error al obtener la respuesta. Por favor, inténtalo de nuevo.",
+          "indicator": "Error"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Precios justos y transparentes para forense blockchain. Desde el plan Community ",
+          "indicator": "Cancel"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Precios justos y transparentes para forense blockchain. Desde el plan Community ",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Precios justos y transparentes para forense blockchain. Desde el plan Community ",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        }
+      ]
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "status": "issues",
+      "issueCount": 20,
+      "issues": [
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Tarifs équitables et transparents pour la forensique blockchain. Du plan Communi",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Tarifs équitables et transparents pour la forensique blockchain. Du plan Communi",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "chatbot.cta.startFree",
+          "value": "Start Free",
+          "indicator": "Free"
+        }
+      ]
+    },
+    {
+      "code": "it",
+      "name": "Italiano",
+      "status": "issues",
+      "issueCount": 35,
+      "issues": [
+        {
+          "path": "admin.error",
+          "value": "Errore",
+          "indicator": "Error"
+        },
+        {
+          "path": "admin.health.error",
+          "value": "Errore nel caricamento dello stato di salute",
+          "indicator": "Error"
+        },
+        {
+          "path": "common.success",
+          "value": "Successo",
+          "indicator": "Success"
+        },
+        {
+          "path": "common.error",
+          "value": "Errore",
+          "indicator": "Error"
+        },
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "Dashboard SIGMACODE Forense Blockchain",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "chat.error_fetch",
+          "value": "Errore nel recupero della risposta. Riprova.",
+          "indicator": "Error"
+        },
+        {
+          "path": "navigation.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "perf.header.title",
+          "value": "Dashboard Prestazioni e Osservabilità",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        }
+      ]
+    },
+    {
+      "code": "pt",
+      "name": "Português",
+      "status": "issues",
+      "issueCount": 22,
+      "issues": [
+        {
+          "path": "common.cancel",
+          "value": "Cancelar",
+          "indicator": "Cancel"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Preços justos e transparentes para forense blockchain. Do plano Community gratui",
+          "indicator": "Cancel"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Preços justos e transparentes para forense blockchain. Do plano Community gratui",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Preços justos e transparentes para forense blockchain. Do plano Community gratui",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        }
+      ]
+    },
+    {
+      "code": "nl",
+      "name": "Nederlands",
+      "status": "issues",
+      "issueCount": 36,
+      "issues": [
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise klanten",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.values.trust.desc",
+          "value": "Enterprise-grade beveiliging met SOC2/ISO27001-certificeringen. Uw gegevens zijn",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensisch Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.security.badge",
+          "value": "Enterprise-beveiliging",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "features.security.desc",
+          "value": "Enterprise-grade beveiliging met RBAC, SSO/SAML, auditlogs en GDPR-compliance.",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "features.seo.description",
+          "value": "Enterprise-grade blockchain forensics: Multi-chain tracing, AI-agenten, realtime",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise-Grade Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "footer.tagline",
+          "value": "Enterprise blockchain AI voor compliance en onderzoeken – veilig, snel, gerechte",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.features.subtitle",
+          "value": "Enterprise-grade tools voor compliance, onderzoeken en risicobeheer",
+          "indicator": "Enterprise"
+        }
+      ]
+    },
+    {
+      "code": "pl",
+      "name": "Polski",
+      "status": "issues",
+      "issueCount": 21,
+      "issues": [
+        {
+          "path": "features.hero.title",
+          "value": "Forensics Blockchain Klasy Enterprise",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Uczciwe i przejrzyste ceny forensics blockchain. Od darmowego planu Community do",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Uczciwe i przejrzyste ceny forensics blockchain. Od darmowego planu Community do",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "cs",
+      "name": "Čeština",
+      "status": "issues",
+      "issueCount": 25,
+      "issues": [
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.graph.labels.desc",
+          "value": "Štítky Exchange/VASP/DeFi s Community Intelligence",
+          "indicator": "Community"
+        },
+        {
+          "path": "layout.quick_search_hint",
+          "value": "Tip: Cmd/Ctrl+K",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Spravedlivé a transparentní ceny pro blockchain forensics. Od bezplatného Commun",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Spravedlivé a transparentní ceny pro blockchain forensics. Od bezplatného Commun",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        }
+      ]
+    },
+    {
+      "code": "ru",
+      "name": "Русский",
+      "status": "issues",
+      "issueCount": 22,
+      "issues": [
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.graph.labels.desc",
+          "value": "Метки Exchange/VASP/DeFi с Community Intelligence",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Честные и прозрачные цены на блокчейн-криминалистику. От бесплатного Community д",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Честные и прозрачные цены на блокчейн-криминалистику. От бесплатного Community д",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        }
+      ]
+    },
+    {
+      "code": "sv",
+      "name": "Svenska",
+      "status": "issues",
+      "issueCount": 22,
+      "issues": [
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensik Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Rättvisa och transparenta priser för blockchain-forensik. Från gratis Community-",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Rättvisa och transparenta priser för blockchain-forensik. Från gratis Community-",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "da",
+      "name": "Dansk",
+      "status": "issues",
+      "issueCount": 30,
+      "issues": [
+        {
+          "path": "about.values.trust.desc",
+          "value": "Enterprisesikkerhed med SOC2/ISO27001-certificering. Dine data er sikre hos os.",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.security.badge",
+          "value": "Enterprisesikkerhed",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "features.security.desc",
+          "value": "Enterprisesikkerhed med RBAC, SSO/SAML, revisionslogge og GDPR-overholdelse.",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "features.seo.description",
+          "value": "Enterprise blockchain forensics: Multi-chain sporing, AI-agenter, realtidsrisiko",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "layout.quick_search_hint",
+          "value": "Tip: Cmd/Ctrl+K",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "navigation.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Fair og gennemsigtig prissætning for blockchain forensics. Fra gratis Community-",
+          "indicator": "Enterprise"
+        }
+      ]
+    },
+    {
+      "code": "fi",
+      "name": "Suomi",
+      "status": "issues",
+      "issueCount": 22,
+      "issues": [
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Reilu ja läpinäkyvä hinnoittelu blockchain-forensiikalle. Ilmaisesta Community-p",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Reilu ja läpinäkyvä hinnoittelu blockchain-forensiikalle. Ilmaisesta Community-p",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "nb",
+      "name": "Norsk Bokmål",
+      "status": "issues",
+      "issueCount": 57,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Wir entwickeln die führende Enterprise-Plattform für Blockchain Intelligence, di",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Wir bauen die führende Enterprise-Plattform für Blockchain-Forensik: Compliance,",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise Kunden",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.values.trust.desc",
+          "value": "Enterprise-Grade Security mit SOC2/ISO27001-Zertifizierungen. Ihre Daten sind be",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "accessibility.settings",
+          "value": "Accessibility Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "admin.error",
+          "value": "Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "dashboard.success_rate",
+          "value": "Success Rate",
+          "indicator": "Success"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.graph.community.title",
+          "value": "Community Detection",
+          "indicator": "Community"
+        },
+        {
+          "path": "features.graph.desc",
+          "value": "Neo4j-basierte Graph-Datenbank für Entity Clustering, Community Detection und Vi",
+          "indicator": "Community"
+        }
+      ]
+    },
+    {
+      "code": "nn",
+      "name": "Norsk Nynorsk",
+      "status": "issues",
+      "issueCount": 36,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Vi utvikler den ledende Enterprise-plattformen for Blockchain Intelligence som s",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Vi bygger den ledende Enterprise-plattformen for Blockchain-forensikk: etterleve",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise-kunder",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "common.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise-Grade Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.cta2.title",
+          "value": "Klar for Enterprise Blockchain Intelligence?",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.hero.title",
+          "value": "Enterprise Blockchain Intelligence",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.pricing.subtitle",
+          "value": "Fra gratis til Enterprise - start nå",
+          "indicator": "Enterprise"
+        }
+      ]
+    },
+    {
+      "code": "is",
+      "name": "Íslenska",
+      "status": "issues",
+      "issueCount": 36,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Við þróum leiðandi Enterprise-vettvang fyrir blockchain-greiningu sem styður lög",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Við byggjum upp leiðandi Enterprise-vettvang fyrir blockchain-rannsóknir: Samræm",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise viðskiptavinir",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "footer.tagline",
+          "value": "Enterprise Blockchain AI fyrir samræmi og rannsóknir – öruggt, hratt, dómshæft.",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.cta2.title",
+          "value": "Tilbúinn fyrir Enterprise blockchain-greind?",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.features.subtitle",
+          "value": "Enterprise-stigs tæki fyrir samræmi, rannsóknir og áhættustjórnun",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.hero.subtitle",
+          "value": "AI-drifið samræmi, rannsóknir og áhættueftirlit – í rauntíma og á Enterprise-sti",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.hero.title",
+          "value": "Enterprise blockchain-greind",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.pricing.subtitle",
+          "value": "Frá ókeypis tækjum til Enterprise-lausna - byrjaðu núna",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.seo.description",
+          "value": "AI-drifið samræmi, rannsóknir og áhættueftirlit – í rauntíma og á Enterprise-sti",
+          "indicator": "Enterprise"
+        }
+      ]
+    },
+    {
+      "code": "ga",
+      "name": "Gaeilge",
+      "status": "issues",
+      "issueCount": 26,
+      "issues": [
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "common.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise-Grade Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "navigation.businessplan",
+          "value": "Business Plan & Funding",
+          "indicator": "Business Plan"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        }
+      ]
+    },
+    {
+      "code": "lb",
+      "name": "Lëtzebuergesch",
+      "status": "issues",
+      "issueCount": 30,
+      "issues": [
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "common.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise-Grade Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "navigation.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "navigation.businessplan",
+          "value": "Business Plan & Funding",
+          "indicator": "Business Plan"
+        },
+        {
+          "path": "perf.header.title",
+          "value": "Performance- a Observabilitéits-Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        }
+      ]
+    },
+    {
+      "code": "rm",
+      "name": "Rumantsch",
+      "status": "issues",
+      "issueCount": 26,
+      "issues": [
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "common.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise-Grade Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "navigation.businessplan",
+          "value": "Business Plan & Funding",
+          "indicator": "Business Plan"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        }
+      ]
+    },
+    {
+      "code": "ro",
+      "name": "Română",
+      "status": "issues",
+      "issueCount": 26,
+      "issues": [
+        {
+          "path": "features.hero.title",
+          "value": "Blockchain Forensics de Nivel Enterprise",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "footer.tagline",
+          "value": "AI Blockchain Enterprise pentru conformitate și investigații – sigur, rapid, adm",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Prețuri corecte și transparente pentru blockchain forensics. De la planul Commun",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Prețuri corecte și transparente pentru blockchain forensics. De la planul Commun",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        }
+      ]
+    },
+    {
+      "code": "bg",
+      "name": "Български",
+      "status": "issues",
+      "issueCount": 24,
+      "issues": [
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Справедливи и прозрачни цени за blockchain forensics. От безплатния Community пл",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Справедливи и прозрачни цени за blockchain forensics. От безплатния Community пл",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "el",
+      "name": "Ελληνικά",
+      "status": "issues",
+      "issueCount": 42,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Αναπτύσσουμε την κορυφαία πλατφόρμα Enterprise για Blockchain Intelligence, υποσ",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Χτίζουμε την κορυφαία πλατφόρμα Enterprise για Blockchain-Forensik: Συμμόρφωση, ",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Πελάτες Enterprise",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.values.trust.desc",
+          "value": "Enterprise-Grade ασφάλεια με πιστοποιήσεις SOC2/ISO27001. Τα δεδομένα σας είναι ",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.graph.labels.desc",
+          "value": "Ετικέτες Exchange/VASP/DeFi με Community Intelligence",
+          "indicator": "Community"
+        },
+        {
+          "path": "features.security.badge",
+          "value": "Ασφάλεια Enterprise",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "features.security.desc",
+          "value": "Ασφάλεια Enterprise-Grade με RBAC, SSO/SAML, Logs Ελέγχου και συμμόρφωση GDPR.",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "footer.tagline",
+          "value": "Enterprise Blockchain AI για συμμόρφωση και έρευνες – ασφαλές, γρήγορο, αποδεκτό",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.cta2.title",
+          "value": "Έτοιμοι για Enterprise Blockchain Intelligence;",
+          "indicator": "Enterprise"
+        }
+      ]
+    },
+    {
+      "code": "uk",
+      "name": "Українська",
+      "status": "issues",
+      "issueCount": 22,
+      "issues": [
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Чесні та прозорі ціни на blockchain forensics. Від безкоштовного Community до En",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Чесні та прозорі ціни на blockchain forensics. Від безкоштовного Community до En",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "be",
+      "name": "Беларуская",
+      "status": "issues",
+      "issueCount": 24,
+      "issues": [
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Сумленныя і празрыстыя цэны на blockchain forensics. Ад бясплатнага Community да",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Сумленныя і празрыстыя цэны на blockchain forensics. Ад бясплатнага Community да",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "hu",
+      "name": "Magyar",
+      "status": "issues",
+      "issueCount": 23,
+      "issues": [
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Tisztességes és átlátható árazás a blockchain forensics számára. Ingyenes Commun",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Tisztességes és átlátható árazás a blockchain forensics számára. Ingyenes Commun",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "sk",
+      "name": "Slovenčina",
+      "status": "issues",
+      "issueCount": 31,
+      "issues": [
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "landing.cta2.title",
+          "value": "Pripravený na Enterprise Blockchain Intelligence?",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.hero.title",
+          "value": "Enterprise Blockchain Intelligence",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.pricing.subtitle",
+          "value": "Od bezplatných po Enterprise - začnite teraz",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.seo.title",
+          "value": "SIGMACODE | Enterprise Blockchain Intelligence",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "layout.quick_search_hint",
+          "value": "Tip: Cmd/Ctrl+K",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.header.subtitle",
+          "value": "Od bezplatných nástrojov pre komunitu po Enterprise s White-Label. Začnite dnes ",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Spravodlivé a transparentné ceny pre blockchain forensics. Od bezplatného Commun",
+          "indicator": "Enterprise"
+        }
+      ]
+    },
+    {
+      "code": "sl",
+      "name": "Slovenščina",
+      "status": "issues",
+      "issueCount": 24,
+      "issues": [
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Poštene in transparentne cene za blockchain forensics. Od brezplačnega Community",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Poštene in transparentne cene za blockchain forensics. Od brezplačnega Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "sq",
+      "name": "Shqip",
+      "status": "issues",
+      "issueCount": 24,
+      "issues": [
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Çmime të drejta dhe transparente për blockchain forensics. Nga plani falas Commu",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Çmime të drejta dhe transparente për blockchain forensics. Nga plani falas Commu",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "sr",
+      "name": "Српски",
+      "status": "issues",
+      "issueCount": 33,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Razvijamo vodeću Enterprise platformu za Blockchain inteligenciju koja podržava ",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Gradimo vodeću Enterprise platformu za Blockchain forenziku: usaglašenost, istra",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise klijenti",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "landing.cta2.title",
+          "value": "Spremni za Enterprise Blockchain Intelligence?",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.hero.title",
+          "value": "Enterprise Blockchain Intelligence",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.pricing.subtitle",
+          "value": "Od besplatnih do Enterprise - počni sada",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.seo.title",
+          "value": "SIGMACODE | Enterprise Blockchain Intelligence",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        }
+      ]
+    },
+    {
+      "code": "bs",
+      "name": "Bosanski",
+      "status": "issues",
+      "issueCount": 32,
+      "issues": [
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise klijenti",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forenzički Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.security.badge",
+          "value": "Enterprise sigurnost",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "footer.tagline",
+          "value": "Enterprise blockchain AI za usklađenost i istrage – sigurno, brzo, prihvatljivo ",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.hero.title",
+          "value": "Enterprise Blockchain Inteligencija",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.seo.title",
+          "value": "SIGMACODE | Enterprise Blockchain Inteligencija",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "perf.header.title",
+          "value": "Dashboard za performanse i posmatranje",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Poštene i transparentne cijene za blockchain forensics. Od besplatnog Community ",
+          "indicator": "Enterprise"
+        }
+      ]
+    },
+    {
+      "code": "mk",
+      "name": "Македонски",
+      "status": "issues",
+      "issueCount": 33,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Го развиваме водечката Enterprise платформа за Blockchain Intelligence, која ги ",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Го градиме водечката Enterprise платформа за Blockchain форензика: усогласеност,",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise клиенти",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "landing.cta2.title",
+          "value": "Подготвен за Enterprise Blockchain Intelligence?",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.hero.title",
+          "value": "Enterprise Blockchain Intelligence",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.pricing.subtitle",
+          "value": "Од бесплатно до Enterprise - започни сега",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "landing.seo.title",
+          "value": "SIGMACODE | Enterprise Blockchain Intelligence",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        }
+      ]
+    },
+    {
+      "code": "mt",
+      "name": "Malti",
+      "status": "issues",
+      "issueCount": 33,
+      "issues": [
+        {
+          "path": "accessibility.settings",
+          "value": "Settings tal-Aċċessibilità",
+          "indicator": "Settings"
+        },
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "common.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "Dashboard tal-Forensika tal-Blockchain SIGMACODE",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise-Grade Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "investigator.settings.title",
+          "value": "Settings tal-Investigatur",
+          "indicator": "Settings"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "navigation.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "navigation.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "navigation.businessplan",
+          "value": "Business Plan & Funding",
+          "indicator": "Business Plan"
+        }
+      ]
+    },
+    {
+      "code": "lt",
+      "name": "Lietuvių",
+      "status": "issues",
+      "issueCount": 56,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Wir entwickeln die führende Enterprise-Plattform für Blockchain Intelligence, di",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Wir bauen die führende Enterprise-Plattform für Blockchain-Forensik: Compliance,",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise Kunden",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.values.trust.desc",
+          "value": "Enterprise-Grade Security mit SOC2/ISO27001-Zertifizierungen. Ihre Daten sind be",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "accessibility.settings",
+          "value": "Accessibility Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "admin.error",
+          "value": "Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "dashboard.success_rate",
+          "value": "Success Rate",
+          "indicator": "Success"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.graph.community.title",
+          "value": "Community Detection",
+          "indicator": "Community"
+        },
+        {
+          "path": "features.graph.desc",
+          "value": "Neo4j-basierte Graph-Datenbank für Entity Clustering, Community Detection und Vi",
+          "indicator": "Community"
+        }
+      ]
+    },
+    {
+      "code": "lv",
+      "name": "Latviešu",
+      "status": "issues",
+      "issueCount": 56,
+      "issues": [
+        {
+          "path": "about.header.subtitle",
+          "value": "Wir entwickeln die führende Enterprise-Plattform für Blockchain Intelligence, di",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.seo.description",
+          "value": "Wir bauen die führende Enterprise-Plattform für Blockchain-Forensik: Compliance,",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise Kunden",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.values.trust.desc",
+          "value": "Enterprise-Grade Security mit SOC2/ISO27001-Zertifizierungen. Ihre Daten sind be",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "accessibility.settings",
+          "value": "Accessibility Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "admin.error",
+          "value": "Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "dashboard.success_rate",
+          "value": "Success Rate",
+          "indicator": "Success"
+        },
+        {
+          "path": "dashboard.title",
+          "value": "SIGMACODE Blockchain Forensics Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "features.graph.community.title",
+          "value": "Community Detection",
+          "indicator": "Community"
+        },
+        {
+          "path": "features.graph.desc",
+          "value": "Neo4j-basierte Graph-Datenbank für Entity Clustering, Community Detection und Vi",
+          "indicator": "Community"
+        }
+      ]
+    },
+    {
+      "code": "et",
+      "name": "Eesti",
+      "status": "issues",
+      "issueCount": 24,
+      "issues": [
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Ausad ja läbipaistvad blockchain forensics hinnad. Tasuta Community plaanist Ent",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Ausad ja läbipaistvad blockchain forensics hinnad. Tasuta Community plaanist Ent",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        }
+      ]
+    },
+    {
+      "code": "ja",
+      "name": "日本語",
+      "status": "issues",
+      "issueCount": 21,
+      "issues": [
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "ブロックチェーンフォレンジックの公正で透明な料金。無料のCommunityプランからEnterpriseまで。いつでもキャンセル可能。",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "ブロックチェーンフォレンジックの公正で透明な料金。無料のCommunityプランからEnterpriseまで。いつでもキャンセル可能。",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "chatbot.cta.startFree",
+          "value": "Start Free",
+          "indicator": "Free"
+        }
+      ]
+    },
+    {
+      "code": "ko",
+      "name": "한국어",
+      "status": "issues",
+      "issueCount": 19,
+      "issues": [
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "chatbot.cta.startFree",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "chatbot.cta.viewPricing",
+          "value": "View Pricing",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.pricing.tiers.community.name",
+          "value": "Community",
+          "indicator": "Community"
+        }
+      ]
+    },
+    {
+      "code": "zh-CN",
+      "name": "简体中文",
+      "status": "issues",
+      "issueCount": 19,
+      "issues": [
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "chatbot.cta.startFree",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "chatbot.cta.viewPricing",
+          "value": "View Pricing",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.pricing.tiers.community.name",
+          "value": "Community",
+          "indicator": "Community"
+        }
+      ]
+    },
+    {
+      "code": "hi",
+      "name": "हिन्दी",
+      "status": "issues",
+      "issueCount": 22,
+      "issues": [
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "chatbot.cta.startFree",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "chatbot.cta.viewPricing",
+          "value": "View Pricing",
+          "indicator": "View"
+        }
+      ]
+    },
+    {
+      "code": "tr",
+      "name": "Türkçe",
+      "status": "issues",
+      "issueCount": 21,
+      "issues": [
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Blockchain forensics için adil ve şeffaf fiyatlandırma. Ücretsiz Community planı",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "pricing.seo.description",
+          "value": "Blockchain forensics için adil ve şeffaf fiyatlandırma. Ücretsiz Community planı",
+          "indicator": "Community"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        },
+        {
+          "path": "universal_screening.attribution_evidence.title",
+          "value": "View Attribution Evidence ({{count}})",
+          "indicator": "View"
+        },
+        {
+          "path": "chatbot.hero.demoTip",
+          "value": "Tip: Ask about voice, crypto, risk.",
+          "indicator": "Tip:"
+        },
+        {
+          "path": "chatbot.cta.startFree",
+          "value": "Start Free",
+          "indicator": "Free"
+        }
+      ]
+    },
+    {
+      "code": "ar",
+      "name": "العربية",
+      "status": "issues",
+      "issueCount": 26,
+      "issues": [
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "common.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise-Grade Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "cookie.save_preferences",
+          "value": "Save preferences",
+          "indicator": "Save"
+        },
+        {
+          "path": "navigation.businessplan",
+          "value": "Business Plan & Funding",
+          "indicator": "Business Plan"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        },
+        {
+          "path": "pricing.plans.community",
+          "value": "Community",
+          "indicator": "Community"
+        },
+        {
+          "path": "trace.agent.error_title",
+          "value": "Agent Tool Trace Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.error.title",
+          "value": "Error starting trace",
+          "indicator": "Error"
+        },
+        {
+          "path": "trace.plan.loading",
+          "value": "Loading credits…",
+          "indicator": "Loading"
+        }
+      ]
+    },
+    {
+      "code": "he",
+      "name": "עברית",
+      "status": "issues",
+      "issueCount": 30,
+      "issues": [
+        {
+          "path": "common.dashboard",
+          "value": "Dashboard",
+          "indicator": "Dashboard"
+        },
+        {
+          "path": "common.settings",
+          "value": "Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "features.graph.community.title",
+          "value": "Community Detection",
+          "indicator": "Community"
+        },
+        {
+          "path": "features.hero.title",
+          "value": "Enterprise-Grade Blockchain Forensics",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.stats.enterprise_customers",
+          "value": "Enterprise customers",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "about.values.trust.desc",
+          "value": "Enterprise-grade security with SOC2/ISO27001 certifications. Your data is safe w",
+          "indicator": "Enterprise"
+        },
+        {
+          "path": "accessibility.settings",
+          "value": "Accessibility Settings",
+          "indicator": "Settings"
+        },
+        {
+          "path": "admin.error",
+          "value": "Error",
+          "indicator": "Error"
+        },
+        {
+          "path": "navigation.businessplan",
+          "value": "Business Plan & Funding",
+          "indicator": "Business Plan"
+        },
+        {
+          "path": "pricing.cta.start",
+          "value": "Start Free",
+          "indicator": "Free"
+        }
+      ]
+    }
+  ]
+}

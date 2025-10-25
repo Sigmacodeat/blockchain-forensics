@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Panta sýniútgáfu",
+      "pricing": "Skoða verð",
+      "subtitle": "Byrjaðu núna með ókeypis kynningu eða hafðu samband við lið okkar",
+      "title": "Byrja núna"
+    },
+    "header": {
+      "badge": "Um okkur",
+      "subtitle": "Við þróum leiðandi Enterprise-vettvang fyrir blockchain-greiningu sem styður lögreglu, VASP og fjármálastofnanir við að verja gegn dulritunarglæpum.",
+      "title": "Framtíð blockchain-rannsókna"
+    },
+    "mission": {
+      "desc": "Við gerum blockchain-færslur gegnsæjar og auðkennjanlegar. Markmið okkar er að berjast gegn dulritunarglæpum og veita lögmætum aðilum á markaði tæki til að uppfylla reglugerðarkröfur og lágmarka áhættu.",
+      "title": "Mission okkar"
+    },
+    "seo": {
+      "description": "Við byggjum upp leiðandi Enterprise-vettvang fyrir blockchain-rannsóknir: Samræmi, rannsóknir og greining um allan heim.",
+      "title": "Um okkur | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "badge": "Í tölum",
+      "blockchains": "Blockchains",
+      "enterprise_customers": "Enterprise viðskiptavinir",
+      "recovered_assets": "Endurheimt eignir",
+      "sla_guaranteed": "tryggt með SLA",
+      "supported": "studd",
+      "supported_by_tech": "studd af tækni okkar",
+      "title": "Áhrif okkar",
+      "uptime": "Uptime",
+      "worldwide": "um allan heim"
+    },
+    "team": {
+      "badge": "Sérfræðiþekking",
+      "compliance": {
+        "desc": "Sérfræðingar í AML/CFT og alþjóðlegum refsiaðgerðum",
+        "h1": "Fyrrverandi reglusetar",
+        "h2": "AML-sérfræðingar",
+        "h3": "Lögfræðiráðgjafar",
+        "title": "Samræmi og lög"
+      },
+      "forensics": {
+        "desc": "Fyrrverandi lögregluþjónar með áralanga reynslu af rannsóknum á dulritunarglæpum",
+        "h1": "FBI/BKA alumni",
+        "h2": "Darknet-tækifæri",
+        "h3": "Endurheimt eigna",
+        "title": "Sérfræðingar í rannsóknum"
+      },
+      "subtitle": "Sérfræðingar í blockchain-rannsóknum, lögreglu, FinTech og vélanám",
+      "tech": {
+        "desc": "Verkfræðingar frá leiðandi tæknifyrirtækjum með blockchain-thróun",
+        "h1": "Fyrrverandi FAANG",
+        "h2": "Blockchain-kjarnadevelopers",
+        "h3": "Öryggis sérfræðingar",
+        "title": "Tæknisérfræðingar"
+      },
+      "title": "Lið okkar"
+    },
+    "trust": {
+      "badge": "Traust",
+      "ce": {
+        "desc": "Topp-10-skiptiborðar fyrir AML og færslueftirlit",
+        "title": "Dulritunarskiptiborðar"
+      },
+      "fi": {
+        "desc": "Tier-1-bankar með dulritunareign",
+        "title": "Bankar og FinTech"
+      },
+      "le": {
+        "desc": "FBI, Europol, þjóðlegar lögreglu stofnanir",
+        "title": "Lögregla"
+      },
+      "reg": {
+        "desc": "Fjármálaeftirlit fyrir markaðseftirlit",
+        "title": "Reglusetar"
+      },
+      "subtitle": "Leiðandi stofnanir um allan heim treysta tækni okkar",
+      "title": "Hver treystir okkur"
+    },
+    "values": {
+      "badge": "Gildi okkar",
+      "compliance": {
+        "desc": "Samræmi við GDPR, eIDAS og OFAC. Við skiljum reglugerðarkröfur og innleiðum þær.",
+        "title": "Samræmi í fyrsta sæti"
+      },
+      "customer": {
+        "desc": "Náið samstarf við lögreglu og iðnað. Þínar þarfir eru áætlun okkar.",
+        "title": "Viðskiptavinamiðun"
+      },
+      "global": {
+        "desc": "100+ blockchains, stuðningur við mörg mál og alþjóðlegar refsiaðgerðalistar.",
+        "title": "Alþjóðleg umfjöllun"
+      },
+      "innovation": {
+        "desc": "Framúrskarandi tækni: AI/ML, grafagreining og rauntímaferli fyrir bestu niðurstöður.",
+        "title": "Nýsköpun"
+      },
+      "team": {
+        "desc": "Fjölgreiningarlið úr rannsóknarsérfræðingum, þróunaraðilum og samræmissérfræðingum.",
+        "title": "Liðstarf"
+      },
+      "title": "Sem knýr okkur áfram",
+      "trust": {
+        "desc": "Öryggi fyrirtækjaflokks með SOC2/ISO27001-vottunum. Gögn þín eru örugg hjá okkur.",
+        "title": "Traust og öryggi"
+      }
+    },
+    "vision": {
+      "desc": "Heimur þar sem blockchain-tækni getur náð fullu potentiali sínu – gegnsæ, örugg og samræmd. Við byggjum upp innviði fyrir framtíð þar sem stafrænar eignir verða aðalmennsku án þess að stuðla að glæpum.",
+      "title": "Sýn okkar"
+    }
+  },
+  "accessibility": {
+    "activate": "Virkja",
+    "close_dialog": "Loka glugga",
+    "font_size": "Leturstærð",
+    "font_size_large": "Stór leturstærð",
+    "font_size_normal": "Venjuleg leturstærð",
+    "font_size_xlarge": "Mjög stór leturstærð",
+    "high_contrast_detected": "Mikill mæting greindur",
+    "keyboard_shortcuts": "Flýtilyklar",
+    "navigate_backward": "Fara afturábak",
+    "navigate_forward": "Fara áfram",
+    "no_system_preferences": "Engar sérstakar kerfiskostir greindir",
+    "reduced_motion_detected": "Minni hreyfing greind",
+    "settings": "Aðgengi stillingar",
+    "skip_to_content": "Sleppa á efni",
+    "system_preferences": "Kerfiskostir"
+  },
+  "address_analysis": {
+    "title": "Greining á heimilisfangi",
+    "wip_desc": "Lýsing greiningar á heimilisfangi í vinnslu",
+    "wip_title": "Greining á heimilisfangi í vinnslu"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI-umboðsmenn",
+      "app_name": "Forritsnafn",
+      "cross_chain": "Kross-keðja",
+      "max_trace_depth": "Hámarkssporingardýpt",
+      "ml_clustering": "ML-flokkun",
+      "title": "Stillingar",
+      "version": "Útgáfa"
+    },
+    "disabled": "✗ Óvirkt",
+    "enabled": "✓ Virkt",
+    "error": "Villa",
+    "health": {
+      "connected": "✓ Tengdur",
+      "disconnected": "✗ Aftengt",
+      "error": "Mistókst að hlaða heilsufarsstöðu",
+      "title": "Heilsa gagnagrunns"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Sækir færslur frá Ethereum RPC",
+        "ingesting": "Innritun í gangi...",
+        "placeholder": "0x...",
+        "start": "Byrja innritun",
+        "success": "✓ Innritun hafin í bakgrunni",
+        "title": "Innrita gögn heimilisfangs"
+      },
+      "block": {
+        "help": "Innflutningur allra færslna frá blokk",
+        "ingesting": "Innritun í gangi...",
+        "placeholder": "Blaðnúmer",
+        "start": "Byrja innflutning blaðs",
+        "success": "✓ Innritun blaðs hafin",
+        "title": "Innrita gögn blaðs"
+      }
+    },
+    "stats": {
+      "db_size": "Stærð gagnagrunns",
+      "title": "Tölfræði kerfis",
+      "total_addresses": "Heildarfjöldi heimilisfanga",
+      "total_traces": "Heildarfjöldi sporana",
+      "total_transactions": "Heildarfjöldi færslna"
+    },
+    "subtitle": "Vöktun, stillingar og gagnastjórnun",
+    "tabs": {
+      "config": "Stillingar",
+      "ingestion": "Gögn innritun",
+      "overview": "Yfirlit",
+      "users": "Notendastjórnun"
+    },
+    "title": "Kerfisstjórnun"
+  },
+  "agent": {
+    "cancel": "Hætta við",
+    "error": "Villa umboðsmanns",
+    "error_unknown": "Óþekkt villa umboðsmanns",
+    "examples": {
+      "1": "Dæmi 1",
+      "2": "Dæmi 2",
+      "3": "Dæmi 3",
+      "title": "Dæmi umboðsmanns"
+    },
+    "instructions": "Leiðbeiningar umboðsmanns",
+    "loading": "Hleð umboðsmanni...",
+    "placeholder": "Staður umboðsmanns",
+    "retry": "Reyna aftur",
+    "send": "Senda",
+    "subtitle": "Undirtexti umboðsmanns",
+    "title": "Titill umboðsmanns",
+    "welcome": "Velkomin(n) til umboðsmanns"
+  },
+  "auth": {
+    "fields": {
+      "email": "Netfang",
+      "organization_opt": "Stofnun (valfrjálst)",
+      "password": "Lykilorð",
+      "password_confirm": "Staðfesta lykilorð",
+      "username": "Notandanafn"
+    },
+    "forgot": {
+      "back_to_login": "Aftur í innskráningu",
+      "dev_note": "Vegna þess að enginn tölvupóstþjónusta er stillt, athugaðu skráningarþjóninn til að fá endurstillingarhnapp.",
+      "dev_note_label": "Athugið (þróunarhamur):",
+      "error": "Villa við sendingu",
+      "info_sent": "Ef reikningur er tengdur þessu netfangi verður endurstillingarhnappur sendur.",
+      "sent": "Endurstillingarhnappur sendur!",
+      "submit": "Senda endurstillingarhnapp",
+      "submitting": "Sending...",
+      "subtitle": "Engar áhyggjur! Sláðu inn netfangið þitt og við sendum þér endurstillingarhnapp.",
+      "title": "Gleymt lykilorð?",
+      "title_sent": "Tölvupóstur sendur!"
+    },
+    "login": {
+      "failed": "Innskráning mistókst",
+      "fill_all_fields": "Fylltu út öll reitina",
+      "forgot_password": "Gleymt lykilorð?",
+      "google": "Skrá inn með Google",
+      "google_retry": "Reyna aftur með Google",
+      "no_account": "Ertu ekki með reikning?",
+      "oauth_failed": "OAuth mistókst. Reyndu aftur.",
+      "oauth_processing": "OAuth-innskráning er í vinnslu...",
+      "or": "eða",
+      "register_now": "Skráðu þig núna",
+      "remember_me": "Muna mig",
+      "submit": "Skrá inn",
+      "submitting": "Innskráning í gangi...",
+      "subtitle": "Skráðu þig inn til að halda áfram"
+    },
+    "placeholders": {
+      "email": "analyst@example.com",
+      "organization": "FBI, Chainalysis o.s.frv.",
+      "password": "••••••••",
+      "username": "johan_greining"
+    },
+    "register": {
+      "accept": "Ég samþykki",
+      "already": "Þegar skráð(ur)?",
+      "and": "og",
+      "failed": "Skráning mistókst",
+      "fill_all_fields": "Fylltu út öll nauðsynleg svæði",
+      "google": "Skrá sig með Google",
+      "login_now": "Skrá inn núna",
+      "password_hint": "Að lágmarki 8 stafir",
+      "password_too_short": "Lykilorð verður að vera að lágmarki 8 stafir",
+      "passwords_no_match": "Lykilorð passa ekki saman",
+      "submit": "Skrá",
+      "submitting": "Skráning í gangi...",
+      "subtitle": "Byrjaðu á rannsóknargreiningu þinni",
+      "title": "Búa til reikning"
+    }
+  },
+  "common": {
+    "access_denied": "Aðgangur hafnað (aðeins stjórnandi)",
+    "account": "Reikningur",
+    "back": "Til baka",
+    "close": "Loka",
+    "info": "Upplýsingar",
+    "language": "Tungumál",
+    "loading": "Hleður...",
+    "next": "Næsta",
+    "page": "Síða",
+    "prev": "Fyrri",
+    "refresh": "Endurnýja",
+    "search": "Leita",
+    "success": "Árangur",
+    "theme": "Þema",
+    "view": "Skoða",
+    "wip": {
+      "title": "Kemur fljótlega",
+      "desc": "Þessi eiginleiki er enn í þróun.",
+      "cta": "Læra meira"
+    },
+    "start_free": "Byrja ókeypis",
+    "error": "Villa",
+    "save": "Vista",
+    "cancel": "Hætta við",
+    "delete": "Eyða",
+    "edit": "Breyta",
+    "create": "Búa til",
+    "finish": "Ljúka",
+    "open": "Opna",
+    "yes": "Já",
+    "no": "Nei",
+    "confirm": "Staðfesta",
+    "welcome": "Velkomin",
+    "dashboard": "Stjórnborð",
+    "settings": "Stillingar",
+    "profile": "Prófíll",
+    "logout": "Útskráning",
+    "login": "Innskráning",
+    "register": "Skráning",
+    "email": "Tölvupóstur",
+    "password": "Lykilorð",
+    "username": "Notandanafn",
+    "documents": "Skjöl",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Lágmarksalvarleiki",
+      "refresh": "Endurnýja",
+      "title": "Stjórnun",
+      "window": "Gluggi",
+      "window_15m": "15 mínútur",
+      "window_1h": "1 klukkustund",
+      "window_24h": "24 klukkustundir",
+      "window_2h": "2 klukkustundir",
+      "window_30m": "30 mínútur",
+      "window_5m": "5 mínútur"
+    },
+    "header": {
+      "subtitle": "Undirtexti tengsla",
+      "title": "Tengingar"
+    },
+    "overview": {
+      "active_rules": "Virkar reglur",
+      "analyzed": "Greint",
+      "empty": "Tómt",
+      "found": "Fannst",
+      "loading": "Hleð...",
+      "min_sev": "Lágmarksalvarleiki",
+      "rate": "Hraði",
+      "title": "Yfirlit",
+      "window": "Gluggi"
+    },
+    "rules": {
+      "empty": "Engar reglur",
+      "footer": "Fótur reglna",
+      "loading": "Hleð reglum...",
+      "min": "Lágmark",
+      "minutes": "Mínútur",
+      "required_patterns": "Nauðsynlegar mynstur",
+      "title": "Reglur",
+      "window": "Gluggi"
+    },
+    "sev": {
+      "critical": "Kritískt",
+      "high": "Hár",
+      "low": "Lágur",
+      "medium": "Miðlungs"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Eftir ástæðu",
+        "by_type": "Eftir gerð",
+        "title": "Sundurliðun undirbúninga"
+      },
+      "rate": "Hraði undirbúninga",
+      "title": "Undirbúningar",
+      "top_entity": "Helsta eining",
+      "total": "Samtals"
+    },
+    "test": {
+      "add_alert": "Bæta við viðvörun",
+      "alerts_label": "Merki viðvarana",
+      "match": "Samræmi",
+      "no_alerts": "Engar viðvaranir",
+      "no_match": "Engin samræmi",
+      "pick_rule": "Velja reglu",
+      "pick_rule_ph": "Staður til að velja reglu",
+      "result": "Niðurstaða",
+      "run": "Keyra",
+      "testing": "Prófun í gangi...",
+      "title": "Tengingapróf"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Afrita héðan",
+      "copy_mint": "Afrita mint",
+      "export_csv": "Flytja út í CSV",
+      "export_csv_page": "Flytja út síðu í CSV",
+      "fetch": "Sækja"
+    },
+    "bitcoin": {
+      "block_title": "Titill blaðs",
+      "compute": "Reikna",
+      "decoded": "Afkóðað",
+      "edges_title": "Titill jaðar",
+      "height_ph": "Staður fyrir hæð",
+      "ingest_edges": "Innrita jaðar",
+      "method_heuristic": "Heuristic aðferð",
+      "method_proportional": "Hlutfallað aðferð",
+      "normalized": "Eðlilegt",
+      "tx_title": "Titill færslu",
+      "txid_ph": "Staður fyrir ID færslu"
+    },
+    "compliance": {
+      "add_watch": "Bæta við í eftirlit",
+      "address_ph": "Staður fyrir heimilisfang",
+      "chain_ph": "Staður fyrir keðju",
+      "entries": "Færslur",
+      "error": "Villa",
+      "filter_address_ph": "Staður fyrir síu heimilisfangs",
+      "filter_chain_ph": "Staður fyrir síu keðju",
+      "list_watch": "Listi yfir eftirlit",
+      "screen": "Skjár",
+      "title": "Samræmi",
+      "watchlist": "Eftirlitslisti"
+    },
+    "ethereum": {
+      "canonical": "Kaþólskt",
+      "copy_hash": "Afrita hrað",
+      "decoded": "Afkóðað",
+      "error": "Villa",
+      "open_etherscan": "Opna Etherscan",
+      "tx_hash_ph": "Staður fyrir hrað færslu",
+      "tx_title": "Titill færslu"
+    },
+    "ingest": {
+      "canonical_notice": "Tilkynning um kaþólska innritun",
+      "edges_notice": "Tilkynning um innritun jaðar",
+      "loading": "Hleð..."
+    },
+    "labels": {
+      "add": "Bæta við",
+      "address_ph": "Staður fyrir heimilisfang",
+      "category_ph": "Staður fyrir flokk",
+      "chain_ph": "Staður fyrir keðju",
+      "error": "Villa",
+      "label_ph": "Staður fyrir merki",
+      "lookup": "Leita",
+      "title": "Merki"
+    },
+    "monitoring": {
+      "fetch": "Sækja",
+      "key_counters": "Helstu mælingar",
+      "title": "Eftirlit"
+    },
+    "rpc_unavailable": "RPC ekki tiltækt",
+    "solana": {
+      "canonical_error": "Kaþólsk villa",
+      "canonical_title": "Titill kaþólskrar innritunar",
+      "error": "Villa",
+      "ingest_canonical": "Innrita kaþólskt",
+      "signature_ph": "Staður fyrir undirskrift",
+      "title": "Titill Solana",
+      "transfers": "Millifærslur"
+    },
+    "table": {
+      "actions": "Aðgerðir",
+      "address": "Heimilisfang",
+      "amount_ui": "Upphæð UI",
+      "chain": "Keðja",
+      "created": "Búið til",
+      "decimals": "Tugabrot",
+      "fee": "Gjald",
+      "from": "Frá",
+      "from_vout": "Frá vout",
+      "method": "Aðferð",
+      "mint": "Mint",
+      "reason": "Ástæða",
+      "to": "Til",
+      "to_vout": "Til vout",
+      "value_btc": "Gildi BTC"
+    },
+    "totals": {
+      "page_sum": "Samtala síðu",
+      "page_sum_btc": "Samtala síðu BTC",
+      "total_amount": "Heildarupphæð",
+      "total_value_btc": "Heildargildi BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Aðgerðir",
+    "active": "Virkur",
+    "administration": "Stjórnun",
+    "alert_aging": "Elliviðvörun",
+    "alert_engine": "Viðvörunarvél",
+    "alert_monitoring": "Eftirlit með viðvörunum",
+    "alert_overview": "Yfirlit viðvarana",
+    "analyst_throughput": "Framleiðni greiningaraðila",
+    "audit_kpis": "KPI endurskoðunar",
+    "backlog": "Töf",
+    "bucket_placeholder": "24klst, 3d, 7d, >7d",
+    "buckets": "Kassar",
+    "case_management": "Málstjórnun",
+    "connected": "Tengt",
+    "correlation_analysis": "Tengslagreining",
+    "database": "Gagnagrunnur",
+    "database_response": "Svörun gagnagrunns",
+    "days": "Dagar",
+    "disconnected": "Aftengt",
+    "failed_actions": "Mistókst aðgerðir",
+    "false_positive_rate": "Hlutfall falskra jákvæðra",
+    "fp": "FP",
+    "graph_db": "Gröfugagnagrunnur",
+    "graph_explorer": "Kortasjá",
+    "healthy": "Heilbrigður",
+    "inactive": "Óvirkur",
+    "issues": "Mál",
+    "last_24h": "Síðustu 24 klukkustundir",
+    "last_update": "Síðasta uppfærsla",
+    "mttr": "MTTR",
+    "open_alerts": "Opnar viðvaranir",
+    "open_cases": "Opin mál",
+    "performance": "Afköst",
+    "priority_distribution": "Forgangsdreifing",
+    "quick_access": "Fljótur aðgangur",
+    "recent_alerts": "Nýlegar viðvaranir",
+    "response_time": "Svörunartími",
+    "rule_effectiveness": "Regluvirkni",
+    "sanctions_hits": "Refsiaðgerðir hittu",
+    "service_status": "Staða þjónustu",
+    "severity_breakdown": "Sundurliðun alvarleika",
+    "sla_breach_rate": "Brotahlutfall SLA",
+    "sla_hours": "SLA (klst)",
+    "status_breakdown": "Staðan sundurliðuð",
+    "success_rate": "Velgengnishlutfall",
+    "suppression_rate": "Undirbúningshraði",
+    "system_details": "Kerfisupplýsingar",
+    "system_load": "Kerfisálag",
+    "system_overview": "Yfirlit kerfis",
+    "system_status": "Staða kerfis",
+    "title": "SIGMACODE Blockchain Forensics Stjórnborð",
+    "total_alerts": "Heildarfjöldi viðvarana",
+    "total_cases": "Heildarfjöldi mála",
+    "total_logs": "Heildarfjöldi laga",
+    "transaction_tracing": "Færslusporun",
+    "uptime": "Uptime",
+    "welcome": "Velkomin aftur",
+    "overview": "Yfirlit",
+    "recent_activity": "Nýleg virkni",
+    "quick_actions": "Skjótar aðgerðir",
+    "statistics": "Tölfræði",
+    "notifications": "Tilkynningar",
+    "hero": {
+      "welcome": "Velkomin aftur",
+      "subtitle": "Hér er það sem er að gerast með rannsóknirnar þínar í dag."
+    },
+    "quickActions": {
+      "title": "Skjótar aðgerðir",
+      "newTrace": "Ný rakning",
+      "newCase": "Nýtt mál",
+      "riskCheck": "Áhættuathugun",
+      "aiAgent": "Gervigreind umboðsmaður"
+    },
+    "stats": {
+      "cases": "Virk mál",
+      "traces": "Rakningar í dag",
+      "alerts": "Vibúðaraboð",
+      "uptime": "Gangstöð"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Sjálfstæðir umboðsmenn með LangChain og GPT-4 samþættingu",
+        "title": "AI-umboðsmenn"
+      },
+      "badge": "Gervigreind og vélanám",
+      "desc": "Vélanámstilur til að greina óeðlilegar athafnir, áhættumat og sjálfstæðir AI-umboðsmenn fyrir 24/7 rannsóknir.",
+      "pattern": {
+        "desc": "Greining svikamynstra og hegðunargreining",
+        "title": "Mynsturgreining"
+      },
+      "risk": {
+        "desc": "Áhættumat byggt á vélanám fyrir heimilisföng og færslur",
+        "title": "Áhættumat"
+      },
+      "smart_contract": {
+        "desc": "Líkt byte-code og greining á veikleikum",
+        "title": "Greining á snjallsamningum"
+      },
+      "title": "Greining byggð á gervigreind"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "Greining óeðlilegra færslumynstra byggð á vélanám",
+        "title": "Greining óeðlilegra athafna"
+      },
+      "badge": "Rauntímaeftirlit",
+      "custom_rules": {
+        "desc": "Sérsniðnar viðvarunarreglur með Rule DSL og regluvél",
+        "title": "Sérsniðnar reglur"
+      },
+      "desc": "15+ sérstillanlegar viðvarunarreglur með vélanám. Fáðu tilkynningar um refsiaðgerðir, blöndun, hávirði-færslur og óeðlilegar athafnir.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io og aðrar blöndunaraðferðir",
+        "title": "Greining blöndunar"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK refsiaðgerðalistar með daglegum uppfærslum",
+        "title": "Sía refsiaðgerða"
+      },
+      "title": "Snjöll viðvarunarvél"
+    },
+    "case": {
+      "badge": "Vinnuflæði rannsókna",
+      "desc": "Fullkomin stjórnun rannsókna með keðju sönnunargagna, eIDAS-undirskriftum og dómsskýrslum.",
+      "eidas": {
+        "desc": "Vottuð rafræn undirskrift samkvæmt ESB-staðli",
+        "title": "eIDAS-undirskriftir"
+      },
+      "evidence": {
+        "desc": "Fullkomin keðja sönnunargagna fyrir dómsmál",
+        "title": "Keðja sönnunargagna"
+      },
+      "export": {
+        "desc": "PDF/Excel-útflutningur með tímasetningu og endurskoðunarferli",
+        "title": "Útflutningur og skýrslur"
+      },
+      "title": "Málstjórnun og keðja sönnunargagna",
+      "tracking": {
+        "desc": "Skipulögð málstjórnun með vinnuflæðisstöðu",
+        "title": "Málasporun"
+      }
+    },
+    "cta": {
+      "demo": "Biðja um kynningu",
+      "pricing": "Skoða verð",
+      "subtitle": "Byrjaðu núna með ókeypis kynningu",
+      "title": "Tilbúinn fyrir fulla pakka?",
+      "start": "Byrja Ókeypis"
+    },
+    "graph": {
+      "badge": "Gröfugreind",
+      "clustering": {
+        "desc": "Sjálfvirk flokkun tengdra veskja",
+        "title": "Veskaflokkun"
+      },
+      "community": {
+        "desc": "Greining á veskja-hópum með sameiginlegum áhugamálum",
+        "title": "Greining samfélaga"
+      },
+      "desc": "Neo4j-gröfugagnagrunnur fyrir flokkun eininga, greining samfélaga og sjónrænna rannsókna.",
+      "labels": {
+        "desc": "Exchange/VASP/DeFi-merki með samfélagsgreind",
+        "title": "Merki eininga"
+      },
+      "title": "Lausn eininga og netagreining",
+      "visual": {
+        "desc": "Gagnvirkur gröf-kortasjá fyrir flóknar greiningar",
+        "title": "Sjónræn rannsókn"
+      }
+    },
+    "header": {
+      "badge": "Fullur eiginleikapakki",
+      "cta_try": "Prófa ókeypis",
+      "subtitle": "Frá færslusporun til greiningar knúinn af AI – öll tæki fyrir faglegar rannsóknir",
+      "title": "Fullur blockchain-rannsóknarpakki"
+    },
+    "security": {
+      "audit": {
+        "desc": "Fullkomin endurskoðunarferil fyrir sönnun samræmis",
+        "title": "Endurskoðunarlög"
+      },
+      "badge": "Öryggi fyrirtækjaflokks",
+      "desc": "Öryggi fyrirtækjaflokks með RBAC, SSO/SAML, endurskoðunarlögum og samræmi við GDPR.",
+      "privacy": {
+        "desc": "Samræmi við GDPR með nafnleynd PII",
+        "title": "Gagnavernd"
+      },
+      "rbac": {
+        "desc": "Nákvæm stjórnun aðgangs byggð á hlutverkum með sérsniðnum hlutverkum",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Ein innskráning með SAML 2.0 og OAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "Öryggi og samræmi"
+    },
+    "seo": {
+      "description": "Blockchain forensics á fyrirtækjastigi: Fjölkeðja rakning, gervigreind umboðsmenn, rauntíma áhættumat og regluvörsluverkfæri.",
+      "title": "Eiginleikar | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Nákvæmni",
+      "ai_agents": "AI-umboðsmenn",
+      "alert_rules": "Viðvarunarreglur",
+      "blockchains": "Blockchains",
+      "bridges": "Brúarprotokoll",
+      "case_templates": "Málssniðmát",
+      "compliance": "Samræmi",
+      "encryption": "Dulkóðun",
+      "entities": "Einingar",
+      "evidence_types": "Tegundir sönnunargagna",
+      "false_positives": "Falskir jákvæðir",
+      "max_depth": "Hámarkssporingardýpt",
+      "ml_models": "ML-líkan",
+      "query_time": "Leitatími",
+      "relationships": "Tengsl",
+      "response_time": "Svörunartími",
+      "security_certs": "Öryggisvottorð",
+      "uptime_sla": "Uptime SLA"
+    },
+    "tracing": {
+      "badge": "Færslusporun",
+      "bridge": {
+        "desc": "Sjálfvirk greining á kross-keðjubrúm og vefnum eignum",
+        "title": "Greining brúa"
+      },
+      "cross_chain": {
+        "desc": "100+ blockchains stutt: EVM, UTXO, Solana, Cosmos og meira",
+        "title": "Kross-keðjusporun"
+      },
+      "demixing": {
+        "desc": "Heuristic greining á Tornado Cash, blöndurum og persónuverndarmyntum",
+        "title": "Aðskilnaður persónuverndarmynta"
+      },
+      "desc": "Sporar færslur yfir allar helstu blockchains. Inniheldur greiningu á kross-keðjubrúm, aðskilnað persónuverndarmynta og rekursífa spora fram/til baka.",
+      "recursive": {
+        "desc": "Fram/til baka spora með stillanlegri dýpt og síum",
+        "title": "Rekursíf spora"
+      },
+      "title": "Margfeldiskeðju færslugreind"
+    },
+    "hero": {
+      "badge": "Eiginleikar",
+      "title": "Blockchain Forensics á fyrirtækjastigi",
+      "subtitle": "Öll verkfærin sem þú þarft til að rannsaka dulmálsglæpi, tryggja reglufylgni og vernda fyrirtækið þitt."
+    }
+  },
+  "footer": {
+    "blog": "Blogg",
+    "careers": "Ferlar",
+    "company": "Fyrirtæki",
+    "contact": "Hafðu samband",
+    "imprint": "Prentun",
+    "legal": "Lögleg",
+    "privacy": "Persónuvernd",
+    "product": "Vara",
+    "request_demo": "Biðja um kynningu",
+    "rights_reserved": "Öll réttindi áskilin.",
+    "security": "Öryggi",
+    "tagline": "Enterprise Blockchain AI fyrir samræmi og rannsóknir – öruggt, hratt, dómshæft.",
+    "terms": "Skilmálar"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Virkir hnútar",
+      "avg_degree": "Meðalgráða",
+      "density": "Netsþéttleiki",
+      "total_edges": "Heildarfjöldi jaðar",
+      "total_nodes": "Heildarfjöldi hnúta"
+    },
+    "centrality": {
+      "taint": "Mengun",
+      "title": "Greining á miðstöð"
+    },
+    "communities": {
+      "algorithm": "Reikniriti",
+      "avg_size": "Meðalstærð",
+      "avg_taint": "Meðalmengun",
+      "empty": "Smelltu ",
+      "label_propagation": "Merki dreifing",
+      "loading": "Greining samfélaga...",
+      "louvain": "Louvain (Hlutfall)",
+      "title": "Greining samfélaga",
+      "total": "Samtals samfélög"
+    },
+    "degree": {
+      "title": "Dreifing gráðu",
+      "x": "Gráða",
+      "y": "Fjöldi"
+    },
+    "filters": {
+      "cross_chain": "Kross-keðja (brúalag)",
+      "from": "Frá (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Til (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Víðtæk netagreining og mynsturgreining",
+      "title": "Gröfugreining og netagreind"
+    },
+    "hubs": {
+      "in": "Inn",
+      "out": "Út",
+      "title": "Netsmiðstöðvar (hnútar með háum gráðum)",
+      "total": "Samtals"
+    },
+    "loading": {
+      "stats": "Hleð tölfræði..."
+    },
+    "patterns": {
+      "circle_length": "Lengd hring",
+      "detected": "Greindir hringir",
+      "empty_desc": "Þetta er gott merki - engir augljósir peningaþvottshringir fundust",
+      "empty_title": "Engin hringmynstur greind",
+      "high_risk": "Hár áhættu",
+      "hops": "stökk",
+      "loading": "Greining mynstur...",
+      "more_addresses": "meiri heimilisföng",
+      "risk_score": "Áhættumat",
+      "title": "Hringmynstur (Hugsanlegur peningaþvottur)",
+      "total": "Samtals",
+      "total_value": "Heildargildi",
+      "tx_path": "Færsluslóð:"
+    },
+    "tabs": {
+      "communities": "Greining samfélaga",
+      "overview": "Yfirlit nets",
+      "patterns": "Greining mynstur"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Flokkun",
+      "clustering": "Flokkun í gangi...",
+      "pause_timeline": "Gera hlé á tímalínu",
+      "play_timeline": "Spila tímalínu",
+      "title": "Aðgerðir rannsakanda"
+    },
+    "connected": {
+      "taint": "Mengun",
+      "title": "Tengdar einingar",
+      "tx": "Færslur"
+    },
+    "graph": {
+      "connections": "Tengingar",
+      "enter_address": "Sláðu inn heimilisfang",
+      "loading": "Hleð gröf...",
+      "nodes": "Hnútar",
+      "title": "Skoðun á gröf"
+    },
+    "header": {
+      "subtitle": "Undirtexti rannsakanda",
+      "title": "Rannsakandi"
+    },
+    "path": {
+      "bridges": "Brýr",
+      "hops": "Stökk",
+      "risk_score": "Áhættumat",
+      "title": "Slóð",
+      "total_value": "Heildargildi"
+    },
+    "search": {
+      "explore": "Kanna",
+      "placeholder": "Staður til leitar",
+      "title": "Leita"
+    },
+    "settings": {
+      "from": "Frá",
+      "hops_1": "1 stökk",
+      "hops_2": "2 stökk",
+      "hops_3": "3 stökk",
+      "hops_4": "4 stökk",
+      "hops_5": "5 stökk",
+      "include_bridges": "Fela brýr",
+      "max_hops": "Hámarksfjöldi stökks",
+      "title": "Stillingar",
+      "to": "Til"
+    },
+    "timeline": {
+      "empty": "Tóm tímalína",
+      "events": "Atburðir",
+      "risk": "Áhætta",
+      "select_address": "Velja heimilisfang",
+      "title": "Tímalína",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Biðja um kynningu núna",
+      "pricing": "Skoða verð"
+    },
+    "cta2": {
+      "demo": "Biðja um ókeypis kynningu",
+      "pricing": "Skoða verð",
+      "subtitle": "Byrjaðu núna með ókeypis kynningu og upplifðu framtíð blockchain-rannsókna",
+      "title": "Tilbúinn fyrir Enterprise blockchain-greind?"
+    },
+    "features": {
+      "badge": "Eiginleikar",
+      "subtitle": "Enterprise-stigs tæki fyrir samræmi, rannsóknir og áhættustjórnun",
+      "title": "Allt sem þú þarft fyrir blockchain-rannsóknir"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Blockchain Forensics",
+      "point1": "100+ blockchains",
+      "point2": "OFAC/UN/EU refsiaðgerðir",
+      "point3": "Rauntímaeftirlit",
+      "subtitle": "AI-drifið samræmi, rannsóknir og áhættueftirlit – í rauntíma og á Enterprise-stigi.",
+      "title": "Enterprise blockchain-greind"
+    },
+    "pricing": {
+      "badge": "Verð",
+      "subtitle": "Frá ókeypis tækjum til Enterprise-lausna - byrjaðu núna",
+      "title": "Tækifærislausnir fyrir hvert fyrirtæki",
+      "view_all": "Skoða öll verð"
+    },
+    "seo": {
+      "description": "AI-drifið samræmi, rannsóknir og áhættueftirlit – í rauntíma og á Enterprise-stigi. SIGMACODE Blockchain Forensics.",
+      "title": "SIGMACODE | Enterprise blockchain-greind"
+    },
+    "tech": {
+      "badge": "Tækni",
+      "subtitle": "Enterprise-stigs innviðir fyrir hámarksafköst og öryggi",
+      "title": "Framúrskarandi tæknistak"
+    },
+    "use_cases": {
+      "badge": "Notkunartilvik",
+      "subtitle": "Frá lögreglu til FinTech",
+      "title": "Rétta lausnin fyrir hvert svið"
+    }
+  },
+  "layout": {
+    "main_navigation": "Aðalstýring",
+    "quick_search_title": "Fljótleit (Ctrl/⌘+K)",
+    "skip_to_content": "Sleppa á efni",
+    "quick_search_placeholder": "Flýtileit...",
+    "quick_search_hint": "Ábending: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie banner",
+    "title": "Cookies & Privacy",
+    "title_short": "Cookies",
+    "description": "We use essential cookies to operate this website. Optional analytics cookies help us understand and improve usage. You can accept all cookies or allow only necessary ones. You can change your choice at any time in the settings.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Service",
+    "imprint_link": "Imprint",
+    "only_necessary": "Only necessary",
+    "accept_all": "Accept all",
+    "preferences": "Preferences",
+    "save_preferences": "Save preferences",
+    "manage": "Cookie settings",
+    "analytics_title": "Analytics cookies",
+    "analytics_desc": "Helps us understand usage to improve the website.",
+    "marketing_title": "Marketing cookies",
+    "marketing_desc": "Enables personalized content and offers.",
+    "all_optional_title": "Enable all optional",
+    "all_optional_desc": "Enables both analytics and marketing cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Loka",
+        "close_title": "Loka viðvörun",
+        "copy_alert_id_title": "Afrita ID viðvarunar",
+        "copy_entity": "Afrita einingu",
+        "copy_entity_id_title": "Afrita ID einingar",
+        "copy_id": "Afrita ID",
+        "copy_rule": "Afrita reglu",
+        "copy_rule_id_title": "Afrita ID reglunnar",
+        "details": "Smáatvik",
+        "details_title": "Skoða smáatvik",
+        "reset": "Endurstilla"
+      },
+      "audit": {
+        "empty": "Engir atburðir",
+        "title": "Endurskoðunarferill"
+      },
+      "csv": {
+        "export_all": "Flytja út í CSV (allt)",
+        "export_all_title": "Flytja út allar síaðar línur í CSV (þjónn)",
+        "export_page": "Flytja út síðu í CSV",
+        "export_page_title": "Flytja út núverandi síðu í CSV",
+        "no_filtered_data": "Engin síað gögn",
+        "no_page_data": "Engin gögn á þessari síðu"
+      },
+      "empty": "Engar viðvaranir fundust",
+      "filters": {
+        "all": "(allt)",
+        "search_label": "Leita (rule_id / entity_id)",
+        "search_placeholder": "Leita...",
+        "severity": "Alvarleiki",
+        "source": "Uppruni",
+        "source_persisted": "Varanlegt (KYT)",
+        "source_realtime": "Rauntími (Viðvörunarvél)",
+        "status": "Staða"
+      },
+      "kpi": {
+        "event_time_set": "Setja atburðartíma (first_seen_at)",
+        "event_time_title": "Atburðartími = first_seen_at",
+        "false_positive": "Merki sem falskt jákvætt",
+        "title": "KPI-merkingar",
+        "true_positive": "Merki sem satt jákvætt"
+      },
+      "loading": "Hleð viðvörunum...",
+      "modal": {
+        "alert_id": "ID viðvarunar",
+        "chain": "Keðja",
+        "context": "Samhengi",
+        "entity": "Eining",
+        "rule_id": "ID reglunnar",
+        "severity": "Alvarleiki",
+        "title": "Smáatvik viðvarunar"
+      },
+      "pagination": {
+        "next": "Næsta",
+        "page": "Síða",
+        "prev": "Fyrri"
+      },
+      "severity": {
+        "critical": "kritískt",
+        "high": "hár",
+        "low": "lágur",
+        "medium": "miðlungs"
+      },
+      "status": {
+        "assigned": "úthlutað",
+        "closed": "lokað",
+        "open": "opinn",
+        "snoozed": "þögull"
+      },
+      "subtitle": "Rauntímareglur og varanlegar viðvaranir (KYT)",
+      "table": {
+        "first": "fyrsta",
+        "last": "síðasta"
+      },
+      "title": "Eftirlit með viðvörunum",
+      "toasts": {
+        "copy_failed": "Afritun mistókst",
+        "disposition_failed": "Mistókst að setja stöðu",
+        "disposition_set": "Staða sett",
+        "entity_copied": "Eining afrituð",
+        "event_time_failed": "Mistókst að setja atburðartíma",
+        "event_time_set": "Atburðartími settur",
+        "export_failed": "Mistókst að flytja út",
+        "export_started": "Útflutningur hafinn",
+        "id_copied": "ID afrituð",
+        "rule_copied": "Regla afrituð"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Um okkur",
+    "analytics": "Greining",
+    "close_menu": "Loka valmynd",
+    "dashboard": "Stjórnborð",
+    "features": "Eiginleikar",
+    "home": "Heim",
+    "logout": "Útskrá",
+    "open_menu": "Opna valmynd",
+    "pricing": "Verðlag",
+    "settings": "Stillingar",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Endurnýja"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Kjarnar",
+        "title": "CPU-notkun"
+      },
+      "db": {
+        "connected": "✓ Tengdur",
+        "disconnected": "✗ Aftengt",
+        "response": "Svörun",
+        "title": "Gagnagrunnur"
+      },
+      "memory": {
+        "available": "laust",
+        "title": "Minni-notkun"
+      },
+      "system_status": {
+        "healthy": "Heilbrigður",
+        "issues": "Mál",
+        "title": "Staða kerfis",
+        "uptime": "Uptime"
+      }
+    },
+    "common": {
+      "no": "Nei",
+      "yes": "Já"
+    },
+    "header": {
+      "last_refresh": "Síðasta endurnýjun",
+      "subtitle": "Heildar eftirlit með kerfisafköstum, mælingum og SLO",
+      "title": "Afköst og athugunarstjórnborð"
+    },
+    "metrics": {
+      "empty": "Engar mælingargögn tiltækar",
+      "loading": "Hleð mælingum...",
+      "max": "Hámark",
+      "measurements": "Mælingar",
+      "min": "Lágmark",
+      "title": "Afköstamælingar (1 klukkustund)",
+      "trend": "Þróun"
+    },
+    "recent_alerts": {
+      "empty": "Engar nýlegar viðvaranir",
+      "title": "Nýlegar afkastaviðvaranir"
+    },
+    "services": {
+      "active": "Virkur",
+      "inactive": "Óvirkur",
+      "title": "Staða þjónustu"
+    },
+    "slo": {
+      "empty": "Engin SLO-gögn tiltæk",
+      "loading": "Hleð SLO...",
+      "threshold": "Þröskuldur",
+      "title": "Samræmi SLO",
+      "violations": "Brotið"
+    },
+    "system_details": {
+      "database": "Gagnagrunnur",
+      "db_connected": "Tengt",
+      "db_type": "Tegund",
+      "debug": "Villuleit",
+      "environment": "Umhverfi",
+      "log_level": "Stig annála",
+      "mode": "Hamur",
+      "platform": "Vettvangur",
+      "python_version": "Python-útgáfa",
+      "response_time": "Svörunartími",
+      "system_info": "Kerfisupplýsingar",
+      "title": "Smáatvik kerfis",
+      "version": "Útgáfa"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Aðrar blockchains",
+        "i2": "Auka notendaaðsetur",
+        "i3": "Sanctions Premium (víðtækari listar)",
+        "i4": "Lengri útflutningsformöt",
+        "i5": "Forgangsstuðningur",
+        "i6": "White-Label (Enterprise)",
+        "title": "Tiltæk viðbætur"
+      },
+      "badge": "Tækifærisviðbætur",
+      "overage": {
+        "extra_credits": "Auka inneign",
+        "monthly_cap": "Mánaðarlegt hámark",
+        "note": "Notarðu meira en hámarkið þitt? Engar áhyggjur - ofnotkun er reiknuð sjálfkrafa.",
+        "title": "Verð fyrir ofnotkun"
+      },
+      "subtitle": "Stækkaðu áætlun þína eftir þörfum",
+      "title": "Viðbætur og ofnotkun"
+    },
+    "card": {
+      "custom": "Sérsniðið",
+      "desc_business": "Fyrir stærri lið",
+      "desc_community": "Fyrir áhugamenn og opinn kóða",
+      "desc_enterprise": "Fyrir fyrirtæki og reglusetar",
+      "desc_pro": "Fyrir vaxandi fyrirtæki",
+      "desc_starter": "Fyrir lítil lið",
+      "per_month": "á mánuði",
+      "popular": "Vinsælast",
+      "popular_label": "Vinsælast",
+      "save_year": "Sparaðu ${{amount}}/ár"
+    },
+    "cta": {
+      "active_plan": "✓ Virkur áætlun",
+      "contact_sales": "Hafðu samband við sölu",
+      "demo": "Biðja um kynningu",
+      "more_about": "Meira um okkur",
+      "saving": "Sparar...",
+      "set_tenant_plan": "Setja sem leigjandaáætlun",
+      "start_now": "Byrja núna",
+      "subscribe": "Gerast áskrifandi núna",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Núverandi áætlun",
+    "enterprise": {
+      "card_desc": "Fyrir fyrirtæki og reglusetar",
+      "subtitle": "Sérsniðin verð, SLA, tengingar, On-Prem/VPC",
+      "title": "Fyrir fjármálastofnanir og reglusetar"
+    },
+    "faq": {
+      "subtitle": "Hafðu samband við sölulið okkar fyrir persónulega kynningu",
+      "title": "Ertu með spurningar?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchains",
+      "cases": "Mál",
+      "credits": "Kreditar/mánuður",
+      "priority": "Forgangur",
+      "users": "Notendur"
+    },
+    "header": {
+      "badge": "Tækifærisverð",
+      "subtitle": "Frá ókeypis samfélagstækjum til White-Label-lausna fyrir fyrirtæki. Byrjaðu í dag og skalaðu vöxt þinn.",
+      "title": "Rétta áætlunin fyrir hvert lið"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI-umboðsmenn",
+        "i2": "Gröfugreining",
+        "i3": "Áhættumat",
+        "i4": "ML-líkön",
+        "title": "Lengri greining"
+      },
+      "badge": "Hvað er innifalið?",
+      "performance": {
+        "i1": "Rauntíma viðvaranir",
+        "i2": "Aðgangur að API",
+        "i3": "Forgangsröð",
+        "i4": "99,9% uptime",
+        "title": "Afköst"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Endurskoðunarlög",
+        "i4": "Samræmi við GDPR",
+        "title": "Öryggi og samræmi"
+      },
+      "team": {
+        "i1": "Margir notendur",
+        "i2": "Málstjórnun",
+        "i3": "Keðja sönnunargagna",
+        "i4": "Samvinna",
+        "title": "Eiginleikar liðs"
+      },
+      "title": "Allir eiginleikar á einni áætlun"
+    },
+    "more": "meira",
+    "seo": {
+      "description": "Sanngjarnt og gagnsætt verð fyrir blockchain forensics. Frá ókeypis Community áætlun til Enterprise. Hætta við hvenær sem er.",
+      "title": "Verðlag | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Self-Serve áætlanir fyrir sprotafyrirtæki og miðmarkað",
+      "title": "Fyrir lið og fyrirtæki"
+    },
+    "toggle": {
+      "annual": "Árlega",
+      "monthly": "Mánaðarlega",
+      "save": "Sparaðu {{pct}}%"
+    },
+    "top_features": "EFSTA EIGINLEIKAR",
+    "hero": {
+      "badge": "Verðlag",
+      "title": "Einfalt og gagnsætt verð",
+      "subtitle": "Veldu áætlunina sem hentar þínum þörfum. Allar áætlanir innihalda kjarnaeiginleika. Uppfærðu hvenær sem er."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Endurnýja"
+    },
+    "audit": {
+      "empty": "Engar tiltækar skrár í endurskoðunarferli",
+      "loading": "Hleð endurskoðunarferli...",
+      "title": "Nýjustu skrár endurskoðunarferils",
+      "user": "Notandi",
+      "view_all": "Skoða allt →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Heildarstaða endurskoðunarferils"
+      },
+      "failed_logins": {
+        "title": "Mistókst innskráningar"
+      },
+      "gdpr": {
+        "title": "Samræmi við GDPR"
+      },
+      "security_incidents": {
+        "title": "Öryggisatkvæði"
+      }
+    },
+    "common": {
+      "implemented": "Innleitt",
+      "not_implemented": "Ekki innleitt",
+      "unknown": "Óþekkt"
+    },
+    "compliance": {
+      "anonymization": "Nafnleynd",
+      "certifications": "Vottorð",
+      "consent_management": "Samþykkisstjórnun",
+      "data_portability": "Gögnahlutleysi",
+      "empty": "Engin samræmisgögn tiltæk",
+      "encryption": "Dulkóðun",
+      "loading": "Hleð samræmisstöðu...",
+      "right_to_erasure": "Réttur til eyðingar",
+      "title": "Staða samræmis við GDPR"
+    },
+    "header": {
+      "last_refresh": "Síðasta endurnýjun",
+      "subtitle": "Endurskoðunarferlar, samræmi við GDPR og öryggiseftirlit",
+      "title": "Öryggis- og samræmisstjórnborð"
+    },
+    "quick_actions": {
+      "audit_export": "Flytja út endurskoðun",
+      "compliance_report": "Samræmisskýrsla",
+      "gdpr_status": "Staða GDPR",
+      "incident_report": "Atkvæðisskýrsla",
+      "integrity_check": "Heildarathugun",
+      "security_scan": "Öryggisskoðun",
+      "title": "Aðgerðir öryggis og samræmis"
+    },
+    "retention": {
+      "days": "Dagar",
+      "empty": "Engin geymslugögn tiltæk",
+      "title": "Samræmi geymslu gagna",
+      "violations": {
+        "count": "Brotið",
+        "days_old": "daga gamalt",
+        "more": "og",
+        "more_suffix": "meira",
+        "title": "Brotið á geymslu"
+      }
+    },
+    "security": {
+      "compliance_status": "Staða samræmis",
+      "empty": "Engin öryggisgögn tiltæk",
+      "failed_logins": "Mistókst innskráningar",
+      "incidents": "Öryggisatkvæði",
+      "rate_limited_ips": "Hraðatakmarkaðir IP-tölur",
+      "suspicious_activities": "Grunsamlegar athafnir",
+      "title": "Yfirlit öryggis"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Opnar viðvaranir eftir aldursflokkum (t.d. 24klst, 3d, 7d, >7d)",
+    "alert_engine": "Rauntímaeftirlit með grunsamlegum færslum og mynstum með ML-reikniritum",
+    "alert_overview": "Yfirlit yfir allar virkar öryggisviðvaranir og alvarleika þeirra (Kritískt/Hár/Miðlungs/Lágur)",
+    "analyst_throughput": "Fjöldi lokaðra mála á greiningaraðila innan valins glugga",
+    "backlog": "Heildarfjöldi opinna (óstaðfestra) viðvarana og opinna mála",
+    "database": "Staða tengingar PostgreSQL/TimescaleDB og svörunartími fyrir tímaröðargögn",
+    "graph_db": "Neo4j-gröfugagnagrunnur fyrir flóknar tengslagreiningar og netakort",
+    "system_status": "Sýnir núverandi stöðu allra kerfiseininga. Grænt = Heilbrigður, Rauður = Mál greind",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Tiltækar ferðir",
+    "completed": "lokid",
+    "finish": "Ljúka",
+    "no_tours_available": "Engar ferðir tiltækar á þessari síðu",
+    "of": "af",
+    "select_tour_description": "Veldu ferð til að læra um eiginleika vettvangsins",
+    "skip": "Sleppa",
+    "start": "tours.start",
+    "start_tour": "Byrja ferð",
+    "step": "Skref",
+    "steps": "skref"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Smáatvik",
+      "direction": "Stefna",
+      "error_title": "Titill villu",
+      "exec_time": "Keyrslutími",
+      "export": "Útflutningur",
+      "flow_graph": "Flæðigraf",
+      "high_risk": "Hár áhættu",
+      "high_risk_title": "Titill hárrar áhættu",
+      "loading": "Hleð...",
+      "max_hop": "Hámarksstökk",
+      "not_found": "Fannst ekki",
+      "report": "Skýrsla",
+      "sanctioned_title": "Titill refsiaðgerða",
+      "sanctioned_warning": "Viðvörun refsiaðgerða",
+      "source": "Uppruni",
+      "taint": "Mengun",
+      "taint_model": "Mengunarlíkan",
+      "title": "Niðurstaða",
+      "total_edges": "Heildarfjöldi jaðar",
+      "total_nodes": "Heildarfjöldi hnúta"
+    },
+    "simple": {
+      "address_ph": "Staður fyrir heimilisfang",
+      "chain_btc": "Keðja BTC",
+      "chain_eth": "Keðja ETH",
+      "chain_sol": "Keðja SOL",
+      "cluster": {
+        "clustering": "Flokkun",
+        "export_members": "Flytja út meðlimi",
+        "label": "Merki",
+        "lookup": "Leita",
+        "member_address": "Heimilisfang meðlims",
+        "members": "Meðlimir",
+        "title": "Titill flokks"
+      },
+      "depth_ph": "Staður fyrir dýpt",
+      "edges": "Jaðar",
+      "error_cluster": "Villa í flokkun",
+      "error_trace": "Villa í spora",
+      "export_paths": "Flytja út slóðir",
+      "export_targets": "Flytja út áfangastaði",
+      "high_risk": "Hár áhættu",
+      "model_fifo": "FIFO-líkan",
+      "model_haircut": "Haircut-líkan",
+      "model_proportional": "Hlutfallalíkan",
+      "nodes": "Hnútar",
+      "run": "Keyra",
+      "summary": "Samantekt",
+      "th_path": "Slóð",
+      "th_paths": "Slóðir",
+      "th_taint": "Mengun",
+      "th_target": "Áfangastaður",
+      "threshold_ph": "Staður fyrir þröskuld",
+      "title": "Einföld spora",
+      "tracing": "Sporun..."
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "Lýsing greiningar veskis",
+        "title": "Titill greiningar veskis",
+        "wip": "Greining veskis í vinnslu"
+      },
+      "export": {
+        "csv": "Flytja út í CSV",
+        "desc": "Texti lýsingar útflutnings",
+        "json": "Flytja út í JSON",
+        "pdf": "Flytja út í PDF",
+        "section_export": "Kaflaútflutningur",
+        "section_import": "Kaflaflutningur",
+        "title": "Útflutningur"
+      },
+      "header": {
+        "title": "Titill prófunar veskis"
+      },
+      "import": {
+        "add_wallet": "Bæta við veski",
+        "json": "Flytja inn frá JSON",
+        "restore_backup": "Endurheimta afrit"
+      },
+      "multisig": {
+        "desc": "Lýsing margfeldiundirskriftar",
+        "title": "Titill margfeldiundirskriftar",
+        "wip": "Margfeldiundirskrift í vinnslu"
+      },
+      "overview": {
+        "active_wallets": "Virk veski",
+        "activity": {
+          "liquidity": "Veski",
+          "nft": "NFT",
+          "receive": "Fá"
+        },
+        "month_change": "Breyting mánaðar",
+        "multisig": "Margfeldiundirskrift",
+        "new_this_week": "Nýtt í þessari viku",
+        "recent": "Nýlegt",
+        "security_grade": "Öryggisstig",
+        "security_score": "Öryggismat",
+        "status": {
+          "2fa": "2FA",
+          "active": "Virkur",
+          "backup": "Afrit",
+          "backup_available": "Afrit tiltækt",
+          "hardware": "Vélbúnaður",
+          "hw_connected": "Vélbúnaður tengdur",
+          "recovery": "Endurheimt",
+          "secured": "Verndað",
+          "title": "Staða veskis"
+        },
+        "total_volume": "Heildarhlutfall"
+      },
+      "sidebar": {
+        "title": "Hliðarborð veskis"
+      },
+      "tabs": {
+        "analytics": "Greining",
+        "crosschain": "Kross-keðja",
+        "export": "Útflutningur",
+        "multisig": "Margfeldiundirskrift",
+        "nft": "NFT",
+        "overview": "Yfirlit",
+        "transactions": "Færslur"
+      },
+      "transactions": {
+        "desc": "Lýsing færslna",
+        "export": "Útflutningur",
+        "title": "Titill færslna",
+        "wip": "Færslur í vinnslu"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Veffræðigreining"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "Rekja"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "Heimilisfang"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "Yfirlit"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "Framkvæma",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "Á netinu",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

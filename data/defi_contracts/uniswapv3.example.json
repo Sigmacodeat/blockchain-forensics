@@ -1,0 +1,4 @@
+[
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640", "label": "Uniswap V3 USDC/WETH 0.05%", "type": "pool"},
+  {"slug": "uniswap-v3", "chain": "ethereum", "address": "0x1f98431c8ad98523631ae4a59f267346ea31f984", "label": "Uniswap V3 Factory", "type": "factory"}
+]

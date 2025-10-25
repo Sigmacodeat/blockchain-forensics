@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Réserver une démo",
+      "pricing": "Voir les tarifs",
+      "subtitle": "Commencez maintenant avec une démo gratuite ou contactez notre équipe",
+      "title": "Commencez maintenant"
+    },
+    "header": {
+      "badge": "À propos",
+      "subtitle": "Nous créons la plateforme d'entreprise leader pour l'intelligence blockchain, aidant les forces de l'ordre, les VASPs et les institutions financières à se protéger contre les crimes crypto.",
+      "title": "L'avenir de la forensique blockchain"
+    },
+    "mission": {
+      "desc": "Nous rendons les transactions blockchain transparentes et traçables. Notre objectif est de lutter contre les crimes crypto et d'équiper les participants légitimes du marché avec les outils pour répondre aux exigences de conformité et minimiser les risques.",
+      "title": "Notre mission"
+    },
+    "seo": {
+      "description": "Nous construisons la plateforme d'entreprise leader pour la forensique blockchain : conformité, investigations et intelligence à l'échelle mondiale.",
+      "title": "À propos | SIGMACODE Forensique Blockchain"
+    },
+    "stats": {
+      "badge": "En chiffres",
+      "blockchains": "Blockchain",
+      "enterprise_customers": "Clients entreprises",
+      "recovered_assets": "Actifs récupérés",
+      "sla_guaranteed": "garanti par SLA",
+      "supported": "pris en charge",
+      "supported_by_tech": "alimenté par notre technologie",
+      "title": "Notre impact",
+      "uptime": "Temps de disponibilité",
+      "worldwide": "dans le monde"
+    },
+    "team": {
+      "badge": "Expertise",
+      "compliance": {
+        "desc": "Experts réglementaires pour AML/CFT et sanctions internationales",
+        "h1": "Anciens régulateurs",
+        "h2": "Spécialistes AML",
+        "h3": "Conseillers juridiques",
+        "title": "Conformité et juridique"
+      },
+      "forensics": {
+        "desc": "Anciens agents des forces de l'ordre avec des années d'expérience dans les enquêtes sur les crimes crypto",
+        "h1": "Alumni FBI/BKA",
+        "h2": "Démantèlements du darknet",
+        "h3": "Récupération d'actifs",
+        "title": "Experts forensiques"
+      },
+      "subtitle": "Experts en forensique blockchain, forces de l'ordre, fintech et apprentissage automatique",
+      "tech": {
+        "desc": "Ingénieurs de grandes entreprises technologiques avec une expertise en blockchain",
+        "h1": "Ex-FAANG",
+        "h2": "Développeurs principaux blockchain",
+        "h3": "Experts en sécurité",
+        "title": "Spécialistes technologiques"
+      },
+      "title": "Notre équipe"
+    },
+    "trust": {
+      "badge": "Confiance",
+      "ce": {
+        "desc": "Top 10 des exchanges pour l'AML et le suivi des transactions",
+        "title": "Exchanges crypto"
+      },
+      "fi": {
+        "desc": "Banques de premier rang avec exposition crypto",
+        "title": "Banques et fintechs"
+      },
+      "le": {
+        "desc": "FBI, Europol, agences nationales d'application de la loi",
+        "title": "Forces de l'ordre"
+      },
+      "reg": {
+        "desc": "Régulateurs financiers pour la surveillance des marchés",
+        "title": "Régulateurs"
+      },
+      "subtitle": "Les principales organisations à travers le monde s'appuient sur notre technologie",
+      "title": "Qui nous fait confiance"
+    },
+    "values": {
+      "badge": "Nos valeurs",
+      "compliance": {
+        "desc": "Conforme à GDPR, eIDAS, OFAC. Nous comprenons les exigences réglementaires et les intégrons.",
+        "title": "Conformité en priorité"
+      },
+      "customer": {
+        "desc": "Collaboration étroite avec les forces de l'ordre et l'industrie. Vos exigences sont notre feuille de route.",
+        "title": "Focus client"
+      },
+      "global": {
+        "desc": "Plus de 100 blockchains, support multilingue et listes de sanctions internationales couvertes.",
+        "title": "Portée globale"
+      },
+      "innovation": {
+        "desc": "Technologie de pointe : IA/ML, analyses graphiques et traitement en temps réel pour les meilleurs résultats.",
+        "title": "Innovation"
+      },
+      "team": {
+        "desc": "Une équipe interdisciplinaire d'experts forensiques, développeurs et spécialistes de la conformité.",
+        "title": "Travail d'équipe"
+      },
+      "title": "Ce qui nous motive",
+      "trust": {
+        "desc": "Sécurité de niveau entreprise avec certifications SOC2/ISO27001. Vos données sont en sécurité avec nous.",
+        "title": "Confiance et sécurité"
+      }
+    },
+    "vision": {
+      "desc": "Un monde où la technologie blockchain peut atteindre tout son potentiel—transparente, sécurisée et conforme. Nous fournissons l'infrastructure pour un avenir où les actifs numériques deviennent mainstream sans favoriser les crimes.",
+      "title": "Notre vision"
+    }
+  },
+  "accessibility": {
+    "activate": "Activer",
+    "close_dialog": "Fermer la boîte de dialogue",
+    "font_size": "Taille de la police",
+    "font_size_large": "Grande taille de police",
+    "font_size_normal": "Taille de police normale",
+    "font_size_xlarge": "Très grande taille de police",
+    "high_contrast_detected": "Contraste élevé détecté",
+    "keyboard_shortcuts": "Raccourcis clavier",
+    "navigate_backward": "Naviguer en arrière",
+    "navigate_forward": "Naviguer en avant",
+    "no_system_preferences": "Aucune préférence système spéciale détectée",
+    "reduced_motion_detected": "Mouvement réduit détecté",
+    "settings": "Paramètres d'accessibilité",
+    "skip_to_content": "Passer au contenu",
+    "system_preferences": "Préférences système"
+  },
+  "address_analysis": {
+    "title": "address_analysis.title",
+    "wip_desc": "address_analysis.wip_desc",
+    "wip_title": "address_analysis.wip_title"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "Agents IA",
+      "app_name": "Nom de l'application",
+      "cross_chain": "Cross-Chain",
+      "max_trace_depth": "Profondeur maximale de traçage",
+      "ml_clustering": "Regroupement ML",
+      "title": "Configuration",
+      "version": "Version"
+    },
+    "disabled": "✗ Désactivé",
+    "enabled": "✓ Activé",
+    "error": "Erreur",
+    "health": {
+      "connected": "✓ Connecté",
+      "disconnected": "✗ Déconnecté",
+      "error": "Échec du chargement de l'état de santé",
+      "title": "Santé de la base de données"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Récupère les transactions depuis RPC Ethereum",
+        "ingesting": "En cours d'ingestion...",
+        "placeholder": "0x...",
+        "start": "Démarrer l'ingestion",
+        "success": "✓ Ingestion démarrée en arrière-plan",
+        "title": "Ingester des données d'adresse"
+      },
+      "block": {
+        "help": "Importe toutes les transactions d'un bloc",
+        "ingesting": "En cours d'ingestion...",
+        "placeholder": "Numéro de bloc",
+        "start": "Démarrer l'importation du bloc",
+        "success": "✓ Ingestion du bloc démarrée",
+        "title": "Ingester des données de bloc"
+      }
+    },
+    "stats": {
+      "db_size": "Taille de la base de données",
+      "title": "Statistiques système",
+      "total_addresses": "Adresses totales",
+      "total_traces": "Traces totales",
+      "total_transactions": "Transactions totales"
+    },
+    "subtitle": "Surveillance, Configuration et Gestion des Données",
+    "tabs": {
+      "config": "Configuration",
+      "ingestion": "Ingestion de données",
+      "overview": "Aperçu",
+      "users": "Gestion des utilisateurs"
+    },
+    "title": "Administration système"
+  },
+  "agent": {
+    "cancel": "Annuler",
+    "error": "Une erreur est survenue.",
+    "error_unknown": "Une erreur inattendue est survenue. Veuillez réessayer.",
+    "examples": {
+      "1": "Tracer 0xABC… sur les 5 derniers sauts",
+      "2": "Vérifier les sanctions pour l'adresse 0x…",
+      "3": "Résumer les alertes à haut risque du jour",
+      "title": "Suggestions rapides"
+    },
+    "instructions": "Demandez-moi des traçages, des vérifications de sanctions, des cas ou des insights de monitoring.",
+    "loading": "Analyse en cours…",
+    "placeholder": "Décrivez votre besoin. Exemple : Tracer 0xABCD sur 3 sauts",
+    "retry": "Réessayer",
+    "send": "Envoyer",
+    "subtitle": "Copilote forensique blockchain",
+    "title": "Copilote Forensique",
+    "welcome": "Bonjour ! J'analyse wallets, traces, alertes et cas. Que souhaitez-vous explorer ?"
+  },
+  "auth": {
+    "fields": {
+      "email": "Email",
+      "organization_opt": "Organisation (facultatif)",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmer le mot de passe",
+      "username": "Nom d'utilisateur"
+    },
+    "forgot": {
+      "back_to_login": "Retour à la connexion",
+      "dev_note": "Puisqu'aucun service email n'est configuré, vérifiez les journaux du serveur pour le lien de réinitialisation.",
+      "dev_note_label": "Note (mode dev) :",
+      "error": "Échec de l'envoi",
+      "info_sent": "Si un compte avec cet email existe, un lien de réinitialisation a été envoyé.",
+      "sent": "Lien de réinitialisation envoyé !",
+      "submit": "Envoyer le lien de réinitialisation",
+      "submitting": "Envoi en cours...",
+      "subtitle": "Pas de problème ! Entrez votre email et nous vous enverrons un lien de réinitialisation.",
+      "title": "Mot de passe oublié ?",
+      "title_sent": "Email envoyé !"
+    },
+    "login": {
+      "failed": "Échec de la connexion",
+      "fill_all_fields": "Veuillez remplir tous les champs",
+      "forgot_password": "Mot de passe oublié ?",
+      "google": "Se connecter avec Google",
+      "google_retry": "Réessayer avec Google",
+      "no_account": "Pas encore de compte ?",
+      "oauth_failed": "Échec OAuth. Veuillez réessayer.",
+      "oauth_processing": "Traitement de la connexion OAuth…",
+      "or": "ou",
+      "register_now": "S'inscrire maintenant",
+      "remember_me": "Rester connecté",
+      "submit": "Se connecter",
+      "submitting": "Connexion en cours...",
+      "subtitle": "Connectez-vous pour continuer"
+    },
+    "placeholders": {
+      "email": "analyst@example.com",
+      "organization": "FBI, Chainalysis, etc.",
+      "password": "••••••••",
+      "username": "john_analyst"
+    },
+    "register": {
+      "accept": "J'accepte les",
+      "already": "Déjà inscrit ?",
+      "and": "et",
+      "failed": "Échec de l'inscription",
+      "fill_all_fields": "Veuillez remplir tous les champs obligatoires",
+      "google": "S'inscrire avec Google",
+      "login_now": "Se connecter maintenant",
+      "password_hint": "Au moins 8 caractères",
+      "password_too_short": "Le mot de passe doit comporter au moins 8 caractères",
+      "passwords_no_match": "Les mots de passe ne correspondent pas",
+      "submit": "S'inscrire",
+      "submitting": "Inscription en cours...",
+      "subtitle": "Commencez votre analyse forensique",
+      "title": "Créer un compte"
+    }
+  },
+  "common": {
+    "access_denied": "Accès refusé (admin uniquement)",
+    "account": "Compte",
+    "back": "Retour",
+    "close": "Fermer",
+    "info": "Information",
+    "language": "Langue",
+    "loading": "Chargement...",
+    "next": "Suivant",
+    "page": "Page",
+    "prev": "Précédent",
+    "recent": "Récemment utilisé",
+    "no_results": "Aucun résultat",
+    "refresh": "Actualiser",
+    "search": "Rechercher",
+    "success": "Succès",
+    "theme": "Thème",
+    "view": "Voir",
+    "wip": {
+      "title": "Bientôt disponible",
+      "desc": "Cette fonctionnalité est encore en développement.",
+      "cta": "En savoir plus"
+    },
+    "start_free": "Commencer Gratuitement",
+    "error": "Erreur",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "finish": "Terminer",
+    "open": "Ouvrir",
+    "yes": "Oui",
+    "no": "Non",
+    "confirm": "Confirmer",
+    "welcome": "Bienvenue",
+    "dashboard": "Tableau de bord",
+    "settings": "Paramètres",
+    "profile": "Profil",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "username": "Nom d'utilisateur",
+    "documents": "Documents"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "corr.controls.min_severity",
+      "refresh": "corr.controls.refresh",
+      "title": "corr.controls.title",
+      "window": "corr.controls.window",
+      "window_15m": "corr.controls.window_15m",
+      "window_1h": "corr.controls.window_1h",
+      "window_24h": "corr.controls.window_24h",
+      "window_2h": "corr.controls.window_2h",
+      "window_30m": "corr.controls.window_30m",
+      "window_5m": "corr.controls.window_5m"
+    },
+    "header": {
+      "subtitle": "corr.header.subtitle",
+      "title": "corr.header.title"
+    },
+    "overview": {
+      "active_rules": "corr.overview.active_rules",
+      "analyzed": "corr.overview.analyzed",
+      "empty": "corr.overview.empty",
+      "found": "corr.overview.found",
+      "loading": "corr.overview.loading",
+      "min_sev": "corr.overview.min_sev",
+      "rate": "corr.overview.rate",
+      "title": "corr.overview.title",
+      "window": "corr.overview.window"
+    },
+    "rules": {
+      "empty": "corr.rules.empty",
+      "footer": "corr.rules.footer",
+      "loading": "corr.rules.loading",
+      "min": "corr.rules.min",
+      "minutes": "corr.rules.minutes",
+      "required_patterns": "corr.rules.required_patterns",
+      "title": "corr.rules.title",
+      "window": "corr.rules.window"
+    },
+    "sev": {
+      "critical": "corr.sev.critical",
+      "high": "corr.sev.high",
+      "low": "corr.sev.low",
+      "medium": "corr.sev.medium"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "corr.suppressions.breakdown.by_reason",
+        "by_type": "corr.suppressions.breakdown.by_type",
+        "title": "corr.suppressions.breakdown.title"
+      },
+      "rate": "corr.suppressions.rate",
+      "title": "corr.suppressions.title",
+      "top_entity": "corr.suppressions.top_entity",
+      "total": "corr.suppressions.total"
+    },
+    "test": {
+      "add_alert": "corr.test.add_alert",
+      "alerts_label": "corr.test.alerts_label",
+      "match": "corr.test.match",
+      "no_alerts": "corr.test.no_alerts",
+      "no_match": "corr.test.no_match",
+      "pick_rule": "corr.test.pick_rule",
+      "pick_rule_ph": "corr.test.pick_rule_ph",
+      "result": "corr.test.result",
+      "run": "corr.test.run",
+      "testing": "corr.test.testing",
+      "title": "corr.test.title"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "coverage.actions.copy_from",
+      "copy_mint": "coverage.actions.copy_mint",
+      "export_csv": "coverage.actions.export_csv",
+      "export_csv_page": "coverage.actions.export_csv_page",
+      "fetch": "coverage.actions.fetch"
+    },
+    "bitcoin": {
+      "block_title": "coverage.bitcoin.block_title",
+      "compute": "coverage.bitcoin.compute",
+      "decoded": "coverage.bitcoin.decoded",
+      "edges_title": "coverage.bitcoin.edges_title",
+      "height_ph": "coverage.bitcoin.height_ph",
+      "ingest_edges": "coverage.bitcoin.ingest_edges",
+      "method_heuristic": "coverage.bitcoin.method_heuristic",
+      "method_proportional": "coverage.bitcoin.method_proportional",
+      "normalized": "coverage.bitcoin.normalized",
+      "tx_title": "coverage.bitcoin.tx_title",
+      "txid_ph": "coverage.bitcoin.txid_ph"
+    },
+    "compliance": {
+      "add_watch": "coverage.compliance.add_watch",
+      "address_ph": "coverage.compliance.address_ph",
+      "chain_ph": "coverage.compliance.chain_ph",
+      "entries": "coverage.compliance.entries",
+      "error": "coverage.compliance.error",
+      "filter_address_ph": "coverage.compliance.filter_address_ph",
+      "filter_chain_ph": "coverage.compliance.filter_chain_ph",
+      "list_watch": "coverage.compliance.list_watch",
+      "screen": "coverage.compliance.screen",
+      "title": "coverage.compliance.title",
+      "watchlist": "coverage.compliance.watchlist"
+    },
+    "ethereum": {
+      "canonical": "coverage.ethereum.canonical",
+      "copy_hash": "coverage.ethereum.copy_hash",
+      "decoded": "coverage.ethereum.decoded",
+      "error": "coverage.ethereum.error",
+      "open_etherscan": "coverage.ethereum.open_etherscan",
+      "tx_hash_ph": "coverage.ethereum.tx_hash_ph",
+      "tx_title": "coverage.ethereum.tx_title"
+    },
+    "ingest": {
+      "canonical_notice": "coverage.ingest.canonical_notice",
+      "edges_notice": "coverage.ingest.edges_notice",
+      "loading": "coverage.ingest.loading"
+    },
+    "labels": {
+      "add": "coverage.labels.add",
+      "address_ph": "coverage.labels.address_ph",
+      "category_ph": "coverage.labels.category_ph",
+      "chain_ph": "coverage.labels.chain_ph",
+      "error": "coverage.labels.error",
+      "label_ph": "coverage.labels.label_ph",
+      "lookup": "coverage.labels.lookup",
+      "title": "coverage.labels.title"
+    },
+    "monitoring": {
+      "fetch": "coverage.monitoring.fetch",
+      "key_counters": "coverage.monitoring.key_counters",
+      "title": "coverage.monitoring.title"
+    },
+    "rpc_unavailable": "coverage.rpc_unavailable",
+    "solana": {
+      "canonical_error": "coverage.solana.canonical_error",
+      "canonical_title": "coverage.solana.canonical_title",
+      "error": "coverage.solana.error",
+      "ingest_canonical": "coverage.solana.ingest_canonical",
+      "signature_ph": "coverage.solana.signature_ph",
+      "title": "coverage.solana.title",
+      "transfers": "coverage.solana.transfers"
+    },
+    "table": {
+      "actions": "coverage.table.actions",
+      "address": "coverage.table.address",
+      "amount_ui": "coverage.table.amount_ui",
+      "chain": "coverage.table.chain",
+      "created": "coverage.table.created",
+      "decimals": "coverage.table.decimals",
+      "fee": "coverage.table.fee",
+      "from": "coverage.table.from",
+      "from_vout": "coverage.table.from_vout",
+      "method": "coverage.table.method",
+      "mint": "coverage.table.mint",
+      "reason": "coverage.table.reason",
+      "to": "coverage.table.to",
+      "to_vout": "coverage.table.to_vout",
+      "value_btc": "coverage.table.value_btc"
+    },
+    "totals": {
+      "page_sum": "coverage.totals.page_sum",
+      "page_sum_btc": "coverage.totals.page_sum_btc",
+      "total_amount": "coverage.totals.total_amount",
+      "total_value_btc": "coverage.totals.total_value_btc"
+    }
+  },
+  "dashboard": {
+    "actions": "Actions",
+    "active": "Actif",
+    "administration": "Administration",
+    "alert_aging": "Vieillissement des alertes",
+    "alert_engine": "Moteur d'alertes",
+    "alert_monitoring": "Surveillance des alertes",
+    "alert_overview": "Aperçu des alertes",
+    "analyst_throughput": "Productivité des analystes",
+    "audit_kpis": "KPI d'audit",
+    "backlog": "Arriéré",
+    "bucket_placeholder": "24h,3j,7j,>7j",
+    "buckets": "Seaux",
+    "case_management": "Gestion des cas",
+    "connected": "Connecté",
+    "correlation_analysis": "Analyse de corrélation",
+    "database": "Base de données",
+    "database_response": "Réponse de la base de données",
+    "days": "Jours",
+    "disconnected": "Déconnecté",
+    "failed_actions": "Actions échouées",
+    "false_positive_rate": "Taux de faux positifs",
+    "fp": "FP",
+    "graph_db": "Base de données graphique",
+    "graph_explorer": "Explorateur graphique",
+    "healthy": "En bonne santé",
+    "inactive": "Inactif",
+    "issues": "Problèmes",
+    "last_24h": "Dernières 24h",
+    "last_update": "Dernière mise à jour",
+    "mttr": "MTTR",
+    "open_alerts": "Alertes ouvertes",
+    "open_cases": "Cas ouverts",
+    "performance": "Performance",
+    "priority_distribution": "Distribution des priorités",
+    "quick_access": "Accès rapide",
+    "recent_alerts": "Alertes récentes",
+    "response_time": "Temps de réponse",
+    "rule_effectiveness": "Efficacité des règles",
+    "sanctions_hits": "Coups de sanctions",
+    "service_status": "État du service",
+    "severity_breakdown": "Répartition par gravité",
+    "sla_breach_rate": "Taux de violation du SLA",
+    "sla_hours": "SLA (h)",
+    "status_breakdown": "Répartition par état",
+    "success_rate": "Taux de succès",
+    "suppression_rate": "Taux de suppression",
+    "system_details": "Détails du système",
+    "system_load": "Charge du système",
+    "system_overview": "Aperçu du système",
+    "system_status": "État du système",
+    "title": "Tableau de bord SIGMACODE Forensique Blockchain",
+    "total_alerts": "Alertes totales",
+    "total_cases": "Cas totaux",
+    "total_logs": "Journaux totaux",
+    "transaction_tracing": "Traçage des transactions",
+    "uptime": "Temps de disponibilité",
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "recent_activity": "Recent Activity",
+    "quick_actions": "Quick Actions",
+    "statistics": "Statistics",
+    "notifications": "Notifications",
+    "hero": {
+      "welcome": "Bienvenue",
+      "subtitle": "Voici ce qui se passe avec vos enquêtes aujourd'hui."
+    },
+    "quickActions": {
+      "title": "Actions Rapides",
+      "newTrace": "Nouveau Traçage",
+      "newCase": "Nouveau Dossier",
+      "riskCheck": "Vérification de Risque",
+      "aiAgent": "Agent IA"
+    },
+    "stats": {
+      "cases": "Active Cases",
+      "traces": "Traces Today",
+      "alerts": "Alerts",
+      "uptime": "Uptime"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytique"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Agents autonomes avec intégration LangChain et GPT-4",
+        "title": "Agents IA"
+      },
+      "badge": "IA et apprentissage automatique",
+      "desc": "Modèles d'apprentissage automatique pour la détection d'anomalies, l'évaluation des risques et des agents IA autonomes pour des enquêtes 24/7.",
+      "pattern": {
+        "desc": "Détection des schémas de fraude et analyse comportementale",
+        "title": "Reconnaissance des schémas"
+      },
+      "risk": {
+        "desc": "Évaluation des risques basée sur l'IA pour les adresses et transactions",
+        "title": "Évaluation des risques"
+      },
+      "smart_contract": {
+        "desc": "Similitude du bytecode et détection des vulnérabilités",
+        "title": "Analyse des contrats intelligents"
+      },
+      "title": "Analyse alimentée par IA"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "Détection basée sur l'IA de schémas de transactions inhabituels",
+        "title": "Détection d'anomalies"
+      },
+      "badge": "Surveillance en temps réel",
+      "custom_rules": {
+        "desc": "Règles d'alerte personnalisées utilisant un DSL de règles et un moteur de politiques",
+        "title": "Règles personnalisées"
+      },
+      "desc": "15+ règles d'alerte configurables améliorées par l'apprentissage automatique. Recevez des notifications sur les sanctions, le mélange, les transferts de haute valeur et les anomalies.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io et autres services de mélange",
+        "title": "Détection du mélange"
+      },
+      "sanctions": {
+        "desc": "Listes de sanctions OFAC/UN/UE/RU avec mises à jour quotidiennes",
+        "title": "Contrôle des sanctions"
+      },
+      "title": "Moteur d'alertes intelligent"
+    },
+    "case": {
+      "badge": "Flux de travail d'investigation",
+      "desc": "Gestion complète des enquêtes avec chaîne de custodie des preuves, signatures eIDAS et rapports admissibles en justice.",
+      "eidas": {
+        "desc": "Signatures électroniques qualifiées selon les normes de l'UE",
+        "title": "Signatures eIDAS"
+      },
+      "evidence": {
+        "desc": "Chaîne complète de custodie pour des preuves admissibles en justice",
+        "title": "Chaîne de preuves"
+      },
+      "export": {
+        "desc": "Exportation PDF/Excel avec horodatage et piste d'audit",
+        "title": "Exportation et rapports"
+      },
+      "title": "Gestion des cas et chaîne de preuves",
+      "tracking": {
+        "desc": "Gestion structurée des cas avec statuts de flux de travail",
+        "title": "Suivi des cas"
+      }
+    },
+    "cta": {
+      "demo": "Demander une démo",
+      "pricing": "Voir les tarifs",
+      "subtitle": "Commencez maintenant avec une démo gratuite",
+      "title": "Prêt pour la suite complète ?",
+      "start": "Commencer Gratuitement"
+    },
+    "graph": {
+      "badge": "Intelligence graphique",
+      "clustering": {
+        "desc": "Regroupement automatique des portefeuilles liés",
+        "title": "Regroupement des portefeuilles"
+      },
+      "community": {
+        "desc": "Détection de groupes de portefeuilles avec des intérêts communs",
+        "title": "Détection des communautés"
+      },
+      "desc": "Base de données graphique basée sur Neo4j pour le regroupement d'entités, la détection de communautés et l'investigation visuelle.",
+      "labels": {
+        "desc": "Étiquettes Exchange/VASP/DeFi avec intelligence communautaire",
+        "title": "Étiquettes d'entités"
+      },
+      "title": "Résolution d'entités et analyse de réseau",
+      "visual": {
+        "desc": "Explorateur graphique interactif pour des analyses complexes",
+        "title": "Investigation visuelle"
+      }
+    },
+    "header": {
+      "badge": "Ensemble complet de fonctionnalités",
+      "cta_try": "Essayer gratuitement",
+      "subtitle": "Du traçage des transactions à l'analyse alimentée par IA—tout ce dont vous avez besoin pour des enquêtes professionnelles",
+      "title": "La suite complète de forensique blockchain"
+    },
+    "security": {
+      "audit": {
+        "desc": "Pistes d'audit complètes pour des preuves de conformité",
+        "title": "Journaux d'audit"
+      },
+      "badge": "Sécurité d'entreprise",
+      "desc": "Sécurité de niveau entreprise avec RBAC, SSO/SAML, journaux d'audit et conformité GDPR.",
+      "privacy": {
+        "desc": "Conformité GDPR avec anonymisation PII",
+        "title": "Confidentialité des données"
+      },
+      "rbac": {
+        "desc": "Contrôle d'accès basé sur les rôles granulaire avec rôles personnalisés",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Connexion unique avec SAML 2.0 et OAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "Sécurité et conformité"
+    },
+    "seo": {
+      "description": "Forensique blockchain de niveau entreprise : Traçage multi-chaînes, agents IA, scoring de risque en temps réel et outils de conformité.",
+      "title": "Fonctionnalités | Forensique Blockchain SIGMACODE"
+    },
+    "stats": {
+      "accuracy": "Précision",
+      "ai_agents": "Agents IA",
+      "alert_rules": "Règles d'alerte",
+      "blockchains": "Blockchain",
+      "bridges": "Protocoles de pont",
+      "case_templates": "Modèles de cas",
+      "compliance": "Conformité",
+      "encryption": "Chiffrement",
+      "entities": "Entités",
+      "evidence_types": "Types de preuves",
+      "false_positives": "Faux positifs",
+      "max_depth": "Profondeur maximale de traçage",
+      "ml_models": "Modèles ML",
+      "query_time": "Temps de requête",
+      "relationships": "Relations",
+      "response_time": "Temps de réponse",
+      "security_certs": "Certifications de sécurité",
+      "uptime_sla": "SLA de disponibilité"
+    },
+    "tracing": {
+      "badge": "Traçage des transactions",
+      "bridge": {
+        "desc": "Détection automatique des ponts cross-chain et des actifs encapsulés",
+        "title": "Détection des ponts"
+      },
+      "cross_chain": {
+        "desc": "Plus de 100 blockchains prises en charge : EVM, UTXO, Solana, Cosmos et plus",
+        "title": "Traçage cross-chain"
+      },
+      "demixing": {
+        "desc": "Analyse heuristique de Tornado Cash, mixers et monnaies de confidentialité",
+        "title": "Démélange des monnaies de confidentialité"
+      },
+      "desc": "Tracez les transactions sur toutes les principales blockchains—avec détection de ponts cross-chain, démélange de monnaies de confidentialité et traçage récursif avant/arrière.",
+      "recursive": {
+        "desc": "Traçage avant/arrière avec profondeur configurable et filtres",
+        "title": "Traçage récursif"
+      },
+      "title": "Intelligence multi-chaîne des transactions"
+    },
+    "hero": {
+      "badge": "Fonctionnalités",
+      "title": "Forensique Blockchain de Niveau Entreprise",
+      "subtitle": "Tous les outils dont vous avez besoin pour enquêter sur la cybercriminalité, assurer la conformité et protéger votre entreprise."
+    }
+  },
+  "footer": {
+    "blog": "Blog",
+    "careers": "Carrières",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "imprint": "Mentions légales",
+    "legal": "Légal",
+    "privacy": "Confidentialité",
+    "product": "Produit",
+    "request_demo": "Demander une démo",
+    "rights_reserved": "Tous droits réservés.",
+    "security": "Sécurité",
+    "tagline": "IA Blockchain d'entreprise pour la conformité et les enquêtes – sécurisée, rapide, admissible en justice.",
+    "terms": "Conditions"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Nœuds actifs",
+      "avg_degree": "Degré moyen",
+      "density": "Densité du réseau",
+      "total_edges": "Arêtes totales",
+      "total_nodes": "Nœuds totaux"
+    },
+    "centrality": {
+      "taint": "Taint",
+      "title": "Analyse de centralité"
+    },
+    "communities": {
+      "algorithm": "Algorithme",
+      "avg_size": "Taille moyenne",
+      "avg_taint": "Taint moyen",
+      "empty": "Cliquez ",
+      "label_propagation": "Propagation d'étiquettes",
+      "loading": "Détection des communautés...",
+      "louvain": "Louvain (Modularité)",
+      "title": "Détection des communautés",
+      "total": "Communautés totales"
+    },
+    "degree": {
+      "title": "Distribution des degrés",
+      "x": "Degré",
+      "y": "Nombre"
+    },
+    "filters": {
+      "cross_chain": "Cross-Chain (couche de pont)",
+      "from": "À partir de (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Jusqu'à (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Analyses avancées de réseau et détection de schémas",
+      "title": "Analyses graphiques et intelligence de réseau"
+    },
+    "hubs": {
+      "in": "Entrant",
+      "out": "Sortant",
+      "title": "Centres de réseau (nœuds à haut degré)",
+      "total": "Total"
+    },
+    "loading": {
+      "stats": "Chargement des statistiques..."
+    },
+    "patterns": {
+      "circle_length": "Longueur du cercle",
+      "detected": "Cercles détectés",
+      "empty_desc": "C'est un bon signe - aucun cercle évident de blanchiment d'argent trouvé",
+      "empty_title": "Aucun schéma circulaire détecté",
+      "high_risk": "Risque élevé",
+      "hops": "sauts",
+      "loading": "Détection des schémas...",
+      "more_addresses": "plus d'adresses",
+      "risk_score": "Score de risque",
+      "title": "Schémas circulaires (blanchiment potentiel d'argent)",
+      "total": "Total",
+      "total_value": "Valeur totale",
+      "tx_path": "Chemin de transaction :"
+    },
+    "tabs": {
+      "communities": "Détection des communautés",
+      "overview": "Aperçu du réseau",
+      "patterns": "Détection des schémas"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "investigator.actions.cluster",
+      "clustering": "investigator.actions.clustering",
+      "pause_timeline": "investigator.actions.pause_timeline",
+      "play_timeline": "investigator.actions.play_timeline",
+      "title": "investigator.actions.title"
+    },
+    "connected": {
+      "taint": "investigator.connected.taint",
+      "title": "investigator.connected.title",
+      "tx": "investigator.connected.tx"
+    },
+    "graph": {
+      "connections": "investigator.graph.connections",
+      "enter_address": "investigator.graph.enter_address",
+      "loading": "investigator.graph.loading",
+      "nodes": "investigator.graph.nodes",
+      "title": "investigator.graph.title"
+    },
+    "header": {
+      "subtitle": "investigator.header.subtitle",
+      "title": "investigator.header.title"
+    },
+    "path": {
+      "bridges": "investigator.path.bridges",
+      "hops": "investigator.path.hops",
+      "risk_score": "investigator.path.risk_score",
+      "title": "investigator.path.title",
+      "total_value": "investigator.path.total_value"
+    },
+    "search": {
+      "explore": "investigator.search.explore",
+      "placeholder": "investigator.search.placeholder",
+      "title": "investigator.search.title"
+    },
+    "settings": {
+      "from": "investigator.settings.from",
+      "hops_1": "investigator.settings.hops_1",
+      "hops_2": "investigator.settings.hops_2",
+      "hops_3": "investigator.settings.hops_3",
+      "hops_4": "investigator.settings.hops_4",
+      "hops_5": "investigator.settings.hops_5",
+      "include_bridges": "investigator.settings.include_bridges",
+      "max_hops": "investigator.settings.max_hops",
+      "title": "investigator.settings.title",
+      "to": "investigator.settings.to"
+    },
+    "timeline": {
+      "empty": "investigator.timeline.empty",
+      "events": "investigator.timeline.events",
+      "risk": "investigator.timeline.risk",
+      "select_address": "investigator.timeline.select_address",
+      "title": "investigator.timeline.title",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Demander une démo",
+      "pricing": "Voir les tarifs"
+    },
+    "cta2": {
+      "demo": "Demander une démo gratuite",
+      "pricing": "Voir les tarifs",
+      "subtitle": "Commencez maintenant avec une démo gratuite et découvrez l'avenir de la forensique blockchain",
+      "title": "Prêt pour l'intelligence blockchain d'entreprise ?"
+    },
+    "features": {
+      "badge": "Fonctionnalités",
+      "subtitle": "Outils de niveau entreprise pour la conformité, les enquêtes et la gestion des risques",
+      "title": "Tout ce dont vous avez besoin pour la forensique blockchain"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Forensique Blockchain",
+      "point1": "100+ Blockchain",
+      "point2": "Sanctions OFAC/UN/UE",
+      "point3": "Surveillance en temps réel",
+      "subtitle": "Conformité alimentée par IA, enquêtes et suivi des risques—en temps réel et de niveau entreprise.",
+      "title": "Intelligence Blockchain d'Entreprise"
+    },
+    "pricing": {
+      "badge": "Tarifs",
+      "subtitle": "De gratuit à entreprise—commencez maintenant",
+      "title": "Plans flexibles pour toutes les tailles d'entreprise",
+      "view_all": "Voir tous les tarifs"
+    },
+    "seo": {
+      "description": "Conformité alimentée par IA, enquêtes et suivi des risques—en temps réel et de niveau entreprise. SIGMACODE Forensique Blockchain.",
+      "title": "SIGMACODE | Intelligence Blockchain d'Entreprise"
+    },
+    "tech": {
+      "badge": "Technologie",
+      "subtitle": "Infrastructure de niveau entreprise pour une performance et une sécurité maximales",
+      "title": "Pile technologique de pointe"
+    },
+    "use_cases": {
+      "badge": "Cas d'utilisation",
+      "subtitle": "Des forces de l'ordre aux fintechs",
+      "title": "La bonne solution pour chaque cas d'utilisation"
+    }
+  },
+  "layout": {
+    "main_navigation": "Navigation principale",
+    "quick_search_title": "Recherche rapide (Ctrl/⌘+K)",
+    "quick_search_placeholder": "Recherche rapide...",
+    "quick_search_hint": "Astuce: Cmd/Ctrl+K",
+    "skip_to_content": "Aller au contenu",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "wizard": {
+    "title": "Assistant Forensique Guidé",
+    "desc": "Cette boîte de dialogue vous guide à travers une action forensique en plusieurs étapes. Utilisez Tab pour naviguer entre les éléments, ESC pour fermer.",
+    "choose_action": "Choisir une action",
+    "trace": {
+      "title": "Traçage",
+      "desc": "Analyser une adresse ou transaction"
+    },
+    "case": {
+      "title": "Créer un Dossier",
+      "desc": "Créer un nouveau dossier avec priorité"
+    },
+    "sanctions": {
+      "title": "Vérification Sanctions",
+      "desc": "Vérifier OFAC/ONU/UE/UK etc."
+    },
+    "labels": {
+      "address_opt": "Adresse (optionnel)",
+      "tx_opt": "Hash de Transaction (optionnel)",
+      "time_range": "Période :",
+      "case_title": "Titre du Dossier",
+      "priority": "Priorité :",
+      "notes_opt": "Notes / Contexte (optionnel)",
+      "address": "Adresse"
+    },
+    "placeholders": {
+      "address": "ex. 0x... ou bc1...",
+      "tx": "ex. 0x...",
+      "case_title": "ex. Enquête Exploit de Bridge",
+      "notes": "ex. Lié aux alertes #123/#124"
+    },
+    "review": {
+      "title": "Révision",
+      "hint": "L'assistant exécutera automatiquement la chaîne d'outils appropriée."
+    },
+    "execute": "Exécuter",
+    "errors": {
+      "address_invalid": "L'adresse semble invalide. Attendu EVM (0x...) ou Bech32 (bc1...).",
+      "tx_invalid": "Le hash de transaction semble invalide (doit avoir 66 caractères, 0x... hex).",
+      "case_title_required": "Le titre est requis."
+    },
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Erreur lors de la récupération de la réponse. Veuillez réessayer.",
+    "loading_agent": "L'agent analyse...",
+    "assistant_title": "Assistant Forensique",
+    "powered_by_ai": "Propulsé par IA",
+    "online": "En ligne",
+    "empty_title": "Comment puis-je aider ?",
+    "empty_desc": "Posez des questions forensiques ou utilisez les actions rapides ci-dessous",
+    "command_palette": {
+      "title": "Commandes Forensiques",
+      "desc": "Choisissez un modèle ou appuyez sur ESC pour fermer. Utilisez Tab pour naviguer."
+    },
+    "input_placeholder": "Poser une question forensique... (Ctrl+K pour les commandes)",
+    "input_aria_label": "Entrer une commande forensique",
+    "help_text": "Appuyez sur Ctrl ou Cmd et K pour ouvrir la palette de commandes. Appuyez sur Entrée pour envoyer le message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 Traçage Haut-Risque",
+        "query": "Montrez-moi toutes les transactions à haut risque des 7 derniers jours avec un score de risque supérieur à 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Activité Mixer",
+        "query": "Trouvez toutes les interactions Tornado Cash et mixer des dernières 24 heures"
+      },
+      "daily_summary": {
+        "label": "📊 Résumé Quotidien",
+        "query": "Résumez l'activité forensique du jour : transactions analysées, alertes déclenchées, dossiers créés"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Vérification Sanctions",
+        "query": "Montrez-moi tous les résultats de sanctions OFAC de cette semaine"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Transferts Bridge",
+        "query": "Listez les transferts bridge cross-chain récents de valeur élevée (>100k$)"
+      },
+      "active_cases": {
+        "label": "📁 Dossiers Actifs",
+        "query": "Montrez-moi tous les dossiers ouverts qui me sont assignés avec priorité haute ou critique"
+      }
+    },
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "cookie": {
+    "banner_aria": "Bannière de cookies",
+    "title": "Cookies & Confidentialité",
+    "title_short": "Cookies",
+    "description": "Nous utilisons des cookies essentiels pour faire fonctionner ce site. Des cookies d'analyse optionnels nous aident à comprendre l'utilisation et à améliorer le site. Vous pouvez accepter tous les cookies ou n'autoriser que les nécessaires. Vous pouvez modifier votre choix à tout moment dans les paramètres.",
+    "privacy_link": "Politique de confidentialité",
+    "terms_link": "Conditions d'utilisation",
+    "imprint_link": "Mentions légales",
+    "only_necessary": "Uniquement nécessaires",
+    "accept_all": "Tout accepter",
+    "preferences": "Préférences",
+    "save_preferences": "Enregistrer les préférences",
+    "manage": "Paramètres des cookies",
+    "analytics_title": "Cookies d'analyse",
+    "analytics_desc": "Nous aide à comprendre l'utilisation pour améliorer le site.",
+    "marketing_title": "Cookies marketing",
+    "marketing_desc": "Permet des contenus et offres personnalisés.",
+    "all_optional_title": "Activer tous les optionnels",
+    "all_optional_desc": "Active les cookies d'analyse et de marketing."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Fermer",
+        "close_title": "Fermer l'alerte",
+        "copy_alert_id_title": "Copier l'ID de l'alerte",
+        "copy_entity": "Copier l'entité",
+        "copy_entity_id_title": "Copier l'ID de l'entité",
+        "copy_id": "Copier l'ID",
+        "copy_rule": "Copier la règle",
+        "copy_rule_id_title": "Copier l'ID de la règle",
+        "details": "Détails",
+        "details_title": "Afficher les détails",
+        "reset": "Réinitialiser"
+      },
+      "audit": {
+        "empty": "Aucun événement",
+        "title": "Piste d'audit"
+      },
+      "csv": {
+        "export_all": "Export CSV (tous)",
+        "export_all_title": "Exporter un CSV de toutes les lignes filtrées (serveur)",
+        "export_page": "Export CSV (page)",
+        "export_page_title": "Exporter un CSV de la page actuelle",
+        "no_filtered_data": "Aucune donnée filtrée",
+        "no_page_data": "Aucune donnée sur cette page"
+      },
+      "empty": "Aucune alerte trouvée",
+      "filters": {
+        "all": "(tous)",
+        "search_label": "Rechercher (rule_id / entity_id)",
+        "search_placeholder": "Rechercher...",
+        "severity": "Gravité",
+        "source": "Source",
+        "source_persisted": "Persistant (KYT)",
+        "source_realtime": "En temps réel (Moteur d'alertes)",
+        "status": "Statut"
+      },
+      "kpi": {
+        "event_time_set": "Définir l'heure de l'événement (first_seen_at)",
+        "event_time_title": "Heure de l'événement = first_seen_at",
+        "false_positive": "Marquer comme faux positif",
+        "title": "Annotations KPI",
+        "true_positive": "Marquer comme vrai positif"
+      },
+      "loading": "Chargement des alertes...",
+      "modal": {
+        "alert_id": "ID de l'alerte",
+        "chain": "Chaîne",
+        "context": "Contexte",
+        "entity": "Entité",
+        "rule_id": "ID de la règle",
+        "severity": "Gravité",
+        "title": "Détails de l'alerte"
+      },
+      "pagination": {
+        "next": "Suivant",
+        "page": "Page",
+        "prev": "Précédent"
+      },
+      "severity": {
+        "critical": "critique",
+        "high": "élevé",
+        "low": "faible",
+        "medium": "moyen"
+      },
+      "status": {
+        "assigned": "attribué",
+        "closed": "fermé",
+        "open": "ouvert",
+        "snoozed": "reporté"
+      },
+      "subtitle": "Règles en temps réel et alertes persistantes (KYT)",
+      "table": {
+        "first": "premier",
+        "last": "dernier"
+      },
+      "title": "Surveillance des alertes",
+      "toasts": {
+        "copy_failed": "Échec de la copie",
+        "disposition_failed": "Échec de la définition de la disposition",
+        "disposition_set": "Disposition définie",
+        "entity_copied": "Entité copiée",
+        "event_time_failed": "Échec de la définition de l'heure de l'événement",
+        "event_time_set": "Heure de l'événement définie",
+        "export_failed": "Échec de l'exportation",
+        "export_started": "Exportation démarrée",
+        "id_copied": "ID copié",
+        "rule_copied": "Règle copiée"
+      }
+    }
+  },
+  "navigation": {
+    "about": "À propos",
+    "analytics": "Analytique",
+    "close_menu": "Fermer la navigation",
+    "dashboard": "Tableau de bord",
+    "features": "Fonctionnalités",
+    "home": "Accueil",
+    "logout": "Déconnexion",
+    "open_menu": "Ouvrir la navigation",
+    "pricing": "Tarifs",
+    "settings": "Paramètres",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Rafraîchir"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Cœurs",
+        "title": "Utilisation CPU"
+      },
+      "db": {
+        "connected": "Connecté",
+        "disconnected": "Déconnecté",
+        "response": "Réponse",
+        "title": "Base de données"
+      },
+      "memory": {
+        "available": "disponible",
+        "title": "Utilisation mémoire"
+      },
+      "system_status": {
+        "healthy": "En bonne santé",
+        "issues": "Problèmes",
+        "title": "État du système",
+        "uptime": "Temps de disponibilité"
+      }
+    },
+    "common": {
+      "no": "Non",
+      "yes": "Oui"
+    },
+    "header": {
+      "last_refresh": "Dernier rafraîchissement",
+      "subtitle": "Surveillance complète de la performance du système, des métriques et des SLO",
+      "title": "Tableau de bord Performance et Observabilité"
+    },
+    "metrics": {
+      "empty": "Aucune donnée métrique disponible",
+      "loading": "Chargement des métriques...",
+      "max": "Max",
+      "measurements": "Mesures",
+      "min": "Min",
+      "title": "Métriques de performance (1 heure)",
+      "trend": "Tendance"
+    },
+    "recent_alerts": {
+      "empty": "Aucune alerte récente",
+      "title": "Alertes de performance récentes"
+    },
+    "services": {
+      "active": "Actif",
+      "inactive": "Inactif",
+      "title": "État des services"
+    },
+    "slo": {
+      "empty": "Aucune donnée SLO disponible",
+      "loading": "Chargement des SLO...",
+      "threshold": "Seuil",
+      "title": "Conformité SLO",
+      "violations": "Violations"
+    },
+    "system_details": {
+      "database": "Base de données",
+      "db_connected": "Connecté",
+      "db_type": "Type",
+      "debug": "Débogage",
+      "environment": "Environnement",
+      "log_level": "Niveau de journalisation",
+      "mode": "Mode",
+      "platform": "Plateforme",
+      "python_version": "Version Python",
+      "response_time": "Temps de réponse",
+      "system_info": "Informations système",
+      "title": "Détails du système",
+      "version": "Version"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Blockchain supplémentaires",
+        "i2": "Places utilisateur supplémentaires",
+        "i3": "Sanctions Premium (listes étendues)",
+        "i4": "Formats d'exportation avancés",
+        "i5": "Support prioritaire",
+        "i6": "White-Label (Entreprise)",
+        "title": "Options disponibles"
+      },
+      "badge": "Options flexibles",
+      "overage": {
+        "extra_credits": "Crédits supplémentaires",
+        "monthly_cap": "Plafond mensuel",
+        "note": "Vous utilisez plus que votre quota ? Pas de problème — le dépassement est calculé automatiquement.",
+        "title": "Tarification des dépassements"
+      },
+      "subtitle": "Étendez votre plan selon vos besoins",
+      "title": "Options et dépassements"
+    },
+    "card": {
+      "custom": "Personnalisé",
+      "desc_business": "Pour les grandes équipes",
+      "desc_community": "Pour les amateurs et open source",
+      "desc_enterprise": "Pour les entreprises et régulateurs",
+      "desc_pro": "Pour les entreprises en croissance",
+      "desc_starter": "Pour les petites équipes",
+      "per_month": "par mois",
+      "popular": "Le plus populaire",
+      "popular_label": "Le plus populaire",
+      "save_year": "Économisez ${{amount}}/an"
+    },
+    "cta": {
+      "active_plan": "✓ Plan actif",
+      "contact_sales": "Contacter les ventes",
+      "demo": "Demander une démo",
+      "more_about": "En savoir plus sur nous",
+      "saving": "Économie en cours…",
+      "set_tenant_plan": "Définir comme plan tenant",
+      "start_now": "Commencer maintenant",
+      "subscribe": "S'abonner maintenant",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Plan actuel",
+    "enterprise": {
+      "card_desc": "Pour les entreprises et régulateurs",
+      "subtitle": "Tarification personnalisée, SLA, intégrations, on-prem/VPC",
+      "title": "Pour les institutions financières et régulateurs"
+    },
+    "faq": {
+      "subtitle": "Contactez notre équipe de ventes pour une démo personnalisée",
+      "title": "Des questions ?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchain",
+      "cases": "Cas",
+      "credits": "Crédits/mois",
+      "priority": "Priorité",
+      "users": "Utilisateurs"
+    },
+    "header": {
+      "badge": "Tarification flexible",
+      "subtitle": "Des outils communautaires gratuits aux entreprises avec white-label. Commencez aujourd'hui et évoluez avec votre croissance.",
+      "title": "Le bon plan pour chaque équipe"
+    },
+    "included": {
+      "analytics": {
+        "i1": "Agents IA",
+        "i2": "Analyses graphiques",
+        "i3": "Évaluation des risques",
+        "i4": "Modèles ML",
+        "title": "Analyses avancées"
+      },
+      "badge": "Qu'est-ce qui est inclus ?",
+      "performance": {
+        "i1": "Alertes en temps réel",
+        "i2": "Accès API",
+        "i3": "File d'attente prioritaire",
+        "i4": "99,9 % de disponibilité",
+        "title": "Performance"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Journaux d'audit",
+        "i4": "Conformité GDPR",
+        "title": "Sécurité et conformité"
+      },
+      "team": {
+        "i1": "Multi-utilisateur",
+        "i2": "Gestion des cas",
+        "i3": "Chaîne de preuves",
+        "i4": "Collaboration",
+        "title": "Fonctionnalités d'équipe"
+      },
+      "title": "Tous les fonctionnalités en un coup d'œil"
+    },
+    "more": "plus",
+    "seo": {
+      "description": "Tarifs équitables et transparents pour la forensique blockchain. Du plan Community gratuit à Enterprise. Annulez à tout moment.",
+      "title": "Tarifs | Forensique Blockchain SIGMACODE"
+    },
+    "smb": {
+      "subtitle": "Plans self-service pour startups et mid-market",
+      "title": "Pour les équipes et les entreprises"
+    },
+    "toggle": {
+      "annual": "Annuel",
+      "monthly": "Mensuel",
+      "save": "Économisez {{pct}}%"
+    },
+    "top_features": "FONCTIONNALITÉS PRINCIPALES",
+    "hero": {
+      "badge": "Tarifs",
+      "title": "Tarifs Simples et Transparents",
+      "subtitle": "Choisissez le plan qui correspond à vos besoins. Tous les plans incluent les fonctionnalités principales. Mise à niveau à tout moment."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Rafraîchir"
+    },
+    "audit": {
+      "empty": "Aucune entrée de piste d'audit disponible",
+      "loading": "Chargement de la piste d'audit...",
+      "title": "Entrées récentes de la piste d'audit",
+      "user": "Utilisateur",
+      "view_all": "Voir tout →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Intégrité de la piste d'audit"
+      },
+      "failed_logins": {
+        "title": "Tentatives de connexion échouées"
+      },
+      "gdpr": {
+        "title": "Conformité GDPR"
+      },
+      "security_incidents": {
+        "title": "Incidents de sécurité"
+      }
+    },
+    "common": {
+      "implemented": "Mis en œuvre",
+      "not_implemented": "Non mis en œuvre",
+      "unknown": "Inconnu"
+    },
+    "compliance": {
+      "anonymization": "Anonymisation",
+      "certifications": "Certifications",
+      "consent_management": "Gestion du consentement",
+      "data_portability": "Portabilité des données",
+      "empty": "Aucune donnée de conformité disponible",
+      "encryption": "Chiffrement",
+      "loading": "Chargement de l'état de conformité...",
+      "right_to_erasure": "Droit à l'effacement",
+      "title": "État de conformité GDPR"
+    },
+    "header": {
+      "last_refresh": "Dernier rafraîchissement",
+      "subtitle": "Pistes d'audit, conformité GDPR et surveillance de la sécurité",
+      "title": "Tableau de bord Sécurité et Conformité"
+    },
+    "quick_actions": {
+      "audit_export": "Exportation d'audit",
+      "compliance_report": "Rapport de conformité",
+      "gdpr_status": "État GDPR",
+      "incident_report": "Rapport d'incident",
+      "integrity_check": "Vérification d'intégrité",
+      "security_scan": "Scan de sécurité",
+      "title": "Actions Sécurité et Conformité"
+    },
+    "retention": {
+      "days": "Jours",
+      "empty": "Aucune donnée de rétention disponible",
+      "title": "Conformité de rétention des données",
+      "violations": {
+        "count": "Violations",
+        "days_old": "jours anciens",
+        "more": "et",
+        "more_suffix": "plus",
+        "title": "Violations de rétention"
+      }
+    },
+    "security": {
+      "compliance_status": "État de conformité",
+      "empty": "Aucune donnée de sécurité disponible",
+      "failed_logins": "Connexions échouées",
+      "incidents": "Incidents de sécurité",
+      "rate_limited_ips": "IP limitées par taux",
+      "suspicious_activities": "Activités suspectes",
+      "title": "Aperçu de la sécurité"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Alertes ouvertes par tranches d'âge (ex. 24h, 3j, 7j, >7j)",
+    "alert_engine": "Surveillance en temps réel des transactions et schémas suspects avec des algorithmes ML",
+    "alert_overview": "Aperçu de toutes les alertes de sécurité actives et de leur gravité (Critique/Élevé/Moyen/Faible)",
+    "analyst_throughput": "Nombre de cas fermés par analyste dans la fenêtre sélectionnée",
+    "backlog": "Total des alertes ouvertes (non reconnues) et des cas ouverts",
+    "database": "État de la connexion PostgreSQL/TimescaleDB et temps de réponse pour les données de séries temporelles",
+    "graph_db": "Base de données graphique Neo4j pour l'analyse des relations complexes et la cartographie des réseaux",
+    "system_status": "Affiche l'état actuel de tous les composants du système. Vert = En bonne santé, Rouge = Problèmes détectés",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Tours disponibles",
+    "completed": "terminé",
+    "finish": "Terminer",
+    "no_tours_available": "Aucun tour disponible pour cette page",
+    "of": "sur",
+    "select_tour_description": "Choisissez un tour pour découvrir les fonctionnalités de la plateforme",
+    "skip": "Passer",
+    "start": "tours.start",
+    "start_tour": "Démarrer le tour",
+    "step": "Étape",
+    "steps": "étapes"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Détails",
+      "direction": "Direction",
+      "error_title": "Erreur",
+      "exec_time": "Temps d'exécution",
+      "export": "Exporter",
+      "flow_graph": "Graphe de flux",
+      "high_risk": "Risque élevé",
+      "high_risk_title": "Nœuds à haut risque",
+      "loading": "Chargement des résultats...",
+      "max_hop": "Saut maximum",
+      "not_found": "Aucune donnée trouvée",
+      "report": "Rapport",
+      "sanctioned_title": "Entités sous sanctions",
+      "sanctioned_warning": "Attention : entités sous sanctions détectées",
+      "source": "Source",
+      "taint": "Taint",
+      "taint_model": "Modèle de taint",
+      "title": "Résultats du traçage",
+      "total_edges": "Arêtes totales",
+      "total_nodes": "Nœuds totaux"
+    },
+    "simple": {
+      "address_ph": "0x... ou adresse",
+      "chain_btc": "Bitcoin",
+      "chain_eth": "Ethereum",
+      "chain_sol": "Solana",
+      "cluster": {
+        "clustering": "Regroupement en cours...",
+        "export_members": "Exporter les membres",
+        "label": "Étiquette",
+        "lookup": "Rechercher",
+        "member_address": "Adresse membre",
+        "members": "Membres",
+        "title": "Cluster d'adresses"
+      },
+      "depth_ph": "Profondeur (1-5)",
+      "edges": "Arêtes",
+      "error_cluster": "Erreur de regroupement",
+      "error_trace": "Erreur de traçage",
+      "export_paths": "Exporter les chemins",
+      "export_targets": "Exporter les cibles",
+      "high_risk": "Risque élevé",
+      "model_fifo": "FIFO",
+      "model_haircut": "Haircut",
+      "model_proportional": "Proportionnel",
+      "nodes": "Nœuds",
+      "run": "Exécuter",
+      "summary": "Résumé",
+      "th_path": "Seuil chemin",
+      "th_paths": "Seuils chemins",
+      "th_taint": "Seuil taint",
+      "th_target": "Seuil cible",
+      "threshold_ph": "Seuil (0-100)",
+      "title": "Traçage simple",
+      "tracing": "Traçage en cours..."
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "wallet.test.analytics.desc",
+        "title": "wallet.test.analytics.title",
+        "wip": "wallet.test.analytics.wip"
+      },
+      "export": {
+        "csv": "wallet.test.export.csv",
+        "desc": "wallet.test.export.desc",
+        "json": "wallet.test.export.json",
+        "pdf": "wallet.test.export.pdf",
+        "section_export": "wallet.test.export.section_export",
+        "section_import": "wallet.test.export.section_import",
+        "title": "wallet.test.export.title"
+      },
+      "header": {
+        "title": "wallet.test.header.title"
+      },
+      "import": {
+        "add_wallet": "wallet.test.import.add_wallet",
+        "json": "wallet.test.import.json",
+        "restore_backup": "wallet.test.import.restore_backup"
+      },
+      "multisig": {
+        "desc": "wallet.test.multisig.desc",
+        "title": "wallet.test.multisig.title",
+        "wip": "wallet.test.multisig.wip"
+      },
+      "overview": {
+        "active_wallets": "Portefeuilles actifs",
+        "activity": {
+          "liquidity": "wallet.test.overview.activity.liquidity",
+          "nft": "wallet.test.overview.activity.nft",
+          "receive": "wallet.test.overview.activity.receive"
+        },
+        "month_change": "Changement mensuel",
+        "multisig": "wallet.test.overview.multisig",
+        "new_this_week": "Nouveaux cette semaine",
+        "recent": "Récents",
+        "security_grade": "Note de sécurité",
+        "security_score": "Score de sécurité",
+        "status": {
+          "2fa": "wallet.test.overview.status.2fa",
+          "active": "wallet.test.overview.status.active",
+          "backup": "wallet.test.overview.status.backup",
+          "backup_available": "wallet.test.overview.status.backup_available",
+          "hardware": "wallet.test.overview.status.hardware",
+          "hw_connected": "wallet.test.overview.status.hw_connected",
+          "recovery": "wallet.test.overview.status.recovery",
+          "secured": "wallet.test.overview.status.secured",
+          "title": "wallet.test.overview.status.title"
+        },
+        "total_volume": "Volume total"
+      },
+      "sidebar": {
+        "title": "wallet.test.sidebar.title"
+      },
+      "tabs": {
+        "analytics": "wallet.test.tabs.analytics",
+        "crosschain": "wallet.test.tabs.crosschain",
+        "export": "wallet.test.tabs.export",
+        "multisig": "wallet.test.tabs.multisig",
+        "nft": "wallet.test.tabs.nft",
+        "overview": "wallet.test.tabs.overview",
+        "transactions": "wallet.test.tabs.transactions"
+      },
+      "transactions": {
+        "desc": "wallet.test.transactions.desc",
+        "export": "wallet.test.transactions.export",
+        "title": "wallet.test.transactions.title",
+        "wip": "wallet.test.transactions.wip"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Analyse web"
+  },
+  "onboarding": {
+    "back": "Retour",
+    "close": "Fermer",
+    "finish": "Terminer",
+    "next": "Suivant",
+    "open": "Ouvrir dialogue",
+    "skip": "Ignorer visite",
+    "restart": "Redémarrer visite",
+    "restart_short": "Redémarrer visite",
+    "welcome_title": "Bienvenue sur Blockchain Forensics !",
+    "welcome_message": "Souhaitez-vous faire une visite rapide du tableau de bord ?",
+    "maybe_later": "Plus tard",
+    "start_tour": "Démarrer visite"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "about": "À propos",
+    "pricing": "Tarifs",
+    "search": "Recherche",
+    "dashboards": "Tableaux de bord",
+    "monitoring": "Surveillance",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "impressum": "Mentions légales"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

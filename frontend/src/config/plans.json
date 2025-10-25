@@ -1,0 +1,84 @@
+{
+  "currency": "USD",
+  "annual_discount_percent": 20,
+  "overage": { "price_per_1000_credits_usd": 25, "monthly_cap_enabled": true },
+  "addons": {
+    "extra_credits_per_1000_usd": 25,
+    "extra_chains_bundle_5_usd": 199,
+    "extra_seat_starter_pro_usd": 49,
+    "extra_seat_business_usd": 99,
+    "extra_seat_plus_usd": 199,
+    "sanctions_premium_usd": 299,
+    "advanced_exports_from_usd": 149,
+    "priority_support_usd": 499,
+    "white_label_usd": 1999
+  },
+  "plans": [
+    {
+      "id": "community",
+      "name": "Community",
+      "audience": "smb",
+      "highlight_on_landing": false,
+      "monthly_price_usd": 0,
+      "yearly_price_usd": 0,
+      "quotas": { "chains": 3, "seats": 1, "credits_monthly": 1000, "addresses": 5, "cases": 1, "alerts": 1, "api_rate": "very_low", "traces_monthly": 100 },
+      "features": { "Blockchains": "BTC, ETH, MATIC", "Transaction Tracing": "Basic (100/mo)", "Risk Scoring": "Standard", "Sanctions Screening": "OFAC Only", "CSV Export": "Small files", "Dashboards": "Basic", "Community Support": "Forum" },
+      "sla": { "type": "community", "response_hours": null }
+    },
+    {
+      "id": "starter",
+      "name": "Starter",
+      "audience": "smb",
+      "highlight_on_landing": true,
+      "monthly_price_usd": 149,
+      "yearly_price_usd": 1430,
+      "quotas": { "chains": 5, "seats": 2, "credits_monthly": 10000, "addresses": 50, "cases": 10, "alerts": 10, "api_rate": "low", "traces_monthly": 1000 },
+      "features": { "Blockchains": "BTC, ETH, BNB, MATIC, SOL", "Transaction Tracing": "Enhanced (1k/mo)", "Label Enrichment": "8,500+ Entities", "Sanctions Screening": "OFAC + UN + EU", "KYT Monitoring": "Basic Presets", "Team Collaboration": "2 Users", "Webhooks": "Limited", "PDF Reports": "Standard", "Email Support": "72h" },
+      "sla": { "type": "email", "response_hours": 72 }
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "audience": "smb",
+      "highlight_on_landing": true,
+      "monthly_price_usd": 999,
+      "yearly_price_usd": 9590,
+      "quotas": { "chains": 10, "seats": 5, "credits_monthly": 50000, "addresses": 500, "cases": 50, "alerts": 100, "api_rate": "medium", "queue_priority": "medium", "traces_monthly": 5000 },
+      "features": { "Blockchains": "10 Top Chains", "AI Agent": "24/7 Assistant", "Transaction Tracing": "Advanced (5k/mo)", "Graph Investigator": "Interactive Views", "Case Management": "Full", "Entity Resolution": "Basic Clustering", "Sanctions Screening": "All 9 Jurisdictions", "KYT Playbooks": "Editable", "Team Collaboration": "5 Users", "PDF Reports": "Custom Branding", "Scheduled Reports": true, "Audit Logs": "Basic", "API Access": "10k req/day", "Email Support": "48h" },
+      "sla": { "type": "email", "response_hours": 48 }
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "audience": "smb",
+      "highlight_on_landing": false,
+      "monthly_price_usd": 2999,
+      "yearly_price_usd": 28790,
+      "quotas": { "chains": 20, "seats": 20, "credits_monthly": 200000, "addresses": 2500, "cases": 200, "alerts": 500, "api_rate": "high", "queue_priority": "high", "traces_monthly": 20000 },
+      "features": { "Blockchains": "20 Chains (incl. L2s)", "AI Agent": "Unlimited 24/7", "Transaction Tracing": "Advanced (20k/mo)", "Graph Analytics": "Full Export", "Advanced KYT Screening": "Real-Time", "Advanced Clustering": "100+ Heuristics", "Travel Rule": "VASP Compliance", "Custom Risk Policies": true, "Team Collaboration": "20 Users", "RBAC & Permissions": true, "Audit Logs": "Advanced", "SSO": "Basic SAML", "SIEM Integration": "CSV/Webhook", "API Access": "100k req/day", "Priority Support": "24h" },
+      "sla": { "type": "priority", "response_hours": 24 }
+    },
+    {
+      "id": "plus",
+      "name": "Plus",
+      "audience": "enterprise",
+      "highlight_on_landing": true,
+      "monthly_price_usd": 7999,
+      "yearly_price_usd": 76790,
+      "quotas": { "chains": 35, "seats": 100, "credits_monthly": 1000000, "addresses": 999999, "cases": 1000, "alerts": 2000, "api_rate": "very_high", "queue_priority": "dedicated", "traces_monthly": 100000 },
+      "features": { "Blockchains": "35+ All Chains", "AI Agent": "Custom Deployment", "Transaction Tracing": "Unlimited (100k/mo)", "Graph Investigator": "Full Access", "GNN Models": "ML Fraud Detection (95%+)", "Advanced Correlation": "Cross-Chain", "Tornado Cash Demixing": "65-75% Success", "Bridge Reconstruction": "Cross-Chain Flows", "Travel Rule": "Full VASP Compliance", "Sanctions Screening": "All 9 + Custom Lists", "Team Collaboration": "100 Users", "Custom Risk Policies": "Weighted", "RBAC & Permissions": "Granular", "Audit Logs": "Full Forensic", "Graph Analytics": "Unlimited Export", "SSO/SAML": "Full", "SIEM Integration": "Full API", "API Access": "Unlimited", "Priority Support": "12h", "Customer Success Manager": "8x5" },
+      "sla": { "type": "priority", "response_hours": 12, "support": "8x5", "cs_manager": true }
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "highlight_on_landing": true,
+      "pricing": "custom",
+      "monthly_price_usd": 15000,
+      "quotas": { "chains": "custom", "seats": "custom", "credits_monthly": "custom", "addresses": "custom", "cases": "custom", "alerts": "custom", "api_rate": "custom", "queue_priority": "dedicated", "traces_monthly": "unlimited" },
+      "features": { "Blockchains": "All + Custom", "AI Agents": "Multi-Tenant Custom", "Transaction Tracing": "Unlimited", "Chain of Custody": "Court-Admissible", "eIDAS Signatures": "EU Compliant", "Data Residency": "Custom Region", "Deployment": "VPC/On-Prem/Air-Gap", "Private Indexers": "Custom Nodes", "GRC/SIEM Integration": "Full API", "DLP & KMS": "Enterprise Security", "White Label": "Custom Domain + Branding", "Team Collaboration": "Unlimited", "Dedicated Support": "24/7 SLA", "Onboarding": "Custom 4-12 weeks", "Training": "On-Site Workshops", "Custom Development": "Features + Integrations", "SLA": "99.9% Contract-Based" },
+      "sla": { "type": "contract", "response_hours": 4, "support": "24x7", "cs_manager": true }
+    }
+  ]
+}

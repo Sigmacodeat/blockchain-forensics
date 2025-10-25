@@ -1,0 +1,29 @@
+# Security Audit & Testing Tools
+# ==================================
+
+# Python Security Scanner
+bandit>=1.7.5
+
+# Dependency Vulnerability Scanner
+safety>=3.0.0
+
+# SAST (Static Application Security Testing)
+semgrep>=1.45.0
+
+# Secrets Detection
+detect-secrets>=1.4.0
+
+# API Security Testing
+pytest-security>=0.1.0
+
+# HTTP Security Headers Testing
+secure>=0.3.0
+
+# SQL Injection Testing
+sqlmap>=1.7.0
+
+# Penetration Testing Framework
+pwntools>=4.11.0
+
+# Security Linting
+pylint-secure-coding-standard>=1.4.1

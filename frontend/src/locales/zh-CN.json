@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "请求演示",
+      "pricing": "查看定价",
+      "subtitle": "立即开始免费演示或联系我们的团队",
+      "title": "成为解决方案的一部分"
+    },
+    "header": {
+      "badge": "关于我们",
+      "subtitle": "我们正在开发领先的企业区块链情报平台，支持执法机构、虚拟资产服务提供商（VASP）和金融机构打击加密货币犯罪。",
+      "title": "区块链取证的未来"
+    },
+    "mission": {
+      "desc": "我们使区块链交易透明且可追溯。我们的使命是打击加密货币犯罪，并为合法市场参与者提供满足合规要求和降低风险的工具。",
+      "title": "我们的使命"
+    },
+    "seo": {
+      "description": "我们致力于构建领先的企业区块链取证平台：合规、调查和全球情报。",
+      "title": "关于 | SIGMACODE 区块链取证"
+    },
+    "stats": {
+      "badge": "数据概览",
+      "blockchains": "区块链",
+      "enterprise_customers": "企业客户",
+      "recovered_assets": "回收资产",
+      "sla_guaranteed": "SLA保证",
+      "supported": "支持",
+      "supported_by_tech": "由我们的技术支持",
+      "title": "我们的影响力",
+      "uptime": "正常运行时间",
+      "worldwide": "全球"
+    },
+    "team": {
+      "badge": "专业团队",
+      "compliance": {
+        "desc": "反洗钱/反恐融资（AML/CFT）及国际制裁领域的监管专家",
+        "h1": "前监管机构成员",
+        "h2": "反洗钱专家",
+        "h3": "法律顾问",
+        "title": "合规与法律"
+      },
+      "forensics": {
+        "desc": "拥有丰富加密货币犯罪调查经验的前执法人员",
+        "h1": "前执法机构高级成员",
+        "h2": "暗网打击",
+        "h3": "资产回收",
+        "title": "取证专家"
+      },
+      "subtitle": "区块链取证、执法、FinTech和机器学习领域的专家",
+      "tech": {
+        "desc": "来自顶级科技公司的区块链技术工程师",
+        "h1": "前FAANG成员",
+        "h2": "区块链核心开发者",
+        "h3": "安全专家",
+        "title": "技术专家"
+      },
+      "title": "我们的团队"
+    },
+    "trust": {
+      "badge": "信任",
+      "ce": {
+        "desc": "反洗钱和交易监控的十大交易所",
+        "title": "加密货币交易所"
+      },
+      "fi": {
+        "desc": "具有加密资产敞口的顶级银行",
+        "title": "银行与FinTech"
+      },
+      "le": {
+        "desc": "公安部、Interpol、国家及地方执法机构",
+        "title": "执法机构"
+      },
+      "reg": {
+        "desc": "用于市场监管的金融监管机构",
+        "title": "监管机构"
+      },
+      "subtitle": "全球领先的组织信赖我们的技术",
+      "title": "谁信任我们"
+    },
+    "values": {
+      "badge": "我们的价值观",
+      "compliance": {
+        "desc": "符合GDPR、eIDAS、OFAC要求。我们理解并整合监管要求。",
+        "title": "合规优先"
+      },
+      "customer": {
+        "desc": "与执法机构和行业密切合作。您的需求塑造我们的路线图。",
+        "title": "以客户为中心"
+      },
+      "global": {
+        "desc": "覆盖100多个区块链，支持多语言和国际制裁清单。",
+        "title": "全球覆盖"
+      },
+      "innovation": {
+        "desc": "尖端技术：人工智能/机器学习、图分析和实时处理，带来最佳效果。",
+        "title": "创新"
+      },
+      "team": {
+        "desc": "由取证专家、开发者和合规专家组成的跨学科团队。",
+        "title": "团队合作"
+      },
+      "title": "我们的动力",
+      "trust": {
+        "desc": "企业级安全，拥有SOC2/ISO27001认证。您的安全得到保障。",
+        "title": "信任与安全"
+      }
+    },
+    "vision": {
+      "desc": "一个区块链技术能够充分发挥潜力的世界——透明、安全、合规。我们正在构建数字资产成为主流且不助长犯罪的基础设施。",
+      "title": "我们的愿景"
+    }
+  },
+  "accessibility": {
+    "activate": "启用",
+    "close_dialog": "关闭对话框",
+    "font_size": "字体大小",
+    "font_size_large": "大字体",
+    "font_size_normal": "标准字体",
+    "font_size_xlarge": "超大字体",
+    "high_contrast_detected": "检测到高对比度",
+    "keyboard_shortcuts": "键盘快捷键",
+    "navigate_backward": "后退",
+    "navigate_forward": "前进",
+    "no_system_preferences": "未检测到特殊系统偏好",
+    "reduced_motion_detected": "检测到减少动态效果",
+    "settings": "可访问性设置",
+    "skip_to_content": "跳到内容",
+    "system_preferences": "系统偏好"
+  },
+  "address_analysis": {
+    "title": "地址分析",
+    "wip_desc": "描述待完善",
+    "wip_title": "地址待完善"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "人工智能代理",
+      "app_name": "应用名称",
+      "cross_chain": "跨链",
+      "max_trace_depth": "最大追踪深度",
+      "ml_clustering": "机器学习聚类",
+      "title": "配置",
+      "version": "版本"
+    },
+    "disabled": "✗ 已禁用",
+    "enabled": "✓ 已启用",
+    "error": "错误",
+    "health": {
+      "connected": "✓ 已连接",
+      "disconnected": "✗ 未连接",
+      "error": "无法加载健康状态",
+      "title": "数据库健康状况"
+    },
+    "ingestion": {
+      "address": {
+        "help": "从以太坊RPC获取交易数据",
+        "ingesting": "正在摄取...",
+        "placeholder": "0x...",
+        "start": "开始摄取",
+        "success": "✓ 已在后台开始摄取",
+        "title": "摄取地址数据"
+      },
+      "block": {
+        "help": "从区块导入所有交易",
+        "ingesting": "正在摄取...",
+        "placeholder": "区块编号",
+        "start": "开始导入区块",
+        "success": "✓ 区块摄取已开始",
+        "title": "摄取区块数据"
+      }
+    },
+    "stats": {
+      "db_size": "数据库大小",
+      "title": "系统统计",
+      "total_addresses": "总地址数",
+      "total_traces": "总追踪数",
+      "total_transactions": "总交易数"
+    },
+    "subtitle": "监控、配置和数据管理",
+    "tabs": {
+      "config": "配置",
+      "ingestion": "数据摄取",
+      "overview": "概览",
+      "users": "用户管理"
+    },
+    "title": "系统管理"
+  },
+  "agent": {
+    "cancel": "取消",
+    "error": "错误",
+    "error_unknown": "未知错误",
+    "examples": {
+      "1": "示例1",
+      "2": "示例2",
+      "3": "示例3",
+      "title": "示例"
+    },
+    "instructions": "说明",
+    "loading": "加载中...",
+    "placeholder": "输入占位符",
+    "retry": "重试",
+    "send": "发送",
+    "subtitle": "代理子标题",
+    "title": "代理标题",
+    "welcome": "欢迎"
+  },
+  "auth": {
+    "fields": {
+      "email": "电子邮件",
+      "organization_opt": "组织（可选）",
+      "password": "密码",
+      "password_confirm": "确认密码",
+      "username": "用户名"
+    },
+    "forgot": {
+      "back_to_login": "返回登录",
+      "dev_note": "由于未配置邮件服务，请检查服务器日志以获取重置链接。",
+      "dev_note_label": "注意（开发模式）：",
+      "error": "发送错误",
+      "info_sent": "如果此邮箱存在账户，重置链接已发送。",
+      "sent": "重置链接已发送！",
+      "submit": "发送重置链接",
+      "submitting": "发送中...",
+      "subtitle": "别担心！请输入您的邮箱，我们将发送重置链接。",
+      "title": "忘记密码？",
+      "title_sent": "邮件已发送！"
+    },
+    "login": {
+      "failed": "登录失败",
+      "fill_all_fields": "请填写所有字段",
+      "forgot_password": "忘记密码？",
+      "google": "使用Google登录",
+      "google_retry": "重试使用Google登录",
+      "no_account": "还没有账户？",
+      "oauth_failed": "OAuth登录失败，请重试。",
+      "oauth_processing": "正在处理OAuth登录…",
+      "or": "或",
+      "register_now": "立即注册",
+      "remember_me": "保持登录",
+      "submit": "登录",
+      "submitting": "登录中...",
+      "subtitle": "请登录以继续"
+    },
+    "placeholders": {
+      "email": "analyst@example.com",
+      "organization": "FBI、Chainalysis等",
+      "password": "••••••••",
+      "username": "john_analyst"
+    },
+    "register": {
+      "accept": "我同意",
+      "already": "已有账户？",
+      "and": "和",
+      "failed": "注册失败",
+      "fill_all_fields": "请填写所有必填字段",
+      "google": "使用Google注册",
+      "login_now": "立即登录",
+      "password_hint": "最少8个字符",
+      "password_too_short": "密码必须至少8个字符",
+      "passwords_no_match": "密码不匹配",
+      "submit": "注册",
+      "submitting": "注册中...",
+      "subtitle": "开始您的取证分析",
+      "title": "创建账户"
+    }
+  },
+  "common": {
+    "access_denied": "访问被拒绝（仅限管理员）",
+    "account": "账户",
+    "back": "返回",
+    "close": "关闭",
+    "info": "信息",
+    "language": "语言",
+    "loading": "加载中...",
+    "next": "下一步",
+    "page": "页面",
+    "prev": "上一页",
+    "refresh": "刷新",
+    "search": "搜索",
+    "success": "成功",
+    "theme": "主题",
+    "view": "查看",
+    "wip": {
+      "title": "即将上线",
+      "desc": "该功能仍在开发中。",
+      "cta": "了解更多"
+    },
+    "start_free": "免费开始",
+    "error": "错误",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "create": "创建",
+    "finish": "完成",
+    "open": "打开",
+    "yes": "是",
+    "no": "否",
+    "confirm": "确认",
+    "welcome": "欢迎",
+    "dashboard": "仪表板",
+    "settings": "设置",
+    "profile": "个人资料",
+    "logout": "登出",
+    "login": "登录",
+    "register": "注册",
+    "email": "邮箱",
+    "password": "密码",
+    "username": "用户名",
+    "documents": "文档",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "最低严重性",
+      "refresh": "刷新",
+      "title": "控制",
+      "window": "时间窗口",
+      "window_15m": "15分钟",
+      "window_1h": "1小时",
+      "window_24h": "24小时",
+      "window_2h": "2小时",
+      "window_30m": "30分钟",
+      "window_5m": "5分钟"
+    },
+    "header": {
+      "subtitle": "相关性子标题",
+      "title": "相关性标题"
+    },
+    "overview": {
+      "active_rules": "活跃规则",
+      "analyzed": "已分析",
+      "empty": "空",
+      "found": "已发现",
+      "loading": "加载中...",
+      "min_sev": "最低严重性",
+      "rate": "比率",
+      "title": "相关性概览",
+      "window": "窗口"
+    },
+    "rules": {
+      "empty": "无规则",
+      "footer": "规则页脚",
+      "loading": "加载规则中...",
+      "min": "最小",
+      "minutes": "分钟",
+      "required_patterns": "必需模式",
+      "title": "相关性规则",
+      "window": "规则窗口"
+    },
+    "sev": {
+      "critical": "严重",
+      "high": "高",
+      "low": "低",
+      "medium": "中"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "按原因",
+        "by_type": "按类型",
+        "title": "抑制细分"
+      },
+      "rate": "抑制率",
+      "title": "抑制",
+      "top_entity": "顶级实体",
+      "total": "总数"
+    },
+    "test": {
+      "add_alert": "添加警报",
+      "alerts_label": "警报标签",
+      "match": "匹配",
+      "no_alerts": "无警报",
+      "no_match": "无匹配",
+      "pick_rule": "选择规则",
+      "pick_rule_ph": "规则选择",
+      "result": "结果",
+      "run": "运行",
+      "testing": "测试中",
+      "title": "相关性测试"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "复制来源",
+      "copy_mint": "复制铸造",
+      "export_csv": "导出CSV",
+      "export_csv_page": "导出CSV页面",
+      "fetch": "获取"
+    },
+    "bitcoin": {
+      "block_title": "区块地址",
+      "compute": "计算",
+      "decoded": "已解码",
+      "edges_title": "边缘地址",
+      "height_ph": "区块高度",
+      "ingest_edges": "摄取边缘",
+      "method_heuristic": "启发式方法",
+      "method_proportional": "比例方法",
+      "normalized": "标准化",
+      "tx_title": "交易地址",
+      "txid_ph": "交易ID"
+    },
+    "compliance": {
+      "add_watch": "添加到观察列表",
+      "address_ph": "地址",
+      "chain_ph": "链",
+      "entries": "条目",
+      "error": "错误",
+      "filter_address_ph": "过滤地址",
+      "filter_chain_ph": "过滤链",
+      "list_watch": "观察列表",
+      "screen": "筛选",
+      "title": "合规",
+      "watchlist": "观察列表"
+    },
+    "ethereum": {
+      "canonical": "规范",
+      "copy_hash": "复制哈希",
+      "decoded": "已解码",
+      "error": "错误",
+      "open_etherscan": "打开Etherscan",
+      "tx_hash_ph": "交易哈希",
+      "tx_title": "交易地址"
+    },
+    "ingest": {
+      "canonical_notice": "规范通知",
+      "edges_notice": "边缘通知",
+      "loading": "加载中..."
+    },
+    "labels": {
+      "add": "添加",
+      "address_ph": "地址",
+      "category_ph": "类别",
+      "chain_ph": "链",
+      "error": "错误",
+      "label_ph": "标签",
+      "lookup": "查找",
+      "title": "标签"
+    },
+    "monitoring": {
+      "fetch": "获取",
+      "key_counters": "关键计数器",
+      "title": "监控"
+    },
+    "rpc_unavailable": "RPC不可用",
+    "solana": {
+      "canonical_error": "规范错误",
+      "canonical_title": "规范地址",
+      "error": "错误",
+      "ingest_canonical": "摄取规范",
+      "signature_ph": "签名",
+      "title": "Solana地址",
+      "transfers": "转账"
+    },
+    "table": {
+      "actions": "操作",
+      "address": "地址",
+      "amount_ui": "金额",
+      "chain": "链",
+      "created": "创建时间",
+      "decimals": "小数位",
+      "fee": "费用",
+      "from": "来自",
+      "from_vout": "来自Vout",
+      "method": "方法",
+      "mint": "铸造",
+      "reason": "原因",
+      "to": "至",
+      "to_vout": "至Vout",
+      "value_btc": "BTC价值"
+    },
+    "totals": {
+      "page_sum": "页面总和",
+      "page_sum_btc": "页面总和BTC",
+      "total_amount": "总金额",
+      "total_value_btc": "总BTC价值"
+    }
+  },
+  "dashboard": {
+    "actions": "操作",
+    "active": "活跃",
+    "administration": "管理",
+    "alert_aging": "警报老化",
+    "alert_engine": "警报引擎",
+    "alert_monitoring": "警报监控",
+    "alert_overview": "警报概览",
+    "analyst_throughput": "分析员吞吐量",
+    "audit_kpis": "审计关键绩效指标",
+    "backlog": "积压",
+    "bucket_placeholder": "24小时、3天、7天、>7天",
+    "buckets": "桶",
+    "case_management": "案件管理",
+    "connected": "已连接",
+    "correlation_analysis": "相关性分析",
+    "database": "数据库",
+    "database_response": "数据库响应",
+    "days": "天",
+    "disconnected": "未连接",
+    "failed_actions": "失败的操作",
+    "false_positive_rate": "误报率",
+    "fp": "误报",
+    "graph_db": "图数据库",
+    "graph_explorer": "图浏览器",
+    "healthy": "健康",
+    "inactive": "不活跃",
+    "issues": "问题",
+    "last_24h": "最近24小时",
+    "last_update": "最后更新",
+    "mttr": "平均修复时间",
+    "open_alerts": "开放警报",
+    "open_cases": "开放案件",
+    "performance": "性能",
+    "priority_distribution": "优先级分布",
+    "quick_access": "快速访问",
+    "recent_alerts": "近期警报",
+    "response_time": "响应时间",
+    "rule_effectiveness": "规则有效性",
+    "sanctions_hits": "制裁命中",
+    "service_status": "服务状态",
+    "severity_breakdown": "严重性细分",
+    "sla_breach_rate": "SLA违约率",
+    "sla_hours": "SLA（小时）",
+    "status_breakdown": "状态细分",
+    "success_rate": "成功率",
+    "suppression_rate": "抑制率",
+    "system_details": "系统详情",
+    "system_load": "系统负载",
+    "system_overview": "系统概览",
+    "system_status": "系统状态",
+    "title": "SIGMACODE 区块链取证仪表板",
+    "total_alerts": "总警报数",
+    "total_cases": "总案件数",
+    "total_logs": "总日志数",
+    "transaction_tracing": "交易追踪",
+    "uptime": "正常运行时间",
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "recent_activity": "Recent Activity",
+    "quick_actions": "Quick Actions",
+    "statistics": "Statistics",
+    "notifications": "Notifications",
+    "hero": {
+      "welcome": "欢迎回来",
+      "subtitle": "这是您今天调查的进展情况。"
+    },
+    "quickActions": {
+      "title": "快速操作",
+      "newTrace": "新追踪",
+      "newCase": "新案例",
+      "riskCheck": "风险检查",
+      "aiAgent": "AI代理"
+    },
+    "stats": {
+      "cases": "活跃案例",
+      "traces": "今日追踪",
+      "alerts": "警报",
+      "uptime": "运行时间"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "分析"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "集成LangChain和GPT-4的自主代理",
+        "title": "人工智能代理"
+      },
+      "badge": "人工智能与机器学习",
+      "desc": "用于异常检测、风险评分和24/7调查的自主人工智能代理的机器学习模型。",
+      "pattern": {
+        "desc": "欺诈模式检测和行为分析",
+        "title": "模式识别"
+      },
+      "risk": {
+        "desc": "基于机器学习的风险评分，针对地址和交易",
+        "title": "风险评分"
+      },
+      "smart_contract": {
+        "desc": "字节码相似性和漏洞检测",
+        "title": "智能合约分析"
+      },
+      "title": "人工智能驱动的分析"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "基于机器学习检测异常交易模式",
+        "title": "异常检测"
+      },
+      "badge": "实时监控",
+      "custom_rules": {
+        "desc": "使用规则DSL和策略引擎自定义警报规则",
+        "title": "自定义规则"
+      },
+      "desc": "超过15种可配置的警报规则，结合机器学习。针对制裁、混合、高价值转账和异常接收通知。",
+      "mixing": {
+        "desc": "Tornado Cash、Blender.io及其他混合服务",
+        "title": "混合检测"
+      },
+      "sanctions": {
+        "desc": "每日更新的OFAC/UN/EU/UK制裁名单",
+        "title": "制裁筛选"
+      },
+      "title": "智能警报引擎"
+    },
+    "case": {
+      "badge": "调查工作流程",
+      "desc": "全面的调查管理，包含证据链、eIDAS签名和法庭可接受的报告。",
+      "eidas": {
+        "desc": "符合欧盟标准的合格电子签名",
+        "title": "eIDAS签名"
+      },
+      "evidence": {
+        "desc": "法庭可接受的证据无缝链",
+        "title": "证据链"
+      },
+      "export": {
+        "desc": "带时间戳和审计追踪的PDF/Excel导出",
+        "title": "导出与报告"
+      },
+      "title": "案件管理与证据链",
+      "tracking": {
+        "desc": "带工作流程状态的结构化案件管理",
+        "title": "案件跟踪"
+      }
+    },
+    "cta": {
+      "demo": "请求演示",
+      "pricing": "查看定价",
+      "subtitle": "立即开始免费演示",
+      "title": "准备好体验完整套件？",
+      "start": "免费开始"
+    },
+    "graph": {
+      "badge": "图情报",
+      "clustering": {
+        "desc": "自动聚类相关钱包",
+        "title": "钱包聚类"
+      },
+      "community": {
+        "desc": "检测具有共同利益的钱包群体",
+        "title": "社区检测"
+      },
+      "desc": "基于Neo4j的图数据库，用于实体聚类、社区检测和可视化调查。",
+      "labels": {
+        "desc": "带社区情报的交易所/VASP/DeFi标签",
+        "title": "实体标签"
+      },
+      "title": "实体解析与网络分析",
+      "visual": {
+        "desc": "用于复杂分析的交互式图浏览器",
+        "title": "可视化调查"
+      }
+    },
+    "header": {
+      "badge": "完整功能",
+      "cta_try": "免费试用",
+      "subtitle": "从交易追踪到人工智能驱动的分析——专业调查所需的所有工具",
+      "title": "区块链取证完整套件"
+    },
+    "security": {
+      "audit": {
+        "desc": "完整的审计追踪以证明合规性",
+        "title": "审计日志"
+      },
+      "badge": "企业级安全",
+      "desc": "具有RBAC、SSO/SAML、审计日志和GDPR合规性的企业级安全。",
+      "privacy": {
+        "desc": "通过个人数据匿名化实现GDPR合规",
+        "title": "数据隐私"
+      },
+      "rbac": {
+        "desc": "细粒度的基于角色的访问控制，支持自定义角色",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "支持SAML 2.0和OAuth 2.0的单点登录",
+        "title": "SSO/SAML"
+      },
+      "title": "安全与合规"
+    },
+    "seo": {
+      "description": "企业级区块链取证：多链追踪、AI代理、实时风险评分和合规工具。",
+      "title": "功能 | SIGMACODE 区块链取证"
+    },
+    "stats": {
+      "accuracy": "准确性",
+      "ai_agents": "人工智能代理",
+      "alert_rules": "警报规则",
+      "blockchains": "区块链",
+      "bridges": "桥接协议",
+      "case_templates": "案件模板",
+      "compliance": "合规",
+      "encryption": "加密",
+      "entities": "实体",
+      "evidence_types": "证据类型",
+      "false_positives": "误报",
+      "max_depth": "最大追踪深度",
+      "ml_models": "机器学习模型",
+      "query_time": "查询时间",
+      "relationships": "关系",
+      "response_time": "响应时间",
+      "security_certs": "安全认证",
+      "uptime_sla": "正常运行时间SLA"
+    },
+    "tracing": {
+      "badge": "交易追踪",
+      "bridge": {
+        "desc": "自动检测跨链桥和包装资产",
+        "title": "桥接检测"
+      },
+      "cross_chain": {
+        "desc": "支持100多个区块链：EVM、UTXO、Solana、Cosmos等",
+        "title": "跨链追踪"
+      },
+      "demixing": {
+        "desc": "Tornado Cash、混合器和隐私币的启发式分析",
+        "title": "隐私币去混合"
+      },
+      "desc": "追踪所有主要区块链上的交易。支持跨链桥检测、隐私币去混合和递归前后追踪。",
+      "recursive": {
+        "desc": "具有可配置深度和过滤器的前后追踪",
+        "title": "递归追踪"
+      },
+      "title": "多链交易情报"
+    },
+    "hero": {
+      "badge": "功能",
+      "title": "企业级区块链取证",
+      "subtitle": "调查加密货币犯罪、确保合规性和保护业务所需的所有工具。"
+    }
+  },
+  "footer": {
+    "blog": "博客",
+    "careers": "职业机会",
+    "company": "公司",
+    "contact": "联系方式",
+    "imprint": "法律声明",
+    "legal": "法律",
+    "privacy": "隐私",
+    "product": "产品",
+    "request_demo": "请求演示",
+    "rights_reserved": "保留所有权利。",
+    "security": "安全",
+    "tagline": "用于合规和调查的企业级区块链人工智能——安全、快速、符合法庭要求。",
+    "terms": "条款"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "活跃节点",
+      "avg_degree": "平均度",
+      "density": "网络密度",
+      "total_edges": "总边数",
+      "total_nodes": "总节点数"
+    },
+    "centrality": {
+      "taint": "污染",
+      "title": "中心性分析"
+    },
+    "communities": {
+      "algorithm": "算法",
+      "avg_size": "平均大小",
+      "avg_taint": "平均污染",
+      "empty": "点击",
+      "label_propagation": "标签传播",
+      "loading": "社区检测中...",
+      "louvain": "Louvain（模块化）",
+      "title": "社区检测",
+      "total": "总社区数"
+    },
+    "degree": {
+      "title": "度分布",
+      "x": "度",
+      "y": "计数"
+    },
+    "filters": {
+      "cross_chain": "跨链（桥接层）",
+      "from": "开始（ISO）",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "结束（ISO）",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "高级网络分析和模式检测",
+      "title": "图分析与网络情报"
+    },
+    "hubs": {
+      "in": "输入",
+      "out": "输出",
+      "title": "网络枢纽（高阶节点）",
+      "total": "总数"
+    },
+    "loading": {
+      "stats": "加载统计中..."
+    },
+    "patterns": {
+      "circle_length": "循环长度",
+      "detected": "检测到的循环",
+      "empty_desc": "这是一个好迹象——未发现明显的洗钱循环",
+      "empty_title": "未检测到循环模式",
+      "high_risk": "高风险",
+      "hops": "跳数",
+      "loading": "模式检测中...",
+      "more_addresses": "更多地址",
+      "risk_score": "风险评分",
+      "title": "循环模式（潜在洗钱）",
+      "total": "总数",
+      "total_value": "总价值",
+      "tx_path": "交易路径："
+    },
+    "tabs": {
+      "communities": "社区检测",
+      "overview": "网络概览",
+      "patterns": "模式检测"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "聚类",
+      "clustering": "聚类中",
+      "pause_timeline": "暂停时间线",
+      "play_timeline": "播放时间线",
+      "title": "调查员操作"
+    },
+    "connected": {
+      "taint": "污染",
+      "title": "连接的地址",
+      "tx": "交易"
+    },
+    "graph": {
+      "connections": "连接",
+      "enter_address": "输入地址",
+      "loading": "加载中...",
+      "nodes": "节点",
+      "title": "图分析"
+    },
+    "header": {
+      "subtitle": "调查员子标题",
+      "title": "调查员标题"
+    },
+    "path": {
+      "bridges": "桥接",
+      "hops": "跳数",
+      "risk_score": "风险评分",
+      "title": "路径分析",
+      "total_value": "总价值"
+    },
+    "search": {
+      "explore": "探索",
+      "placeholder": "搜索占位符",
+      "title": "搜索"
+    },
+    "settings": {
+      "from": "开始",
+      "hops_1": "1跳",
+      "hops_2": "2跳",
+      "hops_3": "3跳",
+      "hops_4": "4跳",
+      "hops_5": "5跳",
+      "include_bridges": "包括桥接",
+      "max_hops": "最大跳数",
+      "title": "设置",
+      "to": "结束"
+    },
+    "timeline": {
+      "empty": "空时间线",
+      "events": "事件",
+      "risk": "风险",
+      "select_address": "选择地址",
+      "title": "时间线",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "立即请求演示",
+      "pricing": "查看定价"
+    },
+    "cta2": {
+      "demo": "请求免费演示",
+      "pricing": "查看定价",
+      "subtitle": "立即开始免费演示，体验区块链取证的未来",
+      "title": "准备好迎接企业级区块链情报？"
+    },
+    "features": {
+      "badge": "功能",
+      "subtitle": "用于合规、调查和风险管理的顶级工具",
+      "title": "区块链取证所需的一切"
+    },
+    "hero": {
+      "badge": "sigmacode.io · 区块链取证",
+      "point1": "100多个区块链",
+      "point2": "OFAC/UN/EU制裁",
+      "point3": "实时监控",
+      "subtitle": "人工智能驱动的合规、调查和风险监控——实时且企业级。",
+      "title": "企业级区块链情报"
+    },
+    "pricing": {
+      "badge": "定价",
+      "subtitle": "从免费到企业级——立即开始",
+      "title": "适合各种规模企业的灵活套餐",
+      "view_all": "查看所有定价"
+    },
+    "seo": {
+      "description": "人工智能驱动的合规、调查和风险监控——实时且企业级。SIGMACODE 区块链取证。",
+      "title": "SIGMACODE | 企业级区块链情报"
+    },
+    "tech": {
+      "badge": "技术",
+      "subtitle": "最高性能和安全性的企业级基础设施",
+      "title": "尖端技术栈"
+    },
+    "use_cases": {
+      "badge": "使用案例",
+      "subtitle": "从执法机构到FinTech",
+      "title": "每个使用案例的正确解决方案"
+    }
+  },
+  "layout": {
+    "main_navigation": "主导航",
+    "quick_search_title": "快速搜索（Ctrl/⌘+K）",
+    "skip_to_content": "跳到内容",
+    "quick_search_placeholder": "快速搜索...",
+    "quick_search_hint": "提示：Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie 横幅",
+    "title": "Cookie 与隐私",
+    "title_short": "Cookie",
+    "description": "我们使用必要的 Cookie 以运行本网站。可选的分析 Cookie 有助于我们了解并改进使用情况。您可以接受所有 Cookie 或仅允许必要的 Cookie。您可在设置中随时更改选择。",
+    "privacy_link": "隐私政策",
+    "terms_link": "服务条款",
+    "imprint_link": "法律声明",
+    "only_necessary": "仅必要",
+    "accept_all": "全部接受",
+    "preferences": "首选项",
+    "save_preferences": "保存首选项",
+    "manage": "Cookie 设置",
+    "analytics_title": "分析类 Cookie",
+    "analytics_desc": "帮助我们了解使用情况以改进网站。",
+    "marketing_title": "营销类 Cookie",
+    "marketing_desc": "启用个性化内容和优惠。",
+    "all_optional_title": "启用所有可选项",
+    "all_optional_desc": "启用分析和营销类 Cookie。"
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "关闭",
+        "close_title": "关闭警报",
+        "copy_alert_id_title": "复制警报ID",
+        "copy_entity": "复制实体",
+        "copy_entity_id_title": "复制实体ID",
+        "copy_id": "复制ID",
+        "copy_rule": "复制规则",
+        "copy_rule_id_title": "复制规则ID",
+        "details": "详情",
+        "details_title": "查看详情",
+        "reset": "重置"
+      },
+      "audit": {
+        "empty": "无事件",
+        "title": "审计追踪"
+      },
+      "csv": {
+        "export_all": "导出CSV（全部）",
+        "export_all_title": "导出所有过滤行的CSV（服务器）",
+        "export_page": "导出CSV（页面）",
+        "export_page_title": "导出页面CSV",
+        "no_filtered_data": "无过滤数据",
+        "no_page_data": "此页面无数据"
+      },
+      "empty": "未找到警报",
+      "filters": {
+        "all": "（全部）",
+        "search_label": "搜索（rule_id / entity_id）",
+        "search_placeholder": "搜索...",
+        "severity": "严重性",
+        "source": "来源",
+        "source_persisted": "持久（KYT）",
+        "source_realtime": "实时（警报引擎）",
+        "status": "状态"
+      },
+      "kpi": {
+        "event_time_set": "设置事件时间（first_seen_at）",
+        "event_time_title": "事件时间 = first_seen_at",
+        "false_positive": "标记为误报",
+        "title": "关键绩效指标注释",
+        "true_positive": "标记为真报"
+      },
+      "loading": "加载警报中...",
+      "modal": {
+        "alert_id": "警报ID",
+        "chain": "链",
+        "context": "上下文",
+        "entity": "实体",
+        "rule_id": "规则ID",
+        "severity": "严重性",
+        "title": "警报详情"
+      },
+      "pagination": {
+        "next": "下一页",
+        "page": "页面",
+        "prev": "上一页"
+      },
+      "severity": {
+        "critical": "严重",
+        "high": "高",
+        "low": "低",
+        "medium": "中"
+      },
+      "status": {
+        "assigned": "已分配",
+        "closed": "已关闭",
+        "open": "开放",
+        "snoozed": "已暂停"
+      },
+      "subtitle": "实时规则和持久警报（KYT）",
+      "table": {
+        "first": "首次",
+        "last": "最后"
+      },
+      "title": "警报监控",
+      "toasts": {
+        "copy_failed": "复制失败",
+        "disposition_failed": "处置失败",
+        "disposition_set": "处置已设置",
+        "entity_copied": "实体已复制",
+        "event_time_failed": "事件时间设置失败",
+        "event_time_set": "事件时间已设置",
+        "export_failed": "服务器导出失败",
+        "export_started": "服务器导出已开始",
+        "id_copied": "ID已复制",
+        "rule_copied": "规则已复制"
+      }
+    }
+  },
+  "navigation": {
+    "about": "关于我们",
+    "analytics": "分析",
+    "close_menu": "关闭导航",
+    "dashboard": "仪表板",
+    "features": "功能",
+    "home": "首页",
+    "logout": "登出",
+    "open_menu": "打开导航",
+    "pricing": "价格",
+    "settings": "设置",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "刷新"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "核心",
+        "title": "CPU使用率"
+      },
+      "db": {
+        "connected": "已连接",
+        "disconnected": "未连接",
+        "response": "响应",
+        "title": "数据库"
+      },
+      "memory": {
+        "available": "可用",
+        "title": "内存使用率"
+      },
+      "system_status": {
+        "healthy": "健康",
+        "issues": "问题",
+        "title": "系统状态",
+        "uptime": "正常运行时间"
+      }
+    },
+    "common": {
+      "no": "否",
+      "yes": "是"
+    },
+    "header": {
+      "last_refresh": "最后刷新",
+      "subtitle": "全面监控系统性能、指标和SLO",
+      "title": "性能与可观测性仪表板"
+    },
+    "metrics": {
+      "empty": "无指标数据可用",
+      "loading": "加载指标中...",
+      "max": "最大",
+      "measurements": "测量",
+      "min": "最小",
+      "title": "性能指标（1小时）",
+      "trend": "趋势"
+    },
+    "recent_alerts": {
+      "empty": "无近期警报",
+      "title": "近期性能警报"
+    },
+    "services": {
+      "active": "活跃",
+      "inactive": "不活跃",
+      "title": "服务状态"
+    },
+    "slo": {
+      "empty": "无SLO数据可用",
+      "loading": "加载SLO中...",
+      "threshold": "阈值",
+      "title": "SLO合规性",
+      "violations": "违约"
+    },
+    "system_details": {
+      "database": "数据库",
+      "db_connected": "已连接",
+      "db_type": "类型",
+      "debug": "调试",
+      "environment": "环境",
+      "log_level": "日志级别",
+      "mode": "模式",
+      "platform": "平台",
+      "python_version": "Python版本",
+      "response_time": "响应时间",
+      "system_info": "系统信息",
+      "title": "系统详情",
+      "version": "版本"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "额外区块链",
+        "i2": "额外用户席位",
+        "i3": "高级制裁（扩展列表）",
+        "i4": "高级导出格式",
+        "i5": "优先支持",
+        "i6": "白标（企业版）",
+        "title": "可用附加功能"
+      },
+      "badge": "灵活扩展",
+      "overage": {
+        "extra_credits": "额外信用",
+        "monthly_cap": "月度上限",
+        "note": "超出配额？没问题——超额部分将自动计费。",
+        "title": "超额定价"
+      },
+      "subtitle": "根据需要扩展您的计划",
+      "title": "附加功能与超额"
+    },
+    "card": {
+      "custom": "自定义",
+      "desc_business": "适合大型团队",
+      "desc_community": "适合爱好者和开源",
+      "desc_enterprise": "适合企业和监管机构",
+      "desc_pro": "适合成长型企业",
+      "desc_starter": "适合小型团队",
+      "per_month": "每月",
+      "popular": "最受欢迎",
+      "popular_label": "最受欢迎",
+      "save_year": "每年节省${{amount}}"
+    },
+    "cta": {
+      "active_plan": "✓ 活跃计划",
+      "contact_sales": "联系销售",
+      "demo": "请求演示",
+      "more_about": "了解更多关于我们",
+      "saving": "保存中…",
+      "set_tenant_plan": "设为租户计划",
+      "start_now": "立即开始",
+      "subscribe": "立即订阅",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "当前计划",
+    "enterprise": {
+      "card_desc": "适合企业和监管机构",
+      "subtitle": "定制定价、SLA、集成、本地部署/VPC",
+      "title": "为金融机构和监管机构"
+    },
+    "faq": {
+      "subtitle": "联系我们的销售团队进行个性化演示",
+      "title": "还有疑问？"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "区块链",
+      "cases": "案件",
+      "credits": "信用/月",
+      "priority": "优先级",
+      "users": "用户"
+    },
+    "header": {
+      "badge": "灵活定价",
+      "subtitle": "从免费社区工具到白标企业版。今天开始，随您的成长扩展。",
+      "title": "适合每个团队的计划"
+    },
+    "included": {
+      "analytics": {
+        "i1": "人工智能代理",
+        "i2": "图分析",
+        "i3": "风险评分",
+        "i4": "机器学习模型",
+        "title": "高级分析"
+      },
+      "badge": "包含内容？",
+      "performance": {
+        "i1": "实时警报",
+        "i2": "API访问",
+        "i3": "优先队列",
+        "i4": "99.9%正常运行时间",
+        "title": "性能"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "审计日志",
+        "i4": "GDPR合规",
+        "title": "安全与合规"
+      },
+      "team": {
+        "i1": "多用户",
+        "i2": "案件管理",
+        "i3": "证据链",
+        "i4": "协作",
+        "title": "团队功能"
+      },
+      "title": "所有功能概览"
+    },
+    "more": "更多",
+    "seo": {
+      "description": "区块链取证公平透明的价格。从免费社区计划到企业版。随时取消。",
+      "title": "价格 | SIGMACODE 区块链取证"
+    },
+    "smb": {
+      "subtitle": "适合初创企业到中型企业的自助服务计划",
+      "title": "为团队和企业"
+    },
+    "toggle": {
+      "annual": "年度",
+      "monthly": "月度",
+      "save": "节省{{pct}}%"
+    },
+    "top_features": "主要功能",
+    "hero": {
+      "badge": "价格",
+      "title": "简单透明的价格",
+      "subtitle": "选择适合您需求的计划。所有计划都包含核心功能。随时升级。"
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "刷新"
+    },
+    "audit": {
+      "empty": "无审计追踪条目可用",
+      "loading": "加载审计追踪中...",
+      "title": "最近的审计追踪条目",
+      "user": "用户",
+      "view_all": "查看全部 →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "审计追踪完整性"
+      },
+      "failed_logins": {
+        "title": "失败的登录尝试"
+      },
+      "gdpr": {
+        "title": "GDPR合规"
+      },
+      "security_incidents": {
+        "title": "安全事件"
+      }
+    },
+    "common": {
+      "implemented": "已实施",
+      "not_implemented": "未实施",
+      "unknown": "未知"
+    },
+    "compliance": {
+      "anonymization": "匿名化",
+      "certifications": "认证",
+      "consent_management": "同意管理",
+      "data_portability": "数据可移植性",
+      "empty": "无合规数据可用",
+      "encryption": "加密",
+      "loading": "加载合规状态中...",
+      "right_to_erasure": "删除权",
+      "title": "GDPR合规状态"
+    },
+    "header": {
+      "last_refresh": "最后刷新",
+      "subtitle": "审计追踪、GDPR合规和安全监控",
+      "title": "安全与合规仪表板"
+    },
+    "quick_actions": {
+      "audit_export": "审计导出",
+      "compliance_report": "合规报告",
+      "gdpr_status": "GDPR状态",
+      "incident_report": "事件报告",
+      "integrity_check": "完整性检查",
+      "security_scan": "安全扫描",
+      "title": "安全与合规操作"
+    },
+    "retention": {
+      "days": "天",
+      "empty": "无数据保留可用",
+      "title": "数据保留合规性",
+      "violations": {
+        "count": "违约",
+        "days_old": "天数",
+        "more": "和",
+        "more_suffix": "更多",
+        "title": "保留违约"
+      }
+    },
+    "security": {
+      "compliance_status": "合规状态",
+      "empty": "无安全数据可用",
+      "failed_logins": "失败的登录",
+      "incidents": "安全事件",
+      "rate_limited_ips": "速率限制的IP",
+      "suspicious_activities": "可疑活动",
+      "title": "安全概览"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "按时间段（例如：24小时、3天、7天、>7天）统计的开放警报",
+    "alert_engine": "使用机器学习算法实时监控可疑交易和模式",
+    "alert_overview": "所有活跃安全警报及其严重性（严重/高/中/低）的概览",
+    "analyst_throughput": "在选定时间窗口内每位分析员关闭的案件数",
+    "backlog": "未确认的开放警报和开放案件总数",
+    "database": "PostgreSQL/TimescaleDB连接状态和时间序列数据响应时间",
+    "graph_db": "用于复杂关系分析和网络映射的Neo4j图数据库",
+    "system_status": "显示所有系统组件的当前状态。绿色 = 健康，红色 = 检测到问题",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "可用导览",
+    "completed": "已完成",
+    "finish": "完成",
+    "no_tours_available": "此页面无可用导览",
+    "of": "的",
+    "select_tour_description": "选择导览以了解平台的更多功能",
+    "skip": "跳过",
+    "start": "开始",
+    "start_tour": "开始导览",
+    "step": "步骤",
+    "steps": "步骤"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "详情",
+      "direction": "方向",
+      "error_title": "结果错误",
+      "exec_time": "执行时间",
+      "export": "导出",
+      "flow_graph": "流图",
+      "high_risk": "高风险",
+      "high_risk_title": "高风险地址",
+      "loading": "加载中...",
+      "max_hop": "最大跳数",
+      "not_found": "未找到",
+      "report": "报告",
+      "sanctioned_title": "受制裁地址",
+      "sanctioned_warning": "制裁警告",
+      "source": "来源",
+      "taint": "污染",
+      "taint_model": "污染模型",
+      "title": "追踪结果",
+      "total_edges": "总边数",
+      "total_nodes": "总节点数"
+    },
+    "simple": {
+      "address_ph": "地址",
+      "chain_btc": "比特币链",
+      "chain_eth": "以太坊链",
+      "chain_sol": "Solana链",
+      "cluster": {
+        "clustering": "聚类中",
+        "export_members": "导出成员",
+        "label": "标签",
+        "lookup": "查找",
+        "member_address": "成员地址",
+        "members": "成员",
+        "title": "聚类地址"
+      },
+      "depth_ph": "深度",
+      "edges": "边",
+      "error_cluster": "聚类错误",
+      "error_trace": "追踪错误",
+      "export_paths": "导出路径",
+      "export_targets": "导出目标",
+      "high_risk": "高风险",
+      "model_fifo": "FIFO模型",
+      "model_haircut": "Haircut模型",
+      "model_proportional": "比例模型",
+      "nodes": "节点",
+      "run": "运行",
+      "summary": "摘要",
+      "th_path": "路径",
+      "th_paths": "路径",
+      "th_taint": "污染",
+      "th_target": "目标",
+      "threshold_ph": "阈值",
+      "title": "简单追踪",
+      "tracing": "追踪"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "分析描述",
+        "title": "分析地址",
+        "wip": "开发中"
+      },
+      "export": {
+        "csv": "导出CSV",
+        "desc": "导出描述",
+        "json": "导出JSON",
+        "pdf": "导出PDF",
+        "section_export": "部分导出",
+        "section_import": "部分导入",
+        "title": "导出地址"
+      },
+      "header": {
+        "title": "钱包测试地址"
+      },
+      "import": {
+        "add_wallet": "添加钱包",
+        "json": "导入JSON",
+        "restore_backup": "恢复备份"
+      },
+      "multisig": {
+        "desc": "多重签名描述",
+        "title": "多重签名地址",
+        "wip": "开发中"
+      },
+      "overview": {
+        "active_wallets": "活跃钱包",
+        "activity": {
+          "liquidity": "流动性",
+          "nft": "NFT",
+          "receive": "接收"
+        },
+        "month_change": "月度变化",
+        "multisig": "多重签名",
+        "new_this_week": "本周新增",
+        "recent": "最近",
+        "security_grade": "安全等级",
+        "security_score": "安全评分",
+        "status": {
+          "2fa": "双重认证",
+          "active": "活跃",
+          "backup": "备份",
+          "backup_available": "备份可用",
+          "hardware": "硬件",
+          "hw_connected": "硬件已连接",
+          "recovery": "恢复",
+          "secured": "已保护",
+          "title": "状态地址"
+        },
+        "total_volume": "总交易量"
+      },
+      "sidebar": {
+        "title": "侧边栏地址"
+      },
+      "tabs": {
+        "analytics": "分析",
+        "crosschain": "跨链",
+        "export": "导出",
+        "multisig": "多重签名",
+        "nft": "NFT",
+        "overview": "概览",
+        "transactions": "交易"
+      },
+      "transactions": {
+        "desc": "交易描述",
+        "export": "导出",
+        "title": "交易地址",
+        "wip": "开发中"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "网页分析"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "追踪"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "地址"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "审查"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "执行",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "在线",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "首页",
+    "features": "功能",
+    "about": "关于",
+    "pricing": "价格",
+    "search": "搜索",
+    "dashboards": "仪表板",
+    "monitoring": "监控",
+    "legal": "法律",
+    "privacy": "隐私",
+    "terms": "条款",
+    "impressum": "公司信息"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

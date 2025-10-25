@@ -1,0 +1,168 @@
+# Semgrep Security Rules Configuration
+# ======================================
+
+rules:
+  # SQL Injection Prevention
+  - id: sql-injection-check
+    patterns:
+      - pattern: |
+          cursor.execute($QUERY + $USER_INPUT)
+      - pattern: |
+          cursor.execute(f"... {$VAR} ...")
+    message: "Potentielle SQL Injection! Verwende parametrisierte Queries."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      category: security
+      cwe: "CWE-89"
+      owasp: "A03:2021 - Injection"
+
+  # Command Injection Prevention
+  - id: command-injection-check
+    patterns:
+      - pattern: |
+          subprocess.call($CMD, shell=True)
+      - pattern: |
+          os.system($CMD)
+      - pattern: |
+          subprocess.Popen($CMD, shell=True)
+    message: "Potentielle Command Injection! Vermeide shell=True."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      category: security
+      cwe: "CWE-78"
+      owasp: "A03:2021 - Injection"
+
+  # Hardcoded Secrets
+  - id: hardcoded-secrets
+    patterns:
+      - pattern: |
+          $PASSWORD = "..."
+      - pattern: |
+          $API_KEY = "..."
+      - pattern: |
+          $SECRET = "..."
+    message: "Hardcoded Secret gefunden! Verwende Umgebungsvariablen."
+    languages: [python]
+    severity: WARNING
+    metadata:
+      category: security
+      cwe: "CWE-798"
+      owasp: "A07:2021 - Identification and Authentication Failures"
+
+  # Insecure Deserialization
+  - id: insecure-pickle
+    patterns:
+      - pattern: |
+          pickle.loads($DATA)
+      - pattern: |
+          pickle.load($FILE)
+    message: "Unsichere Deserialisierung mit pickle! Verwende sichere Alternativen."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      category: security
+      cwe: "CWE-502"
+      owasp: "A08:2021 - Software and Data Integrity Failures"
+
+  # Weak Cryptography
+  - id: weak-crypto-md5
+    patterns:
+      - pattern: |
+          hashlib.md5($DATA)
+    message: "Schwacher Hash-Algorithmus MD5! Verwende SHA-256 oder bcrypt."
+    languages: [python]
+    severity: WARNING
+    metadata:
+      category: security
+      cwe: "CWE-327"
+      owasp: "A02:2021 - Cryptographic Failures"
+
+  # Missing Authentication
+  - id: missing-auth-decorator
+    patterns:
+      - pattern: |
+          @router.post(...)
+          def $FUNC(...):
+              ...
+      - pattern-not: |
+          @router.post(...)
+          @require_auth
+          def $FUNC(...):
+              ...
+      - pattern-not: |
+          @router.post(...)
+          @Depends(get_current_user)
+          def $FUNC(...):
+              ...
+    message: "API Endpoint ohne Authentication! Füge @require_auth hinzu."
+    languages: [python]
+    severity: WARNING
+    metadata:
+      category: security
+      owasp: "A01:2021 - Broken Access Control"
+
+  # SSRF Prevention
+  - id: ssrf-check
+    patterns:
+      - pattern: |
+          requests.get($URL)
+      - pattern-not: |
+          requests.get($URL, timeout=...)
+    message: "Potentielle SSRF-Schwachstelle! Validiere URLs und setze Timeouts."
+    languages: [python]
+    severity: WARNING
+    metadata:
+      category: security
+      cwe: "CWE-918"
+      owasp: "A10:2021 - Server-Side Request Forgery"
+
+  # Path Traversal
+  - id: path-traversal
+    patterns:
+      - pattern: |
+          open($USER_INPUT)
+      - pattern: |
+          Path($USER_INPUT)
+    message: "Potentielle Path Traversal! Validiere Pfadeingaben."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      category: security
+      cwe: "CWE-22"
+      owasp: "A01:2021 - Broken Access Control"
+
+  # Missing Rate Limiting
+  - id: missing-rate-limit
+    patterns:
+      - pattern: |
+          @router.$METHOD("/api/...")
+          async def $FUNC(...):
+              ...
+      - pattern-not: |
+          @router.$METHOD("/api/...")
+          @limiter.limit(...)
+          async def $FUNC(...):
+              ...
+    message: "API Endpoint ohne Rate Limiting! Füge @limiter.limit hinzu."
+    languages: [python]
+    severity: INFO
+    metadata:
+      category: security
+      owasp: "A04:2021 - Insecure Design"
+
+  # Insecure Random
+  - id: insecure-random
+    patterns:
+      - pattern: |
+          random.random()
+      - pattern: |
+          random.randint(...)
+    message: "Unsicherer Random-Generator für Security-kritische Operationen! Verwende secrets.token_hex()."
+    languages: [python]
+    severity: WARNING
+    metadata:
+      category: security
+      cwe: "CWE-330"
+      owasp: "A02:2021 - Cryptographic Failures"

@@ -1,0 +1,2039 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Rezerviši demo",
+      "pricing": "Pogledaj cijene",
+      "subtitle": "Započni sada s besplatnim demo ili kontaktiraj naš tim",
+      "title": "Započni sada"
+    },
+    "header": {
+      "badge": "O nama",
+      "subtitle": "Razvijamo vodeću enterprise platformu za blockchain inteligenciju, koja podržava organe reda, VASP-ove i finansijske institucije u zaštiti od kripto-kriminala.",
+      "title": "Budućnost blockchain forenzike"
+    },
+    "mission": {
+      "desc": "Činimo blockchain transakcije transparentnim i pratljivim. Naš cilj je borba protiv kripto-kriminala i pružanje legitimnim učesnicima na tržištu alata za ispunjavanje zahtjeva usklađenosti i minimiziranje rizika.",
+      "title": "Naša misija"
+    },
+    "seo": {
+      "description": "Gradimo vodeću enterprise platformu za blockchain forenziku: usklađenost, istrage i inteligencija na globalnom nivou.",
+      "title": "O nama | SIGMACODE Blockchain Forenzika"
+    },
+    "stats": {
+      "badge": "U brojkama",
+      "blockchains": "Blockchain-ovi",
+      "enterprise_customers": "Enterprise klijenti",
+      "recovered_assets": "Povraćena imovina",
+      "sla_guaranteed": "garantovano putem SLA",
+      "supported": "podržano",
+      "supported_by_tech": "podržano našom tehnologijom",
+      "title": "Naš uticaj",
+      "uptime": "Vrijeme rada",
+      "worldwide": "širom svijeta"
+    },
+    "team": {
+      "badge": "Stručnost",
+      "compliance": {
+        "desc": "Stručnjaci za regulaciju AML/CFT i međunarodne sankcije",
+        "h1": "Bivši regulatori",
+        "h2": "Specijalisti za AML",
+        "h3": "Pravni savjetnici",
+        "title": "Usklađenost i pravni poslovi"
+      },
+      "forensics": {
+        "desc": "Bivši pripadnici organa reda s višegodišnjim iskustvom u istragama kripto-kriminala",
+        "h1": "Alumni FBI/BKA",
+        "h2": "Uklanjanje darkneta",
+        "h3": "Povrat imovine",
+        "title": "Forenzički stručnjaci"
+      },
+      "subtitle": "Stručnjaci iz blockchain forenzike, organa reda, FinTech-a i mašinskog učenja",
+      "tech": {
+        "desc": "Inženjeri iz vodećih tehnoloških kompanija s ekspertizom u blockchain-u",
+        "h1": "Bivši FAANG",
+        "h2": "Blockchain Core Devs",
+        "h3": "Stručnjaci za sigurnost",
+        "title": "Tehnološki specijalisti"
+      },
+      "title": "Naš tim"
+    },
+    "trust": {
+      "badge": "Povjerenje",
+      "ce": {
+        "desc": "Top-10 berzi za AML i praćenje transakcija",
+        "title": "Kripto berze"
+      },
+      "fi": {
+        "desc": "Banke prvog nivoa s izloženošću kriptovalutama",
+        "title": "Banke i FinTech"
+      },
+      "le": {
+        "desc": "FBI, Europol, nacionalni organi reda",
+        "title": "Organi reda"
+      },
+      "reg": {
+        "desc": "Regulatorna tijela za nadzor tržišta",
+        "title": "Regulatori"
+      },
+      "subtitle": "Vodeće organizacije širom svijeta oslanjaju se na našu tehnologiju",
+      "title": "Ko nam vjeruje"
+    },
+    "values": {
+      "badge": "Naše vrijednosti",
+      "compliance": {
+        "desc": "GDPR, eIDAS, OFAC usklađenost. Razumijemo regulatorne zahtjeve i implementiramo ih.",
+        "title": "Prvo usklađenost"
+      },
+      "customer": {
+        "desc": "Bliska saradnja s organima reda i industrijom. Vaši zahtjevi su naša mapa puta.",
+        "title": "Fokus na klijente"
+      },
+      "global": {
+        "desc": "Preko 100 blockchain-ova, podrška za više jezika i međunarodne liste sankcija pokrivene.",
+        "title": "Globalni doseg"
+      },
+      "innovation": {
+        "desc": "Najsavremenija tehnologija: AI/ML, grafička analitika i obrada u realnom vremenu za najbolje rezultate.",
+        "title": "Inovacija"
+      },
+      "team": {
+        "desc": "Interdisciplinarni tim forenzičkih stručnjaka, programera i specijalista za usklađenost.",
+        "title": "Timski rad"
+      },
+      "title": "Šta nas pokreće",
+      "trust": {
+        "desc": "Sigurnost enterprise nivoa sa SOC2/ISO27001 certifikatima. Vaši podaci su sigurni kod nas.",
+        "title": "Povjerenje i sigurnost"
+      }
+    },
+    "vision": {
+      "desc": "Svijet u kojem blockchain tehnologija može ostvariti svoj puni potencijal – transparentno, sigurno i usklađeno. Gradimo infrastrukturu za budućnost u kojoj digitalna imovina postaje mainstream, bez podrške kriminalu.",
+      "title": "Naša vizija"
+    }
+  },
+  "accessibility": {
+    "activate": "Aktiviraj",
+    "close_dialog": "Zatvori dijalog",
+    "font_size": "Veličina fonta",
+    "font_size_large": "Veliki font",
+    "font_size_normal": "Normalna veličina fonta",
+    "font_size_xlarge": "Ekstra veliki font",
+    "high_contrast_detected": "Visoki kontrast detektovan",
+    "keyboard_shortcuts": "Prečice na tastaturi",
+    "navigate_backward": "Navigiraj unazad",
+    "navigate_forward": "Navigiraj naprijed",
+    "no_system_preferences": "Nisu detektovane posebne sistemske postavke",
+    "reduced_motion_detected": "Smanjeno kretanje detektovano",
+    "settings": "Postavke pristupačnosti",
+    "skip_to_content": "Preskoči na sadržaj",
+    "system_preferences": "Sistemske postavke"
+  },
+  "address_analysis": {
+    "title": "Analiza adrese",
+    "wip_desc": "Opis analize adrese u izradi",
+    "wip_title": "Analiza adrese u izradi"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI agenti",
+      "app_name": "Naziv aplikacije",
+      "cross_chain": "Unakrsni lanac",
+      "max_trace_depth": "Maksimalna dubina praćenja",
+      "ml_clustering": "ML klasteriranje",
+      "title": "Konfiguracija",
+      "version": "Verzija"
+    },
+    "disabled": "✗ Onemogućeno",
+    "enabled": "✓ Omogućeno",
+    "error": "Greška",
+    "health": {
+      "connected": "✓ Povezano",
+      "disconnected": "✗ Nepovezano",
+      "error": "Neuspješno učitavanje statusa zdravlja",
+      "title": "Zdravlje baze podataka"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Preuzima transakcije iz Ethereum RPC-a",
+        "ingesting": "Uvoz u toku...",
+        "placeholder": "0x...",
+        "start": "Pokreni uvoz",
+        "success": "✓ Uvoz započet u pozadini",
+        "title": "Uvoz podataka o adresi"
+      },
+      "block": {
+        "help": "Uvozi sve transakcije iz bloka",
+        "ingesting": "Uvoz u toku...",
+        "placeholder": "Broj bloka",
+        "start": "Pokreni uvoz bloka",
+        "success": "✓ Uvoz bloka započet",
+        "title": "Uvoz podataka o bloku"
+      }
+    },
+    "stats": {
+      "db_size": "Veličina baze podataka",
+      "title": "Sistemske statistike",
+      "total_addresses": "Ukupno adresa",
+      "total_traces": "Ukupno praćenja",
+      "total_transactions": "Ukupno transakcija"
+    },
+    "subtitle": "Nadzor, konfiguracija i upravljanje podacima",
+    "tabs": {
+      "config": "Konfiguracija",
+      "ingestion": "Uvoz podataka",
+      "overview": "Pregled",
+      "users": "Upravljanje korisnicima"
+    },
+    "title": "Sistemska administracija"
+  },
+  "agent": {
+    "cancel": "Otkaži",
+    "error": "Greška agenta",
+    "error_unknown": "Nepoznata greška agenta",
+    "examples": {
+      "1": "Primjer 1",
+      "2": "Primjer 2",
+      "3": "Primjer 3",
+      "title": "Primjeri agenta"
+    },
+    "instructions": "Upute agenta",
+    "loading": "Učitavanje agenta...",
+    "placeholder": "Placeholder agenta",
+    "retry": "Pokušaj ponovo",
+    "send": "Pošalji",
+    "subtitle": "Podnaslov agenta",
+    "title": "Naslov agenta",
+    "welcome": "Dobrodošli u agenta"
+  },
+  "auth": {
+    "fields": {
+      "email": "E-mail",
+      "organization_opt": "Organizacija (opcionalno)",
+      "password": "Lozinka",
+      "password_confirm": "Potvrdi lozinku",
+      "username": "Korisničko ime"
+    },
+    "forgot": {
+      "back_to_login": "Nazad na prijavu",
+      "dev_note": "Pošto nije konfigurisan e-mail servis, provjerite serverske logove za reset link.",
+      "dev_note_label": "Napomena (Dev režim):",
+      "error": "Greška prilikom slanja",
+      "info_sent": "Ako postoji nalog s ovim e-mailom, poslan je reset link.",
+      "sent": "Reset link je poslan!",
+      "submit": "Pošalji reset link",
+      "submitting": "Slanje u toku...",
+      "subtitle": "Nema problema! Unesite svoj e-mail i poslaćemo vam reset link.",
+      "title": "Zaboravili ste lozinku?",
+      "title_sent": "E-mail poslan!"
+    },
+    "login": {
+      "failed": "Prijava neuspješna",
+      "fill_all_fields": "Molimo popunite sva polja",
+      "forgot_password": "Zaboravili ste lozinku?",
+      "google": "Prijavi se putem Google-a",
+      "google_retry": "Pokušaj ponovo s Google-om",
+      "no_account": "Još nemate nalog?",
+      "oauth_failed": "OAuth prijava neuspješna. Molimo pokušajte ponovo.",
+      "oauth_processing": "Obrađuje se OAuth prijava...",
+      "or": "ili",
+      "register_now": "Registruj se sada",
+      "remember_me": "Ostani prijavljen",
+      "submit": "Prijavi se",
+      "submitting": "Prijava u toku...",
+      "subtitle": "Prijavite se da nastavite"
+    },
+    "placeholders": {
+      "email": "analitik@primjer.com",
+      "organization": "FBI, Chainalysis, itd.",
+      "password": "••••••••",
+      "username": "john_analitik"
+    },
+    "register": {
+      "accept": "Prihvatam",
+      "already": "Već registrovan?",
+      "and": "i",
+      "failed": "Registracija neuspješna",
+      "fill_all_fields": "Molimo popunite sva obavezna polja",
+      "google": "Registruj se putem Google-a",
+      "login_now": "Prijavi se sada",
+      "password_hint": "Najmanje 8 karaktera",
+      "password_too_short": "Lozinka mora imati najmanje 8 karaktera",
+      "passwords_no_match": "Lozinke se ne podudaraju",
+      "submit": "Registruj se",
+      "submitting": "Registracija u toku...",
+      "subtitle": "Započni svoju forenzičku analizu",
+      "title": "Kreiraj nalog"
+    }
+  },
+  "common": {
+    "access_denied": "Pristup zabranjen (samo admin)",
+    "account": "Račun",
+    "back": "Nazad",
+    "close": "Zatvori",
+    "info": "Informacija",
+    "language": "Jezik",
+    "loading": "Učitavanje...",
+    "next": "Sljedeće",
+    "page": "Stranica",
+    "prev": "Prethodno",
+    "refresh": "Osvježi",
+    "search": "Pretraga",
+    "success": "Uspjeh",
+    "theme": "Tema",
+    "view": "Pogledaj",
+    "wip": {
+      "title": "Uskoro dostupno",
+      "desc": "Ova funkcija je još u razvoju.",
+      "cta": "Saznaj više"
+    },
+    "start_free": "Počni besplatno",
+    "error": "Greška",
+    "save": "Sačuvaj",
+    "cancel": "Otkaži",
+    "delete": "Obriši",
+    "edit": "Izmijeni",
+    "create": "Kreiraj",
+    "finish": "Završi",
+    "open": "Otvori",
+    "yes": "Da",
+    "no": "Ne",
+    "confirm": "Potvrdi",
+    "welcome": "Dobrodošli",
+    "dashboard": "Kontrolna tabla",
+    "settings": "Postavke",
+    "profile": "Profil",
+    "logout": "Odjava",
+    "login": "Prijava",
+    "register": "Registracija",
+    "email": "Email",
+    "password": "Lozinka",
+    "username": "Korisničko ime",
+    "documents": "Dokumenti",
+    "recent": "Nedavno korišteno",
+    "no_results": "Nema rezultata"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Minimalna ozbiljnost",
+      "refresh": "Osvježi",
+      "title": "Kontrole",
+      "window": "Prozor",
+      "window_15m": "15 minuta",
+      "window_1h": "1 sat",
+      "window_24h": "24 sata",
+      "window_2h": "2 sata",
+      "window_30m": "30 minuta",
+      "window_5m": "5 minuta"
+    },
+    "header": {
+      "subtitle": "Podnaslov korelacije",
+      "title": "Naslov korelacije"
+    },
+    "overview": {
+      "active_rules": "Aktivna pravila",
+      "analyzed": "Analizirano",
+      "empty": "Prazno",
+      "found": "Pronađeno",
+      "loading": "Učitavanje...",
+      "min_sev": "Minimalna ozbiljnost",
+      "rate": "Stopa",
+      "title": "Pregled",
+      "window": "Prozor"
+    },
+    "rules": {
+      "empty": "Nema pravila",
+      "footer": "Podnožje pravila",
+      "loading": "Učitavanje pravila...",
+      "min": "Minimum",
+      "minutes": "Minuta",
+      "required_patterns": "Obavezni obrasci",
+      "title": "Pravila",
+      "window": "Prozor"
+    },
+    "sev": {
+      "critical": "Kritično",
+      "high": "Visoko",
+      "low": "Nisko",
+      "medium": "Srednje"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Po razlogu",
+        "by_type": "Po tipu",
+        "title": "Prikaz supresija"
+      },
+      "rate": "Stopa supresije",
+      "title": "Supresije",
+      "top_entity": "Vodeća entiteta",
+      "total": "Ukupno"
+    },
+    "test": {
+      "add_alert": "Dodaj upozorenje",
+      "alerts_label": "Oznaka upozorenja",
+      "match": "Podudaranje",
+      "no_alerts": "Nema upozorenja",
+      "no_match": "Nema podudaranja",
+      "pick_rule": "Izaberi pravilo",
+      "pick_rule_ph": "Placeholder za izbor pravila",
+      "result": "Rezultat",
+      "run": "Pokreni",
+      "testing": "Testiranje...",
+      "title": "Test korelacije"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Kopiraj od",
+      "copy_mint": "Kopiraj mint",
+      "export_csv": "Izvezi CSV",
+      "export_csv_page": "Izvezi CSV stranice",
+      "fetch": "Preuzmi"
+    },
+    "bitcoin": {
+      "block_title": "Naslov bloka",
+      "compute": "Izračunaj",
+      "decoded": "Dekodirano",
+      "edges_title": "Naslov rubova",
+      "height_ph": "Placeholder za visinu",
+      "ingest_edges": "Uvezi rubove",
+      "method_heuristic": "Heuristička metoda",
+      "method_proportional": "Proporcionalna metoda",
+      "normalized": "Normalizovano",
+      "tx_title": "Naslov transakcije",
+      "txid_ph": "Placeholder za txid"
+    },
+    "compliance": {
+      "add_watch": "Dodaj na listu praćenja",
+      "address_ph": "Placeholder za adresu",
+      "chain_ph": "Placeholder za lanac",
+      "entries": "Unosi",
+      "error": "Greška",
+      "filter_address_ph": "Placeholder za filter adrese",
+      "filter_chain_ph": "Placeholder za filter lanca",
+      "list_watch": "Lista praćenja",
+      "screen": "Provjeri",
+      "title": "Usklađenost",
+      "watchlist": "Lista praćenja"
+    },
+    "ethereum": {
+      "canonical": "Kanonikalno",
+      "copy_hash": "Kopiraj hash",
+      "decoded": "Dekodirano",
+      "error": "Greška",
+      "open_etherscan": "Otvori Etherscan",
+      "tx_hash_ph": "Placeholder za hash transakcije",
+      "tx_title": "Naslov transakcije"
+    },
+    "ingest": {
+      "canonical_notice": "Obavijest o kanonikalnom uvozu",
+      "edges_notice": "Obavijest o uvozu rubova",
+      "loading": "Učitavanje..."
+    },
+    "labels": {
+      "add": "Dodaj",
+      "address_ph": "Placeholder za adresu",
+      "category_ph": "Placeholder za kategoriju",
+      "chain_ph": "Placeholder za lanac",
+      "error": "Greška",
+      "label_ph": "Placeholder za oznaku",
+      "lookup": "Pretraži",
+      "title": "Oznake"
+    },
+    "monitoring": {
+      "fetch": "Preuzmi",
+      "key_counters": "Ključni brojači",
+      "title": "Nadzor"
+    },
+    "rpc_unavailable": "RPC nedostupan",
+    "solana": {
+      "canonical_error": "Greška kanonikalnog uvoza",
+      "canonical_title": "Naslov kanonikalnog uvoza",
+      "error": "Greška",
+      "ingest_canonical": "Uvezi kanonikalno",
+      "signature_ph": "Placeholder za potpis",
+      "title": "Naslov Solana",
+      "transfers": "Transferi"
+    },
+    "table": {
+      "actions": "Akcije",
+      "address": "Adresa",
+      "amount_ui": "Iznos UI",
+      "chain": "Lanac",
+      "created": "Kreirano",
+      "decimals": "Decimale",
+      "fee": "Naknada",
+      "from": "Od",
+      "from_vout": "Od Vout",
+      "method": "Metoda",
+      "mint": "Mint",
+      "reason": "Razlog",
+      "to": "Za",
+      "to_vout": "Za Vout",
+      "value_btc": "Vrijednost BTC"
+    },
+    "totals": {
+      "page_sum": "Suma stranice",
+      "page_sum_btc": "Suma stranice BTC",
+      "total_amount": "Ukupni iznos",
+      "total_value_btc": "Ukupna vrijednost BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Akcije",
+    "active": "Aktivno",
+    "administration": "Administracija",
+    "alert_aging": "Starenje upozorenja",
+    "alert_engine": "Motor upozorenja",
+    "alert_monitoring": "Nadzor upozorenja",
+    "alert_overview": "Pregled upozorenja",
+    "analyst_throughput": "Propusnost analitičara",
+    "audit_kpis": "KPI-ovi revizije",
+    "backlog": "Zaostatak",
+    "bucket_placeholder": "24h, 3d, 7d, >7d",
+    "buckets": "Kategorije",
+    "case_management": "Upravljanje slučajevima",
+    "connected": "Povezano",
+    "correlation_analysis": "Analiza korelacije",
+    "database": "Baza podataka",
+    "database_response": "Odgovor baze podataka",
+    "days": "Dani",
+    "disconnected": "Nepovezano",
+    "failed_actions": "Neuspešne akcije",
+    "false_positive_rate": "Stopa lažnih pozitivnih",
+    "fp": "Lažni pozitivni",
+    "graph_db": "Baza podataka grafova",
+    "graph_explorer": "Istraživač grafova",
+    "healthy": "Zdravo",
+    "inactive": "Neaktivno",
+    "issues": "Problemi",
+    "last_24h": "Posljednjih 24 sata",
+    "last_update": "Posljednje ažuriranje",
+    "mttr": "Srednje vrijeme odgovora (MTTR)",
+    "open_alerts": "Otvorena upozorenja",
+    "open_cases": "Otvoreni slučajevi",
+    "performance": "Performanse",
+    "priority_distribution": "Distribucija prioriteta",
+    "quick_access": "Brzi pristup",
+    "recent_alerts": "Nedavna upozorenja",
+    "response_time": "Vrijeme odgovora",
+    "rule_effectiveness": "Efikasnost pravila",
+    "sanctions_hits": "Pogoci sankcija",
+    "service_status": "Status usluge",
+    "severity_breakdown": "Raspodjela ozbiljnosti",
+    "sla_breach_rate": "Stopa kršenja SLA",
+    "sla_hours": "SLA (sati)",
+    "status_breakdown": "Raspodjela statusa",
+    "success_rate": "Stopa uspjeha",
+    "suppression_rate": "Stopa supresije",
+    "system_details": "Detalji sistema",
+    "system_load": "Opterećenje sistema",
+    "system_overview": "Pregled sistema",
+    "system_status": "Status sistema",
+    "title": "SIGMACODE Blockchain Forenzički Dashboard",
+    "total_alerts": "Ukupno upozorenja",
+    "total_cases": "Ukupno slučajeva",
+    "total_logs": "Ukupno logova",
+    "transaction_tracing": "Praćenje transakcija",
+    "uptime": "Vrijeme rada",
+    "welcome": "Dobrodošli nazad",
+    "overview": "Pregled",
+    "recent_activity": "Nedavne aktivnosti",
+    "quick_actions": "Brze akcije",
+    "statistics": "Statistike",
+    "notifications": "Obavještenja",
+    "hero": {
+      "welcome": "Dobrodošli nazad",
+      "subtitle": "Evo šta se dešava sa vašim istragama danas."
+    },
+    "quickActions": {
+      "title": "Brze akcije",
+      "newTrace": "Novo praćenje",
+      "newCase": "Novi slučaj",
+      "riskCheck": "Provjera rizika",
+      "aiAgent": "AI Agent"
+    },
+    "stats": {
+      "cases": "Aktivni slučajevi",
+      "traces": "Praćenja danas",
+      "alerts": "Upozorenja",
+      "uptime": "Vrijeme rada"
+    },
+    "live_alerts": "Upozorenja uživo",
+    "all_alerts": "Sva upozorenja",
+    "trend_analysis": "Analiza trendova",
+    "detailed_analytics": "Detaljna analitika",
+    "analytics": "Analitika"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Autonomni agenti s LangChain i GPT-4 integracijom",
+        "title": "AI agenti"
+      },
+      "badge": "AI i mašinsko učenje",
+      "desc": "Modeli mašinskog učenja za detekciju anomalija, ocjenu rizika i autonomne AI agente za istrage 24/7.",
+      "pattern": {
+        "desc": "Detekcija uzoraka prevare i analiza ponašanja",
+        "title": "Prepoznavanje uzoraka"
+      },
+      "risk": {
+        "desc": "ML-bazirana procjena rizika adresa i transakcija",
+        "title": "Ocjena rizika"
+      },
+      "smart_contract": {
+        "desc": "Sličnost bajtkoda i detekcija ranjivosti",
+        "title": "Analiza pametnih ugovora"
+      },
+      "title": "Analize podržane AI-jem"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "ML-bazirana detekcija neuobičajenih uzoraka transakcija",
+        "title": "Detekcija anomalija"
+      },
+      "badge": "Nadzor u realnom vremenu",
+      "custom_rules": {
+        "desc": "Prilagođena pravila upozorenja s Rule DSL i Policy Engine",
+        "title": "Prilagođena pravila"
+      },
+      "desc": "15+ konfigurabilnih pravila upozorenja s mašinskim učenjem. Dobij obavještenja o sankcijama, miješanju, transferima visoke vrijednosti i anomalijama.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io i druge usluge miješanja",
+        "title": "Detekcija miješanja"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK liste sankcija s dnevnim ažuriranjima",
+        "title": "Provjera sankcija"
+      },
+      "title": "Inteligentni motor upozorenja"
+    },
+    "case": {
+      "badge": "Tok istrage",
+      "desc": "Kompletno upravljanje istragama s lancem dokaza, eIDAS potpisima i izvještajima prihvatljivim na sudu.",
+      "eidas": {
+        "desc": "Kvalifikovani elektronski potpisi prema EU standardu",
+        "title": "eIDAS potpisi"
+      },
+      "evidence": {
+        "desc": "Neprekidan lanac dokaza za dokaze prihvatljive na sudu",
+        "title": "Lanac dokaza"
+      },
+      "export": {
+        "desc": "PDF/Excel izvoz s vremenskim žigom i revizijskim tragom",
+        "title": "Izvoz i izvještaji"
+      },
+      "title": "Upravljanje slučajevima i lanac dokaza",
+      "tracking": {
+        "desc": "Strukturirano upravljanje slučajevima s statusom toka rada",
+        "title": "Praćenje slučajeva"
+      }
+    },
+    "cta": {
+      "demo": "Zatraži demo",
+      "pricing": "Pogledaj cijene",
+      "subtitle": "Započni sada s besplatnim demo",
+      "title": "Spreman za kompletan paket?",
+      "start": "Počni Besplatno"
+    },
+    "graph": {
+      "badge": "Grafička inteligencija",
+      "clustering": {
+        "desc": "Automatsko klasteriranje povezanih novčanika",
+        "title": "Klasteriranje novčanika"
+      },
+      "community": {
+        "desc": "Detekcija grupa novčanika s zajedničkim interesima",
+        "title": "Detekcija zajednice"
+      },
+      "desc": "Neo4j-bazirana baza podataka grafova za klasteriranje entiteta, detekciju zajednica i vizuelnu istragu.",
+      "labels": {
+        "desc": "Oznake berzi/VASP/DeFi s inteligencijom zajednice",
+        "title": "Oznake entiteta"
+      },
+      "title": "Rezolucija entiteta i mrežna analiza",
+      "visual": {
+        "desc": "Interaktivni istraživač grafova za složene analize",
+        "title": "Vizuelna istraga"
+      }
+    },
+    "header": {
+      "badge": "Kompletne funkcije",
+      "cta_try": "Isprobaj besplatno",
+      "subtitle": "Od praćenja transakcija do AI-poduprte analize – svi alati za profesionalne istrage",
+      "title": "Kompletan paket blockchain forenzike"
+    },
+    "security": {
+      "audit": {
+        "desc": "Kompletni revizijski tragovi za dokaze usklađenosti",
+        "title": "Revizijski logovi"
+      },
+      "badge": "Enterprise sigurnost",
+      "desc": "Sigurnost enterprise nivoa s RBAC, SSO/SAML, revizijskim logovima i GDPR usklađenošću.",
+      "privacy": {
+        "desc": "GDPR usklađenost s anonimizacijom PII",
+        "title": "Privatnost podataka"
+      },
+      "rbac": {
+        "desc": "Granularna kontrola pristupa bazirana na ulogama s prilagođenim ulogama",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Single Sign-On s SAML 2.0 i OAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "Sigurnost i usklađenost"
+    },
+    "seo": {
+      "description": "Korporativna blockchain forensics: Praćenje više lanaca, AI agenti, procjena rizika u realnom vremenu i alati za usklađenost.",
+      "title": "Mogućnosti | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Preciznost",
+      "ai_agents": "AI agenti",
+      "alert_rules": "Pravila upozorenja",
+      "blockchains": "Blockchain-ovi",
+      "bridges": "Protokoli mostova",
+      "case_templates": "Predlošci slučajeva",
+      "compliance": "Usklađenost",
+      "encryption": "Enkripcija",
+      "entities": "Entiteti",
+      "evidence_types": "Tipovi dokaza",
+      "false_positives": "Lažni pozitivni",
+      "max_depth": "Maksimalna dubina praćenja",
+      "ml_models": "ML modeli",
+      "query_time": "Vrijeme upita",
+      "relationships": "Odnosi",
+      "response_time": "Vrijeme odgovora",
+      "security_certs": "Sigurnosni certifikati",
+      "uptime_sla": "SLA vrijeme rada"
+    },
+    "tracing": {
+      "badge": "Praćenje transakcija",
+      "bridge": {
+        "desc": "Automatska detekcija unakrsnih lanaca i zamotane imovine",
+        "title": "Detekcija mostova"
+      },
+      "cross_chain": {
+        "desc": "Podržano preko 100 blockchain-ova: EVM, UTXO, Solana, Cosmos i više",
+        "title": "Praćenje unakrsnih lanaca"
+      },
+      "demixing": {
+        "desc": "Heuristička analiza Tornado Cash-a, miksera i privatnih kovanica",
+        "title": "Demiksovanje privatnih kovanica"
+      },
+      "desc": "Prati transakcije preko svih glavnih blockchain-ova. S detekcijom unakrsnih lanaca, demiksovanjem privatnih kovanica i rekurzivnim praćenjem unaprijed/unazad.",
+      "recursive": {
+        "desc": "Praćenje unaprijed/unazad s konfigurabilnom dubinom i filterima",
+        "title": "Rekurzivno praćenje"
+      },
+      "title": "Inteligencija transakcija na više lanaca"
+    },
+    "hero": {
+      "badge": "Mogućnosti",
+      "title": "Korporativna Blockchain Forensics",
+      "subtitle": "Svi alati potrebni za istragu kripto zločina, osiguravanje usklađenosti i zaštitu vašeg poslovanja."
+    }
+  },
+  "footer": {
+    "blog": "Blog",
+    "careers": "Karijere",
+    "company": "Kompanija",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "legal": "Pravno",
+    "privacy": "Privatnost",
+    "product": "Proizvod",
+    "request_demo": "Zatraži demo",
+    "rights_reserved": "Sva prava zadržana.",
+    "security": "Sigurnost",
+    "tagline": "Enterprise blockchain AI za usklađenost i istrage – sigurno, brzo, prihvatljivo na sudu.",
+    "terms": "Uslovi"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Aktivni čvorovi",
+      "avg_degree": "Prosječni stepen",
+      "density": "Gustoća mreže",
+      "total_edges": "Ukupno rubova",
+      "total_nodes": "Ukupno čvorova"
+    },
+    "centrality": {
+      "taint": "Kontaminacija",
+      "title": "Analiza centralnosti"
+    },
+    "communities": {
+      "algorithm": "Algoritam",
+      "avg_size": "Prosječna veličina",
+      "avg_taint": "Prosječna kontaminacija",
+      "empty": "Klikni",
+      "label_propagation": "Propagacija oznaka",
+      "loading": "Detekcija zajednica...",
+      "louvain": "Louvain (modularnost)",
+      "title": "Detekcija zajednica",
+      "total": "Ukupno zajednica"
+    },
+    "degree": {
+      "title": "Distribucija stepena",
+      "x": "Stepen",
+      "y": "Broj"
+    },
+    "filters": {
+      "cross_chain": "Unakrsni lanac (Bridge-Layer)",
+      "from": "Od (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Do (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Napredne mrežne analize i detekcija uzoraka",
+      "title": "Grafička analitika i mrežna inteligencija"
+    },
+    "hubs": {
+      "in": "Ulaz",
+      "out": "Izlaz",
+      "title": "Mrežni čvorovi (čvorovi visokog stepena)",
+      "total": "Ukupno"
+    },
+    "loading": {
+      "stats": "Učitavanje statistika..."
+    },
+    "patterns": {
+      "circle_length": "Dužina kruga",
+      "detected": "Detektovani krugovi",
+      "empty_desc": "Ovo je dobar znak - nisu pronađeni očigledni krugovi za pranje novca",
+      "empty_title": "Nisu detektovani kružni obrasci",
+      "high_risk": "Visoki rizik",
+      "hops": "Skokovi",
+      "loading": "Detekcija uzoraka...",
+      "more_addresses": "više adresa",
+      "risk_score": "Ocjena rizika",
+      "title": "Kružni obrasci (potencijalno pranje novca)",
+      "total": "Ukupno",
+      "total_value": "Ukupna vrijednost",
+      "tx_path": "Putanja transakcije:"
+    },
+    "tabs": {
+      "communities": "Detekcija zajednica",
+      "overview": "Pregled mreže",
+      "patterns": "Detekcija uzoraka"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Klasterizacija",
+      "clustering": "U toku klasterizacija",
+      "pause_timeline": "Pauziraj vremensku liniju",
+      "play_timeline": "Pokreni vremensku liniju",
+      "title": "Akcije istražitelja"
+    },
+    "connected": {
+      "taint": "Kontaminacija",
+      "title": "Povezani entiteti",
+      "tx": "Transakcija"
+    },
+    "graph": {
+      "connections": "Veze",
+      "enter_address": "Unesi adresu",
+      "loading": "Učitavanje grafa...",
+      "nodes": "Čvorovi",
+      "title": "Grafički prikaz"
+    },
+    "header": {
+      "subtitle": "Podnaslov istražitelja",
+      "title": "Naslov istražitelja"
+    },
+    "path": {
+      "bridges": "Mostovi",
+      "hops": "Skokovi",
+      "risk_score": "Ocjena rizika",
+      "title": "Putanja",
+      "total_value": "Ukupna vrijednost"
+    },
+    "search": {
+      "explore": "Istraži",
+      "placeholder": "Placeholder za pretragu",
+      "title": "Pretraga"
+    },
+    "settings": {
+      "from": "Od",
+      "hops_1": "1 skok",
+      "hops_2": "2 skoka",
+      "hops_3": "3 skoka",
+      "hops_4": "4 skoka",
+      "hops_5": "5 skokova",
+      "include_bridges": "Uključi mostove",
+      "max_hops": "Maksimalni skokovi",
+      "title": "Postavke",
+      "to": "Do"
+    },
+    "timeline": {
+      "empty": "Prazna vremenska linija",
+      "events": "Događaji",
+      "risk": "Rizik",
+      "select_address": "Izaberi adresu",
+      "title": "Vremenska linija",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Zatraži demo sada",
+      "pricing": "Pogledaj cijene"
+    },
+    "cta2": {
+      "demo": "Zatraži besplatni demo",
+      "pricing": "Pogledaj cijene",
+      "subtitle": "Započni sada s besplatnim demo i doživi budućnost blockchain forenzike",
+      "title": "Spreman za enterprise blockchain inteligenciju?"
+    },
+    "features": {
+      "badge": "Funkcije",
+      "subtitle": "Alati enterprise nivoa za usklađenost, istrage i upravljanje rizicima",
+      "title": "Sve što ti treba za blockchain forenziku"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Blockchain Forenzika",
+      "point1": "Preko 100 blockchain-ova",
+      "point2": "OFAC/UN/EU sankcije",
+      "point3": "Nadzor u realnom vremenu",
+      "subtitle": "AI-podržana usklađenost, istrage i nadzor rizika – u realnom vremenu i enterprise nivoa.",
+      "title": "Enterprise Blockchain Inteligencija"
+    },
+    "pricing": {
+      "badge": "Cijene",
+      "subtitle": "Od besplatnih do enterprise - započni sada",
+      "title": "Fleksibilni paketi za svaku veličinu poduzeća",
+      "view_all": "Pogledaj sve cijene"
+    },
+    "seo": {
+      "description": "AI-podržana usklađenost, istrage i nadzor rizika – u realnom vremenu i enterprise nivoa. SIGMACODE Blockchain Forenzika.",
+      "title": "SIGMACODE | Enterprise Blockchain Inteligencija"
+    },
+    "tech": {
+      "badge": "Tehnologija",
+      "subtitle": "Infrastruktura enterprise nivoa za maksimalne performanse i sigurnost",
+      "title": "Najsavremeniji tehnološki stack"
+    },
+    "use_cases": {
+      "badge": "Primjene",
+      "subtitle": "Od organa reda do FinTech-a",
+      "title": "Pravo rješenje za svaki slučaj upotrebe"
+    }
+  },
+  "layout": {
+    "main_navigation": "Glavna navigacija",
+    "quick_search_title": "Brza pretraga (Ctrl/⌘+K)",
+    "skip_to_content": "Preskoči na sadržaj",
+    "quick_search_placeholder": "Brza pretraga...",
+    "quick_search_hint": "Savjet: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie baner",
+    "title": "Kolačići i privatnost",
+    "title_short": "Kolačići",
+    "description": "Koristimo osnovne kolačiće za rad ove web stranice. Opcionalni analitički kolačići nam pomažu da razumijemo i poboljšamo upotrebu. Možete prihvatiti sve kolačiće ili dozvoliti samo neophodne. Svoj izbor možete promijeniti bilo kada u postavkama.",
+    "privacy_link": "Politika privatnosti",
+    "terms_link": "Uslovi korištenja",
+    "imprint_link": "Impressum",
+    "only_necessary": "Samo neophodni",
+    "accept_all": "Prihvati sve",
+    "preferences": "Postavke",
+    "save_preferences": "Sačuvaj postavke",
+    "manage": "Postavke kolačića",
+    "analytics_title": "Analitički kolačići",
+    "analytics_desc": "Pomaže nam da razumijemo upotrebu i poboljšamo web stranicu.",
+    "marketing_title": "Marketing kolačići",
+    "marketing_desc": "Omogućava personalizovani sadržaj i ponude.",
+    "all_optional_title": "Omogući sve opcionalne",
+    "all_optional_desc": "Omogućava i analitičke i marketing kolačiće."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Zatvori",
+        "close_title": "Zatvori upozorenje",
+        "copy_alert_id_title": "Kopiraj ID upozorenja",
+        "copy_entity": "Kopiraj entitet",
+        "copy_entity_id_title": "Kopiraj ID entiteta",
+        "copy_id": "Kopiraj ID",
+        "copy_rule": "Kopiraj pravilo",
+        "copy_rule_id_title": "Kopiraj ID pravila",
+        "details": "Detalji",
+        "details_title": "Prikaži detalje",
+        "reset": "Resetuj"
+      },
+      "audit": {
+        "empty": "Nema događaja",
+        "title": "Revizijski trag"
+      },
+      "csv": {
+        "export_all": "CSV izvoz (svi)",
+        "export_all_title": "Izvezi CSV svih filtriranih redova (server)",
+        "export_page": "CSV izvoz (stranica)",
+        "export_page_title": "Izvezi CSV stranice",
+        "no_filtered_data": "Nema filtriranih podataka",
+        "no_page_data": "Nema podataka na ovoj stranici"
+      },
+      "empty": "Nema pronađenih upozorenja",
+      "filters": {
+        "all": "(svi)",
+        "search_label": "Pretraga (rule_id / entity_id)",
+        "search_placeholder": "Pretraži...",
+        "severity": "Ozbiljnost",
+        "source": "Izvor",
+        "source_persisted": "Persistiert (KYT)",
+        "source_realtime": "Realtime (Motor upozorenja)",
+        "status": "Status"
+      },
+      "kpi": {
+        "event_time_set": "Postavi vrijeme događaja (first_seen_at)",
+        "event_time_title": "Vrijeme događaja = first_seen_at",
+        "false_positive": "Označi kao lažno pozitivno",
+        "title": "KPI anotacije",
+        "true_positive": "Označi kao istinski pozitivno"
+      },
+      "loading": "Učitavanje upozorenja...",
+      "modal": {
+        "alert_id": "ID upozorenja",
+        "chain": "Lanac",
+        "context": "Kontekst",
+        "entity": "Entitet",
+        "rule_id": "ID pravila",
+        "severity": "Ozbiljnost",
+        "title": "Detalji upozorenja"
+      },
+      "pagination": {
+        "next": "Dalje",
+        "page": "Stranica",
+        "prev": "Nazad"
+      },
+      "severity": {
+        "critical": "kritično",
+        "high": "visoko",
+        "low": "nisko",
+        "medium": "srednje"
+      },
+      "status": {
+        "assigned": "dodijeljeno",
+        "closed": "zatvoreno",
+        "open": "otvoreno",
+        "snoozed": "odgođeno"
+      },
+      "subtitle": "Pravila u realnom vremenu i persistiert upozorenja (KYT)",
+      "table": {
+        "first": "prvi",
+        "last": "posljednji"
+      },
+      "title": "Nadzor upozorenja",
+      "toasts": {
+        "copy_failed": "Kopiranje neuspješno",
+        "disposition_failed": "Dispozicija neuspješna",
+        "disposition_set": "Dispozicija postavljena",
+        "entity_copied": "Entitet kopiran",
+        "event_time_failed": "Postavljanje vremena događaja neuspješno",
+        "event_time_set": "Vrijeme događaja postavljeno",
+        "export_failed": "Serverski izvoz neuspješan",
+        "export_started": "Serverski izvoz započet",
+        "id_copied": "ID kopiran",
+        "rule_copied": "Pravilo kopirano"
+      }
+    }
+  },
+  "navigation": {
+    "about": "O nama",
+    "analytics": "Analitika",
+    "close_menu": "Zatvori meni",
+    "dashboard": "Tabla",
+    "features": "Mogućnosti",
+    "home": "Početna",
+    "logout": "Odjava",
+    "open_menu": "Otvori meni",
+    "pricing": "Cijene",
+    "settings": "Postavke",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Osvježi"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Jezgra",
+        "title": "Upotreba CPU-a"
+      },
+      "db": {
+        "connected": "Povezano",
+        "disconnected": "Nepovezano",
+        "response": "Odgovor",
+        "title": "Baza podataka"
+      },
+      "memory": {
+        "available": "dostupno",
+        "title": "Upotreba memorije"
+      },
+      "system_status": {
+        "healthy": "Zdravo",
+        "issues": "Problemi",
+        "title": "Status sistema",
+        "uptime": "Vrijeme rada"
+      }
+    },
+    "common": {
+      "no": "Ne",
+      "yes": "Da"
+    },
+    "header": {
+      "last_refresh": "Posljednje osvježavanje",
+      "subtitle": "Sveobuhvatni nadzor performansi sistema, metrika i SLO-ova",
+      "title": "Dashboard za performanse i posmatranje"
+    },
+    "metrics": {
+      "empty": "Nema dostupnih podataka o metrikama",
+      "loading": "Učitavanje metrika...",
+      "max": "Maksimum",
+      "measurements": "Mjerenja",
+      "min": "Minimum",
+      "title": "Metrike performansi (1 sat)",
+      "trend": "Trend"
+    },
+    "recent_alerts": {
+      "empty": "Nema nedavnih upozorenja",
+      "title": "Nedavna upozorenja o performansama"
+    },
+    "services": {
+      "active": "Aktivno",
+      "inactive": "Neaktivno",
+      "title": "Status usluge"
+    },
+    "slo": {
+      "empty": "Nema dostupnih SLO podataka",
+      "loading": "Učitavanje SLO-ova...",
+      "threshold": "Prag",
+      "title": "Usklađenost SLO-a",
+      "violations": "Kršenja"
+    },
+    "system_details": {
+      "database": "Baza podataka",
+      "db_connected": "Povezano",
+      "db_type": "Tip",
+      "debug": "Debug",
+      "environment": "Okruženje",
+      "log_level": "Nivo logova",
+      "mode": "Režim",
+      "platform": "Platforma",
+      "python_version": "Verzija Python-a",
+      "response_time": "Vrijeme odgovora",
+      "system_info": "Informacije o sistemu",
+      "title": "Detalji sistema",
+      "version": "Verzija"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Dodatni blockchain-ovi",
+        "i2": "Dodatna korisnička mjesta",
+        "i3": "Premium sankcije (proširene liste)",
+        "i4": "Napredni formati izvoza",
+        "i5": "Prioritetna podrška",
+        "i6": "White-Label (Enterprise)",
+        "title": "Dostupni dodaci"
+      },
+      "badge": "Fleksibilni dodaci",
+      "overage": {
+        "extra_credits": "Dodatni krediti",
+        "monthly_cap": "Mjesečni limit",
+        "note": "Koristiš više od svog kontingenta? Nema problema - prekoračenje se automatski obračunava.",
+        "title": "Cijene prekoračenja"
+      },
+      "subtitle": "Proširi svoj plan prema potrebama",
+      "title": "Dodaci i prekoračenja"
+    },
+    "card": {
+      "custom": "Prilagođeno",
+      "desc_business": "Za veće timove",
+      "desc_community": "Za hobiste i open source",
+      "desc_enterprise": "Za enterprise i regulatore",
+      "desc_pro": "Za rastuća preduzeća",
+      "desc_starter": "Za male timove",
+      "per_month": "mjesečno",
+      "popular": "Najpopularnije",
+      "popular_label": "Najpopularnije",
+      "save_year": "Uštedi ${{amount}}/godišnje"
+    },
+    "cta": {
+      "active_plan": "✓ Aktivni plan",
+      "contact_sales": "Kontaktiraj prodaju",
+      "demo": "Zatraži demo",
+      "more_about": "Više o nama",
+      "saving": "Čuvanje...",
+      "set_tenant_plan": "Kao plan zakupca",
+      "start_now": "Započni sada",
+      "subscribe": "Pretplati se sada",
+      "start": "Počni besplatno",
+      "upgrade": "Nadogradi",
+      "contact": "Kontaktiraj prodaju"
+    },
+    "current_plan": "Trenutni plan",
+    "enterprise": {
+      "card_desc": "Za enterprise i regulatore",
+      "subtitle": "Prilagođene cijene, SLA, integracije, On-Prem/VPC",
+      "title": "Za finansijske institucije i regulatore"
+    },
+    "faq": {
+      "subtitle": "Kontaktiraj naš prodajni tim za personalizirani demo",
+      "title": "Još pitanja?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchain-ovi",
+      "cases": "Slučajevi",
+      "credits": "Krediti/mjesečno",
+      "priority": "Prioritet",
+      "users": "Korisnici"
+    },
+    "header": {
+      "badge": "Fleksibilne cijene",
+      "subtitle": "Od besplatnih alata za zajednicu do enterprise s white-label. Započni danas i skaliraj kako rasteš.",
+      "title": "Pravi plan za svaki tim"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI agenti",
+        "i2": "Grafička analitika",
+        "i3": "Ocjena rizika",
+        "i4": "ML modeli",
+        "title": "Napredna analitika"
+      },
+      "badge": "Šta je uključeno?",
+      "performance": {
+        "i1": "Upozorenja u realnom vremenu",
+        "i2": "API pristup",
+        "i3": "Prioritetni red",
+        "i4": "99.9% vrijeme rada",
+        "title": "Performanse"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Revizijski logovi",
+        "i4": "GDPR usklađenost",
+        "title": "Sigurnost i usklađenost"
+      },
+      "team": {
+        "i1": "Višekorisnički",
+        "i2": "Upravljanje slučajevima",
+        "i3": "Lanac dokaza",
+        "i4": "Saradnja",
+        "title": "Timске funkcije"
+      },
+      "title": "Pregled svih funkcija"
+    },
+    "more": "više",
+    "seo": {
+      "description": "Poštene i transparentne cijene za blockchain forensics. Od besplatnog Community plana do Enterprise. Otkažite bilo kada.",
+      "title": "Cijene | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Samoposlužni planovi za startupe do srednjih tržišta",
+      "title": "Za timove i preduzeća"
+    },
+    "toggle": {
+      "annual": "Godišnje",
+      "monthly": "Mjesečno",
+      "save": "Uštedi {{pct}}%"
+    },
+    "top_features": "NAJBOLJE FUNKCIJE",
+    "hero": {
+      "badge": "Cijene",
+      "title": "Jednostavne i transparentne cijene",
+      "subtitle": "Izaberite plan koji odgovara vašim potrebama. Svi planovi uključuju osnovne funkcije. Nadogradite bilo kada."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Osvježi"
+    },
+    "audit": {
+      "empty": "Nema dostupnih unosa revizijskog traga",
+      "loading": "Učitavanje revizijskog traga...",
+      "title": "Nedavni unosi revizijskog traga",
+      "user": "Korisnik",
+      "view_all": "Prikaži sve →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Integritet revizijskog traga"
+      },
+      "failed_logins": {
+        "title": "Neuspješni pokušaji prijave"
+      },
+      "gdpr": {
+        "title": "GDPR usklađenost"
+      },
+      "security_incidents": {
+        "title": "Sigurnosni incidenti"
+      }
+    },
+    "common": {
+      "implemented": "Implementirano",
+      "not_implemented": "Nije implementirano",
+      "unknown": "Nepoznato"
+    },
+    "compliance": {
+      "anonymization": "Anonimizacija",
+      "certifications": "Certifikati",
+      "consent_management": "Upravljanje saglasnošću",
+      "data_portability": "Prenosivost podataka",
+      "empty": "Nema dostupnih podataka o usklađenosti",
+      "encryption": "Enkripcija",
+      "loading": "Učitavanje statusa usklađenosti...",
+      "right_to_erasure": "Pravo na brisanje",
+      "title": "Status GDPR usklađenosti"
+    },
+    "header": {
+      "last_refresh": "Posljednje osvježavanje",
+      "subtitle": "Revizijski tragovi, GDPR usklađenost i sigurnosni nadzor",
+      "title": "Dashboard za sigurnost i usklađenost"
+    },
+    "quick_actions": {
+      "audit_export": "Izvoz revizije",
+      "compliance_report": "Izvještaj o usklađenosti",
+      "gdpr_status": "GDPR status",
+      "incident_report": "Izvještaj o incidentu",
+      "integrity_check": "Provjera integriteta",
+      "security_scan": "Sigurnosno skeniranje",
+      "title": "Akcije za sigurnost i usklađenost"
+    },
+    "retention": {
+      "days": "Dani",
+      "empty": "Nema dostupnih podataka o zadržavanju",
+      "title": "Usklađenost zadržavanja podataka",
+      "violations": {
+        "count": "Kršenja",
+        "days_old": "Dana staro",
+        "more": "i",
+        "more_suffix": "više",
+        "title": "Kršenja zadržavanja"
+      }
+    },
+    "security": {
+      "compliance_status": "Status usklađenosti",
+      "empty": "Nema dostupnih sigurnosnih podataka",
+      "failed_logins": "Neuspješne prijave",
+      "incidents": "Sigurnosni incidenti",
+      "rate_limited_ips": "IP-ovi ograničeni brzinom",
+      "suspicious_activities": "Sumnjive aktivnosti",
+      "title": "Pregled sigurnosti"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Otvorena upozorenja po starosnim grupama (npr. 24h, 3d, 7d, >7d)",
+    "alert_engine": "Nadzor u realnom vremenu transakcija i sumnjivih uzoraka s ML algoritmima",
+    "alert_overview": "Pregled svih aktivnih sigurnosnih upozorenja i njihovih ozbiljnosti (Kritično/Visoko/Srednje/Nisko)",
+    "no_tours_available": "Nema dostupnih obilazaka za ovu stranicu",
+    "of": "od",
+    "select_tour_description": "Odaberi obilazak da saznaš više o funkcijama platforme",
+    "skip": "Preskoči",
+    "start": "Započni obilazak",
+    "start_tour": "Pokreni obilazak",
+    "step": "Korak",
+    "steps": "koraci",
+    "analyst_throughput": "Number of closed cases per analyst in the selected time period",
+    "backlog": "Total number of open (unacknowledged) alerts and open cases",
+    "database": "PostgreSQL/TimescaleDB connection status and response time for time-series data",
+    "graph_db": "Neo4j graph database for complex relationship analysis and network mapping",
+    "system_status": "Shows the current status of all system components. Green = Healthy, Red = Issues detected",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Resetuj",
+      "submit": "Pokreni praćenje",
+      "submitting": "Pokretanje praćenja..."
+    },
+    "agent": {
+      "address": "Adresa",
+      "address_ph": "0x...",
+      "dir_backward": "unazad",
+      "dir_both": "oboje",
+      "dir_forward": "naprijed",
+      "direction": "Smjer",
+      "enable_bridge": "Omogući most",
+      "enable_utxo": "Omogući UTXO",
+      "error_title": "Greška agentskog alata praćenja",
+      "from": "Od (ISO vremenska oznaka)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Maks. dubina",
+      "min_taint": "Min. kontaminacija",
+      "run": "Pokreni agentsko praćenje",
+      "submitting": "Agentsko praćenje u toku...",
+      "title": "Agentsko praćenje (vremenski prozor, bez perzistencije)",
+      "to": "Do (ISO vremenska oznaka)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Nedovoljno kredita za praćenje.",
+      "upgrade": "Nadogradi plan sada"
+    },
+    "error": {
+      "title": "Greška pri pokretanju praćenja",
+      "unknown": "Nepoznata greška"
+    },
+    "form": {
+      "dir_backward": "Unazad (prati ulaze)",
+      "dir_both": "Oboje (oba smjera)",
+      "dir_forward": "Naprijed (prati izlaze)",
+      "direction": "Smjer praćenja",
+      "max_depth": "Maks. dubina",
+      "max_depth_help": "Maksimalni broj skokova (1-10)",
+      "max_nodes": "Maks. čvorova",
+      "max_nodes_help": "Maksimalni broj adresa",
+      "min_taint": "Min. prag kontaminacije",
+      "min_taint_help": "Minimalna vrijednost kontaminacije za nastavak praćenja (0-1, npr. 0.01 = 1%)",
+      "model_fifo": "FIFO (Prvi-Unutra-Prvi-Van)",
+      "model_haircut": "Haircut (fiksni odbitak)",
+      "model_help": "Proporcionalno: Kontaminacija se distribuira proporcionalno omjeru vrijednosti",
+      "model_proportional": "Proporcionalno (preporučeno)",
+      "source": "Izvorna adresa",
+      "source_help": "Ethereum adresa od koje se prati",
+      "source_ph": "0x...",
+      "taint_model": "Model kontaminacije"
+    },
+    "header": {
+      "subtitle": "Rekurzivno N-hop praćenje s propagacijom kontaminacije za forenzičko praćenje toka sredstava",
+      "title": "Praćenje transakcija"
+    },
+    "info": {
+      "item1": "Praćenja mogu trajati od sekundi do minuta, zavisno od dubine i čvorova",
+      "item2": "Rezultati se čuvaju u Neo4j za kasniju analizu",
+      "item3": "Adrese visokog rizika se automatski označavaju",
+      "item4": "Sankcionisani entiteti (OFAC) se detektuju odmah",
+      "title": "ℹ️ Napomene"
+    },
+    "plan": {
+      "current": "Trenutni plan zakupca",
+      "loading": "Učitavanje kredita…",
+      "remaining": "Dostupni krediti",
+      "to_pricing": "Idi na cijene",
+      "unlimited": "Krediti: Neograničeno"
+    },
+    "result": {
+      "details": "Detalji",
+      "direction": "Smjer",
+      "error_title": "Naslov greške",
+      "exec_time": "Vrijeme izvršenja",
+      "export": "Izvoz",
+      "flow_graph": "Graf toka",
+      "high_risk": "Visoki rizik",
+      "high_risk_title": "Naslov visokog rizika",
+      "loading": "Učitavanje...",
+      "max_hop": "Maksimalni skok",
+      "not_found": "Nije pronađeno",
+      "report": "Izvještaj",
+      "sanctioned_title": "Naslov sankcionisanih",
+      "sanctioned_warning": "Upozorenje o sankcijama",
+      "source": "Izvor",
+      "taint": "Kontaminacija",
+      "taint_model": "Model kontaminacije",
+      "title": "Rezultat",
+      "total_edges": "Ukupno rubova",
+      "total_nodes": "Ukupno čvorova"
+    },
+    "simple": {
+      "address_ph": "Placeholder za adresu",
+      "chain_btc": "Bitcoin lanac",
+      "chain_eth": "Ethereum lanac",
+      "chain_sol": "Solana lanac",
+      "cluster": {
+        "clustering": "Klasterizacija",
+        "export_members": "Izvezi članove",
+        "label": "Oznaka",
+        "lookup": "Pretraži",
+        "member_address": "Adresa člana",
+        "members": "Članovi",
+        "title": "Naslov klastera"
+      },
+      "depth_ph": "Placeholder za dubinu",
+      "edges": "Rubovi",
+      "error_cluster": "Greška klastera",
+      "error_trace": "Greška praćenja",
+      "export_paths": "Izvezi putanje",
+      "export_targets": "Izvezi ciljeve",
+      "high_risk": "Visoki rizik",
+      "model_fifo": "FIFO model",
+      "model_haircut": "Haircut model",
+      "model_proportional": "Proporcionalni model",
+      "nodes": "Čvorovi",
+      "run": "Pokreni",
+      "summary": "Sažetak",
+      "th_path": "Putanja",
+      "th_paths": "Putanje",
+      "th_taint": "Kontaminacija",
+      "th_target": "Cilj",
+      "threshold_ph": "Placeholder za prag",
+      "title": "Jednostavno praćenje",
+      "tracing": "Praćenje u toku"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "Opis analitike novčanika",
+        "title": "Naslov analitike novčanika",
+        "wip": "Analitika novčanika u izradi"
+      },
+      "export": {
+        "csv": "CSV izvoz",
+        "desc": "Opis izvoza",
+        "json": "JSON izvoz",
+        "pdf": "PDF izvoz",
+        "section_export": "Izvoz sekcije",
+        "section_import": "Uvoz sekcije",
+        "title": "Izvoz"
+      },
+      "header": {
+        "title": "Naslov testiranja novčanika"
+      },
+      "import": {
+        "add_wallet": "Dodaj novčanik",
+        "json": "JSON uvoz",
+        "restore_backup": "Vrati backup"
+      },
+      "multisig": {
+        "desc": "Opis multisig-a",
+        "title": "Naslov multisig-a",
+        "wip": "Multisig u izradi"
+      },
+      "overview": {
+        "active_wallets": "Aktivni novčanici",
+        "activity": {
+          "liquidity": "Likvidnost",
+          "nft": "NFT",
+          "receive": "Primljeno"
+        },
+        "month_change": "Mjesečna promjena",
+        "multisig": "Multisig",
+        "new_this_week": "Novo ove sedmice",
+        "recent": "Nedavno",
+        "security_grade": "Ocjena sigurnosti",
+        "security_score": "Sigurnosni rezultat",
+        "status": {
+          "2fa": "2FA",
+          "active": "Aktivno",
+          "backup": "Backup",
+          "backup_available": "Backup dostupan",
+          "hardware": "Hardver",
+          "hw_connected": "Hardver povezan",
+          "recovery": "Oporavak",
+          "secured": "Osigurano",
+          "title": "Status novčanika"
+        },
+        "total_volume": "Ukupan obim"
+      },
+      "sidebar": {
+        "title": "Bočna traka novčanika"
+      },
+      "tabs": {
+        "analytics": "Analitika",
+        "crosschain": "Unakrsni lanac",
+        "export": "Izvoz",
+        "multisig": "Multisig",
+        "nft": "NFT",
+        "overview": "Pregled",
+        "transactions": "Transakcije"
+      },
+      "transactions": {
+        "desc": "Opis transakcija",
+        "export": "Izvoz",
+        "title": "Naslov transakcija",
+        "wip": "Transakcije u izradi"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Web analitika"
+  },
+  "onboarding": {
+    "back": "Nazad",
+    "close": "Zatvori",
+    "finish": "Završi",
+    "next": "Sljedece",
+    "open": "Otvori dijalog",
+    "skip": "Preskoči obilazak",
+    "restart": "Ponovo pokreni obilazak",
+    "restart_short": "Ponovo pokreni",
+    "welcome_title": "Dobrodošli u Blockchain Forenziku!",
+    "welcome_message": "Želite li brzi obilazak kroz kontrolnu tablu?",
+    "maybe_later": "Možda kasnije",
+    "start_tour": "Pokreni obilazak"
+  },
+  "universal_screening": {
+    "title": "Univerzalna provjera novčanika",
+    "subtitle": "Provjerite bilo koju adresu novčanika preko 90+ blockchain-ova istovremeno",
+    "cross_chain_title": "Provjera unakrsnih lanaca",
+    "description": "Unesite adresu novčanika za provjeru preko svih podržanih lanaca",
+    "search_placeholder": "0x... ili bc1... ili bilo koja adresa novčanika",
+    "button_screen": "Provjeri",
+    "button_screening": "Provjera u toku...",
+    "errors": {
+      "enter_address": "Molimo unesite adresu novčanika",
+      "screening_failed": "Provjera neuspješna",
+      "failed_to_screen": "Neuspjela provjera adrese"
+    },
+    "export": {
+      "json": "Izvezi JSON",
+      "csv": "Izvezi CSV",
+      "pdf": "Izvezi PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdikcija",
+      "options": {
+        "all": "Sve",
+        "ofac": "OFAC (SAD)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Nivo rizika",
+      "chains_screened": "Provjereni lanci",
+      "found_on_chains": "Pronađeno na {{count}} lanaca",
+      "total_activity": "Ukupna aktivnost",
+      "counterparties_count": "{{count}} protivstrana",
+      "performance": "Performanse",
+      "cross_chain": "Unakrsni lanac",
+      "single_chain": "Pojedinačni lanac"
+    },
+    "alert": {
+      "sanctioned": "⚠️ DETEKTOVAN SANKCIONISANI ENTITET - Ova adresa se nalazi na listama sankcija"
+    },
+    "chain_results": {
+      "title": "Rezultati specifični za lanac",
+      "description": "Detaljna analiza za svaki blockchain",
+      "transactions": "Transakcije",
+      "value_usd": "Vrijednost (USD)",
+      "counterparties": "Protivstrane",
+      "sanctioned_badge": "SANKCIONISAN",
+      "more_labels": "+{{count}} još"
+    },
+    "exposure": {
+      "title": "Izloženost",
+      "direct": "Direktna",
+      "indirect": "Indirektna"
+    },
+    "defi": {
+      "title": "DeFi uvidi"
+    },
+    "attribution_evidence": {
+      "title": "Pogledaj dokaze atribucije ({{count}})"
+    },
+    "all_labels": {
+      "title": "Sve oznake preko lanaca"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot za Web3 | Glasovni unos, kripto-plaćanja i blockchain forenzika",
+      "description": "Jedini AI chatbot s glasovnim unosom (43 jezika), kripto plaćanjima (30+ kovanica) i integriranom blockchain forenzikom.",
+      "keywords": "chatbot, web3, kripto, blockchain, ai, glasovni unos, kripto plaćanja, forenzika",
+      "ogTitle": "AI Chatbot za Web3 | SIGMACODE",
+      "ogDescription": "Glasovni unos, kripto plaćanja i blockchain forenzika u jednom widget-u.",
+      "twitterTitle": "AI Chatbot za Web3",
+      "twitterDescription": "Glasovni unos, kripto plaćanja i blockchain forenzika."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 spreman • 43 jezika",
+      "title": "Chatbot za Web3 sa blockchain supermoćima",
+      "subtitle": "Glasovni unos, kripto plaćanja, ocjena rizika u realnom vremenu i integrisana blockchain forenzika.",
+      "pill": {
+        "languages": "43 jezika",
+        "payments": "Kripto plaćanja",
+        "risk": "Ocjena rizika",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "Chat widget je aktivan. Otvorite ga dole-desno.",
+      "demoTip": "Savjet: Pitajte o glasu, kriptu, riziku."
+    },
+    "cta": {
+      "startFree": "Počni besplatno",
+      "viewPricing": "Pogledaj cijene"
+    },
+    "features": {
+      "title": "Sve što modernim timovima treba",
+      "subtitle": "Jedinstvene AI automatizacije i blockchain funkcije.",
+      "cards": {
+        "voiceTitle": "Glasovni unos (43 jezika)",
+        "voiceDesc": "Chat bez upotrebe ruku u browseru.",
+        "paymentsTitle": "Kripto plaćanja (30+ kovanica)",
+        "paymentsDesc": "Prihvatite plaćanja u chatu.",
+        "forensicsTitle": "Blockchain forenzika",
+        "forensicsDesc": "Pretraga adresa, praćenje transakcija.",
+        "riskTitle": "Ocjena rizika <100ms",
+        "riskDesc": "Detekcija sankcija/miksera u realnom vremenu.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Vaš brend i domena.",
+        "analyticsTitle": "Analitika & A/B",
+        "analyticsDesc": "Optimizacija konverzije."
+      }
+    },
+    "how": {
+      "title": "Kako funkcionira",
+      "step1": {
+        "title": "Registruj se",
+        "desc": "Kreiraj nalog, dobij API ključ."
+      },
+      "step2": {
+        "title": "Integriraj",
+        "desc": "1 script tag, opcionalna konfiguracija."
+      },
+      "step3": {
+        "title": "Pokreni",
+        "desc": "Chat spreman odmah."
+      },
+      "example": "Primjer:"
+    },
+    "pricing": {
+      "title": "Cijene",
+      "subtitle": "Pravedno, transparentno, skalabilno.",
+      "tiers": {
+        "community": {
+          "name": "Zajednica",
+          "f1": "1.000 poruka",
+          "f2": "Osnovni AI",
+          "f3": "Osnovna analitika",
+          "cta": "Počni besplatno"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k poruka",
+          "f2": "Glas (43)",
+          "f3": "Višejezično",
+          "cta": "Nadogradi"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Neograničeno",
+          "f2": "Kripto plaćanja",
+          "f3": "Forenzički alati",
+          "cta": "Uzmi Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Prilagođena domena",
+          "f3": "SLA 99.9%",
+          "cta": "Kontakt"
+        }
+      }
+    },
+    "final": {
+      "title": "Spreman za početak?",
+      "subtitle": "Počnite besplatno za 30 sekundi.",
+      "cta": "Počni besplatno sada"
+    }
+  },
+  "wizard": {
+    "title": "Vođeni forenzički tok rada",
+    "desc": "Ovaj dijalog vas vodi kroz forenzičku akciju u više koraka. Koristite Tab za navigaciju kroz elemente, ESC zatvara dijalog.",
+    "choose_action": "Izaberite akciju",
+    "trace": {
+      "desc": "Analiziraj adresu ili transakciju",
+      "title": "Praćenje"
+    },
+    "case": {
+      "title": "Kreiraj slučaj",
+      "desc": "Kreiraj novi slučaj s prioritetom"
+    },
+    "sanctions": {
+      "title": "Provjera sankcija",
+      "desc": "Provjeri OFAC/UN/EU/UK itd."
+    },
+    "labels": {
+      "address_opt": "Adresa (opcionalno)",
+      "tx_opt": "Hash transakcije (opcionalno)",
+      "time_range": "Vremenski raspon:",
+      "case_title": "Naslov slučaja",
+      "priority": "Prioritet:",
+      "notes_opt": "Napomene / Kontekst (opcionalno)",
+      "address": "Adresa"
+    },
+    "placeholders": {
+      "address": "npr. 0x... ili bc1...",
+      "tx": "npr. 0x...",
+      "case_title": "npr. Istraga eksploatacije mosta",
+      "notes": "npr. Vezano za upozorenja #123/#124"
+    },
+    "review": {
+      "hint": "Asistent će automatski izvršiti odgovarajući lanac alata.",
+      "title": "Pregled"
+    },
+    "errors": {
+      "address_invalid": "Adresa izgleda nevažeća. Očekivano EVM (0x...) ili Bech32 (bc1...).",
+      "tx_invalid": "Hash transakcije izgleda nevažeći (mora biti 66 karaktera, 0x... hex).",
+      "case_title_required": "Naslov je obavezan."
+    },
+    "execute": "Izvrši",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Greška pri preuzimanju odgovora. Molimo pokušajte ponovo.",
+    "loading_agent": "Agent analizira...",
+    "assistant_title": "Forenzički asistent",
+    "powered_by_ai": "Pokrenut od strane AI",
+    "empty_title": "Kako mogu pomoći?",
+    "empty_desc": "Postavite forenzička pitanja ili koristite brze akcije ispod",
+    "command_palette": {
+      "title": "Forenzičke komande",
+      "desc": "Izaberite predložak ili pritisnite ESC da zatvorite. Koristite Tab za navigaciju."
+    },
+    "input_placeholder": "Postavite forenzičko pitanje... (Ctrl+K za komande)",
+    "input_aria_label": "Unesite forenzičku komandu",
+    "help_text": "Pritisnite Ctrl ili Cmd i K da otvorite paletu komandi. Pritisnite Enter da pošaljete poruku.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 Praćenje visokog rizika",
+        "query": "Pokaži mi sve transakcije visokog rizika iz posljednjih 7 dana s ocjenom rizika iznad 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Aktivnost miksera",
+        "query": "Pronađi sve Tornado Cash i interakcije miksera u posljednjih 24 sata"
+      },
+      "daily_summary": {
+        "label": "📊 Dnevni sažetak",
+        "query": "Sažmi današnju forenzičku aktivnost: analizirane transakcije, pokrenuta upozorenja, kreirani slučajevi"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Provjera sankcija",
+        "query": "Pokaži mi sve OFAC sankcijske pogotke iz ove sedmice"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Transferi mostova",
+        "query": "Nabrojaj nedavne transfere unakrsnih lanaca s visokom vrijednošću (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Aktivni slučajevi",
+        "query": "Pokaži mi sve otvorene slučajeve dodijeljene meni s visokim ili kritičnim prioritetom"
+      }
+    },
+    "online": "Na mreži",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Transferi mostova"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Nadzorna tabla",
+    "home": "Početna",
+    "features": "Mogućnosti",
+    "about": "O nama",
+    "pricing": "Cijene",
+    "search": "Pretraga",
+    "dashboards": "Kontrolne table",
+    "monitoring": "Nadzor",
+    "legal": "Pravno",
+    "privacy": "Privatnost",
+    "terms": "Uslovi",
+    "impressum": "Impressum"
+  },
+  "tours": {
+    "available_tours": "Dostupne ture",
+    "completed": "završeno",
+    "finish": "Završi",
+    "no_tours_available": "Nema dostupnih tura za ovu stranicu",
+    "of": "od",
+    "select_tour_description": "Izaberite turu da naučite o funkcijama platforme",
+    "skip": "Preskoči",
+    "start": "Započni",
+    "start_tour": "Započni turu",
+    "step": "Korak",
+    "steps": "koraka"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

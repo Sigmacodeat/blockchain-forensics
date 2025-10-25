@@ -1,0 +1,332 @@
+version: '3.8'
+
+# Master Docker Compose für alle 12 AppSumo Produkte
+# Start: docker-compose -f docker-compose.master.yml up
+
+services:
+  # ===== PRODUCT 1: AI ChatBot Pro =====
+  chatbot-frontend:
+    build: ./chatbot-pro/frontend
+    ports:
+      - "3001:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8001
+    networks:
+      - appsumo-network
+
+  chatbot-backend:
+    build: ./chatbot-pro/backend
+    ports:
+      - "8001:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/chatbot
+      - REDIS_URL=redis://redis:6379/1
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 2: Web3 Wallet Guardian =====
+  guardian-frontend:
+    build: ./wallet-guardian/frontend
+    ports:
+      - "3002:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8002
+    networks:
+      - appsumo-network
+
+  guardian-backend:
+    build: ./wallet-guardian/backend
+    ports:
+      - "8002:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/guardian
+      - REDIS_URL=redis://redis:6379/2
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 3: Transaction Inspector =====
+  inspector-frontend:
+    build: ./transaction-inspector/frontend
+    ports:
+      - "3003:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8003
+    networks:
+      - appsumo-network
+
+  inspector-backend:
+    build: ./transaction-inspector/backend
+    ports:
+      - "8003:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/inspector
+      - REDIS_URL=redis://redis:6379/3
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 4: Analytics Pro =====
+  analytics-frontend:
+    build: ./analytics-pro/frontend
+    ports:
+      - "3004:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8004
+    networks:
+      - appsumo-network
+
+  analytics-backend:
+    build: ./analytics-pro/backend
+    ports:
+      - "8004:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/analytics
+      - REDIS_URL=redis://redis:6379/4
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 5: Dashboard Commander =====
+  commander-frontend:
+    build: ./dashboard-commander/frontend
+    ports:
+      - "3005:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8005
+    networks:
+      - appsumo-network
+
+  commander-backend:
+    build: ./dashboard-commander/backend
+    ports:
+      - "8005:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/commander
+      - REDIS_URL=redis://redis:6379/5
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 6: NFT Manager =====
+  nft-frontend:
+    build: ./nft-manager/frontend
+    ports:
+      - "3006:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8006
+    networks:
+      - appsumo-network
+
+  nft-backend:
+    build: ./nft-manager/backend
+    ports:
+      - "8006:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/nft
+      - REDIS_URL=redis://redis:6379/6
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 7: DeFi Tracker =====
+  defi-frontend:
+    build: ./defi-tracker/frontend
+    ports:
+      - "3007:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8007
+    networks:
+      - appsumo-network
+
+  defi-backend:
+    build: ./defi-tracker/backend
+    ports:
+      - "8007:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/defi
+      - REDIS_URL=redis://redis:6379/7
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 8: Tax Reporter =====
+  tax-frontend:
+    build: ./tax-reporter/frontend
+    ports:
+      - "3008:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8008
+    networks:
+      - appsumo-network
+
+  tax-backend:
+    build: ./tax-reporter/backend
+    ports:
+      - "8008:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/tax
+      - REDIS_URL=redis://redis:6379/8
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 9: Agency Reseller =====
+  agency-frontend:
+    build: ./agency-reseller/frontend
+    ports:
+      - "3009:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8009
+    networks:
+      - appsumo-network
+
+  agency-backend:
+    build: ./agency-reseller/backend
+    ports:
+      - "8009:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/agency
+      - REDIS_URL=redis://redis:6379/9
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 10: Power Suite =====
+  power-frontend:
+    build: ./power-suite/frontend
+    ports:
+      - "3010:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8010
+    networks:
+      - appsumo-network
+
+  power-backend:
+    build: ./power-suite/backend
+    ports:
+      - "8010:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/power
+      - REDIS_URL=redis://redis:6379/10
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 11: Complete Security =====
+  security-frontend:
+    build: ./complete-security/frontend
+    ports:
+      - "3011:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8011
+    networks:
+      - appsumo-network
+
+  security-backend:
+    build: ./complete-security/backend
+    ports:
+      - "8011:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/security
+      - REDIS_URL=redis://redis:6379/11
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== PRODUCT 12: Trader Pack =====
+  trader-frontend:
+    build: ./trader-pack/frontend
+    ports:
+      - "3012:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8012
+    networks:
+      - appsumo-network
+
+  trader-backend:
+    build: ./trader-pack/backend
+    ports:
+      - "8012:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/trader
+      - REDIS_URL=redis://redis:6379/12
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+  # ===== SHARED SERVICES =====
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=appsumo
+      - POSTGRES_PASSWORD=appsumo123
+      - POSTGRES_MULTIPLE_DATABASES=chatbot,guardian,inspector,analytics,commander,nft,defi,tax,agency,power,security,trader
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - appsumo-network
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - appsumo-network
+
+  # ===== APPSUMO ADMIN DASHBOARD =====
+  admin-dashboard:
+    build: ./admin-dashboard
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    networks:
+      - appsumo-network
+
+  admin-backend:
+    build: ./admin-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/admin
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - appsumo-network
+
+volumes:
+  pgdata:
+
+networks:
+  appsumo-network:
+    driver: bridge

@@ -1,0 +1,60 @@
+playbooks:
+  - id: PB-001
+    name: Large Value Auto-Case
+    enabled: true
+    tags: [value, kyt]
+    condition: "value_usd is not None and value_usd >= 10000"
+    actions:
+      - type: create_case
+        case_type: transaction_review
+        title: "Large Value Transfer for {address}"
+        description: "Auto-generated case for large value event of {value_usd} USD"
+        priority: high
+        customer_id: ""
+        customer_name: ""
+        customer_tier: "unknown"
+        created_by: "system"
+        created_by_name: "SOAR"
+        related_transactions: []
+        related_addresses: ["{address}"]
+        tags: ["auto", "large_value"]
+
+  - id: PB-002
+    name: Sanctions Exposure Case
+    enabled: true
+    tags: [sanctions]
+    condition: "('sanctions' in labels) or (('counterparty_risk' in metadata) and (metadata['counterparty_risk'] >= 0.8))"
+    actions:
+      - type: create_case
+        case_type: sanctions_hit
+        title: "Sanctions Exposure for {address}"
+        description: "Detected sanctions contact or high counterparty risk"
+        priority: critical
+        customer_id: ""
+        customer_name: ""
+        customer_tier: "unknown"
+        created_by: "system"
+        created_by_name: "SOAR"
+        related_transactions: []
+        related_addresses: ["{address}"]
+        tags: ["auto", "sanctions"]
+
+  - id: PB-003
+    name: DEX MEV Sandwich
+    enabled: true
+    tags: [dex, mev]
+    condition: "('mev' in metadata) and ('sandwich_score' in metadata['mev']) and (metadata['mev']['sandwich_score'] >= 0.7)"
+    actions:
+      - type: create_case
+        case_type: anomaly_detection
+        title: "MEV Sandwich Risk at {address}"
+        description: "Heuristic indication of MEV sandwich attack"
+        priority: medium
+        customer_id: ""
+        customer_name: ""
+        customer_tier: "unknown"
+        created_by: "system"
+        created_by_name: "SOAR"
+        related_transactions: []
+        related_addresses: ["{address}"]
+        tags: ["auto", "mev"]

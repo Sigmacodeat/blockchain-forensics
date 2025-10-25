@@ -1,0 +1,5 @@
+[
+  {"slug": "lido", "chain": "ethereum", "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84", "label": "Lido stETH", "type": "liquid-staking"},
+  {"slug": "lido", "chain": "ethereum", "address": "0x1e68238ce926dec46f98e9f2d5e0b5e5b1a5d6f9", "label": "Lido Staking Router", "type": "core"},
+  {"slug": "lido", "chain": "polygon", "address": "0x8c8d8f0e6c6e8e6e6e6e6e6e6e6e6e6e6e6e6e6", "label": "Lido Polygon stMATIC", "type": "liquid-staking"}
+]

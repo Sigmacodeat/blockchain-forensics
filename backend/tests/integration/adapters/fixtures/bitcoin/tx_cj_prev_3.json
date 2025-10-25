@@ -1,0 +1,8 @@
+{
+  "txid": "cj_prev_tx_3",
+  "version": 2,
+  "locktime": 0,
+  "vout": [
+    { "n": 0, "value": 0.3, "scriptPubKey": { "addresses": ["1CJInC"], "type": "pubkeyhash" } }
+  ]
+}

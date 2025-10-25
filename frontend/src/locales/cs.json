@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Zarezervovat demo",
+      "pricing": "Zobrazit ceny",
+      "subtitle": "Začněte nyní zdarma s demo verzí nebo kontaktujte náš tým",
+      "title": "Začít teď"
+    },
+    "header": {
+      "badge": "O nás",
+      "subtitle": "Vytváříme přední podnikovou platformu pro blockchainové zpravodajství, která podporuje orgány činné v trestním řízení, VASPy a finanční instituce při ochraně před krypto kriminalitou.",
+      "title": "Budoucnost blockchainové forenzní analýzy"
+    },
+    "mission": {
+      "desc": "Děláme blockchainové transakce transparentními a sledovatelnými. Naším cílem je bojovat proti krypto kriminalitě a poskytnout legitimním účastníkům trhu nástroje pro splnění požadavků na soulad a minimalizaci rizik.",
+      "title": "Naše mise"
+    },
+    "seo": {
+      "description": "Vytváříme přední podnikovou platformu pro blockchainovou forenzní analýzu: soulad, vyšetřování a zpravodajství po celém světě.",
+      "title": "O nás | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "badge": "V číslech",
+      "blockchains": "Blockchainy",
+      "enterprise_customers": "Podnikoví zákazníci",
+      "recovered_assets": "Obnovené aktiva",
+      "sla_guaranteed": "garantováno prostřednictvím SLA",
+      "supported": "podporováno",
+      "supported_by_tech": "podporováno naší technologií",
+      "title": "Náš dopad",
+      "uptime": "Doba provozu",
+      "worldwide": "po celém světě"
+    },
+    "team": {
+      "badge": "Odbornost",
+      "compliance": {
+        "desc": "Odborníci na regulaci AML/CFT a mezinárodní sankce",
+        "h1": "Bývalí regulátoři",
+        "h2": "Specialisté na AML",
+        "h3": "Právní poradci",
+        "title": "Soulad a právní záležitosti"
+      },
+      "forensics": {
+        "desc": "Bývalí orgány činné v trestním řízení s víceletými zkušenostmi s vyšetřováním krypto zločinů",
+        "h1": "Alumni FBI/BKA",
+        "h2": "Zásahy proti Darknetu",
+        "h3": "Obnova aktiv",
+        "title": "Forenzní experti"
+      },
+      "subtitle": "Odborníci z oblasti blockchainové forenzní analýzy, orgánů činných v trestním řízení, FinTechu a strojového učení",
+      "tech": {
+        "desc": "Inženýři z předních technologických společností s odborností na blockchain",
+        "h1": "Bývalí FAANG",
+        "h2": "Jádro vývoje blockchainu",
+        "h3": "Odborníci na bezpečnost",
+        "title": "Technologickí specialisté"
+      },
+      "title": "Náš tým"
+    },
+    "trust": {
+      "badge": "Důvěra",
+      "ce": {
+        "desc": "Top 10 burz pro AML a monitorování transakcí",
+        "title": "Krypto burzy"
+      },
+      "fi": {
+        "desc": "Banky první úrovně s expozicí na kryptoměny",
+        "title": "Banky a FinTechy"
+      },
+      "le": {
+        "desc": "FBI, Europol, národní orgány činné v trestním řízení",
+        "title": "Orgány činné v trestním řízení"
+      },
+      "reg": {
+        "desc": "Finanční regulační orgány pro dohled nad trhem",
+        "title": "Regulátoři"
+      },
+      "subtitle": "Vedoucí organizace po celém světě spoléhají na naši technologii",
+      "title": "Komu důvěřují"
+    },
+    "values": {
+      "badge": "Naše hodnoty",
+      "compliance": {
+        "desc": "Soulad s GDPR, eIDAS, OFAC. Pochopili jsme regulační požadavky a zařadili je do našeho systému.",
+        "title": "Soulad na prvním místě"
+      },
+      "customer": {
+        "desc": "Úzká spolupráce s orgány činnými v trestním řízení a průmyslem. Vaše potřeby jsou naším směrem.",
+        "title": "Zaměření na zákazníka"
+      },
+      "global": {
+        "desc": "100+ blockchainů, podpora více jazyků a mezinárodní sankční seznamy.",
+        "title": "Globální dosah"
+      },
+      "innovation": {
+        "desc": "Nejmodernější technologie: AI/ML, grafová analýza a zpracování v reálném čase pro nejlepší výsledky.",
+        "title": "Inovace"
+      },
+      "team": {
+        "desc": "Mezioborové týmy z řad forenzních expertů, vývojářů a specialistů na soulad.",
+        "title": "Týmová práce"
+      },
+      "title": "Co nás pohání",
+      "trust": {
+        "desc": "Bezpečnost na podnikové úrovni s certifikacemi SOC2/ISO27001. Vaše data jsou u nás v bezpečí.",
+        "title": "Důvěra a bezpečnost"
+      }
+    },
+    "vision": {
+      "desc": "Svět, kde technologie blockchainu může plně rozvinout svůj potenciál – transparentní, bezpečný a v souladu s předpisy. Vytváříme infrastrukturu pro budoucnost, kde se digitální aktiva stanou mainstreamem bez podpory kriminality.",
+      "title": "Naše vize"
+    }
+  },
+  "accessibility": {
+    "activate": "Aktivovat",
+    "close_dialog": "Zavřít dialog",
+    "font_size": "Velikost písma",
+    "font_size_large": "Velké písmo",
+    "font_size_normal": "Normální písmo",
+    "font_size_xlarge": "Extra velké písmo",
+    "high_contrast_detected": "Zjištěn vysoký kontrast",
+    "keyboard_shortcuts": "Klávesové zkratky",
+    "navigate_backward": "Přejít zpět",
+    "navigate_forward": "Přejít dopředu",
+    "no_system_preferences": "Nebyly zjištěny speciální systémové preference",
+    "reduced_motion_detected": "Zjištěno snížené pohyby",
+    "settings": "Nastavení přístupnosti",
+    "skip_to_content": "Přeskočit na obsah",
+    "system_preferences": "Systémové preference"
+  },
+  "address_analysis": {
+    "title": "address_analysis.title",
+    "wip_desc": "address_analysis.wip_desc",
+    "wip_title": "address_analysis.wip_title"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI agenti",
+      "app_name": "Název aplikace",
+      "cross_chain": "Cross-Chain",
+      "max_trace_depth": "Maximální hloubka trasování",
+      "ml_clustering": "Klastrování ML",
+      "title": "Konfigurace",
+      "version": "Verze"
+    },
+    "disabled": "✗ Vypnuto",
+    "enabled": "✓ Zapnuto",
+    "error": "Chyba",
+    "health": {
+      "connected": "✓ Připojeno",
+      "disconnected": "✗ Odpojeno",
+      "error": "Selhalo načtení stavu zdraví",
+      "title": "Zdraví databáze"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Načítá transakce z Ethereum RPC",
+        "ingesting": "Načítání...",
+        "placeholder": "0x...",
+        "start": "Spustit načítání",
+        "success": "✓ Načítání spuštěno na pozadí",
+        "title": "Načíst data adresy"
+      },
+      "block": {
+        "help": "Importuje všechny transakce z bloku",
+        "ingesting": "Načítání...",
+        "placeholder": "Číslo bloku",
+        "start": "Spustit import bloku",
+        "success": "✓ Import bloku spuštěn",
+        "title": "Načíst data bloku"
+      }
+    },
+    "stats": {
+      "db_size": "Velikost databáze",
+      "title": "Statistiky systému",
+      "total_addresses": "Celkový počet adres",
+      "total_traces": "Celkový počet trasování",
+      "total_transactions": "Celkový počet transakcí"
+    },
+    "subtitle": "Monitorování, konfigurace a správa dat",
+    "tabs": {
+      "config": "Konfigurace",
+      "ingestion": "Načítání dat",
+      "overview": "Přehled",
+      "users": "Správa uživatelů"
+    },
+    "title": "Správa systému"
+  },
+  "agent": {
+    "cancel": "Zrušit",
+    "error": "Došlo k chybě.",
+    "error_unknown": "Objevila se neočekávaná chyba. Zkuste to prosím znovu.",
+    "examples": {
+      "1": "Sleduj adresu 0xABC… za posledních 5 hopů",
+      "2": "Zkontroluj sankce pro adresu 0x…",
+      "3": "Shrň dnešní alerty s vysokým rizikem",
+      "title": "Rychlé tipy"
+    },
+    "instructions": "Ptejte se na trasování, sankční kontroly, případy nebo metriky monitoringu.",
+    "loading": "Zpracovávám váš dotaz…",
+    "placeholder": "Popište, co potřebujete. Např.: Trace 0xABCD na 3 hopů",
+    "retry": "Zkusit znovu",
+    "send": "Odeslat",
+    "subtitle": "Forenzní copilota pro blockchain",
+    "title": "Forensic Copilot",
+    "welcome": "Ahoj! Analyzuji peněženky, tracery, alerty i případy. S čím začneme?"
+  },
+  "auth": {
+    "fields": {
+      "email": "E-mail",
+      "organization_opt": "Organizace (volitelné)",
+      "password": "Heslo",
+      "password_confirm": "Potvrzení hesla",
+      "username": "Uživatelské jméno"
+    },
+    "forgot": {
+      "back_to_login": "Zpět na přihlášení",
+      "dev_note": "Protože e-mailová služba není nastavena, zkontrolujte serverové protokoly pro odkaz na obnovení.",
+      "dev_note_label": "Poznámka (vývojový režim):",
+      "error": "Chyba při odesílání",
+      "info_sent": "Pokud účet s tímto e-mailem existuje, byl odeslán odkaz na obnovení.",
+      "sent": "Odkaz na obnovení byl odeslán!",
+      "submit": "Odeslat odkaz na obnovení",
+      "submitting": "Odesílání...",
+      "subtitle": "Žádný problém! Zadejte svůj e-mail a my vám odešleme odkaz na obnovení.",
+      "title": "Zapomněli jste heslo?",
+      "title_sent": "E-mail odeslán!"
+    },
+    "login": {
+      "failed": "Přihlášení selhalo",
+      "fill_all_fields": "Vyplňte prosím všechna pole",
+      "forgot_password": "Zapomněli jste heslo?",
+      "google": "Přihlásit se přes Google",
+      "google_retry": "Znovu se přihlásit přes Google",
+      "no_account": "Nemáte účet?",
+      "oauth_failed": "OAuth selhala. Zkuste to prosím znovu.",
+      "oauth_processing": "Zpracování přihlášení přes OAuth…",
+      "or": "nebo",
+      "register_now": "Zaregistrovat se nyní",
+      "remember_me": "Zapamatovat si mě",
+      "submit": "Přihlásit se",
+      "submitting": "Probíhá přihlašování...",
+      "subtitle": "Přihlaste se pro pokračování"
+    },
+    "placeholders": {
+      "email": "analytik@priklad.cz",
+      "organization": "FBI, Chainalysis, atd.",
+      "password": "••••••••",
+      "username": "jan_analytik"
+    },
+    "register": {
+      "accept": "Souhlasím s",
+      "already": "Už jste registrováni?",
+      "and": "a",
+      "failed": "Registrace selhala",
+      "fill_all_fields": "Vyplňte prosím všechna povinná pole",
+      "google": "Zaregistrovat se přes Google",
+      "login_now": "Přihlásit se nyní",
+      "password_hint": "Minimálně 8 znaků",
+      "password_too_short": "Heslo musí mít alespoň 8 znaků",
+      "passwords_no_match": "Hesla se neshodují",
+      "submit": "Zaregistrovat se",
+      "submitting": "Probíhá registrace...",
+      "subtitle": "Začněte svou forenzní analýzu",
+      "title": "Vytvořit účet"
+    }
+  },
+  "common": {
+    "access_denied": "Přístup odepřen (pouze admin)",
+    "account": "Účet",
+    "back": "Zpět",
+    "close": "Zavřít",
+    "info": "Informace",
+    "language": "Jazyk",
+    "loading": "Načítání...",
+    "next": "Další",
+    "page": "Stránka",
+    "prev": "Zpět",
+    "recent": "Nedávno použité",
+    "no_results": "Žádné výsledky",
+    "refresh": "Obnovit",
+    "search": "Hledat",
+    "success": "Úspěch",
+    "theme": "Motiv",
+    "view": "Zobrazit",
+    "wip": {
+      "title": "Již brzy",
+      "desc": "Tato funkce je stále ve vývoji.",
+      "cta": "Více informací"
+    },
+    "start_free": "Začít zdarma",
+    "error": "Chyba",
+    "save": "Uložit",
+    "cancel": "Zrušit",
+    "delete": "Smazat",
+    "edit": "Upravit",
+    "create": "Vytvořit",
+    "finish": "Dokončit",
+    "open": "Otevřít",
+    "yes": "Ano",
+    "no": "Ne",
+    "confirm": "Potvrdit",
+    "welcome": "Vítejte",
+    "dashboard": "Přehled",
+    "settings": "Nastavení",
+    "profile": "Profil",
+    "logout": "Odhlásit",
+    "login": "Přihlásit",
+    "register": "Registrovat",
+    "email": "E-mail",
+    "password": "Heslo",
+    "username": "Uživatelské jméno",
+    "documents": "Dokumenty"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Minimální závažnost",
+      "refresh": "Obnovit",
+      "title": "Ovládání",
+      "window": "Okno",
+      "window_15m": "15 minut",
+      "window_1h": "1 hodina",
+      "window_24h": "24 hodin",
+      "window_2h": "2 hodiny",
+      "window_30m": "30 minut",
+      "window_5m": "5 minut"
+    },
+    "header": {
+      "subtitle": "Analýza korelací a detekce vzorců",
+      "title": "Analýza korelací"
+    },
+    "overview": {
+      "active_rules": "Aktivní pravidla",
+      "analyzed": "Analyzováno",
+      "empty": "Žádné výsledky",
+      "found": "Najděno",
+      "loading": "Načítání...",
+      "min_sev": "Minimální závažnost",
+      "rate": "Rychlost",
+      "title": "Přehled",
+      "window": "Okno"
+    },
+    "rules": {
+      "empty": "Žádná pravidla",
+      "footer": "Spravujte svá pravidla zde",
+      "loading": "Načítání pravidel...",
+      "min": "Minimální",
+      "minutes": "Minuty",
+      "required_patterns": "Požadované vzorce",
+      "title": "Pravidla",
+      "window": "Okno"
+    },
+    "sev": {
+      "critical": "Kritický",
+      "high": "Vysoký",
+      "low": "Nízký",
+      "medium": "Střední"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Rozpis podle důvodů",
+        "by_type": "Rozpis podle typu",
+        "title": "Rozpis potlačení"
+      },
+      "rate": "Rychlost potlačení",
+      "title": "Potlačení",
+      "top_entity": "Nejvyšší entita",
+      "total": "Celkem"
+    },
+    "test": {
+      "add_alert": "Přidat upozornění",
+      "alerts_label": "Upozornění",
+      "match": "Shoda",
+      "no_alerts": "Žádná upozornění",
+      "no_match": "Žádná shoda",
+      "pick_rule": "Vybrat pravidlo",
+      "pick_rule_ph": "Vybrat pravidlo...",
+      "result": "Výsledek",
+      "run": "Spustit",
+      "testing": "Testování probíhá...",
+      "title": "Testování pravidel"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Kopírovat z",
+      "copy_mint": "Kopírovat Mint",
+      "export_csv": "Exportovat CSV",
+      "export_csv_page": "Exportovat CSV stránky",
+      "fetch": "Načíst"
+    },
+    "bitcoin": {
+      "block_title": "Název bloku",
+      "compute": "Výpočet",
+      "decoded": "Dekódováno",
+      "edges_title": "Název hran",
+      "height_ph": "Výška bloku...",
+      "ingest_edges": "Načíst hrany",
+      "method_heuristic": "Heuristická metoda",
+      "method_proportional": "Proporcionální metoda",
+      "normalized": "Normalizováno",
+      "tx_title": "Název transakce",
+      "txid_ph": "TXID..."
+    },
+    "compliance": {
+      "add_watch": "Přidat do sledování",
+      "address_ph": "Adresa...",
+      "chain_ph": "Řetězec...",
+      "entries": "Záznamy",
+      "error": "Chyba",
+      "filter_address_ph": "Filtr adresy...",
+      "filter_chain_ph": "Filtr řetězce...",
+      "list_watch": "Seznam sledování",
+      "screen": "Obrazovka",
+      "title": "Soulad",
+      "watchlist": "Seznam sledování"
+    },
+    "ethereum": {
+      "canonical": "Kanonický",
+      "copy_hash": "Kopírovat hash",
+      "decoded": "Dekódováno",
+      "error": "Chyba",
+      "open_etherscan": "Otevřít Etherscan",
+      "tx_hash_ph": "Hash transakce...",
+      "tx_title": "Název transakce"
+    },
+    "ingest": {
+      "canonical_notice": "Poznámka: Vyžaduje se kanonický import",
+      "edges_notice": "Poznámka: Import hran probíhá",
+      "loading": "Načítání..."
+    },
+    "labels": {
+      "add": "Přidat",
+      "address_ph": "Adresa...",
+      "category_ph": "Kategorie...",
+      "chain_ph": "Řetězec...",
+      "error": "Chyba",
+      "label_ph": "Štítek...",
+      "lookup": "Vyhledat",
+      "title": "Štítky"
+    },
+    "monitoring": {
+      "fetch": "Načíst",
+      "key_counters": "Klíčové počítadla",
+      "title": "Monitorování"
+    },
+    "rpc_unavailable": "RPC není dostupné",
+    "solana": {
+      "canonical_error": "Chyba kanonického importu",
+      "canonical_title": "Název kanonického importu",
+      "error": "Chyba",
+      "ingest_canonical": "Načíst kanonické",
+      "signature_ph": "Podpis...",
+      "title": "Solana",
+      "transfers": "Převody"
+    },
+    "table": {
+      "actions": "Akce",
+      "address": "Adresa",
+      "amount_ui": "Množství UI",
+      "chain": "Řetězec",
+      "created": "Vytvořeno",
+      "decimals": "Desetinná místa",
+      "fee": "Poplatek",
+      "from": "Od",
+      "from_vout": "Od Vout",
+      "method": "Metoda",
+      "mint": "Mint",
+      "reason": "Důvod",
+      "to": "Kam",
+      "to_vout": "Kam Vout",
+      "value_btc": "Hodnota BTC"
+    },
+    "totals": {
+      "page_sum": "Součet stránky",
+      "page_sum_btc": "Součet stránky BTC",
+      "total_amount": "Celkové množství",
+      "total_value_btc": "Celková hodnota BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Akce",
+    "active": "Aktivní",
+    "administration": "Administrace",
+    "alert_aging": "Stárnutí upozornění",
+    "alert_engine": "Motor upozornění",
+    "alert_monitoring": "Monitorování upozornění",
+    "alert_overview": "Přehled upozornění",
+    "analyst_throughput": "Průchodnost analytika",
+    "audit_kpis": "KPI auditu",
+    "backlog": "Nedodělky",
+    "bucket_placeholder": "24h, 3d, 7d, >7d",
+    "buckets": "Kategorie",
+    "case_management": "Správa případů",
+    "connected": "Připojeno",
+    "correlation_analysis": "Analýza korelací",
+    "database": "Databáze",
+    "database_response": "Odpověď databáze",
+    "days": "Dny",
+    "disconnected": "Odpojeno",
+    "failed_actions": "Neúspěšné akce",
+    "false_positive_rate": "Míra falešných pozitiv",
+    "fp": "FP",
+    "graph_db": "Grafová databáze",
+    "graph_explorer": "Průzkumník grafů",
+    "healthy": "Zdravý",
+    "inactive": "Neaktivní",
+    "issues": "Problémy",
+    "last_24h": "Posledních 24 hodin",
+    "last_update": "Poslední aktualizace",
+    "mttr": "MTTR",
+    "open_alerts": "Otevřená upozornění",
+    "open_cases": "Otevřené případy",
+    "performance": "Výkon",
+    "priority_distribution": "Rozložení priorit",
+    "quick_access": "Rychlý přístup",
+    "recent_alerts": "Nedávná upozornění",
+    "response_time": "Doba odezvy",
+    "rule_effectiveness": "Účinnost pravidel",
+    "sanctions_hits": "Zásahy sankcí",
+    "service_status": "Stav služby",
+    "severity_breakdown": "Rozpis závažnosti",
+    "sla_breach_rate": "Míra porušení SLA",
+    "sla_hours": "SLA (hodiny)",
+    "status_breakdown": "Rozpis stavu",
+    "success_rate": "Úspěšnost",
+    "suppression_rate": "Míra potlačení",
+    "system_details": "Podrobnosti systému",
+    "system_load": "Zátěž systému",
+    "system_overview": "Přehled systému",
+    "system_status": "Stav systému",
+    "title": "SIGMACODE Blockchain Forensics Dashboard",
+    "total_alerts": "Celkový počet upozornění",
+    "total_cases": "Celkový počet případů",
+    "total_logs": "Celkový počet logů",
+    "transaction_tracing": "Trasování transakcí",
+    "uptime": "Doba provozu",
+    "welcome": "Vítejte zpět",
+    "overview": "Přehled",
+    "recent_activity": "Nedávná aktivita",
+    "quick_actions": "Rychlé akce",
+    "statistics": "Statistiky",
+    "notifications": "Oznámení",
+    "hero": {
+      "welcome": "Vítejte zpět",
+      "subtitle": "Zde je, co se děje s vašimi vyšetřováními dnes."
+    },
+    "quickActions": {
+      "title": "Rychlé akce",
+      "newTrace": "Nové sledování",
+      "newCase": "Nový případ",
+      "riskCheck": "Kontrola rizik",
+      "aiAgent": "AI Agent"
+    },
+    "stats": {
+      "cases": "Aktivní případy",
+      "traces": "Trasování dnes",
+      "alerts": "Upozornění",
+      "uptime": "Čas provozu"
+    },
+    "live_alerts": "Upozornění v reálném čase",
+    "all_alerts": "Všechna upozornění",
+    "trend_analysis": "Analýza trendů",
+    "detailed_analytics": "Podrobná analýza",
+    "analytics": "Analytika"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Autonomní agenti s integrací LangChain a GPT-4",
+        "title": "AI Agenti"
+      },
+      "badge": "AI a strojové učení",
+      "desc": "Modely strojového učení pro detekci anomálií, hodnocení rizik a autonomní AI agenty pro vyšetřování 24/7.",
+      "pattern": {
+        "desc": "Detekce podvodných vzorců a behaviorální analýza",
+        "title": "Rozpoznávání vzorců"
+      },
+      "risk": {
+        "desc": "Hodnocení rizik založené na ML pro adresy a transakce",
+        "title": "Hodnocení rizik"
+      },
+      "smart_contract": {
+        "desc": "Shoda bajtového kódu a detekce zranitelností",
+        "title": "Analýza chytrých kontraktů"
+      },
+      "title": "Analýza podporovaná AI"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "Detekce neobvyklých vzorců transakcí pomocí ML",
+        "title": "Detekce anomálií"
+      },
+      "badge": "Monitorování v reálném čase",
+      "custom_rules": {
+        "desc": "Vlastní pravidla upozornění s Rule DSL a Policy Engine",
+        "title": "Vlastní pravidla"
+      },
+      "desc": "15+ konfigurovatelných pravidel upozornění s strojovým učením. Získejte upozornění na sankce, míchání, vysoce hodnotné převody a anomálie.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io a další služby míchání",
+        "title": "Detekce míchání"
+      },
+      "sanctions": {
+        "desc": "Seznamy sankcí OFAC/UN/EU/UK s denními aktualizacemi",
+        "title": "Kontrola sankcí"
+      },
+      "title": "Inteligentní motor upozornění"
+    },
+    "case": {
+      "badge": "Pracovní postup vyšetřování",
+      "desc": "Úplná správa vyšetřování s důkazovou řetězcem vlastnictví, elektronickými podpisy eIDAS a zprávami přijatelnými pro soudy.",
+      "eidas": {
+        "desc": "Kvalifikované elektronické podpisy podle standardu EU",
+        "title": "Podpisy eIDAS"
+      },
+      "evidence": {
+        "desc": "Nepřetržitý řetězec vlastnictví pro důkazy přijatelné pro soudy",
+        "title": "Řetězec důkazů"
+      },
+      "export": {
+        "desc": "Export PDF/Excel s časovým razítkem a Audit Trail",
+        "title": "Export a zprávy"
+      },
+      "title": "Správa případů a řetězec důkazů",
+      "tracking": {
+        "desc": "Strukturovaná správa případů se stavem pracovního postupu",
+        "title": "Sledování případů"
+      }
+    },
+    "cta": {
+      "demo": "Vyžádat demo",
+      "pricing": "Zobrazit ceny",
+      "subtitle": "Začněte nyní s bezplatnou demo verzí",
+      "title": "Připraveni na kompletní sadu?",
+      "start": "Začít Zdarma"
+    },
+    "graph": {
+      "badge": "Grafová analýza",
+      "clustering": {
+        "desc": "Automatické shlukování příbuzných peněženek",
+        "title": "Shlukování peněženek"
+      },
+      "community": {
+        "desc": "Detekce skupin peněženek se společnými zájmy",
+        "title": "Detekce komunit"
+      },
+      "desc": "Databáze grafů Neo4j pro shlukování entit, detekci komunit a vizuální vyšetřování.",
+      "labels": {
+        "desc": "Štítky Exchange/VASP/DeFi s Community Intelligence",
+        "title": "Štítky entit"
+      },
+      "title": "Rozlišení entit a analýza sítí",
+      "visual": {
+        "desc": "Interaktivní průzkumník grafů pro složité analýzy",
+        "title": "Vizuální vyšetřování"
+      }
+    },
+    "header": {
+      "badge": "Kompletní funkce",
+      "cta_try": "Vyzkoušet zdarma",
+      "subtitle": "Od trasování transakcí po analýzu s AI – všechny nástroje pro profesionální vyšetřování",
+      "title": "Kompletní sada blockchainové forenzní analýzy"
+    },
+    "security": {
+      "audit": {
+        "desc": "Úplné Audit Trails pro důkazy souladu",
+        "title": "Protokoly auditu"
+      },
+      "badge": "Bezpečnost na podnikové úrovni",
+      "desc": "Bezpečnost na podnikové úrovni s RBAC, SSO/SAML, protokoly auditu a souladem GDPR.",
+      "privacy": {
+        "desc": "Soulad s GDPR s anonymizací PII",
+        "title": "Ochrana dat"
+      },
+      "rbac": {
+        "desc": "Detailní kontrola přístupu na základě rolí a vlastních rolí",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Jediné přihlášení s SAML 2.0 a OAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "Bezpečnost a soulad"
+    },
+    "seo": {
+      "description": "Podniková blockchain forensics: Multi-chain sledování, AI agenti, real-time hodnocení rizik a nástroje pro compliance.",
+      "title": "Funkce | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Přesnost",
+      "ai_agents": "AI Agenti",
+      "alert_rules": "Pravidla upozornění",
+      "blockchains": "Blockchainy",
+      "bridges": "Protokoly mostů",
+      "case_templates": "Šablony případů",
+      "compliance": "Soulad",
+      "encryption": "Šifrování",
+      "entities": "Entity",
+      "evidence_types": "Typy důkazů",
+      "false_positives": "Falešné pozitivy",
+      "max_depth": "Maximální hloubka trasování",
+      "ml_models": "Modely ML",
+      "query_time": "Doba dotazu",
+      "relationships": "Vztahy",
+      "response_time": "Doba odezvy",
+      "security_certs": "Certifikáty bezpečnosti",
+      "uptime_sla": "SLA doby provozu"
+    },
+    "tracing": {
+      "badge": "Trasování transakcí",
+      "bridge": {
+        "desc": "Automatická detekce Cross-Chain-mostů a zabalených aktiv",
+        "title": "Detekce mostů"
+      },
+      "cross_chain": {
+        "desc": "100+ podporovaných blockchainů: EVM, UTXO, Solana, Cosmos a další",
+        "title": "Cross-Chain trasování"
+      },
+      "demixing": {
+        "desc": "Heuristická analýza Tornado Cash, Mixer a Privacy Coins",
+        "title": "Oddělování Privacy Coins"
+      },
+      "desc": "Sledujte transakce na všech hlavních blockchainech. S detekcí Cross-Chain-mostů, oddělováním Privacy Coins a rekurzivním trasováním vpřed/dozadu.",
+      "recursive": {
+        "desc": "Rekurzivní trasování vpřed/dozadu s nastavitelnou hloubkou a filtry",
+        "title": "Rekurzivní trasování"
+      },
+      "title": "Víceřetězcová analýza transakcí"
+    },
+    "hero": {
+      "badge": "Funkce",
+      "title": "Podniková Blockchain Forensics",
+      "subtitle": "Všechny nástroje potřebné k vyšetřování kryptoměnové kriminality, zajištění compliance a ochraně vašeho podnikání."
+    }
+  },
+  "footer": {
+    "blog": "Blog",
+    "careers": "Kariéra",
+    "company": "Společnost",
+    "contact": "Kontakt",
+    "imprint": "Otisk",
+    "legal": "Právní informace",
+    "privacy": "Soukromí",
+    "product": "Produkt",
+    "request_demo": "Vyžádat demo",
+    "rights_reserved": "Všechna práva vyhrazena.",
+    "security": "Bezpečnost",
+    "tagline": "Podnikové blockchainové AI pro soulad a vyšetřování – bezpečné, rychlé, přijatelné pro soudy.",
+    "terms": "Podmínky"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Aktivní uzly",
+      "avg_degree": "Průměrná míra",
+      "density": "Hustota sítě",
+      "total_edges": "Celkový počet hran",
+      "total_nodes": "Celkový počet uzlů"
+    },
+    "centrality": {
+      "taint": "Taint",
+      "title": "Analýza centrality"
+    },
+    "communities": {
+      "algorithm": "Algoritmus",
+      "avg_size": "Průměrná velikost",
+      "avg_taint": "Průměrný Taint",
+      "empty": "Klikněte ",
+      "label_propagation": "Šíření štítků",
+      "loading": "Detekce komunit...",
+      "louvain": "Louvain (Modularity)",
+      "title": "Detekce komunit",
+      "total": "Celkový počet komunit"
+    },
+    "degree": {
+      "title": "Rozložení míry",
+      "x": "Míra",
+      "y": "Počet"
+    },
+    "filters": {
+      "cross_chain": "Cross-Chain (Vrstva mostu)",
+      "from": "Od (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Do (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Rozšířená analýza sítě a detekce vzorců",
+      "title": "Grafová analýza a síťové zpravodajství"
+    },
+    "hubs": {
+      "in": "Příchozí",
+      "out": "Odchozí",
+      "title": "Uzel sítě (Vysoká míra uzlů)",
+      "total": "Celkem"
+    },
+    "loading": {
+      "stats": "Načítání statistik..."
+    },
+    "patterns": {
+      "circle_length": "Délka kruhu",
+      "detected": "Zjištěné kruhy",
+      "empty_desc": "Toto je dobré znamení – nebyly nalezeny zjevné kruhy praní špinavých peněz",
+      "empty_title": "Nebyly zjištěny kruhové vzorce",
+      "high_risk": "Vysoké riziko",
+      "hops": "skoky",
+      "loading": "Detekce vzorců...",
+      "more_addresses": "další adresy",
+      "risk_score": "Skóre rizika",
+      "title": "Kruhové vzorce (Možné praní špinavých peněz)",
+      "total": "Celkem",
+      "total_value": "Celková hodnota",
+      "tx_path": "Cesta transakce:"
+    },
+    "tabs": {
+      "communities": "Detekce komunit",
+      "overview": "Přehled sítě",
+      "patterns": "Detekce vzorců"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Shlukování",
+      "clustering": "Shlukování probíhá...",
+      "pause_timeline": "Pozastavit časovou osu",
+      "play_timeline": "Přehrát časovou osu",
+      "title": "Akce"
+    },
+    "connected": {
+      "taint": "Taint",
+      "title": "Připojené entity",
+      "tx": "Transakce"
+    },
+    "graph": {
+      "connections": "Spojení",
+      "enter_address": "Zadejte adresu",
+      "loading": "Načítání grafu...",
+      "nodes": "Uzly",
+      "title": "Graf"
+    },
+    "header": {
+      "subtitle": "Nástroje pro hlubokou analýzu a vyšetřování",
+      "title": "Nástroj vyšetřovatele"
+    },
+    "path": {
+      "bridges": "Mosty",
+      "hops": "Skoky",
+      "risk_score": "Skóre rizika",
+      "title": "Cesta",
+      "total_value": "Celková hodnota"
+    },
+    "search": {
+      "explore": "Prozkoumat",
+      "placeholder": "Zadejte adresu nebo ID...",
+      "title": "Hledání"
+    },
+    "settings": {
+      "from": "Od",
+      "hops_1": "1 Skok",
+      "hops_2": "2 Skoky",
+      "hops_3": "3 Skoky",
+      "hops_4": "4 Skoky",
+      "hops_5": "5 Skoků",
+      "include_bridges": "Zahrnout mosty",
+      "max_hops": "Maximální skoky",
+      "title": "Nastavení",
+      "to": "Do"
+    },
+    "timeline": {
+      "empty": "Žádné události",
+      "events": "Události",
+      "risk": "Riziko",
+      "select_address": "Vyberte adresu",
+      "title": "Časová osa",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Vyžádat demo nyní",
+      "pricing": "Zobrazit ceny"
+    },
+    "cta2": {
+      "demo": "Vyžádat bezplatné demo",
+      "pricing": "Zobrazit ceny",
+      "subtitle": "Začněte nyní s bezplatnou demo verzí a zažijte budoucnost blockchainové forenzní analýzy",
+      "title": "Připraveni na podnikovou blockchainovou inteligenci?"
+    },
+    "features": {
+      "badge": "Funkce",
+      "subtitle": "Nástroje na podnikové úrovni pro soulad, vyšetřování a řízení rizik",
+      "title": "Vše, co potřebujete pro blockchainovou forenzní analýzu"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Blockchain Forensics",
+      "point1": "100+ blockchainů",
+      "point2": "Sankce OFAC/UN/EU",
+      "point3": "Monitorování v reálném čase",
+      "subtitle": "Soulad, vyšetřování a monitorování rizik poháněné AI – v reálném čase a na podnikové úrovni.",
+      "title": "Podniková blockchainová inteligence"
+    },
+    "pricing": {
+      "badge": "Ceny",
+      "subtitle": "Od zdarma po podnikové – začněte nyní",
+      "title": "Flexibilní balíčky pro každou velikost podniku",
+      "view_all": "Zobrazit všechny ceny"
+    },
+    "seo": {
+      "description": "Soulad, vyšetřování a monitorování rizik poháněné AI – v reálném čase a na podnikové úrovni. SIGMACODE Blockchain Forensics.",
+      "title": "SIGMACODE | Podniková blockchainová inteligence"
+    },
+    "tech": {
+      "badge": "Technologie",
+      "subtitle": "Infrastruktura na podnikové úrovni pro maximální výkon a bezpečnost",
+      "title": "Nejmodernější technologický stack"
+    },
+    "use_cases": {
+      "badge": "Případy použití",
+      "subtitle": "Od orgánů činných v trestním řízení po FinTech",
+      "title": "Ideální řešení pro každý případ"
+    }
+  },
+  "layout": {
+    "main_navigation": "Hlavní navigace",
+    "quick_search_title": "Rychlé hledání (Ctrl/⌘+K)",
+    "quick_search_placeholder": "Rychlé vyhledávání...",
+    "quick_search_hint": "Tip: Cmd/Ctrl+K",
+    "skip_to_content": "Přeskočit na obsah",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Společnost",
+      "legal": "Právní",
+      "privacy": "Ochrana osobních údajů",
+      "terms": "Podmínky"
+    }
+  },
+  "wizard": {
+    "title": "Průvodce forenzním workflow",
+    "desc": "Tento dialog vás v několika krocích provede forenzní akcí. Použijte Tab pro navigaci, ESC pro zavření.",
+    "choose_action": "Vyberte akci",
+    "trace": {
+      "title": "Trasování",
+      "desc": "Analyzovat adresu nebo transakci"
+    },
+    "case": {
+      "title": "Vytvořit případ",
+      "desc": "Vytvořit nový případ s prioritou"
+    },
+    "sanctions": {
+      "title": "Kontrola sankcí",
+      "desc": "Zkontrolovat OFAC/UN/EU/UK apod."
+    },
+    "labels": {
+      "address_opt": "Adresa (volitelné)",
+      "tx_opt": "Hash transakce (volitelné)",
+      "time_range": "Období:",
+      "case_title": "Název případu",
+      "priority": "Priorita:",
+      "notes_opt": "Poznámky / Kontext (volitelné)",
+      "address": "Adresa"
+    },
+    "placeholders": {
+      "address": "např. 0x... nebo bc1...",
+      "tx": "např. 0x...",
+      "case_title": "např. Vyšetřování bridge exploitu",
+      "notes": "např. Související s alerty #123/#124"
+    },
+    "review": {
+      "title": "Kontrola",
+      "hint": "Asistent automaticky spustí odpovídající sadu nástrojů."
+    },
+    "execute": "Spustit",
+    "errors": {
+      "address_invalid": "Adresa se zdá neplatná. Očekává se EVM (0x...) nebo Bech32 (bc1...).",
+      "tx_invalid": "Hash transakce se zdá neplatný (musí mít 66 znaků, 0x... hex).",
+      "case_title_required": "Název je povinný."
+    },
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Chyba při získávání odpovědi. Zkuste to prosím znovu.",
+    "loading_agent": "Asistent analyzuje...",
+    "assistant_title": "Forenzní asistent",
+    "powered_by_ai": "Poháněno AI",
+    "online": "Online",
+    "empty_title": "Jak mohu pomoci?",
+    "empty_desc": "Ptejte se na forenzní otázky nebo použijte rychlé akce níže",
+    "command_palette": {
+      "title": "Forenzní příkazy",
+      "desc": "Vyberte šablonu nebo stiskněte ESC pro zavření. Pro navigaci použijte Tab."
+    },
+    "input_placeholder": "Zadejte forenzní otázku... (Ctrl+K pro příkazy)",
+    "input_aria_label": "Zadat forenzní příkaz",
+    "help_text": "Stiskněte Ctrl nebo Cmd a K pro otevření palety příkazů. Stiskněte Enter pro odeslání zprávy.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 Trasování vysokého rizika",
+        "query": "Ukažte všechny transakce s vysokým rizikem za posledních 7 dní s rizikovým skóre nad 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Aktivita mixerů",
+        "query": "Najděte všechny interakce s Tornado Cash a mixery za posledních 24 hodin"
+      },
+      "daily_summary": {
+        "label": "📊 Denní souhrn",
+        "query": "Shrňte dnešní forenzní aktivitu: analyzované transakce, spuštěné alerty, vytvořené případy"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Kontrola sankcí",
+        "query": "Ukažte všechny záznamy sankcí OFAC z tohoto týdne"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge transfery",
+        "query": "Vypište nedávné cross‑chain bridge transfery s vysokou hodnotou (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Aktivní případy",
+        "query": "Ukažte všechny otevřené případy přiřazené mně s vysokou nebo kritickou prioritou"
+      }
+    },
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "cookie": {
+    "banner_aria": "Banner cookies",
+    "title": "Cookies a soukromí",
+    "title_short": "Cookies",
+    "description": "Používáme nezbytné soubory cookie pro provoz tohoto webu. Volitelné analytické soubory cookie nám pomáhají porozumět používání a zlepšovat web. Můžete přijmout všechny soubory cookie nebo povolit pouze nezbytné. Svou volbu můžete kdykoli změnit v nastavení.",
+    "privacy_link": "Zásady ochrany osobních údajů",
+    "terms_link": "Podmínky služby",
+    "imprint_link": "Právní informace",
+    "only_necessary": "Pouze nezbytné",
+    "accept_all": "Přijmout vše",
+    "preferences": "Předvolby",
+    "save_preferences": "Uložit předvolby",
+    "manage": "Nastavení souborů cookie",
+    "analytics_title": "Analytické soubory cookie",
+    "analytics_desc": "Pomáhají nám porozumět používání a zlepšovat web.",
+    "marketing_title": "Marketingové soubory cookie",
+    "marketing_desc": "Umožňují personalizovaný obsah a nabídky.",
+    "all_optional_title": "Povolit všechny volitelné",
+    "all_optional_desc": "Povolí analytické i marketingové cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Zavřít",
+        "close_title": "Zavřít upozornění",
+        "copy_alert_id_title": "Kopírovat ID upozornění",
+        "copy_entity": "Kopírovat entitu",
+        "copy_entity_id_title": "Kopírovat ID entity",
+        "copy_id": "Kopírovat ID",
+        "copy_rule": "Kopírovat pravidlo",
+        "copy_rule_id_title": "Kopírovat ID pravidla",
+        "details": "Podrobnosti",
+        "details_title": "Zobrazit podrobnosti",
+        "reset": "Resetovat"
+      },
+      "audit": {
+        "empty": "Žádné události",
+        "title": "Protokol auditu"
+      },
+      "csv": {
+        "export_all": "Export CSV (Vše)",
+        "export_all_title": "Exportovat CSV všech filtrovaných řádků (Server)",
+        "export_page": "Export CSV (Stránka)",
+        "export_page_title": "Exportovat CSV stránky",
+        "no_filtered_data": "Žádná filtrovaná data",
+        "no_page_data": "Žádná data na této stránce"
+      },
+      "empty": "Žádná upozornění nenalezena",
+      "filters": {
+        "all": "(vše)",
+        "search_label": "Hledání (rule_id / entity_id)",
+        "search_placeholder": "Hledat...",
+        "severity": "Závažnost",
+        "source": "Zdroj",
+        "source_persisted": "Uložené (KYT)",
+        "source_realtime": "Reálný čas (Motor upozornění)",
+        "status": "Stav"
+      },
+      "kpi": {
+        "event_time_set": "Nastavit čas události (first_seen_at)",
+        "event_time_title": "Čas události = first_seen_at",
+        "false_positive": "Označit jako falešný pozitiv",
+        "title": "Poznámky KPI",
+        "true_positive": "Označit jako skutečný pozitiv"
+      },
+      "loading": "Načítání upozornění...",
+      "modal": {
+        "alert_id": "ID upozornění",
+        "chain": "Řetězec",
+        "context": "Kontext",
+        "entity": "Entita",
+        "rule_id": "ID pravidla",
+        "severity": "Závažnost",
+        "title": "Podrobnosti upozornění"
+      },
+      "pagination": {
+        "next": "Další",
+        "page": "Stránka",
+        "prev": "Předchozí"
+      },
+      "severity": {
+        "critical": "Kritický",
+        "high": "Vysoký",
+        "low": "Nízký",
+        "medium": "Střední"
+      },
+      "status": {
+        "assigned": "Přiděleno",
+        "closed": "Zavřeno",
+        "open": "Otevřeno",
+        "snoozed": "Odloženo"
+      },
+      "subtitle": "Pravidla v reálném čase a uložená upozornění (KYT)",
+      "table": {
+        "first": "První",
+        "last": "Poslední"
+      },
+      "title": "Monitorování upozornění",
+      "toasts": {
+        "copy_failed": "Kopírování selhalo",
+        "disposition_failed": "Označení selhalo",
+        "disposition_set": "Označení nastaveno",
+        "entity_copied": "Entita zkopírována",
+        "event_time_failed": "Nastavení času události selhalo",
+        "event_time_set": "Čas události nastaven",
+        "export_failed": "Export serveru selhal",
+        "export_started": "Export serveru spuštěn",
+        "id_copied": "ID zkopírováno",
+        "rule_copied": "Pravidlo zkopírováno"
+      }
+    }
+  },
+  "navigation": {
+    "about": "O nás",
+    "analytics": "Analýza",
+    "close_menu": "Zavřít navigaci",
+    "dashboard": "Přehled",
+    "features": "Funkce",
+    "home": "Domů",
+    "logout": "Odhlásit",
+    "open_menu": "Otevřít navigaci",
+    "pricing": "Ceny",
+    "settings": "Nastavení",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Obnovit"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Jádra",
+        "title": "Využití CPU"
+      },
+      "db": {
+        "connected": "✓ Připojeno",
+        "disconnected": "✗ Odpojeno",
+        "response": "Odpověď",
+        "title": "Databáze"
+      },
+      "memory": {
+        "available": "dostupné",
+        "title": "Využití paměti"
+      },
+      "system_status": {
+        "healthy": "Zdravý",
+        "issues": "Problémy",
+        "title": "Stav systému",
+        "uptime": "Doba provozu"
+      }
+    },
+    "common": {
+      "no": "Ne",
+      "yes": "Ano"
+    },
+    "header": {
+      "last_refresh": "Poslední obnova",
+      "subtitle": "Komplexní monitorování výkonu systému, metrik a SLO",
+      "title": "Přehled výkonu a sledovatelnosti"
+    },
+    "metrics": {
+      "empty": "Žádná data metrik nejsou dostupná",
+      "loading": "Načítání metrik...",
+      "max": "Maximum",
+      "measurements": "Měření",
+      "min": "Minimum",
+      "title": "Metriky výkonu (1 hodina)",
+      "trend": "Trend"
+    },
+    "recent_alerts": {
+      "empty": "Žádná aktuální upozornění",
+      "title": "Nedávná upozornění na výkon"
+    },
+    "services": {
+      "active": "Aktivní",
+      "inactive": "Neaktivní",
+      "title": "Stav služeb"
+    },
+    "slo": {
+      "empty": "Žádná data SLO nejsou dostupná",
+      "loading": "Načítání SLO...",
+      "threshold": "Práh",
+      "title": "Soulad SLO",
+      "violations": "Porušení"
+    },
+    "system_details": {
+      "database": "Databáze",
+      "db_connected": "Připojeno",
+      "db_type": "Typ",
+      "debug": "Ladění",
+      "environment": "Prostředí",
+      "log_level": "Úroveň logů",
+      "mode": "Režim",
+      "platform": "Platforma",
+      "python_version": "Verze Pythonu",
+      "response_time": "Doba odezvy",
+      "system_info": "Informace o systému",
+      "title": "Podrobnosti systému",
+      "version": "Verze"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Další blockchainy",
+        "i2": "Další uživatelská místa",
+        "i3": "Sanctions Premium (rozšířené seznamy)",
+        "i4": "Pokročilé formáty exportu",
+        "i5": "Prioritní podpora",
+        "i6": "White-Label (Podnikové)",
+        "title": "Dostupné doplňky"
+      },
+      "badge": "Flexibilní rozšíření",
+      "overage": {
+        "extra_credits": "Další kredity",
+        "monthly_cap": "Měsíční limit",
+        "note": "Používáte více než limit? Žádný problém – překročení se automaticky vypočítá.",
+        "title": "Ceny za překročení"
+      },
+      "subtitle": "Rozšiřte svůj plán podle potřeb",
+      "title": "Doplňky a překročení"
+    },
+    "card": {
+      "custom": "Vlastní",
+      "desc_business": "Pro větší týmy",
+      "desc_community": "Pro nadšence a Open Source",
+      "desc_enterprise": "Pro podniky a regulátory",
+      "desc_pro": "Pro rostoucí podniky",
+      "desc_starter": "Pro malé týmy",
+      "per_month": "za měsíc",
+      "popular": "Nejpopulárnější",
+      "popular_label": "Nejpopulárnější",
+      "save_year": "Ušetřete ${{amount}}/Rok"
+    },
+    "cta": {
+      "active_plan": "✓ Aktivní plán",
+      "contact_sales": "Kontaktovat prodej",
+      "demo": "Vyžádat demo",
+      "more_about": "Více o nás",
+      "saving": "Ukládání…",
+      "set_tenant_plan": "Jako plán tenanta",
+      "start_now": "Začít nyní",
+      "subscribe": "Přihlásit se nyní",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Aktuální plán",
+    "enterprise": {
+      "card_desc": "Pro podniky a regulátory",
+      "subtitle": "Vlastní ceny, SLA, integrace, On-Prem/VPC",
+      "title": "Pro finanční instituce a regulátory"
+    },
+    "faq": {
+      "subtitle": "Kontaktujte náš prodejní tým pro osobní demo",
+      "title": "Máte ještě otázky?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchainy",
+      "cases": "Případy",
+      "credits": "Kredity/Měsíc",
+      "priority": "Priorita",
+      "users": "Uživatelé"
+    },
+    "header": {
+      "badge": "Flexibilní ceny",
+      "subtitle": "Od bezplatných nástrojů pro komunitu po podnikové s White-Label. Začněte dnes a rostěte podle potřeb.",
+      "title": "Správný plán pro každý tým"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI Agenti",
+        "i2": "Grafová analýza",
+        "i3": "Hodnocení rizik",
+        "i4": "Modely ML",
+        "title": "Pokročilá analýza"
+      },
+      "badge": "Co je zahrnuto?",
+      "performance": {
+        "i1": "Upozornění v reálném čase",
+        "i2": "Přístup k API",
+        "i3": "Fronta priorit",
+        "i4": "99.9% Doba provozu",
+        "title": "Výkon"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Protokoly auditu",
+        "i4": "Soulad s GDPR",
+        "title": "Bezpečnost a soulad"
+      },
+      "team": {
+        "i1": "Více uživatelů",
+        "i2": "Správa případů",
+        "i3": "Řetězec důkazů",
+        "i4": "Spolupráce",
+        "title": "Funkce týmu"
+      },
+      "title": "Přehled všech funkcí"
+    },
+    "more": "více",
+    "seo": {
+      "description": "Spravedlivé a transparentní ceny pro blockchain forensics. Od bezplatného Community plánu po Enterprise. Zrušte kdykoli.",
+      "title": "Ceny | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Plány samoobsluhy pro startupy až Mid-Market",
+      "title": "Pro týmy a podniky"
+    },
+    "toggle": {
+      "annual": "Ročně",
+      "monthly": "Měsíčně",
+      "save": "Ušetřete {{pct}}%"
+    },
+    "top_features": "NEJVÝZNAMNĚJŠÍ FUNKCE",
+    "hero": {
+      "badge": "Ceny",
+      "title": "Jednoduché a transparentní ceny",
+      "subtitle": "Vyberte plán vyhovující vašim potřebám. Všechny plány zahrnují základní funkce. Upgradujte kdykoli."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Obnovit"
+    },
+    "audit": {
+      "empty": "Žádné dostupné záznamy Audit Trail",
+      "loading": "Načítání Audit Trail...",
+      "title": "Aktuální záznamy Audit Trail",
+      "user": "Uživatel",
+      "view_all": "Zobrazit vše →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Celistvost Audit Trail"
+      },
+      "failed_logins": {
+        "title": "Neúspěšné pokusy o přihlášení"
+      },
+      "gdpr": {
+        "title": "Soulad s GDPR"
+      },
+      "security_incidents": {
+        "title": "Bezpečnostní incidenty"
+      }
+    },
+    "common": {
+      "implemented": "Implementováno",
+      "not_implemented": "Není implementováno",
+      "unknown": "Neznámé"
+    },
+    "compliance": {
+      "anonymization": "Anonymizace",
+      "certifications": "Certifikáty",
+      "consent_management": "Správa souhlasu",
+      "data_portability": "Přenositelnost dat",
+      "empty": "Žádná dostupná data o souladu",
+      "encryption": "Šifrování",
+      "loading": "Načítání stavu souladu...",
+      "right_to_erasure": "Právo na výmaz",
+      "title": "Stav souladu s GDPR"
+    },
+    "header": {
+      "last_refresh": "Poslední obnova",
+      "subtitle": "Protokoly auditu, soulad s GDPR a monitorování bezpečnosti",
+      "title": "Přehled bezpečnosti a souladu"
+    },
+    "quick_actions": {
+      "audit_export": "Export auditu",
+      "compliance_report": "Zpráva o souladu",
+      "gdpr_status": "Stav GDPR",
+      "incident_report": "Zpráva o incidentu",
+      "integrity_check": "Kontrola celistvosti",
+      "security_scan": "Bezpečnostní sken",
+      "title": "Akce bezpečnosti a souladu"
+    },
+    "retention": {
+      "days": "Dny",
+      "empty": "Žádná dostupná data uchovávání",
+      "title": "Soulad uchovávání dat",
+      "violations": {
+        "count": "Porušení",
+        "days_old": "Dní zpět",
+        "more": "a",
+        "more_suffix": "další",
+        "title": "Porušení uchovávání"
+      }
+    },
+    "security": {
+      "compliance_status": "Stav souladu",
+      "empty": "Žádná dostupná data bezpečnosti",
+      "failed_logins": "Neúspěšná přihlášení",
+      "incidents": "Bezpečnostní incidenty",
+      "rate_limited_ips": "Omezené IP adresy",
+      "suspicious_activities": "Podezřelé aktivity",
+      "title": "Přehled bezpečnosti"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Otevřená upozornění podle věkových kategorií (např. 24h, 3d, 7d, >7d)",
+    "alert_engine": "Monitorování v reálném čase pro podezřelé transakce a vzorce s algoritmy ML",
+    "alert_overview": "Přehled všech aktivních bezpečnostních upozornění a jejich závažnosti (Kritické/Vysoké/Střední/Nízké)",
+    "analyst_throughput": "Počet uzavřených případů na analytika v zvoleném okně",
+    "backlog": "Celkový počet otevřených (nepřiznaných) upozornění a otevřených případů",
+    "database": "Stav připojení PostgreSQL/TimescaleDB a doba odezvy pro data časových řad",
+    "graph_db": "Grafová databáze Neo4j pro složitou analýzu vztahů a mapování sítí",
+    "system_status": "Zobrazuje aktuální stav všech komponent systému. Zelená = Zdravý, Červená = Zjištěny problémy",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Dostupné túry",
+    "completed": "dokončeno",
+    "finish": "Dokončit",
+    "no_tours_available": "Žádné túry nejsou na této stránce dostupné",
+    "of": "z",
+    "select_tour_description": "Vyberte si túru, abyste se dozvěděli o funkcích platformy",
+    "skip": "Přeskočit",
+    "start": "tours.start",
+    "start_tour": "Spustit túru",
+    "step": "Krok",
+    "steps": "kroky"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "trace.result.details",
+      "direction": "trace.result.direction",
+      "error_title": "trace.result.error_title",
+      "exec_time": "trace.result.exec_time",
+      "export": "trace.result.export",
+      "flow_graph": "trace.result.flow_graph",
+      "high_risk": "trace.result.high_risk",
+      "high_risk_title": "trace.result.high_risk_title",
+      "loading": "trace.result.loading",
+      "max_hop": "trace.result.max_hop",
+      "not_found": "trace.result.not_found",
+      "report": "trace.result.report",
+      "sanctioned_title": "trace.result.sanctioned_title",
+      "sanctioned_warning": "trace.result.sanctioned_warning",
+      "source": "trace.result.source",
+      "taint": "trace.result.taint",
+      "taint_model": "trace.result.taint_model",
+      "title": "trace.result.title",
+      "total_edges": "trace.result.total_edges",
+      "total_nodes": "trace.result.total_nodes"
+    },
+    "simple": {
+      "address_ph": "trace.simple.address_ph",
+      "chain_btc": "trace.simple.chain_btc",
+      "chain_eth": "trace.simple.chain_eth",
+      "chain_sol": "trace.simple.chain_sol",
+      "cluster": {
+        "clustering": "trace.simple.cluster.clustering",
+        "export_members": "trace.simple.cluster.export_members",
+        "label": "trace.simple.cluster.label",
+        "lookup": "trace.simple.cluster.lookup",
+        "member_address": "trace.simple.cluster.member_address",
+        "members": "trace.simple.cluster.members",
+        "title": "trace.simple.cluster.title"
+      },
+      "depth_ph": "trace.simple.depth_ph",
+      "edges": "trace.simple.edges",
+      "error_cluster": "trace.simple.error_cluster",
+      "error_trace": "trace.simple.error_trace",
+      "export_paths": "trace.simple.export_paths",
+      "export_targets": "trace.simple.export_targets",
+      "high_risk": "trace.simple.high_risk",
+      "model_fifo": "trace.simple.model_fifo",
+      "model_haircut": "trace.simple.model_haircut",
+      "model_proportional": "trace.simple.model_proportional",
+      "nodes": "trace.simple.nodes",
+      "run": "trace.simple.run",
+      "summary": "trace.simple.summary",
+      "th_path": "trace.simple.th_path",
+      "th_paths": "trace.simple.th_paths",
+      "th_taint": "trace.simple.th_taint",
+      "th_target": "trace.simple.th_target",
+      "threshold_ph": "trace.simple.threshold_ph",
+      "title": "trace.simple.title",
+      "tracing": "trace.simple.tracing"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "wallet.test.analytics.desc",
+        "title": "wallet.test.analytics.title",
+        "wip": "wallet.test.analytics.wip"
+      },
+      "export": {
+        "csv": "wallet.test.export.csv",
+        "desc": "wallet.test.export.desc",
+        "json": "wallet.test.export.json",
+        "pdf": "wallet.test.export.pdf",
+        "section_export": "wallet.test.export.section_export",
+        "section_import": "wallet.test.export.section_import",
+        "title": "wallet.test.export.title"
+      },
+      "header": {
+        "title": "wallet.test.header.title"
+      },
+      "import": {
+        "add_wallet": "wallet.test.import.add_wallet",
+        "json": "wallet.test.import.json",
+        "restore_backup": "wallet.test.import.restore_backup"
+      },
+      "multisig": {
+        "desc": "wallet.test.multisig.desc",
+        "title": "wallet.test.multisig.title",
+        "wip": "wallet.test.multisig.wip"
+      },
+      "overview": {
+        "active_wallets": "wallet.test.overview.active_wallets",
+        "activity": {
+          "liquidity": "wallet.test.overview.activity.liquidity",
+          "nft": "wallet.test.overview.activity.nft",
+          "receive": "wallet.test.overview.activity.receive"
+        },
+        "month_change": "wallet.test.overview.month_change",
+        "multisig": "wallet.test.overview.multisig",
+        "new_this_week": "wallet.test.overview.new_this_week",
+        "recent": "wallet.test.overview.recent",
+        "security_grade": "wallet.test.overview.security_grade",
+        "security_score": "wallet.test.overview.security_score",
+        "status": {
+          "2fa": "wallet.test.overview.status.2fa",
+          "active": "wallet.test.overview.status.active",
+          "backup": "wallet.test.overview.status.backup",
+          "backup_available": "wallet.test.overview.status.backup_available",
+          "hardware": "wallet.test.overview.status.hardware",
+          "hw_connected": "wallet.test.overview.status.hw_connected",
+          "recovery": "wallet.test.overview.status.recovery",
+          "secured": "wallet.test.overview.status.secured",
+          "title": "wallet.test.overview.status.title"
+        },
+        "total_volume": "wallet.test.overview.total_volume"
+      },
+      "sidebar": {
+        "title": "wallet.test.sidebar.title"
+      },
+      "tabs": {
+        "analytics": "wallet.test.tabs.analytics",
+        "crosschain": "wallet.test.tabs.crosschain",
+        "export": "wallet.test.tabs.export",
+        "multisig": "wallet.test.tabs.multisig",
+        "nft": "wallet.test.tabs.nft",
+        "overview": "wallet.test.tabs.overview",
+        "transactions": "wallet.test.tabs.transactions"
+      },
+      "transactions": {
+        "desc": "wallet.test.transactions.desc",
+        "export": "wallet.test.transactions.export",
+        "title": "wallet.test.transactions.title",
+        "wip": "wallet.test.transactions.wip"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Webová analýza"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

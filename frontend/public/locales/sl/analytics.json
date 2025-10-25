@@ -1,0 +1,54 @@
+{
+  "analytics": {
+    "advanced": {
+      "title": "Advanced Analytics",
+      "subtitle": "Real-time insights and threat intelligence"
+    },
+    "refresh": "Refresh",
+    "export": {
+      "csv": "Export as CSV",
+      "excel": "Export as Excel",
+      "pdf": "Export as PDF",
+      "success": "Export successful",
+      "error": "Export failed"
+    },
+    "exporting": "Exporting...",
+    "dateRange": {
+      "today": "Today",
+      "week": "This Week",
+      "month": "This Month",
+      "custom": "Custom Range"
+    },
+    "metrics": {
+      "activeTraces": "Active Traces",
+      "activeCases": "Active Cases",
+      "criticalAlerts": "Critical Alerts",
+      "activeUsers": "Active Users"
+    },
+    "charts": {
+      "riskDistribution": "Risk Distribution Over Time",
+      "threatCategories": "Top Threat Categories",
+      "topExchanges": "Top Exchanges by Volume",
+      "topMixers": "Top Mixers by Volume",
+      "geographic": "Geographic Distribution"
+    },
+    "noData": "No data available",
+    "noDataDesc": "Try selecting a different date range",
+    "loading": "Loading analytics...",
+    "error": "Failed to load analytics data",
+    "riskLevels": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "categories": {
+      "mixer": "Mixer Activity",
+      "sanctions": "Sanctions Contact",
+      "scam": "Scam/Phishing",
+      "ransomware": "Ransomware",
+      "theft": "Theft/Hack",
+      "exchange": "Exchange Activity"
+    }
+  }
+}

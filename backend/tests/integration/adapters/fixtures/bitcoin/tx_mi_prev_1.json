@@ -1,0 +1,15 @@
+{
+  "txid": "mi_prev_tx_1",
+  "version": 2,
+  "locktime": 0,
+  "vout": [
+    {
+      "n": 0,
+      "value": 0.5,
+      "scriptPubKey": {
+        "addresses": ["1CommonOwner"],
+        "type": "pubkeyhash"
+      }
+    }
+  ]
+}

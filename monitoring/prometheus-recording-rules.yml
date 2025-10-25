@@ -1,0 +1,74 @@
+groups:
+  - name: agent-endpoints-recording
+    interval: 30s
+    rules:
+      # Agent Operations
+      - record: agent_ops_error_rate_5m
+        expr: |
+          (sum(rate(trace_requests_total{op=~"investigate|analyze_address|trace_funds|generate_report",status!="ok"}[5m]))
+          / sum(rate(trace_requests_total{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m])))
+
+      - record: agent_ops_latency_p95_5m
+        expr: |
+          histogram_quantile(0.95, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m])))
+
+      - record: agent_ops_latency_p99_5m
+        expr: |
+          histogram_quantile(0.99, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m])))
+
+      # Agent Tools
+      - record: agent_tools_error_rate_5m
+        expr: |
+          (sum(rate(trace_requests_total{op=~"tool\\..+",status!="ok"}[5m]))
+          / sum(rate(trace_requests_total{op=~"tool\\..+"}[5m])))
+
+      - record: agent_tools_latency_p95_5m
+        expr: |
+          histogram_quantile(0.95, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"tool\\..+"}[5m])))
+
+      - record: agent_tools_latency_p99_5m
+        expr: |
+          histogram_quantile(0.99, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"tool\\..+"}[5m])))
+
+      # Policy Trace
+      - record: agent_trace_policy_error_rate_5m
+        expr: |
+          (sum(rate(trace_requests_total{op="agent_trace_policy",status!="ok"}[5m]))
+          / sum(rate(trace_requests_total{op="agent_trace_policy"}[5m])))
+
+      - record: agent_trace_policy_latency_p95_5m
+        expr: |
+          histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op="agent_trace_policy"}[5m])))
+
+      - record: agent_trace_policy_latency_p99_5m
+        expr: |
+          histogram_quantile(0.99, sum by (le) (rate(trace_request_latency_seconds_bucket{op="agent_trace_policy"}[5m])))
+
+  - name: trace-slo-burn-rules
+    interval: 30s
+    rules:
+      - record: trace_slo_error_ratio_5m
+        expr: |
+          (sum(rate(trace_requests_total{status!="ok"}[5m]))
+          /
+          sum(rate(trace_requests_total[5m])))
+
+      - record: trace_slo_error_ratio_1h
+        expr: |
+          (sum(rate(trace_requests_total{status!="ok"}[1h]))
+          /
+          sum(rate(trace_requests_total[1h])))
+
+      - record: trace_slo_error_ratio_6h
+        expr: |
+          (sum(rate(trace_requests_total{status!="ok"}[6h]))
+          /
+          sum(rate(trace_requests_total[6h])))
+      - record: trace_slo_burn_rate_5m
+        expr: trace_slo_error_ratio_5m / 0.01
+
+      - record: trace_slo_burn_rate_1h
+        expr: trace_slo_error_ratio_1h / 0.01
+
+      - record: trace_slo_burn_rate_6h
+        expr: trace_slo_error_ratio_6h / 0.01

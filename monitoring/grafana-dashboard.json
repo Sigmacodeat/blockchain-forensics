@@ -1,0 +1,2290 @@
+{
+  "id": null,
+  "title": "Blockchain Forensics - Complete System Metrics",
+  "timezone": "browser",
+  "schemaVersion": 38,
+  "version": 3,
+  "refresh": "10s",
+  "tags": [
+    "blockchain",
+    "forensics",
+    "api",
+    "chain"
+  ],
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": false,
+        "iconColor": "rgba(97, 177, 90, 1)",
+        "name": "Deploys",
+        "type": "dashboard"
+      },
+      {
+        "datasource": "Prometheus",
+        "enable": true,
+        "hide": false,
+        "iconColor": "rgba(255, 199, 0, 1)",
+        "name": "Rule Changes",
+        "expr": "changes(rule_eval_total{rule=~\"$bridge_rule_regex|$exposure_rule_regex\"}[10m]) > bool 0",
+        "titleFormat": "Rule change",
+        "textFormat": "{{rule}} activity change"
+      }
+    ]
+  },
+  "panels": [
+    {
+      "type": "row",
+      "title": "Requests Counters",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Chain Requests",
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 0,
+        "y": 1
+      },
+      "targets": [
+        {
+          "expr": "sum(chain_requests_total)",
+          "legendFormat": "total",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Label Requests",
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 8,
+        "y": 1
+      },
+      "targets": [
+        {
+          "expr": "sum(label_requests_total)",
+          "legendFormat": "total",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Compliance Requests",
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 16,
+        "y": 1
+      },
+      "targets": [
+        {
+          "expr": "sum(compliance_requests_total)",
+          "legendFormat": "total",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Latency Histograms (p50/p90/p99)",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Chain Latency (s)",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 8
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.5, sum by (le,op) (rate(chain_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p50 {{op}}",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.9, sum by (le,op) (rate(chain_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p90 {{op}}",
+          "refId": "B"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum by (le,op) (rate(chain_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p99 {{op}}",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Label Latency (s)",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 16
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.5, sum by (le) (rate(label_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p50",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.9, sum by (le) (rate(label_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p90",
+          "refId": "B"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum by (le) (rate(label_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p99",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Compliance Latency (s)",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 16
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.5, sum by (le) (rate(compliance_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p50",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.9, sum by (le) (rate(compliance_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p90",
+          "refId": "B"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum by (le) (rate(compliance_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p99",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Request Rates & Status",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Chain Requests by op/status",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 25
+      },
+      "targets": [
+        {
+          "expr": "sum by (op,status) (rate(chain_requests_total[5m]))",
+          "legendFormat": "{{op}} - {{status}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Label Requests by op/status",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 33
+      },
+      "targets": [
+        {
+          "expr": "sum by (op,status) (rate(label_requests_total[5m]))",
+          "legendFormat": "{{op}} - {{status}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Compliance Requests by op/status",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 33
+      },
+      "targets": [
+        {
+          "expr": "sum by (op,status) (rate(compliance_requests_total[5m]))",
+          "legendFormat": "{{op}} - {{status}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Error Rates",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 41
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Chain Error Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 42
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(chain_requests_total{status!=\"ok\"}[5m])) / sum(rate(chain_requests_total[5m]))",
+          "legendFormat": "error rate",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 0.02
+              },
+              {
+                "color": "red",
+                "value": 0.05
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Label Error Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 48
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(label_requests_total{status!=\"ok\"}[5m])) / sum(rate(label_requests_total[5m]))",
+          "legendFormat": "error rate",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 0.02
+              },
+              {
+                "color": "red",
+                "value": 0.05
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Compliance Error Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 48
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(compliance_requests_total{status!=\"ok\"}[5m])) / sum(rate(compliance_requests_total[5m]))",
+          "legendFormat": "error rate",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 0.02
+              },
+              {
+                "color": "red",
+                "value": 0.05
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "row",
+      "title": "Infra",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 54
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Postgres Up",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 55
+      },
+      "targets": [
+        {
+          "expr": "postgres_up",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "bool"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Redis Up",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 6,
+        "y": 55
+      },
+      "targets": [
+        {
+          "expr": "redis_up",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "bool"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "JSON-RPC Cache Hit Ratio",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 55
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(jsonrpc_cache_hits_total[5m])) / (sum(rate(jsonrpc_cache_hits_total[5m])) + sum(rate(jsonrpc_cache_misses_total[5m])))",
+          "legendFormat": "hit ratio",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "row",
+      "title": "Trace",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 61
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Trace Requests by op/status",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 62
+      },
+      "targets": [
+        {
+          "expr": "sum by (op,status) (rate(trace_requests_total[5m]))",
+          "legendFormat": "{{op}} - {{status}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Trace Latency (s)",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 68
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.5, sum by (le,op) (rate(trace_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p50 {{op}}",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.9, sum by (le,op) (rate(trace_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p90 {{op}}",
+          "refId": "B"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum by (le,op) (rate(trace_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p99 {{op}}",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Trace Error Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 76
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_requests_total{status!=\"ok\"}[5m])) / sum(rate(trace_requests_total[5m]))",
+          "legendFormat": "error rate",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Trace Error Rate by op",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 82
+      },
+      "targets": [
+        {
+          "expr": "sum by (op) (rate(trace_requests_total{status!=\"ok\"}[5m])) / sum by (op) (rate(trace_requests_total[5m]))",
+          "legendFormat": "{{op}}",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Trace Latency p95 by op (s)",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 88
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le,op) (rate(trace_request_latency_seconds_bucket[5m])))",
+          "legendFormat": "p95 {{op}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Kafka",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 94
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Kafka Producer Errors (rate)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 95
+      },
+      "targets": [
+        {
+          "expr": "rate(kafka_producer_errors_total[5m])",
+          "legendFormat": "producer errors",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Kafka Consumer Errors (rate)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 95
+      },
+      "targets": [
+        {
+          "expr": "rate(kafka_consumer_errors_total[5m])",
+          "legendFormat": "consumer errors",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "DLQ Messages by reason (rate)",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 101
+      },
+      "targets": [
+        {
+          "expr": "sum by (reason) (rate(kafka_dlq_messages_total[5m]))",
+          "legendFormat": "{{reason}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Consumer Commits (rate)",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 101
+      },
+      "targets": [
+        {
+          "expr": "rate(kafka_consumer_commits_total[5m])",
+          "legendFormat": "commits",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Neo4j Graph Database",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 109
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Neo4j Up",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 110
+      },
+      "targets": [
+        {
+          "expr": "neo4j_up",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "bool"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Total Graph Nodes",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 6,
+        "y": 110
+      },
+      "targets": [
+        {
+          "expr": "neo4j_graph_nodes_total",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Total Graph Relationships",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 12,
+        "y": 110
+      },
+      "targets": [
+        {
+          "expr": "neo4j_graph_relationships_total",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Active Queries",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 18,
+        "y": 110
+      },
+      "targets": [
+        {
+          "expr": "neo4j_active_queries",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Neo4j Query Latency (s)",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 115
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.5, sum by (le) (rate(neo4j_query_latency_seconds_bucket[5m])))",
+          "legendFormat": "p50",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(neo4j_query_latency_seconds_bucket[5m])))",
+          "legendFormat": "p95",
+          "refId": "B"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum by (le) (rate(neo4j_query_latency_seconds_bucket[5m])))",
+          "legendFormat": "p99",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Neo4j Transaction Rate",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 115
+      },
+      "targets": [
+        {
+          "expr": "rate(neo4j_transactions_total[5m])",
+          "legendFormat": "transactions/s",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Qdrant Vector Database",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 123
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Qdrant Up",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 124
+      },
+      "targets": [
+        {
+          "expr": "qdrant_up",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "bool"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Vector Collections",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 6,
+        "y": 124
+      },
+      "targets": [
+        {
+          "expr": "qdrant_collections_total",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Total Vectors",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 12,
+        "y": 124
+      },
+      "targets": [
+        {
+          "expr": "sum(qdrant_collection_vectors_count)",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Qdrant Search Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 129
+      },
+      "targets": [
+        {
+          "expr": "rate(qdrant_search_requests_total[5m])",
+          "legendFormat": "searches/s",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Qdrant Search Latency (ms)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 129
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(qdrant_search_latency_seconds_bucket[5m]))) * 1000",
+          "legendFormat": "p95",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "AI Agent & ML",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 135
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "AI Agent Requests by Type",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 136
+      },
+      "targets": [
+        {
+          "expr": "sum by (operation) (rate(ai_agent_requests_total[5m]))",
+          "legendFormat": "{{operation}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "OpenAI API Calls",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 136
+      },
+      "targets": [
+        {
+          "expr": "sum by (model) (rate(openai_api_calls_total[5m]))",
+          "legendFormat": "{{model}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "ML Risk Scoring Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 0,
+        "y": 144
+      },
+      "targets": [
+        {
+          "expr": "rate(ml_risk_score_requests_total[5m])",
+          "legendFormat": "risk scores/s",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "ML Clustering Operations",
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 8,
+        "y": 144
+      },
+      "targets": [
+        {
+          "expr": "rate(ml_clustering_operations_total[5m])",
+          "legendFormat": "clusters/s",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "gauge",
+      "title": "OpenAI Token Usage (last 5m)",
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 16,
+        "y": 144
+      },
+      "targets": [
+        {
+          "expr": "sum(increase(openai_tokens_used_total[5m]))",
+          "legendFormat": "tokens",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": {
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "yellow",
+                "value": 50000
+              },
+              {
+                "color": "red",
+                "value": 100000
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "row",
+      "title": "WebSocket & Real-Time",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 150
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Active WebSocket Connections",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 151
+      },
+      "targets": [
+        {
+          "expr": "websocket_connections_active",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "WebSocket Messages Rate",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 6,
+        "y": 151
+      },
+      "targets": [
+        {
+          "expr": "sum by (type) (rate(websocket_messages_sent_total[5m]))",
+          "legendFormat": "sent: {{type}}",
+          "refId": "A"
+        },
+        {
+          "expr": "sum by (type) (rate(websocket_messages_received_total[5m]))",
+          "legendFormat": "received: {{type}}",
+          "refId": "B"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "WebSocket Connection Lifecycle",
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 18,
+        "y": 151
+      },
+      "targets": [
+        {
+          "expr": "rate(websocket_connections_total[5m])",
+          "legendFormat": "new",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(websocket_disconnections_total[5m])",
+          "legendFormat": "closed",
+          "refId": "B"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Authentication & Users",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 159
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Auth Events by Type",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 160
+      },
+      "targets": [
+        {
+          "expr": "sum by (event) (rate(auth_events_total[5m]))",
+          "legendFormat": "{{event}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Failed Login Attempts",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 160
+      },
+      "targets": [
+        {
+          "expr": "rate(auth_events_total{event=\"login_failed\"}[5m])",
+          "legendFormat": "failed logins/s",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": {
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "yellow",
+                "value": 0.1
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Active Sessions",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 168
+      },
+      "targets": [
+        {
+          "expr": "auth_active_sessions",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Token Refresh Rate",
+      "gridPos": {
+        "h": 5,
+        "w": 9,
+        "x": 6,
+        "y": 168
+      },
+      "targets": [
+        {
+          "expr": "rate(auth_token_refreshes_total[5m])",
+          "legendFormat": "refreshes/s",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Rate Limit Violations",
+      "gridPos": {
+        "h": 5,
+        "w": 9,
+        "x": 15,
+        "y": 168
+      },
+      "targets": [
+        {
+          "expr": "sum by (endpoint) (rate(rate_limit_exceeded_total[5m]))",
+          "legendFormat": "{{endpoint}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Exports & Reports",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 173
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Export Requests by Format",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 174
+      },
+      "targets": [
+        {
+          "expr": "sum by (format) (rate(export_requests_total[5m]))",
+          "legendFormat": "{{format}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Report Generation Latency (s)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 174
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le,type) (rate(report_generation_latency_seconds_bucket[5m])))",
+          "legendFormat": "p95 {{type}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Reports Generated (24h)",
+      "gridPos": {
+        "h": 5,
+        "w": 8,
+        "x": 0,
+        "y": 180
+      },
+      "targets": [
+        {
+          "expr": "sum(increase(export_requests_total[24h]))",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Export Size (MB)",
+      "gridPos": {
+        "h": 5,
+        "w": 8,
+        "x": 8,
+        "y": 180
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(export_size_bytes_bucket[5m]))) / 1048576",
+          "legendFormat": "p95",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Email Delivery Success Rate",
+      "gridPos": {
+        "h": 5,
+        "w": 8,
+        "x": 16,
+        "y": 180
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(email_sent_total{status=\"success\"}[5m])) / sum(rate(email_sent_total[5m]))",
+          "legendFormat": "success rate",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "row",
+      "title": "Trace Edges",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 186
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Trace Edges total (rate)",
+      "gridPos": {
+        "h": 5,
+        "w": 8,
+        "x": 0,
+        "y": 187
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_edges_created_total[5m]))",
+          "legendFormat": "edges/s",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Trace Edges by event_type (rate)",
+      "gridPos": {
+        "h": 8,
+        "w": 16,
+        "x": 8,
+        "y": 187
+      },
+      "targets": [
+        {
+          "expr": "sum by (event_type) (rate(trace_edges_created_total[5m]))",
+          "legendFormat": "{{event_type}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "KYT Monitoring",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 195
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "RuleEval Hit/Miss/Error Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 196
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(rule_eval_total{outcome=\"hit\"}[5m]))",
+          "legendFormat": "hit",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(rate(rule_eval_total{outcome=\"miss\"}[5m]))",
+          "legendFormat": "miss",
+          "refId": "B"
+        },
+        {
+          "expr": "sum(rate(rule_eval_total{outcome=\"error\"}[5m]))",
+          "legendFormat": "error",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "RuleEval Latency (p95/p99)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 196
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(rule_eval_latency_seconds_bucket[5m])))",
+          "legendFormat": "p95",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum by (le) (rate(rule_eval_latency_seconds_bucket[5m])))",
+          "legendFormat": "p99",
+          "refId": "B"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "E2E Event\u2192Alert Latency (p95/p99)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 202
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(e2e_event_alert_latency_seconds_bucket[5m])))",
+          "legendFormat": "p95",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum by (le) (rate(e2e_event_alert_latency_seconds_bucket[5m])))",
+          "legendFormat": "p99",
+          "refId": "B"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Alerts Created by severity (rate)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 202
+      },
+      "targets": [
+        {
+          "expr": "sum by (severity) (rate(alerts_created_total[5m]))",
+          "legendFormat": "{{severity}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Agent Tools",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 208
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Agent Tools Requests by op/status",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 209
+      },
+      "targets": [
+        {
+          "expr": "sum by (op,status) (rate(trace_requests_total{op=~\"tool\\..+\"}[5m]))",
+          "legendFormat": "{{op}} - {{status}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Agent Tools Latency (s)",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 215
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.5, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~\"tool\\..+\"}[5m])))",
+          "legendFormat": "p50 {{op}}",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.9, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~\"tool\\..+\"}[5m])))",
+          "legendFormat": "p90 {{op}}",
+          "refId": "B"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~\"tool\\..+\"}[5m])))",
+          "legendFormat": "p99 {{op}}",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Agent Tools Error Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 223
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_requests_total{op=~\"tool\\..+\",status!=\"ok\"}[5m])) / sum(rate(trace_requests_total{op=~\"tool\\..+\"}[5m]))",
+          "legendFormat": "error rate",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 0.02
+              },
+              {
+                "color": "red",
+                "value": 0.05
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "type": "row",
+      "title": "Agent Tools Drilldowns",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 229
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.risk_score latency p95 (s)",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 230
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op=\"tool.risk_score\"}[5m])))",
+          "legendFormat": "p95"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.risk_score error rate",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 230
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_requests_total{op=\"tool.risk_score\",status!=\"ok\"}[5m])) / sum(rate(trace_requests_total{op=\"tool.risk_score\"}[5m]))",
+          "legendFormat": "error rate"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.bridge_lookup latency p95 (s)",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 235
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op=\"tool.bridge_lookup\"}[5m])))",
+          "legendFormat": "p95"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.bridge_lookup error rate",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 235
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_requests_total{op=\"tool.bridge_lookup\",status!=\"ok\"}[5m])) / sum(rate(trace_requests_total{op=\"tool.bridge_lookup\"}[5m]))",
+          "legendFormat": "error rate"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.trigger_alert latency p95 (s)",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 240
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op=\"tool.trigger_alert\"}[5m])))",
+          "legendFormat": "p95"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.trigger_alert error rate",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 240
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_requests_total{op=\"tool.trigger_alert\",status!=\"ok\"}[5m])) / sum(rate(trace_requests_total{op=\"tool.trigger_alert\"}[5m]))",
+          "legendFormat": "error rate"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.list_alert_rules latency p95 (s)",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 245
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op=\"tool.list_alert_rules\"}[5m])))",
+          "legendFormat": "p95"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.list_alert_rules error rate",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 245
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_requests_total{op=\"tool.list_alert_rules\",status!=\"ok\"}[5m])) / sum(rate(trace_requests_total{op=\"tool.list_alert_rules\"}[5m]))",
+          "legendFormat": "error rate"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.simulate_alerts latency p95 (s)",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 250
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op=\"tool.simulate_alerts\"}[5m])))",
+          "legendFormat": "p95"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.simulate_alerts error rate",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 250
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_requests_total{op=\"tool.simulate_alerts\",status!=\"ok\"}[5m])) / sum(rate(trace_requests_total{op=\"tool.simulate_alerts\"}[5m]))",
+          "legendFormat": "error rate"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.text_extract latency p95 (s)",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 255
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op=\"tool.text_extract\"}[5m])))",
+          "legendFormat": "p95"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "tool.text_extract error rate",
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 255
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(trace_requests_total{op=\"tool.text_extract\",status!=\"ok\"}[5m])) / sum(rate(trace_requests_total{op=\"tool.text_extract\"}[5m]))",
+          "legendFormat": "error rate"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit"
+        }
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Cross-Chain Exposure Hits (rate)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 261
+      },
+      "timeFrom": "$kyt_time_from",
+      "targets": [
+        {
+          "expr": "sum(rate(rule_eval_total{outcome=\"hit\", rule=~\"$exposure_rule_regex\"}[$kyt_interval]))",
+          "legendFormat": "exposure hits/s",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Bridge Activity Miss/Error (rate)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 267
+      },
+      "timeFrom": "$kyt_time_from",
+      "targets": [
+        {
+          "expr": "sum(rate(rule_eval_total{outcome=\"miss\", rule=~\"$bridge_rule_regex\"}[$kyt_interval]))",
+          "legendFormat": "miss/s",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(rate(rule_eval_total{outcome=\"error\", rule=~\"$bridge_rule_regex\"}[$kyt_interval]))",
+          "legendFormat": "error/s",
+          "refId": "B"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "value": 0.2,
+                "color": "orange"
+              },
+              {
+                "value": 1,
+                "color": "red"
+              }
+            ]
+          }
+        }
+      },
+      "links": [
+        {
+          "title": "Open Alerts (Bridge)",
+          "url": "http://localhost:3002/monitor/alerts?query=$bridge_rule_regex",
+          "targetBlank": true
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Cross-Chain Exposure Miss/Error (rate)",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 267
+      },
+      "timeFrom": "$kyt_time_from",
+      "targets": [
+        {
+          "expr": "sum(rate(rule_eval_total{outcome=\"miss\", rule=~\"$exposure_rule_regex\"}[$kyt_interval]))",
+          "legendFormat": "miss/s",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(rate(rule_eval_total{outcome=\"error\", rule=~\"$exposure_rule_regex\"}[$kyt_interval]))",
+          "legendFormat": "error/s",
+          "refId": "B"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "value": 0.2,
+                "color": "orange"
+              },
+              {
+                "value": 1,
+                "color": "red"
+              }
+            ]
+          }
+        }
+      },
+      "links": [
+        {
+          "title": "Open Alerts (Exposure)",
+          "url": "http://localhost:3002/monitor/alerts?query=$exposure_rule_regex",
+          "targetBlank": true
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Alert Engine Performance",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Events in Buffer",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 0,
+        "y": 281
+      },
+      "targets": [
+        {
+          "expr": "events_buffered",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Alert Engine Queue Size",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 6,
+        "y": 281
+      },
+      "targets": [
+        {
+          "expr": "alert_engine_queue_size",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Batch Processing Rate",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 12,
+        "y": 281
+      },
+      "targets": [
+        {
+          "expr": "rate(events_processed_batch_total[5m])",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Webhook Notifications Sent",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 18,
+        "y": 281
+      },
+      "targets": [
+        {
+          "expr": "webhook_notifications_sent_total",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Batch Processing Latency",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 287
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, rate(batch_processing_latency_seconds_bucket[5m]))",
+          "legendFormat": "p95",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Webhook Notification Latency",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 287
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, rate(webhook_notification_latency_seconds_bucket[5m]))",
+          "legendFormat": "p95",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Entity Event Limits Hit",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 295
+      },
+      "targets": [
+        {
+          "expr": "rate(entity_event_limits_hit_total[5m])",
+          "legendFormat": "{{entity_id}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Events Processed Batch",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 295
+      },
+      "targets": [
+        {
+          "expr": "rate(events_processed_batch_total[5m])",
+          "legendFormat": "rate",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Executive Summary",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 310
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Total Investigations",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 0,
+        "y": 311
+      },
+      "targets": [
+        {
+          "expr": "investigations_total",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Active Cases",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 6,
+        "y": 311
+      },
+      "targets": [
+        {
+          "expr": "active_cases",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Evidence Collected",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 12,
+        "y": 311
+      },
+      "targets": [
+        {
+          "expr": "evidence_records_total",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Compliance Score",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 18,
+        "y": 311
+      },
+      "targets": [
+        {
+          "expr": "compliance_score",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Weekly Investigation Trends",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 317
+      },
+      "targets": [
+        {
+          "expr": "rate(investigations_created_total[7d])",
+          "legendFormat": "New Cases",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(evidence_collected_total[7d])",
+          "legendFormat": "Evidence Collected",
+          "refId": "B"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Alert Resolution Time",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 317
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.5, rate(alert_resolution_time_seconds_bucket[7d]))",
+          "legendFormat": "Median",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.95, rate(alert_resolution_time_seconds_bucket[7d]))",
+          "legendFormat": "95th Percentile",
+          "refId": "B"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Risk Analysis",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 325
+      }
+    },
+    {
+      "type": "heatmap",
+      "title": "Risk Heatmap by Chain",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 326
+      },
+      "targets": [
+        {
+          "expr": "risk_score_by_chain",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "piechart",
+      "title": "Alert Distribution by Type",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 326
+      },
+      "targets": [
+        {
+          "expr": "alerts_by_type",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Webhooks",
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 334 }
+    },
+    {
+      "type": "stat",
+      "title": "Webhook Requests (5m rate)",
+      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 335 },
+      "targets": [{ "refId": "A", "expr": "sum(rate(webhook_requests_total[5m]))" }]
+    },
+    {
+      "type": "stat",
+      "title": "Invalid Signatures (5m rate)",
+      "gridPos": { "h": 5, "w": 6, "x": 6, "y": 335 },
+      "targets": [{ "refId": "A", "expr": "sum(rate(webhook_invalid_signature_total[5m]))" }]
+    },
+    {
+      "type": "stat",
+      "title": "Replays (5m rate)",
+      "gridPos": { "h": 5, "w": 6, "x": 12, "y": 335 },
+      "targets": [{ "refId": "A", "expr": "sum(rate(webhook_replay_total[5m]))" }]
+    },
+    {
+      "type": "stat",
+      "title": "Enqueued (5m rate)",
+      "gridPos": { "h": 5, "w": 6, "x": 18, "y": 335 },
+      "targets": [{ "refId": "A", "expr": "sum(rate(webhook_enqueue_total[5m]))" }]
+    },
+    {
+      "type": "timeseries",
+      "title": "Webhook Handler Latency (p95/p99)",
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 340 },
+      "targets": [
+        { "refId": "A", "expr": "histogram_quantile(0.95, sum by (le) (rate(webhook_request_duration_seconds_bucket[5m])))", "legendFormat": "p95" },
+        { "refId": "B", "expr": "histogram_quantile(0.99, sum by (le) (rate(webhook_request_duration_seconds_bucket[5m])))", "legendFormat": "p99" }
+      ]
+    },
+    {
+      "type": "row",
+      "title": "Webhooks Worker",
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 348 }
+    },
+    {
+      "type": "stat",
+      "title": "Processed (5m rate)",
+      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 349 },
+      "targets": [{ "refId": "A", "expr": "sum(rate(webhook_worker_processed_total[5m]))" }]
+    },
+    {
+      "type": "stat",
+      "title": "Retries (5m rate)",
+      "gridPos": { "h": 5, "w": 6, "x": 6, "y": 349 },
+      "targets": [{ "refId": "A", "expr": "sum(rate(webhook_worker_retry_total[5m]))" }]
+    },
+    {
+      "type": "stat",
+      "title": "DLQ (5m rate)",
+      "gridPos": { "h": 5, "w": 6, "x": 12, "y": 349 },
+      "targets": [{ "refId": "A", "expr": "sum(rate(webhook_worker_dlq_total[5m]))" }]
+    },
+    {
+      "type": "stat",
+      "title": "Deferred (5m rate)",
+      "gridPos": { "h": 5, "w": 6, "x": 18, "y": 349 },
+      "targets": [{ "refId": "A", "expr": "sum(rate(webhook_worker_deferred_total[5m]))" }]
+    }
+  ],
+  "templating": {
+    "list": [
+      {
+        "type": "interval",
+        "name": "kyt_interval",
+        "label": "KYT Rate Window",
+        "query": "1m,5m,10m,15m,30m,1h",
+        "current": {
+          "text": "5m",
+          "value": "5m"
+        }
+      },
+      {
+        "type": "textbox",
+        "name": "kyt_time_from",
+        "label": "KYT Time From",
+        "query": "now-6h",
+        "current": {
+          "text": "now-6h",
+          "value": "now-6h"
+        }
+      },
+      {
+        "type": "textbox",
+        "name": "bridge_rule_regex",
+        "label": "Bridge Rule Regex",
+        "query": "Bridge Activity.*",
+        "current": {
+          "text": "Bridge Activity.*",
+          "value": "Bridge Activity.*"
+        }
+      },
+      {
+        "type": "textbox",
+        "name": "exposure_rule_regex",
+        "label": "Exposure Rule Regex",
+        "query": "Cross-Chain Exposure.*",
+        "current": {
+          "text": "Cross-Chain Exposure.*",
+          "value": "Cross-Chain Exposure.*"
+        }
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "number": 8000000,
+  "hash": "0xbaseblockhash",
+  "parentHash": "0xbaseparent",
+  "timestamp": 1687000000,
+  "transactions": [
+    {
+      "blockHash": "0xbaseblockhash",
+      "blockNumber": 8000000,
+      "from": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "gas": 21000,
+      "gasPrice": 20000000000,
+      "hash": "0xbasetxhash",
+      "input": "0x1234",
+      "nonce": "0x1",
+      "to": "0x3154cf16ccdb4c6d922629664174b904d80f2c35",
+      "transactionIndex": 0,
+      "value": 0
+    }
+  ]
+}

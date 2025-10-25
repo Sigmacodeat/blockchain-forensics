@@ -1,0 +1,71 @@
+services:
+  - type: web
+    name: blockchain-forensics-backend
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile.backend
+    dockerContext: .
+    build:
+      args:
+        - USE_LITE=1
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: DEBUG
+        value: "false"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: TRUSTED_HOSTS
+        value: "[*]"
+      - key: CORS_ORIGINS
+        value: "[\"*\"]"
+      - key: POSTGRES_URL
+        # e.g. from Neon
+        value: "postgresql://USER:PASSWORD@HOST:5432/DBNAME"
+      - key: REDIS_URL
+        # e.g. from Upstash
+        value: "rediss://:PASSWORD@HOST:PORT/0"
+      - key: NEO4J_URI
+        # e.g. AuraDB Free bolt URL
+        value: "neo4j+s://YOUR_AURA_HOST:7687"
+      - key: NEO4J_USER
+        value: "neo4j"
+      - key: NEO4J_PASSWORD
+        sync: false
+      - key: QDRANT_URL
+        # Optional: Qdrant Cloud URL or leave unset (client degrades gracefully)
+        value: ""
+      - key: ENABLE_KAFKA_STREAMING
+        value: "0"
+      - key: ENABLE_SANCTIONS_WORKER
+        value: "0"
+      - key: ENABLE_INTEL_FEEDS_WORKER
+        value: "0"
+      - key: ENABLE_VASP_RISK_WORKER
+        value: "0"
+      - key: ENABLE_SCHEMA_REGISTRY_BOOTSTRAP
+        value: "0"
+      - key: ENABLE_MEMPOOL_WS
+        value: "0"
+      - key: GOOGLE_CLIENT_ID
+        # Required for OAuth (see frontend VITE_GOOGLE_CLIENT_ID)
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: OAUTH_CALLBACK_PATH
+        value: "/api/v1/auth/oauth/google/callback"
+      - key: OPENAI_API_KEY
+        # Optional; required for AI chat features
+        sync: false
+      - key: NOWPAYMENTS_API_KEY
+        # Optional; crypto payments
+        sync: false
+      - key: NOWPAYMENTS_IPN_SECRET
+        sync: false
+      - key: NOWPAYMENTS_SANDBOX
+        value: "true"

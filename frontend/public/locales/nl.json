@@ -1,0 +1,489 @@
+{
+  "analytics": {
+    "advanced": {
+      "title": "Geavanceerde Analyses",
+      "subtitle": "Real-time inzichten en dreigingsinformatie"
+    },
+    "refresh": "Vernieuwen",
+    "export": {
+      "csv": "Exporteren als CSV",
+      "excel": "Exporteren als Excel",
+      "pdf": "Exporteren als PDF",
+      "success": "Export succesvol",
+      "error": "Export mislukt"
+    },
+    "exporting": "Exporteren...",
+    "dateRange": {
+      "today": "Vandaag",
+      "week": "Deze Week",
+      "month": "Deze Maand",
+      "custom": "Aangepast Bereik"
+    },
+    "metrics": {
+      "activeTraces": "Actieve Traceringen",
+      "activeCases": "Actieve Zaken",
+      "criticalAlerts": "Kritieke Waarschuwingen",
+      "activeUsers": "Actieve Gebruikers"
+    },
+    "charts": {
+      "riskDistribution": "Risicoverdeling in de Tijd",
+      "threatCategories": "Top Dreigingscategorieën",
+      "topExchanges": "Top Exchanges op Volume",
+      "topMixers": "Top Mixers op Volume",
+      "geographic": "Geografische Verdeling"
+    },
+    "noData": "Geen gegevens beschikbaar",
+    "noDataDesc": "Probeer een ander datumbereik te selecteren",
+    "loading": "Analyses laden...",
+    "error": "Laden van analysegegevens mislukt",
+    "riskLevels": {
+      "critical": "Kritiek",
+      "high": "Hoog",
+      "medium": "Gemiddeld",
+      "low": "Laag"
+    },
+    "categories": {
+      "mixer": "Mixer-activiteit",
+      "sanctions": "Sanctiecontact",
+      "scam": "Oplichting/Phishing",
+      "ransomware": "Ransomware",
+      "theft": "Diefstal/Hack",
+      "exchange": "Exchange-activiteit"
+    }
+  },
+  "bridge": {
+    "title": "Bridge-overdrachten",
+    "subtitle": "Analyseer cross-chain Bridge-links en transacties",
+    "kpi": {
+      "total_transactions": "Totaal Bridge-transacties",
+      "unique_addresses": "Unieke Adressen",
+      "top_bridges": "Ondersteunde Bridges"
+    },
+    "charts": {
+      "chain_distribution": "Verdeling per Bronketen",
+      "top_bridges": "Top Bridges op Transacties"
+    },
+    "filter": {
+      "title": "Filters en Zoeken",
+      "address": "Adres",
+      "chain_from": "Bron (Chain)",
+      "chain_to": "Bestemming (Chain)",
+      "limit": "Limiet",
+      "search": "Zoeken",
+      "reset": "Resetten",
+      "export": "CSV Exporteren"
+    },
+    "loading": "Bridge-links laden...",
+    "error": {
+      "title": "Fout bij Laden",
+      "message": "De bridge-links konden niet worden geladen. Probeer het opnieuw."
+    },
+    "table": {
+      "time": "Tijd",
+      "bridge": "Bridge",
+      "from_address": "Van (Adr)",
+      "to_address": "Naar (Adr)",
+      "chain_from": "Chain Van",
+      "chain_to": "Chain Naar",
+      "tx_hash": "TX Hash",
+      "value": "Waarde",
+      "no_data": "Geen gegevens gevonden",
+      "no_data_hint": "Probeer andere filtercriteria"
+    }
+  },
+  "patterns": {
+    "title": "Patroondetectie",
+    "subtitle": "AI-gedreven gedragsanalyse",
+    "analysis": {
+      "title": "Patroonanalyse",
+      "description": "Detecteer peel-ketens, snelle bewegingen en verdachte patronen met bewijs"
+    },
+    "form": {
+      "address": "Adres",
+      "addressPlaceholder": "0x... of bc1...",
+      "patterns": "Patronen (optioneel)",
+      "patternsPlaceholder": "peel_chain,rapid_movement",
+      "minScore": "Minimale Score",
+      "limit": "Limiet",
+      "analyze": "Analyseren",
+      "analyzing": "Analyseren...",
+      "askAssistant": "Vraag de Assistent",
+      "openInvestigator": "Openen in Investigator",
+      "expandInvestigator": "Uitbreiden in Investigator"
+    },
+    "validation": {
+      "invalidAddress": "Ongeldig adres. Verwacht 0x... of bc1...",
+      "addressRequired": "Adres vereist"
+    },
+    "status": {
+      "analyzing": "Analyse bezig...",
+      "complete": "Analyse voltooid",
+      "waiting": "Even geduld, patronen worden gedetecteerd."
+    },
+    "results": {
+      "title": "Resultaten voor",
+      "patternsFound": "{{count}} patroon gevonden",
+      "patternsFound_plural": "{{count}} patronen gevonden",
+      "noPatterns": "Geen patronen gevonden.",
+      "export": {
+        "csv": "Exporteer CSV",
+        "json": "Exporteer JSON"
+      }
+    },
+    "pattern": {
+      "score": "Score {{score}}%",
+      "evidence": "Bewijs",
+      "noEvidence": "Geen bewijs beschikbaar."
+    },
+    "table": {
+      "tx": "Transactie",
+      "from": "Van",
+      "to": "Naar",
+      "amount": "Bedrag",
+      "time": "Tijd",
+      "actions": "Acties",
+      "investigator": "Investigator",
+      "expand": "Uitbreiden",
+      "path": "Pad",
+      "copy": "Kopiëren"
+    },
+    "patterns": {
+      "peel_chain": "Peel-keten",
+      "rapid_movement": "Snelle Beweging",
+      "layering": "Gelaagdheid",
+      "structuring": "Structurering",
+      "round_amount": "Ronde Bedragen"
+    },
+    "error": "Fout tijdens analyse. Probeer het opnieuw."
+  },
+  "cases": {
+    "title": "Zaakbeheer",
+    "subtitle": "Beheer onderzoekszaken en bewijsketens",
+    "loading": "Zaken laden...",
+    "new_case": "Nieuwe Zaak",
+    "batch_screen": "Batchscherm",
+    "search_placeholder": "Zoek zaken op titel, ID of onderzoeker...",
+    "filters": "Filters",
+    "filters_title": "Geavanceerde Filters",
+    "showing": "Weergeven",
+    "of": "van",
+    "cases": "zaken",
+    "stats": {
+      "total": "Totaal Zaken",
+      "active": "Actief",
+      "closed": "Gesloten",
+      "pending": "In Behandeling"
+    },
+    "filter": {
+      "status": "Status",
+      "investigator": "Onderzoeker",
+      "from_date": "Van Datum",
+      "to_date": "Tot Datum",
+      "all_statuses": "Alle Statussen",
+      "all_investigators": "Alle Onderzoekers",
+      "select_start_date": "Selecteer startdatum",
+      "select_end_date": "Selecteer einddatum"
+    },
+    "status": {
+      "active": "Actief",
+      "closed": "Gesloten",
+      "pending": "In Behandeling"
+    },
+    "empty": {
+      "title": "Geen zaken gevonden",
+      "adjust_filters": "Probeer uw filters of zoektermen aan te passen",
+      "create_first": "Maak uw eerste zaak om te beginnen"
+    },
+    "create_case": "Zaak Aanmaken",
+    "create_new": "Nieuwe Zaak Aanmaken",
+    "success": {
+      "created": "Zaak Aangemaakt",
+      "created_message": "Uw nieuwe zaak is succesvol aangemaakt."
+    },
+    "error": {
+      "load": "Laden van zaken mislukt",
+      "load_message": "Er was een probleem bij het laden van uw zaken. Probeer het opnieuw.",
+      "create": "Aanmaken van zaak mislukt. Probeer het opnieuw."
+    },
+    "no_description": "Geen beschrijving opgegeven",
+    "investigator": "Onderzoeker",
+    "created": "Aangemaakt",
+    "entities": "Entiteiten",
+    "evidence": "Bewijs",
+    "view": "Bekijken",
+    "form": {
+      "case_id": "Zaak-ID",
+      "case_id_placeholder": "bijv. ZAAK-2025-001",
+      "title": "Titel",
+      "title_placeholder": "Korte zaaktitel",
+      "description": "Beschrijving",
+      "description_placeholder": "Gedetailleerde beschrijving van het onderzoek",
+      "description_hint": "Optioneel: Geef extra context over deze zaak",
+      "lead_investigator": "Hoofdonderzoeker",
+      "investigator_placeholder": "Naam of e-mail",
+      "creating": "Aanmaken...",
+      "create": "Zaak Aanmaken",
+      "cancel": "Annuleren",
+      "error": {
+        "case_id_required": "Zaak-ID is verplicht",
+        "title_required": "Titel is verplicht",
+        "investigator_required": "Hoofdonderzoeker is verplicht"
+      }
+    }
+  },
+  "automation": {
+    "title": "Automatisering",
+    "subtitle": "Definieer regels, maak automatisch zaken aan, start traceringen en genereer rapporten. Test met simulatie.",
+    "settings": {
+      "title": "Instellingen",
+      "description": "Automatiseringsregels en drempels",
+      "enabled": "Ingeschakeld",
+      "enabledDesc": "Automatisering in- of uitschakelen",
+      "riskThreshold": "Risicodrempel",
+      "riskThresholdValue": "Risicodrempel: {{value}}",
+      "riskThresholdTooltip": "Automatisering wordt geactiveerd wanneer de risicoscore deze drempel overschrijdt (0-1). Aanbevolen: 0.60-0.80.",
+      "riskThresholdHelp": "Hogere drempels verminderen valse positieven maar kunnen belangrijke matches missen.",
+      "minAmount": "Minimumbedrag (USD)",
+      "minAmountTooltip": "Alleen transacties boven dit USD-bedrag worden overwogen.",
+      "minAmountHelp": "Alleen transacties boven dit USD-bedrag worden overwogen.",
+      "traceDepth": "Auto-traceringsdiepte (0-10)",
+      "traceDepthHelp": "Grotere diepte verhoogt uitvoeringstijd en kosten; Aanbevolen: 3-5.",
+      "autoCreateCase": "Automatisch Zaken Aanmaken",
+      "reportTemplate": "Rapportsjabloon",
+      "reportTemplates": {
+        "standard": "Standaard",
+        "legal": "Juridisch (Toelaatbaar in Rechtbank)",
+        "summary": "Managementsamenvatting"
+      },
+      "save": "Opslaan",
+      "saving": "Opslaan..."
+    },
+    "simulation": {
+      "title": "Simulatie",
+      "description": "Voorbeeld van hoeveel zaken/traceringen worden geactiveerd",
+      "hours": "Tijdsperiode (Uren)",
+      "sample": "Steekproefgrootte",
+      "simulate": "Simuleren",
+      "simulating": "Simuleren...",
+      "results": {
+        "evaluated": "Geëvalueerd",
+        "createCases": "Zaken Aanmaken",
+        "triggerTraces": "Traceringen Activeren",
+        "highPriority": "Hoge Prioriteit"
+      }
+    },
+    "recent": {
+      "title": "Recente Auto-onderzoekstaken",
+      "description": "Laatste items uit de taakwachtrij",
+      "noJobs": "Geen taken beschikbaar",
+      "chain": "Chain",
+      "depth": "Diepte",
+      "status": {
+        "done": "Klaar",
+        "queued": "In Wachtrij",
+        "failed": "Mislukt"
+      }
+    }
+  },
+  "privacyDemixing": {
+    "title": "Tornado Cash Demixing",
+    "subtitle": "De-anonimiseer mixer-transacties met AI-gedreven forensics",
+    "description": "Geavanceerde demixing-technologie om fondsen te traceren via Tornado Cash en andere privacyprotocollen",
+    "form": {
+      "address": "Portemonnee-adres",
+      "addressPlaceholder": "0x...",
+      "chain": "Blockchain",
+      "timeWindow": "Tijdvenster (uren)",
+      "maxHops": "Maximale Sprongen",
+      "startButton": "Start Demixing-analyse",
+      "analyzing": "Analyseren..."
+    },
+    "chains": {
+      "ethereum": "Ethereum",
+      "bsc": "BNB Smart Chain",
+      "polygon": "Polygon"
+    },
+    "results": {
+      "title": "Analyseresultaten",
+      "confidence": "Betrouwbaarheidsscore",
+      "depositsFound": "Stortingen Gevonden",
+      "likelyWithdrawals": "Waarschijnlijke Opnames",
+      "uniqueAddresses": "Unieke Adressen",
+      "deposits": "Tornado Cash Stortingen",
+      "withdrawals": "Geïdentificeerde Opnames",
+      "paths": "Post-Mixer Paden",
+      "pool": "Pool",
+      "viewTx": "Bekijk Transactie",
+      "match": "Match",
+      "noResults": "Geen resultaten gevonden",
+      "noResultsDesc": "Probeer uw zoekparameters aan te passen"
+    },
+    "error": {
+      "title": "Analysefout",
+      "generic": "Er is een fout opgetreden tijdens de analyse",
+      "invalidAddress": "Voer een geldig portemonnee-adres in",
+      "networkError": "Netwerkfout. Probeer het opnieuw."
+    },
+    "features": {
+      "aiPowered": "AI-gedreven Analyse",
+      "realTime": "Real-time Verwerking",
+      "multiChain": "Multi-Chain Ondersteuning",
+      "forensicGrade": "Forensische Kwaliteitsresultaten"
+    },
+    "info": {
+      "howItWorks": "Hoe Het Werkt",
+      "step1": "Voer het portemonnee-adres in dat met Tornado Cash heeft geïnteracteerd",
+      "step2": "Onze AI analyseert transactiepatronen en timing",
+      "step3": "Machine learning identificeert waarschijnlijke opname-adressen",
+      "step4": "Traceer fondsen via meerdere sprongen naar eindbestemmingen"
+    }
+  },
+  "address": {
+    "title": "Adresanalyse",
+    "no_address": "Geen adres opgegeven",
+    "balance": "Saldo",
+    "transactions": "Transacties",
+    "first_seen": "Eerst Gezien",
+    "last_seen": "Laatst Gezien",
+    "labels": "Entiteitslabels",
+    "recent_tx": "Recente Transacties",
+    "view_explorer": "Bekijk op Explorer",
+    "tx_hash": "TX Hash",
+    "from": "Van",
+    "to": "Naar",
+    "value": "Waarde",
+    "time": "Tijd",
+    "create_case": "Zaak Aanmaken",
+    "case_created": "Zaak succesvol aangemaakt",
+    "case_error": "Aanmaken van zaak mislukt",
+    "open_investigator": "Open Grafiek"
+  },
+  "trace": {
+    "simple": {
+      "title": "Transactie-traceringstools",
+      "subtitle": "Traceer transacties over meerdere sprongen en identificeer portemonnee-clusters",
+      "taint_analysis": "Besmettingsanalyse",
+      "taint_desc": "Traceer de stroom van fondsen door het netwerk",
+      "chain": "Chain",
+      "chain_eth": "Ethereum",
+      "chain_btc": "Bitcoin",
+      "chain_sol": "Solana",
+      "address": "Adres",
+      "address_ph": "0x...",
+      "depth": "Diepte",
+      "depth_ph": "Diepte",
+      "threshold": "Drempel",
+      "threshold_ph": "Drempel",
+      "model": "Model",
+      "model_proportional": "Proportioneel",
+      "model_fifo": "FIFO",
+      "model_haircut": "Haircut",
+      "run": "Tracering Uitvoeren",
+      "tracing": "Traceren...",
+      "success_trace": "Tracering succesvol voltooid",
+      "error_trace": "Tracering mislukt",
+      "trace_complete": "Tracering Voltooid",
+      "nodes": "Knooppunten",
+      "edges": "Verbindingen",
+      "high_risk": "Hoog Risico",
+      "export_success": "Export succesvol",
+      "export_error": "Export mislukt",
+      "export_paths": "Exporteer Paden",
+      "export_targets": "Exporteer Doelen",
+      "paths_title": "Besmettingspaden",
+      "targets_title": "Doeladressen",
+      "th_taint": "Besmetting",
+      "th_path": "Pad",
+      "th_target": "Doel",
+      "th_risk": "Risico",
+      "th_paths": "Paden",
+      "create_case": "Zaak Aanmaken",
+      "creating_case": "Zaak Aanmaken...",
+      "case_created": "Zaak succesvol aangemaakt",
+      "case_error": "Aanmaken van zaak mislukt",
+      "cluster": {
+        "title": "Portemonnee Clustering",
+        "desc": "Identificeer gerelateerde portemonnee-adressen",
+        "lookup": "Vind Cluster",
+        "clustering": "Clusteren...",
+        "success_cluster": "Cluster-opzoeken succesvol",
+        "error_cluster": "Cluster-opzoeken mislukt",
+        "label": "Cluster-ID",
+        "members": "Leden",
+        "members_list": "Clusterleden",
+        "member_address": "Lid-adres",
+        "export_members": "Exporteer Leden"
+      }
+    }
+  },
+  "useCases": {
+    "title": "Anwendungsfälle",
+    "subtitle": "Konkrete Workflows für verschiedene Zielgruppen",
+    "items": {
+      "financialInstitutions": {
+        "title": "Finanzinstitute",
+        "desc": "Kundenüberwachung, KYT, Case Management und Berichte"
+      },
+      "lawEnforcement": {
+        "title": "Strafverfolgung",
+        "desc": "Tracing, Evidenzsicherung, gerichtsfeste Reports"
+      },
+      "exchanges": {
+        "title": "Börsen",
+        "desc": "Ein- und Auszahlungs-Überwachung, Sanktions-Checks"
+      },
+      "defiProtocols": {
+        "title": "DeFi Protokolle",
+        "desc": "Exploit-Analyse, Asset-Recovery und Monitoring"
+      },
+      "compliance": {
+        "title": "Compliance",
+        "desc": "Travel Rule, Risk Scoring und Audit-Trails"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "desc": "Token-Flows, Clustering und Netzwerk-Analysen"
+      }
+    }
+  },
+  "tour": {
+    "title": "Geführte Tour",
+    "subtitle": "Lerne die wichtigsten Bereiche in wenigen Schritten kennen",
+    "steps": {
+      "welcome": {
+        "title": "Willkommen",
+        "desc": "Kurze Einführung in Dashboard, Tracing und Cases"
+      },
+      "navigation": {
+        "title": "Navigation",
+        "desc": "Linke Sidebar für Forensik-Bereiche und Filter"
+      },
+      "createCase": {
+        "title": "Case erstellen",
+        "desc": "Neue Untersuchung anlegen und Team zuweisen"
+      },
+      "filters": {
+        "title": "Filter & Suche",
+        "desc": "Schnell die relevanten Cases und Transaktionen finden"
+      },
+      "investigator": {
+        "title": "Investigator Graph",
+        "desc": "Adressen, Cluster und Pfade visuell analysieren"
+      },
+      "reports": {
+        "title": "Reports",
+        "desc": "Gerichtsfeste Berichte mit Evidenz generieren"
+      },
+      "finish": {
+        "title": "Fertig",
+        "desc": "Du bist startklar – viel Erfolg bei den Analysen!"
+      }
+    },
+    "buttons": {
+      "next": "Weiter",
+      "prev": "Zurück",
+      "skip": "Überspringen",
+      "done": "Fertig"
+    }
+  }
+}

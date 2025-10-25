@@ -1,0 +1,61 @@
+# Bandit Configuration für Security Scanning
+# ==========================================
+
+[bandit]
+# Ausgeschlossene Pfade
+exclude_dirs = [
+    '/tests/',
+    '/.venv/',
+    '/venv/',
+    '/node_modules/',
+    '/.pytest_cache/',
+    '/__pycache__/'
+]
+
+# Tests die übersprungen werden sollen
+# B101: assert_used (in Tests erlaubt)
+# B601: paramiko_calls (verwenden wir nicht)
+# B602: subprocess_popen_with_shell_equals_true (kontrolliert)
+skips = ['B101', 'B601']
+
+# Schweregrad-Level
+# LOW, MEDIUM, HIGH
+exclude_level = ['LOW']
+
+# Konfidenz-Level
+# LOW, MEDIUM, HIGH
+exclude_confidence = ['LOW']
+
+# Format der Ausgabe
+# csv, json, txt, xml
+output_format = 'json'
+
+# Output-Datei
+output_file = 'security-reports/bandit-report.json'
+
+# Rekursiv scannen
+recursive = true
+
+# Aggregate über alle Dateien
+aggregate = file
+
+# Detaillierte Ausgabe
+verbose = true
+
+# Plugins aktivieren
+plugins = [
+    'blacklist',
+    'injection',
+    'crypto',
+    'pickle',
+    'exec',
+    'assert_used',
+    'hardcoded_password',
+    'hardcoded_bind_all_interfaces',
+    'hardcoded_sql_expressions',
+    'request_without_timeout',
+    'yaml_load',
+    'subprocess_popen_with_shell_equals_true',
+    'try_except_pass',
+    'exec_used'
+]

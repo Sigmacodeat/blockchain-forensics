@@ -1,0 +1,239 @@
+{
+  "annotations": {"list": []},
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": null,
+  "iteration": 1700000000000,
+  "links": [],
+  "panels": [
+    {
+      "type": "row",
+      "title": "Sanctions Overview",
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 0}
+    },
+    {
+      "type": "stat",
+      "title": "Fetches (rate/5m) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (source) (rate(sanctions_fetch_total{source=~\"$source\"}[5m]))",
+          "legendFormat": "{{source}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 6, "w": 8, "x": 0, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+    {
+      "type": "stat",
+      "title": "Parsed entries (rate/5m) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (source) (rate(sanctions_entries_parsed_total{source=~\"$source\"}[5m]))",
+          "legendFormat": "{{source}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 6, "w": 8, "x": 8, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+    {
+      "type": "stat",
+      "title": "Stored entries (sum)",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum(sanctions_entries_stored_total)",
+          "legendFormat": "stored",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 6, "w": 8, "x": 16, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+
+    {
+      "type": "row",
+      "title": "Latency & Errors",
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 7}
+    },
+    {
+      "type": "timeseries",
+      "title": "Fetch duration p95 (5m) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "quantile_over_time(0.95, sanctions_fetch_duration_seconds[5m])",
+          "legendFormat": "{{source}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8},
+      "options": {"legend": {"showLegend": true}}
+    },
+    {
+      "type": "timeseries",
+      "title": "Update errors (rate/5m) by source,error_type",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (source,error_type) (rate(sanctions_update_errors_total{source=~\"$source\"}[5m]))",
+          "legendFormat": "{{source}}/{{error_type}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8},
+      "options": {"legend": {"showLegend": true}}
+    },
+
+    {
+      "type": "row",
+      "title": "Batch & API",
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 16}
+    },
+    {
+      "type": "timeseries",
+      "title": "API screen latency (seconds) avg/5m",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "avg(rate(label_request_latency_seconds_sum{op=\"sanctions_screen\"}[5m]) / rate(label_request_latency_seconds_count{op=\"sanctions_screen\"}[5m]))",
+          "legendFormat": "screen",
+          "refId": "A"
+        },
+        {
+          "expr": "avg(rate(label_request_latency_seconds_sum{op=\"sanctions_batch\"}[5m]) / rate(label_request_latency_seconds_count{op=\"sanctions_batch\"}[5m]))",
+          "legendFormat": "batch",
+          "refId": "B"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 17},
+      "options": {"legend": {"showLegend": true}}
+    },
+    {
+      "type": "timeseries",
+      "title": "API requests (rate/5m) by op,status",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (op,status) (rate(label_requests_total{op=~\"sanctions_.*\"}[5m]))",
+          "legendFormat": "{{op}}/{{status}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 17},
+      "options": {"legend": {"showLegend": true}}
+    },
+
+    {"type": "row", "title": "Workers & Health", "gridPos": {"h": 1, "w": 24, "x": 0, "y": 25}},
+    {
+      "type": "stat",
+      "title": "Sanctions Worker Status",
+      "datasource": "Prometheus",
+      "targets": [
+        {"expr": "worker_status{worker=\"sanctions_update\"}", "legendFormat": "status", "refId": "A"}
+      ],
+      "gridPos": {"h": 6, "w": 6, "x": 0, "y": 26},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+    {
+      "type": "stat",
+      "title": "Sanctions Last Heartbeat (ts)",
+      "datasource": "Prometheus",
+      "targets": [
+        {"expr": "worker_last_heartbeat_timestamp{worker=\"sanctions_update\"}", "legendFormat": "ts", "refId": "A"}
+      ],
+      "gridPos": {"h": 6, "w": 6, "x": 6, "y": 26},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+    {
+      "type": "stat",
+      "title": "Intel Feeds Worker Status",
+      "datasource": "Prometheus",
+      "targets": [
+        {"expr": "worker_status{worker=\"threat_intel_worker\"}", "legendFormat": "status", "refId": "A"}
+      ],
+      "gridPos": {"h": 6, "w": 6, "x": 12, "y": 26},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+    {
+      "type": "stat",
+      "title": "Intel Feeds Last Heartbeat (ts)",
+      "datasource": "Prometheus",
+      "targets": [
+        {"expr": "worker_last_heartbeat_timestamp{worker=\"threat_intel_worker\"}", "legendFormat": "ts", "refId": "A"}
+      ],
+      "gridPos": {"h": 6, "w": 6, "x": 18, "y": 26},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+
+    {"type": "row", "title": "Sanctions Updates & Addresses", "gridPos": {"h": 1, "w": 24, "x": 0, "y": 32}},
+    {
+      "type": "timeseries",
+      "title": "Last updated (minutes) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {"expr": "max by (source) (sanctions_update_timestamp{source=~\"$source\"})", "legendFormat": "{{source}}", "refId": "A"}
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 33},
+      "options": {"legend": {"showLegend": true}}
+    },
+    {
+      "type": "timeseries",
+      "title": "Unique addresses (rate/5m) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {"expr": "sum by (source) (rate(sanctions_addresses_total{source=~\"$source\"}[5m]))", "legendFormat": "{{source}}", "refId": "A"}
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 33},
+      "options": {"legend": {"showLegend": true}}
+    },
+    {"type": "row", "title": "Intel Webhooks", "gridPos": {"h": 1, "w": 24, "x": 0, "y": 41}},
+    {
+      "type": "timeseries",
+      "title": "Inbound Intel Webhooks (rate/5m) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {"expr": "sum by (source) (rate(intel_webhook_ingest_total{status=\"ok\",source=~\"$source\"}[5m]))", "legendFormat": "{{source}}", "refId": "A"}
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 42},
+      "options": {"legend": {"showLegend": true}}
+    },
+    {
+      "type": "timeseries",
+      "title": "Inbound Intel Webhooks by status (rate/5m)",
+      "datasource": "Prometheus",
+      "targets": [
+        {"expr": "sum by (source,status) (rate(intel_webhook_ingest_total{source=~\"$source\"}[5m]))", "legendFormat": "{{source}}/{{status}}", "refId": "A"}
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 42},
+      "options": {"legend": {"showLegend": true}}
+    }
+  ],
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": ["sanctions", "compliance"],
+  "templating": {"list": [
+    {
+      "name": "source",
+      "type": "query",
+      "label": "Sanctions/Intel Source",
+      "datasource": "Prometheus",
+      "query": "label_values(sanctions_update_timestamp, source)",
+      "includeAll": true,
+      "multi": true,
+      "refresh": 1,
+      "sort": 1,
+      "current": {"text": "All", "value": ["$__all"]}
+    }
+  ]},
+  "time": {"from": "now-6h", "to": "now"},
+  "timepicker": {"refresh_intervals": ["5s", "10s", "30s", "1m", "5m"]},
+  "timezone": "browser",
+  "title": "Sanctions Monitoring",
+  "uid": "sanctions-monitoring",
+  "version": 1
+}

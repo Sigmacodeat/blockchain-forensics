@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Broneeri demo",
+      "pricing": "Vaata hindu",
+      "subtitle": "Alusta kohe tasuta demo või võta meie meeskonnaga ühendust",
+      "title": "Alusta kohe"
+    },
+    "header": {
+      "badge": "Meie kohta",
+      "subtitle": "Me ehitame juhtiva ettevõtlusplatvormi plokiahela luure jaoks, mis toetab õiguskaitseorganeid, VASP-sid ja finantsinstitutsioone kaitses krüptokuritegevuse eest.",
+      "title": "Plokiahela kohtuanalüüsi tulevik"
+    },
+    "mission": {
+      "desc": "Teeme plokiahela tehingud läbipaistvaks ja jälgitavaks. Meie eesmärk on võidelda krüptokuritegevuse vastu ning anda seadusliketele turuosalistele vahendeid nõuetele vastavuse tagamiseks ja riskide vähendamiseks.",
+      "title": "Meie missioon"
+    },
+    "seo": {
+      "description": "Me ehitame juhtiva ettevõtlusplatvormi plokiahela kohtuanalüüsiks: vastavus, uurimised ja luure kogu maailmas.",
+      "title": "Meie kohta | SIGMACODE Plokiahela kohtuanalüüs"
+    },
+    "stats": {
+      "badge": "Numbrite järgi",
+      "blockchains": "Plokiahelad",
+      "enterprise_customers": "Ettevõttekliendid",
+      "recovered_assets": "Taastatud varad",
+      "sla_guaranteed": "garanteeritud SLA-ga",
+      "supported": "toetatud",
+      "supported_by_tech": "meie tehnoloogia toetusel",
+      "title": "Meie mõju",
+      "uptime": "Tööaeg",
+      "worldwide": "kogu maailmas"
+    },
+    "team": {
+      "badge": "Ekspertiis",
+      "compliance": {
+        "desc": "Regulatsiooni eksperdid AML/CFT ja rahvusvaheliste sanktsioonide alal",
+        "h1": "Endised reguleerijad",
+        "h2": "AML-spetsialistid",
+        "h3": "Õigusnõustajad",
+        "title": "Vastavus ja õiguslikud küsimused"
+      },
+      "forensics": {
+        "desc": "Endised õiguskaitseametnikud, kellel on krüptokuritegevuse uurimise aastatepikkune kogemus",
+        "h1": "FBI/BKA vilistlased",
+        "h2": "Darkneti operatsioonid",
+        "h3": "Varade taastamine",
+        "title": "Kohtuanalüüsi eksperdid"
+      },
+      "subtitle": "Eksperdid plokiahela kohtuanalüüsi, õiguskaitse, fintechi ja masinõppe valdkonnast",
+      "tech": {
+        "desc": "Insenerid tipptasemel tehnoloogiaettevõtetest, kellel on plokiahela oskused",
+        "h1": "Endised FAANGi töötajad",
+        "h2": "Plokiahela tuumikarendajad",
+        "h3": "Turvalisuse eksperdid",
+        "title": "Tehnoloogia spetsialistid"
+      },
+      "title": "Meie meeskond"
+    },
+    "trust": {
+      "badge": "Usaldus",
+      "ce": {
+        "desc": "Top-10 börsid AML-i ja tehingute jälgimise jaoks",
+        "title": "Krüptobörsid"
+      },
+      "fi": {
+        "desc": "Tasemel pangad krüptoväljundiga",
+        "title": "Pangad ja fintechid"
+      },
+      "le": {
+        "desc": "FBI, Europol, riiklikud õiguskaitseorganid",
+        "title": "Õiguskaitse"
+      },
+      "reg": {
+        "desc": "Finantsreguleerijad turu järelevalve jaoks",
+        "title": "Reguleerijad"
+      },
+      "subtitle": "Juhtivad organisatsioonid kogu maailmas usaldavad meie tehnoloogiat",
+      "title": "Kes meile usaldab"
+    },
+    "values": {
+      "badge": "Meie väärtused",
+      "compliance": {
+        "desc": "GDPR, eIDAS, OFAC-konformne. Me mõistame regulatiivseid nõudeid ja integreerime need.",
+        "title": "Esmalt vastavus"
+      },
+      "customer": {
+        "desc": "Tihe koostöö õiguskaitse ja tööstusega. Teie nõudmised on meie tegevuskava.",
+        "title": "Kliendikeskne"
+      },
+      "global": {
+        "desc": "100+ plokiahelat, mitmekeelne tugi ja rahvusvaheliste sanktsioonide loetelude katvus.",
+        "title": "Globaalne ulatus"
+      },
+      "innovation": {
+        "desc": "Tipptasemel tehnoloogia: AI/ML, graafianalüütika ja reaalajas töötlemine parimate tulemuste jaoks.",
+        "title": "Innovatsioon"
+      },
+      "team": {
+        "desc": "Distsiplinaarne meeskond kohtuanalüüsi ekspertidest, arendajatest ja vastavusspetsialistidest.",
+        "title": "Meeskonnatöö"
+      },
+      "title": "Mis meid ajendab",
+      "trust": {
+        "desc": "Ettevõtte tasemel turvalisus SOC2/ISO27001 sertifikaatidega. Teie andmed on meie juures turvalised.",
+        "title": "Usaldus ja turvalisus"
+      }
+    },
+    "vision": {
+      "desc": "Maailm, kus plokiahela tehnoloogia saab realiseerida oma täieliku potentsiaali – läbipaistev, turvaline ja vastav. Me loome infrastruktuuri tulevikuks, kus digitaalsed varad muutuvad mainstreamiks kuritegevuse toetamata.",
+      "title": "Meie visioon"
+    }
+  },
+  "accessibility": {
+    "activate": "Aktiveeri",
+    "close_dialog": "Sulge dialoog",
+    "font_size": "Fondi suurus",
+    "font_size_large": "Suur fondi suurus",
+    "font_size_normal": "Tavaline fondi suurus",
+    "font_size_xlarge": "Eriti suur fondi suurus",
+    "high_contrast_detected": "Tuvastati kõrge kontrastsus",
+    "keyboard_shortcuts": "Klaviatuuri otseteed",
+    "navigate_backward": "Liikumine tagasi",
+    "navigate_forward": "Liikumine edasi",
+    "no_system_preferences": "Ei tuvastatud erilisi süsteemi eelistusi",
+    "reduced_motion_detected": "Tuvastati liikumise vähendamine",
+    "settings": "Hõlbustatavuse seaded",
+    "skip_to_content": "Hüppa sisu juurde",
+    "system_preferences": "Süsteemi eelistused"
+  },
+  "address_analysis": {
+    "title": "Aadressi analüüs",
+    "wip_desc": "Aadressi analüüsi kirjeldus on arendamisel",
+    "wip_title": "Aadressi analüüs on arendamisel"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI agendid",
+      "app_name": "Rakenduse nimi",
+      "cross_chain": "Ristketi",
+      "max_trace_depth": "Maksimaalne jälgimis sügavus",
+      "ml_clustering": "ML klastrite moodustamine",
+      "title": "Seadistus",
+      "version": "Versioon"
+    },
+    "disabled": "✗ Keelatud",
+    "enabled": "✓ Luba",
+    "error": "Viga",
+    "health": {
+      "connected": "✓ Ühendatud",
+      "disconnected": "✗ Ühendus katkenud",
+      "error": "Tõrge seisundi laadimisel",
+      "title": "Andmebaasi seisund"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Laeb tehingud Ethereum RPC-st",
+        "ingesting": "Laadimine käib...",
+        "placeholder": "0x...",
+        "start": "Alusta laadimist",
+        "success": "✓ Laadimine alustati taustal",
+        "title": "Lae aadressi andmed"
+      },
+      "block": {
+        "help": "Impordib kõik tehingud plokist",
+        "ingesting": "Laadimine käib...",
+        "placeholder": "Bloki number",
+        "start": "Alusta bloki importimist",
+        "success": "✓ Bloki laadimine alustatud",
+        "title": "Lae bloki andmed"
+      }
+    },
+    "stats": {
+      "db_size": "Andmebaasi suurus",
+      "title": "Süsteemi statistika",
+      "total_addresses": "Kokku aadresse",
+      "total_traces": "Kokku jälgi",
+      "total_transactions": "Kokku tehinguid"
+    },
+    "subtitle": "Jälgimine, seadistamine ja andmehaldus",
+    "tabs": {
+      "config": "Seadistus",
+      "ingestion": "Andmete laadimine",
+      "overview": "Ülevaade",
+      "users": "Kasutajate haldus"
+    },
+    "title": "Süsteemi haldus"
+  },
+  "agent": {
+    "cancel": "Tühista",
+    "error": "Agendi viga",
+    "error_unknown": "Tundmatu agendi viga",
+    "examples": {
+      "1": "Näide 1",
+      "2": "Näide 2",
+      "3": "Näide 3",
+      "title": "Agendi näited"
+    },
+    "instructions": "Agendi juhised",
+    "loading": "Laaditakse agenti...",
+    "placeholder": "Agendi koht",
+    "retry": "Proovi uuesti",
+    "send": "Saada",
+    "subtitle": "Agendi alapealkiri",
+    "title": "Agendi nimi",
+    "welcome": "Tere tulemast agendi juurde"
+  },
+  "auth": {
+    "fields": {
+      "email": "E-post",
+      "organization_opt": "Organisatsioon (valikuline)",
+      "password": "Parool",
+      "password_confirm": "Kinnita parool",
+      "username": "Kasutajanimi"
+    },
+    "forgot": {
+      "back_to_login": "Tagasi sisselogimisele",
+      "dev_note": "Kuna e-posti teenust pole konfigureeritud, kontrolli serveri logisid lähtestuslingi jaoks.",
+      "dev_note_label": "Märkus (arenduse režiim):",
+      "error": "Saatmine ebaõnnestus",
+      "info_sent": "Kui sellise e-postiga konto eksisteerib, saadeti lähtestuslink.",
+      "sent": "Lähtestuslink saadetud!",
+      "submit": "Saada lähtestuslink",
+      "submitting": "Saadetakse...",
+      "subtitle": "Pole probleemi! Sisesta oma e-post ja me saadame sulle lähtestuslingi.",
+      "title": "Unustasid parooli?",
+      "title_sent": "E-kiri saadetud!"
+    },
+    "login": {
+      "failed": "Sisselogimine ebaõnnestus",
+      "fill_all_fields": "Palun täida kõik väljad",
+      "forgot_password": "Unustasid parooli?",
+      "google": "Logi sisse Google'iga",
+      "google_retry": "Proovi uuesti Google'iga",
+      "no_account": "Sul pole veel kontot?",
+      "oauth_failed": "OAuth ebaõnnestus. Proovi uuesti.",
+      "oauth_processing": "OAuth sisselogimine töödeldakse...",
+      "or": "või",
+      "register_now": "Registreeru kohe",
+      "remember_me": "Jäta mind meelde",
+      "submit": "Logi sisse",
+      "submitting": "Sisselogimine käib...",
+      "subtitle": "Logi sisse jätkamiseks"
+    },
+    "placeholders": {
+      "email": "analüütik@näide.com",
+      "organization": "FBI, Chainalysis, jne.",
+      "password": "••••••••",
+      "username": "jaan_analüütik"
+    },
+    "register": {
+      "accept": "Nõustun",
+      "already": "Oled juba registreeritud?",
+      "and": "ja",
+      "failed": "Registreerimine ebaõnnestus",
+      "fill_all_fields": "Palun täida kõik kohustuslikud väljad",
+      "google": "Registreeru Google'iga",
+      "login_now": "Logi sisse kohe",
+      "password_hint": "Vähemalt 8 tähemärki",
+      "password_too_short": "Parool peab olema vähemalt 8 tähemärki pikk",
+      "passwords_no_match": "Paroolid ei kattu",
+      "submit": "Registreeru",
+      "submitting": "Registreerimine käib...",
+      "subtitle": "Alusta oma kohtuanalüüsi",
+      "title": "Loo konto"
+    }
+  },
+  "common": {
+    "access_denied": "Juurdepääs keelatud (ainult adminid)",
+    "account": "Konto",
+    "back": "Tagasi",
+    "close": "Sulge",
+    "info": "Teave",
+    "language": "Keel",
+    "loading": "Laadimine...",
+    "next": "Edasi",
+    "page": "Lehekülg",
+    "prev": "Eelmine",
+    "refresh": "Värskenda",
+    "search": "Otsi",
+    "success": "Edukas",
+    "theme": "Teema",
+    "view": "Vaata",
+    "wip": {
+      "title": "Tuleb varsti",
+      "desc": "See funktsioon on veel arendamisel.",
+      "cta": "Lisateave"
+    },
+    "start_free": "Alusta tasuta",
+    "error": "Viga",
+    "save": "Salvesta",
+    "cancel": "Tühista",
+    "delete": "Kustuta",
+    "edit": "Muuda",
+    "create": "Loo",
+    "finish": "Lõpeta",
+    "open": "Ava",
+    "yes": "Jah",
+    "no": "Ei",
+    "confirm": "Kinnita",
+    "welcome": "Tere tulemast",
+    "dashboard": "Töölaud",
+    "settings": "Seaded",
+    "profile": "Profiil",
+    "logout": "Logi välja",
+    "login": "Logi sisse",
+    "register": "Registreeru",
+    "email": "E-post",
+    "password": "Parool",
+    "username": "Kasutajanimi",
+    "documents": "Dokumendid",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Minimaalne tõsidus",
+      "refresh": "Värskenda",
+      "title": "Juhtimisseadmed",
+      "window": "Aken",
+      "window_15m": "15 minutit",
+      "window_1h": "1 tund",
+      "window_24h": "24 tundi",
+      "window_2h": "2 tundi",
+      "window_30m": "30 minutit",
+      "window_5m": "5 minutit"
+    },
+    "header": {
+      "subtitle": "Korrelatsiooni alapealkiri",
+      "title": "Korrelatsioon"
+    },
+    "overview": {
+      "active_rules": "Aktiivsed reeglid",
+      "analyzed": "Analüüsitud",
+      "empty": "Tühi",
+      "found": "Leitud",
+      "loading": "Laadimine...",
+      "min_sev": "Minimaalne tõsidus",
+      "rate": "Määr",
+      "title": "Ülevaade",
+      "window": "Aken"
+    },
+    "rules": {
+      "empty": "Ühtegi reeglit",
+      "footer": "Reeglite jalus",
+      "loading": "Laaditakse reegleid...",
+      "min": "Minimaalne",
+      "minutes": "Minutid",
+      "required_patterns": "Nõutud mustrid",
+      "title": "Reeglid",
+      "window": "Aken"
+    },
+    "sev": {
+      "critical": "Kriitiline",
+      "high": "Kõrge",
+      "low": "Madal",
+      "medium": "Keskmine"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Põhjuste järgi",
+        "by_type": "Tüüpide järgi",
+        "title": "Allasurumise jaotus"
+      },
+      "rate": "Allasurumise määr",
+      "title": "Allasurumine",
+      "top_entity": "Peamine üksus",
+      "total": "Kokku"
+    },
+    "test": {
+      "add_alert": "Lisa hoiatus",
+      "alerts_label": "Hoiatuste silt",
+      "match": "Sobivus",
+      "no_alerts": "Ühtegi hoiatust",
+      "no_match": "Ühtegi sobivust",
+      "pick_rule": "Vali reegel",
+      "pick_rule_ph": "Reegli valiku koht",
+      "result": "Tulemus",
+      "run": "Käivita",
+      "testing": "Testimine...",
+      "title": "Korrelatsiooni test"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Kopeeri (allikas)",
+      "copy_mint": "Kopeeri (mint)",
+      "export_csv": "Ekspordi CSV",
+      "export_csv_page": "Ekspordi lehe CSV",
+      "fetch": "Lae"
+    },
+    "bitcoin": {
+      "block_title": "Bloki nimi",
+      "compute": "Arvuta",
+      "decoded": "Dekodeeritud",
+      "edges_title": "Äärte nimi",
+      "height_ph": "Kõrguse koht",
+      "ingest_edges": "Äärte laadimine",
+      "method_heuristic": "Heuristiline meetod",
+      "method_proportional": "Proportsionaalne meetod",
+      "normalized": "Normaliseeritud",
+      "tx_title": "Tehingu nimi",
+      "txid_ph": "Tehingu ID koht"
+    },
+    "compliance": {
+      "add_watch": "Lisa jälgimisse",
+      "address_ph": "Aadressi koht",
+      "chain_ph": "Keti koht",
+      "entries": "Kirjed",
+      "error": "Viga",
+      "filter_address_ph": "Aadressi filtri koht",
+      "filter_chain_ph": "Keti filtri koht",
+      "list_watch": "Jälgimise loend",
+      "screen": "Ekraan",
+      "title": "Vastavus",
+      "watchlist": "Jälgimisloend"
+    },
+    "ethereum": {
+      "canonical": "Kanooniline",
+      "copy_hash": "Kopeeri hash",
+      "decoded": "Dekodeeritud",
+      "error": "Viga",
+      "open_etherscan": "Ava Etherscan",
+      "tx_hash_ph": "Tehingu hash'i koht",
+      "tx_title": "Tehingu nimi"
+    },
+    "ingest": {
+      "canonical_notice": "Kanoonilise laadimise teade",
+      "edges_notice": "Äärte laadimise teade",
+      "loading": "Laadimine..."
+    },
+    "labels": {
+      "add": "Lisa",
+      "address_ph": "Aadressi koht",
+      "category_ph": "Kategooria koht",
+      "chain_ph": "Keti koht",
+      "error": "Viga",
+      "label_ph": "Sildi koht",
+      "lookup": "Otsi",
+      "title": "Sildid"
+    },
+    "monitoring": {
+      "fetch": "Lae",
+      "key_counters": "Peamised loendurid",
+      "title": "Jälgimine"
+    },
+    "rpc_unavailable": "RPC pole saadaval",
+    "solana": {
+      "canonical_error": "Kanoonilise laadimise viga",
+      "canonical_title": "Kanoonilise laadimise nimi",
+      "error": "Viga",
+      "ingest_canonical": "Lae kanooniline",
+      "signature_ph": "Allkirja koht",
+      "title": "Solana nimi",
+      "transfers": "Ülekanded"
+    },
+    "table": {
+      "actions": "Tegevused",
+      "address": "Aadress",
+      "amount_ui": "Kogus UI",
+      "chain": "Kett",
+      "created": "Loodud",
+      "decimals": "Kümnendkohad",
+      "fee": "Tasu",
+      "from": "Alates (allikas)",
+      "from_vout": "Alates vout",
+      "method": "Meetod",
+      "mint": "Mint",
+      "reason": "Põhjus",
+      "to": "Kuni (sihtkoht)",
+      "to_vout": "Kuni vout",
+      "value_btc": "Väärtus BTC"
+    },
+    "totals": {
+      "page_sum": "Lehe summa",
+      "page_sum_btc": "Lehe summa BTC",
+      "total_amount": "Kogusumma",
+      "total_value_btc": "Koguväärtus BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Tegevused",
+    "active": "Aktiivne",
+    "administration": "Haldus",
+    "alert_aging": "Hoiatuste vananemine",
+    "alert_engine": "Hoiatuste mootor",
+    "alert_monitoring": "Hoiatuste jälgimine",
+    "alert_overview": "Hoiatuste ülevaade",
+    "analyst_throughput": "Analüütiku läbilaskevõime",
+    "audit_kpis": "Auditi KPI-d",
+    "backlog": "Tagavara",
+    "bucket_placeholder": "24h, 3p, 7p, >7p",
+    "buckets": "Kogumid",
+    "case_management": "Juhtumite haldus",
+    "connected": "Ühendatud",
+    "correlation_analysis": "Korrelatsioonianalüüs",
+    "database": "Andmebaas",
+    "database_response": "Andmebaasi vastus",
+    "days": "Päevad",
+    "disconnected": "Ühendus katkenud",
+    "failed_actions": "Ebaõnnestunud tegevused",
+    "false_positive_rate": "Valepositiivse määra",
+    "fp": "VP",
+    "graph_db": "Graafandmebaas",
+    "graph_explorer": "Graafi uurija",
+    "healthy": "Terve",
+    "inactive": "Mitteaktiivne",
+    "issues": "Probleemid",
+    "last_24h": "Viimased 24 tundi",
+    "last_update": "Viimane uuendus",
+    "mttr": "MTTR",
+    "open_alerts": "Avatud hoiatused",
+    "open_cases": "Avatud juhtumid",
+    "performance": "Sooritusvõime",
+    "priority_distribution": "Prioriteetide jaotus",
+    "quick_access": "Kiirjuurdepääs",
+    "recent_alerts": "Hiljutised hoiatused",
+    "response_time": "Vastamisaeg",
+    "rule_effectiveness": "Reegli tõhusus",
+    "sanctions_hits": "Sanktsioonide tabamused",
+    "service_status": "Teenuse seisund",
+    "severity_breakdown": "Tõsiduse jaotus",
+    "sla_breach_rate": "SLA rikkumise määr",
+    "sla_hours": "SLA (tunnid)",
+    "status_breakdown": "Seisundi jaotus",
+    "success_rate": "Edu määr",
+    "suppression_rate": "Allasurumise määr",
+    "system_details": "Süsteemi detailid",
+    "system_load": "Süsteemi koormus",
+    "system_overview": "Süsteemi ülevaade",
+    "system_status": "Süsteemi seisund",
+    "title": "SIGMACODE Plokiahela kohtuanalüüsi armatuurlaud",
+    "total_alerts": "Kokku hoiatusi",
+    "total_cases": "Kokku juhtumeid",
+    "total_logs": "Kokku logisid",
+    "transaction_tracing": "Tehingute jälgimine",
+    "uptime": "Tööaeg",
+    "welcome": "Tere tulemast tagasi",
+    "overview": "Ülevaade",
+    "recent_activity": "Hiljutine tegevus",
+    "quick_actions": "Kiirtoimingud",
+    "statistics": "Statistika",
+    "notifications": "Teated",
+    "hero": {
+      "welcome": "Tere tulemast tagasi",
+      "subtitle": "Siin on see, mis juhtub teie uurimistega täna."
+    },
+    "quickActions": {
+      "title": "Kiirtoimingud",
+      "newTrace": "Uus jälgimine",
+      "newCase": "Uus juhtum",
+      "riskCheck": "Riski kontroll",
+      "aiAgent": "AI Agent"
+    },
+    "stats": {
+      "cases": "Aktiivsed juhtumid",
+      "traces": "Jälgimised täna",
+      "alerts": "Hoiatused",
+      "uptime": "Tööaeg"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Autonoomsed agendid LangChaini ja GPT-4 integratsiooniga",
+        "title": "AI agendid"
+      },
+      "badge": "AI ja masinõpe",
+      "desc": "Masinõppe mudelid anomaaliate tuvastamiseks, riskihindeks ja autonoomsete AI-agentide jaoks 24/7 uurimiste jaoks.",
+      "pattern": {
+        "desc": "Petuskeemide tuvastamine ja käitumusanalüüs",
+        "title": "Musterituvastus"
+      },
+      "risk": {
+        "desc": "ML-põhine riskihindamine aadressidele ja tehingutele",
+        "title": "Riskiskoor"
+      },
+      "smart_contract": {
+        "desc": "Baitkoodi sarnasus ja haavatavuste tuvastamine",
+        "title": "Nutikate lepingute analüüs"
+      },
+      "title": "AI-toega analüüs"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "ML-based detection of unusual transaction patterns",
+        "title": "Anomaly Detection"
+      },
+      "badge": "Reaalajas jälgimine",
+      "custom_rules": {
+        "desc": "Kohandatud hoiatusreeglid Rule DSL ja reeglimootoriga",
+        "title": "Kohandatud reeglid"
+      },
+      "desc": "15+ kohandatavat hoiatusreeglit masinõppega. Saad hoiatusi sanktsioonide, segamise, kõrge väärtusega ülekannete ja anomaaliate kohta.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io ja teised segamisteenused",
+        "title": "Segamise tuvastamine"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK sanktsiooniloetelud igapäevaste uuendustega",
+        "title": "Sanktsioonide skriining"
+      },
+      "title": "Nutikas hoiatuste mootor"
+    },
+    "case": {
+      "badge": "Uurimise töövoog",
+      "desc": "Täielik uurimise haldus tõendite ahelaga, eIDAS allkirjadega ja kohtuaktsepteeritavate aruannetega.",
+      "eidas": {
+        "desc": "Kvalifitseeritud elektroonilised allkirjad vastavalt EL standarditele",
+        "title": "eIDAS allkirjad"
+      },
+      "evidence": {
+        "desc": "Täielik tõendite ahel kohtuaktsepteeritavate tõendite jaoks",
+        "title": "Tõendite ahel"
+      },
+      "export": {
+        "desc": "PDF/Excel eksport ajatempli ja auditi jälgiga",
+        "title": "Eksport ja aruanded"
+      },
+      "title": "Juhtumite haldus ja tõendite ahel",
+      "tracking": {
+        "desc": "Struktureeritud juhtumite haldus töövoo staatusega",
+        "title": "Juhtumite jälgimine"
+      }
+    },
+    "cta": {
+      "demo": "Taotle demo",
+      "pricing": "Vaata hindu",
+      "subtitle": "Alusta kohe tasuta demo",
+      "title": "Valmis täielikuks paketiks?",
+      "start": "Alusta Tasuta"
+    },
+    "graph": {
+      "badge": "Graafiline luure",
+      "clustering": {
+        "desc": "Automaatne seotud rahakottide klastrite moodustamine",
+        "title": "Rahakottide klastrite moodustamine"
+      },
+      "community": {
+        "desc": "Rahakottide rühmade tuvastamine ühiste huvidega",
+        "title": "Ühenduste tuvastamine"
+      },
+      "desc": "Neo4j-põhine graafandmebaas entiteetide klastrite moodustamiseks, ühenduste tuvastamiseks ja visuaalseks uurimiseks.",
+      "labels": {
+        "desc": "Exchange/VASP/DeFi sildid ühenduste luuraga",
+        "title": "Entiteetide sildid"
+      },
+      "title": "Entiteetide lahendamine ja võrguanalüüs",
+      "visual": {
+        "desc": "Interaktiivne graafi uurija keerukate analüüside jaoks",
+        "title": "Visuaalne uurimine"
+      }
+    },
+    "header": {
+      "badge": "Täielik funktsioonide komplekt",
+      "cta_try": "Proovi tasuta",
+      "subtitle": "Tehingute jälgimisest AI-toetatud analüüsideni – kõik, mida vajad professionaalseks uurimiseks",
+      "title": "Täielik plokiahela kohtuanalüüsi pakett"
+    },
+    "security": {
+      "audit": {
+        "desc": "Täielikud auditi jäljed vastavusnäidete jaoks",
+        "title": "Auditi logid"
+      },
+      "badge": "Ettevõtte turvalisus",
+      "desc": "Ettevõtte tasemel turvalisus RBAC, SSO/SAML, auditi logide ja GDPR-vastavusega.",
+      "privacy": {
+        "desc": "GDPR-vastavus PII anonümiseerimisega",
+        "title": "Andmete privaatsus"
+      },
+      "rbac": {
+        "desc": "Granulaarne rollipõhine juurdepääsukontroll kohandatud rollidega",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Ühekordne sisselogimine SAML 2.0 ja OAuth 2.0 abil",
+        "title": "SSO/SAML"
+      },
+      "title": "Turvalisus ja vastavus"
+    },
+    "seo": {
+      "description": "Ettevõtte taseme blockchain forensics: Mitme ahela jälgimine, AI agendid, reaalajas riskihindamine ja vastavuse tööriistad.",
+      "title": "Funktsioonid | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Täpsus",
+      "ai_agents": "AI agendid",
+      "alert_rules": "Hoiatusreeglid",
+      "blockchains": "Plokiahelad",
+      "bridges": "Sildprotokollid",
+      "case_templates": "Juhtumite mallid",
+      "compliance": "Vastavus",
+      "encryption": "Krüpteerimine",
+      "entities": "Entiteedid",
+      "evidence_types": "Tõendite tüübid",
+      "false_positives": "Valepositiivid",
+      "max_depth": "Maksimaalne jälgimissügavus",
+      "ml_models": "ML mudelid",
+      "query_time": "Päringu aeg",
+      "relationships": "Seosed",
+      "response_time": "Vastamisaeg",
+      "security_certs": "Turvaseadused",
+      "uptime_sla": "Tööaja SLA"
+    },
+    "tracing": {
+      "badge": "Tehingute jälgimine",
+      "bridge": {
+        "desc": "Automaatne ristketi sildade ja pakendatud varade tuvastamine",
+        "title": "Siltuvastamine"
+      },
+      "cross_chain": {
+        "desc": "100+ plokiahela tugi: EVM, UTXO, Solana, Cosmos ja rohkem",
+        "title": "Ristketi jälgimine"
+      },
+      "demixing": {
+        "desc": "Heuristiline analüüs Tornado Cashist, segajatest ja privaatsusmüntidest",
+        "title": "Privaatsusmüntide eraldamine"
+      },
+      "desc": "Jälgi tehinguid kõigil peamistel plokiahelatel – ristketi sildade tuvastamise, privaatsusmüntide eraldamise ja rekursiivse edasi/tagasi jälgimisega.",
+      "recursive": {
+        "desc": "Edasi/tagasi jälgimine kohandatava sügavuse ja filtritega",
+        "title": "Rekursiivne jälgimine"
+      },
+      "title": "Mitmekettaline tehingute luure"
+    },
+    "hero": {
+      "badge": "Funktsioonid",
+      "title": "Ettevõtte taseme Blockchain Forensics",
+      "subtitle": "Kõik vahendid krüpto kuritegude uurimiseks, vastavuse tagamiseks ja teie ettevõtte kaitsmiseks."
+    }
+  },
+  "footer": {
+    "blog": "Blogi",
+    "careers": "Karjäär",
+    "company": "Ettevõte",
+    "contact": "Kontakt",
+    "imprint": "Trükk",
+    "legal": "Õiguslik",
+    "privacy": "Privaatsus",
+    "product": "Toode",
+    "request_demo": "Taotle demo",
+    "rights_reserved": "Kõik õigused kaitstud.",
+    "security": "Turvalisus",
+    "tagline": "Ettevõtte plokiahela AI vastavuse ja uurimiste jaoks – turvaline, kiire, kohtuaktsepteeritav.",
+    "terms": "Tingimused"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Aktiivsed sõlmed",
+      "avg_degree": "Keskmine kraad",
+      "density": "Võrgu tihedus",
+      "total_edges": "Kokku ääri",
+      "total_nodes": "Kokku sõlmi"
+    },
+    "centrality": {
+      "taint": "Saastatus",
+      "title": "Keskpunktianalüüs"
+    },
+    "communities": {
+      "algorithm": "Algoritm",
+      "avg_size": "Keskmine suurus",
+      "avg_taint": "Keskmine saastatus",
+      "empty": "Klõpsa ",
+      "label_propagation": "Sildi levik",
+      "loading": "Ühenduste tuvastamine...",
+      "louvain": "Louvain (Modulaarsus)",
+      "title": "Ühenduste tuvastamine",
+      "total": "Kokku ühendusi"
+    },
+    "degree": {
+      "title": "Kraadi jaotus",
+      "x": "Kraad",
+      "y": "Kogus"
+    },
+    "filters": {
+      "cross_chain": "Ristketi (silla kiht)",
+      "from": "Alates (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Kuni (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Täiustatud võrguanalüüsid ja mustrite tuvastamine",
+      "title": "Graafianalüütika ja võrgu luure"
+    },
+    "hubs": {
+      "in": "Sisse",
+      "out": "Välja",
+      "title": "Võrgu keskused (kõrge kraadiga sõlmed)",
+      "total": "Kokku"
+    },
+    "loading": {
+      "stats": "Laaditakse statistikat..."
+    },
+    "patterns": {
+      "circle_length": "Ringi pikkus",
+      "detected": "Tuvastatud ringid",
+      "empty_desc": "See on hea märk - ühtegi ilmset rahapesuringi ei leitud",
+      "empty_title": "Ühtegi ringmustrid ei tuvastatud",
+      "high_risk": "Kõrge risk",
+      "hops": "hüppeid",
+      "loading": "Mustrite tuvastamine...",
+      "more_addresses": "lisaaadresse",
+      "risk_score": "Riskiskoor",
+      "title": "Ringmustrid (potentsiaalne rahapesu)",
+      "total": "Kokku",
+      "total_value": "Koguväärtus",
+      "tx_path": "Tehingu rada:"
+    },
+    "tabs": {
+      "communities": "Ühenduste tuvastamine",
+      "overview": "Võrgu ülevaade",
+      "patterns": "Mustrite tuvastamine"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Klastri moodustamine",
+      "clustering": "Klastri moodustamine käib...",
+      "pause_timeline": "Pausi ajajoon",
+      "play_timeline": "Esita ajajoon",
+      "title": "Uurija tegevused"
+    },
+    "connected": {
+      "taint": "Saastatus",
+      "title": "Ühendatud üksused",
+      "tx": "Tehingud"
+    },
+    "graph": {
+      "connections": "Ühendused",
+      "enter_address": "Sisesta aadress",
+      "loading": "Laaditakse graafit...",
+      "nodes": "Sõlmed",
+      "title": "Graafi vaade"
+    },
+    "header": {
+      "subtitle": "Uurija alapealkiri",
+      "title": "Uurija"
+    },
+    "path": {
+      "bridges": "Sillad",
+      "hops": "Hüppeid",
+      "risk_score": "Riskiskoor",
+      "title": "Rada",
+      "total_value": "Koguväärtus"
+    },
+    "search": {
+      "explore": "Uuri",
+      "placeholder": "Otsingu koht",
+      "title": "Otsing"
+    },
+    "settings": {
+      "from": "Alates",
+      "hops_1": "1 hüpe",
+      "hops_2": "2 hüpet",
+      "hops_3": "3 hüpet",
+      "hops_4": "4 hüpet",
+      "hops_5": "5 hüpet",
+      "include_bridges": "Lülita sillad sisse",
+      "max_hops": "Maksimaalne hüpete arv",
+      "title": "Seaded",
+      "to": "Kuni"
+    },
+    "timeline": {
+      "empty": "Tühi ajajoon",
+      "events": "Sündmused",
+      "risk": "Risk",
+      "select_address": "Vali aadress",
+      "title": "Ajajoon",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Taotle kohe demo",
+      "pricing": "Vaata hindu"
+    },
+    "cta2": {
+      "demo": "Taotle tasuta demo",
+      "pricing": "Vaata hindu",
+      "subtitle": "Alusta kohe tasuta demo ja kogemus plokiahela kohtuanalüüsi tulevik",
+      "title": "Valmis ettevõtte plokiahela luureks?"
+    },
+    "features": {
+      "badge": "Funktsioonid",
+      "subtitle": "Ettevõtte tasemel tööriistad vastavuse, uurimiste ja riskijuhtimise jaoks",
+      "title": "Kõik, mida vajad plokiahela kohtuanalüüsiks"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Plokiahela kohtuanalüüs",
+      "point1": "100+ plokiahelat",
+      "point2": "OFAC/UN/EU sanktsioonid",
+      "point3": "Reaalajas jälgimine",
+      "subtitle": "AI-toega vastavus, uurimised ja riskijuhtimine – reaalajas ja ettevõtte tasemel.",
+      "title": "Ettevõtte plokiahela luure"
+    },
+    "pricing": {
+      "badge": "Hinnad",
+      "subtitle": "Tasuta tööriistadest ettevõtteni – alusta kohe",
+      "title": "Paindlikud paketid igale ettevõtte suurusele",
+      "view_all": "Vaata kõiki hindu"
+    },
+    "seo": {
+      "description": "AI-toega vastavus, uurimised ja riskijuhtimine – reaalajas ja ettevõtte tasemel. SIGMACODE Plokiahela kohtuanalüüs.",
+      "title": "SIGMACODE | Ettevõtte plokiahela luure"
+    },
+    "tech": {
+      "badge": "Tehnoloogia",
+      "subtitle": "Ettevõtte infrastruktuuur maksimaalse jõudluse ja turvalisuse jaoks",
+      "title": "Kaasaegne tehnoloogiapakett"
+    },
+    "use_cases": {
+      "badge": "Kasutuse juhtumid",
+      "subtitle": "Õiguskaitseorganitest fintechini",
+      "title": "Õige lahendus igale kasutuse juhtumile"
+    }
+  },
+  "layout": {
+    "main_navigation": "Peamine navigatsioon",
+    "quick_search_title": "Kiirotsing (Ctrl/⌘+K)",
+    "skip_to_content": "Hüppa sisu juurde",
+    "quick_search_placeholder": "Kiir otsing...",
+    "quick_search_hint": "Vihje: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie banner",
+    "title": "Cookies & Privacy",
+    "title_short": "Cookies",
+    "description": "We use essential cookies to operate this website. Optional analytics cookies help us understand and improve usage. You can accept all cookies or allow only necessary ones. You can change your choice at any time in the settings.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Service",
+    "imprint_link": "Imprint",
+    "only_necessary": "Only necessary",
+    "accept_all": "Accept all",
+    "preferences": "Preferences",
+    "save_preferences": "Save preferences",
+    "manage": "Cookie settings",
+    "analytics_title": "Analytics cookies",
+    "analytics_desc": "Helps us understand usage to improve the website.",
+    "marketing_title": "Marketing cookies",
+    "marketing_desc": "Enables personalized content and offers.",
+    "all_optional_title": "Enable all optional",
+    "all_optional_desc": "Enables both analytics and marketing cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Sulge",
+        "close_title": "Sulge hoiatus",
+        "copy_alert_id_title": "Kopeeri hoiatuse ID",
+        "copy_entity": "Kopeeriüksus",
+        "copy_entity_id_title": "Kopeeriüksuse ID",
+        "copy_id": "Kopeeri ID",
+        "copy_rule": "Kopeeri reegel",
+        "copy_rule_id_title": "Kopeeri reegli ID",
+        "details": "Üksikasjad",
+        "details_title": "Vaata üksikasju",
+        "reset": "Lähtesta"
+      },
+      "audit": {
+        "empty": "Ühtegi sündmust",
+        "title": "Auditi jälg"
+      },
+      "csv": {
+        "export_all": "Ekspordi CSV (kõik)",
+        "export_all_title": "Ekspordi CSV kõik filtreeritud read (server)",
+        "export_page": "Ekspordi lehe CSV",
+        "export_page_title": "Ekspordi praegune leht CSV-na",
+        "no_filtered_data": "Ühtegi filtreeritud andmet",
+        "no_page_data": "Ühtegi andmet sellel lehel"
+      },
+      "empty": "Ühtegi hoiatust ei leitud",
+      "filters": {
+        "all": "(kõik)",
+        "search_label": "Otsing (rule_id / entity_id)",
+        "search_placeholder": "Otsi...",
+        "severity": "Tõsidus",
+        "source": "Allikas",
+        "source_persisted": "Püsiv (KYT)",
+        "source_realtime": "Reaalajas (Hoiatuste mootor)",
+        "status": "Staatus"
+      },
+      "kpi": {
+        "event_time_set": "Sea sündmuse aeg (first_seen_at)",
+        "event_time_title": "Sündmuse aeg = first_seen_at",
+        "false_positive": "Märgi valepositiivseks",
+        "title": "KPI annotatsioonid",
+        "true_positive": "Märgi tõepositiivseks"
+      },
+      "loading": "Laaditakse hoiatusi...",
+      "modal": {
+        "alert_id": "Hoiatuse ID",
+        "chain": "Kett",
+        "context": "Kontekst",
+        "entity": "Üksus",
+        "rule_id": "Reegli ID",
+        "severity": "Tõsidus",
+        "title": "Hoiatuse üksikasjad"
+      },
+      "pagination": {
+        "next": "Järgmine",
+        "page": "Lehekülg",
+        "prev": "Eelmine"
+      },
+      "severity": {
+        "critical": "kriitiline",
+        "high": "kõrge",
+        "low": "madal",
+        "medium": "keskmine"
+      },
+      "status": {
+        "assigned": "määritud",
+        "closed": "suletud",
+        "open": "avatud",
+        "snoozed": "edasi lükatud"
+      },
+      "subtitle": "Reaalajas reeglid ja püsivad hoiatused (KYT)",
+      "table": {
+        "first": "esimene",
+        "last": "viimane"
+      },
+      "title": "Hoiatuste jälgimine",
+      "toasts": {
+        "copy_failed": "Kopeerimine ebaõnnestus",
+        "disposition_failed": "Seisundi määramine ebaõnnestus",
+        "disposition_set": "Seisund määritud",
+        "entity_copied": "Üksus kopeeritud",
+        "event_time_failed": "Sündmuse aja määramine ebaõnnestus",
+        "event_time_set": "Sündmuse aeg määritud",
+        "export_failed": "Eksport ebaõnnestus",
+        "export_started": "Eksport alustatud",
+        "id_copied": "ID kopeeritud",
+        "rule_copied": "Reegel kopeeritud"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Meist",
+    "analytics": "Analüütika",
+    "close_menu": "Sulge navigatsioon",
+    "dashboard": "Töölaud",
+    "features": "Funktsioonid",
+    "home": "Avaleht",
+    "logout": "Logi välja",
+    "open_menu": "Ava navigatsioon",
+    "pricing": "Hinnad",
+    "settings": "Seaded",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Värskenda"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Tuumad",
+        "title": "CPU kasutamine"
+      },
+      "db": {
+        "connected": "Ühendatud",
+        "disconnected": "Ühendus katkenud",
+        "response": "Vastus",
+        "title": "Andmebaas"
+      },
+      "memory": {
+        "available": "saadaval",
+        "title": "Mälu kasutamine"
+      },
+      "system_status": {
+        "healthy": "Terve",
+        "issues": "Probleemid",
+        "title": "Süsteemi seisund",
+        "uptime": "Tööaeg"
+      }
+    },
+    "common": {
+      "no": "Ei",
+      "yes": "Jah"
+    },
+    "header": {
+      "last_refresh": "Viimane värskendus",
+      "subtitle": "Ülevaatlik süsteemi jõudluse, meetmete ja SLO-de jälgimine",
+      "title": "Jõudluse ja jälgitavuse armatuurlaud"
+    },
+    "metrics": {
+      "empty": "Ühtegi meetmeandmet ei ole saadaval",
+      "loading": "Laaditakse meetmeid...",
+      "max": "Maksimum",
+      "measurements": "Mõõtmised",
+      "min": "Miinimum",
+      "title": "Jõudlusmeetmed (1 tund)",
+      "trend": "Trend"
+    },
+    "recent_alerts": {
+      "empty": "Ühtegi hiljutist hoiatust",
+      "title": "Hiljutised jõudluse hoiatused"
+    },
+    "services": {
+      "active": "Aktiivne",
+      "inactive": "Mitteaktiivne",
+      "title": "Teenuste seisund"
+    },
+    "slo": {
+      "empty": "Ühtegi SLO-andmet ei ole saadaval",
+      "loading": "Laaditakse SLO-sid...",
+      "threshold": "Lävi",
+      "title": "SLO vastavus",
+      "violations": "Rikkumised"
+    },
+    "system_details": {
+      "database": "Andmebaas",
+      "db_connected": "Ühendatud",
+      "db_type": "Tüüp",
+      "debug": "Silumine",
+      "environment": "Keskkond",
+      "log_level": "Logi tase",
+      "mode": "Režiim",
+      "platform": "Platvorm",
+      "python_version": "Pythoni versioon",
+      "response_time": "Vastamisaeg",
+      "system_info": "Süsteemi teave",
+      "title": "Süsteemi detailid",
+      "version": "Versioon"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Lisaplokiahelad",
+        "i2": "Lisakasutajakohad",
+        "i3": "Premium sanktsioonid (laiendatud loetelud)",
+        "i4": "Täiustatud ekspordivormingud",
+        "i5": "Prioriteetne tugi",
+        "i6": "White-Label (Ettevõte)",
+        "title": "Saadaolevad lisad"
+      },
+      "badge": "Paindlikud lisad",
+      "overage": {
+        "extra_credits": "Lisakrediidid",
+        "monthly_cap": "Kuine piir",
+        "note": "Kasutad rohkem kui sinu piir? Pole probleemi – ületamine arvutatakse automaatselt.",
+        "title": "Ületuse hinnad"
+      },
+      "subtitle": "Laienda oma plaani vastavalt vajadusele",
+      "title": "Lisad ja ületamine"
+    },
+    "card": {
+      "custom": "Kohandatud",
+      "desc_business": "Suurematele meeskondadele",
+      "desc_community": "Huvilistele ja avatud lähtekoodile",
+      "desc_enterprise": "Ettevõtetele ja reguleerijatele",
+      "desc_pro": "Kasvavatele ettevõtetele",
+      "desc_starter": "Väikestele meeskondadele",
+      "per_month": "kuus",
+      "popular": "Kõige populaarsem",
+      "popular_label": "Kõige populaarsem",
+      "save_year": "Säästa ${{amount}}/aastas"
+    },
+    "cta": {
+      "active_plan": "✓ Aktiivne plaan",
+      "contact_sales": "Võta müügimeeskonnaga ühendust",
+      "demo": "Taotle demo",
+      "more_about": "Rohkem meie kohta",
+      "saving": "Salvestamine...",
+      "set_tenant_plan": "Sea üürniku plaaniks",
+      "start_now": "Alusta kohe",
+      "subscribe": "Liitu kohe",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Praegune plaan",
+    "enterprise": {
+      "card_desc": "Ettevõtetele ja reguleerijatele",
+      "subtitle": "Kohandatud hinnad, SLA, integratsioonid, kohapeal/VPC",
+      "title": "Finantsinstituutidele ja reguleerijatele"
+    },
+    "faq": {
+      "subtitle": "Võta meie müügimeeskonnaga ühendust isikliku demo jaoks",
+      "title": "Kas teil on küsimusi?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Plokiahelad",
+      "cases": "Juhtumid",
+      "credits": "Krediidid/kuus",
+      "priority": "Prioriteet",
+      "users": "Kasutajad"
+    },
+    "header": {
+      "badge": "Paindlikud hinnad",
+      "subtitle": "Tasuta kogukonna tööriistadest ettevõtteni koos white-label'iga. Alusta täna ja kasva vastavalt vajadusele.",
+      "title": "Õige plaan igale meeskonnale"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI agendid",
+        "i2": "Graafianalüütika",
+        "i3": "Riskiskoor",
+        "i4": "ML mudelid",
+        "title": "Täiustatud analüütika"
+      },
+      "badge": "Mis on kaasas?",
+      "performance": {
+        "i1": "Reaalajas hoiatused",
+        "i2": "API juurdepääs",
+        "i3": "Prioriteetne järjekord",
+        "i4": "99.9% tööaeg",
+        "title": "Jõudlus"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Auditi logid",
+        "i4": "GDPR-vastav",
+        "title": "Turvalisus ja vastavus"
+      },
+      "team": {
+        "i1": "Mitme kasutaja",
+        "i2": "Juhtumite haldus",
+        "i3": "Tõendite ahel",
+        "i4": "Koostöö",
+        "title": "Meeskonna funktsioonid"
+      },
+      "title": "Kõik funktsioonid ühe pilguga"
+    },
+    "more": "rohkem",
+    "seo": {
+      "description": "Ausad ja läbipaistvad blockchain forensics hinnad. Tasuta Community plaanist Enterprise'ini. Tühista igal ajal.",
+      "title": "Hinnad | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Isevalitud plaanid startup'idest keskklassi turuni",
+      "title": "Meeskondadele ja ettevõtetele"
+    },
+    "toggle": {
+      "annual": "Aastane",
+      "monthly": "Kuine",
+      "save": "Säästa {{pct}}%"
+    },
+    "top_features": "PARIMAD FUNKTSIOONID",
+    "hero": {
+      "badge": "Hinnad",
+      "title": "Lihtsad ja läbipaistvad hinnad",
+      "subtitle": "Valige plaan, mis sobib teie vajadustega. Kõik plaanid sisaldavad põhifunktsioone. Uuendage igal ajal."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Värskenda"
+    },
+    "audit": {
+      "empty": "Ühtegi auditi jälje kirjet pole saadaval",
+      "loading": "Laaditakse auditi jälge...",
+      "title": "Hiljutised auditi jälje kirjed",
+      "user": "Kasutaja",
+      "view_all": "Vaata kõiki →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Auditi jälje terviklikkus"
+      },
+      "failed_logins": {
+        "title": "Ebaõnnestunud sisselogimiskatsed"
+      },
+      "gdpr": {
+        "title": "GDPR vastavus"
+      },
+      "security_incidents": {
+        "title": "Turvalisuse intsidendid"
+      }
+    },
+    "common": {
+      "implemented": "Rakendatud",
+      "not_implemented": "Rakendamata",
+      "unknown": "Tundmatu"
+    },
+    "compliance": {
+      "anonymization": "Anonümiseerimine",
+      "certifications": "Sertifikaadid",
+      "consent_management": "Nõusoleku haldus",
+      "data_portability": "Andmete ülekantavus",
+      "empty": "Ühtegi vastavusandmet ei ole saadaval",
+      "encryption": "Krüpteerimine",
+      "loading": "Laaditakse vastavuse seisundit...",
+      "right_to_erasure": "Kustutamise õigus",
+      "title": "GDPR vastavuse seisund"
+    },
+    "header": {
+      "last_refresh": "Viimane värskendus",
+      "subtitle": "Auditi jäljed, GDPR vastavus ja turvalisuse jälgimine",
+      "title": "Turvalisuse ja vastavuse armatuurlaud"
+    },
+    "quick_actions": {
+      "audit_export": "Auditi eksport",
+      "compliance_report": "Vastavuse aruanne",
+      "gdpr_status": "GDPR seisund",
+      "incident_report": "Intsidendi aruanne",
+      "integrity_check": "Terviklikkuse kontroll",
+      "security_scan": "Turvalisuse skannimine",
+      "title": "Turvalisuse ja vastavuse tegevused"
+    },
+    "retention": {
+      "days": "Päevad",
+      "empty": "Ühtegi säilitusandmet ei ole saadaval",
+      "title": "Andmete säilituse vastavus",
+      "violations": {
+        "count": "Rikkumised",
+        "days_old": "päeva vana",
+        "more": "ja",
+        "more_suffix": "lisaks",
+        "title": "Säilituse rikkumised"
+      }
+    },
+    "security": {
+      "compliance_status": "Vastavuse seisund",
+      "empty": "Ühtegi turvalisusandmet ei ole saadaval",
+      "failed_logins": "Ebaõnnestunud sisselogimised",
+      "incidents": "Turvalisuse intsidendid",
+      "rate_limited_ips": "Kiirusega piiratud IP-d",
+      "suspicious_activities": "Kahtlased tegevused",
+      "title": "Turvalisuse ülevaade"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Avatud hoiatused vanuse rühmade järgi (nt 24h, 3p, 7p, >7p)",
+    "alert_engine": "Reaalajas jälgimine kahtlastest tehingutest ja mustritest ML algoritmidega",
+    "alert_overview": "Kõikide aktiivsete turvahoiatuste ja nende tõsiduse ülevaade (Kriitiline/Kõrge/Keskmine/Madal)",
+    "analyst_throughput": "Juhtumite arv, mis analüütik on valitud aknas lahendanud",
+    "backlog": "Avatud (mitte tunnistatud) hoiatuste ja avatud juhtumite koguarv",
+    "database": "PostgreSQL/TimescaleDB ühenduse seisund ja vastamisaeg ajareadandmetele",
+    "graph_db": "Neo4j graafandmebaas keeruliste seoseanalüüside ja võrgukaardistamise jaoks",
+    "system_status": "Näitab kõigi süsteemi komponentide praegust seisundit. Roheline = Terve, Punane = Tuvastatud probleemid",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Saadaolevad tuurid",
+    "completed": "lõpetatud",
+    "finish": "Lõpeta",
+    "no_tours_available": "Sellel lehel pole tuure saadaval",
+    "of": "koos",
+    "select_tour_description": "Vali tuur, et õppida platvormi funktsioone",
+    "skip": "Jäta vahele",
+    "start": "tours.start",
+    "start_tour": "Alusta tuuri",
+    "step": "Samm",
+    "steps": "sammunud"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Üksikasjad",
+      "direction": "Suund",
+      "error_title": "Vea nimi",
+      "exec_time": "Täitmise aeg",
+      "export": "Eksport",
+      "flow_graph": "Voograafik",
+      "high_risk": "Kõrge risk",
+      "high_risk_title": "Kõrge riski nimi",
+      "loading": "Laadimine...",
+      "max_hop": "Maksimaalne hüpe",
+      "not_found": "Ei leitud",
+      "report": "Aruanne",
+      "sanctioned_title": "Sanktsioneeritud nimi",
+      "sanctioned_warning": "Sanktsioneeritud hoiatus",
+      "source": "Allikas",
+      "taint": "Saastatus",
+      "taint_model": "Saastatuse mudel",
+      "title": "Tulemus",
+      "total_edges": "Kokku ääri",
+      "total_nodes": "Kokku sõlmi"
+    },
+    "simple": {
+      "address_ph": "Aadressi koht",
+      "chain_btc": "Kett BTC",
+      "chain_eth": "Kett ETH",
+      "chain_sol": "Kett SOL",
+      "cluster": {
+        "clustering": "Klastri moodustamine",
+        "export_members": "Ekspordi liikmed",
+        "label": "Silt",
+        "lookup": "Otsi",
+        "member_address": "Liikme aadress",
+        "members": "Liikmed",
+        "title": "Klastri nimi"
+      },
+      "depth_ph": "Sügavuse koht",
+      "edges": "Ääred",
+      "error_cluster": "Klastri moodustamise viga",
+      "error_trace": "Jälgimisviga",
+      "export_paths": "Ekspordi rajad",
+      "export_targets": "Ekspordi sihtmärgid",
+      "high_risk": "Kõrge risk",
+      "model_fifo": "FIFO mudel",
+      "model_haircut": "Haircut mudel",
+      "model_proportional": "Proportsionaalne mudel",
+      "nodes": "Sõlmed",
+      "run": "Käivita",
+      "summary": "Kokkuvõte",
+      "th_path": "Rada",
+      "th_paths": "Rajad",
+      "th_taint": "Saastatus",
+      "th_target": "Sihtmärk",
+      "threshold_ph": "Läve koht",
+      "title": "Lihtne jälgimine",
+      "tracing": "Jälgimine..."
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "Rahakoti analüüsi kirjeldus",
+        "title": "Rahakoti analüüsi nimi",
+        "wip": "Rahakoti analüüs on arendamisel"
+      },
+      "export": {
+        "csv": "Ekspordi CSV",
+        "desc": "Ekspordi kirjeldus",
+        "json": "Ekspordi JSON",
+        "pdf": "Ekspordi PDF",
+        "section_export": "Ekspordi osa",
+        "section_import": "Impordi osa",
+        "title": "Ekspordi"
+      },
+      "header": {
+        "title": "Rahakoti testi nimi"
+      },
+      "import": {
+        "add_wallet": "Lisa rahakott",
+        "json": "Impordi JSON",
+        "restore_backup": "Taasta varukoopia"
+      },
+      "multisig": {
+        "desc": "Multisig'i kirjeldus",
+        "title": "Multisig'i nimi",
+        "wip": "Multisig on arendamisel"
+      },
+      "overview": {
+        "active_wallets": "Aktiivsed rahakotid",
+        "activity": {
+          "liquidity": "Likviidsus",
+          "nft": "NFT",
+          "receive": "Võta vastu"
+        },
+        "month_change": "Kuine muutus",
+        "multisig": "Multisig",
+        "new_this_week": "Uued sel nädalal",
+        "recent": "Hiljutised",
+        "security_grade": "Turvalisuse hinne",
+        "security_score": "Turvalisuse skoor",
+        "status": {
+          "2fa": "2FA",
+          "active": "Aktiivne",
+          "backup": "Varukoopia",
+          "backup_available": "Varukoopia saadaval",
+          "hardware": "Riistvara",
+          "hw_connected": "Riistvara ühendatud",
+          "recovery": "Taastamine",
+          "secured": "Turvatud",
+          "title": "Rahakoti seisund"
+        },
+        "total_volume": "Kogu maht"
+      },
+      "sidebar": {
+        "title": "Rahakoti külgriba"
+      },
+      "tabs": {
+        "analytics": "Analüütika",
+        "crosschain": "Ristketi",
+        "export": "Ekspordi",
+        "multisig": "Multisig",
+        "nft": "NFT",
+        "overview": "Ülevaade",
+        "transactions": "Tehingud"
+      },
+      "transactions": {
+        "desc": "Tehingute kirjeldus",
+        "export": "Ekspordi",
+        "title": "Tehingute nimi",
+        "wip": "Tehingud on arendamisel"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Veebi analüütika"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "Jälgimine"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "Aadress"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "Ülevaade"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "Käivita",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "Võrgus",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

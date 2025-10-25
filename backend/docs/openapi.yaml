@@ -1,0 +1,1010 @@
+openapi: 3.0.3
+info:
+  title: Blockchain Forensics API
+  description: |
+    **Enterprise-Grade Blockchain Forensics Platform**
+
+    Diese API bietet umfassende Blockchain-Forensik-Funktionen für:
+    - Echtzeit-Überwachung von Transaktionen und Adressen
+    - Advanced Analytics mit ML-Modellen
+    - Multi-Chain-Unterstützung (50+ Chains)
+    - Gerichtsverwertbare Compliance-Features
+    - Cross-Chain-Korrelation und Pattern-Erkennung
+
+    **Hauptfeatures:**
+    - 🚨 **Alert Engine**: 15+ Alert-Typen mit ML-basierter Erkennung
+    - 🧠 **Advanced Analytics**: Predictive Forensics und Anomalie-Erkennung
+    - 📊 **Visualisierung**: 3D-Graphen, Heatmaps, Timelines
+    - ⛓️ **Multi-Chain**: Ethereum, Bitcoin, Solana, Polygon, uvm.
+    - ⚖️ **Compliance**: GDPR, Chain-of-Custody, Audit-Trails
+    - ⚡ **Performance**: Millionen Transaktionen parallel
+
+  version: 1.0.0
+  contact:
+    name: Blockchain Forensics Team
+    email: forensics@company.com
+  license:
+    name: Proprietary
+
+servers:
+  - url: https://api.sigmacode.io/api/v1
+    description: Production server
+  - url: https://sandbox.api.sigmacode.io/api/v1
+    description: Sandbox server
+  - url: http://localhost:8000/api/v1
+    description: Development server
+
+security:
+  - bearerAuth: []
+  - apiKeyAuth: []
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+
+  schemas:
+    WebVitalMetric:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Web Vital metric name (CLS, LCP, FID, INP, TTFB)
+        id:
+          type: string
+          description: Unique metric ID per page load
+        value:
+          type: number
+          format: float
+          description: Metric value
+        rating:
+          type: string
+          description: web-vitals rating bucket
+          enum: [good, needs-improvement, poor]
+        navigationType:
+          type: string
+          description: Navigation type (navigate, reload, back-forward)
+        ts:
+          type: integer
+          format: int64
+          description: Client timestamp (ms since epoch)
+    CreateKeyIn:
+      type: object
+      properties:
+        name:
+          type: string
+          minLength: 2
+          maxLength: 128
+        scope:
+          type: string
+          nullable: true
+          description: Optional scope label for limiting access
+        tier:
+          type: string
+          enum: [free, pro, enterprise]
+          default: pro
+      required: [name]
+
+    KeyOut:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        prefix:
+          type: string
+        scope:
+          type: string
+          nullable: true
+        tier:
+          type: string
+          enum: [free, pro, enterprise]
+        created_at:
+          type: string
+          format: date-time
+        revoked:
+          type: boolean
+
+    CreateKeyOut:
+      allOf:
+        - $ref: '#/components/schemas/KeyOut'
+        - type: object
+          properties:
+            api_key:
+              type: string
+              description: Plain API key (returned only once)
+
+  responses:
+    RateLimitError:
+      description: Rate limit exceeded
+      headers:
+        Retry-After:
+          schema:
+            type: string
+          description: Seconds until you can retry the request
+        X-RateLimit-Limit:
+          schema:
+            type: string
+        X-RateLimit-Remaining:
+          schema:
+            type: string
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              detail:
+                type: string
+                example: Rate limit exceeded
+
+    Address:
+      type: object
+      properties:
+        address:
+          type: string
+          description: Blockchain-Adresse
+          example: "0x742d35Cc6634C0532925a3b844Bc454e4438f44e"
+        chain:
+          type: string
+          description: Blockchain-Netzwerk
+          example: "ethereum"
+        risk_score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+          description: Risiko-Score zwischen 0 und 1
+        labels:
+          type: array
+          items:
+            type: string
+          description: Verknüpfte Labels/Tags
+        balance:
+          type: number
+          format: float
+          description: Kontostand in nativer Währung
+
+    Transaction:
+      type: object
+      properties:
+        tx_hash:
+          type: string
+          description: Transaktions-Hash
+        from_address:
+          type: string
+          description: Absender-Adresse
+        to_address:
+          type: string
+          description: Empfänger-Adresse
+        value:
+          type: number
+          format: float
+          description: Transfer-Betrag
+        timestamp:
+          type: string
+          format: date-time
+        chain:
+          type: string
+          description: Blockchain-Netzwerk
+    AlertKpiResponse:
+      type: object
+      properties:
+        fpr:
+          type: number
+          format: float
+          description: False Positive Rate (0-1)
+        mttr:
+          type: number
+          format: float
+          description: Mean Time To Respond (hours)
+        mttd:
+          type: number
+          format: float
+          description: Mean Time To Detect (hours)
+        sla_breach_rate:
+          type: number
+          format: float
+          description: Anteil der Fälle, die das SLA überschreiten (0-1)
+        sanctions_hits:
+          type: integer
+          description: Anzahl der Treffer im Sanktionsscreening
+
+    Alert:
+      type: object
+      properties:
+        alert_id:
+          type: string
+          description: Eindeutige Alert-ID
+        alert_type:
+          type: string
+          enum:
+            - high_risk_address
+            - sanctioned_entity
+            - large_transfer
+            - mixer_usage
+            - suspicious_pattern
+            - bridge_activity
+            - anomaly_detection
+            - smart_contract_exploit
+            - whale_movement
+            - flash_loan_attack
+            - money_laundering_pattern
+            - ponzi_scheme
+            - rug_pull
+        severity:
+          type: string
+          enum: [low, medium, high, critical]
+        title:
+          type: string
+          description: Alert-Titel
+        description:
+          type: string
+          description: Detaillierte Beschreibung
+        metadata:
+          type: object
+          description: Zusätzliche Metadaten
+        address:
+          type: string
+          description: Betroffene Adresse
+        timestamp:
+          type: string
+          format: date-time
+
+    EvidenceRecord:
+      type: object
+      properties:
+        evidence_id:
+          type: string
+
+    EvidenceEdge:
+      type: object
+      properties:
+        tx_hash:
+          type: string
+        from_address:
+          type: string
+        to_address:
+          type: string
+        amount:
+          type: number
+          format: float
+        timestamp:
+          type: string
+          format: date-time
+
+    PatternFinding:
+      type: object
+      properties:
+        pattern:
+          type: string
+          enum: [peel_chain, rapid_movement, bridge_chaining]
+        score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+        explanation:
+          type: string
+        evidence:
+          type: array
+          items:
+            $ref: '#/components/schemas/EvidenceEdge'
+
+    PatternResponse:
+      type: object
+      properties:
+        address:
+          type: string
+        findings:
+          type: array
+          items:
+            $ref: '#/components/schemas/PatternFinding'
+          description: Eindeutige Evidence-ID
+        case_id:
+          type: string
+          description: Fall-/Case-ID
+        resource_id:
+          type: string
+
+    AutomationRecentItem:
+      type: object
+      properties:
+        address:
+          type: string
+        chain:
+          type: string
+        depth:
+          type: integer
+        status:
+          type: string
+          enum: [queued, running, done, error]
+        error:
+          type: string
+          nullable: true
+
+    AutomationRecentResponse:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/AutomationRecentItem'
+
+paths:
+  /automation/settings:
+    get:
+      summary: Get automation settings
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Settings
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomationSettings'
+    put:
+      summary: Update automation settings
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutomationSettings'
+      responses:
+        '200':
+          description: Settings (updated)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomationSettings'
+
+  /automation/simulate:
+    post:
+      summary: Simulate automation impact
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SimulationRequest'
+      responses:
+        '200':
+          description: Simulation result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimulationResult'
+
+  /automation/auto_investigate:
+    post:
+      summary: Enqueue auto investigation
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutoInvestigateRequest'
+      responses:
+        '200':
+          description: Auto investigation enqueued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutoInvestigateResult'
+
+  /automation/recent:
+    get:
+      summary: Recent auto-investigation jobs
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Recent jobs list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomationRecentResponse'
+        '403': { description: Forbidden }
+        '429':
+          $ref: '#/components/responses/RateLimitError'
+
+  /alerts/dismiss/{alert_id}:
+    post:
+      summary: Alert verwerfen
+      description: |
+        Entfernt den Alert aus der Liste (Soft-Dismiss).
+      parameters:
+        - name: alert_id
+          in: path
+          required: true
+          schema:
+            type: string
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Alert verworfen
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [dismissed]
+                  alert_id:
+                    type: string
+        '401': { description: Unauthorized }
+
+  /api/v1/cases:
+    get:
+      summary: Liste der Fälle
+      description: Gibt eine Liste existierender Fälle zurück.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 1000
+            default: 100
+      responses:
+        '200':
+          description: Fälle
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: { type: string }
+                        title: { type: string }
+                        status: { type: string }
+
+  /api/v1/alerts:
+    get:
+      summary: Liste aktueller Alerts
+      description: Liefert eine Liste jüngster Alerts.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 1000
+            default: 100
+      responses:
+        '200':
+          description: Alerts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Alert'
+        '404': { description: Not found }
+
+
+  /analyze/patterns:
+    post:
+      summary: Pattern-Analyse
+      description: |
+        Erkennt komplexe Verhaltensmuster in Transaktionssequenzen.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - addresses
+              properties:
+                addresses:
+                  type: array
+                  items:
+                    type: string
+                pattern_types:
+                  type: array
+                  items:
+                    type: string
+                  default: ["money_laundering", "ponzi", "mixer_usage"]
+                time_window_days:
+                  type: integer
+                  minimum: 1
+                  maximum: 365
+                  default: 30
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Pattern-Analyse erfolgreich
+
+  /chains/supported:
+    get:
+      summary: Unterstützte Chains
+      description: |
+        Gibt Liste aller unterstützten Blockchain-Netzwerke zurück.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Liste unterstützter Chains
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total_chains:
+                    type: integer
+                  chains_by_type:
+                    type: object
+                  supported_features:
+                    type: array
+                    items:
+                      type: string
+                  chains:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ChainInfo'
+
+  /evidence/collect:
+    post:
+      summary: Evidence sammeln
+      description: |
+        Erstellt gerichtsverwertbaren Evidence-Record für Strafverfolgung.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - resource_id
+                - resource_type
+                - case_id
+                - collection_method
+                - handler_id
+              properties:
+                resource_id:
+                  type: string
+                  description: Adresse oder Tx-Hash
+                resource_type:
+                  type: string
+                  enum: [address, transaction, block]
+                case_id:
+                  type: string
+                collection_method:
+                  type: string
+                handler_id:
+                  type: string
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Evidence gesammelt
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  evidence_id:
+                    type: string
+                  collection_timestamp:
+                    type: string
+                    format: date-time
+
+  /audit/trail/{resource_id}:
+    get:
+      summary: Audit-Trail abrufen
+      description: |
+        Holt vollständigen Audit-Trail für eine Ressource.
+      parameters:
+        - name: resource_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 1000
+            default: 100
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Audit-Trail
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  resource_id:
+                    type: string
+                  total_events:
+                    type: integer
+                  events:
+                    type: array
+                    items:
+                      type: object
+
+  /reports/compliance/{case_id}:
+    get:
+      summary: Compliance-Bericht generieren
+      description: |
+        Generiert regulatorischen Compliance-Bericht für einen Fall.
+      parameters:
+        - name: case_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: report_type
+          in: query
+          schema:
+            type: string
+            enum: [full, suspicious_activity, evidence_summary]
+            default: full
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Compliance-Bericht
+
+  /visualize/graph:
+    post:
+      summary: Visualisierung erstellen
+      description: |
+        Erstellt erweiterte Visualisierungen (3D-Graphen, Heatmaps, etc.).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - viz_type
+                - data
+              properties:
+                viz_type:
+                  type: string
+                  enum: [graph_3d, heatmap, timeline, sankey, treemap, scatter_3d]
+                data:
+                  type: object
+                config:
+                  type: object
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Visualisierung erstellt
+
+  /ml/train:
+    post:
+      summary: ML-Modelle trainieren
+      description: |
+        Trainiert Machine Learning Modelle für Forensik-Analysen.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                training_data:
+                  type: object
+                model_types:
+                  type: array
+                  items:
+                    type: string
+                  default: ["anomaly", "risk", "pattern"]
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Modelle trainiert
+
+  /ml/models:
+    get:
+      summary: ML-Modelle abrufen
+      description: |
+        Gibt verfügbare ML-Modelle und Performance-Metriken zurück.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: ML-Modelle
+
+  /investigation/create:
+    post:
+      summary: Untersuchung erstellen
+      description: |
+        Erstellt neue Blockchain-Forensik-Untersuchung.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - case_id
+                - title
+                - description
+                - lead_investigator
+              properties:
+                case_id:
+                  type: string
+                title:
+                  type: string
+                description:
+                  type: string
+                lead_investigator:
+                  type: string
+                priority:
+                  type: string
+                  enum: [low, medium, high, critical]
+                  default: medium
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Untersuchung erstellt
+
+  /investigation/{case_id}/summary:
+    get:
+      summary: Untersuchungs-Zusammenfassung
+      description: |
+        Holt umfassende Zusammenfassung einer Untersuchung.
+      parameters:
+        - name: case_id
+          in: path
+          required: true
+          schema:
+            type: string
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Untersuchungs-Zusammenfassung
+
+  /patterns:
+    get:
+      summary: Detect patterns (MVP)
+      description: Erkennt Muster wie Peel Chain, Rapid Movement und Bridge Chaining anhand jüngster Transaktionen.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      parameters:
+        - name: address
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 10
+            maximum: 500
+            default: 50
+        - name: patterns
+          in: query
+          schema:
+            type: string
+            example: "peel_chain,rapid_movement"
+        - name: min_score
+          in: query
+          schema:
+            type: number
+            format: float
+            minimum: 0
+            maximum: 1
+            default: 0
+      responses:
+        '200':
+          description: Pattern Detection Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PatternResponse'
+        '401': { description: Unauthorized }
+
+  /api/v1/trace/start:
+    post:
+      summary: Start transaction trace
+      description: Startet eine neue Transaktionsverfolgung.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                source_address:
+                  type: string
+                direction:
+                  type: string
+                  enum: [forward, backward, both]
+                max_depth:
+                  type: integer
+              required: [source_address]
+      responses:
+        '200':
+          description: Trace gestartet
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  trace_id: { type: string }
+                  status: { type: string }
+        '400': { description: Bad Request }
+        '401': { description: Unauthorized }
+
+  /api/v1/risk/score:
+    get:
+      summary: Risk score berechnen
+      description: Liefert den Risiko-Score für eine Adresse.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      parameters:
+        - name: address
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Risiko-Score
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  address: { type: string }
+                  risk_score: { type: number, format: float }
+        '400': { description: Bad Request }
+        '401': { description: Unauthorized }
+
+  /patterns/check:
+    get:
+      summary: Detect patterns (alias)
+      description: Alias für /patterns mit optionalem Filter nach `patterns` und `min_score`.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      parameters:
+        - name: address
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: patterns
+          in: query
+          schema:
+            type: string
+            example: "peel_chain,rapid_movement,bridge_chaining"
+        - name: min_score
+          in: query
+          schema:
+            type: number
+            format: float
+            minimum: 0
+            maximum: 1
+            default: 0
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 10
+            maximum: 500
+            default: 50
+      responses:
+        '200':
+          description: Pattern Detection Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PatternResponse'
+        '401': { description: Unauthorized }
+
+  /patterns/detect:
+    get:
+      summary: Detect patterns (alias)
+      description: Alias auf /patterns; identische Parameter.
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      parameters:
+        - name: address
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 10
+            maximum: 500
+            default: 50
+      responses:
+        '200':
+          description: Pattern Detection Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PatternResponse'
+        '401': { description: Unauthorized }
+
+tags:
+  - name: Alerts
+    description: Alert-Management und -Überwachung
+  - name: Analytics
+    description: Advanced Analytics und ML-Modelle
+  - name: Chains
+    description: Multi-Chain-Unterstützung
+  - name: Evidence
+    description: Evidence Collection und Chain-of-Custody
+  - name: Compliance
+    description: Regulatorische Compliance und Audit-Trails
+  - name: Visualization
+    description: Erweiterte Datenvisualisierung
+  - name: Investigations
+    description: Fall-Management und Untersuchungen
+
+x-tagGroups:
+  - name: Core Features
+    tags: [Alerts, Analytics, Chains]
+  - name: Legal & Compliance
+    tags: [Evidence, Compliance]
+  - name: Advanced Tools
+    tags: [Visualization, Investigations]

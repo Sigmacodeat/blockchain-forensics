@@ -1,0 +1,8 @@
+rules:
+  - id: TYP-001
+    name: Large Value Transfer
+    version: "1"
+    severity: high
+    enabled: true
+    tags: [value, large, kyt]
+    condition: "value_usd is not None and value_usd >= 10000"

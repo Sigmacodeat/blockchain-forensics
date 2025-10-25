@@ -1,0 +1,95 @@
+{
+  "annotations": {"list": []},
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": null,
+  "iteration": 1700000000001,
+  "links": [],
+  "panels": [
+    {"type": "row", "title": "Intel Webhooks Overview", "gridPos": {"h": 1, "w": 24, "x": 0, "y": 0}},
+
+    {
+      "type": "timeseries",
+      "title": "Inbound webhooks (rate/5m) by source,status",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (source,status) (rate(intel_webhook_ingest_total[5m]))",
+          "legendFormat": "{{source}}/{{status}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 1},
+      "options": {"legend": {"showLegend": true}}
+    },
+    {
+      "type": "stat",
+      "title": "Inbound success (last value) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (source) (increase(intel_webhook_ingest_total{status=\"ok\"}[1h]))",
+          "legendFormat": "{{source}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 6, "w": 6, "x": 12, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+    {
+      "type": "stat",
+      "title": "Invalid signatures (1h) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (source) (increase(intel_webhook_ingest_total{status=\"invalid_sig\"}[1h]))",
+          "legendFormat": "{{source}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 6, "w": 6, "x": 18, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": ""}}
+    },
+
+    {"type": "row", "title": "Quality & Idempotency", "gridPos": {"h": 1, "w": 24, "x": 0, "y": 9}},
+    {
+      "type": "timeseries",
+      "title": "Idempotency hits (rate/5m) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (source) (rate(intel_webhook_ingest_total{status=\"idempotent_hit\"}[5m]))",
+          "legendFormat": "{{source}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 10},
+      "options": {"legend": {"showLegend": true}}
+    },
+    {
+      "type": "timeseries",
+      "title": "Missing secret / bad auth (rate/5m) by source",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum by (source) (rate(intel_webhook_ingest_total{status=\"no_secret\"}[5m]))",
+          "legendFormat": "{{source}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 10},
+      "options": {"legend": {"showLegend": true}}
+    }
+  ],
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": ["intel", "webhooks", "compliance"],
+  "templating": {"list": []},
+  "time": {"from": "now-6h", "to": "now"},
+  "timepicker": {"refresh_intervals": ["5s", "10s", "30s", "1m", "5m"]},
+  "timezone": "browser",
+  "title": "Intel Webhooks Monitoring",
+  "uid": "intel-webhooks-monitoring",
+  "version": 1
+}

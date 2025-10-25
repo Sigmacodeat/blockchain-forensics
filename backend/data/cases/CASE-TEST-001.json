@@ -1,0 +1,32 @@
+{
+  "case": {
+    "case_id": "CASE-TEST-001",
+    "title": "Test Case",
+    "description": "Unit test case",
+    "lead_investigator": "tester",
+    "status": "active",
+    "created_at": "2025-10-17T18:50:32.591067"
+  },
+  "entities": [
+    {
+      "address": "0x1111111111111111111111111111111111111111",
+      "chain": "ethereum",
+      "labels": {
+        "role": "suspect"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "case_id": "CASE-TEST-001",
+      "resource_id": "tx_0xabc",
+      "resource_type": "bridge_log",
+      "record_hash": "deadbeef",
+      "notes": "initial link",
+      "timestamp": "2025-10-17T18:50:32.651869"
+    }
+  ],
+  "format": "json",
+  "prev_checksum_sha256": "bcba30c75e63016f5585145b6c4dd5da11d8afd1c483131b9ab112411acd2b8d",
+  "checksum_sha256": "04c6f311c13ea2a74e783e2bc704c2a8a16ba8328868983d76d337d907b39b71"
+}

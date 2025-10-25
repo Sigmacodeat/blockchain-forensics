@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Book demo",
+      "pricing": "Vis priser",
+      "subtitle": "Start med en gratis demo eller kontakt vores team",
+      "title": "Start nu"
+    },
+    "header": {
+      "badge": "Om os",
+      "subtitle": "Vi udvikler en førende platform for blockchain-intelligens, der understøtter håndhævelsesenheder, VASP'er og finansielle institutioner i kampen mod kryptokriminalitet.",
+      "title": "Fremtiden for blockchain-forensisk analyse"
+    },
+    "mission": {
+      "desc": "Vi gør blockchain-transaktioner transparente og sporbare. Vores mål er at bekæmpe kryptokriminalitet og give legitime markedsdeltagere værktøjer til at opfylde compliance-krav og minimere risici.",
+      "title": "Vores mission"
+    },
+    "seo": {
+      "description": "Vi bygger en førende platform for blockchain-forensisk analyse: compliance, efterforskning og intelligens på globalt niveau.",
+      "title": "Om os | SIGMACODE Blockchain Forensisk Analyse"
+    },
+    "stats": {
+      "badge": "I tal",
+      "blockchains": "Blockchains",
+      "enterprise_customers": "Erhvervskunder",
+      "recovered_assets": "Gendannede aktiver",
+      "sla_guaranteed": "garanteret via SLA",
+      "supported": "understøttet",
+      "supported_by_tech": "understøttet af vores teknologi",
+      "title": "Vores indflydelse",
+      "uptime": "Drifttid",
+      "worldwide": "verden over"
+    },
+    "team": {
+      "badge": "Ekspertise",
+      "compliance": {
+        "desc": "Eksperter i AML/CFT-regulering og internationale sanktioner",
+        "h1": "Tidligere reguleringsmyndigheder",
+        "h2": "AML-specialister",
+        "h3": "Juridiske rådgivere",
+        "title": "Compliance og juridiske spørgsmål"
+      },
+      "forensics": {
+        "desc": "Tidligere medlemmer af håndhævelsesenheder med mange års erfaring i efterforskning af kryptokriminalitet",
+        "h1": "Alumni fra FBI/BKA",
+        "h2": "Operationer mod darknet",
+        "h3": "Gendannelse af aktiver",
+        "title": "Forensisk eksperter"
+      },
+      "subtitle": "Eksperter inden for blockchain-forensisk analyse, håndhævelsesenheder, FinTech og maskinlæring",
+      "tech": {
+        "desc": "Ingeniører fra førende teknologivirksomheder med ekspertise i blockchain",
+        "h1": "Tidligere FAANG",
+        "h2": "Blockchain Core Devs",
+        "h3": "Sikkerhedseksperter",
+        "title": "Teknologiske specialister"
+      },
+      "title": "Vores team"
+    },
+    "trust": {
+      "badge": "Tillid",
+      "ce": {
+        "desc": "Top-10-børser til AML og transaktionsovervågning",
+        "title": "Kryptobørser"
+      },
+      "fi": {
+        "desc": "Førniveau banker med eksponering for kryptovalutaer",
+        "title": "Banker og FinTech"
+      },
+      "le": {
+        "desc": "FBI, Europol, nationale håndhævelsesenheder",
+        "title": "Håndhævelsesenheder"
+      },
+      "reg": {
+        "desc": "Finansielle tilsynsmyndigheder til markedsovervågning",
+        "title": "Regulatorer"
+      },
+      "subtitle": "Ledende organisationer verden over stoler på vores teknologi",
+      "title": "Hvem stoler på os"
+    },
+    "values": {
+      "badge": "Vores værdier",
+      "compliance": {
+        "desc": "Overholdelse af GDPR, eIDAS, OFAC. Vi forstår regulatoriske krav og integrerer dem.",
+        "title": "Overholdelse i første række"
+      },
+      "customer": {
+        "desc": "Tæt samarbejde med håndhævelsesenheder og industrien. Dine krav er vores udviklingsplan.",
+        "title": "Fokus på kunder"
+      },
+      "global": {
+        "desc": "100+ blockchains, flersproget støtte og internationale sanktionslister dækket.",
+        "title": "Global rækkevidde"
+      },
+      "innovation": {
+        "desc": "State-of-the-art-teknologi: AI/ML, grafanalyse og realtidsbehandling for bedste resultater.",
+        "title": "Innovation"
+      },
+      "team": {
+        "desc": "Interdisciplinært team af forensisk eksperter, udviklere og compliance-specialister.",
+        "title": "Teamsamarbejde"
+      },
+      "title": "Hvad driver os",
+      "trust": {
+        "desc": "Enterprisesikkerhed med SOC2/ISO27001-certificering. Dine data er sikre hos os.",
+        "title": "Tillid og sikkerhed"
+      }
+    },
+    "vision": {
+      "desc": "En verden, hvor blockchain-teknologi kan udfolde sit fulde potentiale – transparent, sikker og i overensstemmelse. Vi skaber infrastrukturen til fremtiden, hvor digitale aktiver bliver mainstream uden at støtte kriminalitet.",
+      "title": "Vores vision"
+    }
+  },
+  "accessibility": {
+    "activate": "Aktivér",
+    "close_dialog": "Luk dialog",
+    "font_size": "Skriftstørrelse",
+    "font_size_large": "Stor skrift",
+    "font_size_normal": "Normal skriftstørrelse",
+    "font_size_xlarge": "Ekstra stor skrift",
+    "high_contrast_detected": "Høj kontrast registreret",
+    "keyboard_shortcuts": "Tastaturgenveje",
+    "navigate_backward": "Navigér baglæns",
+    "navigate_forward": "Navigér fremad",
+    "no_system_preferences": "Ingen specielle systemindstillinger registreret",
+    "reduced_motion_detected": "Reduceret bevægelse registreret",
+    "settings": "Tilgængelighedsindstillinger",
+    "skip_to_content": "Spring til indhold",
+    "system_preferences": "Systemindstillinger"
+  },
+  "address_analysis": {
+    "title": "Adresseanalyse",
+    "wip_desc": "Beskrivelse af adresseanalyse er under udvikling",
+    "wip_title": "Adresseanalyse under udvikling"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI-agenter",
+      "app_name": "App-navn",
+      "cross_chain": "Tværkæde",
+      "max_trace_depth": "Maksimal sporingdybde",
+      "ml_clustering": "ML-klustering",
+      "title": "Konfiguration",
+      "version": "Version"
+    },
+    "disabled": "✗ Deaktiveret",
+    "enabled": "✓ Aktiveret",
+    "error": "Fejl",
+    "health": {
+      "connected": "✓ Forbundet",
+      "disconnected": "✗ Frakoblet",
+      "error": "Kunne ikke indlæse helbredstilstand",
+      "title": "Databasehelbred"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Indlæser transaktioner fra Ethereum RPC",
+        "ingesting": "Indlæser...",
+        "placeholder": "0x...",
+        "start": "Start indlæsning",
+        "success": "✓ Indlæsning startet i baggrunden",
+        "title": "Indlæsning af adresse data"
+      },
+      "block": {
+        "help": "Importerer alle transaktioner fra en blok",
+        "ingesting": "Indlæser...",
+        "placeholder": "Bloknummer",
+        "start": "Start blokimport",
+        "success": "✓ Blokimport startet",
+        "title": "Indlæsning af blokdata"
+      }
+    },
+    "stats": {
+      "db_size": "DB-størrelse",
+      "title": "Systemstatistik",
+      "total_addresses": "Samlet antal adresser",
+      "total_traces": "Samlet antal sporinger",
+      "total_transactions": "Samlet antal transaktioner"
+    },
+    "subtitle": "Overvågning, konfiguration og datastyring",
+    "tabs": {
+      "config": "Konfiguration",
+      "ingestion": "Dataindlæsning",
+      "overview": "Oversigt",
+      "users": "Brugeradministration"
+    },
+    "title": "Systemadministration"
+  },
+  "agent": {
+    "cancel": "Annullér",
+    "error": "Agentfejl",
+    "error_unknown": "Ukendt agentfejl",
+    "examples": {
+      "1": "Eksempel 1",
+      "2": "Eksempel 2",
+      "3": "Eksempel 3",
+      "title": "Agenteksempler"
+    },
+    "instructions": "Agentinstruktioner",
+    "loading": "Indlæser agent...",
+    "placeholder": "Agent placeholder",
+    "retry": "Prøv igen",
+    "send": "Send",
+    "subtitle": "Agentundertekst",
+    "title": "Agenttitel",
+    "welcome": "Velkommen til agenten"
+  },
+  "auth": {
+    "fields": {
+      "email": "E-mail",
+      "organization_opt": "Organisation (valgfri)",
+      "password": "Adgangskode",
+      "password_confirm": "Bekræft adgangskode",
+      "username": "Brugernavn"
+    },
+    "forgot": {
+      "back_to_login": "Tilbage til login",
+      "dev_note": "Da der ikke er konfigureret en e-mail-service, tjek serverloggene for et nulstillingslink.",
+      "dev_note_label": "Note (Udviklertilstand):",
+      "error": "Fejl ved afsendelse",
+      "info_sent": "Hvis en konto med denne e-mail eksisterer, er et nulstillingslink sendt.",
+      "sent": "Nulstillingslink sendt!",
+      "submit": "Send nulstillingslink",
+      "submitting": "Sender...",
+      "subtitle": "Ingen problem! Indtast din e-mail, og vi sender dig et nulstillingslink.",
+      "title": "Glemt adgangskode?",
+      "title_sent": "E-mail sendt!"
+    },
+    "login": {
+      "failed": "Login mislykkedes",
+      "fill_all_fields": "Udfyld venligst alle felter",
+      "forgot_password": "Glemt adgangskode?",
+      "google": "Log ind med Google",
+      "google_retry": "Prøv igen med Google",
+      "no_account": "Har du ikke en konto?",
+      "oauth_failed": "OAuth-login mislykkedes. Prøv igen.",
+      "oauth_processing": "OAuth-login i gang…",
+      "or": "eller",
+      "register_now": "Tilmeld dig nu",
+      "remember_me": "Husk mig",
+      "submit": "Log ind",
+      "submitting": "Logger ind...",
+      "subtitle": "Log ind for at fortsætte"
+    },
+    "placeholders": {
+      "email": "analytiker@eksempel.com",
+      "organization": "FBI, Chainalysis, osv.",
+      "password": "••••••••",
+      "username": "john_analytiker"
+    },
+    "register": {
+      "accept": "Accepterer",
+      "already": "Allerede registreret?",
+      "and": "og",
+      "failed": "Registrering mislykkedes",
+      "fill_all_fields": "Udfyld venligst alle obligatoriske felter",
+      "google": "Tilmeld med Google",
+      "login_now": "Log ind nu",
+      "password_hint": "Mindst 8 tegn",
+      "password_too_short": "Adgangskoden skal være mindst 8 tegn",
+      "passwords_no_match": "Adgangskoderne matcher ikke",
+      "submit": "Tilmeld dig",
+      "submitting": "Registrerer...",
+      "subtitle": "Start med forensisk analyse",
+      "title": "Opret konto"
+    }
+  },
+  "common": {
+    "access_denied": "Adgang nægtet (kun til admin)",
+    "account": "Konto",
+    "back": "Tilbage",
+    "close": "Luk",
+    "info": "Information",
+    "language": "Sprog",
+    "loading": "Indlæser...",
+    "next": "Næste",
+    "page": "Side",
+    "prev": "Forrige",
+    "refresh": "Opdater",
+    "search": "Søg",
+    "success": "Succes",
+    "theme": "Tema",
+    "view": "Se",
+    "wip": {
+      "title": "Kommer snart",
+      "desc": "Denne funktion er stadig under udvikling.",
+      "cta": "Læs mere"
+    },
+    "start_free": "Start Gratis",
+    "error": "Fejl",
+    "save": "Gem",
+    "cancel": "Annuller",
+    "delete": "Slet",
+    "edit": "Rediger",
+    "create": "Opret",
+    "finish": "Afslut",
+    "open": "Åbn",
+    "yes": "Ja",
+    "no": "Nej",
+    "confirm": "Bekræft",
+    "welcome": "Velkommen",
+    "dashboard": "Dashboard",
+    "settings": "Indstillinger",
+    "profile": "Profil",
+    "logout": "Log ud",
+    "login": "Log ind",
+    "register": "Registrer",
+    "email": "E-mail",
+    "password": "Adgangskode",
+    "username": "Brugernavn",
+    "documents": "Dokumenter",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Minimal alvorlighed",
+      "refresh": "Opdater",
+      "title": "Kontroller",
+      "window": "Vindue",
+      "window_15m": "15 minutter",
+      "window_1h": "1 time",
+      "window_24h": "24 timer",
+      "window_2h": "2 timer",
+      "window_30m": "30 minutter",
+      "window_5m": "5 minutter"
+    },
+    "header": {
+      "subtitle": "Undertekst for korrelation",
+      "title": "Titel for korrelation"
+    },
+    "overview": {
+      "active_rules": "Aktive regler",
+      "analyzed": "Analyseret",
+      "empty": "Tom",
+      "found": "Fundet",
+      "loading": "Indlæser...",
+      "min_sev": "Minimal alvorlighed",
+      "rate": "Rate",
+      "title": "Oversigt",
+      "window": "Vindue"
+    },
+    "rules": {
+      "empty": "Ingen regler",
+      "footer": "Fod for regler",
+      "loading": "Indlæser regler...",
+      "min": "Minimum",
+      "minutes": "Minutter",
+      "required_patterns": "Påkrævede mønstre",
+      "title": "Regler",
+      "window": "Vindue"
+    },
+    "sev": {
+      "critical": "Kritisk",
+      "high": "Høj",
+      "low": "Lav",
+      "medium": "Mellem"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Efter grund",
+        "by_type": "Efter type",
+        "title": "Opdeling af undertrykkelse"
+      },
+      "rate": "Undertrykkelsesrate",
+      "title": "Undertrykkelse",
+      "top_entity": "Top-entitet",
+      "total": "I alt"
+    },
+    "test": {
+      "add_alert": "Tilføj advarsel",
+      "alerts_label": "Advarselsmærkat",
+      "match": "Match",
+      "no_alerts": "Ingen advarsler",
+      "no_match": "Intet match",
+      "pick_rule": "Vælg regel",
+      "pick_rule_ph": "Placeholder for valg af regel",
+      "result": "Resultat",
+      "run": "Kør",
+      "testing": "Tester...",
+      "title": "Test af korrelation"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Kopi fra",
+      "copy_mint": "Kopi mint",
+      "export_csv": "Eksportér CSV",
+      "export_csv_page": "Eksportér CSV-side",
+      "fetch": "Hent"
+    },
+    "bitcoin": {
+      "block_title": "Bloktitel",
+      "compute": "Beregn",
+      "decoded": "Dekodet",
+      "edges_title": "Kanttitel",
+      "height_ph": "Placeholder for højde",
+      "ingest_edges": "Indtag kanter",
+      "method_heuristic": "Heuristisk metode",
+      "method_proportional": "Proportional metode",
+      "normalized": "Normaliseret",
+      "tx_title": "Transaktionstitel",
+      "txid_ph": "Placeholder for txid"
+    },
+    "compliance": {
+      "add_watch": "Tilføj til overvågning",
+      "address_ph": "Placeholder for adresse",
+      "chain_ph": "Placeholder for kæde",
+      "entries": "Poster",
+      "error": "Fejl",
+      "filter_address_ph": "Placeholder for adressfilter",
+      "filter_chain_ph": "Placeholder for kædefilter",
+      "list_watch": "Overvågningsliste",
+      "screen": "Screen",
+      "title": "Overholdelse",
+      "watchlist": "Overvågningsliste"
+    },
+    "ethereum": {
+      "canonical": "Kanonisk",
+      "copy_hash": "Kopi hash",
+      "decoded": "Dekodet",
+      "error": "Fejl",
+      "open_etherscan": "Åbn Etherscan",
+      "tx_hash_ph": "Placeholder for transaktionshash",
+      "tx_title": "Transaktionstitel"
+    },
+    "ingest": {
+      "canonical_notice": "Bemærkning om kanonisk indtagelse",
+      "edges_notice": "Bemærkning om kantindtagelse",
+      "loading": "Indlæser..."
+    },
+    "labels": {
+      "add": "Tilføj",
+      "address_ph": "Placeholder for adresse",
+      "category_ph": "Placeholder for kategori",
+      "chain_ph": "Placeholder for kæde",
+      "error": "Fejl",
+      "label_ph": "Placeholder for mærkat",
+      "lookup": "Slå op",
+      "title": "Mærkater"
+    },
+    "monitoring": {
+      "fetch": "Hent",
+      "key_counters": "Nøgletællere",
+      "title": "Overvågning"
+    },
+    "rpc_unavailable": "RPC utilgængelig",
+    "solana": {
+      "canonical_error": "Fejl ved kanonisk indtagelse",
+      "canonical_title": "Titel for kanonisk indtagelse",
+      "error": "Fejl",
+      "ingest_canonical": "Indtag kanonisk",
+      "signature_ph": "Placeholder for signatur",
+      "title": "Solana-titel",
+      "transfers": "Overførsler"
+    },
+    "table": {
+      "actions": "Handlinger",
+      "address": "Adresse",
+      "amount_ui": "Beløb UI",
+      "chain": "Kæde",
+      "created": "Oprettet",
+      "decimals": "Decimaler",
+      "fee": "Gebyr",
+      "from": "Fra",
+      "from_vout": "Fra Vout",
+      "method": "Metode",
+      "mint": "Mint",
+      "reason": "Årsag",
+      "to": "Til",
+      "to_vout": "Til Vout",
+      "value_btc": "Værdi BTC"
+    },
+    "totals": {
+      "page_sum": "Sidedsum",
+      "page_sum_btc": "Sidedsum BTC",
+      "total_amount": "Samlet beløb",
+      "total_value_btc": "Samlet værdi BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Handlinger",
+    "active": "Aktiv",
+    "administration": "Administration",
+    "alert_aging": "Advarselsældning",
+    "alert_engine": "Advarselsmotor",
+    "alert_monitoring": "Advarselsovervågning",
+    "alert_overview": "Advarselsoversigt",
+    "analyst_throughput": "Analytiker gennemstrømning",
+    "audit_kpis": "KPI'er for revision",
+    "backlog": "Baglog",
+    "bucket_placeholder": "24t, 3d, 7d, >7d",
+    "buckets": "Bøtter",
+    "case_management": "Sagsstyring",
+    "connected": "Forbundet",
+    "correlation_analysis": "Korrelaationsanalyse",
+    "database": "Database",
+    "database_response": "Database svar",
+    "days": "Dage",
+    "disconnected": "Frakoblet",
+    "failed_actions": "Mislykkede handlinger",
+    "false_positive_rate": "Falsk positiv rate",
+    "fp": "Falsk positiv",
+    "graph_db": "Grafdatabase",
+    "graph_explorer": "Grafutforsker",
+    "healthy": "Sund",
+    "inactive": "Inaktiv",
+    "issues": "Problemer",
+    "last_24h": "Sidste 24 timer",
+    "last_update": "Sidste opdatering",
+    "mttr": "Gennemsnitlig reparationstid (MTTR)",
+    "open_alerts": "Åbne advarsler",
+    "open_cases": "Åbne sager",
+    "performance": "Ydeevne",
+    "priority_distribution": "Prioritetsfordeling",
+    "quick_access": "Hurtig adgang",
+    "recent_alerts": "Nylige advarsler",
+    "response_time": "Svartid",
+    "rule_effectiveness": "Regel effektivitet",
+    "sanctions_hits": "Sanktionstræffere",
+    "service_status": "Tjenestestatus",
+    "severity_breakdown": "Alvorlighedsfordeling",
+    "sla_breach_rate": "SLA-overtrædelsesrate",
+    "sla_hours": "SLA (timer)",
+    "status_breakdown": "Statusfordeling",
+    "success_rate": "Succesrate",
+    "suppression_rate": "Undertrykkelsesrate",
+    "system_details": "Systemdetaljer",
+    "system_load": "Systembelastning",
+    "system_overview": "Systemoversigt",
+    "system_status": "Systemstatus",
+    "title": "SIGMACODE Blockchain Forensisk dashboard",
+    "total_alerts": "Samlet antal advarsler",
+    "total_cases": "Samlet antal sager",
+    "total_logs": "Samlet antal logge",
+    "transaction_tracing": "Transaktionssporing",
+    "uptime": "Drifttid",
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "recent_activity": "Recent Activity",
+    "quick_actions": "Quick Actions",
+    "statistics": "Statistics",
+    "notifications": "Notifications",
+    "hero": {
+      "welcome": "Velkommen tilbage",
+      "subtitle": "Her er hvad der sker med dine efterforskninger i dag."
+    },
+    "quickActions": {
+      "title": "Hurtige Handlinger",
+      "newTrace": "Ny Sporing",
+      "newCase": "Ny Sag",
+      "riskCheck": "Risikokontrol",
+      "aiAgent": "AI-Agent"
+    },
+    "stats": {
+      "cases": "Aktive sager",
+      "traces": "Sporinger i dag",
+      "alerts": "Advarsler",
+      "uptime": "Oppetid"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analyse"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Autonome agenter med integration af LangChain og GPT-4",
+        "title": "AI-agenter"
+      },
+      "badge": "AI og maskinlæring",
+      "desc": "Maskinlæringsmodeller til anomaliopdagelse, risikovurdering og autonome AI-agenter til efterforskning 24/7.",
+      "pattern": {
+        "desc": "Opdagelse af svindelmønstre og adfærdsanalyse",
+        "title": "Mønsteranerkendelse"
+      },
+      "risk": {
+        "desc": "ML-baseret risikovurdering af adresser og transaktioner",
+        "title": "Risikovurdering"
+      },
+      "smart_contract": {
+        "desc": "Bytekode-sammenligning og sårbarhedsopdagelse",
+        "title": "Analyse af smarte kontrakter"
+      },
+      "title": "AI-understøttede analyser"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "ML-baseret opdagelse af usædvanlige transaktionsmønstre",
+        "title": "Anomalidetektion"
+      },
+      "badge": "Realidsovervågning",
+      "custom_rules": {
+        "desc": "Tilpassede advarselsregler med Rule DSL og Policy Engine",
+        "title": "Tilpassede regler"
+      },
+      "desc": "15+ konfigurerbare advarselsregler med brug af maskinlæring. Modtag advarsler om sanktioner, blanding, højværdioverførsler og anomalier.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io og andre blandetjenester",
+        "title": "Blandedetektion"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK-sanksjonslister med daglig opdatering",
+        "title": "Sanksjonskontrol"
+      },
+      "title": "Intelligent advarselsmotor"
+    },
+    "case": {
+      "badge": "Efterforskningsproces",
+      "desc": "Komplet sagshåndtering med bevisbyrde, eIDAS-signaturer og retligt gyldige rapporter.",
+      "eidas": {
+        "desc": "Kvalificerede elektroniske signaturer efter EU-standarder",
+        "title": "eIDAS-signaturer"
+      },
+      "evidence": {
+        "desc": "Uafbrudt bevisbyrde til retligt gyldige beviser",
+        "title": "Bevisbyrde"
+      },
+      "export": {
+        "desc": "Eksport til PDF/Excel med tidsstempler og revisionslog",
+        "title": "Eksport og rapporter"
+      },
+      "title": "Sagshåndtering og bevisbyrde",
+      "tracking": {
+        "desc": "Struktureret sagshåndtering med arbejdsflowstatus",
+        "title": "Sagssporing"
+      }
+    },
+    "cta": {
+      "demo": "Anmod om demo",
+      "pricing": "Vis priser",
+      "subtitle": "Start med en gratis demodækkende",
+      "title": "Klar til den fulde pakke?",
+      "start": "Start Gratis"
+    },
+    "graph": {
+      "badge": "Grafintelligens",
+      "clustering": {
+        "desc": "Automatisk klustering af forbundne tegnebøger",
+        "title": "Tegnebogs-klustering"
+      },
+      "community": {
+        "desc": "Opdagelse af tegnebogsgrupper med fælles interesser",
+        "title": "Fællesskabsdetektion"
+      },
+      "desc": "Grafdatabase baseret på Neo4j til entitetsklustering, fællesskabsdetektion og visuelt efterforskning.",
+      "labels": {
+        "desc": "Mærkater for børser/VASP/DeFi med fællesskabsintelligens",
+        "title": "Entitetsmærkater"
+      },
+      "title": "Entitetsopdeling og netværksanalyse",
+      "visual": {
+        "desc": "Interaktiv grafutforsker til komplekse analyser",
+        "title": "Visuel efterforskning"
+      }
+    },
+    "header": {
+      "badge": "Fulde funktioner",
+      "cta_try": "Prøv gratis",
+      "subtitle": "Fra transaktionssporing til AI-drevne analyser – alle værktøjer til professionel efterforskning",
+      "title": "Fuldt udstyret blockchain-forensisk analyse"
+    },
+    "security": {
+      "audit": {
+        "desc": "Komplette revisionslogge til compliance-beviser",
+        "title": "Revisionslogge"
+      },
+      "badge": "Enterprisesikkerhed",
+      "desc": "Enterprisesikkerhed med RBAC, SSO/SAML, revisionslogge og GDPR-overholdelse.",
+      "privacy": {
+        "desc": "GDPR-overholdelse med anonymisering af PII",
+        "title": "Databeskyttelse"
+      },
+      "rbac": {
+        "desc": "Granulær adgangskontrol baseret på roller med brugerdefinerede roller",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Enkelt login med SAML 2.0 og OAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "Sikkerhed og overholdelse"
+    },
+    "seo": {
+      "description": "Enterprise blockchain forensics: Multi-chain sporing, AI-agenter, realtidsrisikoscoring og compliance-værktøjer.",
+      "title": "Funktioner | Blockchain Forensics SIGMACODE"
+    },
+    "stats": {
+      "accuracy": "Præcision",
+      "ai_agents": "AI-agenter",
+      "alert_rules": "Advarselsregler",
+      "blockchains": "Blockchains",
+      "bridges": "Broprotokoller",
+      "case_templates": "Sagsmaler",
+      "compliance": "Overholdelse",
+      "encryption": "Kryptering",
+      "entities": "Entiteter",
+      "evidence_types": "Bevistyper",
+      "false_positives": "Falske positive",
+      "max_depth": "Maksimal sporingdybde",
+      "ml_models": "ML-modeller",
+      "query_time": "Spørgetid",
+      "relationships": "Relationer",
+      "response_time": "Svartid",
+      "security_certs": "Sikkerhedscertifikater",
+      "uptime_sla": "SLA-drifttid"
+    },
+    "tracing": {
+      "badge": "Transaktionssporing",
+      "bridge": {
+        "desc": "Automatisk detektion af tværkæder og indkapslede aktiver",
+        "title": "Brodetekektion"
+      },
+      "cross_chain": {
+        "desc": "Støtte til 100+ blockchains: EVM, UTXO, Solana, Cosmos og mere",
+        "title": "Tværkædesporing"
+      },
+      "demixing": {
+        "desc": "Heuristisk analyse af Tornado Cash, mixere og private mønter",
+        "title": "Demixing af private mønter"
+      },
+      "desc": "Spor transaktioner på tværs af alle store blockchains. Med detektion af tværkæder, demixing af private mønter og rekursiv sporing fremad/bagud.",
+      "recursive": {
+        "desc": "Sporing fremad/bagud med justerbar dybde og filtre",
+        "title": "Rekursiv sporing"
+      },
+      "title": "Multikæde-transaktionsintelligens"
+    },
+    "hero": {
+      "badge": "Funktioner",
+      "title": "Enterprise Blockchain Forensics",
+      "subtitle": "Alle værktøjer du har brug for til at efterforske kryptokriminalitet, sikre compliance og beskytte din virksomhed."
+    }
+  },
+  "footer": {
+    "blog": "Blog",
+    "careers": "Karriere",
+    "company": "Firma",
+    "contact": "Kontakt",
+    "imprint": "Tryk",
+    "legal": "Juridisk",
+    "privacy": "Privatliv",
+    "product": "Produkt",
+    "request_demo": "Anmod om demo",
+    "rights_reserved": "Alle rettigheder forbeholdes.",
+    "security": "Sikkerhed",
+    "tagline": "Enterprice blockchain AI til compliance og efterforskning – sikkert, hurtigt, retligt gyldigt.",
+    "terms": "Betingelser"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Aktive noder",
+      "avg_degree": "Gennemsnitlig grad",
+      "density": "Netværkshæthed",
+      "total_edges": "Samlet antal kanter",
+      "total_nodes": "Samlet antal noder"
+    },
+    "centrality": {
+      "taint": "Forurening",
+      "title": "Centralitetsanalyse"
+    },
+    "communities": {
+      "algorithm": "Algoritme",
+      "avg_size": "Gennemsnitlig størrelse",
+      "avg_taint": "Gennemsnitlig forurening",
+      "empty": "Klik",
+      "label_propagation": "Mærkefremme",
+      "loading": "Fællesskabsdetektion...",
+      "louvain": "Louvain (modularitet)",
+      "title": "Fællesskabsdetektion",
+      "total": "Samlet antal fællesskaber"
+    },
+    "degree": {
+      "title": "Gradedistribution",
+      "x": "Grad",
+      "y": "Antal"
+    },
+    "filters": {
+      "cross_chain": "Tværkæde (Bro-Lag)",
+      "from": "Fra (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Til (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Avancerede netværksanalyser og mønsterdetektion",
+      "title": "Grafanalyse og netværksintelligens"
+    },
+    "hubs": {
+      "in": "Indgående",
+      "out": "Udgående",
+      "title": "Netværksnav (højgradenoder)",
+      "total": "I alt"
+    },
+    "loading": {
+      "stats": "Indlæser statistik..."
+    },
+    "patterns": {
+      "circle_length": "Cirkellængde",
+      "detected": "Registrerede cirkler",
+      "empty_desc": "Dette er et godt tegn - ingen åbenlyse pengelaunderingcirkler er fundet",
+      "empty_title": "Ingen cirkulære mønstre registreret",
+      "high_risk": "Høj risiko",
+      "hops": "spring",
+      "loading": "Mønsterdetektion...",
+      "more_addresses": "mere adresser",
+      "risk_score": "Risikoscore",
+      "title": "Cirkulære mønstre (potentiel pengelaundering)",
+      "total": "I alt",
+      "total_value": "Samlet værdi",
+      "tx_path": "Transaktionssti:"
+    },
+    "tabs": {
+      "communities": "Fællesskabsdetektion",
+      "overview": "Netværksoversigt",
+      "patterns": "Mønsterdetektion"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Klynge",
+      "clustering": "Klynge i gang",
+      "pause_timeline": "Pause tidslinje",
+      "play_timeline": "Afspil tidslinje",
+      "title": "Efterforskerhandlinger"
+    },
+    "connected": {
+      "taint": "Forurening",
+      "title": "Forbundne enheder",
+      "tx": "Transaktioner"
+    },
+    "graph": {
+      "connections": "Forbindelser",
+      "enter_address": "Indtast adresse",
+      "loading": "Indlæser graf...",
+      "nodes": "Noder",
+      "title": "Grafvisning"
+    },
+    "header": {
+      "subtitle": "Undertekst for efterforsker",
+      "title": "Titel for efterforsker"
+    },
+    "path": {
+      "bridges": "Broer",
+      "hops": "Spring",
+      "risk_score": "Risikoscore",
+      "title": "Sti",
+      "total_value": "Samlet værdi"
+    },
+    "search": {
+      "explore": "Udforsk",
+      "placeholder": "Placeholder for søgning",
+      "title": "Søgning"
+    },
+    "settings": {
+      "from": "Fra",
+      "hops_1": "1 spring",
+      "hops_2": "2 spring",
+      "hops_3": "3 spring",
+      "hops_4": "4 spring",
+      "hops_5": "5 spring",
+      "include_bridges": "Inkluder broer",
+      "max_hops": "Maksimale spring",
+      "title": "Indstillinger",
+      "to": "Til"
+    },
+    "timeline": {
+      "empty": "Tom tidslinje",
+      "events": "Begivenheder",
+      "risk": "Risiko",
+      "select_address": "Vælg adresse",
+      "title": "Tidslinje",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Anmod om demo nu",
+      "pricing": "Vis priser"
+    },
+    "cta2": {
+      "demo": "Anmod om gratis demo",
+      "pricing": "Vis priser",
+      "subtitle": "Start med en gratis demodækkende og oplev fremtiden for blockchain-forensisk analyse",
+      "title": "Klar til enterprice blockchain-intelligens?"
+    },
+    "features": {
+      "badge": "Funktiioner",
+      "subtitle": "Enterprice-værktøjer til overholdelse, efterforskning og risikostyring",
+      "title": "Alt, hvad du har brug for til blockchain-forensisk analyse"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Blockchain Forensisk Analyse",
+      "point1": "100+ blockchains",
+      "point2": "OFAC/UN/EU-sanktioner",
+      "point3": "Realidsovervågning",
+      "subtitle": "AI-drevet overholdelse, efterforskning og risikostyring – i realtid og på enterprice-niveau.",
+      "title": "Enterprice Blockchain-intelligens"
+    },
+    "pricing": {
+      "badge": "Priser",
+      "subtitle": "Fra gratis til enterprice – start nu",
+      "title": "Fleksible pakker til enhver virksomhedsstørrelse",
+      "view_all": "Vis alle priser"
+    },
+    "seo": {
+      "description": "AI-drevet overholdelse, efterforskning og risikostyring – i realtid og på enterprice-niveau. SIGMACODE Blockchain Forensisk Analyse.",
+      "title": "SIGMACODE | Enterprice Blockchain-intelligens"
+    },
+    "tech": {
+      "badge": "Teknologi",
+      "subtitle": "Enterprice-infrastruktur til maksimal ydeevne og sikkerhed",
+      "title": "Topniveau teknologisk status"
+    },
+    "use_cases": {
+      "badge": "Brugscase",
+      "subtitle": "Fra håndhævelsesenheder til FinTech",
+      "title": "Den rigtige løsning til ethvert brugscase"
+    }
+  },
+  "layout": {
+    "main_navigation": "Hovednavigation",
+    "quick_search_title": "Hurtigsøgning (Ctrl/⌘+K)",
+    "skip_to_content": "Spring til indhold",
+    "quick_search_placeholder": "Hurtig søgning...",
+    "quick_search_hint": "Tip: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookiebanner",
+    "title": "Cookies og privatliv",
+    "title_short": "Cookies",
+    "description": "Vi bruger nødvendige cookies til at drive dette websted. Valgfrie analyse-cookies hjælper os med at forstå og forbedre brugen. Du kan acceptere alle cookies eller kun tillade nødvendige. Du kan ændre dit valg når som helst i indstillingerne.",
+    "privacy_link": "Privatlivspolitik",
+    "terms_link": "Servicevilkår",
+    "imprint_link": "Juridiske oplysninger",
+    "only_necessary": "Kun nødvendige",
+    "accept_all": "Acceptér alle",
+    "preferences": "Indstillinger",
+    "save_preferences": "Gem indstillinger",
+    "manage": "Cookieindstillinger",
+    "analytics_title": "Analyse-cookies",
+    "analytics_desc": "Hjælper os med at forstå brugen og forbedre webstedet.",
+    "marketing_title": "Marketing-cookies",
+    "marketing_desc": "Muliggør personligt indhold og tilbud.",
+    "all_optional_title": "Aktivér alle valgfrie",
+    "all_optional_desc": "Aktiverer både analyse- og marketingcookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Luk",
+        "close_title": "Luk advarsel",
+        "copy_alert_id_title": "Kopiér advarsels-ID",
+        "copy_entity": "Kopiér entitet",
+        "copy_entity_id_title": "Kopiér entitets-ID",
+        "copy_id": "Kopiér ID",
+        "copy_rule": "Kopiér regel",
+        "copy_rule_id_title": "Kopiér regel-ID",
+        "details": "Detaljer",
+        "details_title": "Vis detaljer",
+        "reset": "Nulstil"
+      },
+      "audit": {
+        "empty": "Ingen begivenheder",
+        "title": "Revisionsspor"
+      },
+      "csv": {
+        "export_all": "Eksportér CSV (alt)",
+        "export_all_title": "Eksportér CSV af alle filtrerede rækker (server)",
+        "export_page": "Eksportér CSV (side)",
+        "export_page_title": "Eksportér CSV-side",
+        "no_filtered_data": "Ingen filtrerede data",
+        "no_page_data": "Ingen data på denne side"
+      },
+      "empty": "Ingen advarsler fundet",
+      "filters": {
+        "all": "(alt)",
+        "search_label": "Søgning (rule_id / entity_id)",
+        "search_placeholder": "Søg...",
+        "severity": "Alvorlighed",
+        "source": "Kilde",
+        "source_persisted": "Gemt (KYT)",
+        "source_realtime": "Realid (Advarselsmotor)",
+        "status": "Status"
+      },
+      "kpi": {
+        "event_time_set": "Sæt begivenhedstid (first_seen_at)",
+        "event_time_title": "Begivenhedstid = first_seen_at",
+        "false_positive": "Markér som falsk positiv",
+        "title": "KPI-anotation",
+        "true_positive": "Markér som ægte positiv"
+      },
+      "loading": "Indlæser advarsler...",
+      "modal": {
+        "alert_id": "Advarsels-ID",
+        "chain": "Kæde",
+        "context": "Kontekst",
+        "entity": "Entitet",
+        "rule_id": "Regel-ID",
+        "severity": "Alvorlighed",
+        "title": "Advarselsdetaljer"
+      },
+      "pagination": {
+        "next": "Næste",
+        "page": "Side",
+        "prev": "Forrige"
+      },
+      "severity": {
+        "critical": "kritisk",
+        "high": "høj",
+        "low": "lav",
+        "medium": "mellem"
+      },
+      "status": {
+        "assigned": "tildelt",
+        "closed": "lukket",
+        "open": "åben",
+        "snoozed": "udskudt"
+      },
+      "subtitle": "Realid-regler og gemte advarsler (KYT)",
+      "table": {
+        "first": "første",
+        "last": "sidste"
+      },
+      "title": "Advarselsovervågning",
+      "toasts": {
+        "copy_failed": "Kopiering mislykkedes",
+        "disposition_failed": "Sætning af disposition mislykkedes",
+        "disposition_set": "Disposition sat",
+        "entity_copied": "Entitet kopieret",
+        "event_time_failed": "Sætning af begivenhedstid mislykkedes",
+        "event_time_set": "Begivenhedstid sat",
+        "export_failed": "Servereksport mislykkedes",
+        "export_started": "Servereksport startet",
+        "id_copied": "ID kopieret",
+        "rule_copied": "Regel kopieret"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Om os",
+    "analytics": "Analyser",
+    "close_menu": "Luk menu",
+    "dashboard": "Dashboard",
+    "features": "Funktioner",
+    "home": "Hjem",
+    "logout": "Log ud",
+    "open_menu": "Åbn menu",
+    "pricing": "Priser",
+    "settings": "Indstillinger",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Opdater"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Kerne",
+        "title": "CPU-brug"
+      },
+      "db": {
+        "connected": "Forbundet",
+        "disconnected": "Frakoblet",
+        "response": "Svar",
+        "title": "Database"
+      },
+      "memory": {
+        "available": "tilgængelig",
+        "title": "Hukommelsesbrug"
+      },
+      "system_status": {
+        "healthy": "Sund",
+        "issues": "Problemer",
+        "title": "Systemstatus",
+        "uptime": "Drifttid"
+      }
+    },
+    "common": {
+      "no": "Nej",
+      "yes": "Ja"
+    },
+    "header": {
+      "last_refresh": "Sidste opdatering",
+      "subtitle": "Kompleks overvågning af systemydelse, metrik og SLO",
+      "title": "Ydelses- og overvågningsdashboard"
+    },
+    "metrics": {
+      "empty": "Ingen metrikdata tilgængelig",
+      "loading": "Indlæser metrikker...",
+      "max": "Maks",
+      "measurements": "Målinger",
+      "min": "Min",
+      "title": "Ydelsesmetrikker (1 time)",
+      "trend": "Trend"
+    },
+    "recent_alerts": {
+      "empty": "Ingen aktuelle ydelseradvarsler",
+      "title": "Nylige ydelseradvarsler"
+    },
+    "services": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "title": "Tjenestestatus"
+    },
+    "slo": {
+      "empty": "Ingen SLO-data tilgængelig",
+      "loading": "Indlæser SLO...",
+      "threshold": "Grænse",
+      "title": "SLO-overholdelse",
+      "violations": "Overtrædelser"
+    },
+    "system_details": {
+      "database": "Database",
+      "db_connected": "Forbundet",
+      "db_type": "Type",
+      "debug": "Fejlsøgning",
+      "environment": "Miljø",
+      "log_level": "Log-niveau",
+      "mode": "Tilstand",
+      "platform": "Platform",
+      "python_version": "Python-version",
+      "response_time": "Svartid",
+      "system_info": "Systeminformation",
+      "title": "Systemdetaljer",
+      "version": "Version"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Yderligere blockchains",
+        "i2": "Yderligere brugerpladser",
+        "i3": "Premium sanktioner (udvidede lister)",
+        "i4": "Avancerede eksportformater",
+        "i5": "Prioriteret support",
+        "i6": "White-Label (Enterprice)",
+        "title": "Tilgængelige tilføjelser"
+      },
+      "badge": "Fleksible udvidelser",
+      "overage": {
+        "extra_credits": "Ekstra kreditter",
+        "monthly_cap": "Månedlig grænse",
+        "note": "Bruger du mere end din kvote? Ingen problem - overforbrug faktureres automatisk.",
+        "title": "Overforbrugspriser"
+      },
+      "subtitle": "Udvided dit plan efter behov",
+      "title": "Tilføjelser og overforbrug"
+    },
+    "card": {
+      "custom": "Tilpasset",
+      "desc_business": "Til større teams",
+      "desc_community": "Til entusiaster og open source",
+      "desc_enterprise": "Til enterprice og regulatorer",
+      "desc_pro": "Til voksende virksomheder",
+      "desc_starter": "Til små teams",
+      "per_month": "pr. måned",
+      "popular": "Mest populær",
+      "popular_label": "Mest populær",
+      "save_year": "Spar ${{amount}}/år"
+    },
+    "cta": {
+      "active_plan": "✓ Aktiv plan",
+      "contact_sales": "Kontakt salg",
+      "demo": "Anmod om demo",
+      "more_about": "Mere om os",
+      "saving": "Gemmer…",
+      "set_tenant_plan": "Som lejerplan",
+      "start_now": "Start nu",
+      "subscribe": "Tilmeld dig nu",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Nuværende plan",
+    "enterprise": {
+      "card_desc": "Til enterprice og regulatorer",
+      "subtitle": "Tilpassede priser, SLA, integrationer, On-Prem/VPC",
+      "title": "Til finansielle institutioner og regulatorer"
+    },
+    "faq": {
+      "subtitle": "Kontakt vores salgsafdeling for en personlig demo",
+      "title": "Har du stadig spørgsmål?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchains",
+      "cases": "Sager",
+      "credits": "Kreditter/måned",
+      "priority": "Prioritet",
+      "users": "Brugere"
+    },
+    "header": {
+      "badge": "Fleksible priser",
+      "subtitle": "Fra gratis værktøjer til fællesskaber til enterprice med white-label. Start nu og skalér, mens du vokser.",
+      "title": "Den rigtige plan til ethvert team"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI-agenter",
+        "i2": "Grafanalyse",
+        "i3": "Risikovurdering",
+        "i4": "ML-modeller",
+        "title": "Avancerede analyser"
+      },
+      "badge": "Hvad er inkluderet?",
+      "performance": {
+        "i1": "Realidadvarsler",
+        "i2": "API-adgang",
+        "i3": "Prioriteret kø",
+        "i4": "99.9% drifttid",
+        "title": "Ydeevne"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Revisionslogge",
+        "i4": "GDPR-overholdelse",
+        "title": "Sikkerhed og overholdelse"
+      },
+      "team": {
+        "i1": "Flere brugere",
+        "i2": "Sagshåndtering",
+        "i3": "Bevisbyrde",
+        "i4": "Samarbejde",
+        "title": "Teamfunktioner"
+      },
+      "title": "Oversigt over alle funktioner"
+    },
+    "more": "mere",
+    "seo": {
+      "description": "Fair og gennemsigtig prissætning for blockchain forensics. Fra gratis Community-plan til Enterprise. Opsig når som helst.",
+      "title": "Priser | Blockchain Forensics SIGMACODE"
+    },
+    "smb": {
+      "subtitle": "Uafhængige planer til startups og mellemstore virksomheder",
+      "title": "Til teams og virksomheder"
+    },
+    "toggle": {
+      "annual": "Årligt",
+      "monthly": "Månedligt",
+      "save": "Spar {{pct}}%"
+    },
+    "top_features": "BESTE FUNKTIONER",
+    "hero": {
+      "badge": "Priser",
+      "title": "Simple og Gennemsigtige Priser",
+      "subtitle": "Vælg planen der passer til dine behov. Alle planer inkluderer kernefunktioner. Opgrader når som helst."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Opdater"
+    },
+    "audit": {
+      "empty": "Ingen revisionssporstegn tilgængelige",
+      "loading": "Indlæser revisionsspor...",
+      "title": "Aktuelle revisionssporstegn",
+      "user": "Bruger",
+      "view_all": "Vis alle →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Integritet af revisionsspor"
+      },
+      "failed_logins": {
+        "title": "Mislykkede loginforsøg"
+      },
+      "gdpr": {
+        "title": "GDPR-overholdelse"
+      },
+      "security_incidents": {
+        "title": "Sikkerhedshændelser"
+      }
+    },
+    "common": {
+      "implemented": "Implementeret",
+      "not_implemented": "Ikke implementeret",
+      "unknown": "Ukendt"
+    },
+    "compliance": {
+      "anonymization": "Anonymisering",
+      "certifications": "Certifikater",
+      "consent_management": "Samtykkestyring",
+      "data_portability": "Dataportabilitet",
+      "empty": "Ingen overholdelsesdata tilgængelige",
+      "encryption": "Kryptering",
+      "loading": "Indlæser overholdelsestilstand...",
+      "right_to_erasure": "Rettighed til sletning",
+      "title": "GDPR-overholdelsestilstand"
+    },
+    "header": {
+      "last_refresh": "Sidste opdatering",
+      "subtitle": "Revisionsspor, GDPR-overholdelse og sikkerhedsovervågning",
+      "title": "Sikkerheds- og overholdelsesdashboard"
+    },
+    "quick_actions": {
+      "audit_export": "Eksportér revision",
+      "compliance_report": "Overholdelsesrapport",
+      "gdpr_status": "GDPR-status",
+      "incident_report": "Hændelsesrapport",
+      "integrity_check": "Integritetscheck",
+      "security_scan": "Sikkerhedsscan",
+      "title": "Handlinger for sikkerhed og overholdelse"
+    },
+    "retention": {
+      "days": "Dage",
+      "empty": "Ingen bevaringsdata tilgængelige",
+      "title": "Databevaringsoverholdelse",
+      "violations": {
+        "count": "Overtrædelser",
+        "days_old": "Dage gamle",
+        "more": "og",
+        "more_suffix": "mere",
+        "title": "Bevaringsovertrædelser"
+      }
+    },
+    "security": {
+      "compliance_status": "Overholdelsestilstand",
+      "empty": "Ingen sikkerhedsdata tilgængelige",
+      "failed_logins": "Mislykkede logins",
+      "incidents": "Sikkerhedshændelser",
+      "rate_limited_ips": "Hastighedsbegrænsede IP-adresser",
+      "suspicious_activities": "Mistænkelige aktiviteter",
+      "title": "Sikkerhedsoversigt"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Åbne advarsler efter aldersgrupper (f.eks. 24t, 3d, 7d, >7d)",
+    "alert_engine": "Realidsovervågning af transaktioner og mistænkelige mønstre med ML-algoritmer",
+    "alert_overview": "Oversigt over alle aktive sikkerhedsadvarsler og deres alvorlighed (Kritisk/Høj/Mellem/Lav)",
+    "analyst_throughput": "Antal lukkede sager pr. analytiker i den valgte periode",
+    "backlog": "Samlet antal åbne (uassignerede) advarsler og åbne sager",
+    "database": "Tilstand for PostgreSQL/TimescaleDB-forbindelse og svartid for tidsdata",
+    "graph_db": "Neo4j-grafdatabase til analyse af komplekse relationer og netværksmapping",
+    "system_status": "Viser den aktuelle tilstand for alle systemkomponenter. Grøn = Sund, Rød = Problemer registreret",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Tilgængelige ture",
+    "completed": "fuldført",
+    "finish": "Afslut",
+    "no_tours_available": "Ingen ture tilgængelige for denne side",
+    "of": "af",
+    "select_tour_description": "Vælg en tur for at lære mere om platformens funktioner",
+    "skip": "Spring over",
+    "start": "tours.start",
+    "start_tour": "Start tur",
+    "step": "Skridt",
+    "steps": "skridt"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Detaljer",
+      "direction": "Retning",
+      "error_title": "Fejltitel",
+      "exec_time": "Udførelsestid",
+      "export": "Eksport",
+      "flow_graph": "Flowgraf",
+      "high_risk": "Høj risiko",
+      "high_risk_title": "Titel for høj risiko",
+      "loading": "Indlæser...",
+      "max_hop": "Maksimal hop",
+      "not_found": "Ikke fundet",
+      "report": "Rapport",
+      "sanctioned_title": "Titel for sanktionerede",
+      "sanctioned_warning": "Advarsel for sanktionerede",
+      "source": "Kilde",
+      "taint": "Forurening",
+      "taint_model": "Forureningsmodel",
+      "title": "Resultat",
+      "total_edges": "Samlet antal kanter",
+      "total_nodes": "Samlet antal noder"
+    },
+    "simple": {
+      "address_ph": "Placeholder for adresse",
+      "chain_btc": "Kæde BTC",
+      "chain_eth": "Kæde ETH",
+      "chain_sol": "Kæde SOL",
+      "cluster": {
+        "clustering": "Klynge",
+        "export_members": "Eksportér medlemmer",
+        "label": "Mærkat",
+        "lookup": "Slå op",
+        "member_address": "Medlemsadresse",
+        "members": "Medlemmer",
+        "title": "Titel for klynge"
+      },
+      "depth_ph": "Placeholder for dybde",
+      "edges": "Kanter",
+      "error_cluster": "Fejl ved klynge",
+      "error_trace": "Fejl ved sporing",
+      "export_paths": "Eksportér stier",
+      "export_targets": "Eksportér mål",
+      "high_risk": "Høj risiko",
+      "model_fifo": "FIFO-model",
+      "model_haircut": "Haircut-model",
+      "model_proportional": "Proportional model",
+      "nodes": "Noder",
+      "run": "Kør",
+      "summary": "Oversigt",
+      "th_path": "Sti",
+      "th_paths": "Stier",
+      "th_taint": "Forurening",
+      "th_target": "Mål",
+      "threshold_ph": "Placeholder for grænse",
+      "title": "Enkel sporing",
+      "tracing": "Sporing..."
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "Beskrivelse af tegnebogsanalyse",
+        "title": "Titel for tegnebogsanalyse",
+        "wip": "Tegnebogsanalyse under udvikling"
+      },
+      "export": {
+        "csv": "Eksportér CSV",
+        "desc": "Beskrivelse af eksport",
+        "json": "Eksportér JSON",
+        "pdf": "Eksportér PDF",
+        "section_export": "Eksportsektion",
+        "section_import": "Importsektion",
+        "title": "Eksport"
+      },
+      "header": {
+        "title": "Titel for tegnebogstest"
+      },
+      "import": {
+        "add_wallet": "Tilføj tegnebog",
+        "json": "Importér JSON",
+        "restore_backup": "Gendan backup"
+      },
+      "multisig": {
+        "desc": "Beskrivelse af multisig",
+        "title": "Titel for multisig",
+        "wip": "Multisig under udvikling"
+      },
+      "overview": {
+        "active_wallets": "Aktive tegnebøger",
+        "activity": {
+          "liquidity": "Likviditet",
+          "nft": "NFT",
+          "receive": "Modtag"
+        },
+        "month_change": "Ændring i måneden",
+        "multisig": "Multisig",
+        "new_this_week": "Ny denne uge",
+        "recent": "Nylige",
+        "security_grade": "Sikkerhedskarakter",
+        "security_score": "Sikkerhedsscore",
+        "status": {
+          "2fa": "2FA",
+          "active": "Aktiv",
+          "backup": "Backup",
+          "backup_available": "Backup tilgængelig",
+          "hardware": "Hardware",
+          "hw_connected": "Hardware tilsluttet",
+          "recovery": "Gendannelse",
+          "secured": "Sekureret",
+          "title": "Tegnebogsstatus"
+        },
+        "total_volume": "Samlet volumen"
+      },
+      "sidebar": {
+        "title": "Tegnebogs sidepanel"
+      },
+      "tabs": {
+        "analytics": "Analyse",
+        "crosschain": "Tværkæde",
+        "export": "Eksport",
+        "multisig": "Multisig",
+        "nft": "NFT",
+        "overview": "Oversigt",
+        "transactions": "Transaktioner"
+      },
+      "transactions": {
+        "desc": "Beskrivelse af transaktioner",
+        "export": "Eksport",
+        "title": "Titel for transaktioner",
+        "wip": "Transaktioner under udvikling"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Webanalyse"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "Sporing"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "Adresse"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "Gennemse"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "Udfør",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "Online",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Hjem",
+    "features": "Funktioner",
+    "about": "Om os",
+    "pricing": "Priser",
+    "search": "Søg",
+    "dashboards": "Dashboards",
+    "monitoring": "Overvågning",
+    "legal": "Juridisk",
+    "privacy": "Privatliv",
+    "terms": "Vilkår",
+    "impressum": "Kolofon"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

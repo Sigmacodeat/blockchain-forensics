@@ -1,0 +1,38 @@
+{
+  "height": 700000,
+  "hash": "0000000000000000000a7f8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f",
+  "time": 1631234567,
+  "tx": [
+    {
+      "txid": "tx1_simple_transfer",
+      "size": 225,
+      "version": 2,
+      "locktime": 0,
+      "vin": [
+        {
+          "txid": "prev_tx_1",
+          "vout": 0,
+          "sequence": 4294967295
+        }
+      ],
+      "vout": [
+        {
+          "n": 0,
+          "value": 0.5,
+          "scriptPubKey": {
+            "type": "pubkeyhash",
+            "addresses": ["1DestinationAddress123"]
+          }
+        },
+        {
+          "n": 1,
+          "value": 0.4995,
+          "scriptPubKey": {
+            "type": "pubkeyhash",
+            "addresses": ["1ChangeAddress456"]
+          }
+        }
+      ]
+    }
+  ]
+}

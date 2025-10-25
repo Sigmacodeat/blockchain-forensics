@@ -1,0 +1,489 @@
+{
+  "analytics": {
+    "advanced": {
+      "title": "Advanced Analytics",
+      "subtitle": "Real-time insights and threat intelligence"
+    },
+    "refresh": "Refresh",
+    "export": {
+      "csv": "Export as CSV",
+      "excel": "Export as Excel",
+      "pdf": "Export as PDF",
+      "success": "Export successful",
+      "error": "Export failed"
+    },
+    "exporting": "Exporting...",
+    "dateRange": {
+      "today": "Today",
+      "week": "This Week",
+      "month": "This Month",
+      "custom": "Custom Range"
+    },
+    "metrics": {
+      "activeTraces": "Active Traces",
+      "activeCases": "Active Cases",
+      "criticalAlerts": "Critical Alerts",
+      "activeUsers": "Active Users"
+    },
+    "charts": {
+      "riskDistribution": "Risk Distribution Over Time",
+      "threatCategories": "Top Threat Categories",
+      "topExchanges": "Top Exchanges by Volume",
+      "topMixers": "Top Mixers by Volume",
+      "geographic": "Geographic Distribution"
+    },
+    "noData": "No data available",
+    "noDataDesc": "Try selecting a different date range",
+    "loading": "Loading analytics...",
+    "error": "Failed to load analytics data",
+    "riskLevels": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "categories": {
+      "mixer": "Mixer Activity",
+      "sanctions": "Sanctions Contact",
+      "scam": "Scam/Phishing",
+      "ransomware": "Ransomware",
+      "theft": "Theft/Hack",
+      "exchange": "Exchange Activity"
+    }
+  },
+  "bridge": {
+    "title": "Bridge Transfers",
+    "subtitle": "Analyze Cross-Chain Bridge Links and Transactions",
+    "kpi": {
+      "total_transactions": "Total Bridge Transactions",
+      "unique_addresses": "Unique Addresses",
+      "top_bridges": "Supported Bridges"
+    },
+    "charts": {
+      "chain_distribution": "Distribution by Source Chain",
+      "top_bridges": "Top Bridges by Transactions"
+    },
+    "filter": {
+      "title": "Filter & Search",
+      "address": "Address",
+      "chain_from": "Source (Chain)",
+      "chain_to": "Destination (Chain)",
+      "limit": "Limit",
+      "search": "Search",
+      "reset": "Reset",
+      "export": "CSV Export"
+    },
+    "loading": "Loading bridge links...",
+    "error": {
+      "title": "Loading Error",
+      "message": "The bridge links could not be loaded. Please try again."
+    },
+    "table": {
+      "time": "Time",
+      "bridge": "Bridge",
+      "from_address": "From (Addr)",
+      "to_address": "To (Addr)",
+      "chain_from": "Chain From",
+      "chain_to": "Chain To",
+      "tx_hash": "Tx Hash",
+      "value": "Value",
+      "no_data": "No data found",
+      "no_data_hint": "Try different filter criteria"
+    }
+  },
+  "automation": {
+    "title": "Automation",
+    "subtitle": "Define rules, automatically create cases, start traces and generate reports. Test with simulation.",
+    "settings": {
+      "title": "Settings",
+      "description": "Automation rules and thresholds",
+      "enabled": "Enabled",
+      "enabledDesc": "Enable or disable automation",
+      "riskThreshold": "Risk Threshold",
+      "riskThresholdValue": "Risk Threshold: {{value}}",
+      "riskThresholdTooltip": "Automation triggers when risk score exceeds this threshold (0-1). Recommended: 0.60-0.80.",
+      "riskThresholdHelp": "Higher thresholds reduce false positives but may miss important matches.",
+      "minAmount": "Minimum Amount (USD)",
+      "minAmountTooltip": "Only transactions above this USD amount will be considered.",
+      "minAmountHelp": "Only transactions above this USD amount will be considered.",
+      "traceDepth": "Auto-Trace Depth (0-10)",
+      "traceDepthHelp": "Higher depth increases runtime and costs; Recommended: 3-5.",
+      "autoCreateCase": "Automatically Create Cases",
+      "reportTemplate": "Report Template",
+      "reportTemplates": {
+        "standard": "Standard",
+        "legal": "Legal (Court-Admissible)",
+        "summary": "Executive Summary"
+      },
+      "save": "Save",
+      "saving": "Saving..."
+    },
+    "simulation": {
+      "title": "Simulation",
+      "description": "Preview how many cases/traces would be triggered",
+      "hours": "Time Period (Hours)",
+      "sample": "Sample Size",
+      "simulate": "Simulate",
+      "simulating": "Simulating...",
+      "results": {
+        "evaluated": "Evaluated",
+        "createCases": "Create Cases",
+        "triggerTraces": "Trigger Traces",
+        "highPriority": "High Priority"
+      }
+    },
+    "recent": {
+      "title": "Recent Auto-Investigate Jobs",
+      "description": "Latest entries from the worker queue",
+      "noJobs": "No jobs available",
+      "chain": "Chain",
+      "depth": "Depth",
+      "status": {
+        "done": "Done",
+        "queued": "Queued",
+        "failed": "Failed"
+      }
+    }
+  },
+  "privacyDemixing": {
+    "title": "Tornado Cash Demixing",
+    "subtitle": "De-anonymize mixer transactions with AI-powered forensics",
+    "description": "Advanced demixing technology to trace funds through Tornado Cash and other privacy protocols",
+    "form": {
+      "address": "Wallet Address",
+      "addressPlaceholder": "0x...",
+      "chain": "Blockchain",
+      "timeWindow": "Time Window (hours)",
+      "maxHops": "Maximum Hops",
+      "startButton": "Start Demixing Analysis",
+      "analyzing": "Analyzing..."
+    },
+    "chains": {
+      "ethereum": "Ethereum",
+      "bsc": "BNB Smart Chain",
+      "polygon": "Polygon"
+    },
+    "results": {
+      "title": "Analysis Results",
+      "confidence": "Confidence Score",
+      "depositsFound": "Deposits Found",
+      "likelyWithdrawals": "Likely Withdrawals",
+      "uniqueAddresses": "Unique Addresses",
+      "deposits": "Tornado Cash Deposits",
+      "withdrawals": "Identified Withdrawals",
+      "paths": "Post-Mixer Paths",
+      "pool": "Pool",
+      "viewTx": "View Transaction",
+      "match": "Match",
+      "noResults": "No results found",
+      "noResultsDesc": "Try adjusting your search parameters"
+    },
+    "error": {
+      "title": "Analysis Error",
+      "generic": "An error occurred during analysis",
+      "invalidAddress": "Please enter a valid wallet address",
+      "networkError": "Network error. Please try again."
+    },
+    "features": {
+      "aiPowered": "AI-Powered Analysis",
+      "realTime": "Real-Time Processing",
+      "multiChain": "Multi-Chain Support",
+      "forensicGrade": "Forensic-Grade Results"
+    },
+    "info": {
+      "howItWorks": "How It Works",
+      "step1": "Enter the wallet address that interacted with Tornado Cash",
+      "step2": "Our AI analyzes transaction patterns and timing",
+      "step3": "Machine learning identifies likely withdrawal addresses",
+      "step4": "Trace funds through multiple hops to final destinations"
+    }
+  },
+  "patterns": {
+    "title": "Pattern Detection",
+    "subtitle": "AI-powered behavioral analysis",
+    "analysis": {
+      "title": "Pattern Analysis",
+      "description": "Detect peel chains, rapid movement and suspicious patterns with evidence"
+    },
+    "form": {
+      "address": "Address",
+      "addressPlaceholder": "0x... or bc1...",
+      "patterns": "Patterns (optional)",
+      "patternsPlaceholder": "peel_chain,rapid_movement",
+      "minScore": "Min Score",
+      "limit": "Limit",
+      "analyze": "Analyze",
+      "analyzing": "Analyzing...",
+      "askAssistant": "Ask Assistant",
+      "openInvestigator": "Open in Investigator",
+      "expandInvestigator": "Expand in Investigator"
+    },
+    "validation": {
+      "invalidAddress": "Invalid address. Expected 0x... or bc1...",
+      "addressRequired": "Address is required"
+    },
+    "status": {
+      "analyzing": "Analysis in progress...",
+      "complete": "Analysis complete",
+      "waiting": "Please wait, patterns are being detected."
+    },
+    "results": {
+      "title": "Results for",
+      "patternsFound": "{{count}} pattern found",
+      "patternsFound_plural": "{{count}} patterns found",
+      "noPatterns": "No patterns found.",
+      "export": {
+        "csv": "Export CSV",
+        "json": "Export JSON"
+      }
+    },
+    "pattern": {
+      "score": "Score {{score}}%",
+      "evidence": "Evidence",
+      "noEvidence": "No evidence available."
+    },
+    "table": {
+      "tx": "Transaction",
+      "from": "From",
+      "to": "To",
+      "amount": "Amount",
+      "time": "Time",
+      "actions": "Actions",
+      "investigator": "Investigator",
+      "expand": "Expand",
+      "path": "Path",
+      "copy": "Copy"
+    },
+    "patterns": {
+      "peel_chain": "Peel Chain",
+      "rapid_movement": "Rapid Movement",
+      "layering": "Layering",
+      "structuring": "Structuring",
+      "round_amount": "Round Amount"
+    },
+    "error": "Error during analysis. Please try again."
+  },
+  "cases": {
+    "title": "Case Management",
+    "subtitle": "Manage investigation cases and evidence chains",
+    "loading": "Loading cases...",
+    "new_case": "New Case",
+    "batch_screen": "Batch Screen",
+    "search_placeholder": "Search cases by title, ID, or investigator...",
+    "filters": "Filters",
+    "filters_title": "Advanced Filters",
+    "showing": "Showing",
+    "of": "of",
+    "cases": "cases",
+    "stats": {
+      "total": "Total Cases",
+      "active": "Active",
+      "closed": "Closed",
+      "pending": "Pending"
+    },
+    "filter": {
+      "status": "Status",
+      "investigator": "Investigator",
+      "from_date": "From Date",
+      "to_date": "To Date",
+      "all_statuses": "All Statuses",
+      "all_investigators": "All Investigators",
+      "select_start_date": "Select start date",
+      "select_end_date": "Select end date"
+    },
+    "status": {
+      "active": "Active",
+      "closed": "Closed",
+      "pending": "Pending"
+    },
+    "empty": {
+      "title": "No cases found",
+      "adjust_filters": "Try adjusting your filters or search terms",
+      "create_first": "Create your first case to get started"
+    },
+    "create_case": "Create Case",
+    "create_new": "Create New Case",
+    "success": {
+      "created": "Case Created",
+      "created_message": "Your new case has been created successfully."
+    },
+    "error": {
+      "load": "Failed to load cases",
+      "load_message": "There was a problem loading your cases. Please try again.",
+      "create": "Failed to create case. Please try again."
+    },
+    "no_description": "No description provided",
+    "investigator": "Investigator",
+    "created": "Created",
+    "entities": "Entities",
+    "evidence": "Evidence",
+    "view": "View",
+    "form": {
+      "case_id": "Case ID",
+      "case_id_placeholder": "e.g., CASE-2025-001",
+      "title": "Title",
+      "title_placeholder": "Brief case title",
+      "description": "Description",
+      "description_placeholder": "Detailed description of the investigation",
+      "description_hint": "Optional: Provide additional context about this case",
+      "lead_investigator": "Lead Investigator",
+      "investigator_placeholder": "Name or email",
+      "creating": "Creating...",
+      "create": "Create Case",
+      "cancel": "Cancel",
+      "error": {
+        "case_id_required": "Case ID is required",
+        "title_required": "Title is required",
+        "investigator_required": "Lead investigator is required"
+      }
+    }
+  },
+  "address": {
+    "title": "Address Analysis",
+    "no_address": "No address provided",
+    "balance": "Balance",
+    "transactions": "Transactions",
+    "first_seen": "First Seen",
+    "last_seen": "Last Seen",
+    "labels": "Entity Labels",
+    "recent_tx": "Recent Transactions",
+    "view_explorer": "View on Explorer",
+    "tx_hash": "TX Hash",
+    "from": "From",
+    "to": "To",
+    "value": "Value",
+    "time": "Time",
+    "create_case": "Create Case",
+    "case_created": "Case created successfully",
+    "case_error": "Failed to create case",
+    "open_investigator": "Open Graph"
+  },
+  "trace": {
+    "simple": {
+      "title": "Transaction Tracing Tools",
+      "subtitle": "Track transactions across multiple hops and identify wallet clusters",
+      "taint_analysis": "Taint Analysis",
+      "taint_desc": "Track the flow of funds across the network",
+      "chain": "Chain",
+      "chain_eth": "Ethereum",
+      "chain_btc": "Bitcoin",
+      "chain_sol": "Solana",
+      "address": "Address",
+      "address_ph": "0x...",
+      "depth": "Depth",
+      "depth_ph": "Depth",
+      "threshold": "Threshold",
+      "threshold_ph": "Threshold",
+      "model": "Model",
+      "model_proportional": "Proportional",
+      "model_fifo": "FIFO",
+      "model_haircut": "Haircut",
+      "run": "Run Trace",
+      "tracing": "Tracing...",
+      "success_trace": "Trace completed successfully",
+      "error_trace": "Trace failed",
+      "trace_complete": "Trace Complete",
+      "nodes": "Nodes",
+      "edges": "Edges",
+      "high_risk": "High Risk",
+      "export_success": "Export successful",
+      "export_error": "Export failed",
+      "export_paths": "Export Paths",
+      "export_targets": "Export Targets",
+      "paths_title": "Taint Paths",
+      "targets_title": "Target Addresses",
+      "th_taint": "Taint",
+      "th_path": "Path",
+      "th_target": "Target",
+      "th_risk": "Risk",
+      "th_paths": "Paths",
+      "create_case": "Create Case",
+      "creating_case": "Creating Case...",
+      "case_created": "Case created successfully",
+      "case_error": "Failed to create case",
+      "cluster": {
+        "title": "Wallet Clustering",
+        "desc": "Identify related wallet addresses",
+        "lookup": "Find Cluster",
+        "clustering": "Clustering...",
+        "success_cluster": "Cluster lookup successful",
+        "error_cluster": "Cluster lookup failed",
+        "label": "Cluster ID",
+        "members": "Members",
+        "members_list": "Cluster Members",
+        "member_address": "Member Address",
+        "export_members": "Export Members"
+      }
+    }
+  },
+  "useCases": {
+    "title": "Anwendungsfälle",
+    "subtitle": "Konkrete Workflows für verschiedene Zielgruppen",
+    "items": {
+      "financialInstitutions": {
+        "title": "Finanzinstitute",
+        "desc": "Kundenüberwachung, KYT, Case Management und Berichte"
+      },
+      "lawEnforcement": {
+        "title": "Strafverfolgung",
+        "desc": "Tracing, Evidenzsicherung, gerichtsfeste Reports"
+      },
+      "exchanges": {
+        "title": "Börsen",
+        "desc": "Ein- und Auszahlungs-Überwachung, Sanktions-Checks"
+      },
+      "defiProtocols": {
+        "title": "DeFi Protokolle",
+        "desc": "Exploit-Analyse, Asset-Recovery und Monitoring"
+      },
+      "compliance": {
+        "title": "Compliance",
+        "desc": "Travel Rule, Risk Scoring und Audit-Trails"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "desc": "Token-Flows, Clustering und Netzwerk-Analysen"
+      }
+    }
+  },
+  "tour": {
+    "title": "Geführte Tour",
+    "subtitle": "Lerne die wichtigsten Bereiche in wenigen Schritten kennen",
+    "steps": {
+      "welcome": {
+        "title": "Willkommen",
+        "desc": "Kurze Einführung in Dashboard, Tracing und Cases"
+      },
+      "navigation": {
+        "title": "Navigation",
+        "desc": "Linke Sidebar für Forensik-Bereiche und Filter"
+      },
+      "createCase": {
+        "title": "Case erstellen",
+        "desc": "Neue Untersuchung anlegen und Team zuweisen"
+      },
+      "filters": {
+        "title": "Filter & Suche",
+        "desc": "Schnell die relevanten Cases und Transaktionen finden"
+      },
+      "investigator": {
+        "title": "Investigator Graph",
+        "desc": "Adressen, Cluster und Pfade visuell analysieren"
+      },
+      "reports": {
+        "title": "Reports",
+        "desc": "Gerichtsfeste Berichte mit Evidenz generieren"
+      },
+      "finish": {
+        "title": "Fertig",
+        "desc": "Du bist startklar – viel Erfolg bei den Analysen!"
+      }
+    },
+    "buttons": {
+      "next": "Weiter",
+      "prev": "Zurück",
+      "skip": "Überspringen",
+      "done": "Fertig"
+    }
+  }
+}

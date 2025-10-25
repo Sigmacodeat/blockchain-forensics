@@ -1,0 +1,573 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: blockchain-forensics
+  labels:
+    name: blockchain-forensics
+
+---
+# ConfigMap for application configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: forensics-config
+  namespace: blockchain-forensics
+data:
+  # Backend Configuration
+  DEBUG: "false"
+  LOG_LEVEL: "INFO"
+  BACKEND_PORT: "8000"
+  CORS_ORIGINS: "https://console.sigmacode.io,https://docs.sigmacode.io"
+  DISABLE_SECURITY: "false"
+  TRUSTED_HOSTS: "api.sigmacode.io,console.sigmacode.io"
+  API_RATE_LIMIT_FREE: "10"
+  API_RATE_LIMIT_PRO: "50"
+  API_RATE_LIMIT_ENTERPRISE: "200"
+  # DSR/Privacy Export Configuration (non-secret)
+  DSR_EXPORT_DIR: "/var/dsr-exports"
+  DSR_S3_PREFIX: "exports/"
+  DSR_S3_BUCKET: ""  # optional: if set, S3 upload is used
+  AWS_REGION: "eu-central-1"
+  DSR_MAX_ATTEMPTS: "5"
+  DSR_DONE_TTL: "604800"
+  DSR_S3_PRESIGN_EXPIRES: "604800"
+
+  # Database Configuration
+  NEO4J_URI: "bolt://neo4j-service:7687"
+  POSTGRES_URL: "postgresql://forensics:forensics@postgres-service:5432/blockchain_forensics"
+  REDIS_URL: "redis://redis-service:6379/0"
+
+  # External APIs
+  # Moved to secrets: ETHEREUM_RPC_URL, ETHERSCAN_API_KEY, OPENAI_API_KEY
+
+  # Kafka Configuration
+  KAFKA_BOOTSTRAP_SERVERS: "kafka-service:9092"
+  ENABLE_KAFKA_STREAMING: "true"
+
+---
+# Backend Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forensics-backend
+  namespace: blockchain-forensics
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: forensics-backend
+  template:
+    metadata:
+      labels:
+        app: forensics-backend
+    spec:
+      containers:
+      - name: backend
+        image: your-registry/forensics-backend:latest
+        ports:
+        - containerPort: 8000
+          name: http
+        envFrom:
+        - configMapRef:
+            name: forensics-config
+        env:
+        - name: SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: secret-key
+        - name: ETHEREUM_RPC_URL
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: ethereum-rpc-url
+        - name: ETHERSCAN_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: etherscan-api-key
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: openai-api-key
+        - name: STRIPE_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: stripe-secret
+        - name: STRIPE_WEBHOOK_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: stripe-webhook-secret
+        - name: SOLANA_RPC_URL
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: solana-rpc-url
+        - name: NEO4J_USER
+          value: "neo4j"
+        - name: NEO4J_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: neo4j-password
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: postgres-password
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: redis-password
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: aws-access-key-id
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: aws-secret-access-key
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: dsr-exports
+          mountPath: /var/dsr-exports
+      volumes:
+      - name: dsr-exports
+        emptyDir: {}
+
+---
+# Frontend Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forensics-frontend
+  namespace: blockchain-forensics
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: forensics-frontend
+  template:
+    metadata:
+      labels:
+        app: forensics-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: your-registry/forensics-frontend:latest
+        ports:
+        - containerPort: 80
+          name: http
+        env:
+        - name: VITE_API_URL
+          value: "https://api.sigmacode.io"
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+
+---
+# Neo4j StatefulSet
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: forensics-neo4j
+  namespace: blockchain-forensics
+spec:
+  serviceName: neo4j-service
+  replicas: 1
+  selector:
+    matchLabels:
+      app: forensics-neo4j
+  template:
+    metadata:
+      labels:
+        app: forensics-neo4j
+    spec:
+      containers:
+      - name: neo4j
+        image: neo4j:5.11-enterprise
+        ports:
+        - containerPort: 7474
+          name: http
+        - containerPort: 7687
+          name: bolt
+        env:
+        - name: NEO4J_AUTH
+          value: "neo4j/forensics_password"
+        - name: NEO4J_dbms_memory_heap_initialSize
+          value: "2G"
+        - name: NEO4J_dbms_memory_heap_maxSize
+          value: "4G"
+        volumeMounts:
+        - name: neo4j-data
+          mountPath: /data
+        - name: neo4j-logs
+          mountPath: /logs
+      volumes:
+      - name: neo4j-data
+        persistentVolumeClaim:
+          claimName: neo4j-pvc
+      - name: neo4j-logs
+        persistentVolumeClaim:
+          claimName: neo4j-logs-pvc
+
+---
+# PostgreSQL StatefulSet
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: forensics-postgres
+  namespace: blockchain-forensics
+spec:
+  serviceName: postgres-service
+  replicas: 1
+  selector:
+    matchLabels:
+      app: forensics-postgres
+  template:
+    metadata:
+      labels:
+        app: forensics-postgres
+    spec:
+      containers:
+      - name: postgres
+        image: timescale/timescaledb:latest-pg15
+        ports:
+        - containerPort: 5432
+          name: postgres
+        env:
+        - name: POSTGRES_DB
+          value: "blockchain_forensics"
+        - name: POSTGRES_USER
+          value: "forensics"
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: postgres-password
+        volumeMounts:
+        - name: postgres-data
+          mountPath: /var/lib/postgresql/data
+      volumes:
+      - name: postgres-data
+        persistentVolumeClaim:
+          claimName: postgres-pvc
+
+---
+# Redis Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forensics-redis
+  namespace: blockchain-forensics
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: forensics-redis
+  template:
+    metadata:
+      labels:
+        app: forensics-redis
+    spec:
+      containers:
+      - name: redis
+        image: redis:7-alpine
+        ports:
+        - containerPort: 6379
+          name: redis
+        command: ["redis-server", "--appendonly", "yes", "--requirepass", "$(REDIS_PASSWORD)"]
+        env:
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: forensics-secrets
+              key: redis-password
+        volumeMounts:
+        - name: redis-data
+          mountPath: /data
+      volumes:
+      - name: redis-data
+        persistentVolumeClaim:
+          claimName: redis-pvc
+
+---
+# Services
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: blockchain-forensics
+spec:
+  selector:
+    app: forensics-backend
+  ports:
+  - port: 80
+    targetPort: 8000
+    name: http
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+  namespace: blockchain-forensics
+spec:
+  selector:
+    app: forensics-frontend
+  ports:
+  - port: 80
+    targetPort: 80
+    name: http
+  type: LoadBalancer
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: neo4j-service
+  namespace: blockchain-forensics
+spec:
+  selector:
+    app: forensics-neo4j
+  ports:
+  - port: 7474
+    targetPort: 7474
+    name: http
+  - port: 7687
+    targetPort: 7687
+    name: bolt
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-service
+  namespace: blockchain-forensics
+spec:
+  selector:
+    app: forensics-postgres
+  ports:
+  - port: 5432
+    targetPort: 5432
+    name: postgres
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+  namespace: blockchain-forensics
+spec:
+  selector:
+    app: forensics-redis
+  ports:
+  - port: 6379
+    targetPort: 6379
+    name: redis
+  type: ClusterIP
+
+---
+# Persistent Volume Claims
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: neo4j-pvc
+  namespace: blockchain-forensics
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: neo4j-logs-pvc
+  namespace: blockchain-forensics
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-pvc
+  namespace: blockchain-forensics
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: redis-pvc
+  namespace: blockchain-forensics
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: forensics-secrets
+  namespace: blockchain-forensics
+type: Opaque
+data:
+  # Base64 encoded secrets - replace with actual values
+  neo4j-password: Zm9yZW5zaWNzX3Bhc3N3b3JkX2NoYW5nZV9tZQ==
+  postgres-password: Zm9yZW5zaWNzX3Bhc3M=
+  redis-password: Zm9yZW5zaWNzX3JlZGlzX3Bhc3M=
+  jwt-secret: eW91ci1qd3Qtc2VjcmV0LWtleQ==
+  secret-key: eW91ci1hcHAta2V5LXNldC1tZS1pbi1zZWNyZXRz
+  ethereum-rpc-url: aHR0cHM6Ly9tYWlubmV0LmluZnVyYS5pby92My95b3VyX2luZnVyYV9wcm9qZWN0X2tleQ==
+  etherscan-api-key: WU9VUl9FVEhFUlNDQU5fQVBJX0tFWQ==
+  openai-api-key: c2steW91cl9vcGVuYWlfYXBpX2tleQ==
+  stripe-secret: c2tfd2hhdGV2ZXJfYXBwZW5fc2VjcmV0
+  stripe-webhook-secret: d2hzZWNfZXhhbXBsZV9oYXNo
+  solana-rpc-url: aHR0cHM6Ly9hcGkubWFpbm5ldC1iZXRhLnNvbGFuYS5jb20=
+  aws-access-key-id: QUtJQUtJQUtJQUtJQUtJ
+  aws-secret-access-key: U0VDUkVUU0VDUkVUU0VDUkVUU0VDUkVU
+
+---
+# Ingress for external access
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: forensics-ingress
+  namespace: blockchain-forensics
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - your-domain.com
+    secretName: forensics-tls
+  rules:
+  - host: your-domain.com
+    http:
+      paths:
+      - path: /api/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: backend-service
+            port:
+              number: 80
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: frontend-service
+            port:
+              number: 80
+
+---
+# Horizontal Pod Autoscaler
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: forensics-backend-hpa
+  namespace: blockchain-forensics
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: forensics-backend
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+
+---
+# Network Policy for security
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: forensics-network-policy
+  namespace: blockchain-forensics
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: blockchain-forensics
+    - podSelector:
+        matchLabels:
+          app: forensics-frontend
+    ports:
+    - protocol: TCP
+      port: 8000
+  egress:
+  - to: []
+    ports:
+    - protocol: TCP
+      port: 53  # DNS
+    - protocol: UDP
+      port: 53  # DNS
+    - protocol: TCP
+      port: 80  # HTTP for external APIs
+    - protocol: TCP
+      port: 443  # HTTPS for external APIs

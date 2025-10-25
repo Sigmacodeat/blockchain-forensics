@@ -1,0 +1,58 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: forensics-api-slo
+  namespace: blockchain-forensics
+spec:
+  groups:
+  - name: api_slo
+    interval: 30s
+    rules:
+    - record: job:http_request_errors:rate5m
+      expr: sum(rate(http_requests_total{status=~"5.."}[5m])) by (job)
+    - record: job:http_request_total:rate5m
+      expr: sum(rate(http_requests_total[5m])) by (job)
+    - record: job:http_error_rate_percent:rate5m
+      expr: 100 * (job:http_request_errors:rate5m / clamp_min(job:http_request_total:rate5m, 1))
+    - record: job:http_request_duration_seconds:p95
+      expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, job))
+
+    - alert: APIHighErrorRate
+      expr: job:http_error_rate_percent:rate5m > 1
+      for: 10m
+      labels:
+        severity: warning
+        team: platform
+      annotations:
+        summary: "API hohe Fehlerquote (>1% in 10m)"
+        description: "{{ $labels.job }} error rate ist {{ $value | printf \"%.2f\" }}% in den letzten 10m"
+
+    - alert: APISevereErrorRate
+      expr: job:http_error_rate_percent:rate5m > 5
+      for: 5m
+      labels:
+        severity: critical
+        team: platform
+      annotations:
+        summary: "API kritische Fehlerquote (>5% in 5m)"
+        description: "{{ $labels.job }} error rate ist {{ $value | printf \"%.2f\" }}% in den letzten 5m"
+
+    - alert: APILatencyP95High
+      expr: job:http_request_duration_seconds:p95 > 0.5
+      for: 10m
+      labels:
+        severity: warning
+        team: platform
+      annotations:
+        summary: "API P95 Latenz hoch (>500ms)"
+        description: "{{ $labels.job }} P95 ist {{ $value | printf \"%.3f\" }}s in den letzten 10m"
+
+    - alert: APILatencyP95Severe
+      expr: job:http_request_duration_seconds:p95 > 1
+      for: 5m
+      labels:
+        severity: critical
+        team: platform
+      annotations:
+        summary: "API P95 Latenz kritisch (>1s)"
+        description: "{{ $labels.job }} P95 ist {{ $value | printf \"%.3f\" }}s in den letzten 5m"

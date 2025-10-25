@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Demo rezervasyonu",
+      "pricing": "Fiyatları görüntüle",
+      "subtitle": "Ücretsiz bir demo ile hemen başlayın veya ekibimizle iletişime geçin",
+      "title": "Hemen başlayın"
+    },
+    "header": {
+      "badge": "Hakkında",
+      "subtitle": "Blockchain istihbaratı için lider kurumsal platformu inşa ediyoruz; kolluk kuvvetleri, VASP'ler ve finans kurumlarını kripto suçlara karşı koruyoruz.",
+      "title": "Blockchain adli analizinin geleceği"
+    },
+    "mission": {
+      "desc": "Blockchain işlemlerini şeffaf ve izlenebilir hale getiriyoruz. Amacımız kripto suçlarla mücadele etmek ve yasal piyasa katılımcılarına uyumluluk gereksinimlerini karşılayacak ve riskleri en aza indirecek araçlar sağlamak.",
+      "title": "Misyonumuz"
+    },
+    "seo": {
+      "description": "Blockchain adli analizi için lider kurumsal platformu inşa ediyoruz: uyumluluk, soruşturmalar ve dünya çapında istihbarat.",
+      "title": "Hakkında | SIGMACODE Blockchain Adli Analiz"
+    },
+    "stats": {
+      "badge": "Rakamlarla",
+      "blockchains": "Blockchain'ler",
+      "enterprise_customers": "Kurumsal müşteriler",
+      "recovered_assets": "Kurtarılan varlıklar",
+      "sla_guaranteed": "SLA ile garanti",
+      "supported": "desteklenen",
+      "supported_by_tech": "teknolojimizle desteklenmektedir",
+      "title": "Etkimiz",
+      "uptime": "Çalışma süresi",
+      "worldwide": "dünya çapında"
+    },
+    "team": {
+      "badge": "Uzmanlık",
+      "compliance": {
+        "desc": "AML/CFT ve uluslararası yaptırımlar için düzenleyici uzmanlar",
+        "h1": "Eski düzenleyiciler",
+        "h2": "AML uzmanları",
+        "h3": "Hukuki danışmanlar",
+        "title": "Uyumluluk ve hukuk"
+      },
+      "forensics": {
+        "desc": "Kripto suç soruşturmalarında yılların deneyimine sahip eski kolluk kuvvetleri",
+        "h1": "FBI/BKA mezunları",
+        "h2": "Darknet operasyonları",
+        "h3": "Varlık kurtarma",
+        "title": "Adli uzmanlar"
+      },
+      "subtitle": "Blockchain adli analizi, kolluk kuvvetleri, fintech ve makine öğrenimi alanlarından uzmanlar",
+      "tech": {
+        "desc": "Blockchain uzmanlığına sahip önde gelen teknoloji şirketlerinden mühendisler",
+        "h1": "Eski FAANG",
+        "h2": "Blockchain çekirdek geliştiriciler",
+        "h3": "Güvenlik uzmanları",
+        "title": "Teknoloji uzmanları"
+      },
+      "title": "Ekibimiz"
+    },
+    "trust": {
+      "badge": "Güven",
+      "ce": {
+        "desc": "AML ve işlem izleme için üst 10 borsalar",
+        "title": "Kripto borsaları"
+      },
+      "fi": {
+        "desc": "Kripto para birimine maruz kalan birinci seviye bankalar",
+        "title": "Bankalar ve fintech'ler"
+      },
+      "le": {
+        "desc": "FBI, Europol, ulusal kolluk kuvvetleri ajansları",
+        "title": "Kolluk kuvvetleri"
+      },
+      "reg": {
+        "desc": "Piyasa gözetimi için finansal düzenleyiciler",
+        "title": "Düzenleyiciler"
+      },
+      "subtitle": "Dünya çapındaki lider kuruluşlar teknolojimize güveniyor",
+      "title": "Bize kimler güveniyor"
+    },
+    "values": {
+      "badge": "Değerlerimiz",
+      "compliance": {
+        "desc": "GDPR, eIDAS, OFAC uyumlu. Düzenleyici gereksinimleri anlıyoruz ve bunları entegre ediyoruz.",
+        "title": "Önce uyumluluk"
+      },
+      "customer": {
+        "desc": "Kolluk kuvvetleri ve endüstri ile yakın iş birliği. İstekleriniz bizim yol haritamız.",
+        "title": "Müşteri odaklılık"
+      },
+      "global": {
+        "desc": "100+ blockchain, çok dilli destek ve uluslararası yaptırım listeleri kapsanmıştır.",
+        "title": "Küresel erişim"
+      },
+      "innovation": {
+        "desc": "En yeni teknoloji: AI/ML, grafik analitiği ve gerçek zamanlı işlem için en iyi sonuçlar.",
+        "title": "İnovasyon"
+      },
+      "team": {
+        "desc": "Adli uzmanlar, geliştiriciler ve uyumluluk uzmanlarından oluşan disiplinler arası bir ekip.",
+        "title": "Takım çalışması"
+      },
+      "title": "Bizi motive eden",
+      "trust": {
+        "desc": "Kurumsal düzeyde güvenlik SOC2/ISO27001 sertifikaları ile. Verileriniz bizimle güvende.",
+        "title": "Güven ve güvenlik"
+      }
+    },
+    "vision": {
+      "desc": "Blockchain teknolojisinin tam potansiyeline ulaşabileceği bir dünya—şeffaf, güvenli ve uyumlu. Dijital varlıkların ana akım haline geldiği bir gelecek için altyapıyı sağlıyoruz, suçları desteklemeden.",
+      "title": "Vizyonumuz"
+    }
+  },
+  "accessibility": {
+    "activate": "Etkinleştir",
+    "close_dialog": "Diyalogu kapat",
+    "font_size": "Yazı Boyutu",
+    "font_size_large": "Büyük yazı boyutu",
+    "font_size_normal": "Normal yazı boyutu",
+    "font_size_xlarge": "Ekstra büyük yazı boyutu",
+    "high_contrast_detected": "Yüksek kontrast algılandı",
+    "keyboard_shortcuts": "Klavye kısayolları",
+    "navigate_backward": "Geri navigasyon",
+    "navigate_forward": "İleri navigasyon",
+    "no_system_preferences": "Özel sistem tercihleri algılanmadı",
+    "reduced_motion_detected": "Hareket azaltma algılandı",
+    "settings": "Erişilebilirlik Ayarları",
+    "skip_to_content": "İçeriğe geç",
+    "system_preferences": "Sistem Tercihleri"
+  },
+  "address_analysis": {
+    "title": "Adres Analizi",
+    "wip_desc": "Adres analizi açıklaması geliştirme aşamasında",
+    "wip_title": "Adres analizi geliştirme aşamasında"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI Ajanları",
+      "app_name": "Uygulama Adı",
+      "cross_chain": "Çapraz Zincir",
+      "max_trace_depth": "Maksimum İzleme Derinliği",
+      "ml_clustering": "ML Kümeleme",
+      "title": "Yapılandırma",
+      "version": "Sürüm"
+    },
+    "disabled": "✗ Devre dışı",
+    "enabled": "✓ Etkin",
+    "error": "Hata",
+    "health": {
+      "connected": "✓ Bağlı",
+      "disconnected": "✗ Bağlantı kesildi",
+      "error": "Sağlık durumu yüklenemedi",
+      "title": "Veritabanı Sağlığı"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Ethereum RPC'den işlemler alınır",
+        "ingesting": "Alınıyor...",
+        "placeholder": "0x...",
+        "start": "Alımı Başlat",
+        "success": "✓ Alım arka planda başlatıldı",
+        "title": "Adres Verisi Alımı"
+      },
+      "block": {
+        "help": "Bir bloktan tüm işlemler ithal edilir",
+        "ingesting": "Alınıyor...",
+        "placeholder": "Blok numarası",
+        "start": "Blok İthalatını Başlat",
+        "success": "✓ Blok alımı başlatıldı",
+        "title": "Blok Verisi Alımı"
+      }
+    },
+    "stats": {
+      "db_size": "Veritabanı Boyutu",
+      "title": "Sistem İstatistikleri",
+      "total_addresses": "Toplam Adresler",
+      "total_traces": "Toplam İzlemeler",
+      "total_transactions": "Toplam İşlemler"
+    },
+    "subtitle": "İzleme, Yapılandırma ve Veri Yönetimi",
+    "tabs": {
+      "config": "Yapılandırma",
+      "ingestion": "Veri Alımı",
+      "overview": "Genel Bakış",
+      "users": "Kullanıcı Yönetimi"
+    },
+    "title": "Sistem Yönetimi"
+  },
+  "agent": {
+    "cancel": "İptal",
+    "error": "Ajan Hatası",
+    "error_unknown": "Bilinmeyen ajan hatası",
+    "examples": {
+      "1": "Örnek 1",
+      "2": "Örnek 2",
+      "3": "Örnek 3",
+      "title": "Ajan Örnekleri"
+    },
+    "instructions": "Ajan Talimatları",
+    "loading": "Ajan yükleniyor...",
+    "placeholder": "Ajan yer tutucu",
+    "retry": "Yeniden dene",
+    "send": "Gönder",
+    "subtitle": "Ajan alt başlığı",
+    "title": "Ajan başlığı",
+    "welcome": "Ajana hoş geldiniz"
+  },
+  "auth": {
+    "fields": {
+      "email": "E-posta",
+      "organization_opt": "Kuruluş (isteğe bağlı)",
+      "password": "Şifre",
+      "password_confirm": "Şifreyi onayla",
+      "username": "Kullanıcı adı"
+    },
+    "forgot": {
+      "back_to_login": "Girişe geri dön",
+      "dev_note": "E-posta hizmeti yapılandırılmadığından, sıfırlama bağlantısını sunucu günlüklerinden kontrol edin.",
+      "dev_note_label": "Not (geliştirme modu):",
+      "error": "Gönderme başarısız",
+      "info_sent": "Bu e-posta ile bir hesap varsa, sıfırlama bağlantısı gönderildi.",
+      "sent": "Sıfırlama bağlantısı gönderildi!",
+      "submit": "Sıfırlama bağlantısı gönder",
+      "submitting": "Gönderiliyor...",
+      "subtitle": "Sorun değil! E-postanızı girin ve size bir sıfırlama bağlantısı gönderelim.",
+      "title": "Şifremi unuttum?",
+      "title_sent": "E-posta gönderildi!"
+    },
+    "login": {
+      "failed": "Giriş başarısız",
+      "fill_all_fields": "Lütfen tüm alanları doldurun",
+      "forgot_password": "Şifremi unuttum?",
+      "google": "Google ile giriş yap",
+      "google_retry": "Google ile tekrar dene",
+      "no_account": "Henüz hesabınız yok mu?",
+      "oauth_failed": "OAuth başarısız. Lütfen tekrar deneyin.",
+      "oauth_processing": "OAuth girişi işleniyor…",
+      "or": "veya",
+      "register_now": "Şimdi kaydol",
+      "remember_me": "Beni hatırla",
+      "submit": "Giriş yap",
+      "submitting": "Giriş yapılıyor...",
+      "subtitle": "Devam etmek için giriş yapın"
+    },
+    "placeholders": {
+      "email": "analist@ornek.com",
+      "organization": "FBI, Chainalysis, vb.",
+      "password": "••••••••",
+      "username": "john_analist"
+    },
+    "register": {
+      "accept": "Kabul ediyorum",
+      "already": "Zaten kayıtlı mısınız?",
+      "and": "ve",
+      "failed": "Kayıt başarısız",
+      "fill_all_fields": "Lütfen tüm gerekli alanları doldurun",
+      "google": "Google ile kaydol",
+      "login_now": "Şimdi giriş yap",
+      "password_hint": "En az 8 karakter",
+      "password_too_short": "Şifre en az 8 karakter olmalı",
+      "passwords_no_match": "Şifreler eşleşmiyor",
+      "submit": "Kaydol",
+      "submitting": "Kaydediliyor...",
+      "subtitle": "Adli analizinize başlayın",
+      "title": "Hesap oluştur"
+    }
+  },
+  "common": {
+    "access_denied": "Erişim engellendi (sadece admin)",
+    "account": "Hesap",
+    "back": "Geri",
+    "close": "Kapat",
+    "info": "Bilgi",
+    "language": "Dil",
+    "loading": "Yükleniyor...",
+    "next": "İleri",
+    "page": "Sayfa",
+    "prev": "Önceki",
+    "refresh": "Yenile",
+    "search": "Ara",
+    "success": "Başarılı",
+    "theme": "Tema",
+    "view": "Görüntüle",
+    "wip": {
+      "title": "Çok yakında",
+      "desc": "Bu özellik hâlâ geliştirme aşamasında.",
+      "cta": "Daha fazlası"
+    },
+    "start_free": "Ücretsiz Başla",
+    "error": "Hata",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "create": "Oluştur",
+    "finish": "Bitir",
+    "open": "Aç",
+    "yes": "Evet",
+    "no": "Hayır",
+    "confirm": "Onayla",
+    "welcome": "Hoş geldiniz",
+    "dashboard": "Panel",
+    "settings": "Ayarlar",
+    "profile": "Profil",
+    "logout": "Çıkış",
+    "login": "Giriş",
+    "register": "Kayıt Ol",
+    "email": "E-posta",
+    "password": "Şifre",
+    "username": "Kullanıcı adı",
+    "documents": "Belgeler",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Minimum Şiddet",
+      "refresh": "Yenile",
+      "title": "Kontrol",
+      "window": "Pencere",
+      "window_15m": "15 dakika",
+      "window_1h": "1 saat",
+      "window_24h": "24 saat",
+      "window_2h": "2 saat",
+      "window_30m": "30 dakika",
+      "window_5m": "5 dakika"
+    },
+    "header": {
+      "subtitle": "Korelasyon alt başlığı",
+      "title": "Korelasyon başlığı"
+    },
+    "overview": {
+      "active_rules": "Aktif Kurallar",
+      "analyzed": "Analiz Edildi",
+      "empty": "Boş",
+      "found": "Bulundu",
+      "loading": "Yükleniyor...",
+      "min_sev": "Minimum Şiddet",
+      "rate": "Oran",
+      "title": "Genel Bakış",
+      "window": "Pencere"
+    },
+    "rules": {
+      "empty": "Hiç kural yok",
+      "footer": "Kurallar alt bilgisi",
+      "loading": "Kurallar yükleniyor...",
+      "min": "Minimum",
+      "minutes": "Dakikalar",
+      "required_patterns": "Gerekli Desenler",
+      "title": "Kurallar",
+      "window": "Pencere"
+    },
+    "sev": {
+      "critical": "Kritik",
+      "high": "Yüksek",
+      "low": "Düşük",
+      "medium": "Orta"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Nedene Göre",
+        "by_type": "Türe Göre",
+        "title": "Baskılama Ayrımı"
+      },
+      "rate": "Baskılama Oranı",
+      "title": "Baskılama",
+      "top_entity": "En Üst Varlık",
+      "total": "Toplam"
+    },
+    "test": {
+      "add_alert": "Uyarı Ekle",
+      "alerts_label": "Uyarı Etiketi",
+      "match": "Eşleşme",
+      "no_alerts": "Hiç uyarı yok",
+      "no_match": "Eşleşme yok",
+      "pick_rule": "Kural Seç",
+      "pick_rule_ph": "Kural seçimi yer tutucu",
+      "result": "Sonuç",
+      "run": "Çalıştır",
+      "testing": "Test ediliyor...",
+      "title": "Korelasyon Testi"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Kopyala (Kaynak)",
+      "copy_mint": "Kopyala (Mint)",
+      "export_csv": "CSV Dışa Aktar",
+      "export_csv_page": "Sayfa CSV Dışa Aktar",
+      "fetch": "Getir"
+    },
+    "bitcoin": {
+      "block_title": "Blok Başlığı",
+      "compute": "Hesapla",
+      "decoded": "Çözümlendi",
+      "edges_title": "Kenar Başlığı",
+      "height_ph": "Yükseklik yer tutucu",
+      "ingest_edges": "Kenar Alımı",
+      "method_heuristic": "Heuristik Yöntem",
+      "method_proportional": "Oransal Yöntem",
+      "normalized": "Normalleştirildi",
+      "tx_title": "İşlem Başlığı",
+      "txid_ph": "İşlem kimliği yer tutucu"
+    },
+    "compliance": {
+      "add_watch": "İzlemeye Ekle",
+      "address_ph": "Adres yer tutucu",
+      "chain_ph": "Zincir yer tutucu",
+      "entries": "Girdiler",
+      "error": "Hata",
+      "filter_address_ph": "Adres filtresi yer tutucu",
+      "filter_chain_ph": "Zincir filtresi yer tutucu",
+      "list_watch": "İzleme Listesi",
+      "screen": "Ekran",
+      "title": "Uyumluluk",
+      "watchlist": "İzleme Listesi"
+    },
+    "ethereum": {
+      "canonical": "Kanonik",
+      "copy_hash": "Hash Kopyala",
+      "decoded": "Çözümlendi",
+      "error": "Hata",
+      "open_etherscan": "Etherscan'ı Aç",
+      "tx_hash_ph": "İşlem hash'i yer tutucu",
+      "tx_title": "İşlem Başlığı"
+    },
+    "ingest": {
+      "canonical_notice": "Kanonik alım notu",
+      "edges_notice": "Kenar alım notu",
+      "loading": "Yükleniyor..."
+    },
+    "labels": {
+      "add": "Ekle",
+      "address_ph": "Adres yer tutucu",
+      "category_ph": "Kategori yer tutucu",
+      "chain_ph": "Zincir yer tutucu",
+      "error": "Hata",
+      "label_ph": "Etiket yer tutucu",
+      "lookup": "Ara",
+      "title": "Etiketler"
+    },
+    "monitoring": {
+      "fetch": "Getir",
+      "key_counters": "Anahtar Sayaçlar",
+      "title": "İzleme"
+    },
+    "rpc_unavailable": "RPC mevcut değil",
+    "solana": {
+      "canonical_error": "Kanonik alım hatası",
+      "canonical_title": "Kanonik Alım Başlığı",
+      "error": "Hata",
+      "ingest_canonical": "Kanonik Alımı Yap",
+      "signature_ph": "İmza yer tutucu",
+      "title": "Solana Başlığı",
+      "transfers": "Transferler"
+    },
+    "table": {
+      "actions": "Eylemler",
+      "address": "Adres",
+      "amount_ui": "Miktar UI",
+      "chain": "Zincir",
+      "created": "Oluşturuldu",
+      "decimals": "Ondalıklar",
+      "fee": "Ücret",
+      "from": "Kaynak",
+      "from_vout": "Kaynak Vout",
+      "method": "Yöntem",
+      "mint": "Mint",
+      "reason": "Neden",
+      "to": "Hedef",
+      "to_vout": "Hedef Vout",
+      "value_btc": "Değer BTC"
+    },
+    "totals": {
+      "page_sum": "Sayfa Toplamı",
+      "page_sum_btc": "Sayfa Toplamı BTC",
+      "total_amount": "Toplam Miktar",
+      "total_value_btc": "Toplam Değer BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Eylemler",
+    "active": "Aktif",
+    "administration": "Yönetim",
+    "alert_aging": "Uyarı Yaşlanması",
+    "alert_engine": "Uyarı Motoru",
+    "alert_monitoring": "Uyarı İzleme",
+    "alert_overview": "Uyarı Genel Bakışı",
+    "analyst_throughput": "Analist Verimlilik",
+    "audit_kpis": "Denetim KPI'ları",
+    "backlog": "Bekleyen İşler",
+    "bucket_placeholder": "24s, 3g, 7g, >7g",
+    "buckets": "Gruplar",
+    "case_management": "Vaka Yönetimi",
+    "connected": "Bağlı",
+    "correlation_analysis": "Korelasyon Analizi",
+    "database": "Veritabanı",
+    "database_response": "Veritabanı Yanıtı",
+    "days": "Günler",
+    "disconnected": "Bağlantısı Kesildi",
+    "failed_actions": "Başarısız Eylemler",
+    "false_positive_rate": "Yanlış Pozitif Oranı",
+    "fp": "YP",
+    "graph_db": "Karmaşık ilişki analizi ve ağ haritalama için Neo4j grafik veritabanı",
+    "graph_explorer": "Grafik Gezgini",
+    "healthy": "Sağlıklı",
+    "inactive": "Etkin Değil",
+    "issues": "Sorunlar",
+    "last_24h": "Son 24 Saat",
+    "last_update": "Son Güncelleme",
+    "mttr": "MTTR",
+    "open_alerts": "Açık Uyarılar",
+    "open_cases": "Açık Vakalar",
+    "performance": "Performans",
+    "priority_distribution": "Öncelik Dağılımı",
+    "quick_access": "Hızlı Erişim",
+    "recent_alerts": "Son Uyarılar",
+    "response_time": "Yanıt Süresi",
+    "rule_effectiveness": "Kural Etkinliği",
+    "sanctions_hits": "Yaptırım Vuruşları",
+    "service_status": "Hizmet Durumu",
+    "severity_breakdown": "Şiddet Ayrımı",
+    "sla_breach_rate": "SLA İhlal Oranı",
+    "sla_hours": "SLA (saat)",
+    "status_breakdown": "Durum Ayrımı",
+    "success_rate": "Başarı Oranı",
+    "suppression_rate": "Baskılama Oranı",
+    "system_details": "Sistem Detayları",
+    "system_load": "Sistem Yükü",
+    "system_overview": "Sistem Genel Bakışı",
+    "system_status": "Tüm sistem bileşenlerinin mevcut durumunu gösterir. Yeşil = Sağlıklı, Kırmızı = Sorunlar algılandı",
+    "title": "SIGMACODE Blockchain Adli Analiz Panosu",
+    "total_alerts": "Toplam Uyarılar",
+    "total_cases": "Toplam Vakalar",
+    "total_logs": "Toplam Günlükler",
+    "transaction_tracing": "İşlem İzleme",
+    "uptime": "Çalışma Süresi",
+    "welcome": "Tekrar hoş geldiniz",
+    "overview": "Genel bakış",
+    "recent_activity": "Son aktivite",
+    "quick_actions": "Hızlı işlemler",
+    "statistics": "İstatistikler",
+    "notifications": "Bildirimler",
+    "hero": {
+      "welcome": "Tekrar hoş geldiniz",
+      "subtitle": "Bugün soruşturmalarınızda neler oluyor."
+    },
+    "quickActions": {
+      "title": "Hızlı İşlemler",
+      "newTrace": "Yeni İzleme",
+      "newCase": "Yeni Vaka",
+      "riskCheck": "Risk Kontrolü",
+      "aiAgent": "AI Ajan"
+    },
+    "stats": {
+      "cases": "Aktif vakalar",
+      "traces": "Bugünkü izlemeler",
+      "alerts": "Uyarılar",
+      "uptime": "Çalışma süresi"
+    },
+    "live_alerts": "Canlı uyarılar",
+    "all_alerts": "Tüm uyarılar",
+    "trend_analysis": "Trend analizi",
+    "detailed_analytics": "Detaylı analiz",
+    "analytics": "Analitik"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "LangChain ve GPT-4 entegrasyonlu otonom ajanlar",
+        "title": "AI Ajanları"
+      },
+      "badge": "AI ve Makine Öğrenimi",
+      "desc": "Anomali algılama, risk puanlama ve 24/7 soruşturmalar için otonom AI ajanlarıyla makine öğrenimi modelleri.",
+      "pattern": {
+        "desc": "Dolandırıcılık desenlerinin ve davranış analizinin tespiti",
+        "title": "Desen Tanıma"
+      },
+      "risk": {
+        "desc": "Adresler ve işlemler için ML tabanlı risk değerlendirmesi",
+        "title": "Risk Puanlama"
+      },
+      "smart_contract": {
+        "desc": "Bytecode benzerliği ve zafiyet tespiti",
+        "title": "Akıllı Sözleşme Analizi"
+      },
+      "title": "AI Destekli Analiz"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "Olağandışı işlem desenlerinin ML tabanlı tespiti",
+        "title": "Anomali Tespiti"
+      },
+      "badge": "Gerçek Zamanlı İzleme",
+      "custom_rules": {
+        "desc": "Rule DSL ve politika motoru ile özel uyarı kuralları",
+        "title": "Özel Kurallar"
+      },
+      "desc": "Makine öğrenimi ile geliştirilmiş 15+ yapılandırılabilir uyarı kuralı. Yaptırımlar, karıştırma, yüksek değerli transferler ve anormallikler hakkında bildirim alın.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io ve diğer karıştırma hizmetleri",
+        "title": "Karıştırma Tespiti"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK yaptırım listeleri ile günlük güncellemeler",
+        "title": "Yaptırım Tarama"
+      },
+      "title": "Akıllı uyarı motoru"
+    },
+    "case": {
+      "badge": "Soruşturma İş Akışı",
+      "desc": "Delil zinciri, eIDAS imzaları ve mahkemede kabul edilebilir raporlarla uçtan uca soruşturma yönetimi.",
+      "eidas": {
+        "desc": "AB standartlarına göre nitelikli elektronik imzalar",
+        "title": "eIDAS İmzaları"
+      },
+      "evidence": {
+        "desc": "Mahkemede kabul edilebilir deliller için tam delil zinciri",
+        "title": "Delil Zinciri"
+      },
+      "export": {
+        "desc": "Zaman damgası ve denetim izi ile PDF/Excel dışa aktarma",
+        "title": "Dışa Aktarma ve Raporlar"
+      },
+      "title": "Vaka Yönetimi ve Delil Zinciri",
+      "tracking": {
+        "desc": "İş akışı durumlarıyla yapılandırılmış vaka yönetimi",
+        "title": "Vaka İzleme"
+      }
+    },
+    "cta": {
+      "demo": "Demo isteği",
+      "pricing": "Fiyatları görüntüle",
+      "subtitle": "Ücretsiz bir demo ile şimdi başlayın",
+      "title": "Tam pakete hazır mısınız?",
+      "start": "Ücretsiz Başla"
+    },
+    "graph": {
+      "badge": "Grafik İstihbarat",
+      "clustering": {
+        "desc": "İlgili cüzdanların otomatik kümeleme",
+        "title": "Cüzdan Kümeleme"
+      },
+      "community": {
+        "desc": "Ortak ilgi alanlarına sahip cüzdan gruplarının tespiti",
+        "title": "Topluluk Tespiti"
+      },
+      "desc": "Entite kümeleme, topluluk tespiti ve görsel soruşturma için Neo4j tabanlı grafik veritabanı.",
+      "labels": {
+        "desc": "Borsa/VASP/DeFi etiketleri ile topluluk istihbaratı",
+        "title": "Varlık Etiketleri"
+      },
+      "title": "Varlık Çözümleme ve Ağ Analizi",
+      "visual": {
+        "desc": "Karmaşık analizler için etkileşimli grafik gezgini",
+        "title": "Görsel Soruşturma"
+      }
+    },
+    "header": {
+      "badge": "Tam Özellik Seti",
+      "cta_try": "Ücretsiz deneyin",
+      "subtitle": "İşlem izlemeden AI destekli analize kadar—profesyonel soruşturmalar için ihtiyacınız olan her şey",
+      "title": "Tam blockchain adli analiz paketi"
+    },
+    "security": {
+      "audit": {
+        "desc": "Uyumluluk delilleri için tam denetim izleri",
+        "title": "Denetim Günlükleri"
+      },
+      "badge": "Kurumsal Güvenlik",
+      "desc": "RBAC, SSO/SAML, denetim günlükleri ve GDPR uyumluluğu ile kurumsal düzeyde güvenlik.",
+      "privacy": {
+        "desc": "PII anonimleştirme ile GDPR uyumluluğu",
+        "title": "Veri Gizliliği"
+      },
+      "rbac": {
+        "desc": "Özel rollerle granüler rol tabanlı erişim kontrolü",
+        "title": "Rol Tabanlı Erişim Kontrolü (RBAC)"
+      },
+      "sso": {
+        "desc": "SAML 2.0 ve OAuth 2.0 ile tek oturum açma",
+        "title": "SSO/SAML"
+      },
+      "title": "Güvenlik ve Uyumluluk"
+    },
+    "seo": {
+      "description": "Kurumsal sınıf blockchain forensics: Çok zincirli izleme, AI ajanları, gerçek zamanlı risk puanlama ve uyumluluk araçları.",
+      "title": "Özellikler | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Doğruluk",
+      "ai_agents": "AI Ajanları",
+      "alert_rules": "Uyarı Kuralları",
+      "blockchains": "Blockchain'ler",
+      "bridges": "Köprü Protokolleri",
+      "case_templates": "Vaka Şablonları",
+      "compliance": "Uyumluluk",
+      "encryption": "Şifreleme",
+      "entities": "Varlıklar",
+      "evidence_types": "Delil Türleri",
+      "false_positives": "Yanlış Pozitifler",
+      "max_depth": "Maksimum İzleme Derinliği",
+      "ml_models": "ML Modelleri",
+      "query_time": "Sorgu Süresi",
+      "relationships": "İlişkiler",
+      "response_time": "Yanıt Süresi",
+      "security_certs": "Güvenlik Sertifikaları",
+      "uptime_sla": "Çalışma Süresi SLA"
+    },
+    "tracing": {
+      "badge": "İşlem İzleme",
+      "bridge": {
+        "desc": "Çapraz zincir köprülerin ve sarılmış varlıkların otomatik tespiti",
+        "title": "Köprü Tespiti"
+      },
+      "cross_chain": {
+        "desc": "100+ blockchain destekleniyor: EVM, UTXO, Solana, Cosmos ve daha fazlası",
+        "title": "Çapraz Zincir İzleme"
+      },
+      "demixing": {
+        "desc": "Tornado Cash, karıştırıcılar ve gizlilik coin'lerinin heuristik analizi",
+        "title": "Gizlilik Coin Karıştırma"
+      },
+      "desc": "Tüm büyük blockchain'ler üzerinde işlemleri izleyin—çapraz zincir köprü tespiti, gizlilik coin karıştırma ve ileri/geri rekürsif izleme ile.",
+      "recursive": {
+        "desc": "Yapılandırılabilir derinlik ve filtrelerle ileri/geri izleme",
+        "title": "Rekürsif İzleme"
+      },
+      "title": "Çok Zincirli İşlem İstihbaratı"
+    },
+    "hero": {
+      "badge": "Özellikler",
+      "title": "Kurumsal Sınıf Blockchain Forensics",
+      "subtitle": "Kripto suçlarını araştırmak, uyumluluğu sağlamak ve işinizi korumak için ihtiyacınız olan tüm araçlar."
+    }
+  },
+  "footer": {
+    "blog": "Blog",
+    "careers": "Kariyer",
+    "company": "Şirket",
+    "contact": "İletişim",
+    "imprint": "Künye",
+    "legal": "Yasal",
+    "privacy": "Gizlilik",
+    "product": "Ürün",
+    "request_demo": "Demo isteği",
+    "rights_reserved": "Tüm hakları saklıdır.",
+    "security": "Güvenlik",
+    "tagline": "Uyumluluk ve soruşturmalar için kurumsal blockchain AI—güvenli, hızlı, mahkemede kabul edilebilir.",
+    "terms": "Şartlar"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Aktif Düğümler",
+      "avg_degree": "Ortalama Derece",
+      "density": "Ağ Yoğunluğu",
+      "total_edges": "Toplam Kenarlar",
+      "total_nodes": "Toplam Düğümler"
+    },
+    "centrality": {
+      "taint": "Kirlenme",
+      "title": "Merkeziyet Analizi"
+    },
+    "communities": {
+      "algorithm": "Algoritma",
+      "avg_size": "Ortalama Boyut",
+      "avg_taint": "Ortalama Kirlenme",
+      "empty": "Tıklayın",
+      "label_propagation": "Etiket Yayılımı",
+      "loading": "Topluluklar algılanıyor...",
+      "louvain": "Louvain (Modülerlik)",
+      "title": "Topluluk Tespiti",
+      "total": "Toplam Topluluklar"
+    },
+    "degree": {
+      "title": "Derece Dağılımı",
+      "x": "Derece",
+      "y": "Sayı"
+    },
+    "filters": {
+      "cross_chain": "Çapraz Zincir (Köprü Katmanı)",
+      "from": "Kaynak (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Hedef (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Gelişmiş ağ analitiği ve desen tespiti",
+      "title": "Grafik Analitiği ve Ağ İstihbaratı"
+    },
+    "hubs": {
+      "in": "Gelen",
+      "out": "Giden",
+      "title": "Ağ Merkezleri (Yüksek Dereceli Düğümler)",
+      "total": "Toplam"
+    },
+    "loading": {
+      "stats": "İstatistikler yükleniyor..."
+    },
+    "patterns": {
+      "circle_length": "Çember Uzunluğu",
+      "detected": "Algılanan Çemberler",
+      "empty_desc": "Bu iyi bir işaret - hiçbir açık para aklama çemberi bulunamadı",
+      "empty_title": "Hiç dairesel desen algılanmadı",
+      "high_risk": "Yüksek Risk",
+      "hops": "zıplamalar",
+      "loading": "Desenler algılanıyor...",
+      "more_addresses": "daha fazla adres",
+      "risk_score": "Risk Skoru",
+      "title": "Dairesel Desenler (Potansiyel Para Aklama)",
+      "total": "Toplam",
+      "total_value": "Toplam Değer",
+      "tx_path": "İşlem Yolu:"
+    },
+    "tabs": {
+      "communities": "Topluluk Tespiti",
+      "overview": "Ağ Genel Bakışı",
+      "patterns": "Desen Tespiti"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Küme",
+      "clustering": "Kümeleme yapılıyor",
+      "pause_timeline": "Zaman Çizgisini Durdur",
+      "play_timeline": "Zaman Çizgisini Oynat",
+      "title": "Soruşturmacı Eylemleri"
+    },
+    "connected": {
+      "taint": "Kirlenme",
+      "title": "Bağlı Varlıklar",
+      "tx": "İşlemler"
+    },
+    "graph": {
+      "connections": "Bağlantılar",
+      "enter_address": "Adres Gir",
+      "loading": "Grafik yükleniyor...",
+      "nodes": "Düğümler",
+      "title": "Grafik Görünümü"
+    },
+    "header": {
+      "subtitle": "Soruşturmacı alt başlığı",
+      "title": "Soruşturmacı başlığı"
+    },
+    "path": {
+      "bridges": "Köprüler",
+      "hops": "Zıplamalar",
+      "risk_score": "Risk Skoru",
+      "title": "Yol",
+      "total_value": "Toplam Değer"
+    },
+    "search": {
+      "explore": "Keşfet",
+      "placeholder": "Arama yer tutucu",
+      "title": "Arama"
+    },
+    "settings": {
+      "from": "Kaynak",
+      "hops_1": "1 zıplama",
+      "hops_2": "2 zıplama",
+      "hops_3": "3 zıplama",
+      "hops_4": "4 zıplama",
+      "hops_5": "5 zıplama",
+      "include_bridges": "Köprüler dahil et",
+      "max_hops": "Maksimum Zıplama",
+      "title": "Ayarlar",
+      "to": "Hedef"
+    },
+    "timeline": {
+      "empty": "Boş zaman çizgisi",
+      "events": "Olaylar",
+      "risk": "Risk",
+      "select_address": "Adres Seç",
+      "title": "Zaman Çizgisi",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Demo isteği",
+      "pricing": "Fiyatları görüntüle"
+    },
+    "cta2": {
+      "demo": "Ücretsiz demo isteği",
+      "pricing": "Fiyatları görüntüle",
+      "subtitle": "Ücretsiz bir demo ile şimdi başlayın ve blockchain adli analizinin geleceğini deneyimleyin",
+      "title": "Kurumsal blockchain istihbaratına hazır mısınız?"
+    },
+    "features": {
+      "badge": "Özellikler",
+      "subtitle": "Uyumluluk, soruşturmalar ve risk yönetimi için kurumsal düzeyde araçlar",
+      "title": "Blockchain adli analizi için ihtiyacınız olan her şey"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Blockchain Adli Analiz",
+      "point1": "100+ Blockchain",
+      "point2": "OFAC/UN/EU Yaptırımları",
+      "point3": "Gerçek Zamanlı İzleme",
+      "subtitle": "AI destekli uyumluluk, soruşturmalar ve risk izleme—gerçek zamanlı ve kurumsal düzeyde.",
+      "title": "Kurumsal Blockchain İstihbaratı"
+    },
+    "pricing": {
+      "badge": "Fiyatlandırma",
+      "subtitle": "Ücretsizden kurumsala—şimdi başlayın",
+      "title": "Her şirket büyüklüğüne uygun esnek planlar",
+      "view_all": "Tüm fiyatları görüntüle"
+    },
+    "seo": {
+      "description": "AI destekli uyumluluk, soruşturmalar ve risk izleme—gerçek zamanlı ve kurumsal düzeyde. SIGMACODE Blockchain Adli Analiz.",
+      "title": "SIGMACODE | Kurumsal Blockchain İstihbaratı"
+    },
+    "tech": {
+      "badge": "Teknoloji",
+      "subtitle": "Maksimum performans ve güvenlik için kurumsal düzeyde altyapı",
+      "title": "En Son Teknoloji Yığını"
+    },
+    "use_cases": {
+      "badge": "Kullanım Senaryoları",
+      "subtitle": "Kolluk kuvvetlerinden fintech'e",
+      "title": "Her kullanım senaryosu için doğru çözüm"
+    }
+  },
+  "layout": {
+    "main_navigation": "Ana navigasyon",
+    "quick_search_title": "Hızlı Arama (Ctrl/⌘+K)",
+    "skip_to_content": "İçeriğe geç",
+    "quick_search_placeholder": "Hızlı arama...",
+    "quick_search_hint": "İpucu: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Çerez bildirimi",
+    "title": "Çerezler ve gizlilik",
+    "title_short": "Çerezler",
+    "description": "Bu siteyi çalıştırmak için gerekli çerezleri kullanıyoruz. İsteğe bağlı analiz çerezleri, kullanımı anlamamıza ve iyileştirmemize yardımcı olur. Tüm çerezleri kabul edebilir veya yalnızca gerekli olanlara izin verebilirsiniz. Seçiminizi ayarlardan istediğiniz zaman değiştirebilirsiniz.",
+    "privacy_link": "Gizlilik politikası",
+    "terms_link": "Hizmet şartları",
+    "imprint_link": "Yasal bildirim",
+    "only_necessary": "Yalnızca gerekli",
+    "accept_all": "Tümünü kabul et",
+    "preferences": "Ayarlar",
+    "save_preferences": "Ayarları kaydet",
+    "manage": "Çerez ayarları",
+    "analytics_title": "Analiz çerezleri",
+    "analytics_desc": "Kullanımı anlamamıza ve siteyi iyileştirmemize yardımcı olur.",
+    "marketing_title": "Pazarlama çerezleri",
+    "marketing_desc": "Kişiselleştirilmiş içerik ve teklifler sağlar.",
+    "all_optional_title": "Tüm isteğe bağlıları etkinleştir",
+    "all_optional_desc": "Analiz ve pazarlama çerezlerini etkinleştirir."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Kapat",
+        "close_title": "Uyarıyı kapat",
+        "copy_alert_id_title": "Uyarı kimliğini kopyala",
+        "copy_entity": "Varlığı kopyala",
+        "copy_entity_id_title": "Varlık kimliğini kopyala",
+        "copy_id": "Kimliği kopyala",
+        "copy_rule": "Kuralı kopyala",
+        "copy_rule_id_title": "Kural kimliğini kopyala",
+        "details": "Detaylar",
+        "details_title": "Detayları göster",
+        "reset": "Sıfırla"
+      },
+      "audit": {
+        "empty": "Hiç olay yok",
+        "title": "Denetim İzleği"
+      },
+      "csv": {
+        "export_all": "CSV dışa aktar (tümü)",
+        "export_all_title": "Tüm filtrelenmiş satırları CSV olarak dışa aktar (sunucu)",
+        "export_page": "CSV dışa aktar (sayfa)",
+        "export_page_title": "Mevcut sayfayı CSV olarak dışa aktar",
+        "no_filtered_data": "Filtrelenmiş veri yok",
+        "no_page_data": "Bu sayfada veri yok"
+      },
+      "empty": "Hiç uyarı bulunamadı",
+      "filters": {
+        "all": "(tümü)",
+        "search_label": "Arama (rule_id / entity_id)",
+        "search_placeholder": "Ara...",
+        "severity": "Şiddet",
+        "source": "Kaynak",
+        "source_persisted": "Kalıcı (KYT)",
+        "source_realtime": "Gerçek zamanlı (Uyarı Motoru)",
+        "status": "Durum"
+      },
+      "kpi": {
+        "event_time_set": "Olay zamanını ayarla (first_seen_at)",
+        "event_time_title": "Olay zamanı = first_seen_at",
+        "false_positive": "Yanlış pozitif olarak işaretle",
+        "title": "KPI notasyonları",
+        "true_positive": "Gerçek pozitif olarak işaretle"
+      },
+      "loading": "Uyarılar yükleniyor...",
+      "modal": {
+        "alert_id": "Uyarı Kimliği",
+        "chain": "Zincir",
+        "context": "Bağlam",
+        "entity": "Varlık",
+        "rule_id": "Kural Kimliği",
+        "severity": "Şiddet",
+        "title": "Uyarı Detayları"
+      },
+      "pagination": {
+        "next": "Sonraki",
+        "page": "Sayfa",
+        "prev": "Önceki"
+      },
+      "severity": {
+        "critical": "kritik",
+        "high": "yüksek",
+        "low": "düşük",
+        "medium": "orta"
+      },
+      "status": {
+        "assigned": "atandı",
+        "closed": "kapandı",
+        "open": "açık",
+        "snoozed": "erteledi"
+      },
+      "subtitle": "Gerçek zamanlı kurallar ve kalıcı uyarılar (KYT)",
+      "table": {
+        "first": "ilk",
+        "last": "son"
+      },
+      "title": "Uyarı İzleme",
+      "toasts": {
+        "copy_failed": "Kopyalama başarısız",
+        "disposition_failed": "Durum ayarı başarısız",
+        "disposition_set": "Durum ayarlandı",
+        "entity_copied": "Varlık kopyalandı",
+        "event_time_failed": "Olay zamanı ayarı başarısız",
+        "event_time_set": "Olay zamanı ayarlandı",
+        "export_failed": "Dışa aktarma başarısız",
+        "export_started": "Dışa aktarma başladı",
+        "id_copied": "Kimlik kopyalandı",
+        "rule_copied": "Kural kopyalandı"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Hakkımızda",
+    "analytics": "Analizler",
+    "close_menu": "Navigasyonu kapat",
+    "dashboard": "Panel",
+    "features": "Özellikler",
+    "home": "Ana Sayfa",
+    "logout": "Çıkış",
+    "open_menu": "Navigasyonu aç",
+    "pricing": "Fiyatlandırma",
+    "settings": "Ayarlar",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Yenile"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Çekirdekler",
+        "title": "CPU Kullanımı"
+      },
+      "db": {
+        "connected": "Bağlı",
+        "disconnected": "Bağlantısı Kesildi",
+        "response": "Yanıt",
+        "title": "Veritabanı"
+      },
+      "memory": {
+        "available": "kullanılabilir",
+        "title": "Bellek Kullanımı"
+      },
+      "system_status": {
+        "healthy": "Sağlıklı",
+        "issues": "Sorunlar",
+        "title": "Sistem Durumu",
+        "uptime": "Çalışma Süresi"
+      }
+    },
+    "common": {
+      "no": "Hayır",
+      "yes": "Evet"
+    },
+    "header": {
+      "last_refresh": "Son yenileme",
+      "subtitle": "Sistem performansı, metrikler ve SLO'ların kapsamlı izlemesi",
+      "title": "Performans ve Gözlemlenebilirlik Panosu"
+    },
+    "metrics": {
+      "empty": "Metrik verisi yok",
+      "loading": "Metrikler yükleniyor...",
+      "max": "Maksimum",
+      "measurements": "Ölçümler",
+      "min": "Minimum",
+      "title": "Performans metrikleri (1 saat)",
+      "trend": "Eğilim"
+    },
+    "recent_alerts": {
+      "empty": "Son uyarı yok",
+      "title": "Son performans uyarıları"
+    },
+    "services": {
+      "active": "Aktif",
+      "inactive": "Etkin Değil",
+      "title": "Hizmet Durumu"
+    },
+    "slo": {
+      "empty": "SLO verisi yok",
+      "loading": "SLO'lar yükleniyor...",
+      "threshold": "Eşik",
+      "title": "SLO Uyumluluğu",
+      "violations": "İhlaller"
+    },
+    "system_details": {
+      "database": "Veritabanı",
+      "db_connected": "Bağlı",
+      "db_type": "Tür",
+      "debug": "Hata Ayıklama",
+      "environment": "Ortam",
+      "log_level": "Günlük Seviyesi",
+      "mode": "Kip",
+      "platform": "Platform",
+      "python_version": "Python Sürümü",
+      "response_time": "Yanıt Süresi",
+      "system_info": "Sistem Bilgisi",
+      "title": "Sistem Detayları",
+      "version": "Sürüm"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Ekstra blockchain'ler",
+        "i2": "Ekstra Kullanıcı Koltukları",
+        "i3": "Yaptırım Premium (genişletilmiş listeler)",
+        "i4": "Gelişmiş dışa aktarma formatları",
+        "i5": "Öncelikli Destek",
+        "i6": "White-Label (Kurumsal)",
+        "title": "Kullanılabilir eklentiler"
+      },
+      "badge": "Esnek eklentiler",
+      "overage": {
+        "extra_credits": "Ekstra Krediler",
+        "monthly_cap": "Aylık sınır",
+        "note": "Kotalınızı aşarsanız? Sorun değil - aşım otomatik olarak hesaplanır.",
+        "title": "Aşım Fiyatlandırması"
+      },
+      "subtitle": "Planınızı ihtiyacınıza göre genişletin",
+      "title": "Eklentiler ve Aşım"
+    },
+    "card": {
+      "custom": "Özel",
+      "desc_business": "Daha büyük ekipler için",
+      "desc_community": "Hobi sahipleri ve açık kaynak için",
+      "desc_enterprise": "Kurumsal ve düzenleyiciler için",
+      "desc_pro": "Büyüyen şirketler için",
+      "desc_starter": "Küçük ekipler için",
+      "per_month": "aylık",
+      "popular": "En popüler",
+      "popular_label": "En popüler",
+      "save_year": "Yılda ${{amount}} tasarruf"
+    },
+    "cta": {
+      "active_plan": "✓ Aktif plan",
+      "contact_sales": "Satışlarla iletişime geç",
+      "demo": "Demo isteği",
+      "more_about": "Hakkımızda daha fazla bilgi",
+      "saving": "Kaydediliyor…",
+      "set_tenant_plan": "Kiracı planı olarak ayarla",
+      "start_now": "Şimdi başla",
+      "subscribe": "Şimdi abone ol",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Mevcut plan",
+    "enterprise": {
+      "card_desc": "Kurumsal ve düzenleyiciler için",
+      "subtitle": "Özel fiyatlandırma, SLA, entegrasyonlar, on-prem/VPC",
+      "title": "Finans kurumları ve düzenleyiciler için"
+    },
+    "faq": {
+      "subtitle": "Kişisel bir demo için satış ekibimizle iletişime geçin",
+      "title": "Herhangi bir sorunuz var mı?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchain'ler",
+      "cases": "Vakalar",
+      "credits": "Krediler/ay",
+      "priority": "Öncelik",
+      "users": "Kullanıcılar"
+    },
+    "header": {
+      "badge": "Esnek fiyatlandırma",
+      "subtitle": "Ücretsiz topluluk araçlarından kurumsal white-label'e. Bugün başlayın ve büyüdükçe ölçeklendirin.",
+      "title": "Her ekip için doğru plan"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI Ajanları",
+        "i2": "Grafik Analitiği",
+        "i3": "Risk Puanlama",
+        "i4": "ML Modelleri",
+        "title": "Gelişmiş Analizler"
+      },
+      "badge": "Neler dahil?",
+      "performance": {
+        "i1": "Gerçek Zamanlı Uyarılar",
+        "i2": "API Erişimi",
+        "i3": "Öncelikli Kuyruk",
+        "i4": "99.9% Çalışma Süresi",
+        "title": "Performans"
+      },
+      "security": {
+        "i1": "Rol Tabanlı Erişim Kontrolü (RBAC)",
+        "i2": "SSO/SAML",
+        "i3": "Denetim günlükleri",
+        "i4": "GDPR uyumlu",
+        "title": "Güvenlik ve Uyumluluk"
+      },
+      "team": {
+        "i1": "Çok Kullanıcılı",
+        "i2": "Vaka Yönetimi",
+        "i3": "Delil Zinciri",
+        "i4": "İşbirliği",
+        "title": "Takım Özellikleri"
+      },
+      "title": "Tüm özelliklere genel bakış"
+    },
+    "more": "daha fazla",
+    "seo": {
+      "description": "Blockchain forensics için adil ve şeffaf fiyatlandırma. Ücretsiz Community planından Enterprise'a kadar. İstediğiniz zaman iptal edin.",
+      "title": "Fiyatlandırma | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Girişimler ve orta ölçekli pazarlar için kendi kendine servis planlar",
+      "title": "Ekipler ve şirketler için"
+    },
+    "toggle": {
+      "annual": "Yıllık",
+      "monthly": "Aylık",
+      "save": "{{pct}}% tasarruf"
+    },
+    "top_features": "EN İYİ ÖZELLİKLER",
+    "hero": {
+      "badge": "Fiyatlandırma",
+      "title": "Basit ve Şeffaf Fiyatlandırma",
+      "subtitle": "İhtiyaçlarınıza uygun planı seçin. Tüm planlar temel özellikleri içerir. İstediğiniz zaman yükseltin."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Yenile"
+    },
+    "audit": {
+      "empty": "Hiç denetim izleği girdisi yok",
+      "loading": "Denetim izleği yükleniyor...",
+      "title": "Son denetim izleği girdileri",
+      "user": "Kullanıcı",
+      "view_all": "Tümünü gör →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Denetim İzleği Bütünlüğü"
+      },
+      "failed_logins": {
+        "title": "Başarısız Giriş Girişimleri"
+      },
+      "gdpr": {
+        "title": "GDPR Uyumluluğu"
+      },
+      "security_incidents": {
+        "title": "Güvenlik Olayları"
+      }
+    },
+    "common": {
+      "implemented": "Uygulandı",
+      "not_implemented": "Uygulanmadı",
+      "unknown": "Bilinmiyor"
+    },
+    "compliance": {
+      "anonymization": "Anonimleştirme",
+      "certifications": "Sertifikalar",
+      "consent_management": "Onay Yönetimi",
+      "data_portability": "Veri Taşınabilirliği",
+      "empty": "Hiç uyumluluk verisi yok",
+      "encryption": "Şifreleme",
+      "loading": "Uyumluluk durumu yükleniyor...",
+      "right_to_erasure": "Silme Hakkı",
+      "title": "GDPR Uyumluluk Durumu"
+    },
+    "header": {
+      "last_refresh": "Son yenileme",
+      "subtitle": "Denetim izleği, GDPR uyumluluğu ve güvenlik izleme",
+      "title": "Güvenlik ve Uyumluluk Panosu"
+    },
+    "quick_actions": {
+      "audit_export": "Denetim Dışa Aktar",
+      "compliance_report": "Uyumluluk Raporu",
+      "gdpr_status": "GDPR Durumu",
+      "incident_report": "Olay Raporu",
+      "integrity_check": "Bütünlük Kontrolü",
+      "security_scan": "Güvenlik Taraması",
+      "title": "Güvenlik ve Uyumluluk Eylemleri"
+    },
+    "retention": {
+      "days": "Günler",
+      "empty": "Hiç saklama verisi yok",
+      "title": "Veri Saklama Uyumluluğu",
+      "violations": {
+        "count": "İhlaller",
+        "days_old": "gün eski",
+        "more": "ve",
+        "more_suffix": "daha",
+        "title": "Saklama İhlalleri"
+      }
+    },
+    "security": {
+      "compliance_status": "Uyumluluk Durumu",
+      "empty": "Hiç güvenlik verisi yok",
+      "failed_logins": "Başarısız Girişler",
+      "incidents": "Güvenlik Olayları",
+      "rate_limited_ips": "Hız Sınırlı IP'ler",
+      "suspicious_activities": "Şüpheli Aktiviteler",
+      "title": "Güvenlik Genel Bakışı"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Uyarı Yaşlanması",
+    "alert_engine": "Uyarı Motoru",
+    "alert_overview": "Uyarı Genel Bakışı",
+    "analyst_throughput": "Analist Verimlilik",
+    "backlog": "Bekleyen İşler",
+    "database": "Veritabanı",
+    "graph_db": "Karmaşık ilişki analizi ve ağ haritalama için Neo4j grafik veritabanı",
+    "system_status": "Tüm sistem bileşenlerinin mevcut durumunu gösterir. Yeşil = Sağlıklı, Kırmızı = Sorunlar algılandı",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Mevcut Turlar",
+    "completed": "tamamlandı",
+    "finish": "Bitir",
+    "no_tours_available": "Bu sayfa için tur yok",
+    "of": "/",
+    "select_tour_description": "Platform özelliklerini öğrenmek için bir tur seçin",
+    "skip": "Atla",
+    "start": "Başlat",
+    "start_tour": "Turu Başlat",
+    "step": "Adım",
+    "steps": "adımlar"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Detaylar",
+      "direction": "Yön",
+      "error_title": "Hata başlığı",
+      "exec_time": "Çalışma süresi",
+      "export": "Dışa aktar",
+      "flow_graph": "Akış Grafiği",
+      "high_risk": "Yüksek Risk",
+      "high_risk_title": "Yüksek risk başlığı",
+      "loading": "Yükleniyor...",
+      "max_hop": "Maksimum Zıplama",
+      "not_found": "Bulunamadı",
+      "report": "Rapor",
+      "sanctioned_title": "Yaptırımlı başlığı",
+      "sanctioned_warning": "Yaptırımlı uyarı",
+      "source": "Kaynak",
+      "taint": "Kirlenme",
+      "taint_model": "Kirlenme Modeli",
+      "title": "Sonuç",
+      "total_edges": "Toplam Kenarlar",
+      "total_nodes": "Toplam Düğümler"
+    },
+    "simple": {
+      "address_ph": "Adres yer tutucu",
+      "chain_btc": "Zincir BTC",
+      "chain_eth": "Zincir ETH",
+      "chain_sol": "Zincir SOL",
+      "cluster": {
+        "clustering": "Kümeleme",
+        "export_members": "Üyeleri dışa aktar",
+        "label": "Etiket",
+        "lookup": "Ara",
+        "member_address": "Üye adresi",
+        "members": "Üyeler",
+        "title": "Küme başlığı"
+      },
+      "depth_ph": "Derinlik yer tutucu",
+      "edges": "Kenarlar",
+      "error_cluster": "Kümeleme hatası",
+      "error_trace": "İzleme hatası",
+      "export_paths": "Yolları dışa aktar",
+      "export_targets": "Hedefleri dışa aktar",
+      "high_risk": "Yüksek Risk",
+      "model_fifo": "FIFO modeli",
+      "model_haircut": "Haircut modeli",
+      "model_proportional": "Oransal model",
+      "nodes": "Düğümler",
+      "run": "Çalıştır",
+      "summary": "Özet",
+      "th_path": "Yol",
+      "th_paths": "Yollar",
+      "th_taint": "Kirlenme",
+      "th_target": "Hedef",
+      "threshold_ph": "Eşik yer tutucu",
+      "title": "Basit İzleme",
+      "tracing": "İzleme..."
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "Cüzdan analizi açıklaması",
+        "title": "Cüzdan analizi başlığı",
+        "wip": "Cüzdan analizi geliştirme aşamasında"
+      },
+      "export": {
+        "csv": "CSV Dışa Aktar",
+        "desc": "Dışa aktarma açıklaması",
+        "json": "JSON Dışa Aktar",
+        "pdf": "PDF Dışa Aktar",
+        "section_export": "Dışa Aktarma Bölümü",
+        "section_import": "İçe Aktarma Bölümü",
+        "title": "Dışa Aktarma"
+      },
+      "header": {
+        "title": "Cüzdan testi başlığı"
+      },
+      "import": {
+        "add_wallet": "Cüzdan Ekle",
+        "json": "JSON İçe Aktar",
+        "restore_backup": "Yedeği Geri Yükle"
+      },
+      "multisig": {
+        "desc": "Multisig açıklaması",
+        "title": "Multisig başlığı",
+        "wip": "Multisig geliştirme aşamasında"
+      },
+      "overview": {
+        "active_wallets": "Aktif Cüzdanlar",
+        "activity": {
+          "liquidity": "Likidite",
+          "nft": "NFT",
+          "receive": "Al"
+        },
+        "month_change": "Ay Değişimi",
+        "multisig": "Multisig",
+        "new_this_week": "Bu hafta yeni",
+        "recent": "Son",
+        "security_grade": "Güvenlik Notu",
+        "security_score": "Güvenlik Skoru",
+        "status": {
+          "2fa": "2FA",
+          "active": "Aktif",
+          "backup": "Yedek",
+          "backup_available": "Yedek mevcut",
+          "hardware": "Donanım",
+          "hw_connected": "Donanım bağlı",
+          "recovery": "Geri Yükleme",
+          "secured": "Güvenli",
+          "title": "Cüzdan Durumu"
+        },
+        "total_volume": "Toplam Hacim"
+      },
+      "sidebar": {
+        "title": "Cüzdan yan paneli"
+      },
+      "tabs": {
+        "analytics": "Analiz",
+        "crosschain": "Çapraz Zincir",
+        "export": "Dışa Aktar",
+        "multisig": "Multisig",
+        "nft": "NFT",
+        "overview": "Genel Bakış",
+        "transactions": "İşlemler"
+      },
+      "transactions": {
+        "desc": "İşlemler açıklaması",
+        "export": "Dışa Aktar",
+        "title": "İşlemler başlığı",
+        "wip": "İşlemler geliştirme aşamasında"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Web Analitiği"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "İzleme"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "Adres"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "İnceleme"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "Çalıştır",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "Çevrimiçi",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Ana Sayfa",
+    "features": "Özellikler",
+    "about": "Hakkında",
+    "pricing": "Fiyatlandırma",
+    "search": "Ara",
+    "dashboards": "Panolar",
+    "monitoring": "İzleme",
+    "legal": "Yasal",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "impressum": "Künye"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

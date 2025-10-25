@@ -1,0 +1,5 @@
+[
+  {"slug": "aave", "chain": "ethereum", "address": "0xB53C1a33016B2DC2fF3653530bfDA9F715A09d5F", "label": "Aave V2 LendingPoolAddressesProvider", "type": "core"},
+  {"slug": "aave", "chain": "ethereum", "address": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9", "label": "Aave V2 LendingPool", "type": "core"},
+  {"slug": "aave", "chain": "ethereum", "address": "0x3dfd23A6c5E8bBCfEC3C9a9B9A6D5D6bBaD9", "label": "Aave WETH Gateway (example)", "type": "gateway"}
+]

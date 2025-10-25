@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Demo reservéieren",
+      "pricing": "Präisser weisen",
+      "subtitle": "Fänken elo mat enger gratis Demo un oder kontaktéiert eis Equipe",
+      "title": "Elo ufänken"
+    },
+    "header": {
+      "badge": "Iwwer eis",
+      "subtitle": "Mir entwéckelen eng féierend Entreprise-Plattform fir Blockchain-Intelligenz, déi Gesetzesautoritéiten, VASPen an finanziell Institutiounen bei der Bekämpfung vun Krypto-Kriminalitéit ënnerstëtzt.",
+      "title": "D'Zukunft vun der Blockchain-Forensik"
+    },
+    "mission": {
+      "desc": "Mir maachen Blockchain-Transaktiounen duerchsichteg a nozevollzéien. Eis Missioun ass et, géint Krypto-Kriminalitéit ze kämpfen an legitime Marktakteuren Tools ze bidden, fir Regulatiounsanforderungen ze erfëllen an Risiken ze miniméieren.",
+      "title": "Eis Missioun"
+    },
+    "seo": {
+      "description": "Mir bauen eng féierend Entreprise-Plattform fir Blockchain-Forensik: Konformitéit, Enquête a Intelligenz weltwäit.",
+      "title": "Iwwer eis | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "badge": "An Zuelen",
+      "blockchains": "Blockchains",
+      "enterprise_customers": "Entreprise-Klienten",
+      "recovered_assets": "Erhollene Verméigen",
+      "sla_guaranteed": "mat garantéierter SLA",
+      "supported": "ënnerstëtzt",
+      "supported_by_tech": "ënnerstëtzt vun eiser Technologie",
+      "title": "Eis Impakt",
+      "uptime": "Betriebszäit",
+      "worldwide": "weltwäit"
+    },
+    "team": {
+      "badge": "Expertis",
+      "compliance": {
+        "desc": "Expertise bei AML/CFT- an internationalen Sanktiounen",
+        "h1": "Erméiglecher Reguléierer",
+        "h2": "AML-Spezialisten",
+        "h3": "Juridik-Beroder",
+        "title": "Konformitéit an juridëscht"
+      },
+      "forensics": {
+        "desc": "Erméiglecher Gesetzesvertrieder mat Jore vu Krypto-Kriminalitéitserfarung",
+        "h1": "FBI/BKA-Alumni",
+        "h2": "Darknet-Operatiounen",
+        "h3": "Verméigensrekuperatioun",
+        "title": "Forensik-Experten"
+      },
+      "subtitle": "Expertise vun der Blockchain-Forensik, Gesetzesverfolgung, FinTech an Iwwerwaachung",
+      "tech": {
+        "desc": "Ingenieuren aus féierende Technologiefirmen mat Blockchain-Kenntnisser",
+        "h1": "Erméiglecher FAANG-Mataarbechter",
+        "h2": "Schlësseleffentlecher vun Blockchain",
+        "h3": "Sécherheets-Expertise",
+        "title": "Technik-Spezialisten"
+      },
+      "title": "Eis Equipe"
+    },
+    "trust": {
+      "badge": "Vertrauen",
+      "ce": {
+        "desc": "Top-10-Bourse fir AML an Transaktiounsuewwatchung",
+        "title": "Krypto-Bourse"
+      },
+      "fi": {
+        "desc": "Top-Klass-Banken mat Krypto-Expositioun",
+        "title": "Banken an FinTechs"
+      },
+      "le": {
+        "desc": "FBI, Europol, national Autoritén",
+        "title": "Gesetzesverfolgung"
+      },
+      "reg": {
+        "desc": "Finanziell Reguléierungsautoritéiten fir Maartkontroll",
+        "title": "Reguléierer"
+      },
+      "subtitle": "Féierend Organisatiounen weltwäit vertrauen op eis Technologie",
+      "title": "Wéi mir vertrauen"
+    },
+    "values": {
+      "badge": "Eis Wäerter",
+      "compliance": {
+        "desc": "GDPR-, eIDAS-, OFAC-konform. Mir verstoen Regulatiounsanforderungen an integréieren se.",
+        "title": "Konformitéit als Prioritéit"
+      },
+      "customer": {
+        "desc": "Téiwe Kollaboratioun mat Gesetzesverfolgung a Industrie. Äre Besoin ass eise Plang.",
+        "title": "Konsumentenorientéiert"
+      },
+      "global": {
+        "desc": "100+ Blockchains, méisproocheg Ënnerstëtzung an international Sanktiounslisten.",
+        "title": "Global Erreechung"
+      },
+      "innovation": {
+        "desc": "State-of-the-Art-Technologie: AI/ML, Grafik-Analyse an Echtzäitveraarbechtung fir optimal Resultater.",
+        "title": "Innovatioun"
+      },
+      "team": {
+        "desc": "Interdiziplinär Equipe vun Forensik-Expertise, Entwéckler a Konformitéits-Spezialisten.",
+        "title": "Team-Arbeit"
+      },
+      "title": "Wat eis dréit",
+      "trust": {
+        "desc": "Entreprise-Sécherheet mat SOC2/ISO27001-Zertifizéierung. Äre Donnéeën sinn bei eis sécher.",
+        "title": "Vertrauen a Sécherheet"
+      }
+    },
+    "vision": {
+      "desc": "Eng Welt, an där Blockchain-Technologie säi vollen Potenzial entfale kann – duerchsichteg, sécher a konform. Mir bauen d'Infrastruktur fir eng Zukunft, an där digital Verméigen Mainstream gëtt ouni Kriminalitéit ze förderen.",
+      "title": "Eis Visioun"
+    }
+  },
+  "accessibility": {
+    "activate": "Aktivéieren",
+    "close_dialog": "Dialog zoumaachen",
+    "font_size": "Schriftgréisst",
+    "font_size_large": "Grouss Schriftgréisst",
+    "font_size_normal": "Normal Schriftgréisst",
+    "font_size_xlarge": "Extra grouss Schriftgréisst",
+    "high_contrast_detected": "Héich Kontrast erkannt",
+    "keyboard_shortcuts": "Tastaturschnelltrëtt",
+    "navigate_backward": "Zréck navigéieren",
+    "navigate_forward": "Vir navigéieren",
+    "no_system_preferences": "Keng spezifesch Systemeinstellungen erkannt",
+    "reduced_motion_detected": "Reduzéiert Bewegung erkannt",
+    "settings": "Zougangs-Eestellungen",
+    "skip_to_content": "Op Inhalt sprangen",
+    "system_preferences": "Systemeinstellungen"
+  },
+  "address_analysis": {
+    "title": "Adress-Analyse",
+    "wip_desc": "D'Beschreiwung vun der Adress-Analyse ass am Gaang",
+    "wip_title": "Adress-Analyse ass am Gaang"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI-Agenten",
+      "app_name": "App-Numm",
+      "cross_chain": "Cross-Chain",
+      "max_trace_depth": "Maximal Spuerdiefst",
+      "ml_clustering": "ML-Clusterung",
+      "title": "Konfiguratioun",
+      "version": "Versioun"
+    },
+    "disabled": "✗ Desaktivéiert",
+    "enabled": "✓ Aktivéiert",
+    "error": "Feeler",
+    "health": {
+      "connected": "✓ Verbonne",
+      "disconnected": "✗ Ofgebrach",
+      "error": "Zougang zum Gesondheetsstatus huet net fonctionnéiert",
+      "title": "Gesondheetsstatus vun der Datebank"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Lued Transaktiounen aus Ethereum RPC",
+        "ingesting": "Lueden...",
+        "placeholder": "0x...",
+        "start": "Luede starten",
+        "success": "✓ Luede am Hannergrond ugefaang",
+        "title": "Adressdaten lueden"
+      },
+      "block": {
+        "help": "Importéiert all Transaktiounen aus engem Block",
+        "ingesting": "Lueden...",
+        "placeholder": "Blocknummer",
+        "start": "Block-Import starten",
+        "success": "✓ Block-Luede ugefaang",
+        "title": "Blockdaten lueden"
+      }
+    },
+    "stats": {
+      "db_size": "Gréisst vun der Datebank",
+      "title": "Systemstatistiken",
+      "total_addresses": "Total Adressen",
+      "total_traces": "Total Spuere",
+      "total_transactions": "Total Transaktiounen"
+    },
+    "subtitle": "Iwwerwaachung, Konfiguratioun an Datenverwaltung",
+    "tabs": {
+      "config": "Konfiguratioun",
+      "ingestion": "Datenluede",
+      "overview": "Iwwersiicht",
+      "users": "Benotzerverwaltung"
+    },
+    "title": "Systemadministratioun"
+  },
+  "agent": {
+    "cancel": "Ofbriechen",
+    "error": "Feeler beim Agent",
+    "error_unknown": "Onbekannte Feeler beim Agent",
+    "examples": {
+      "1": "Beispill 1",
+      "2": "Beispill 2",
+      "3": "Beispill 3",
+      "title": "Beispiller vum Agent"
+    },
+    "instructions": "Instruktiounen fir den Agent",
+    "loading": "Agent lueden...",
+    "placeholder": "Plaz fir den Agent",
+    "retry": "Nëtz versichen",
+    "send": "Schécken",
+    "subtitle": "Agent-Sous-titre",
+    "title": "Numm vum Agent",
+    "welcome": "Wëllkomm beim Agent"
+  },
+  "auth": {
+    "fields": {
+      "email": "E-Mail",
+      "organization_opt": "Organisatioun (optional)",
+      "password": "Passwuert",
+      "password_confirm": "Passwuert bestätegen",
+      "username": "Benotzernumm"
+    },
+    "forgot": {
+      "back_to_login": "Zréck op d'Akaf",
+      "dev_note": "Well keen E-Mail-Service konfiguréiert ass, iwwerpréift d'Server-Logbücher fir de Réckzestellungslink.",
+      "dev_note_label": "Notiz (Entwécklungsmodus):",
+      "error": "Schécken huet net fonctionnéiert",
+      "info_sent": "Wann et e Kont mat dëser E-Mail gëtt, gouf e Réckzestellungslink geschéckt.",
+      "sent": "Réckzestellungslink geschéckt!",
+      "submit": "Réckzestellungslink schécken",
+      "submitting": "Schéckt...",
+      "subtitle": "Keng Suerg! Gitt Är E-Mail an, mir schécken Iech e Réckzestellungslink.",
+      "title": "Passwuert vergiess?",
+      "title_sent": "E-Mail geschéckt!"
+    },
+    "login": {
+      "failed": "Login huet net fonctionnéiert",
+      "fill_all_fields": "Fëllt w.e.g. all Felder aus",
+      "forgot_password": "Passwuert vergiess?",
+      "google": "Mat Google umelden",
+      "google_retry": "Mat Google nach eng Kéier probéieren",
+      "no_account": "Kee Kont?",
+      "oauth_failed": "OAuth huet net fonctionnéiert. Probéiert nach eng Kéier.",
+      "oauth_processing": "OAuth-Login gëtt veraarbecht...",
+      "or": "oder",
+      "register_now": "Registreelt Iech elo",
+      "remember_me": "Erënner mech",
+      "submit": "Umellen",
+      "submitting": "Umellen am Gaang...",
+      "subtitle": "Mellen Iech un fir weiderzemaachen"
+    },
+    "placeholders": {
+      "email": "analyst@beispill.com",
+      "organization": "FBI, Chainalysis, etc.",
+      "password": "••••••••",
+      "username": "jan_analyst"
+    },
+    "register": {
+      "accept": "Ech akzeptéieren",
+      "already": "Schonn registréiert?",
+      "and": "an",
+      "failed": "Registreierung huet net fonctionnéiert",
+      "fill_all_fields": "Fëllt w.e.g. all obligatoresch Felder aus",
+      "google": "Mat Google registréieren",
+      "login_now": "Umellen elo",
+      "password_hint": "Mindestens 8 Zeeche",
+      "password_too_short": "D'Passwuert muss mindestens 8 Zeeche hunn",
+      "passwords_no_match": "D'Passwierder passen net zesummen",
+      "submit": "Registréieren",
+      "submitting": "Registreierung am Gaang...",
+      "subtitle": "Fänkt mat Ärer forensescher Analyse un",
+      "title": "Kont erstellen"
+    }
+  },
+  "common": {
+    "access_denied": "Zougang verweigert (nëmmen Administrateuren)",
+    "account": "Kont",
+    "back": "Zréck",
+    "close": "Zoumaachen",
+    "info": "Informatiounen",
+    "language": "Sprooch",
+    "loading": "Lueden...",
+    "next": "Weider",
+    "page": "Säit",
+    "prev": "Virgehiewe",
+    "refresh": "Aktualiséieren",
+    "search": "Sichen",
+    "success": "Erfolleg",
+    "theme": "Thema",
+    "view": "Ukucken",
+    "wip": {
+      "title": "Kënnt geschwinn",
+      "desc": "Dës Funktioun ass nach an der Entwecklung.",
+      "cta": "Méi wuessen"
+    },
+    "start_free": "Gratis ufänken",
+    "error": "Feeler",
+    "save": "Späicheren",
+    "cancel": "Ofbriechen",
+    "delete": "Läschen",
+    "edit": "Edit",
+    "create": "Create",
+    "finish": "Finish",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm",
+    "welcome": "Welcome",
+    "dashboard": "Dashboard",
+    "settings": "Astellungen",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "documents": "Documents",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Minimal Schwéiergrad",
+      "refresh": "Aktualiséieren",
+      "title": "Kontrollen",
+      "window": "Fënster",
+      "window_15m": "15 Minutten",
+      "window_1h": "1 Stonn",
+      "window_24h": "24 Stonnen",
+      "window_2h": "2 Stonnen",
+      "window_30m": "30 Minutten",
+      "window_5m": "5 Minutten"
+    },
+    "header": {
+      "subtitle": "Korrelaatiouns-Undertitel",
+      "title": "Korrelaatioun"
+    },
+    "overview": {
+      "active_rules": "Aktiv Reegelen",
+      "analyzed": "Analyséiert",
+      "empty": "Eidel",
+      "found": "Gefunnen",
+      "loading": "Lueden...",
+      "min_sev": "Minimal Schwéiergrad",
+      "rate": "Rhythmus",
+      "title": "Iwwersiicht",
+      "window": "Fënster"
+    },
+    "rules": {
+      "empty": "Keng Reegelen",
+      "footer": "Fousszeil vun de Reegelen",
+      "loading": "Reegelen lueden...",
+      "min": "Minimum",
+      "minutes": "Minutten",
+      "required_patterns": "Requis Muster",
+      "title": "Reegelen",
+      "window": "Fënster"
+    },
+    "sev": {
+      "critical": "Kritesch",
+      "high": "Héich",
+      "low": "Niddreg",
+      "medium": "Mëttel"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "No Grond",
+        "by_type": "No Typ",
+        "title": "Opdeelung vun Ënnerdréckungen"
+      },
+      "rate": "Rhythmus vun Ënnerdréckungen",
+      "title": "Ënnerdréckungen",
+      "top_entity": "Top-Entitéit",
+      "total": "Total"
+    },
+    "test": {
+      "add_alert": "Alarm derbäisetzen",
+      "alerts_label": "Etikett vun den Alarmen",
+      "match": "Match",
+      "no_alerts": "Keng Alarme",
+      "no_match": "Keen Match",
+      "pick_rule": "Reegel auswielen",
+      "pick_rule_ph": "Plaz fir Reegel auszewielen",
+      "result": "Resultat",
+      "run": "Ausféieren",
+      "testing": "Test am Gaang...",
+      "title": "Korrelaatiounstest"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Vun do kopéieren",
+      "copy_mint": "Mint kopéieren",
+      "export_csv": "Exportéieren als CSV",
+      "export_csv_page": "Säit als CSV exportéieren",
+      "fetch": "Ofhuelen"
+    },
+    "bitcoin": {
+      "block_title": "Block-Numm",
+      "compute": "Computéieren",
+      "decoded": "Dekodéiert",
+      "edges_title": "Kanten-Numm",
+      "height_ph": "Plaz fir Héicht",
+      "ingest_edges": "Kanten lueden",
+      "method_heuristic": "Heuristesch Method",
+      "method_proportional": "Proportiounal Method",
+      "normalized": "Normaliséiert",
+      "tx_title": "Transaktioun-Numm",
+      "txid_ph": "Transaktioun-ID-Plaz"
+    },
+    "compliance": {
+      "add_watch": "Derbäisetzen op d'Observatioun",
+      "address_ph": "Adress-Plaz",
+      "chain_ph": "Ketten-Plaz",
+      "entries": "Aschreiwungen",
+      "error": "Feeler",
+      "filter_address_ph": "Adress-Filter-Plaz",
+      "filter_chain_ph": "Ketten-Filter-Plaz",
+      "list_watch": "Observatiouns-Lëscht",
+      "screen": "Ecran",
+      "title": "Konformitéit",
+      "watchlist": "Observatiouns-Lëscht"
+    },
+    "ethereum": {
+      "canonical": "Kanonesch",
+      "copy_hash": "Hash kopéieren",
+      "decoded": "Dekodéiert",
+      "error": "Feeler",
+      "open_etherscan": "Etherscan opmaachen",
+      "tx_hash_ph": "Transaktioun-Hash-Plaz",
+      "tx_title": "Transaktioun-Numm"
+    },
+    "ingest": {
+      "canonical_notice": "Kanonesch Luede-Bemierkung",
+      "edges_notice": "Kanten Luede-Bemierkung",
+      "loading": "Lueden..."
+    },
+    "labels": {
+      "add": "Derbäisetzen",
+      "address_ph": "Adress-Plaz",
+      "category_ph": "Kategorie-Plaz",
+      "chain_ph": "Ketten-Plaz",
+      "error": "Feeler",
+      "label_ph": "Etikett-Plaz",
+      "lookup": "Nokucken",
+      "title": "Etiketten"
+    },
+    "monitoring": {
+      "fetch": "Ofhuelen",
+      "key_counters": "Schlëssel-Zäiler",
+      "title": "Iwwerwaachung"
+    },
+    "rpc_unavailable": "RPC net verfügbar",
+    "solana": {
+      "canonical_error": "Kanonesch Feeler",
+      "canonical_title": "Kanonesch Luede-Numm",
+      "error": "Feeler",
+      "ingest_canonical": "Kanonesch lueden",
+      "signature_ph": "Ënnerschrëft-Plaz",
+      "title": "Solana-Numm",
+      "transfers": "Iwwertragungen"
+    },
+    "table": {
+      "actions": "Aktiounen",
+      "address": "Adress",
+      "amount_ui": "Montant UI",
+      "chain": "Ketten",
+      "created": "Erstellt",
+      "decimals": "Decimalen",
+      "fee": "Gebühr",
+      "from": "Vun",
+      "from_vout": "Vun vout",
+      "method": "Method",
+      "mint": "Mint",
+      "reason": "Grond",
+      "to": "Op",
+      "to_vout": "Op vout",
+      "value_btc": "Wäert BTC"
+    },
+    "totals": {
+      "page_sum": "Säit-Summe",
+      "page_sum_btc": "Säit-Summe BTC",
+      "total_amount": "Total Montant",
+      "total_value_btc": "Total Wäert BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Aktiounen",
+    "active": "Aktiv",
+    "administration": "Administratioun",
+    "alert_aging": "Alterung vun Alarme",
+    "alert_engine": "Alarm-Motor",
+    "alert_monitoring": "Iwwerwaachung vun Alarme",
+    "alert_overview": "Iwwersiicht vun Alarme",
+    "analyst_throughput": "Duerchsetz vum Analyst",
+    "audit_kpis": "Audit-KPIs",
+    "backlog": "Backlog",
+    "bucket_placeholder": "24h, 3d, 7d, >7d",
+    "buckets": "Bäcke",
+    "case_management": "Fallverwaltung",
+    "connected": "Verbonne",
+    "correlation_analysis": "Korrelaatiouns-Analyse",
+    "database": "Datebank",
+    "database_response": "Datebank-Antwert",
+    "days": "Deeg",
+    "disconnected": "Ofgebrach",
+    "failed_actions": "Feelerhaff Aktiounen",
+    "false_positive_rate": "Falsch Positiv-Ratio",
+    "fp": "FP",
+    "graph_db": "Graph-Datenbank",
+    "graph_explorer": "Graph-Explorer",
+    "healthy": "Gesond",
+    "inactive": "Inaktiv",
+    "issues": "Problemer",
+    "last_24h": "Lescht 24 Stonnen",
+    "last_update": "Lescht Aktualiséierung",
+    "mttr": "MTTR",
+    "open_alerts": "Opgeklappt Alarme",
+    "open_cases": "Opgeklappt Fäll",
+    "performance": "Performance",
+    "priority_distribution": "Prioritéitsverdeelung",
+    "quick_access": "Schnellzougang",
+    "recent_alerts": "Rezent Alarme",
+    "response_time": "Antwertzäit",
+    "rule_effectiveness": "Reegel-Effektivitéit",
+    "sanctions_hits": "Sanktiounen-Treffer",
+    "service_status": "Servicestatus",
+    "severity_breakdown": "Opdeelung vum Schwéiergrad",
+    "sla_breach_rate": "SLA-Verstouss-Ratio",
+    "sla_hours": "SLA (Stonnen)",
+    "status_breakdown": "Statusopdeelung",
+    "success_rate": "Erfollegsquote",
+    "suppression_rate": "Ënnerdréckungsquote",
+    "system_details": "System-Detailer",
+    "system_load": "Systemluede",
+    "system_overview": "System-Iwwersiicht",
+    "system_status": "Systemstatus",
+    "title": "SIGMACODE Blockchain Forensics Dashboard",
+    "total_alerts": "Total Alarme",
+    "total_cases": "Total Fäll",
+    "total_logs": "Total Logbicher",
+    "transaction_tracing": "Transaktiounen-Nospuren",
+    "uptime": "Betriebszäit",
+    "welcome": "Wëllkomm zréck",
+    "overview": "Übersiicht",
+    "recent_activity": "Rezent Aktivitéit",
+    "quick_actions": "Séier Aktiounen",
+    "statistics": "Statistiken",
+    "notifications": "Notifikatiounen",
+    "hero": {
+      "welcome": "Welcome back",
+      "subtitle": "Here is what's happening with your investigations today."
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "newTrace": "New Trace",
+      "newCase": "New Case",
+      "riskCheck": "Risk Check",
+      "aiAgent": "AI Agent"
+    },
+    "stats": {
+      "cases": "Aktiv Fäll",
+      "traces": "Verfolgungen haut",
+      "alerts": "Alarmer",
+      "uptime": "Laufzait"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Autonom Agenten mat LangChain- a GPT-4-Integratioun",
+        "title": "AI-Agenten"
+      },
+      "badge": "Kënschtlech Intelligenz an Iwwerwaachung",
+      "desc": "Iwwerwaachungsmodeller fir Anomaliedetektioun, Risikobewäertung an autonom AI-Agenten fir 24/7-Enquêten.",
+      "pattern": {
+        "desc": "Detektioun vun Betrugsmuster a Verhalensanalysen",
+        "title": "Mustererkennung"
+      },
+      "risk": {
+        "desc": "ML-baséiert Risikobewäertung vun Adressen an Transaktiounen",
+        "title": "Risikobewäertung"
+      },
+      "smart_contract": {
+        "desc": "Bytecode-Ähnlechkeet an Déifendetektioun",
+        "title": "Smart Contract-Analyse"
+      },
+      "title": "AI-gestëtzten Analyse"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "ML-baséiert Detektioun vun ongewéinleche Transaktiounsmuster",
+        "title": "Anomaliedetektioun"
+      },
+      "badge": "Echtzäit-Iwwerwaachung",
+      "custom_rules": {
+        "desc": "Eegen Alarmsregele mat Rule DSL an engem Regelmotor",
+        "title": "Benotzerdefinéiert Reegelen"
+      },
+      "desc": "15+ konfiguréierbar Alarmsregele mat Iwwerwaachung. Kritt Notifikatiounen iwwer Sanktiounen, Mixing, héichwäerteg Iwwertragungen an Anomalien.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io an aner Mixing-Servicer",
+        "title": "Mixing-Detektioun"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK-Sanktiounslisten mat deeglechen Update",
+        "title": "Sanktiouns-Kontroll"
+      },
+      "title": "Intelligent Alarmsmotor"
+    },
+    "case": {
+      "badge": "Enquête-Workflow",
+      "desc": "Komplett Enquêteverwaltung mat Beweisketten, eIDAS-Ënnerschrëften a gerichtsfäegen Rapporten.",
+      "eidas": {
+        "desc": "Qualifizéiert elektresch Ënnerschrëften no EU-Standarden",
+        "title": "eIDAS-Ënnerschrëften"
+      },
+      "evidence": {
+        "desc": "Komplett Beweis-Kette fir gerichtsfäeg Beweiser",
+        "title": "Beweiskette"
+      },
+      "export": {
+        "desc": "Export an PDF/Excel mat Zäitstempel an Audit-Trail",
+        "title": "Export a Rapporten"
+      },
+      "title": "Fallverwaltung a Beweiskette",
+      "tracking": {
+        "desc": "Strukturéiert Fallverwaltung mat Workflow-Status",
+        "title": "Fallverfolgung"
+      }
+    },
+    "cta": {
+      "demo": "Demande eng Demo",
+      "pricing": "Präisser weisen",
+      "subtitle": "Fänken elo mat enger gratis Demo un",
+      "title": "Bereet fir de komplette Package?",
+      "start": "Gratis Ufänken"
+    },
+    "graph": {
+      "badge": "Graph-Intelligenz",
+      "clustering": {
+        "desc": "Automatesch Gruppéierung vun verbonne Wallets",
+        "title": "Wallet-Gruppéierung"
+      },
+      "community": {
+        "desc": "Detektioun vu Wallets-Gruppen mat gemeinsam Interessen",
+        "title": "Gemeinschaftsdetektioun"
+      },
+      "desc": "Neo4j-baséiert Graph-Datenbank fir Entitéite-Gruppéierung, Gemeinschaftsdetektioun an visuell Enquêten.",
+      "labels": {
+        "desc": "Exchange/VASP/DeFi-Etiketten mat Gemeinschaftsintelligenz",
+        "title": "Entitéitsetiketten"
+      },
+      "title": "Entitéit-Opléisung an Netzwierksanalys",
+      "visual": {
+        "desc": "Interaktiv Graph-Explorer fir komplex Analysen",
+        "title": "Visuell Enquête"
+      }
+    },
+    "header": {
+      "badge": "Komplett Feature-Set",
+      "cta_try": "Gratis probéieren",
+      "subtitle": "Vun Transaktiounsverfolgung bis zu AI-Analyse – all Tools fir professionell Enquêten",
+      "title": "Komplett Blockchain-Forensik-Pak"
+    },
+    "security": {
+      "audit": {
+        "desc": "Komplett Audit-Trails fir Konformitéitsbeweiser",
+        "title": "Audit-Logbicher"
+      },
+      "badge": "Entreprise-Sécherheet",
+      "desc": "Entreprise-Sécherheet mat RBAC, SSO/SAML, Audit-Logbicher an GDPR-Konformitéit.",
+      "privacy": {
+        "desc": "GDPR-Konformitéit mat PII-Anonymiséierung",
+        "title": "Datenprotektion"
+      },
+      "rbac": {
+        "desc": "Granular Roll-baséiert Zougriffs-Kontroll mat benotzerdefinéierte Rollen",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Single Sign-On mat SAML 2.0 an OAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "Sécherheet an Konformitéit"
+    },
+    "seo": {
+      "description": "Komplett Blockchain-Forensik-Pak: Verfolgung, Alarme, Graph-Analyse, AI/ML, Fallverwaltung a Sécherheet.",
+      "title": "Fonctionnement | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Genauegkeet",
+      "ai_agents": "AI-Agenten",
+      "alert_rules": "Alarm-Reegelen",
+      "blockchains": "Blockchains",
+      "bridges": "Bréckprotokoller",
+      "case_templates": "Fall-Vorlagen",
+      "compliance": "Konformitéit",
+      "encryption": "Verschlësselung",
+      "entities": "Entitéiten",
+      "evidence_types": "Beweistypen",
+      "false_positives": "Falsch Positiver",
+      "max_depth": "Maximal Spuerdiefst",
+      "ml_models": "ML-Modeler",
+      "query_time": "Ufro-Zäit",
+      "relationships": "Bezéiungen",
+      "response_time": "Antwertzäit",
+      "security_certs": "Sécherheetszertifikater",
+      "uptime_sla": "SLA-Betriebszäit"
+    },
+    "tracing": {
+      "badge": "Transaktiounsverfolgung",
+      "bridge": {
+        "desc": "Automatesch Detektioun vu Cross-Chain-Brécken an gepackte Verméigen",
+        "title": "Bréckdetektioun"
+      },
+      "cross_chain": {
+        "desc": "Ënnerstëtzung fir 100+ Blockchains: EVM, UTXO, Solana, Cosmos a méi",
+        "title": "Cross-Chain-Verfolgung"
+      },
+      "demixing": {
+        "desc": "Heuristesch Analyse vu Tornado Cash, Mixer a private Mënzen",
+        "title": "Demixing vu private Mënzen"
+      },
+      "desc": "Verfollegt Transaktiounen op all Haaptblockchains. Enthält Cross-Chain-Bréckdetektioun, Demixing vu private Mënzen an rekursiv Virun- an Zréckverfolgung.",
+      "recursive": {
+        "desc": "Virun- an Zréckverfolgung mat konfiguréierbar Diefst an Filteren",
+        "title": "Rekursiv Verfolgung"
+      },
+      "title": "Multi-Chain-Transaktiounsintelligenz"
+    },
+    "hero": {
+      "badge": "Features",
+      "title": "Enterprise-Grade Blockchain Forensics",
+      "subtitle": "All tools you need to investigate crypto crime, ensure compliance, and protect your business."
+    }
+  },
+  "footer": {
+    "blog": "Blog",
+    "careers": "Karriär",
+    "company": "Firma",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "legal": "Legal",
+    "privacy": "Privatsphär",
+    "product": "Produkt",
+    "request_demo": "Demande eng Demo",
+    "rights_reserved": "All Rechter reservéiert.",
+    "security": "Sécherheet",
+    "tagline": "Blockchain-AI fir Entreprise-Konformitéit an Enquêten – sécher, séier, gerichtsfäeg.",
+    "terms": "Conditiounen"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Aktiv Knëppchen",
+      "avg_degree": "Duerchschnëttlechen Grad",
+      "density": "Dicht vum Netz",
+      "total_edges": "Total Kanten",
+      "total_nodes": "Total Knëppchen"
+    },
+    "centrality": {
+      "taint": "Verschmotzung",
+      "title": "Zentralitéitsanalyse"
+    },
+    "communities": {
+      "algorithm": "Algorithmus",
+      "avg_size": "Duerchschnëttlech Gréisst",
+      "avg_taint": "Duerchschnëttlech Verschmotzung",
+      "empty": "Klickt ",
+      "label_propagation": "Etikett-Propagatioun",
+      "loading": "Detektioun vu Gemeinschaften...",
+      "louvain": "Louvain (Modularitéit)",
+      "title": "Gemeinschaftsdetektioun",
+      "total": "Total Gemeinschaften"
+    },
+    "degree": {
+      "title": "Graddverdeelung",
+      "x": "Grad",
+      "y": "Zuel"
+    },
+    "filters": {
+      "cross_chain": "Cross-Chain (Bréckschicht)",
+      "from": "Vun (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Op (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Avancéiert Netzwierksanalysen a Musterdetektioun",
+      "title": "Graph-Analyse an Netzwierksintelligenz"
+    },
+    "hubs": {
+      "in": "A",
+      "out": "Eraus",
+      "title": "Netzwierksknäppchen (Héichgrad-Knöppchen)",
+      "total": "Total"
+    },
+    "loading": {
+      "stats": "Statistiken lueden..."
+    },
+    "patterns": {
+      "circle_length": "Kreeslängt",
+      "detected": "Detektéiert Kreeser",
+      "empty_desc": "Dëst ass e gudde Zeeche – keng offensichtlech Geldwäsch-Kreeser fonnt",
+      "empty_title": "Keng Kreesmuster detektéiert",
+      "high_risk": "Héich Risiko",
+      "hops": "Spréngen",
+      "loading": "Musterdetektioun...",
+      "more_addresses": "méi Adressen",
+      "risk_score": "Risikoscore",
+      "title": "Kreesmuster (méiglechen Geldwäsch)",
+      "total": "Total",
+      "total_value": "Total Wäert",
+      "tx_path": "Transaktiounspfad:"
+    },
+    "tabs": {
+      "communities": "Gemeinschaftsdetektioun",
+      "overview": "Netzwierksiwwersiicht",
+      "patterns": "Musterdetektioun"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Clusterung",
+      "clustering": "Clusterung am Gaang...",
+      "pause_timeline": "Zäitlinn op pause setzen",
+      "play_timeline": "Zäitlinn ofspillen",
+      "title": "Aktiounen vum Enquêteur"
+    },
+    "connected": {
+      "taint": "Verschmotzung",
+      "title": "Verbonne Entitéiten",
+      "tx": "Transaktiounen"
+    },
+    "graph": {
+      "connections": "Verbindungen",
+      "enter_address": "Adress aginn",
+      "loading": "Graph lueden...",
+      "nodes": "Knëppchen",
+      "title": "Graph-Ansicht"
+    },
+    "header": {
+      "subtitle": "Enquêteur-Undertitel",
+      "title": "Enquêteur"
+    },
+    "path": {
+      "bridges": "Brécken",
+      "hops": "Spréngen",
+      "risk_score": "Risikoscore",
+      "title": "Pad",
+      "total_value": "Total Wäert"
+    },
+    "search": {
+      "explore": "Exploréieren",
+      "placeholder": "Sichplaz",
+      "title": "Sich"
+    },
+    "settings": {
+      "from": "Vun",
+      "hops_1": "1 Sprong",
+      "hops_2": "2 Spréngen",
+      "hops_3": "3 Spréngen",
+      "hops_4": "4 Spréngen",
+      "hops_5": "5 Spréngen",
+      "include_bridges": "Brécken abannen",
+      "max_hops": "Maximal Spréngen",
+      "title": "Astellungen",
+      "to": "Op"
+    },
+    "timeline": {
+      "empty": "Eidel Zäitlinn",
+      "events": "Evenementer",
+      "risk": "Risiko",
+      "select_address": "Adress auswielen",
+      "title": "Zäitlinn",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Demande elo eng Demo",
+      "pricing": "Präisser weisen"
+    },
+    "cta2": {
+      "demo": "Demande eng gratis Demo",
+      "pricing": "Präisser weisen",
+      "subtitle": "Fänken elo mat enger gratis Demo un an erlieft d'Zukunft vun der Blockchain-Forensik",
+      "title": "Bereet fir Entreprise-Blockchain-Intelligenz?"
+    },
+    "features": {
+      "badge": "Fonctionnement",
+      "subtitle": "Entreprise-Tools fir Konformitéit, Enquêten a Risikoverwaltung",
+      "title": "All wat Dir fir Blockchain-Forensik braucht"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Blockchain Forensics",
+      "point1": "100+ Blockchains",
+      "point2": "OFAC/UN/EU-Sanktiounen",
+      "point3": "Echtzäit-Iwwerwaachung",
+      "subtitle": "AI-gestëtzten Konformitéit, Enquêten a Risiko-Iwwerwaachung – an Echtzäit an op Entreprise-Niveau.",
+      "title": "Entreprise-Blockchain-Intelligenz"
+    },
+    "pricing": {
+      "badge": "Präisser",
+      "subtitle": "Vun gratis Tools bis Entreprise – fänken elo un",
+      "title": "Flexibel Packages fir all Entreprise-Gréisst",
+      "view_all": "All Präisser weisen"
+    },
+    "seo": {
+      "description": "AI-gestëtzten Konformitéit, Enquêten a Risiko-Iwwerwaachung – an Echtzäit an op Entreprise-Niveau. SIGMACODE Blockchain Forensics.",
+      "title": "SIGMACODE | Entreprise-Blockchain-Intelligenz"
+    },
+    "tech": {
+      "badge": "Technologie",
+      "subtitle": "Entreprise-Infrastruktur fir maximal Performance an Sécherheet",
+      "title": "Ofgeklengte Technologiestack"
+    },
+    "use_cases": {
+      "badge": "Benotzungsfäll",
+      "subtitle": "Vun Gesetzesverfolgung bis FinTech",
+      "title": "D'richteg Léisung fir all Benotzungsszenario"
+    }
+  },
+  "layout": {
+    "main_navigation": "Haaptnavigatioun",
+    "quick_search_title": "Schnellsich (Ctrl/⌘+K)",
+    "skip_to_content": "Op Inhalt sprangen",
+    "quick_search_placeholder": "Séier sichen...",
+    "quick_search_hint": "Tipp: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie banner",
+    "title": "Cookies & Privacy",
+    "title_short": "Cookies",
+    "description": "We use essential cookies to operate this website. Optional analytics cookies help us understand and improve usage. You can accept all cookies or allow only necessary ones. You can change your choice at any time in the settings.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Service",
+    "imprint_link": "Imprint",
+    "only_necessary": "Only necessary",
+    "accept_all": "Accept all",
+    "preferences": "Preferences",
+    "save_preferences": "Save preferences",
+    "manage": "Cookie settings",
+    "analytics_title": "Analytics cookies",
+    "analytics_desc": "Helps us understand usage to improve the website.",
+    "marketing_title": "Marketing cookies",
+    "marketing_desc": "Enables personalized content and offers.",
+    "all_optional_title": "Enable all optional",
+    "all_optional_desc": "Enables both analytics and marketing cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Zoumaachen",
+        "close_title": "Alarm zoumaachen",
+        "copy_alert_id_title": "Alarm-ID kopéieren",
+        "copy_entity": "Entitéit kopéieren",
+        "copy_entity_id_title": "Entitéit-ID kopéieren",
+        "copy_id": "ID kopéieren",
+        "copy_rule": "Regel kopéieren",
+        "copy_rule_id_title": "Regel-ID kopéieren",
+        "details": "Detailer",
+        "details_title": "Detailer weisen",
+        "reset": "Zrécksetzen"
+      },
+      "audit": {
+        "empty": "Keng Evenementer",
+        "title": "Audit-Trail"
+      },
+      "csv": {
+        "export_all": "Exportéieren als CSV (all)",
+        "export_all_title": "All gefiltert Reien als CSV exportéieren (Server)",
+        "export_page": "Säit als CSV exportéieren",
+        "export_page_title": "Aktuell Säit als CSV exportéieren",
+        "no_filtered_data": "Keng gefiltert Donnéeën",
+        "no_page_data": "Keng Donnéeën op dëser Säit"
+      },
+      "empty": "Keng Alarme fonnt",
+      "filters": {
+        "all": "(all)",
+        "search_label": "Sich (rule_id / entity_id)",
+        "search_placeholder": "Sichen...",
+        "severity": "Schwéiergrad",
+        "source": "Quell",
+        "source_persisted": "Dauerhaft (KYT)",
+        "source_realtime": "Echtzäit (Alarm-Motor)",
+        "status": "Status"
+      },
+      "kpi": {
+        "event_time_set": "Evenement-Zäit asetzen (first_seen_at)",
+        "event_time_title": "Evenement-Zäit = first_seen_at",
+        "false_positive": "Als falsch Positiv markéieren",
+        "title": "KPI-Annotatiounen",
+        "true_positive": "Als richteg Positiv markéieren"
+      },
+      "loading": "Alarme lueden...",
+      "modal": {
+        "alert_id": "Alarm-ID",
+        "chain": "Ketten",
+        "context": "Kontext",
+        "entity": "Entitéit",
+        "rule_id": "Regel-ID",
+        "severity": "Schwéiergrad",
+        "title": "Alarm-Detailer"
+      },
+      "pagination": {
+        "next": "Weider",
+        "page": "Säit",
+        "prev": "Virgehiewe"
+      },
+      "severity": {
+        "critical": "kritesch",
+        "high": "héich",
+        "low": "niddreg",
+        "medium": "mëttel"
+      },
+      "status": {
+        "assigned": "zougewise",
+        "closed": "zoumach",
+        "open": "opgeklappt",
+        "snoozed": "opgeschoss"
+      },
+      "subtitle": "Echtzäit-Reegelen a dauerhaft Alarme (KYT)",
+      "table": {
+        "first": "éischte",
+        "last": "leschte"
+      },
+      "title": "Iwwerwaachung vun Alarme",
+      "toasts": {
+        "copy_failed": "Kopie huet net fonctionnéiert",
+        "disposition_failed": "Statussëtzung huet net fonctionnéiert",
+        "disposition_set": "Status gesat",
+        "entity_copied": "Entitéit kopéiert",
+        "event_time_failed": "Evenement-Zäit-Sëtzung huet net fonctionnéiert",
+        "event_time_set": "Evenement-Zäit gesat",
+        "export_failed": "Export huet net fonctionnéiert",
+        "export_started": "Export ugefaang",
+        "id_copied": "ID kopéiert",
+        "rule_copied": "Regel kopéiert"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Iwwer eis",
+    "analytics": "Analytik",
+    "close_menu": "Navigatioun zoumaachen",
+    "dashboard": "Dashboard",
+    "features": "Fonctionnement",
+    "home": "Heem",
+    "logout": "Ofmellen",
+    "open_menu": "Navigatioun opmaachen",
+    "pricing": "Präisser",
+    "settings": "Astellungen",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Aktualiséieren"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Kären",
+        "title": "CPU-Nutzung"
+      },
+      "db": {
+        "connected": "✓ Verbonne",
+        "disconnected": "✗ Ofgebrach",
+        "response": "Antwert",
+        "title": "Datebank"
+      },
+      "memory": {
+        "available": "verfügbar",
+        "title": "Mémoire-Nutzung"
+      },
+      "system_status": {
+        "healthy": "Gesond",
+        "issues": "Problemer",
+        "title": "Systemstatus",
+        "uptime": "Betriebszäit"
+      }
+    },
+    "common": {
+      "no": "Nee",
+      "yes": "Jo"
+    },
+    "header": {
+      "last_refresh": "Lescht Aktualiséierung",
+      "subtitle": "Komplett Iwwerwaachung vun der Systemperformance, Metriken an SLO",
+      "title": "Performance- a Observabilitéits-Dashboard"
+    },
+    "metrics": {
+      "empty": "Keng Metrik-Daten verfügbar",
+      "loading": "Metriken lueden...",
+      "max": "Maximum",
+      "measurements": "Messungen",
+      "min": "Minimum",
+      "title": "Performance-Metriken (1 Stonn)",
+      "trend": "Trend"
+    },
+    "recent_alerts": {
+      "empty": "Keng rezent Alarme",
+      "title": "Rezent Performance-Alarme"
+    },
+    "services": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "title": "Servicestatus"
+    },
+    "slo": {
+      "empty": "Keng SLO-Daten verfügbar",
+      "loading": "SLOs lueden...",
+      "threshold": "Schwellenwert",
+      "title": "SLO-Konformitéit",
+      "violations": "Verstéiss"
+    },
+    "system_details": {
+      "database": "Datebank",
+      "db_connected": "Verbonne",
+      "db_type": "Typ",
+      "debug": "Debug",
+      "environment": "Ëmwelt",
+      "log_level": "Log-Niveau",
+      "mode": "Modus",
+      "platform": "Plattform",
+      "python_version": "Python-Versioun",
+      "response_time": "Antwertzäit",
+      "system_info": "System-Info",
+      "title": "System-Detailer",
+      "version": "Versioun"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Zousätzlech Blockchains",
+        "i2": "Zousätzlech Benotzerplazen",
+        "i3": "Premium-Sanktiounen (erweidert Lëschten)",
+        "i4": "Fortgeschratt Exportformater",
+        "i5": "Prioritéits-Support",
+        "i6": "White-Label (Entreprise)",
+        "title": "Verfügbar Add-ons"
+      },
+      "badge": "Flexibel Erweiderungen",
+      "overage": {
+        "extra_credits": "Zousätzlech Kreditter",
+        "monthly_cap": "Monatleche Limit",
+        "note": "Benotzt Dir méi wéi Äre Limit? Keng Suerg – d'Überschreidung gëtt automatesch ofgerechent.",
+        "title": "Überschreidungspräisser"
+      },
+      "subtitle": "Erweidert Äre Plang no Äre Besoinen",
+      "title": "Add-ons an Überschreidungen"
+    },
+    "card": {
+      "custom": "Benotzerdefinéiert",
+      "desc_business": "Fir grouss Teams",
+      "desc_community": "Fir Enthusiasten an Open Source",
+      "desc_enterprise": "Fir Entreprisen an Reguléierer",
+      "desc_pro": "Fir wuesse Kanner",
+      "desc_starter": "Fir kleng Teams",
+      "per_month": "pro Mount",
+      "popular": "Beléift",
+      "popular_label": "Beléift",
+      "save_year": "Späret ${{amount}}/Joer"
+    },
+    "cta": {
+      "active_plan": "✓ Aktiven Plang",
+      "contact_sales": "Kontaktéiert de Verkaf",
+      "demo": "Demande eng Demo",
+      "more_about": "Méi iwwer eis",
+      "saving": "Späicheren...",
+      "set_tenant_plan": "Als Tenant-Plang asetzen",
+      "start_now": "Fänken elo un",
+      "subscribe": "Abonnéieren elo",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Aktuelle Plang",
+    "enterprise": {
+      "card_desc": "Fir Entreprisen an Reguléierer",
+      "subtitle": "Benotzerdefinéiert Präisser, SLA, Integratiounen, On-Prem/VPC",
+      "title": "Fir finanziell Institutiounen an Reguléierer"
+    },
+    "faq": {
+      "subtitle": "Kontaktéiert eis Verkafsequipe fir eng perséinlech Demo",
+      "title": "Hutt Dir Froen?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchains",
+      "cases": "Fäll",
+      "credits": "Kreditter/Mount",
+      "priority": "Prioritéit",
+      "users": "Benotzer"
+    },
+    "header": {
+      "badge": "Flexibel Präisser",
+      "subtitle": "Vun gratis Gemeinschafts-Tools bis Entreprise mat White-Label. Fänken haut un an skaléiert mat Ärem Wuesstem.",
+      "title": "De richtege Plang fir all Team"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI-Agenten",
+        "i2": "Graph-Analyse",
+        "i3": "Risikobewäertung",
+        "i4": "ML-Modeler",
+        "title": "Fortgeschratt Analytiken"
+      },
+      "badge": "Wat ass abegraff?",
+      "performance": {
+        "i1": "Echtzäit-Alarme",
+        "i2": "API-Zougang",
+        "i3": "Prioritéits-Waiting",
+        "i4": "99,9 % Betriebszäit",
+        "title": "Performance"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Audit-Logbicher",
+        "i4": "GDPR-konform",
+        "title": "Sécherheet an Konformitéit"
+      },
+      "team": {
+        "i1": "Méi Benotzer",
+        "i2": "Fallverwaltung",
+        "i3": "Beweiskette",
+        "i4": "Zesummenaarbecht",
+        "title": "Team-Fonctionnement"
+      },
+      "title": "All Fonctionnement um engem Plang"
+    },
+    "more": "méi",
+    "seo": {
+      "description": "Transparant Präisser: vun der Gemeinschaft bis Entreprise. Flexibel Pläng fir Teams, Entreprisen an Reguléierer.",
+      "title": "Präisser | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Selbstbedéngungs-Pläng fir Start-ups bis Mëttelstänneg Maart",
+      "title": "Fir Teams an Entreprisen"
+    },
+    "toggle": {
+      "annual": "Jäerlech",
+      "monthly": "Monatlech",
+      "save": "Späret {{pct}}%"
+    },
+    "top_features": "TOP-FONCTIONNEMENT",
+    "hero": {
+      "badge": "Pricing",
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your needs. All plans include core features. Upgrade anytime."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Aktualiséieren"
+    },
+    "audit": {
+      "empty": "Keng Audit-Trail-Daten verfügbar",
+      "loading": "Audit-Trail lueden...",
+      "title": "Rezent Audit-Trail-Daten",
+      "user": "Benotzer",
+      "view_all": "All weisen →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Integritéit vum Audit-Trail"
+      },
+      "failed_logins": {
+        "title": "Feelerhaff Login-Versich"
+      },
+      "gdpr": {
+        "title": "GDPR-Konformitéit"
+      },
+      "security_incidents": {
+        "title": "Sécherheetsincidenter"
+      }
+    },
+    "common": {
+      "implemented": "Implementéiert",
+      "not_implemented": "Net implementéiert",
+      "unknown": "Onbekannt"
+    },
+    "compliance": {
+      "anonymization": "Anonymiséierung",
+      "certifications": "Zertifikater",
+      "consent_management": "Zoustëmmungsverwaltung",
+      "data_portability": "Datenportabilitéit",
+      "empty": "Keng Konformitéits-Daten verfügbar",
+      "encryption": "Verschlësselung",
+      "loading": "Konformitéitsstatus lueden...",
+      "right_to_erasure": "Recht op Léischtung",
+      "title": "GDPR-Konformitéitsstatus"
+    },
+    "header": {
+      "last_refresh": "Lescht Aktualiséierung",
+      "subtitle": "Audit-Trails, GDPR-Konformitéit an Sécherheetsiwwerwaachung",
+      "title": "Sécherheet- a Konformitéits-Dashboard"
+    },
+    "quick_actions": {
+      "audit_export": "Audit-Export",
+      "compliance_report": "Konformitéitsbericht",
+      "gdpr_status": "GDPR-Status",
+      "incident_report": "Incidentenbericht",
+      "integrity_check": "Integritéits-Check",
+      "security_scan": "Sécherheets-Scan",
+      "title": "Sécherheet- a Konformitéits-Aktiounen"
+    },
+    "retention": {
+      "days": "Deeg",
+      "empty": "Keng Retentiouns-Daten verfügbar",
+      "title": "Retentiouns-Konformitéit",
+      "violations": {
+        "count": "Verstéiss",
+        "days_old": "Deeg al",
+        "more": "an",
+        "more_suffix": "méi",
+        "title": "Retentiounsverstéiss"
+      }
+    },
+    "security": {
+      "compliance_status": "Konformitéitsstatus",
+      "empty": "Keng Sécherheets-Daten verfügbar",
+      "failed_logins": "Feelerhaff Logins",
+      "incidents": "Sécherheetsincidenter",
+      "rate_limited_ips": "IP-Adressen mat limitéierter Geschwindegkeet",
+      "suspicious_activities": "Verdächteg Aktivitéiten",
+      "title": "Sécherheetsiwwersiicht"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Opgeklappt Alarme no Alterungs-Kategorien (z.B. 24h, 3d, 7d, >7d)",
+    "alert_engine": "Echtzäit-Iwwerwaachung vu verdächtege Transaktiounen a Muster mat ML-Algorithmen",
+    "alert_overview": "Iwwersiicht iwwer all aktiv Sécherheetsalarme mat hirem Schwéiergrad (Kritesch/Héich/Mëttel/Niddreg)",
+    "analyst_throughput": "Zuel vun zouenen Fäll pro Analyst an der gewielter Zäitfenster",
+    "backlog": "Total Zuel vun opgeklappte (ouni Opmierksamkeet) Alarme an oppenen Fäll",
+    "database": "PostgreSQL/TimescaleDB-Verbindungszoustand an Antwertzäit fir Zäitreihendaten",
+    "graph_db": "Neo4j-Graph-Datenbank fir komplex Bezéiungsanalysen a Netzwierkskarten",
+    "system_status": "Weist de aktuellen Zoustand vun alle Systemkomponenten. Gréng = Gesond, Rout = Problemer erkannt",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Verfügbar Visitten",
+    "completed": "ofgeschloss",
+    "finish": "Ofschléissen",
+    "no_tours_available": "Keng Visitten op dëser Säit verfügbar",
+    "of": "vu",
+    "select_tour_description": "Wiel eng Visitt fir Iech iwwer d'Plattform-Fonctionnement ze informéieren",
+    "skip": "Iwwersprangen",
+    "start": "tours.start",
+    "start_tour": "Visitt starten",
+    "step": "Schrëtt",
+    "steps": "Schrëtter"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Detailer",
+      "direction": "Richtung",
+      "error_title": "Feeler-Numm",
+      "exec_time": "Ausféierzäit",
+      "export": "Export",
+      "flow_graph": "Floss-Graph",
+      "high_risk": "Héich Risiko",
+      "high_risk_title": "Héich Risiko-Numm",
+      "loading": "Lueden...",
+      "max_hop": "Maximal Sprong",
+      "not_found": "Net fonnt",
+      "report": "Report",
+      "sanctioned_title": "Sanktionéiert-Numm",
+      "sanctioned_warning": "Sanktionéiert Warnung",
+      "source": "Quell",
+      "taint": "Verschmotzung",
+      "taint_model": "Verschmotzungsmodell",
+      "title": "Resultat",
+      "total_edges": "Total Kanten",
+      "total_nodes": "Total Knëppchen"
+    },
+    "simple": {
+      "address_ph": "Adress-Plaz",
+      "chain_btc": "BTC-Ketten",
+      "chain_eth": "ETH-Ketten",
+      "chain_sol": "SOL-Ketten",
+      "cluster": {
+        "clustering": "Clusterung",
+        "export_members": "Member exportéieren",
+        "label": "Etikett",
+        "lookup": "Nokucken",
+        "member_address": "Adress vum Member",
+        "members": "Member",
+        "title": "Cluster-Numm"
+      },
+      "depth_ph": "Diefst-Plaz",
+      "edges": "Kanten",
+      "error_cluster": "Clusterungsfeeler",
+      "error_trace": "Spurenfeeler",
+      "export_paths": "Pfade exportéieren",
+      "export_targets": "Ziler exportéieren",
+      "high_risk": "Héich Risiko",
+      "model_fifo": "FIFO-Modell",
+      "model_haircut": "Haircut-Modell",
+      "model_proportional": "Proportiounal Modell",
+      "nodes": "Knëppchen",
+      "run": "Ausféieren",
+      "summary": "Resumé",
+      "th_path": "Pad",
+      "th_paths": "Pfade",
+      "th_taint": "Verschmotzung",
+      "th_target": "Zil",
+      "threshold_ph": "Schwellenwert-Plaz",
+      "title": "Einfach Spuren",
+      "tracing": "Spuren..."
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "Beschreiwung vun der Wallet-Analyse",
+        "title": "Numm vun der Wallet-Analyse",
+        "wip": "Wallet-Analyse ass am Gaang"
+      },
+      "export": {
+        "csv": "Exportéieren als CSV",
+        "desc": "Beschreiwung vum Export",
+        "json": "Exportéieren als JSON",
+        "pdf": "Exportéieren als PDF",
+        "section_export": "Export-Sectioun",
+        "section_import": "Import-Sectioun",
+        "title": "Export"
+      },
+      "header": {
+        "title": "Numm vum Wallet-Test"
+      },
+      "import": {
+        "add_wallet": "Wallet derbäisetzen",
+        "json": "Import aus JSON",
+        "restore_backup": "Backup restauréieren"
+      },
+      "multisig": {
+        "desc": "Beschreiwung vum Multisig",
+        "title": "Numm vum Multisig",
+        "wip": "Multisig ass am Gaang"
+      },
+      "overview": {
+        "active_wallets": "Aktiv Wallets",
+        "activity": {
+          "liquidity": "Liquiditéit",
+          "nft": "NFT",
+          "receive": "Empfänken"
+        },
+        "month_change": "Mountsännerung",
+        "multisig": "Multisig",
+        "new_this_week": "Nei dës Woch",
+        "recent": "Rezent",
+        "security_grade": "Sécherheetsklass",
+        "security_score": "Sécherheetsscore",
+        "status": {
+          "2fa": "2FA",
+          "active": "Aktiv",
+          "backup": "Backup",
+          "backup_available": "Backup verfügbar",
+          "hardware": "Hardware",
+          "hw_connected": "Hardware verbonne",
+          "recovery": "Rekuperatioun",
+          "secured": "Geséchert",
+          "title": "Status vun der Wallet"
+        },
+        "total_volume": "Total Volumen"
+      },
+      "sidebar": {
+        "title": "Wallet-Sidebar"
+      },
+      "tabs": {
+        "analytics": "Analytik",
+        "crosschain": "Cross-Chain",
+        "export": "Export",
+        "multisig": "Multisig",
+        "nft": "NFT",
+        "overview": "Iwwersiicht",
+        "transactions": "Transaktiounen"
+      },
+      "transactions": {
+        "desc": "Beschreiwung vun Transaktiounen",
+        "export": "Export",
+        "title": "Numm vun Transaktiounen",
+        "wip": "Transaktiounen sinn am Gaang"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Web-Analytik"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "Verfolgung"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "Adress"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "Iwwerpréiwung"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "Ausféieren",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "Online",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

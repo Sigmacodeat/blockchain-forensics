@@ -1,0 +1,13 @@
+{
+  "txid": "cj_prev_tx_3",
+  "vout": [
+    {
+      "n": 0,
+      "value": 0.17,
+      "scriptPubKey": {
+        "type": "pubkeyhash",
+        "addresses": ["1CJAddr3"]
+      }
+    }
+  ]
+}

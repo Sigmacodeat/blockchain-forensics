@@ -1,0 +1,70 @@
+{
+  "currency": "EUR",
+  "annual_discount_percent": 20,
+  "overage": { "price_per_1000_credits_usd": 10, "monthly_cap_enabled": true },
+  "addons": {
+    "extra_credits_per_1000_usd": 10,
+    "extra_chains_bundle_2_usd": 49,
+    "extra_seat_starter_pro_usd": 15,
+    "extra_seat_business_usd": 25,
+    "sanctions_premium_usd": 99,
+    "advanced_exports_from_usd": 49,
+    "priority_support_usd": 99
+  },
+  "plans": [
+    {
+      "id": "community",
+      "name": "Community",
+      "monthly_price_usd": 0,
+      "yearly_price_usd": 0,
+      "quotas": { "chains": 1, "seats": 1, "credits_monthly": 1000, "addresses": 3, "cases": 1, "alerts": 1, "api_rate": "very_low" },
+      "features": { "tracing_basic": true, "risk_standard": true, "csv_small": true, "dashboards_basic": true },
+      "sla": { "type": "community", "response_hours": null }
+    },
+    {
+      "id": "starter",
+      "name": "Starter",
+      "monthly_price_usd": 39,
+      "yearly_price_usd": 374,
+      "quotas": { "chains": 1, "seats": 1, "credits_monthly": 1000, "addresses": 3, "cases": 3, "alerts": 3, "api_rate": "low" },
+      "features": { "tracing_enhanced": true, "label_enrichment": true, "kyt_presets_basic": true, "webhooks_limited": true, "reports_pdf_standard": true },
+      "sla": { "type": "email", "response_hours": 72 }
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "monthly_price_usd": 99,
+      "yearly_price_usd": 950,
+      "quotas": { "chains": 2, "seats": 3, "credits_monthly": 10000, "addresses": 25, "cases": 20, "alerts": 10, "api_rate": "medium", "queue_priority": "medium" },
+      "features": { "case_management": true, "kyt_playbooks_editable": true, "reports_pdf_branding": true, "scheduling": true, "graph_views": true, "entity_merge_basic": true, "audit_logs_basic": true },
+      "sla": { "type": "email", "response_hours": 48 }
+    },
+    {
+      "id": "team",
+      "name": "Team",
+      "monthly_price_usd": 349,
+      "yearly_price_usd": 3350,
+      "quotas": { "chains": 5, "seats": 10, "credits_monthly": 100000, "addresses": 150, "cases": 100, "alerts": 50, "api_rate": "high", "queue_priority": "medium_high" },
+      "features": { "correlation_basics": true, "ai_tools_full": true, "webhooks": true, "reports_scheduled": true, "rbac_granular": true, "kpi_annotations": true },
+      "sla": { "type": "email", "response_hours": 36 }
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "monthly_price_usd": 1490,
+      "yearly_price_usd": 14304,
+      "quotas": { "chains": 10, "seats": 25, "credits_monthly": 1000000, "addresses": 1000, "cases": 1000, "alerts": 100, "api_rate": "very_high", "queue_priority": "high" },
+      "features": { "kyt_advanced_screening": true, "risk_policies": true, "roles_permissions": true, "audit_logs_advanced": true, "graph_exports_quota": "high", "scheduled_reports": true, "sso_saml": true, "siem_exports": "csv_webhook" },
+      "sla": { "type": "priority", "response_hours": 24 }
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "monthly_price_usd": 4999,
+      "yearly_price_usd": 47990,
+      "quotas": { "chains": 20, "seats": 100, "credits_monthly": null, "addresses": 5000, "cases": 5000, "alerts": 500, "api_rate": "dedicated", "queue_priority": "dedicated" },
+      "features": { "chain_of_custody_full": true, "eidas_signatures": true, "data_residency": true, "vpc_onprem": true, "private_indexers": true, "integrations_grc_siem_caseapi": true, "dlp_kms": true },
+      "sla": { "type": "contract", "response_hours": 8, "support": "8x5_to_24x7", "cs_manager": true }
+    }
+  ]
+}
