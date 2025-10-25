@@ -736,15 +736,77 @@ async def monitor_invoices(current_user: dict = Depends(require_admin)):
         raise HTTPException(status_code=500, detail="Failed to monitor invoices")
 
 
+from app.services.payment_analytics_service import payment_analytics_service
+
+
+@router.get("/analytics/revenue-summary")
+async def get_revenue_summary(
+    days: int = 30,
+    current_user: dict = Depends(require_admin)
+):
+    """Get revenue summary (Admin only)."""
+    try:
+        return payment_analytics_service.get_revenue_summary(days)
+    except Exception as e:
+        logger.error(f"Revenue summary failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get revenue summary")
+
+
+@router.get("/analytics/daily-revenue")
+async def get_daily_revenue(
+    days: int = 30,
+    current_user: dict = Depends(require_admin)
+):
+    """Get daily revenue breakdown (Admin only)."""
+    try:
+        return {"daily_revenue": payment_analytics_service.get_daily_revenue(days)}
+    except Exception as e:
+        logger.error(f"Daily revenue failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get daily revenue")
+
+
+@router.get("/analytics/conversion-funnel")
+async def get_conversion_funnel(
+    days: int = 30,
+    current_user: dict = Depends(require_admin)
+):
+    """Get payment conversion funnel (Admin only)."""
+    try:
+        return payment_analytics_service.get_payment_conversion_funnel(days)
+    except Exception as e:
+        logger.error(f"Conversion funnel failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get conversion funnel")
+
+
+@router.get("/analytics/top-assets")
+async def get_top_assets(
+    days: int = 30,
+    current_user: dict = Depends(require_admin)
+):
+    """Get top performing payment assets (Admin only)."""
+    try:
+        return {"top_assets": payment_analytics_service.get_top_performing_assets(days)}
+    except Exception as e:
+        logger.error(f"Top assets failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get top assets")
+
+
+@router.get("/analytics/geography")
+async def get_payment_geography(
+    days: int = 30,
+    current_user: dict = Depends(require_admin)
+):
+    """Get payment geography data (Admin only)."""
+    try:
+        return {"geography": payment_analytics_service.get_payment_geography(days)}
+    except Exception as e:
+        logger.error(f"Payment geography failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get payment geography")
+
+
 # ============================================================================
 # Internal BTC Wallet Management (Admin Only)
 # ============================================================================
-
-from app.services.btc_wallet_service import btc_wallet_service
-from app.auth.dependencies import require_admin
-from app.models.crypto_payment import CryptoWallet
-from app.db.session import get_db
-from sqlalchemy.orm import Session
 
 
 class CreateWalletRequest(BaseModel):

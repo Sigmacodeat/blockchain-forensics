@@ -130,14 +130,23 @@ class PostgresClient:
                 )
             """)
 
-            # Knowledge base documents (simple RAG store)
+            # User subscriptions (SaaS billing)
             await conn.execute("""
-                CREATE TABLE IF NOT EXISTS kb_docs (
-                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-                    path TEXT,
-                    title TEXT,
-                    content TEXT,
-                    ts TIMESTAMPTZ NOT NULL DEFAULT NOW()
+                CREATE TABLE IF NOT EXISTS user_subscriptions (
+                    id TEXT PRIMARY KEY,
+                    user_id TEXT NOT NULL,
+                    plan_name VARCHAR(50) NOT NULL,
+                    status VARCHAR(20) NOT NULL DEFAULT 'active',
+                    payment_method VARCHAR(20) NOT NULL,
+                    crypto_txid TEXT,
+                    crypto_amount DOUBLE PRECISION,
+                    crypto_currency VARCHAR(10),
+                    current_period_start TIMESTAMPTZ NOT NULL,
+                    current_period_end TIMESTAMPTZ NOT NULL,
+                    cancel_at_period_end BOOLEAN NOT NULL DEFAULT FALSE,
+                    cancelled_at TIMESTAMPTZ,
+                    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
                 )
             """)
 
@@ -302,6 +311,9 @@ class PostgresClient:
                 CREATE INDEX IF NOT EXISTS idx_crypto_deposit_addresses_order_id ON crypto_deposit_addresses(order_id);
                 CREATE INDEX IF NOT EXISTS idx_crypto_deposit_addresses_status ON crypto_deposit_addresses(status);
                 CREATE INDEX IF NOT EXISTS idx_crypto_deposit_addresses_created_at ON crypto_deposit_addresses(created_at DESC);
+                CREATE INDEX IF NOT EXISTS idx_user_subscriptions_user_id ON user_subscriptions(user_id);
+                CREATE INDEX IF NOT EXISTS idx_user_subscriptions_status ON user_subscriptions(status);
+                CREATE INDEX IF NOT EXISTS idx_user_subscriptions_period_end ON user_subscriptions(current_period_end);
             """)
             try:
                 await conn.execute("""

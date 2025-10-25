@@ -12,6 +12,7 @@ from enum import Enum
 from pydantic import BaseModel, Field, EmailStr, ConfigDict
 from typing import Optional, Dict, List, Tuple
 import hashlib
+import uuid
 
 # SQLAlchemy ORM imports for persistent storage
 from sqlalchemy import Column, String, DateTime, Boolean, JSON, ForeignKey, Text
@@ -249,3 +250,63 @@ class UserORM(Base):  # type: ignore[misc]
         verified_by = Column(PGUUID(as_uuid=False), ForeignKey("users.id"), nullable=True)
 
 # ... Rest des Codes bleibt gleich ...
+
+
+class UserSubscription(Base):
+    """
+    User subscription for SaaS billing
+    Tracks active subscriptions, payment methods, and billing cycles
+    """
+
+    __tablename__ = "user_subscriptions"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()), index=True)
+
+    # User reference
+    user_id = Column(String(36), nullable=False, index=True)  # Match UserORM.id type
+
+    # Plan details
+    plan_name = Column(String(50), nullable=False)
+    status = Column(String(20), nullable=False, default="active")  # active, cancelled, past_due
+
+    # Payment method
+    payment_method = Column(String(20), nullable=False)  # stripe, crypto, paypal
+
+    # Crypto payment details (for BTC payments)
+    crypto_txid = Column(String(255))
+    crypto_amount = Column(Float)
+    crypto_currency = Column(String(10))
+
+    # Billing cycle
+    current_period_start = Column(DateTime, nullable=False)
+    current_period_end = Column(DateTime, nullable=False)
+
+    # Cancellation
+    cancel_at_period_end = Column(Boolean, nullable=False, default=False)
+    cancelled_at = Column(DateTime)
+
+    # Metadata
+    created_at = Column(DateTime, nullable=False, default=datetime.utcnow)
+    updated_at = Column(DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def __repr__(self):
+        return f"<UserSubscription {self.user_id} - {self.plan_name} - {self.status}>"
+
+    def to_dict(self):
+        """Convert to dictionary"""
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "plan_name": self.plan_name,
+            "status": self.status,
+            "payment_method": self.payment_method,
+            "crypto_txid": self.crypto_txid,
+            "crypto_amount": self.crypto_amount,
+            "crypto_currency": self.crypto_currency,
+            "current_period_start": self.current_period_start.isoformat() if self.current_period_start else None,
+            "current_period_end": self.current_period_end.isoformat() if self.current_period_end else None,
+            "cancel_at_period_end": self.cancel_at_period_end,
+            "cancelled_at": self.cancelled_at.isoformat() if self.cancelled_at else None,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }

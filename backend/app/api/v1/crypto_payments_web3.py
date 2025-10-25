@@ -183,3 +183,148 @@ async def verify_web3_transaction(tx_hash: str):
 # NOTE: The endpoint to extend the client-visible payment window exists in
 # app/api/v1/crypto_payments.py as /crypto-payments/extend/{payment_id}.
 # To avoid duplicate route registration, we intentionally do not define it here.
+
+
+# ============================================================================
+# Modern Web3 Payments (MetaMask, WalletConnect)
+# ============================================================================
+
+from app.auth.dependencies import get_current_user_strict
+
+
+class ModernWeb3PaymentRequest(BaseModel):
+    """Request to create modern Web3 payment"""
+    plan_name: str
+    amount_usd: float
+    currency: str = "ETH"  # ETH, USDT, USDC, etc.
+    network: str = "ethereum"  # ethereum, polygon, bsc, etc.
+
+
+class ModernWeb3PaymentResponse(BaseModel):
+    """Modern Web3 payment response"""
+    payment_id: str
+    contract_address: str
+    amount_wei: str
+    network: str
+    chain_id: int
+    payment_url: Optional[str] = None
+
+
+# Network configurations
+NETWORK_CONFIGS = {
+    "ethereum": {
+        "chain_id": 1,
+        "rpc_url": "https://mainnet.infura.io/v3/YOUR_INFURA_KEY",
+        "contract_address": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+        "explorer_url": "https://etherscan.io"
+    },
+    "polygon": {
+        "chain_id": 137,
+        "rpc_url": "https://polygon-rpc.com",
+        "contract_address": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+        "explorer_url": "https://polygonscan.com"
+    },
+    "bsc": {
+        "chain_id": 56,
+        "rpc_url": "https://bsc-dataseed.binance.org",
+        "contract_address": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+        "explorer_url": "https://bscscan.com"
+    }
+}
+
+
+@router.post("/web3/modern", response_model=ModernWeb3PaymentResponse)
+async def create_modern_web3_payment(
+    request: ModernWeb3PaymentRequest,
+    current_user: dict = Depends(get_current_user_strict)
+):
+    """Create a modern Web3 payment request (MetaMask/WalletConnect)."""
+    try:
+        # Validate network
+        if request.network not in NETWORK_CONFIGS:
+            raise HTTPException(status_code=400, detail="Unsupported network")
+
+        network_config = NETWORK_CONFIGS[request.network]
+
+        # Convert USD to crypto amount (simplified conversion)
+        conversion_rates = {
+            "ETH": 1 / 3000,  # ~$3000/ETH
+            "USDT": 1,        # 1:1 with USD
+            "USDC": 1,        # 1:1 with USD
+        }
+
+        if request.currency not in conversion_rates:
+            raise HTTPException(status_code=400, detail="Unsupported currency")
+
+        crypto_amount = request.amount_usd * conversion_rates[request.currency]
+
+        # Convert to wei/smallest unit
+        if request.currency == "ETH":
+            amount_wei = str(int(crypto_amount * 10**18))
+        else:  # USDT/USDC have 6 decimals
+            amount_wei = str(int(crypto_amount * 10**6))
+
+        # Generate payment ID
+        import uuid
+        payment_id = f"web3_modern_{uuid.uuid4().hex[:16]}"
+
+        return ModernWeb3PaymentResponse(
+            payment_id=payment_id,
+            contract_address=network_config["contract_address"],
+            amount_wei=amount_wei,
+            network=request.network,
+            chain_id=network_config["chain_id"],
+            payment_url=f"/web3/checkout/{payment_id}"
+        )
+
+    except Exception as e:
+        logger.error(f"Modern Web3 payment creation failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to create Web3 payment")
+
+
+@router.post("/web3/verify")
+async def verify_modern_web3_payment(
+    tx_hash: str,
+    network: str = "ethereum",
+    current_user: dict = Depends(get_current_user_strict)
+):
+    """Verify modern Web3 payment by transaction hash."""
+    try:
+        # This would integrate with blockchain explorers or node
+        # For demo, return mock status
+        import random
+        statuses = ["pending", "confirmed", "failed"]
+
+        network_config = NETWORK_CONFIGS.get(network, NETWORK_CONFIGS["ethereum"])
+
+        return {
+            "tx_hash": tx_hash,
+            "network": network,
+            "status": random.choice(statuses),
+            "confirmations": random.randint(0, 12),
+            "block_number": random.randint(18000000, 19000000),
+            "explorer_url": f"{network_config['explorer_url']}/tx/{tx_hash}",
+            "verified": random.choice([True, False])
+        }
+
+    except Exception as e:
+        logger.error(f"Modern Web3 payment verification failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to verify payment")
+
+
+@router.get("/web3/networks")
+async def get_supported_web3_networks():
+    """Get list of supported Web3 networks and currencies."""
+    return {
+        "networks": [
+            {
+                "id": network,
+                "name": network.title(),
+                "chain_id": config["chain_id"],
+                "explorer_url": config["explorer_url"]
+            }
+            for network, config in NETWORK_CONFIGS.items()
+        ],
+        "currencies": ["ETH", "USDT", "USDC"],
+        "wallets": ["metamask", "walletconnect", "trust", "coinbase", "rainbow"]
+    }

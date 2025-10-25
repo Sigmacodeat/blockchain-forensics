@@ -40,6 +40,7 @@ const Spinner = () => (
 const LandingPage = React.lazy(() => import('@/pages/LandingPage.complex'))
 const FeaturesPage = React.lazy(() => import('@/pages/FeaturesPage'))
 const PricingPage = React.lazy(() => import('@/pages/PricingPage'))
+const CheckoutPage = React.lazy(() => import('@/pages/CheckoutPage'))
 const AboutPage = React.lazy(() => import('@/pages/AboutPage'))
 const PrivacyPolicyPage = React.lazy(() => import('@/pages/legal/PrivacyPolicyPage'))
 const TermsPage = React.lazy(() => import('@/pages/legal/TermsPage'))
@@ -194,6 +195,7 @@ function App() {
                   <Route path="features" element={<PublicLayout><React.Suspense fallback={<div />}> <FeaturesPage /> </React.Suspense></PublicLayout>} />
                   <Route path="optimization" element={<PublicLayout><React.Suspense fallback={<div />}> <OptimizationDashboard /> </React.Suspense></PublicLayout>} />
                   <Route path="pricing" element={<PublicLayout><React.Suspense fallback={<div />}> <PricingPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="checkout/:orderId" element={<PublicLayout><React.Suspense fallback={<div />}> <CheckoutPage /> </React.Suspense></PublicLayout>} />
                   <Route path="news/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <NewsCasePublicPage /> </React.Suspense></PublicLayout>} />
                   {/* Chatbot-Route entfernt - wird über chatbot.blocksigmakode.ai bereitgestellt */}
                   <Route path="about" element={<PublicLayout><React.Suspense fallback={<div />}> <AboutPage /> </React.Suspense></PublicLayout>} />

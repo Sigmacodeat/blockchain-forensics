@@ -50,10 +50,28 @@ class BTCInvoiceMonitorWorker:
             updated_count = 0
             for invoice in pending_invoices:
                 try:
+                    old_status = btc_invoice_service.check_payment_status(invoice["order_id"])
+                    # Force re-check (this will update DB if payment received)
                     status = btc_invoice_service.check_payment_status(invoice["order_id"])
-                    if status["status"] in ["paid", "expired"]:
+
+                    if status["status"] != old_status.get("status", "pending"):
                         updated_count += 1
                         logger.info(f"Invoice {invoice['order_id']} status: {status['status']}")
+
+                        # Broadcast to WebSocket clients
+                        try:
+                            from app.api.v1.websockets.payment import broadcast_invoice_update
+                            await broadcast_invoice_update(invoice["order_id"], status)
+                        except Exception as ws_error:
+                            logger.error(f"WebSocket broadcast failed for {invoice['order_id']}: {ws_error}")
+
+                        # Activate subscription if payment was successful
+                        if status["status"] == "paid":
+                            try:
+                                from app.services.subscription_activation_service import handle_paid_invoice
+                                await handle_paid_invoice(invoice["order_id"])
+                            except Exception as sub_error:
+                                logger.error(f"Subscription activation failed for {invoice['order_id']}: {sub_error}")
                 except Exception as e:
                     logger.error(f"Error checking invoice {invoice['order_id']}: {e}")
 

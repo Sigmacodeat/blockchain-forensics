@@ -138,9 +138,32 @@ export default function PricingPage() {
     }
   }
 
-  function startCryptoPayment(plan: Plan) {
-    setSelectedPlan(plan)
-    setCryptoModalOpen(true)
+  async function startCryptoPayment(plan: Plan) {
+    try {
+      // Use new invoice API instead of old crypto payment modal
+      const response = await fetch('/api/v1/invoice', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          plan_name: plan.id,
+          amount_btc: plan.monthly_price_usd ? plan.monthly_price_usd / 45000 : 0.001, // Rough BTC conversion
+          expires_hours: 24
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to create invoice');
+      }
+
+      const invoice = await response.json();
+      // Redirect to new checkout page
+      window.location.href = `/checkout/${invoice.order_id}`;
+    } catch (error) {
+      console.error('Invoice creation failed:', error);
+      // Fallback to old modal if new API fails
+      setSelectedPlan(plan);
+      setCryptoModalOpen(true);
+    }
   }
 
   function handleCryptoPaymentSuccess() {
