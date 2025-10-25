@@ -74,7 +74,7 @@ export default function NewsCasesManager() {
       }
       
       if (lastMessage) {
-        const event = lastMessage as NewsCaseEvent
+        const event = lastMessage as unknown as NewsCaseEvent
         if (event.type === 'news_case.tx') {
           updateWsState(item.slug, { txCount: (wsStates[item.slug]?.txCount || 0) + 1, lastUpdate: Date.now() })
         } else if (event.type === 'news_case.kyt') {

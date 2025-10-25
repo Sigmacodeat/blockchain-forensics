@@ -526,7 +526,7 @@ class PrivacyDemixer:
     async def demix_coinjoin(
         self,
         address: str,
-        mixer_type: str = "wasabi"  # wasabi, samourai, joinmarket
+        mixer_type: str = "auto"  # auto, wasabi, samourai, joinmarket
     ) -> Dict:
         """
         CoinJoin Demixing (Bitcoin)
@@ -537,14 +537,97 @@ class PrivacyDemixer:
         3. UTXO Clustering
         4. Temporal Analysis
         
-        TODO: Implement Bitcoin-specific heuristics
+        Hinweis: nutzt Neo4j UTXO-Graph (u.is_coinjoin), falls vorhanden. Fällt sonst auf einfache Heuristiken zurück.
         """
-        logger.warning("CoinJoin demixing not yet implemented")
-        return {
-            'message': 'CoinJoin demixing coming soon',
-            'mixer_type': mixer_type,
-            'status': 'planned'
-        }
+        try:
+            if not self.neo4j:
+                return {
+                    'message': 'Neo4j not available – limited support',
+                    'status': 'limited',
+                    'coinjoin_txs': [],
+                    'confidence': 0.0,
+                }
+
+            # 1) Finde UTXOs mit CoinJoin-Flag für Adresse
+            q_utxos = """
+                MATCH (a:Address {address: $address, chain: 'bitcoin'})-[:OWNS]->(u:UTXO)
+                WHERE coalesce(u.is_coinjoin, false) = true
+                RETURN u.txid as txid, u.vout as vout, u.value as value, u.timestamp as timestamp
+                ORDER BY timestamp DESC
+                LIMIT 100
+            """
+            rows = await self.neo4j.execute_read(
+                q_utxos,
+                address=address.lower(),
+            )
+
+            coinjoin_txs: List[Dict] = []
+            txids = list({r.get('txid') for r in rows if r and r.get('txid')})
+
+            # 2) Für gefundene TXIDs gleiche Output-Werte gruppieren (Equal-Output Detection)
+            for txid in txids:
+                q_outputs = """
+                    MATCH (:UTXO {txid: $txid})<-[:SPENT*0..1]-(prev:UTXO)
+                    WITH $txid as txid
+                    MATCH (out:UTXO {txid: txid})
+                    RETURN out.vout as n, out.value as value
+                """
+                outs = await self.neo4j.execute_read(q_outputs, txid=txid)
+                values = [float(o.get('value') or 0.0) for o in outs if o and o.get('value') is not None]
+                if not values:
+                    continue
+                # Zähle gleiche Werte (auf 8 Nachkommastellen gerundet)
+                from collections import Counter
+                c = Counter(round(v, 8) for v in values if v > 0)
+                max_group = max(c.values()) if c else 0
+                eq_outputs = {val: cnt for val, cnt in c.items() if cnt >= 3}
+
+                # Mixer-Klassifikation (heuristisch)
+                mtype = 'coinjoin'
+                if any(cnt >= 5 for cnt in c.values()):
+                    mtype = 'wasabi'  # große Anonymity Sets typisch
+                # Samourai/Whirlpool typische Denominations
+                whirl_denoms = {0.01, 0.05, 0.1, 0.5}
+                if any(abs(val - d) < 1e-8 for val in c.keys() for d in whirl_denoms):
+                    mtype = 'samourai'
+
+                coinjoin_txs.append({
+                    'txid': txid,
+                    'equal_outputs': eq_outputs,
+                    'max_equal_group': max_group,
+                    'mixer_type': mtype,
+                })
+
+            # 3) Confidence grob schätzen
+            confidence = 0.0
+            if coinjoin_txs:
+                # Durchschnittliche Gruppengröße der Equal-Outputs
+                avg_group = sum(tx['max_equal_group'] for tx in coinjoin_txs) / max(1, len(coinjoin_txs))
+                confidence = min(1.0, 0.2 + 0.1 * avg_group)
+
+            # Optional: Filter nach gewünschtem mixer_type
+            if mixer_type != 'auto':
+                coinjoin_txs = [tx for tx in coinjoin_txs if tx['mixer_type'] == mixer_type]
+
+            return {
+                'success': True,
+                'address': address,
+                'coinjoin_count': len(coinjoin_txs),
+                'coinjoin_txs': coinjoin_txs[:20],  # truncate for response
+                'confidence': round(confidence, 3),
+                'message': 'CoinJoin demixing heuristics applied (equal-output detection, denomination hints)'
+            }
+
+        except Exception as e:
+            logger.warning(f"CoinJoin demixing failed: {e}")
+            return {
+                'success': False,
+                'address': address,
+                'coinjoin_count': 0,
+                'coinjoin_txs': [],
+                'confidence': 0.0,
+                'message': 'CoinJoin demixing failed'
+            }
     
     # ===== Generic Mixer Detection =====
     

@@ -63,6 +63,7 @@ Ultimative Blockchain-Analyse-Plattform für forensische Untersuchungen mit AI-U
 - **GraphML Export**: Gephi/Cytoscape Compatible
 - **PDF Reports**: Framework mit HTML Templates
 - **Email Delivery**: Automated Report Distribution
+- **BigQuery Export (optional)**: Transaktionen und Trace-Graph (Nodes/Edges) in Google BigQuery
 
 ### ✅ Notifications (100% Complete)
 - **Toast System**: Success/Error/Warning/Info Messages
@@ -215,6 +216,11 @@ Viele Module sind optional und werden defensiv geladen. So kann die Plattform un
   - Installation: `pip install qdrant-client`
   - Nutzung: Embeddings/RAG (optional)
 
+- **BigQuery Export (optional)**: `google-cloud-bigquery`, `google-auth`
+  - Installation: `pip install google-cloud-bigquery google-auth`
+  - Nutzung: Exporte großer Datensätze nach BigQuery (Transaktionen, Trace-Graph)
+  - Feature-Flag: `ENABLE_BIGQUERY_EXPORT=1`
+
 ### Feature-Gates & Test-Modus
 
 - **TEST_MODE**: `TEST_MODE=1` (oder via PyTest automatisch gesetzt)
@@ -282,6 +288,16 @@ ENABLE_TRAVEL_RULE=0
 ENABLE_VASP=0
 ENABLE_INTEL_SHARING=0
 ENABLE_CONTRACT_RISK=0
+
+# BigQuery Export (optional)
+ENABLE_BIGQUERY_EXPORT=0
+BIGQUERY_PROJECT=your_gcp_project
+BIGQUERY_DATASET=forensics
+BIGQUERY_LOCATION=EU
+# Eines von beiden setzen:
+BIGQUERY_CREDENTIALS_FILE=/path/to/service_account.json
+# oder der JSON-Inhalt direkt (vorsichtig mit Escaping)
+BIGQUERY_CREDENTIALS_JSON={"type":"service_account", ...}
 ```
 
 ## Authentication & User Management

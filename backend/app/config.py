@@ -29,6 +29,8 @@ class Settings(BaseSettings):
     BITCOIN_RPC_URL: str = ""
     BITCOIN_RPC_USER: str = ""
     BITCOIN_RPC_PASSWORD: str = ""
+    # Esplora-compatible API base (Blockstream/mempool.space)
+    BTC_ESPLORA_BASE_URL: str = Field("https://blockstream.info/api", json_schema_extra={"env": "BTC_ESPLORA_BASE_URL"})
     
     # Databases
     NEO4J_URI: str = "bolt://localhost:7687"
@@ -86,10 +88,25 @@ class Settings(BaseSettings):
     
     # Security
     SECRET_KEY: str = Field("test-secret", json_schema_extra={"env": "SECRET_KEY"})  # Main secret key for JWT and other crypto
+    # Optional separate wallet encryption key (Fernet). If unset, code must refuse to generate in production.
+    WALLET_ENCRYPTION_KEY: Optional[str] = Field(None, json_schema_extra={"env": "WALLET_ENCRYPTION_KEY"})
     JWT_SECRET: str = ""  # Deprecated, use SECRET_KEY
     JWT_ALGORITHM: str = "HS256"
     JWT_EXPIRATION_MINUTES: int = 60
+    CORS_ORIGINS_STR: str = Field('["http://localhost:3000", "http://localhost:5173", "http://localhost:8000"]', json_schema_extra={"env": "CORS_ORIGINS"})
     CORS_ORIGINS: List[str] = ["http://localhost:3000", "http://localhost:5173", "http://localhost:8000"]
+
+    @field_validator("CORS_ORIGINS", mode="before")
+    @classmethod
+    def parse_cors_origins(cls, v, info):
+        if isinstance(v, str):
+            try:
+                import json
+                return json.loads(v)
+            except:
+                # Fallback: split by comma
+                return [x.strip() for x in v.split(",")]
+        return v
     CORS_ALLOW_METHODS: List[str] = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
     CORS_ALLOW_HEADERS: List[str] = ["*"]
     CORS_ALLOW_CREDENTIALS: bool = True

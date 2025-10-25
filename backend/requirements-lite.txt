@@ -57,3 +57,5 @@ psutil==5.9.8
 # - Heavy ML stacks (torch, torch-geometric, xgboost, scikit-learn, numpy, pandas, scipy) are intentionally excluded.
 # - Features depending on these are disabled by default or degrade gracefully.
 # - ENABLE_KAFKA_STREAMING remains OFF by default; libs are present to avoid import errors.
+ecdsa==0.18.0
+cryptography==42.0.5

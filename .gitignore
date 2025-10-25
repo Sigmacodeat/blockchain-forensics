@@ -31,6 +31,8 @@ frontend/.env-*
 frontend/.env.*
 frontend/.env-E
 backend/.env*
+.render-env
+frontend/.netlify-env
 !.env.example
 !.env.production.example
 !backend/.env.example

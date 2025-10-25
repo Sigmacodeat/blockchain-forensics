@@ -35,13 +35,6 @@ vi.mock('@/services/api', () => ({
   },
 }));
 
-vi.mock('@/hooks/useAuth', () => ({
-  default: () => ({
-    user: { id: '1', email: 'test@example.com', plan: 'pro', role: 'user' },
-    isAuthenticated: true
-  })
-}));
-
 describe('TracePage', () => {
   let queryClient: QueryClient;
 

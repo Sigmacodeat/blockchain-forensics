@@ -114,6 +114,10 @@ except Exception:
     keys_router = None
 from .usage import router as usage_router
 from .evidence import router as evidence_router
+from .exports import router as exports_router
+from .bitcoin_script import router as bitcoin_script_router
+from .demixing import router as demixing_router
+from .tools import router as tools_router
 try:
     from .universal_screening import router as universal_screening_router
 except Exception:
@@ -325,8 +329,7 @@ router.include_router(typologies_router, tags=["Typologies"])
 router.include_router(intel_beacon_router, tags=["Intel Beacon"])
 router.include_router(soar_router, tags=["SOAR"])
 router.include_router(alert_policies_router, prefix="/alert-policies", tags=["Alert Policies"])
-if "demixing_router" in globals() and demixing_router is not None:
-    router.include_router(demixing_router, tags=["Privacy Demixing"])
+ 
 if billing_router is not None:
     router.include_router(billing_router, prefix="/billing", tags=["Billing & Plans"])
 if crypto_payments_router is not None:
@@ -337,6 +340,10 @@ if keys_router is not None:
     router.include_router(keys_router, prefix="/keys", tags=["API Keys"])
 router.include_router(usage_router, tags=["Usage"])
 router.include_router(evidence_router, prefix="/evidence", tags=["Evidence"])
+router.include_router(exports_router, tags=["Exports"])  # /exports/* (BigQuery optional)
+router.include_router(bitcoin_script_router, tags=["Bitcoin Script"])  # /bitcoin-script/*
+router.include_router(demixing_router, tags=["Privacy Demixing"])  # /demixing/*
+router.include_router(tools_router, tags=["Tools Registry"])  # /tools/*
 if scam_detection_router is not None:
     router.include_router(scam_detection_router, tags=["Scam Detection"])
 if chatbot_config_router is not None:

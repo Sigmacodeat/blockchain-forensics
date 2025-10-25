@@ -14,7 +14,7 @@ from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 
-from app.core.auth import require_plan
+from app.auth.dependencies import require_plan
 from app.database.neo4j_client import get_neo4j
 from app.database.postgres import get_postgres
 from app.tracing.privacy_demixing import PrivacyDemixer, PrivacyCoinTracer
@@ -49,6 +49,13 @@ class PrivacyCoinTraceRequest(BaseModel):
     address: str = Field(..., description="Address/TX to trace")
     coin: str = Field(..., description="Privacy coin (zcash/monero)")
     transaction_type: Optional[str] = Field("transparent", description="Zcash: transparent/shielded/mixed")
+
+
+class CoinJoinDemixRequest(BaseModel):
+    """Request für CoinJoin-Demixing (Bitcoin)"""
+    address: str = Field(..., description="Bitcoin-Adresse")
+    mixer_type: str = Field("auto", description="'auto', 'wasabi', 'samourai', 'joinmarket'")
+    case_id: Optional[str] = Field(None, description="Optional: Case-ID für Logging")
 
 
 # ===== Response Models =====
@@ -134,6 +141,50 @@ async def demix_tornado_cash(
         
     except Exception as e:
         logger.error(f"Error in Tornado Cash demixing: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/coinjoin")
+async def demix_coinjoin(
+    request: CoinJoinDemixRequest,
+    current_user: dict = Depends(require_plan("pro")),  # Pro+ Feature
+    neo4j=Depends(get_neo4j),
+):
+    """
+    CoinJoin-Demixing (Bitcoin) basierend auf Equal-Output-Heuristik und Denomination-Hints.
+
+    - mixer_type: 'auto' | 'wasabi' | 'samourai' | 'joinmarket'
+    - nutzt Neo4j UTXO-Graph wenn verfügbar
+    """
+    try:
+        demixer = PrivacyDemixer(neo4j_client=neo4j)
+        result = await demixer.demix_coinjoin(
+            address=request.address,
+            mixer_type=request.mixer_type
+        )
+
+        # Optional: Case-Logging
+        if request.case_id:
+            try:
+                await log_case_action(
+                    case_id=request.case_id,
+                    action="coinjoin_demixing",
+                    data={
+                        "address": request.address,
+                        "coinjoin_count": result.get("coinjoin_count", 0),
+                        "confidence": result.get("confidence", 0.0),
+                        "mixer_type": request.mixer_type,
+                    },
+                    user_id=current_user.get("id")
+                )
+            except Exception:
+                pass
+
+        return result
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error in CoinJoin demixing: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
 
 

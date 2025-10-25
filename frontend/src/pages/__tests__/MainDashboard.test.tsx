@@ -9,9 +9,31 @@ import type { User } from '@/lib/auth'
 
 const apiGetMock = vi.fn()
 
+const translations: Record<string, string> = {
+  'dashboard.title': 'Forensics Dashboard',
+  'dashboard.system_overview': 'Echtzeit-Überwachung & Analytics für Blockchain-Forensik',
+  'dashboard.false_positive_rate': 'False Positive Rate',
+  'dashboard.mttr': 'MTTR',
+  'dashboard.sla_breach_rate': 'SLA Breach Rate',
+  'dashboard.sanctions_hits': 'Sanctions Hits',
+  'dashboard.transaction_tracing': 'Transaction Tracing',
+  'dashboard.case_management': 'Case Management',
+  'dashboard.alert_monitoring': 'Alert Monitoring',
+  'dashboard.graph_explorer': 'Graph Explorer',
+  'dashboard.correlation_analysis': 'Correlation Analysis',
+  'common.refresh': 'Aktualisieren',
+  'accessibility.skip_to_content': 'Skip to content',
+  'dashboard.quick_access': 'Quick Access',
+  // Add more as needed
+}
+
 vi.mock('react-i18next', () => ({
   useTranslation: () => ({
-    t: (key: string, fallback?: string) => fallback ?? key,
+    t: (key: string, fallback?: string) => translations[key] || fallback || key,
+    i18n: {
+      language: 'en',
+      changeLanguage: vi.fn(),
+    },
   }),
 }))
 
@@ -155,9 +177,10 @@ describe('MainDashboard', () => {
   it('zeigt KPI-Karten mit Werten aus dem API-Mock', async () => {
     renderDashboard()
 
-    await screen.findByText('False Positive Rate')
+    await waitFor(() => {
+      expect(screen.getByText('12%')).toBeInTheDocument()
+    })
 
-    expect(screen.getByText('12%')).toBeInTheDocument()
     expect(screen.getByText('1h')).toBeInTheDocument()
     expect(screen.getByText('5%')).toBeInTheDocument()
     expect(screen.getByText('2')).toBeInTheDocument()
@@ -185,27 +208,27 @@ describe('MainDashboard', () => {
     it('zeigt generelle Schnellzugriffe', async () => {
       renderDashboard()
 
-      expect(screen.getByText('dashboard.transaction_tracing')).toBeInTheDocument()
-      expect(screen.getByText('dashboard.case_management')).toBeInTheDocument()
-      expect(screen.getByText('dashboard.alert_monitoring')).toBeInTheDocument()
+      expect(screen.getAllByText(translations['dashboard.transaction_tracing']).length).toBeGreaterThan(0)
+      expect(screen.getAllByText(translations['dashboard.case_management']).length).toBeGreaterThan(0)
+      expect(screen.getAllByText(translations['dashboard.alert_monitoring']).length).toBeGreaterThan(0)
     })
 
     it('blendet planabhängige Aktionen ohne Feature aus', async () => {
       hasFeatureMock.mockImplementation((_user, feature) => feature === 'analytics.trends')
       renderDashboard()
 
-      expect(screen.queryByText('dashboard.graph_explorer')).not.toBeInTheDocument()
+      expect(screen.queryByText(translations['dashboard.graph_explorer'])).not.toBeInTheDocument()
       expect(screen.queryByText('AI Agent')).not.toBeInTheDocument()
-      expect(screen.queryByText('dashboard.correlation_analysis')).not.toBeInTheDocument()
+      expect(screen.queryByText(translations['dashboard.correlation_analysis'])).not.toBeInTheDocument()
     })
 
     it('zeigt planabhängige Aktionen bei aktivem Feature', async () => {
       hasFeatureMock.mockImplementation((_user, feature) => feature !== 'unused')
       renderDashboard()
 
-      expect(screen.getByText('dashboard.graph_explorer')).toBeInTheDocument()
-      expect(screen.getByText('AI Agent')).toBeInTheDocument()
-      expect(screen.getByText('dashboard.correlation_analysis')).toBeInTheDocument()
+      expect(screen.getAllByText(translations['dashboard.graph_explorer']).length).toBeGreaterThan(0)
+      expect(screen.getAllByText('AI Agent').length).toBeGreaterThan(0)
+      expect(screen.getAllByText(translations['dashboard.correlation_analysis']).length).toBeGreaterThan(0)
     })
   })
 

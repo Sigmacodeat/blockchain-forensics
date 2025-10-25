@@ -343,6 +343,21 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"❌ Failed to start KYT Engine: {e}")
     
+    # Start Offline Indexer (optional)
+    offline_index_task = None
+    try:
+        if os.getenv("ENABLE_OFFLINE_INDEX", "0") == "1":
+            from app.workers.offline_indexer import start_offline_indexer
+            offline_index_task = start_offline_indexer()
+            if offline_index_task:
+                logger.info("✅ Offline indexer started")
+            else:
+                logger.info("ℹ️ Offline indexer not started (disabled or TEST_MODE)")
+        else:
+            logger.info("ℹ️ Offline indexer disabled (ENABLE_OFFLINE_INDEX!=1)")
+    except Exception as e:
+        logger.error(f"❌ Failed to start offline indexer: {e}")
+    
     # Warmup: Graph Engine v2, Alerts v2, Threat Intel v2 (best-effort)
     try:
         from app.services.graph_engine_v2 import graph_engine_v2
@@ -538,6 +553,15 @@ async def lifespan(app: FastAPI):
             await asyncio.sleep(0.2)
     except Exception as e:
         logger.error(f"Error stopping KPI background worker: {e}")
+
+    # Stop Offline Indexer
+    try:
+        if offline_index_task and not offline_index_task.done():
+            from app.workers.offline_indexer import stop_offline_indexer
+            stop_offline_indexer()
+            await asyncio.sleep(0.2)
+    except Exception as e:
+        logger.error(f"Error stopping offline indexer: {e}")
 
     # Stop Sanctions Update Worker
     try:

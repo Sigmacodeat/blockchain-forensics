@@ -293,22 +293,6 @@ const MainDashboard: React.FC = () => {
                       {t('dashboard.system_overview', 'Echtzeit-Überwachung & Analytics für Blockchain-Forensik')}
                     </p>
                   </div>
-
-        {/* Live Metrics (simple cards expected by tests) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" role="region" aria-label="Live Metrics">
-          <div className="bg-card border border-border p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600">Total Transactions</div>
-            <div className="text-2xl font-bold text-gray-900">{formatNumber(totalTransactions)}</div>
-          </div>
-          <div className="bg-card border border-border p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600">High Risk Addresses</div>
-            <div className="text-2xl font-bold text-gray-900">{formatNumber(highRiskAddresses)}</div>
-          </div>
-          <div className="bg-card border border-border p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600">Active Cases</div>
-            <div className="text-2xl font-bold text-gray-900">{formatNumber(activeCasesMetric)}</div>
-          </div>
-        </div>
                 </div>
                 <div className="flex items-center gap-4 mt-3">
                   <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
@@ -338,10 +322,26 @@ const MainDashboard: React.FC = () => {
           </div>
         </div>
 
+        {/* Live Metrics (simple cards expected by tests) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" role="region" aria-label="Live Metrics">
+          <div className="bg-card border border-border p-4 rounded-lg shadow">
+            <div className="text-sm text-gray-600">Total Transactions</div>
+            <div className="text-2xl font-bold text-gray-900">{formatNumber(totalTransactions)}</div>
+          </div>
+          <div className="bg-card border border-border p-4 rounded-lg shadow">
+            <div className="text-sm text-gray-600">High Risk Addresses</div>
+            <div className="text-2xl font-bold text-gray-900">{formatNumber(highRiskAddresses)}</div>
+          </div>
+          <div className="bg-card border border-border p-4 rounded-lg shadow">
+            <div className="text-sm text-gray-600">Active Cases</div>
+            <div className="text-2xl font-bold text-gray-900">{formatNumber(activeCasesMetric)}</div>
+          </div>
+        </div>
+
         {/* KPI Top Cards */}
         <div data-tour="metrics" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6" role="region" aria-label="KPIs">
           <MetricCard
-            title={t('dashboard.false_positive_rate')}
+            title={t('dashboard.false_positive_rate', 'False Positive Rate')}
             value={`${Math.round(((kpiSummary?.fpr as number) || 0) * 100)}%`}
             icon={AlertTriangle}
             iconColor="text-orange-600"
@@ -349,7 +349,7 @@ const MainDashboard: React.FC = () => {
             tooltipKey="tooltips.false_positive_rate"
           />
           <MetricCard
-            title={t('dashboard.mttr')}
+            title={t('dashboard.mttr', 'MTTR')}
             value={`${(kpiSummary?.mttr as number) || 0}h`}
             icon={Clock}
             iconColor="text-blue-600"
@@ -357,7 +357,7 @@ const MainDashboard: React.FC = () => {
             tooltipKey="tooltips.mttr"
           />
           <MetricCard
-            title={t('dashboard.sla_breach_rate')}
+            title={t('dashboard.sla_breach_rate', 'SLA Breach Rate')}
             value={`${Math.round(((kpiSummary?.sla_breach_rate as number) || 0) * 100)}%`}
             icon={Target}
             iconColor="text-red-600"
@@ -365,7 +365,7 @@ const MainDashboard: React.FC = () => {
             tooltipKey="tooltips.sla_breach_rate"
           />
           <MetricCard
-            title={t('dashboard.sanctions_hits')}
+            title={t('dashboard.sanctions_hits', 'Sanctions Hits')}
             value={`${(kpiSummary?.sanctions_hits as number) || 0}`}
             icon={Shield}
             iconColor="text-green-600"

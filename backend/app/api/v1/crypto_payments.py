@@ -622,3 +622,147 @@ async def get_payment_qr_code(
     except Exception as e:
         logger.error(f"Error generating QR code: {e}")
         raise HTTPException(status_code=500, detail="Failed to generate QR code")
+
+# ============================================================================
+# Internal BTC Wallet Management (Admin Only)
+# ============================================================================
+
+from app.services.btc_wallet_service import btc_wallet_service
+from app.auth.dependencies import require_admin
+from app.models.crypto_payment import CryptoWallet
+from app.db.postgres import get_db
+from sqlalchemy.orm import Session
+
+
+class CreateWalletRequest(BaseModel):
+    """Request to create a new BTC wallet"""
+    pass  # No params needed
+
+
+class WalletResponse(BaseModel):
+    """BTC wallet response"""
+    address: str
+    balance: float
+    created_at: datetime
+
+
+class WalletTransaction(BaseModel):
+    """BTC transaction info"""
+    hash: str
+    value: float
+    confirmations: int
+    time: int
+
+
+@router.post("/admin/wallet/create", response_model=WalletResponse)
+async def create_btc_wallet(
+    request: CreateWalletRequest,
+    db: Session = Depends(get_db),
+    current_user: dict = Depends(require_admin)
+):
+    """Create a new BTC wallet for the platform."""
+    try:
+        # Check if wallet already exists
+        existing = btc_wallet_service.get_wallet(db, "platform")
+        if existing:
+            raise HTTPException(status_code=400, detail="Platform BTC wallet already exists")
+
+        # Generate new address
+        wallet_data = btc_wallet_service.generate_address()
+        
+        # Store in database
+        wallet = btc_wallet_service.store_wallet(
+            db=db,
+            user_id="platform",
+            address=wallet_data['address'],
+            private_key_encrypted=wallet_data['private_key_encrypted']
+        )
+
+        # Update balance
+        btc_wallet_service.update_balance(db, wallet)
+
+        return WalletResponse(
+            address=wallet.address,
+            balance=wallet.balance,
+            created_at=wallet.created_at
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error creating BTC wallet: {e}")
+        raise HTTPException(status_code=500, detail="Failed to create wallet")
+
+
+@router.get("/admin/wallet", response_model=WalletResponse)
+async def get_btc_wallet(
+    db: Session = Depends(get_db),
+    current_user: dict = Depends(require_admin)
+):
+    """Get platform BTC wallet info."""
+    try:
+        wallet = btc_wallet_service.get_wallet(db, "platform")
+        if not wallet:
+            raise HTTPException(status_code=404, detail="BTC wallet not found")
+
+        # Update balance
+        btc_wallet_service.update_balance(db, wallet)
+
+        return WalletResponse(
+            address=wallet.address,
+            balance=wallet.balance,
+            created_at=wallet.created_at
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error getting BTC wallet: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get wallet")
+
+
+@router.get("/admin/wallet/transactions", response_model=List[WalletTransaction])
+async def get_btc_transactions(
+    db: Session = Depends(get_db),
+    current_user: dict = Depends(require_admin)
+):
+    """Get recent BTC transactions."""
+    try:
+        wallet = btc_wallet_service.get_wallet(db, "platform")
+        if not wallet:
+            raise HTTPException(status_code=404, detail="BTC wallet not found")
+
+        transactions = btc_wallet_service.get_transactions(wallet.address)
+        
+        return [
+            WalletTransaction(
+                hash=tx['hash'],
+                value=tx['result'] / 100000000 if 'result' in tx else 0,  # Convert satoshis to BTC
+                confirmations=tx.get('confirmations', 0),
+                time=tx.get('time', 0)
+            )
+            for tx in transactions
+        ]
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error getting BTC transactions: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get transactions")
+
+
+@router.post("/admin/wallet/refresh-balance")
+async def refresh_wallet_balance(
+    db: Session = Depends(get_db),
+    current_user: dict = Depends(require_admin)
+):
+    """Refresh wallet balance."""
+    try:
+        wallet = btc_wallet_service.get_wallet(db, "platform")
+        if not wallet:
+            raise HTTPException(status_code=404, detail="BTC wallet not found")
+
+        btc_wallet_service.update_balance(db, wallet)
+        return {"balance": wallet.balance}
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error refreshing balance: {e}")
+        raise HTTPException(status_code=500, detail="Failed to refresh balance")

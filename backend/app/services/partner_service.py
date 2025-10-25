@@ -11,7 +11,7 @@ import secrets
 from typing import Optional, Dict, Any
 from datetime import datetime
 
-from app.db.postgres_client import postgres_client
+from app.db.postgres import postgres_client
 from app.services.plan_service import plan_service
 
 logger = logging.getLogger(__name__)
@@ -45,7 +45,7 @@ class PartnerService:
             return
 
         # Tables
-        await postgres_client.execute(
+        await self._execute(
             """
             CREATE TABLE IF NOT EXISTS partner_accounts (
                 id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -120,7 +120,7 @@ class PartnerService:
             """
         )
         # Users: referred_by_partner_id, referred_at
-        await postgres_client.execute(
+        await self._execute(
             """
             ALTER TABLE users
             ADD COLUMN IF NOT EXISTS referred_by_partner_id UUID REFERENCES partner_accounts(id),
@@ -130,7 +130,7 @@ class PartnerService:
 
     async def ensure_partner_account(self, user_id: str, name: Optional[str] = None) -> Dict[str, Any]:
         """Erstellt Partner-Account für user_id, falls nicht vorhanden."""
-        acct = await postgres_client.fetchrow(
+        acct = await self._fetchrow(
             "SELECT * FROM partner_accounts WHERE user_id = $1",
             user_id,
         )
@@ -138,7 +138,7 @@ class PartnerService:
             return dict(acct)
         # generate code
         code = f"p-{secrets.token_urlsafe(6)}".lower()
-        await postgres_client.execute(
+        await self._execute(
             """
             INSERT INTO partner_accounts (user_id, name, referral_code, commission_rate, recurring_rate, cookie_duration_days, min_payout_usd, is_active)
             VALUES ($1, $2, $3, $4, $5, $6, $7, TRUE)
@@ -151,14 +151,14 @@ class PartnerService:
             self.DEFAULT_COOKIE_DAYS,
             self.DEFAULT_MIN_PAYOUT_USD,
         )
-        acct = await postgres_client.fetchrow(
+        acct = await self._fetchrow(
             "SELECT * FROM partner_accounts WHERE user_id = $1",
             user_id,
         )
         return dict(acct) if acct else {"user_id": user_id, "referral_code": code}
 
     async def get_partner_by_referral_code(self, referral_code: str) -> Optional[Dict[str, Any]]:
-        row = await postgres_client.fetchrow(
+        row = await self._fetchrow(
             "SELECT * FROM partner_accounts WHERE referral_code = $1 AND is_active = TRUE",
             referral_code,
         )
@@ -171,19 +171,19 @@ class PartnerService:
             return False
         pid = partner["id"]
         # If already referred, do not overwrite
-        existing = await postgres_client.fetchrow(
+        existing = await self._fetchrow(
             "SELECT referred_by_partner_id FROM users WHERE id = $1",
             referred_user_id,
         )
         if existing and (existing.get("referred_by_partner_id") is not None):
             return True
-        await postgres_client.execute(
+        await self._execute(
             """
             UPDATE users SET referred_by_partner_id = $1, referred_at = NOW() WHERE id = $2
             """,
             pid, referred_user_id,
         )
-        await postgres_client.execute(
+        await self._execute(
             """
             INSERT INTO partner_referrals (partner_id, referred_user_id, source, tracking_id, attributions)
             VALUES ($1, $2, $3, $4, $5)
@@ -193,14 +193,14 @@ class PartnerService:
         return True
 
     async def _resolve_partner_for_user(self, user_id: str) -> Optional[Dict[str, Any]]:
-        row = await postgres_client.fetchrow(
+        row = await self._fetchrow(
             "SELECT pa.* FROM users u JOIN partner_accounts pa ON u.referred_by_partner_id = pa.id WHERE u.id = $1",
             user_id,
         )
         if row:
             return dict(row)
         # fallback: check referrals table
-        row = await postgres_client.fetchrow(
+        row = await self._fetchrow(
             """
             SELECT pa.*
             FROM partner_referrals pr
@@ -223,7 +223,7 @@ class PartnerService:
                 return None
             rate = float(partner.get("commission_rate") or self.DEFAULT_COMMISSION_RATE)
             commission_usd = round((amount_usd or 0.0) * (rate / 100.0), 2)
-            row = await postgres_client.fetchrow(
+            row = await self._fetchrow(
                 """
                 INSERT INTO partner_commissions (partner_id, referred_user_id, payment_id, order_id, plan_name, amount_usd, commission_rate, commission_usd, status)
                 VALUES ($1, $2, $3, $4, $5, $6, $7, $8, 'pending')
@@ -273,7 +273,7 @@ class PartnerService:
             order_id = f"usage:{datetime.utcnow().strftime('%Y-%m-%d')}:{feature}"
 
             # Versuche Aggregations-Update (pending-Reihe pro Tag/Feature)
-            row = await postgres_client.fetchrow(
+            row = await self._fetchrow(
                 """
                 UPDATE partner_commissions
                 SET amount_usd = amount_usd + $1,
@@ -288,7 +288,7 @@ class PartnerService:
                 return dict(row)
 
             # Falls keine bestehende Aggregationszeile: neu anlegen
-            row = await postgres_client.fetchrow(
+            row = await self._fetchrow(
                 """
                 INSERT INTO partner_commissions (
                     partner_id, referred_user_id, payment_id, order_id, plan_name,
@@ -303,6 +303,14 @@ class PartnerService:
         except Exception as e:
             logger.debug(f"record_commission_on_usage skipped: {e}")
             return None
+
+    async def _execute(self, query: str, *args) -> None:
+        async with postgres_client.acquire() as conn:
+            await conn.execute(query, *args)
+
+    async def _fetchrow(self, query: str, *args):
+        async with postgres_client.acquire() as conn:
+            return await conn.fetchrow(query, *args)
 
 
 partner_service = PartnerService()

@@ -175,3 +175,51 @@ class CryptoSubscription(Base):
             "successful_payments": self.successful_payments,
             "failed_payments": self.failed_payments
         }
+
+
+class CryptoWallet(Base):
+    """
+    Internal cryptocurrency wallet for receiving payments
+    Stores encrypted private keys and tracks balances
+    """
+    __tablename__ = "crypto_wallets"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    
+    # User/Wallet owner
+    user_id = Column(String(255), nullable=False, index=True)  # "platform" for main wallet
+    
+    # Currency
+    currency = Column(String(10), nullable=False)  # btc, eth, etc.
+    
+    # Addresses
+    address = Column(String(255), nullable=False, unique=True, index=True)
+    
+    # Encrypted private key (AES encrypted)
+    private_key_encrypted = Column(Text, nullable=False)
+    
+    # Balance tracking
+    balance = Column(Float, default=0.0)
+    
+    # Status
+    is_active = Column(Boolean, default=True, index=True)
+    
+    # Timestamps
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    
+    def __repr__(self):
+        return f"<CryptoWallet {self.user_id} - {self.currency.upper()} - {self.address[:8]}...>"
+    
+    def to_dict(self):
+        """Convert to dictionary (without private key!)"""
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "currency": self.currency,
+            "address": self.address,
+            "balance": self.balance,
+            "is_active": self.is_active,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }

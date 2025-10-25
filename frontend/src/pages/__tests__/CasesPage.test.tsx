@@ -14,6 +14,9 @@ const mockToastError = vi.fn()
 vi.mock('@/hooks/useCases', () => ({
   useCases: () => mockUseCases(),
   useCreateCase: () => mockUseCreateCase(),
+  useCaseExport: () => ({ data: null }),
+  useCaseExportCsv: () => ({ data: null }),
+  useCaseChecksum: () => ({ data: null }),
 }))
 
 vi.mock('@/hooks/useAuth', () => ({

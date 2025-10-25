@@ -100,6 +100,7 @@ const AdvancedAnalyticsDashboard = React.lazy(() => import('@/pages/admin/Advanc
 const SOARPlaybooksAdmin = React.lazy(() => import('@/pages/admin/SOARPlaybooksAdmin'))
 const VASPRiskAdmin = React.lazy(() => import('@/pages/admin/VASPRiskAdmin'))
 const PartnerPayoutsAdmin = React.lazy(() => import('@/pages/admin/PartnerPayoutsAdmin'))
+const CryptoPaymentsDashboard = React.lazy(() => import('@/pages/admin/CryptoPaymentsDashboard'))
 const AddressAnalysisPage = React.lazy(() => import('@/pages/AddressAnalysisPage'))
 const ChainCoverage = React.lazy(() => import('@/pages/ChainCoverage'))
 const SecurityComplianceDashboard = React.lazy(() => import('@/pages/SecurityComplianceDashboard'))
@@ -282,6 +283,7 @@ function App() {
                   <Route path="admin/appsumo" element={<ProtectedRoute requiredRoles={[UserRole.ADMIN]}><Layout><React.Suspense fallback={<div />}> <AppSumoMetrics /> </React.Suspense></Layout></ProtectedRoute>} />
                   <Route path="admin/appsumo/manager" element={<ProtectedRoute requiredRoles={[UserRole.ADMIN]}><Layout><React.Suspense fallback={<div />}> <AppSumoManager /> </React.Suspense></Layout></ProtectedRoute>} />
                   <Route path="admin/institutional-verifications" element={<ProtectedRoute requiredRoles={[UserRole.ADMIN, UserRole.AUDITOR]}><Layout><React.Suspense fallback={<div />}> <InstitutionalVerificationAdmin /> </React.Suspense></Layout></ProtectedRoute>} />
+                  <Route path="admin/crypto-payments-dashboard" element={<ProtectedRoute requiredRoles={[UserRole.ADMIN]}><Layout><React.Suspense fallback={<LoadingFallback />}> <CryptoPaymentsDashboard /> </React.Suspense></Layout></ProtectedRoute>} />
 
                   {/* Language scoped 404 */}
                   <Route path="*" element={<PublicLayout><React.Suspense fallback={<div />}> <NotFoundPage /> </React.Suspense></PublicLayout>} />

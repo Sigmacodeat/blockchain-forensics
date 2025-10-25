@@ -317,3 +317,124 @@ async def list_all_subscriptions():
     except Exception as e:
         logger.error(f"Error listing subscriptions: {e}")
         raise HTTPException(status_code=500, detail="Failed to list subscriptions")
+
+from app.services.btc_wallet_service import btc_wallet_service
+from app.db.postgres import get_db
+from sqlalchemy.orm import Session
+from datetime import datetime, timedelta
+
+
+@router.get("/dashboard/overview", dependencies=[Depends(require_admin)])
+async def payment_dashboard_overview():
+    """
+    Payment dashboard overview - total revenue, active subscriptions, etc.
+    """
+    try:
+        # Total revenue
+        revenue = await postgres_client.fetchval(
+            "SELECT COALESCE(SUM(price_amount), 0) FROM crypto_payments WHERE payment_status = 'finished'"
+        )
+        
+        # Active subscriptions
+        active_subs = await postgres_client.fetchval(
+            "SELECT COUNT(*) FROM crypto_subscriptions WHERE is_active = true"
+        )
+        
+        # Recent payments (last 30 days)
+        recent_payments = await postgres_client.fetchval(
+            "SELECT COUNT(*) FROM crypto_payments WHERE created_at >= NOW() - INTERVAL '30 days'"
+        )
+        
+        # BTC wallet info
+        db = next(get_db())
+        wallet = btc_wallet_service.get_wallet(db, "platform")
+        wallet_info = None
+        if wallet:
+            btc_wallet_service.update_balance(db, wallet)
+            wallet_info = {
+                "address": wallet.address,
+                "balance": wallet.balance,
+                "created_at": wallet.created_at.isoformat()
+            }
+        
+        return {
+            "total_revenue_usd": float(revenue or 0),
+            "active_subscriptions": int(active_subs or 0),
+            "recent_payments_30d": int(recent_payments or 0),
+            "btc_wallet": wallet_info
+        }
+    except Exception as e:
+        logger.error(f"Error getting dashboard overview: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get dashboard overview")
+
+
+@router.get("/dashboard/revenue-chart", dependencies=[Depends(require_admin)])
+async def revenue_chart_data(days: int = Query(30, ge=1, le=365)):
+    """
+    Revenue chart data for the last N days
+    """
+    try:
+        # Daily revenue for last N days
+        revenue_data = await postgres_client.fetch(
+            f"""
+            SELECT 
+                DATE(created_at) as date,
+                COALESCE(SUM(price_amount), 0) as revenue
+            FROM crypto_payments 
+            WHERE payment_status = 'finished' 
+            AND created_at >= NOW() - INTERVAL '{days} days'
+            GROUP BY DATE(created_at)
+            ORDER BY date
+            """
+        )
+        
+        # Fill missing dates with 0
+        start_date = datetime.now() - timedelta(days=days)
+        all_dates = [(start_date + timedelta(days=i)).date() for i in range(days + 1)]
+        
+        chart_data = []
+        for date in all_dates:
+            found = next((r for r in revenue_data if r['date'] == date), None)
+            chart_data.append({
+                "date": date.isoformat(),
+                "revenue": float(found['revenue']) if found else 0.0
+            })
+        
+        return {"data": chart_data}
+    except Exception as e:
+        logger.error(f"Error getting revenue chart: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get revenue chart")
+
+
+@router.get("/dashboard/subscription-breakdown", dependencies=[Depends(require_admin)])
+async def subscription_breakdown():
+    """
+    Subscription breakdown by plan
+    """
+    try:
+        breakdown = await postgres_client.fetch(
+            """
+            SELECT 
+                plan_name,
+                COUNT(*) as count,
+                SUM(amount_usd) as total_revenue
+            FROM crypto_subscriptions 
+            WHERE is_active = true
+            GROUP BY plan_name
+            ORDER BY total_revenue DESC
+            """
+        )
+        
+        return {
+            "breakdown": [
+                {
+                    "plan": row['plan_name'],
+                    "count": int(row['count']),
+                    "total_revenue": float(row['total_revenue'] or 0)
+                }
+                for row in breakdown
+            ]
+        }
+    except Exception as e:
+        logger.error(f"Error getting subscription breakdown: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get subscription breakdown")

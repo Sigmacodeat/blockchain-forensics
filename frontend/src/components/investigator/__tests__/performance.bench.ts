@@ -96,6 +96,14 @@ describe('Investigator Components Performance', () => {
         onTimeRangeChange: () => {},
         minTaint: 0,
         onMinTaintChange: () => {},
+        pathRiskThreshold: 50,
+        onPathRiskThresholdChange: () => {},
+        pathMinAmount: 0,
+        onPathMinAmountChange: () => {},
+        pathTimeWindowDays: 30,
+        onPathTimeWindowDaysChange: () => {},
+        pathAlgorithm: 'astar',
+        onPathAlgorithmChange: () => {},
       })
     );
   });
