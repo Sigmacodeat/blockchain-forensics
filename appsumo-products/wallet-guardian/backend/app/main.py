@@ -7,7 +7,9 @@ import random
 import re
 import sys
 import os
+import httpx
 from datetime import datetime
+from fastapi.responses import Response
 
 # Add shared modules
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'shared'))
@@ -34,6 +36,19 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Upstream main backend configuration (optional)
+MAIN_BACKEND_URL = os.getenv("MAIN_BACKEND_URL")
+MAIN_BACKEND_API_KEY = os.getenv("MAIN_BACKEND_API_KEY")
+MAIN_BACKEND_JWT = os.getenv("MAIN_BACKEND_JWT")
+
+def _main_headers() -> Dict[str, str]:
+    headers: Dict[str, str] = {"Content-Type": "application/json"}
+    if MAIN_BACKEND_API_KEY:
+        headers["X-API-Key"] = MAIN_BACKEND_API_KEY
+    if MAIN_BACKEND_JWT:
+        headers["Authorization"] = f"Bearer {MAIN_BACKEND_JWT}"
+    return headers
 
 class ScanRequest(BaseModel):
     address: str
@@ -75,6 +90,19 @@ class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
     user: dict
+
+class DeepScanRequest(BaseModel):
+    address: str
+    chain: Optional[str] = "ethereum"
+    check_history: bool = False
+    check_illicit: bool = True
+
+class TraceStartRequest(BaseModel):
+    source_address: str
+    direction: Optional[str] = "forward"
+    max_depth: Optional[int] = 3
+    max_nodes: Optional[int] = 500
+    save_to_graph: Optional[bool] = False
 
 # Auth Dependencies
 async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)) -> TokenData:
@@ -127,7 +155,6 @@ def root():
             "Multi-Chain Support (35+)",
             "Sanctions Screening",
             "Smart Contract Analysis"
-            "Multi-Chain Support"
         ]
     }
 
@@ -212,6 +239,59 @@ async def scan_address(request: ScanRequest):
         timestamp=datetime.utcnow().isoformat()
     )
 
+@app.post("/api/scan/deep", response_model=ScanResponse)
+async def scan_address_deep(request: DeepScanRequest):
+    """
+    Proxy-Scan gegen Haupt-Backend (wallet-scanner/scan/addresses), falls konfiguriert.
+    Fallback: lokales /api/scan-Verhalten.
+    """
+    # If upstream not configured, fallback to local simple scan
+    if not MAIN_BACKEND_URL:
+        return await scan_address(ScanRequest(address=request.address))
+
+    try:
+        payload = {
+            "addresses": [{"chain": request.chain or "ethereum", "address": request.address}],
+            "check_history": request.check_history,
+            "check_illicit": request.check_illicit,
+        }
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.post(
+                f"{MAIN_BACKEND_URL}/api/v1/wallet-scanner/scan/addresses",
+                headers=_main_headers(),
+                json=payload,
+            )
+        if resp.status_code >= 400:
+            # Fallback to local scan
+            return await scan_address(ScanRequest(address=request.address))
+        data = resp.json()
+        # Adapt result to simple risk response
+        risk_score = float(data.get("risk_score", 0.0)) if isinstance(data, dict) else 0.0
+        score_0_100 = max(0, min(100, int(risk_score * 100)))
+        def map_risk(sc: int) -> str:
+            if sc >= 90: return "safe"
+            if sc >= 75: return "low"
+            if sc >= 50: return "medium"
+            if sc >= 25: return "high"
+            return "critical"
+        threats = []
+        try:
+            threats = data.get("illicit_connections", []) or []
+        except Exception:
+            threats = []
+        checks = {"phishing_check": True, "token_approval": True, "contract_verified": True, "known_scammer": False, "high_risk_interactions": score_0_100 < 50}
+        return ScanResponse(
+            address=request.address,
+            risk=map_risk(score_0_100),
+            score=score_0_100,
+            threats=threats if threats else ["No threats detected"],
+            checks=checks,
+            timestamp=datetime.utcnow().isoformat(),
+        )
+    except Exception:
+        # Fallback on any error
+        return await scan_address(ScanRequest(address=request.address))
+
 @app.get("/api/stats")
 async def get_stats():
     """
@@ -241,6 +321,90 @@ async def get_models():
             {"name": "Address Reputation", "accuracy": 95.1, "status": "active"}
         ]
     }
+
+@app.post("/api/tx/scan")
+async def tx_scan_proxy(tx: TransactionScan):
+    """Proxy zu Haupt-Backend /api/v1/firewall/scan (falls konfiguriert), sonst 501."""
+    if not MAIN_BACKEND_URL:
+        raise HTTPException(status_code=501, detail="MAIN_BACKEND_URL not configured")
+    try:
+        payload = {
+            "chain": tx.chain,
+            "from_address": tx.from_address,
+            "to_address": tx.to_address,
+            "value": tx.value,
+            "value_usd": tx.value,  # simple fallback
+            "data": tx.data or None,
+            "gas_price": None,
+            "nonce": None,
+            "contract_address": None,
+            "wallet_address": tx.from_address,
+        }
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.post(
+                f"{MAIN_BACKEND_URL}/api/v1/firewall/scan",
+                headers=_main_headers(),
+                json=payload,
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")
+
+@app.post("/api/trace/start")
+async def trace_start_proxy(req: TraceStartRequest):
+    """Proxy zu Haupt-Backend /api/v1/trace/start (falls konfiguriert), sonst 501."""
+    if not MAIN_BACKEND_URL:
+        raise HTTPException(status_code=501, detail="MAIN_BACKEND_URL not configured")
+    try:
+        payload = {
+            "source_address": req.source_address,
+            "direction": req.direction,
+            "max_depth": req.max_depth,
+            "max_nodes": req.max_nodes,
+            "save_to_graph": req.save_to_graph,
+        }
+        async with httpx.AsyncClient(timeout=15.0) as client:
+            resp = await client.post(
+                f"{MAIN_BACKEND_URL}/api/v1/trace/start",
+                headers=_main_headers(),
+                json=payload,
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")
+
+@app.get("/api/trace/{trace_id}/report")
+async def trace_report_proxy(trace_id: str, format: str = "json"):
+    """Proxy zu Haupt-Backend /api/v1/trace/id/{trace_id}/report?format=..."""
+    if not MAIN_BACKEND_URL:
+        raise HTTPException(status_code=501, detail="MAIN_BACKEND_URL not configured")
+    try:
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            resp = await client.get(
+                f"{MAIN_BACKEND_URL}/api/v1/trace/id/{trace_id}/report",
+                headers=_main_headers(),
+                params={"format": format},
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        media = "application/json"
+        if format == "pdf":
+            media = "application/pdf"
+        elif format == "csv":
+            media = "text/csv"
+        return Response(content=resp.content, media_type=media)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")
 
 if __name__ == "__main__":
     import uvicorn

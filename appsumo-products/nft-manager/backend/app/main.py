@@ -4,6 +4,30 @@ from pydantic import BaseModel
 from typing import List, Dict, Optional
 import random
 from datetime import datetime, timedelta
+import httpx
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'shared'))
+
+try:
+    from auth import decode_access_token, create_access_token, TokenData
+    from appsumo import activate_license, check_feature_access, PLAN_LIMITS
+except ImportError:
+    print("⚠️ Warning: Shared modules not found")
+    TokenData = None
+
+# Upstream main backend configuration (optional)
+MAIN_BACKEND_URL = os.getenv("MAIN_BACKEND_URL")
+MAIN_BACKEND_API_KEY = os.getenv("MAIN_BACKEND_API_KEY")
+MAIN_BACKEND_JWT = os.getenv("MAIN_BACKEND_JWT")
+
+def _main_headers() -> Dict[str, str]:
+    headers: Dict[str, str] = {"Content-Type": "application/json"}
+    if MAIN_BACKEND_API_KEY:
+        headers["X-API-Key"] = MAIN_BACKEND_API_KEY
+    if MAIN_BACKEND_JWT:
+        headers["Authorization"] = f"Bearer {MAIN_BACKEND_JWT}"
+    return headers
 
 app = FastAPI(
     title="NFT Portfolio Manager API",
@@ -157,6 +181,59 @@ async def get_stats():
         "wallets_tracked": random.randint(1000, 10000),
         "last_updated": datetime.utcnow().isoformat()
     }
+
+@app.post("/api/portfolio/risk")
+async def assess_portfolio_risk(request: WalletRequest):
+    """Assess NFT portfolio risk via Wallet Scanner (falls konfiguriert), sonst Mock."""
+    if not MAIN_BACKEND_URL:
+        # Mock risk assessment
+        risk_score = random.randint(0, 100)
+        risk_level = "low" if risk_score < 30 else "medium" if risk_score < 70 else "high"
+        return {
+            "address": request.address,
+            "chain": request.chain,
+            "risk_score": risk_score,
+            "risk_level": risk_level,
+            "risk_factors": [
+                "Wash trading detected" if random.random() > 0.7 else "",
+                "High concentration in risky collections" if random.random() > 0.8 else "",
+                "Recent suspicious transfers" if random.random() > 0.9 else ""
+            ],
+            "recommendations": [
+                "Diversify across collections",
+                "Monitor floor prices",
+                "Use secure wallets"
+            ]
+        }
+    try:
+        payload = {
+            "addresses": [{"chain": request.chain, "address": request.address}],
+            "check_history": True,
+            "check_illicit": True,
+        }
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.post(
+                f"{MAIN_BACKEND_URL}/api/v1/wallet-scanner/scan/addresses",
+                headers=_main_headers(),
+                json=payload,
+            )
+        if resp.status_code >= 400:
+            # Fallback to mock
+            return await assess_portfolio_risk(request)
+        data = resp.json()
+        # Transform to NFT risk format
+        risk_score = int(data.get("risk_score", 0) * 100)
+        return {
+            "address": request.address,
+            "chain": request.chain,
+            "risk_score": risk_score,
+            "risk_level": "low" if risk_score < 30 else "medium" if risk_score < 70 else "high",
+            "risk_factors": data.get("illicit_connections", []),
+            "recommendations": ["Secure wallet management", "Diversify holdings", "Monitor market trends"]
+        }
+    except Exception:
+        # Fallback to mock
+        return await assess_portfolio_risk(request)
 
 if __name__ == "__main__":
     import uvicorn

@@ -6,6 +6,8 @@ export default function FirewallScanner() {
   const [address, setAddress] = useState('')
   const [scanning, setScanning] = useState(false)
   const [result, setResult] = useState(null)
+  const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+  const [deep, setDeep] = useState(false)
 
   const handleScan = async () => {
     if (!address.trim()) return
@@ -14,7 +16,8 @@ export default function FirewallScanner() {
     setResult(null)
 
     try {
-      const response = await fetch('http://localhost:8002/api/scan', {
+      const endpoint = deep ? '/api/scan/deep' : '/api/scan'
+      const response = await fetch(`${API_BASE}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ address })
@@ -51,6 +54,14 @@ export default function FirewallScanner() {
             placeholder="Enter wallet address (0x...)"
             className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500 transition-colors"
           />
+          <label className="flex items-center gap-2 text-sm text-gray-700 px-3">
+            <input
+              type="checkbox"
+              checked={deep}
+              onChange={(e) => setDeep(e.target.checked)}
+            />
+            Deep Scan
+          </label>
           <button
             onClick={handleScan}
             disabled={!address.trim() || scanning}

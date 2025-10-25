@@ -27,7 +27,7 @@ export const CheckoutPage: React.FC = () => {
 
   const fetchInvoiceDetails = async () => {
     try {
-      const response = await fetch(`/api/v1/invoice/${orderId}`);
+      const response = await fetch(`/api/v1/crypto-payments/invoice/${orderId}`);
       if (!response.ok) {
         if (response.status === 404) {
           setError('Invoice nicht gefunden');
@@ -164,7 +164,9 @@ export const CheckoutPage: React.FC = () => {
                   </div>
                   <div className="text-right">
                     <p className="text-2xl font-bold">{invoice.expected_amount_btc} BTC</p>
-                    <p className="text-sm text-gray-600">≈ ${(invoice.expected_amount_btc * 45000).toFixed(2)} USD</p>
+                    <p className="text-sm text-gray-600">≈ ${(
+                      parseFloat(String(invoice.expected_amount_btc || '0')) * 45000
+                    ).toFixed(2)} USD</p>
                   </div>
                 </div>
               </CardContent>

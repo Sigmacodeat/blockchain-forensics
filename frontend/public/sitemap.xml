@@ -221,6 +221,10 @@
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://sigmacode.io/sitemap-en-IE.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://sigmacode.io/sitemap-en-ZA.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
@@ -229,7 +233,7 @@
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://sigmacode.io/sitemap-en-IE.xml</loc>
+    <loc>https://sigmacode.io/sitemap-en-HK.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
@@ -241,7 +245,19 @@
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://sigmacode.io/sitemap-en-HK.xml</loc>
+    <loc>https://sigmacode.io/sitemap-en-NG.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-en-KE.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-en-GH.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-en-PK.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
@@ -277,6 +293,50 @@
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-BO.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-EC.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-CR.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-PA.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-PY.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-DO.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-GT.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-HN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-NI.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-SV.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-es-PR.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://sigmacode.io/sitemap-es-419.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
@@ -294,6 +354,18 @@
   </sitemap>
   <sitemap>
     <loc>https://sigmacode.io/sitemap-pt-MZ.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-pt-CV.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-pt-GW.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-pt-ST.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
@@ -329,6 +401,22 @@
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://sigmacode.io/sitemap-fr-SN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-fr-CM.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-fr-CI.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-de-DE.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://sigmacode.io/sitemap-de-AT.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
@@ -337,11 +425,231 @@
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://sigmacode.io/sitemap-de-LU.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-de-LI.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://sigmacode.io/sitemap-it-CH.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://sigmacode.io/sitemap-it-IT.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-nl-NL.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://sigmacode.io/sitemap-nl-BE.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sv-SE.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sv-FI.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-fi-FI.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-da-DK.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-nb-NO.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-nn-NO.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-is-IS.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-pl-PL.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-cs-CZ.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sk-SK.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sl-SI.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-hu-HU.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ro-RO.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ro-MD.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-bg-BG.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-et-EE.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-lv-LV.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-lt-LT.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sr-RS.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sr-BA.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-bs-BA.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-mk-MK.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sq-AL.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sq-MK.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-sq-XK.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-el-GR.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-el-CY.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ru-RU.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ru-BY.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ru-KZ.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ru-KG.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-uk-UA.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-be-BY.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-SA.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-AE.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-EG.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-MA.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-DZ.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-TN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-LB.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-IQ.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-JO.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-OM.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-QA.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-KW.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-BH.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-PS.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-LY.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-SY.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-YE.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ar-SD.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
   <sitemap>
@@ -350,6 +658,78 @@
   </sitemap>
   <sitemap>
     <loc>https://sigmacode.io/sitemap-fa-IR.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-fa-AF.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-hi-IN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-bn-BD.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-bn-IN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-id-ID.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ms-MY.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ms-SG.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ms-BN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-th-TH.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ur-PK.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ur-IN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-vi-VN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ja-JP.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-ko-KR.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-zh-CN.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-zh-TW.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-zh-HK.xml</loc>
+    <lastmod>2025-10-25</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://sigmacode.io/sitemap-zh-MO.xml</loc>
     <lastmod>2025-10-25</lastmod>
   </sitemap>
 </sitemapindex>

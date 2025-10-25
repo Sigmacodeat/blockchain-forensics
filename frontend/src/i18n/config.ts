@@ -10,6 +10,7 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import arTranslations from '../locales/ar.json'
 import beTranslations from '../locales/be.json'
 import bgTranslations from '../locales/bg.json'
+import bnTranslations from '../locales/bn.json'
 import bsTranslations from '../locales/bs.json'
 import csTranslations from '../locales/cs.json'
 import daTranslations from '../locales/da.json'
@@ -18,11 +19,13 @@ import elTranslations from '../locales/el.json'
 import enTranslations from '../locales/en.json'
 import esTranslations from '../locales/es.json'
 import etTranslations from '../locales/et.json'
+import faTranslations from '../locales/fa.json'
 import fiTranslations from '../locales/fi.json'
 import frTranslations from '../locales/fr.json'
 import gaTranslations from '../locales/ga.json'
 import hiTranslations from '../locales/hi.json'
 import huTranslations from '../locales/hu.json'
+import idTranslations from '../locales/id.json'
 import isTranslations from '../locales/is.json'
 import itTranslations from '../locales/it.json'
 import jaTranslations from '../locales/ja.json'
@@ -32,6 +35,7 @@ import lbTranslations from '../locales/lb.json'
 import ltTranslations from '../locales/lt.json'
 import lvTranslations from '../locales/lv.json'
 import mkTranslations from '../locales/mk.json'
+import msTranslations from '../locales/ms.json'
 import mtTranslations from '../locales/mt.json'
 import nbTranslations from '../locales/nb.json'
 import nlTranslations from '../locales/nl.json'
@@ -46,15 +50,20 @@ import slTranslations from '../locales/sl.json'
 import sqTranslations from '../locales/sq.json'
 import srTranslations from '../locales/sr.json'
 import svTranslations from '../locales/sv.json'
+import thTranslations from '../locales/th.json'
 import trTranslations from '../locales/tr.json'
 import ukTranslations from '../locales/uk.json'
+import urTranslations from '../locales/ur.json'
+import viTranslations from '../locales/vi.json'
 import zhCNTranslations from '../locales/zh-CN.json'
+import zhTWTranslations from '../locales/zh-TW.json'
 
 // Die Ressourcen - ALLE 42 Sprachen
 const resources = {
   ar: { translation: arTranslations },
   be: { translation: beTranslations },
   bg: { translation: bgTranslations },
+  bn: { translation: bnTranslations },
   bs: { translation: bsTranslations },
   cs: { translation: csTranslations },
   da: { translation: daTranslations },
@@ -63,11 +72,13 @@ const resources = {
   en: { translation: enTranslations },
   es: { translation: esTranslations },
   et: { translation: etTranslations },
+  fa: { translation: faTranslations },
   fi: { translation: fiTranslations },
   fr: { translation: frTranslations },
   ga: { translation: gaTranslations },
   hi: { translation: hiTranslations },
   hu: { translation: huTranslations },
+  id: { translation: idTranslations },
   is: { translation: isTranslations },
   it: { translation: itTranslations },
   ja: { translation: jaTranslations },
@@ -77,6 +88,7 @@ const resources = {
   lt: { translation: ltTranslations },
   lv: { translation: lvTranslations },
   mk: { translation: mkTranslations },
+  ms: { translation: msTranslations },
   mt: { translation: mtTranslations },
   nb: { translation: nbTranslations },
   nl: { translation: nlTranslations },
@@ -91,52 +103,34 @@ const resources = {
   sq: { translation: sqTranslations },
   sr: { translation: srTranslations },
   sv: { translation: svTranslations },
+  th: { translation: thTranslations },
   tr: { translation: trTranslations },
   uk: { translation: ukTranslations },
+  ur: { translation: urTranslations },
+  vi: { translation: viTranslations },
   'zh-CN': { translation: zhCNTranslations }
+  , 'zh-TW': { translation: zhTWTranslations }
 }
 
 // Regionale Locale-Aliase (z. B. en-GB -> en)
 const REGIONAL_ALIASES: Record<string, string> = {
-  'en-GB': 'en',
-  'en-US': 'en',
-  'en-AU': 'en',
-  'en-CA': 'en',
-  'en-NZ': 'en',
-  'en-ZA': 'en',
-  'en-SG': 'en',
-  'en-IE': 'en',
-  'en-IN': 'en',
-  'en-PH': 'en',
-  'en-HK': 'en',
-  'es-ES': 'es',
-  'es-MX': 'es',
-  'es-AR': 'es',
-  'es-CL': 'es',
-  'es-CO': 'es',
-  'es-PE': 'es',
-  'es-VE': 'es',
-  'es-UY': 'es',
-  'es-419': 'es',
-  'pt-PT': 'pt',
-  'pt-BR': 'pt',
-  'pt-AO': 'pt',
-  'pt-MZ': 'pt',
-  'fr-FR': 'fr',
-  'fr-CA': 'fr',
-  'fr-BE': 'fr',
-  'fr-CH': 'fr',
-  'fr-LU': 'fr',
-  'fr-DZ': 'fr',
-  'fr-MA': 'fr',
-  'fr-TN': 'fr',
-  'de-AT': 'de',
-  'de-CH': 'de',
-  'it-CH': 'it',
-  'nl-BE': 'nl',
-  'zh-TW': 'zh-CN'
-  , 'zh-HK': 'zh-CN',
-  'he-IL': 'he'
+  'en-GB': 'en','en-US': 'en','en-AU': 'en','en-CA': 'en','en-NZ': 'en','en-IE': 'en','en-ZA': 'en','en-SG': 'en','en-HK': 'en','en-IN': 'en','en-PH': 'en','en-NG': 'en','en-KE': 'en','en-GH': 'en','en-PK': 'en',
+  'es-ES': 'es','es-MX': 'es','es-AR': 'es','es-CL': 'es','es-CO': 'es','es-PE': 'es','es-VE': 'es','es-UY': 'es','es-BO': 'es','es-EC': 'es','es-CR': 'es','es-PA': 'es','es-PY': 'es','es-DO': 'es','es-GT': 'es','es-HN': 'es','es-NI': 'es','es-SV': 'es','es-PR': 'es','es-419': 'es',
+  'pt-PT': 'pt','pt-BR': 'pt','pt-AO': 'pt','pt-MZ': 'pt','pt-CV': 'pt','pt-GW': 'pt','pt-ST': 'pt',
+  'fr-FR': 'fr','fr-CA': 'fr','fr-BE': 'fr','fr-CH': 'fr','fr-LU': 'fr','fr-DZ': 'fr','fr-MA': 'fr','fr-TN': 'fr','fr-SN': 'fr','fr-CM': 'fr','fr-CI': 'fr',
+  'de-DE': 'de','de-AT': 'de','de-CH': 'de','de-LU': 'de','de-LI': 'de',
+  'it-IT': 'it','it-CH': 'it',
+  'nl-NL': 'nl','nl-BE': 'nl',
+  'pl-PL': 'pl','cs-CZ': 'cs','sk-SK': 'sk','sl-SI': 'sl','hu-HU': 'hu','ro-RO': 'ro','ro-MD': 'ro','bg-BG': 'bg',
+  'et-EE': 'et','lv-LV': 'lv','lt-LT': 'lt',
+  'sv-SE': 'sv','sv-FI': 'sv','fi-FI': 'fi','da-DK': 'da','nb-NO': 'nb','nn-NO': 'nn','is-IS': 'is',
+  'sr-RS': 'sr','sr-BA': 'sr','bs-BA': 'bs','mk-MK': 'mk','sq-AL': 'sq','sq-XK': 'sq','sq-MK': 'sq',
+  'el-GR': 'el','el-CY': 'el',
+  'ru-RU': 'ru','ru-BY': 'ru','ru-KZ': 'ru','ru-KG': 'ru','uk-UA': 'uk','be-BY': 'be',
+  'ar-SA': 'ar','ar-AE': 'ar','ar-EG': 'ar','ar-MA': 'ar','ar-DZ': 'ar','ar-TN': 'ar','ar-LB': 'ar','ar-IQ': 'ar','ar-JO': 'ar','ar-OM': 'ar','ar-QA': 'ar','ar-KW': 'ar','ar-BH': 'ar','ar-PS': 'ar','ar-LY': 'ar','ar-SY': 'ar','ar-YE': 'ar','ar-SD': 'ar',
+  'he-IL': 'he','fa-IR': 'fa','fa-AF': 'fa',
+  'hi-IN': 'hi','bn-BD': 'bn','bn-IN': 'bn','id-ID': 'id','ms-MY': 'ms','ms-SG': 'ms','ms-BN': 'ms','th-TH': 'th','ur-PK': 'ur','ur-IN': 'ur','vi-VN': 'vi','ja-JP': 'ja','ko-KR': 'ko',
+  'zh-CN': 'zh-CN','zh-TW': 'zh-TW','zh-HK': 'zh-TW','zh-MO': 'zh-TW'
 }
 
 // Locale-Auflösung: akzeptiert regionale Codes und fällt auf Basissprache zurück

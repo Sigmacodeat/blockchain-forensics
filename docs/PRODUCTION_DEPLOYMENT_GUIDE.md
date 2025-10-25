@@ -143,7 +143,7 @@ npm ci  # Use ci for production (faster, deterministic)
 npm run build
 
 # Serve with nginx or CDN
-# See: docs/NGINX_CONFIG.md
+# See: infra/nginx/nginx.conf
 ```
 
 ### 5. Health Checks

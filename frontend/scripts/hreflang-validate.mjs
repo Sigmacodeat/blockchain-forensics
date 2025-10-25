@@ -15,20 +15,37 @@ const baseLocales = readdirSync(LOCALES_DIR)
 
 // Regional variants (kept in sync with other scripts)
 const REGIONALS = [
-  'en-GB','en-US','en-AU','en-CA','en-NZ','en-ZA','en-SG','en-IE','en-IN','en-PH','en-HK',
-  'es-ES','es-MX','es-AR','es-CL','es-CO','es-PE','es-VE','es-UY','es-419',
-  'pt-PT','pt-BR','pt-AO','pt-MZ',
-  'fr-FR','fr-CA','fr-BE','fr-CH','fr-LU','fr-DZ','fr-MA','fr-TN',
-  'de-AT','de-CH','it-CH','nl-BE',
-  'zh-CN','zh-TW','zh-HK','he-IL'
+  'en-GB','en-US','en-AU','en-CA','en-NZ','en-IE','en-ZA','en-SG','en-HK','en-IN','en-PH','en-NG','en-KE','en-GH','en-PK',
+  'es-ES','es-MX','es-AR','es-CL','es-CO','es-PE','es-VE','es-UY','es-BO','es-EC','es-CR','es-PA','es-PY','es-DO','es-GT','es-HN','es-NI','es-SV','es-PR','es-419',
+  'pt-PT','pt-BR','pt-AO','pt-MZ','pt-CV','pt-GW','pt-ST',
+  'fr-FR','fr-CA','fr-BE','fr-CH','fr-LU','fr-DZ','fr-MA','fr-TN','fr-SN','fr-CM','fr-CI',
+  'de-DE','de-AT','de-CH','de-LU','de-LI','it-CH','it-IT','nl-NL','nl-BE',
+  'sv-SE','sv-FI','fi-FI','da-DK','nb-NO','nn-NO','is-IS',
+  'pl-PL','cs-CZ','sk-SK','sl-SI','hu-HU','ro-RO','ro-MD','bg-BG','et-EE','lv-LV','lt-LT',
+  'sr-RS','sr-BA','bs-BA','mk-MK','sq-AL','sq-MK','sq-XK',
+  'el-GR','el-CY',
+  'ru-RU','ru-BY','ru-KZ','ru-KG','uk-UA','be-BY',
+  'ar-SA','ar-AE','ar-EG','ar-MA','ar-DZ','ar-TN','ar-LB','ar-IQ','ar-JO','ar-OM','ar-QA','ar-KW','ar-BH','ar-PS','ar-LY','ar-SY','ar-YE','ar-SD','he-IL','fa-IR','fa-AF',
+  'hi-IN','bn-BD','bn-IN','id-ID','ms-MY','ms-SG','ms-BN','th-TH','ur-PK','ur-IN','vi-VN','ja-JP','ko-KR',
+  'zh-CN','zh-TW','zh-HK','zh-MO'
 ]
 
 const locales = Array.from(new Set([...baseLocales, ...REGIONALS]))
 const CORE_ROUTES = [
   '/',
+  '/optimization',
   '/features',
   '/about',
+  '/contact',
   '/pricing',
+  '/use-cases',
+  '/use-cases/law-enforcement',
+  '/use-cases/compliance',
+  '/use-cases/police',
+  '/use-cases/private-investigators',
+  '/use-cases/financial-institutions',
+  '/demo/sandbox',
+  '/demo/live',
   '/search',
   '/legal/privacy',
   '/legal/terms',

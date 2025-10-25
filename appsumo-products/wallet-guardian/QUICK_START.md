@@ -82,7 +82,7 @@ Enter phone: +1234567890
 Dashboard → Integrations
 Select: Discord or Telegram
 Click: Connect
-✅ Authorize
+Authorize
 ```
 
 ---
@@ -94,17 +94,48 @@ Click: Connect
 1. Dashboard → Test Center
 2. Click "Run Safety Test"
 3. Wait 10 seconds...
-4. ✅ See results!
+4. See results!
 
 You should see:
-- ✅ All 15 ML models active
-- ✅ 7 defense layers working
-- ✅ Response time < 100ms
+- All 15 ML models active
+- 7 defense layers working
+- Response time < 100ms
 ```
 
 ---
 
-## 🎉 YOU'RE PROTECTED!
+## Optional: Connect to Main Backend (Deep Protection)
+
+Enable proxy to the main platform for real AI/Forensics:
+
+1) Set env in `backend/.env` (or export before `docker-compose up`):
+```
+MAIN_BACKEND_URL=http://host.docker.internal:8000
+# Optional if main backend protected:
+MAIN_BACKEND_API_KEY=your-api-key
+MAIN_BACKEND_JWT=your-jwt
+```
+
+2) Endpoints available via Wallet Guardian:
+```
+POST  /api/scan/deep            # Address deep scan (forensics-backed)
+POST  /api/tx/scan              # AI Firewall transaction scan
+POST  /api/trace/start          # Start forensic trace
+GET   /api/trace/{id}/report    # Download JSON/CSV/PDF report
+```
+
+3) Frontend additions on Dashboard:
+- Transaction Scanner (uses /api/tx/scan)
+- Forensic Trace (start + download report)
+- Wallet Scanner „Deep Scan“ Toggle
+
+Notes:
+- If `MAIN_BACKEND_URL` is not set, Wallet Guardian falls back to local mock scan.
+- In master compose, the guardian backend runs on `8002` and frontend uses `VITE_API_URL=http://localhost:8002`.
+
+---
+
+## YOU'RE PROTECTED!
 
 Your wallet is now protected 24/7 by:
 - 15 AI models

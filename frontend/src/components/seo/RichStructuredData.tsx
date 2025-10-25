@@ -148,6 +148,37 @@ export default function RichStructuredData() {
         "itemListElement": breadcrumbItems
       })
     }
+
+    // === 6. BLOG POSTING (Blog Detail: /:lang/blog/:slug) ===
+    // Lightweight fetch of the post JSON to populate BlogPosting schema
+    if (pathSegments.length >= 3 && pathSegments[1] === 'blog') {
+      const pageLang = pathSegments[0]
+      const slug = pathSegments[2]
+      const jsonUrl = `/blog/${pageLang}/${slug}.json`
+      const pageUrl = `${origin}/${pageLang}/blog/${slug}`
+      try {
+        fetch(jsonUrl, { cache: 'no-cache' })
+          .then((r) => (r.ok ? r.json() : null))
+          .then((post) => {
+            if (!post) return
+            const img = post?.featuredImage?.url ? (String(post.featuredImage.url).startsWith('http') ? post.featuredImage.url : `${origin}${post.featuredImage.url}`) : undefined
+            upsertJsonLd('blogposting', {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "inLanguage": pageLang,
+              "headline": String(post.title || ''),
+              "description": post.description || undefined,
+              "image": img ? [img] : undefined,
+              "datePublished": post.datePublished || undefined,
+              "dateModified": post.dateModified || post.datePublished || undefined,
+              "author": post.author ? { "@type": "Person", "name": String(post.author) } : { "@type": "Organization", "name": "SIGMACODE" },
+              "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
+              "url": pageUrl
+            })
+          })
+          .catch(() => {})
+      } catch {}
+    }
     
     return () => removeManaged()
   }, [location.pathname, lang, currency, origin])

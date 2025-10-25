@@ -1,0 +1,19 @@
+{
+  "id": "welcome",
+  "slug": "welcome-to-sigmacode-forensics",
+  "title": "Welcome to SIGMACODE Forensics",
+  "description": "Launch of our AI-powered blockchain forensics blog.",
+  "content": "We are launching our AI-powered blockchain forensics blog.\n\nExpect deep-dives into tracing techniques, KYT risk analytics, cross-chain investigations, and case studies.\n\nFollow along as we open-source methods, playbooks, and agent workflows to help you trace crypto crime faster.",
+  "datePublished": "2025-10-25T20:00:00Z",
+  "dateModified": "2025-10-25T20:00:00Z",
+  "author": "SIGMACODE Editorial",
+  "category": "Announcements",
+  "tags": ["product", "ai", "blockchain forensics"],
+  "featuredImage": {
+    "url": "/og-images/og-default.png",
+    "alt": "SIGMACODE Forensics Blog",
+    "width": 1200,
+    "height": 630
+  },
+  "tenant": null
+}

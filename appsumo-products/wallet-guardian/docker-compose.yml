@@ -8,6 +8,9 @@ services:
     environment:
       - DATABASE_URL=postgresql://user:pass@db:5432/wallet-guardian
       - REDIS_URL=redis://redis:6379
+      - MAIN_BACKEND_URL=${MAIN_BACKEND_URL:-}
+      - MAIN_BACKEND_API_KEY=${MAIN_BACKEND_API_KEY:-}
+      - MAIN_BACKEND_JWT=${MAIN_BACKEND_JWT:-}
     depends_on:
       - db
       - redis

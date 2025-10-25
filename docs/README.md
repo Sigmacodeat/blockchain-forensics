@@ -2,15 +2,15 @@
 
 **Blockchain Forensics Platform** - Vollständige Dokumentationsübersicht
 
-## 📚 Core-Dokumentation (Root-Verzeichnis)
+## 📚 Core-Dokumentation
 
 ### Hauptdokumentation
 - **[README.md](../README.md)** - Hauptübersicht, Features, Quick Start
-- **[DOCUMENTATION.md](../DOCUMENTATION.md)** - Vollständige Plattform-Dokumentation
-- **[INSTALLATION.md](../INSTALLATION.md)** - Detaillierte Installationsanleitung
-- **[DEPLOYMENT_GUIDE.md](../DEPLOYMENT_GUIDE.md)** - Produktions-Deployment
-- **[DEVELOPMENT.md](../DEVELOPMENT.md)** - Entwickler-Setup & Guidelines
-- **[TESTING_GUIDE.md](../TESTING_GUIDE.md)** - Test-Strategien & Ausführung
+- **[QUICK_START.md](../QUICK_START.md)** - Detaillierte Installationsanleitung & Schnellstart
+- **[PRODUCTION_DEPLOYMENT_GUIDE.md](./PRODUCTION_DEPLOYMENT_GUIDE.md)** - Produktions-Deployment
+- **[DEVELOPER_API_QUICKSTART.md](./DEVELOPER_API_QUICKSTART.md)** - Entwickler-Setup & API Quickstart
+- **[API_DOCUMENTATION.md](./API_DOCUMENTATION.md)** - API-Endpunkte & Beispiele
+- **[TEST_COVERAGE_STATUS.md](./TEST_COVERAGE_STATUS.md)** - Testabdeckung & Status
 
 ## 🚀 Feature-Dokumentation
 

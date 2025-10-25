@@ -8,6 +8,10 @@ from datetime import datetime, timedelta
 from typing import List, Optional, Dict, Any
 from fastapi import APIRouter, HTTPException, Depends, Body
 from pydantic import BaseModel, Field
+from sqlalchemy.orm import Session
+from app.db.session import get_db
+from app.auth.dependencies import get_current_user_strict, require_admin
+from app.services.btc_wallet_service import btc_wallet_service
 
 # Auth dependencies (fallback in TEST_MODE)
 try:
@@ -655,6 +659,8 @@ class InvoiceStatusResponse(BaseModel):
     address: Optional[str] = None
     txid: Optional[str] = None
     paid_at: Optional[str] = None
+    expires_at: Optional[str] = None
+    plan_name: Optional[str] = None
 
 
 @router.post("/invoice", response_model=InvoiceResponse)
@@ -705,7 +711,9 @@ async def get_invoice_status(
             expected_amount_btc=status.get("expected_amount_btc"),
             address=status.get("address"),
             txid=status.get("txid"),
-            paid_at=status.get("paid_at")
+            paid_at=status.get("paid_at"),
+            expires_at=status.get("expires_at"),
+            plan_name=status.get("plan_name"),
         )
     except HTTPException:
         raise

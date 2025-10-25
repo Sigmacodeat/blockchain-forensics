@@ -66,14 +66,24 @@ class BTCInvoiceService:
                 return {
                     "status": "paid",
                     "received_amount_btc": str(deposit_addr.received_amount_btc),
+                    "expected_amount_btc": str(deposit_addr.expected_amount_btc),
+                    "address": deposit_addr.address,
+                    "plan_name": deposit_addr.plan_name,
+                    "expires_at": deposit_addr.expires_at.isoformat() if deposit_addr.expires_at else None,
                     "txid": deposit_addr.txid,
-                    "paid_at": deposit_addr.paid_at.isoformat()
+                    "paid_at": deposit_addr.paid_at.isoformat() if deposit_addr.paid_at else None,
                 }
 
             if deposit_addr.expires_at < datetime.utcnow():
                 deposit_addr.status = "expired"
                 db.commit()
-                return {"status": "expired"}
+                return {
+                    "status": "expired",
+                    "expected_amount_btc": str(deposit_addr.expected_amount_btc),
+                    "address": deposit_addr.address,
+                    "plan_name": deposit_addr.plan_name,
+                    "expires_at": deposit_addr.expires_at.isoformat() if deposit_addr.expires_at else None,
+                }
 
             # Check current received amount
             total_received = btc_wallet_service.get_total_received(deposit_addr.address)
@@ -91,8 +101,12 @@ class BTCInvoiceService:
                 return {
                     "status": "paid",
                     "received_amount_btc": str(total_received),
+                    "expected_amount_btc": str(deposit_addr.expected_amount_btc),
+                    "address": deposit_addr.address,
+                    "plan_name": deposit_addr.plan_name,
+                    "expires_at": deposit_addr.expires_at.isoformat() if deposit_addr.expires_at else None,
                     "txid": deposit_addr.txid,
-                    "paid_at": deposit_addr.paid_at.isoformat()
+                    "paid_at": deposit_addr.paid_at.isoformat() if deposit_addr.paid_at else None,
                 }
 
             db.commit()
@@ -100,7 +114,9 @@ class BTCInvoiceService:
                 "status": "pending",
                 "received_amount_btc": str(total_received),
                 "expected_amount_btc": str(deposit_addr.expected_amount_btc),
-                "address": deposit_addr.address
+                "address": deposit_addr.address,
+                "plan_name": deposit_addr.plan_name,
+                "expires_at": deposit_addr.expires_at.isoformat() if deposit_addr.expires_at else None,
             }
         finally:
             db.close()

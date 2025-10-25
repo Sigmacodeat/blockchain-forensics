@@ -1,7 +1,31 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import random
 from datetime import datetime
+import httpx
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'shared'))
+
+try:
+    from auth import decode_access_token, create_access_token, TokenData
+    from appsumo import activate_license, check_feature_access, PLAN_LIMITS
+except ImportError:
+    print("⚠️ Warning: Shared modules not found")
+    TokenData = None
+
+# Upstream main backend configuration (optional)
+MAIN_BACKEND_URL = os.getenv("MAIN_BACKEND_URL")
+MAIN_BACKEND_API_KEY = os.getenv("MAIN_BACKEND_API_KEY")
+MAIN_BACKEND_JWT = os.getenv("MAIN_BACKEND_JWT")
+
+def _main_headers() -> dict:
+    headers = {"Content-Type": "application/json"}
+    if MAIN_BACKEND_API_KEY:
+        headers["X-API-Key"] = MAIN_BACKEND_API_KEY
+    if MAIN_BACKEND_JWT:
+        headers["Authorization"] = f"Bearer {MAIN_BACKEND_JWT}"
+    return headers
 
 app = FastAPI(title="Complete Security Analytics API", version="2.0.0")
 
@@ -29,6 +53,29 @@ async def get_threats():
                 "severity": random.choice(["low", "medium", "high", "critical"]),
                 "status": random.choice(["blocked", "monitoring"])} for i in range(1, 6)]
     return {"total_threats": 1247, "active_threats": threats}
+
+@app.get("/api/security/rules")
+async def get_firewall_rules():
+    """Proxy zu Haupt-Backend /api/v1/firewall/rules (falls konfiguriert), sonst Mock."""
+    if not MAIN_BACKEND_URL:
+        # Mock response
+        return {"rules": [
+            {"rule_id": "rule_1", "rule_type": "address", "action": "block", "enabled": True},
+            {"rule_id": "rule_2", "rule_type": "contract", "action": "warn", "enabled": True}
+        ]}
+    try:
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.get(
+                f"{MAIN_BACKEND_URL}/api/v1/firewall/rules",
+                headers=_main_headers(),
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")
 
 @app.get("/api/stats")
 async def get_stats():

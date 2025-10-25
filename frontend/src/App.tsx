@@ -42,6 +42,7 @@ const FeaturesPage = React.lazy(() => import('@/pages/FeaturesPage'))
 const PricingPage = React.lazy(() => import('@/pages/PricingPage'))
 const CheckoutPage = React.lazy(() => import('@/pages/CheckoutPage'))
 const AboutPage = React.lazy(() => import('@/pages/AboutPage'))
+const BusinessPlanPage = React.lazy(() => import('@/pages/BusinessPlanPage'))
 const PrivacyPolicyPage = React.lazy(() => import('@/pages/legal/PrivacyPolicyPage'))
 const TermsPage = React.lazy(() => import('@/pages/legal/TermsPage'))
 const ImpressumPage = React.lazy(() => import('@/pages/legal/ImpressumPage'))
@@ -133,6 +134,8 @@ const FirewallControlCenter = React.lazy(() => import('@/pages/FirewallControlCe
 const PartnerDashboard = React.lazy(() => import('@/pages/PartnerDashboard'))
 const NewsCasesManager = React.lazy(() => import('@/pages/NewsCasesManager'))
 const OptimizationDashboard = React.lazy(() => import('@/pages/OptimizationDashboard'))
+const BlogListPage = React.lazy(() => import('@/pages/BlogListPage'))
+const BlogPostPage = React.lazy(() => import('@/pages/BlogPostPage'))
 
 // Bank System Pages
 const CaseManagement = React.lazy(() => import('@/pages/bank/CaseManagement'))
@@ -197,6 +200,8 @@ function App() {
                   <Route path="pricing" element={<PublicLayout><React.Suspense fallback={<div />}> <PricingPage /> </React.Suspense></PublicLayout>} />
                   <Route path="checkout/:orderId" element={<PublicLayout><React.Suspense fallback={<div />}> <CheckoutPage /> </React.Suspense></PublicLayout>} />
                   <Route path="news/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <NewsCasePublicPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="blog" element={<PublicLayout><React.Suspense fallback={<div />}> <BlogListPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="blog/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <BlogPostPage /> </React.Suspense></PublicLayout>} />
                   {/* Chatbot-Route entfernt - wird über chatbot.blocksigmakode.ai bereitgestellt */}
                   <Route path="about" element={<PublicLayout><React.Suspense fallback={<div />}> <AboutPage /> </React.Suspense></PublicLayout>} />
                   <Route path="contact" element={<PublicLayout><React.Suspense fallback={<div />}> <ContactPage /> </React.Suspense></PublicLayout>} />

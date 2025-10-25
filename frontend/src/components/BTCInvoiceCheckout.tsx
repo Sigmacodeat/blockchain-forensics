@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { CheckCircle, Clock, XCircle, Copy, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -35,6 +35,8 @@ export const BTCInvoiceCheckout: React.FC<BTCInvoiceCheckoutProps> = ({
   const [error, setError] = useState<string | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(0);
   const [copied, setCopied] = useState(false);
+  const wsRef = useRef<WebSocket | null>(null);
+  const reconnectTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Fetch initial invoice status
   useEffect(() => {
@@ -45,9 +47,19 @@ export const BTCInvoiceCheckout: React.FC<BTCInvoiceCheckoutProps> = ({
   useEffect(() => {
     if (!status || status.status !== 'pending') return;
 
-    const interval = setInterval(fetchInvoiceStatus, 10000); // Poll every 10s
-    return () => clearInterval(interval);
-  }, [status]);
+    connectWebSocket();
+
+    return () => {
+      disconnectWebSocket();
+    };
+  }, [status?.status]);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      disconnectWebSocket();
+    };
+  }, []);
 
   // Countdown timer for expiration
   useEffect(() => {
@@ -72,7 +84,7 @@ export const BTCInvoiceCheckout: React.FC<BTCInvoiceCheckoutProps> = ({
 
   const fetchInvoiceStatus = async () => {
     try {
-      const response = await fetch(`/api/v1/invoice/${orderId}`);
+      const response = await fetch(`/api/v1/crypto-payments/invoice/${orderId}`);
       if (!response.ok) throw new Error('Failed to fetch invoice status');
 
       const data = await response.json();
@@ -90,6 +102,110 @@ export const BTCInvoiceCheckout: React.FC<BTCInvoiceCheckoutProps> = ({
       onError?.(errorMsg);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const connectWebSocket = () => {
+    if (wsRef.current) return; // Already connected
+
+    // Get JWT token from localStorage (assuming it's stored there)
+    const token = localStorage.getItem('auth_token') || localStorage.getItem('token');
+    if (!token) {
+      console.warn('No auth token found, falling back to polling');
+      startPolling();
+      return;
+    }
+
+    try {
+      const wsUrl = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/api/v1/ws/invoice/${orderId}?token=${encodeURIComponent(token)}`;
+      const ws = new WebSocket(wsUrl);
+
+      ws.onopen = () => {
+        console.log('WebSocket connected for invoice updates');
+      };
+
+      ws.onmessage = (event) => {
+        try {
+          const data = JSON.parse(event.data);
+          if (data.type === 'invoice_status_update') {
+            handleStatusUpdate(data);
+          } else if (data.type === 'pong') {
+            // Keepalive response
+          }
+        } catch (e) {
+          console.error('Failed to parse WebSocket message:', e);
+        }
+      };
+
+      ws.onclose = (event) => {
+        console.log('WebSocket disconnected:', event.code, event.reason);
+        wsRef.current = null;
+
+        // If not intentionally closed and status is still pending, try reconnect or fallback to polling
+        if (event.code !== 1000 && status?.status === 'pending') {
+          reconnectTimeoutRef.current = setTimeout(() => {
+            console.log('Attempting WebSocket reconnect...');
+            connectWebSocket();
+          }, 5000); // Reconnect after 5 seconds
+        } else if (status?.status === 'pending') {
+          console.log('WebSocket failed, falling back to polling');
+          startPolling();
+        }
+      };
+
+      ws.onerror = (error) => {
+        console.error('WebSocket error:', error);
+      };
+
+      wsRef.current = ws;
+
+      // Send ping every 30 seconds to keep connection alive
+      const pingInterval = setInterval(() => {
+        if (ws.readyState === WebSocket.OPEN) {
+          ws.send(JSON.stringify({ type: 'ping' }));
+        } else {
+          clearInterval(pingInterval);
+        }
+      }, 30000);
+
+    } catch (error) {
+      console.error('Failed to create WebSocket:', error);
+      startPolling();
+    }
+  };
+
+  const disconnectWebSocket = () => {
+    if (wsRef.current) {
+      wsRef.current.close(1000, 'Component unmounting');
+      wsRef.current = null;
+    }
+    if (reconnectTimeoutRef.current) {
+      clearTimeout(reconnectTimeoutRef.current);
+      reconnectTimeoutRef.current = null;
+    }
+    stopPolling();
+  };
+
+  const startPolling = () => {
+    if (reconnectTimeoutRef.current) return; // Already polling
+    reconnectTimeoutRef.current = setInterval(fetchInvoiceStatus, 10000); // Poll every 10s
+  };
+
+  const stopPolling = () => {
+    if (reconnectTimeoutRef.current) {
+      clearInterval(reconnectTimeoutRef.current as NodeJS.Timeout);
+      reconnectTimeoutRef.current = null;
+    }
+  };
+
+  const handleStatusUpdate = (data: any) => {
+    setStatus(data);
+    setError(null);
+
+    if (data.status === 'paid') {
+      onSuccess?.(data);
+    } else if (data.status === 'expired') {
+      onExpire?.();
     }
   };
 
@@ -130,19 +246,6 @@ export const BTCInvoiceCheckout: React.FC<BTCInvoiceCheckoutProps> = ({
         return <Badge variant="secondary">Ausstehend</Badge>;
     }
   };
-
-  if (loading) {
-    return (
-      <Card className="w-full max-w-md mx-auto">
-        <CardContent className="p-6">
-          <div className="flex items-center justify-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-            <span className="ml-2">Lade Invoice...</span>
-          </div>
-        </CardContent>
-      </Card>
-    );
-  }
 
   if (error) {
     return (

@@ -4,7 +4,9 @@ import { resolve, dirname } from 'node:path'
 
 // Config
 const SITE_ORIGIN = process.env.SITE_ORIGIN || 'https://sigmacode.io'
-const PUBLIC_DIR = resolve(process.cwd(), 'public')
+const DIST_DIR = resolve(process.cwd(), 'dist')
+const PUBLIC_FALLBACK_DIR = resolve(process.cwd(), 'public')
+const TARGET_DIR = existsSync(DIST_DIR) ? DIST_DIR : PUBLIC_FALLBACK_DIR
 
 // Core routes (without language prefix)
 const CORE_ROUTES = [
@@ -12,6 +14,16 @@ const CORE_ROUTES = [
   '/features',
   '/about',
   '/pricing',
+  '/optimization',
+  '/contact',
+  '/use-cases',
+  '/use-cases/law-enforcement',
+  '/use-cases/compliance',
+  '/use-cases/police',
+  '/use-cases/private-investigators',
+  '/use-cases/financial-institutions',
+  '/demo/sandbox',
+  '/demo/live',
   '/search',
   '/legal/privacy',
   '/legal/terms',
@@ -32,12 +44,19 @@ const baseLocales = files
 
 // Add regional variants for state-of-the-art hreflang coverage
 const REGIONALS = [
-  'en-GB','en-US','en-AU','en-CA','en-NZ','en-ZA','en-SG','en-IE','en-IN','en-PH','en-HK',
-  'es-ES','es-MX','es-AR','es-CL','es-CO','es-PE','es-VE','es-UY','es-419',
-  'pt-PT','pt-BR','pt-AO','pt-MZ',
-  'fr-FR','fr-CA','fr-BE','fr-CH','fr-LU','fr-DZ','fr-MA','fr-TN',
-  'de-AT','de-CH','it-CH','nl-BE',
-  'zh-CN','zh-TW','zh-HK','he-IL','fa-IR'
+  'en-GB','en-US','en-AU','en-CA','en-NZ','en-IE','en-ZA','en-SG','en-HK','en-IN','en-PH','en-NG','en-KE','en-GH','en-PK',
+  'es-ES','es-MX','es-AR','es-CL','es-CO','es-PE','es-VE','es-UY','es-BO','es-EC','es-CR','es-PA','es-PY','es-DO','es-GT','es-HN','es-NI','es-SV','es-PR','es-419',
+  'pt-PT','pt-BR','pt-AO','pt-MZ','pt-CV','pt-GW','pt-ST',
+  'fr-FR','fr-CA','fr-BE','fr-CH','fr-LU','fr-DZ','fr-MA','fr-TN','fr-SN','fr-CM','fr-CI',
+  'de-DE','de-AT','de-CH','de-LU','de-LI','it-CH','it-IT','nl-NL','nl-BE',
+  'sv-SE','sv-FI','fi-FI','da-DK','nb-NO','nn-NO','is-IS',
+  'pl-PL','cs-CZ','sk-SK','sl-SI','hu-HU','ro-RO','ro-MD','bg-BG','et-EE','lv-LV','lt-LT',
+  'sr-RS','sr-BA','bs-BA','mk-MK','sq-AL','sq-MK','sq-XK',
+  'el-GR','el-CY',
+  'ru-RU','ru-BY','ru-KZ','ru-KG','uk-UA','be-BY',
+  'ar-SA','ar-AE','ar-EG','ar-MA','ar-DZ','ar-TN','ar-LB','ar-IQ','ar-JO','ar-OM','ar-QA','ar-KW','ar-BH','ar-PS','ar-LY','ar-SY','ar-YE','ar-SD','he-IL','fa-IR','fa-AF',
+  'hi-IN','bn-BD','bn-IN','id-ID','ms-MY','ms-SG','ms-BN','th-TH','ur-PK','ur-IN','vi-VN','ja-JP','ko-KR',
+  'zh-CN','zh-TW','zh-HK','zh-MO'
 ]
 
 // Build full alternate matrix: base + regional variants mapped to base availability
@@ -99,7 +118,7 @@ function main() {
   for (const [base, regs] of alternates.entries()) {
     const allForAlternates = Array.from(new Set([...baseLocales, ...REGIONALS]))
     const xml = generateLocaleSitemap(base, allForAlternates)
-    const file = resolve(PUBLIC_DIR, `sitemap-${base}.xml`)
+    const file = resolve(TARGET_DIR, `sitemap-${base}.xml`)
     writeFileSafe(file, xml)
     indexParts.push('  <sitemap>')
     indexParts.push(`    <loc>${SITE_ORIGIN}/sitemap-${base}.xml</loc>`) 
@@ -107,13 +126,11 @@ function main() {
     indexParts.push('  </sitemap>')
   }
 
-  // Also generate sitemaps for regional variants that map to existing bases
+  // Also generate sitemaps for regional variants (regardless of whether a base key exists)
   for (const r of REGIONALS) {
-    const base = r.split('-')[0]
-    if (!alternates.has(base)) continue
     const allForAlternates = Array.from(new Set([...baseLocales, ...REGIONALS]))
     const xml = generateLocaleSitemap(r, allForAlternates)
-    const file = resolve(PUBLIC_DIR, `sitemap-${r}.xml`)
+    const file = resolve(TARGET_DIR, `sitemap-${r}.xml`)
     writeFileSafe(file, xml)
     indexParts.push('  <sitemap>')
     indexParts.push(`    <loc>${SITE_ORIGIN}/sitemap-${r}.xml</loc>`) 
@@ -123,10 +140,10 @@ function main() {
 
   indexParts.push('</sitemapindex>')
   const indexXml = indexParts.join('\n') + '\n'
-  writeFileSafe(resolve(PUBLIC_DIR, 'sitemap.xml'), indexXml)
+  writeFileSafe(resolve(TARGET_DIR, 'sitemap.xml'), indexXml)
 
   // robots.txt: Ensure sitemap reference exists
-  const robotsPath = resolve(PUBLIC_DIR, 'robots.txt')
+  const robotsPath = resolve(TARGET_DIR, 'robots.txt')
   let robots = existsSync(robotsPath) ? readFileSync(robotsPath, 'utf8') : 'User-agent: *\nAllow: /\n'
   if (!robots.includes('Sitemap:')) {
     robots += `\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`

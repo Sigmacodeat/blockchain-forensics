@@ -1,7 +1,8 @@
 # 📚 API DOCUMENTATION
 
 **Version:** 1.0.0  
-**Base URL:** `https://api.blockchain-forensics.com/api/v1`
+**Production Base URL:** `https://api.blockchain-forensics.com/api/v1`  
+**Local Base URL (dev):** `http://localhost:8000/api/v1`
 
 ---
 
@@ -201,9 +202,12 @@ Mark all as read
 
 ## 🎨 INTERACTIVE API DOCS
 
-**Swagger UI:** `https://api.blockchain-forensics.com/docs`  
-**ReDoc:** `https://api.blockchain-forensics.com/redoc`  
-**OpenAPI Spec:** `https://api.blockchain-forensics.com/openapi.json`
+**Swagger UI (prod):** `https://api.blockchain-forensics.com/docs`  
+**ReDoc (prod):** `https://api.blockchain-forensics.com/redoc`  
+**OpenAPI Spec (prod):** `https://api.blockchain-forensics.com/openapi.json`  
+**Swagger UI (local):** `http://localhost:8000/docs`  
+**ReDoc (local):** `http://localhost:8000/redoc`  
+**OpenAPI Spec (local):** `http://localhost:8000/openapi.json`
 
 ---
 
@@ -232,6 +236,8 @@ X-API-Version: v1
 ### CORS Allowed Origins:
 - `https://blockchain-forensics.com`
 - `https://*.blockchain-forensics.com`
+- `http://localhost:3000` (dev)
+- `http://localhost:5173` (dev)
 
 ---
 
@@ -285,7 +291,7 @@ curl -X POST https://api.blockchain-forensics.com/api/v1/trace/start \
 
 ---
 
-## �� WEBHOOKS
+## WEBHOOKS
 
 Configure webhooks in Dashboard → Settings → Webhooks
 

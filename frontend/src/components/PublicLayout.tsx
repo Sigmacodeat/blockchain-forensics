@@ -643,7 +643,7 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
                 <li><Link to={`/${currentLanguage}/about`} className="hover:text-primary">{t('navigation.about')}</Link></li>
                 <li><a href="#" className="hover:text-primary">{t('footer.careers')}</a></li>
                 <li><a href="#" className="hover:text-primary">{t('footer.contact')}</a></li>
-                <li><a href="#" className="hover:text-primary">{t('footer.blog')}</a></li>
+                <li><Link to={`/${currentLanguage}/blog`} className="hover:text-primary">{t('footer.blog')}</Link></li>
               </ul>
             </div>
             <div>

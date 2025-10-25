@@ -1,9 +1,34 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Optional
 import random
+import httpx
 from datetime import datetime
+
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'shared'))
+
+try:
+    from auth import decode_access_token, create_access_token, TokenData
+    from appsumo import activate_license, check_feature_access, PLAN_LIMITS
+except ImportError:
+    print("⚠️ Warning: Shared modules not found")
+    TokenData = None
+
+# Upstream main backend configuration (optional)
+MAIN_BACKEND_URL = os.getenv("MAIN_BACKEND_URL")
+MAIN_BACKEND_API_KEY = os.getenv("MAIN_BACKEND_API_KEY")
+MAIN_BACKEND_JWT = os.getenv("MAIN_BACKEND_JWT")
+
+def _main_headers() -> Dict[str, str]:
+    headers: Dict[str, str] = {"Content-Type": "application/json"}
+    if MAIN_BACKEND_API_KEY:
+        headers["X-API-Key"] = MAIN_BACKEND_API_KEY
+    if MAIN_BACKEND_JWT:
+        headers["Authorization"] = f"Bearer {MAIN_BACKEND_JWT}"
+    return headers
 
 app = FastAPI(title="Crypto Transaction Inspector API", version="1.0.0")
 
@@ -18,6 +43,14 @@ app.add_middleware(
 class TraceRequest(BaseModel):
     tx_hash: str
     chain: str = "ethereum"
+
+class TransactionScan(BaseModel):
+    chain: str
+    from_address: str
+    to_address: str
+    value: str
+    data: Optional[str] = ""
+    gas: Optional[int] = 21000
 
 @app.get("/")
 def root():
@@ -202,6 +235,34 @@ async def analyze_address(address: str):
         "last_active": datetime.utcnow().isoformat()
     }
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+@app.post("/api/tx/scan")
+async def tx_scan_proxy(tx: TransactionScan):
+    """Proxy zu Haupt-Backend /api/v1/firewall/scan (falls konfiguriert), sonst 501."""
+    if not MAIN_BACKEND_URL:
+        raise HTTPException(status_code=501, detail="MAIN_BACKEND_URL not configured")
+    try:
+        payload = {
+            "chain": tx.chain,
+            "from_address": tx.from_address,
+            "to_address": tx.to_address,
+            "value": tx.value,
+            "value_usd": tx.value,  # simple fallback
+            "data": tx.data or None,
+            "gas_price": None,
+            "nonce": None,
+            "contract_address": None,
+            "wallet_address": tx.from_address,
+        }
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.post(
+                f"{MAIN_BACKEND_URL}/api/v1/firewall/scan",
+                headers=_main_headers(),
+                json=payload,
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")

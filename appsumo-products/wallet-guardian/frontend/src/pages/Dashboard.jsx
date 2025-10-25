@@ -1,5 +1,7 @@
 import FirewallScanner from '../components/FirewallScanner'
 import { Shield, Zap, TrendingDown, CheckCircle2 } from 'lucide-react'
+import TxScanner from '../components/TxScanner'
+import ForensicTrace from '../components/ForensicTrace'
 
 export default function Dashboard() {
   const stats = {
@@ -61,6 +63,12 @@ export default function Dashboard() {
         {/* Scanner */}
         <div className="mb-8">
           <FirewallScanner />
+        </div>
+
+        {/* Advanced Tools */}
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <TxScanner />
+          <ForensicTrace />
         </div>
 
         {/* Features */}

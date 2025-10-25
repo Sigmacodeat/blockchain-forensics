@@ -184,7 +184,7 @@ npm run dev
 # Zugriff:
 # Frontend: http://localhost:3000
 # Backend API: http://localhost:8000/docs
-# Neo4j Browser: http://localhost:7474 (neo4j/forensics_password_change_me)
+# Neo4j Browser: http://localhost:7475 (neo4j/forensics_password_change_me)
 ```
 
 ## Optionale Abhängigkeiten & Feature-Gates
@@ -263,11 +263,11 @@ ETHEREUM_RPC_URL=https://mainnet.infura.io/v3/YOUR_KEY
 ETHEREUM_WS_URL=wss://mainnet.infura.io/ws/v3/YOUR_KEY
 
 # Databases
-NEO4J_URI=bolt://localhost:7687
+NEO4J_URI=bolt://localhost:7688
 NEO4J_USER=neo4j
 NEO4J_PASSWORD=password
-POSTGRES_URL=postgresql://user:pass@localhost:5432/forensics
-REDIS_URL=redis://localhost:6379
+POSTGRES_URL=postgresql://user:pass@localhost:5435/forensics
+REDIS_URL=redis://localhost:6381
 QDRANT_URL=http://localhost:6333
 
 # Kafka
