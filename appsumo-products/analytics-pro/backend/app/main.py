@@ -7,6 +7,20 @@ import random
 import sys
 import os
 from datetime import datetime, timedelta
+import httpx
+
+# Upstream main backend configuration (optional)
+MAIN_BACKEND_URL = os.getenv("MAIN_BACKEND_URL")
+MAIN_BACKEND_API_KEY = os.getenv("MAIN_BACKEND_API_KEY")
+MAIN_BACKEND_JWT = os.getenv("MAIN_BACKEND_JWT")
+
+def _main_headers() -> Dict[str, str]:
+    headers: Dict[str, str] = {"Content-Type": "application/json"}
+    if MAIN_BACKEND_API_KEY:
+        headers["X-API-Key"] = MAIN_BACKEND_API_KEY
+    if MAIN_BACKEND_JWT:
+        headers["Authorization"] = f"Bearer {MAIN_BACKEND_JWT}"
+    return headers
 
 # Add shared modules
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'shared'))
@@ -52,6 +66,12 @@ class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
     user: dict
+
+class DeepScanRequest(BaseModel):
+    address: str
+    chain: Optional[str] = "ethereum"
+    check_history: bool = False
+    check_illicit: bool = True
 
 # Auth Dependencies
 async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)) -> TokenData:
@@ -106,6 +126,87 @@ def health():
         "protocols_tracked": 500,
         "uptime": "99.9%"
     }
+
+@app.get("/api/firewall/stats")
+async def proxy_firewall_stats(user: TokenData = Depends(get_current_user)):
+    if not MAIN_BACKEND_URL:
+        # Minimal Mock wenn kein Upstream konfiguriert
+        return {
+            "total_scanned": 0,
+            "blocked": 0,
+            "warned": 0,
+            "allowed": 0,
+            "threat_types": {},
+            "avg_detection_time_ms": 0.0,
+            "protection_level": "low",
+            "enabled": False,
+            "whitelist_size": 0,
+            "blacklist_size": 0,
+            "custom_rules": 0,
+            "block_rate": 0.0,
+        }
+    try:
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.get(
+                f"{MAIN_BACKEND_URL}/api/v1/firewall/stats",
+                headers=_main_headers(),
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")
+
+@app.post("/api/wallet/scan/deep")
+async def proxy_wallet_scan_deep(req: DeepScanRequest, user: TokenData = Depends(get_current_user)):
+    if not MAIN_BACKEND_URL:
+        # Fallback: einfache Risikoantwort
+        risk = "safe"
+        score = 95
+        return {
+            "address": req.address,
+            "chain": req.chain,
+            "risk": risk,
+            "score": score,
+            "illicit_connections": [],
+        }
+    try:
+        payload = {
+            "addresses": [{"chain": req.chain or "ethereum", "address": req.address}],
+            "check_history": req.check_history,
+            "check_illicit": req.check_illicit,
+        }
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.post(
+                f"{MAIN_BACKEND_URL}/api/v1/wallet-scanner/scan/addresses",
+                headers=_main_headers(),
+                json=payload,
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        data = resp.json()
+        # Optional: vereinfachte Darstellung
+        risk_score = float(data.get("risk_score", 0.0)) if isinstance(data, dict) else 0.0
+        score_0_100 = max(0, min(100, int(risk_score * 100)))
+        def map_risk(sc: int) -> str:
+            if sc >= 90: return "safe"
+            if sc >= 75: return "low"
+            if sc >= 50: return "medium"
+            if sc >= 25: return "high"
+            return "critical"
+        return {
+            "address": req.address,
+            "chain": req.chain,
+            "risk": map_risk(score_0_100),
+            "score": score_0_100,
+            "illicit_connections": data.get("illicit_connections", []) if isinstance(data, dict) else [],
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")
 
 @app.get("/api/portfolio/{address}")
 async def get_portfolio(address: str):

@@ -22,6 +22,92 @@ active_connections: Dict[int, list[WebSocket]] = {}
 invoice_connections: Dict[str, list[WebSocket]] = {}
 
 
+# Import metrics
+try:
+    from app import metrics
+except ImportError:
+    metrics = None
+
+
+def _track_ws_connection(endpoint: str, auth_method: str = "none", success: bool = True) -> None:
+    """Track WebSocket connection metrics"""
+    if not metrics:
+        return
+
+    try:
+        if success:
+            metrics.WEBSOCKET_CONNECTIONS_TOTAL.labels(
+                endpoint=endpoint, auth_method=auth_method
+            ).inc()
+            metrics.WEBSOCKET_CONNECTIONS_ACTIVE.labels(endpoint=endpoint).inc()
+        else:
+            # Track auth failures
+            reason = "missing_auth" if auth_method == "none" else "invalid_token"
+            metrics.WEBSOCKET_AUTH_FAILURES.labels(
+                endpoint=endpoint, reason=reason
+            ).inc()
+    except Exception:
+        pass  # Silent failure for metrics
+
+
+def _track_ws_disconnect(endpoint: str, duration: float = 0.0, auth_method: str = "none") -> None:
+    """Track WebSocket disconnect metrics"""
+    if not metrics:
+        return
+
+    try:
+        metrics.WEBSOCKET_CONNECTIONS_ACTIVE.labels(endpoint=endpoint).dec()
+        if duration > 0:
+            metrics.WEBSOCKET_CONNECTION_DURATION.labels(
+                endpoint=endpoint, auth_method=auth_method
+            ).observe(duration)
+    except Exception:
+        pass
+
+
+def _track_ws_message(endpoint: str, direction: str, message_type: str = "unknown") -> None:
+    """Track WebSocket message metrics"""
+    if not metrics:
+        return
+
+    try:
+        if direction == "received":
+            metrics.WEBSOCKET_MESSAGES_RECEIVED.labels(
+                endpoint=endpoint, message_type=message_type
+            ).inc()
+        elif direction == "sent":
+            metrics.WEBSOCKET_MESSAGES_SENT.labels(
+                endpoint=endpoint, message_type=message_type
+            ).inc()
+    except Exception:
+        pass
+
+
+def _track_invoice_monitor(status: str, duration: float = 0.0) -> None:
+    """Track invoice monitoring metrics"""
+    if not metrics:
+        return
+
+    try:
+        metrics.INVOICE_MONITOR_CHECKS_TOTAL.labels(status=status).inc()
+        if duration > 0:
+            metrics.INVOICE_MONITOR_CHECK_DURATION.observe(duration)
+    except Exception:
+        pass
+
+
+def _track_payment_broadcast(order_id: str, status: str, client_count: int) -> None:
+    """Track payment broadcast metrics"""
+    if not metrics:
+        return
+
+    try:
+        metrics.PAYMENT_BROADCAST_TOTAL.labels(status=status).inc()
+        metrics.PAYMENT_BROADCAST_CLIENTS.observe(client_count)
+    except Exception:
+        pass
+
+
 # Browser-compatible WS auth (from websocket.py)
 import os
 import hashlib

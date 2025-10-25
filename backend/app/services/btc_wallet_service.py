@@ -10,6 +10,7 @@ from cryptography.fernet import Fernet
 from sqlalchemy.orm import Session
 from app.models.crypto_payment import CryptoWallet, CryptoPayment
 from app.config import settings
+import bech32
 
 
 class BTCWalletService:
@@ -96,17 +97,62 @@ class BTCWalletService:
 
         return address, self.cipher.encrypt(priv_key).decode()
 
-    def generate_invoice_address(self, order_id: str, plan_name: str, expected_btc: float) -> Dict[str, str]:
-        """Generate unique address for invoice."""
+    def derive_bech32_address(self, index: int, use_taproot: bool = False) -> Tuple[str, str]:
+        """Derive modern bech32 address (BIP84 P2WPKH or BIP86 P2TR Taproot)."""
+        # Simplified derivation (use proper BIP32/BIP84/BIP86 in production)
+        xpub_bytes = base58.b58decode_check(self.xpub)[4:]  # Remove version
+        derived_priv = hmac.new(xpub_bytes[:32], index.to_bytes(4, 'big'), hashlib.sha512).digest()
+        priv_key = derived_priv[:32]
+        sk = ecdsa.SigningKey.from_secret_exponent(int.from_bytes(priv_key, 'big'), curve=ecdsa.SECP256k1)
+        vk = sk.verifying_key
+
+        # Compressed public key
+        x = vk.pubkey.point.x()
+        y = vk.pubkey.point.y()
+        compressed_pub = b'\x02' + x.to_bytes(32, 'big') if y % 2 == 0 else b'\x03' + x.to_bytes(32, 'big')
+
+        if use_taproot:
+            # BIP86 Taproot (P2TR) - simplified
+            # In production, use proper schnorr signatures and tweaked keys
+            hrp = "bc"  # mainnet
+            version = 1  # P2TR version
+            # Simplified: just use compressed pubkey hash
+            pubkey_hash = hashlib.sha256(compressed_pub).digest()
+        else:
+            # BIP84 P2WPKH
+            hrp = "bc"  # mainnet
+            version = 0  # witness version
+
+            # P2WPKH: HASH160(compressed_pubkey)
+            sha = hashlib.sha256(compressed_pub).digest()
+            rip = hashlib.new('ripemd160', sha).digest()
+            pubkey_hash = rip
+
+        # Create bech32 address
+        data = [version] + [b for b in pubkey_hash]
+        encoded = bech32.encode(hrp, data)
+        if not encoded:
+            raise ValueError("Bech32 encoding failed")
+
+        return encoded, self.cipher.encrypt(priv_key).decode()
+
+    def generate_invoice_address(self, order_id: str, plan_name: str, expected_btc: float, use_bech32: bool = True) -> Dict[str, str]:
+        """Generate unique address for invoice (modern bech32 by default)."""
         index = int(hashlib.sha256(f"{order_id}:{plan_name}".encode()).hexdigest(), 16) % 2**31
-        address, encrypted_priv = self.derive_address(index)
+
+        if use_bech32:
+            address, encrypted_priv = self.derive_bech32_address(index, use_taproot=False)  # P2WPKH
+        else:
+            address, encrypted_priv = self.derive_address(index)  # Legacy P2PKH
+
         return {
             "address": address,
             "encrypted_private_key": encrypted_priv,
             "index": str(index),
             "order_id": order_id,
             "plan_name": plan_name,
-            "expected_amount_btc": str(expected_btc)
+            "expected_amount_btc": str(expected_btc),
+            "address_type": "bech32_p2wpkh" if use_bech32 else "p2pkh"
         }
 
     def get_balance(self, address: str) -> float:

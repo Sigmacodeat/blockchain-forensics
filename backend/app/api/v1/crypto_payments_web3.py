@@ -268,13 +268,20 @@ async def create_modern_web3_payment(
         import uuid
         payment_id = f"web3_modern_{uuid.uuid4().hex[:16]}"
 
+        # Generate EIP-681 payment URL
+        payment_url = f"ethereum:{network_config['contract_address']}"
+        if amount_wei and amount_wei != "0":
+            payment_url += f"@{amount_wei}"
+        if network_config["chain_id"] != 1:  # Ethereum mainnet
+            payment_url += f"?chainId={network_config['chain_id']}"
+
         return ModernWeb3PaymentResponse(
             payment_id=payment_id,
             contract_address=network_config["contract_address"],
             amount_wei=amount_wei,
             network=request.network,
             chain_id=network_config["chain_id"],
-            payment_url=f"/web3/checkout/{payment_id}"
+            payment_url=payment_url
         )
 
     except Exception as e:

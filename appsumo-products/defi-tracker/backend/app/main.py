@@ -4,6 +4,31 @@ from pydantic import BaseModel
 from typing import List, Dict, Optional
 import random
 from datetime import datetime
+import os
+import sys
+import httpx
+from fastapi.responses import Response
+
+# Add shared modules for optional AppSumo auth/integration (best-effort)
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'shared'))
+try:
+    from auth import decode_access_token, create_access_token, TokenData  # type: ignore
+    from appsumo import activate_license, check_feature_access, PLAN_LIMITS  # type: ignore
+except Exception:
+    TokenData = None  # type: ignore
+
+# Upstream main backend configuration (optional)
+MAIN_BACKEND_URL = os.getenv("MAIN_BACKEND_URL")
+MAIN_BACKEND_API_KEY = os.getenv("MAIN_BACKEND_API_KEY")
+MAIN_BACKEND_JWT = os.getenv("MAIN_BACKEND_JWT")
+
+def _main_headers() -> Dict[str, str]:
+    headers: Dict[str, str] = {"Content-Type": "application/json"}
+    if MAIN_BACKEND_API_KEY:
+        headers["X-API-Key"] = MAIN_BACKEND_API_KEY
+    if MAIN_BACKEND_JWT:
+        headers["Authorization"] = f"Bearer {MAIN_BACKEND_JWT}"
+    return headers
 
 app = FastAPI(
     title="DeFi Yield Tracker API",
@@ -22,6 +47,13 @@ app.add_middleware(
 class PositionRequest(BaseModel):
     wallet: str
     chain: str = "ethereum"
+
+class TraceStartRequest(BaseModel):
+    source_address: str
+    direction: Optional[str] = "forward"
+    max_depth: Optional[int] = 3
+    max_nodes: Optional[int] = 500
+    save_to_graph: Optional[bool] = False
 
 @app.get("/")
 def root():
@@ -213,6 +245,58 @@ async def get_stats():
         "users_tracked": random.randint(5000, 25000),
         "last_updated": datetime.utcnow().isoformat()
     }
+
+@app.post("/api/trace/start")
+async def trace_start_proxy(req: TraceStartRequest):
+    """Proxy zu Haupt-Backend /api/v1/trace/start (falls konfiguriert), sonst 501."""
+    if not MAIN_BACKEND_URL:
+        raise HTTPException(status_code=501, detail="MAIN_BACKEND_URL not configured")
+    try:
+        payload = {
+            "source_address": req.source_address,
+            "direction": req.direction,
+            "max_depth": req.max_depth,
+            "max_nodes": req.max_nodes,
+            "save_to_graph": req.save_to_graph,
+        }
+        async with httpx.AsyncClient(timeout=15.0) as client:
+            resp = await client.post(
+                f"{MAIN_BACKEND_URL}/api/v1/trace/start",
+                headers=_main_headers(),
+                json=payload,
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")
+
+@app.get("/api/trace/{trace_id}/report")
+async def trace_report_proxy(trace_id: str, format: str = "json"):
+    """Proxy zu Haupt-Backend /api/v1/trace/id/{trace_id}/report?format=..."""
+    if not MAIN_BACKEND_URL:
+        raise HTTPException(status_code=501, detail="MAIN_BACKEND_URL not configured")
+    try:
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            resp = await client.get(
+                f"{MAIN_BACKEND_URL}/api/v1/trace/id/{trace_id}/report",
+                headers=_main_headers(),
+                params={"format": format},
+            )
+        if resp.status_code >= 400:
+            raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        media = "application/json"
+        if format == "pdf":
+            media = "application/pdf"
+        elif format == "csv":
+            media = "text/csv"
+        return Response(content=resp.content, media_type=media)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Proxy error: {e}")
 
 if __name__ == "__main__":
     import uvicorn

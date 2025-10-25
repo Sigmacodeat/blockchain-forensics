@@ -52,7 +52,8 @@ const CORE_ROUTES = [
   '/legal/impressum',
   '/dashboards',
   '/monitoring',
-  '/monitoring/dashboard'
+  '/monitoring/dashboard',
+  '/blog'
 ]
 
 function readHtml(locale, route) {

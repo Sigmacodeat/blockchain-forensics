@@ -20,6 +20,7 @@ const CORE_ROUTES = [
   '/features',
   '/about',
   '/pricing',
+  '/businessplan',
   '/optimization',
   '/contact',
   '/use-cases',
@@ -81,6 +82,7 @@ function main() {
     for (const route of CORE_ROUTES) {
       writeRoute(locale, route)
     }
+    // Note: Blog routes are not exported currently
   }
   console.log(`Exported static routes for ${allLocales.length} locales × ${CORE_ROUTES.length} routes`)
 }

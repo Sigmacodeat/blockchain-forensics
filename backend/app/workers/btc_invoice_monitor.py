@@ -5,11 +5,31 @@ Monitors pending invoices and matches payments via Esplora API.
 
 import asyncio
 import logging
+import time
 from datetime import datetime
 from app.services.btc_invoice_service import btc_invoice_service
 from app.config import settings
 
 logger = logging.getLogger(__name__)
+
+# Import metrics
+try:
+    from app import metrics
+except ImportError:
+    metrics = None
+
+
+def _track_invoice_monitor(status: str, duration: float = 0.0) -> None:
+    """Track invoice monitoring metrics"""
+    if not metrics:
+        return
+
+    try:
+        metrics.INVOICE_MONITOR_CHECKS_TOTAL.labels(status=status).inc()
+        if duration > 0:
+            metrics.INVOICE_MONITOR_CHECK_DURATION.observe(duration)
+    except Exception:
+        pass
 
 
 class BTCInvoiceMonitorWorker:
@@ -26,9 +46,13 @@ class BTCInvoiceMonitorWorker:
 
         while self.running:
             try:
+                start_time = time.time()
                 await self._check_pending_invoices()
+                duration = time.time() - start_time
+                _track_invoice_monitor("success", duration)
             except Exception as e:
                 logger.error(f"Invoice monitoring error: {e}")
+                _track_invoice_monitor("error")
 
             await asyncio.sleep(self.check_interval)
 
@@ -63,7 +87,7 @@ class BTCInvoiceMonitorWorker:
                             from app.api.v1.websockets.payment import broadcast_invoice_update
                             await broadcast_invoice_update(invoice["order_id"], status)
                         except Exception as ws_error:
-                            logger.error(f"WebSocket broadcast failed for {invoice['order_id']}: {ws_error}")
+                            logger.warning(f"WebSocket broadcast failed for {invoice['order_id']}: {ws_error}")
 
                         # Activate subscription if payment was successful
                         if status["status"] == "paid":

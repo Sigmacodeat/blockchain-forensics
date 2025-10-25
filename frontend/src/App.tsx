@@ -200,10 +200,9 @@ function App() {
                   <Route path="pricing" element={<PublicLayout><React.Suspense fallback={<div />}> <PricingPage /> </React.Suspense></PublicLayout>} />
                   <Route path="checkout/:orderId" element={<PublicLayout><React.Suspense fallback={<div />}> <CheckoutPage /> </React.Suspense></PublicLayout>} />
                   <Route path="news/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <NewsCasePublicPage /> </React.Suspense></PublicLayout>} />
-                  <Route path="blog" element={<PublicLayout><React.Suspense fallback={<div />}> <BlogListPage /> </React.Suspense></PublicLayout>} />
-                  <Route path="blog/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <BlogPostPage /> </React.Suspense></PublicLayout>} />
                   {/* Chatbot-Route entfernt - wird über chatbot.blocksigmakode.ai bereitgestellt */}
                   <Route path="about" element={<PublicLayout><React.Suspense fallback={<div />}> <AboutPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="businessplan" element={<PublicLayout><React.Suspense fallback={<div />}> <BusinessPlanPage /> </React.Suspense></PublicLayout>} />
                   <Route path="contact" element={<PublicLayout><React.Suspense fallback={<div />}> <ContactPage /> </React.Suspense></PublicLayout>} />
                   <Route path="legal/privacy" element={<PublicLayout><React.Suspense fallback={<div />}> <PrivacyPolicyPage /> </React.Suspense></PublicLayout>} />
                   <Route path="legal/terms" element={<PublicLayout><React.Suspense fallback={<div />}> <TermsPage /> </React.Suspense></PublicLayout>} />

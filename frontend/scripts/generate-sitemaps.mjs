@@ -31,7 +31,9 @@ const CORE_ROUTES = [
   // Monitoring & Dashboards (sprachpräfix wird später ergänzt)
   '/dashboards',
   '/monitoring',
-  '/monitoring/dashboard'
+  '/monitoring/dashboard',
+  // Blog routes
+  '/blog'
 ]
 
 // Discover base locales from src/locales/*.json

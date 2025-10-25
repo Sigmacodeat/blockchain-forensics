@@ -1906,78 +1906,125 @@ async def suggest_web3_payment_tool(user_id: str, plan: str, currency: str) -> s
         return ""
 
 
-class GetPaymentHistoryInput(BaseModel):
-    """Input for getting payment history"""
+class CreateBTCInvoiceInput(BaseModel):
+    """Input for create_btc_invoice tool"""
+    plan_name: str = Field(..., description="Subscription plan: community, pro, business, enterprise")
+    amount_btc: float = Field(..., description="Amount in BTC to charge")
     user_id: str = Field(..., description="User ID from context")
-    limit: int = Field(default=5, description="Number of payments to show (default 5)")
 
 
-@tool("get_payment_history", args_schema=GetPaymentHistoryInput, return_direct=False)
-async def get_payment_history_tool(user_id: str, limit: int = 5) -> str:
+class GetBTCInvoiceStatusInput(BaseModel):
+    """Input for get_btc_invoice_status tool"""
+    order_id: str = Field(..., description="BTC invoice order ID to check")
+
+
+@tool("create_btc_invoice", args_schema=CreateBTCInvoiceInput, return_direct=False)
+async def create_btc_invoice_tool(user_id: str, plan_name: str, amount_btc: float) -> str:
     """
-    Get user's payment history with interactive options.
-    Use when user asks 'Show my payments' or 'Payment history'.
-    Returns recent payments with retry/invoice options.
+    Create a new BTC invoice with unique address.
+    Use when user wants to pay with BTC directly (no NOWPayments fees).
+    Returns invoice details with QR code and payment instructions.
+    IMPORTANT: User must be authenticated. Check user_id first.
     """
     try:
         if not user_id:
-            return "❌ Du musst eingeloggt sein."
-        
-        payments = await postgres_client.fetch(
-            """
-            SELECT * FROM crypto_payments
-            WHERE user_id = $1
-            ORDER BY created_at DESC
-            LIMIT $2
-            """,
-            user_id,
-            limit
+            return "❌ Du musst eingeloggt sein. Bitte melde dich an."
+
+        # Import here to avoid circular imports
+        from app.services.btc_invoice_service import btc_invoice_service
+
+        invoice = btc_invoice_service.create_invoice(
+            user_id=user_id,
+            plan_name=plan_name.lower(),
+            amount_btc=amount_btc,
+            expires_hours=24
         )
-        
-        if not payments:
-            return "📭 Du hast noch keine Crypto-Zahlungen getätigt.\n\nMöchtest du einen Plan kaufen? Sage einfach 'Ich möchte [Plan] kaufen'!"
-        
-        result = f"📋 **Deine letzten {len(payments)} Zahlungen:**\n\n"
-        
-        for i, p in enumerate(payments, 1):
-            status_emoji = {
-                "finished": "✅",
-                "pending": "⏳",
-                "waiting": "⏳",
-                "confirming": "🔄",
-                "failed": "❌",
-                "expired": "⏱️"
-            }.get(p["payment_status"], "❓")
-            
-            result += f"{i}. {status_emoji} **{p['plan_name'].title()}** Plan\n"
-            result += f"   💰 {p['pay_amount']} {p['pay_currency'].upper()}"
-            result += f" (${p['price_amount']})\n"
-            result += f"   📊 Status: {p['payment_status']}\n"
-            result += f"   📅 {p['created_at'].strftime('%d.%m.%Y %H:%M')}\n"
-            
-            # Add action buttons based on status
-            if p['payment_status'] == 'finished':
-                result += "   🔹 Aktionen: Download Invoice | View TX\n"
-            elif p['payment_status'] in ['failed', 'expired']:
-                result += f"   🔹 Aktionen: 🔄 Retry Payment (ID: {p['payment_id']})\n"
-            elif p['payment_status'] in ['pending', 'waiting']:
-                result += "   🔹 Aktionen: Check Status | View Address\n"
-            
-            result += "\n"
-        
-        # Stats
-        total_finished = sum(1 for p in payments if p['payment_status'] == 'finished')
-        total_spent = sum(p['price_amount'] for p in payments if p['payment_status'] == 'finished')
-        
-        result += "📊 **Statistik:**\n"
-        result += f"• Erfolgreiche Zahlungen: {total_finished}/{len(payments)}\n"
-        result += f"• Total ausgegeben: ${total_spent:.2f}\n\n"
-        result += f"💡 **Tipp**: Sage 'Retry Payment {payments[0]['payment_id']}' um eine fehlgeschlagene Zahlung zu wiederholen!"
-        
+
+        if not invoice:
+            return "❌ Fehler beim Erstellen der BTC-Invoice."
+
+        result = "✅ **BTC-Invoice erstellt!**\n\n"
+        result += f"**Plan**: {plan_name.title()}\n"
+        result += f"**Order ID**: `{invoice['order_id']}`\n\n"
+        result += f"💰 **Zu zahlender Betrag**:\n₿ **{invoice['expected_amount_btc']} BTC**\n"
+        result += f"≈ ${float(invoice['expected_amount_btc']) * 45000:.2f} USD\n\n"
+        result += f"📍 **BTC-Adresse**:\n```\n{invoice['address']}\n```\n\n"
+        result += f"⏰ **Gültigkeit**: 24 Stunden\n\n"
+        result += "⚠️ **WICHTIG**: Nur **BTC** an diese Adresse senden!\n\n"
+        result += "🔗 QR-Code: Wird im Checkout angezeigt\n\n"
+        result += "💡 Zahlung wird automatisch erkannt und Plan aktiviert!\n\n"
+        result += f"[ORDER_ID:{invoice['order_id']}]"
+
         return result
     except Exception as e:
-        logger.error(f"Error getting payment history: {e}")
-        return "❌ Fehler beim Abrufen der Historie."
+        logger.error(f"Error creating BTC invoice: {e}")
+        return f"❌ Fehler: {str(e)}"
+
+
+@tool("get_btc_invoice_status", args_schema=GetBTCInvoiceStatusInput, return_direct=False)
+async def get_btc_invoice_status_tool(order_id: str) -> str:
+    """
+    Check the status of a BTC invoice payment.
+    Use when user asks about invoice status or payment confirmation.
+    Returns current status, received amount, and transaction details if available.
+    """
+    try:
+        # Import here to avoid circular imports
+        from app.services.btc_invoice_service import btc_invoice_service
+
+        status = btc_invoice_service.check_payment_status(order_id)
+
+        if status.get("status") == "not_found":
+            return f"❌ BTC-Invoice {order_id} nicht gefunden."
+
+        status_emoji = {
+            "pending": "⏳",
+            "paid": "✅",
+            "expired": "⏱️"
+        }.get(status.get("status"), "❓")
+
+        result = f"📊 **BTC-Invoice Status**\n\n"
+        result += f"**Order ID**: `{order_id}`\n"
+        result += f"**Status**: {status_emoji} {status.get('status', 'unknown').title()}\n\n"
+
+        if status.get("plan_name"):
+            result += f"**Plan**: {status.get('plan_name').title()}\n"
+
+        result += f"**Erwartet**: ₿ {status.get('expected_amount_btc', '0')} BTC\n"
+
+        if status.get("received_amount_btc"):
+            received = float(status.get("received_amount_btc", 0))
+            expected = float(status.get("expected_amount_btc", 1))
+            percentage = min(100, (received / expected) * 100) if expected > 0 else 0
+
+            result += f"**Erhalten**: ₿ {status.get('received_amount_btc')} BTC ({percentage:.1f}%)\n"
+
+            # Progress bar
+            filled = int(percentage / 10)
+            bar = "█" * filled + "░" * (10 - filled)
+            result += f"**Fortschritt**: [{bar}] {percentage:.1f}%\n"
+
+        if status.get("txid"):
+            result += f"**TX-Hash**: `{status.get('txid')[:16]}...`\n"
+
+        if status.get("paid_at"):
+            result += f"**Bezahlt am**: {status.get('paid_at')}\n"
+
+        if status.get("expires_at"):
+            result += f"**Läuft ab**: {status.get('expires_at')}\n"
+
+        # Action hints
+        if status.get("status") == "pending":
+            result += "\n💡 **Tipp**: Öffne die Checkout-Seite um QR-Code und Live-Updates zu sehen!"
+        elif status.get("status") == "paid":
+            result += "\n🎉 **Erfolgreich!** Dein Plan wurde aktiviert!"
+        elif status.get("status") == "expired":
+            result += "\n⏱️ **Abgelaufen**. Erstelle eine neue Invoice!"
+
+        return result
+    except Exception as e:
+        logger.error(f"Error checking BTC invoice status: {e}")
+        return f"❌ Fehler beim Abrufen des Status: {str(e)}"
 
 
 # ==========================================
@@ -2218,6 +2265,8 @@ FORENSIC_TOOLS = [
     get_payment_estimate_tool,
     suggest_web3_payment_tool,
     create_crypto_payment_tool,
+    create_btc_invoice_tool,  # NEW: Direct BTC invoice creation
+    get_btc_invoice_status_tool,  # NEW: BTC invoice status checking
     get_user_plan_tool,
     retry_failed_payment_tool,
     check_payment_status_tool,

@@ -59,6 +59,7 @@ const PAGES = [
   { path: '/legal/privacy', priority: 0.4, changefreq: 'monthly' },
   { path: '/legal/terms', priority: 0.4, changefreq: 'monthly' },
   { path: '/legal/impressum', priority: 0.3, changefreq: 'yearly' }, // nur DE
+  { path: '/blog', priority: 0.8, changefreq: 'daily' }
 ]
 
 /**
@@ -239,7 +240,7 @@ async function main() {
   }
 
   for (const r of REGIONALS) {
-    const xml = generateSitemapXML(r, PAGES, [...LANGUAGES, ...REGIONALS])
+    const xml = await generateSitemapXML(r, PAGES, [...LANGUAGES, ...REGIONALS])
     const filename = `sitemap-${r}.xml`
     const filepath = path.join(targetDir, filename)
     await fs.writeFile(filepath, xml, 'utf-8')

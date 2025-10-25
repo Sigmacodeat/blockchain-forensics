@@ -666,17 +666,78 @@ class InvoiceStatusResponse(BaseModel):
 @router.post("/invoice", response_model=InvoiceResponse)
 async def create_btc_invoice(
     request: CreateInvoiceRequest,
-    current_user: dict = Depends(get_current_user_strict)
+    current_user: dict = Depends(get_current_user_strict),
+    idempotency_key: Optional[str] = Body(None, description="Idempotency key to prevent duplicate invoices")
 ):
     """Create a new BTC invoice with unique address."""
     try:
+        # Idempotency check (Redis-based)
+        if idempotency_key:
+            try:
+                import redis
+                redis_client = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, decode_responses=True)
+                redis_key = f"invoice:idempotency:{current_user['id']}:{idempotency_key}"
+
+                if redis_client.exists(redis_key):
+                    # Return existing invoice if already created
+                    existing_order_id = redis_client.get(redis_key)
+                    if existing_order_id:
+                        status = btc_invoice_service.check_payment_status(existing_order_id)
+                        return InvoiceResponse(
+                            order_id=existing_order_id,
+                            address=status.get("address", ""),
+                            expected_amount_btc=status.get("expected_amount_btc", str(request.amount_btc)),
+                            expires_at=status.get("expires_at", ""),
+                            plan_name=status.get("plan_name", request.plan_name)
+                        )
+
+                # Store idempotency key with TTL (24 hours)
+                redis_client.setex(redis_key, 86400, f"pending_{request.plan_name}_{request.amount_btc}")
+            except Exception as redis_error:
+                logger.warning(f"Redis idempotency check failed: {redis_error}")
+
+        # Rate limiting: max 5 invoices per user per hour
+        try:
+            import redis
+            redis_client = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, decode_responses=True)
+            rate_key = f"invoice:rate:{current_user['id']}"
+            current_count = redis_client.incr(rate_key)
+
+            # Set expiry on first request
+            if current_count == 1:
+                redis_client.expire(rate_key, 3600)  # 1 hour
+
+            if current_count > 5:
+                raise HTTPException(
+                    status_code=429,
+                    detail="Rate limit exceeded: Maximum 5 invoices per hour"
+                )
+        except Exception as rate_error:
+            logger.warning(f"Rate limiting check failed: {rate_error}")
+
         invoice = btc_invoice_service.create_invoice(
             user_id=str(current_user["id"]),
             plan_name=request.plan_name,
             amount_btc=request.amount_btc,
             expires_hours=request.expires_hours
         )
+
+        if not invoice:
+            raise HTTPException(status_code=500, detail="Failed to create invoice")
+
+        # Store idempotency key with actual order ID
+        if idempotency_key:
+            try:
+                import redis
+                redis_client = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, decode_responses=True)
+                redis_key = f"invoice:idempotency:{current_user['id']}:{idempotency_key}"
+                redis_client.setex(redis_key, 86400, invoice["order_id"])
+            except Exception as redis_error:
+                logger.warning(f"Redis idempotency storage failed: {redis_error}")
+
         return InvoiceResponse(**invoice)
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Invoice creation failed: {e}")
         raise HTTPException(status_code=500, detail="Failed to create invoice")
