@@ -15,7 +15,7 @@ Scannt gefährliche ERC20/ERC721/ERC1155 Token Approvals.
 """
 
 import logging
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 from enum import Enum
 from datetime import datetime

@@ -19,7 +19,7 @@ from typing import Dict, Any, Optional
 import os
 
 from app.intel.sanctions import sanctions_indexer
-from app.audit.logger import log_data_access, AuditEventType, AuditSeverity
+from app.audit.logger import log_data_access
 
 logger = logging.getLogger(__name__)
 

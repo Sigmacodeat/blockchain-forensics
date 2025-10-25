@@ -7,8 +7,6 @@ import re
 import json
 import logging
 from typing import List, Dict, Any, Optional
-import asyncio
-from pathlib import Path
 import os
 import httpx
 from app.metrics import SANCTIONS_ENTRIES_TOTAL, SANCTIONS_ADDRESSES_TOTAL, SANCTIONS_UPDATE_TIMESTAMP

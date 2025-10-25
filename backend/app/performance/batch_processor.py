@@ -135,7 +135,6 @@ class BatchProcessor:
     async def _flush_postgres_batch(self, batch: List):
         """Flush batch to PostgreSQL"""
         try:
-            from app.db.postgres_client import postgres_client
             
             # Use COPY for efficient bulk insert
             # Or executemany for updates

@@ -2,7 +2,6 @@
 
 import logging
 from typing import Optional, Dict, Any, List
-import json
 try:
     from eth_abi import decode as _abi_decode
     _ABI_AVAILABLE = True

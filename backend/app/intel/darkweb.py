@@ -17,9 +17,7 @@ import asyncio
 import re
 import logging
 from datetime import datetime
-from typing import List, Dict, Any, Optional, Set
-import httpx
-from bs4 import BeautifulSoup
+from typing import List, Dict, Any, Optional
 
 from .models import DarkWebIntel, IntelCategory
 

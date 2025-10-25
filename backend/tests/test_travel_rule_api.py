@@ -2,8 +2,6 @@ import os
 import sys
 import pathlib
 from fastapi.testclient import TestClient
-import types
-import pytest
 
 # Ensure backend on PYTHONPATH
 ROOT = pathlib.Path(__file__).resolve().parents[2]

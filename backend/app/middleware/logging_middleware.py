@@ -69,7 +69,7 @@ class LoggingMiddleware(BaseHTTPMiddleware):
         # Process Request
         try:
             response = await call_next(request)
-        except Exception as exc:
+        except Exception:
             # Log Exception
             duration_ms = (time.time() - start_time) * 1000
             logger.error(

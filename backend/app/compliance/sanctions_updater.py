@@ -22,13 +22,12 @@ Data Sources:
 import logging
 import asyncio
 from datetime import datetime, timedelta
-from typing import List, Dict, Optional, Set
+from typing import List, Dict, Optional
 import csv
 import httpx
 from io import StringIO
 
 from app.db.postgres_client import postgres_client
-from app.config import settings
 
 logger = logging.getLogger(__name__)
 

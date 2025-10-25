@@ -13,11 +13,11 @@ Optimierungen für:
 import asyncio
 import logging
 from typing import Dict, List, Optional, Any, Generator
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 import time
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 

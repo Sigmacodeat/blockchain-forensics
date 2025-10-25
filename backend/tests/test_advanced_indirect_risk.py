@@ -5,7 +5,6 @@ Tests für Advanced Indirect Risk Detection
 
 import pytest
 from unittest.mock import Mock, patch, AsyncMock
-from datetime import datetime
 
 from app.analytics.advanced_indirect_risk import (
     advanced_indirect_risk_service,

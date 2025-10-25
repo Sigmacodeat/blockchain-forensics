@@ -6,7 +6,7 @@ Per-user and per-IP rate limiting
 import time
 import logging
 from typing import Dict, Tuple
-from fastapi import Request, HTTPException, status
+from fastapi import Request, status
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 from collections import defaultdict

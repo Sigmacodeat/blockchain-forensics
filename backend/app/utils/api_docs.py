@@ -4,13 +4,11 @@ OpenAPI/Swagger-Dokumentation für Blockchain-Forensik-API
 Automatische Generierung von API-Dokumentation aus Code-Kommentaren.
 """
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from fastapi.openapi.docs import get_swagger_ui_html
 from fastapi.openapi.utils import get_openapi
-from fastapi.responses import HTMLResponse
 import json
 import yaml
-from pathlib import Path
 from typing import Dict
 
 def create_custom_openapi_schema(app: FastAPI) -> Dict:

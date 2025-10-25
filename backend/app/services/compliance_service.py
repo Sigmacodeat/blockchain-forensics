@@ -3,7 +3,7 @@ Compliance screening service (dev): simple risk scoring and watchlist checks.
 In production, replace with integrations (OFAC, TRM, Chainalysis) and stronger logic.
 """
 from typing import Dict, Any, List, Tuple
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 import re
 import time
 import os

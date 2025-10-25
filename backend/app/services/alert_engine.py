@@ -18,7 +18,7 @@ from typing import Any, Dict, List, Optional
 from datetime import datetime, timedelta
 from enum import Enum
 
-from app.audit.logger import log_data_access, AuditEventType, AuditSeverity
+from app.audit.logger import log_data_access
 from app.config import settings
 # Safe metrics import (tests may not initialize full metrics stack)
 try:  # pragma: no cover
@@ -650,7 +650,7 @@ class InsiderTradingRule(AlertRule):
                 alert_type=AlertType.INSIDER_TRADING,
                 severity=AlertSeverity.HIGH,
                 title=f"Insider Trading Verdacht: ${trade_value:,.0f}",
-                description=f"Ungewöhnlich hohes Volumen vor bedeutendem Trade",
+                description="Ungewöhnlich hohes Volumen vor bedeutendem Trade",
                 metadata={
                     "trade_value_usd": trade_value,
                     "volume_multiplier": volume_multiplier,
@@ -686,7 +686,7 @@ class PonziSchemeRule(AlertRule):
                 alert_type=AlertType.PONZI_SCHEME,
                 severity=AlertSeverity.CRITICAL,
                 title=f"Ponzi Scheme Verdacht: {new_investors} neue Investoren",
-                description=f"Ungewöhnlich hohe Returns und Investor-Wachstum",
+                description="Ungewöhnlich hohe Returns und Investor-Wachstum",
                 metadata={
                     "new_investors_24h": new_investors,
                     "average_return_rate": average_return_rate,
@@ -728,7 +728,7 @@ class RugPullRule(AlertRule):
                 alert_type=AlertType.RUG_PULL,
                 severity=AlertSeverity.CRITICAL,
                 title=f"Rug Pull Verdacht: {event.get('token_address', 'Unknown')}",
-                description=f"Verdächtige Liquidity- oder Wallet-Aktivitäten",
+                description="Verdächtige Liquidity- oder Wallet-Aktivitäten",
                 metadata={
                     "liquidity_removed_percentage": liquidity_removed,
                     "developer_wallet_percentage": developer_wallet_percentage,
@@ -2241,7 +2241,7 @@ class AlertCorrelationEngine:
                     alert_type=AlertType.SUSPICIOUS_PATTERN,
                     severity=AlertSeverity.CRITICAL,
                     title=f"Verdächtiges Muster erkannt: {rule_name}",
-                    description=f"Korrelation zwischen Alerts deutet auf komplexes Schema hin",
+                    description="Korrelation zwischen Alerts deutet auf komplexes Schema hin",
                     metadata={
                         "correlation_rule": rule_name,
                         "correlated_alerts": [a.alert_id for a in recent_alerts if self._alert_matches_pattern(a, rule_config["patterns"])],

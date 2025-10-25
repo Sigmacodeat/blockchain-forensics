@@ -11,7 +11,8 @@ from enum import Enum
 
 from app.enrichment.labels_service import labels_service
 from app.ml.risk_scorer import risk_scorer
-from app.services.alert_service import alert_service, Alert, AlertType, AlertSeverity
+from app.services.alert_service import alert_service, Alert, AlertSeverity
+from app.services.alert_engine import AlertType
 
 logger = logging.getLogger(__name__)
 
@@ -168,7 +169,7 @@ class KYTEngine:
                 "type": "SANCTIONED",
                 "severity": "CRITICAL",
                 "title": "Sanctioned Address Detected",
-                "description": f"Transaction involves sanctioned address",
+                "description": "Transaction involves sanctioned address",
                 "tx_hash": tx.tx_hash,
                 "from_address": tx.from_address,
                 "to_address": tx.to_address
@@ -193,7 +194,7 @@ class KYTEngine:
                 "type": "MIXER",
                 "severity": "HIGH",
                 "title": "Mixer/Tumbler Detected",
-                "description": f"Transaction involves privacy mixer",
+                "description": "Transaction involves privacy mixer",
                 "tx_hash": tx.tx_hash,
                 "from_address": tx.from_address,
                 "to_address": tx.to_address

@@ -14,12 +14,9 @@ Features:
 """
 
 import logging
-import asyncio
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
-from datetime import datetime
 import httpx
-import json
 
 from app.config import settings
 from app.schemas import CanonicalEvent

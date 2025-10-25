@@ -5,13 +5,13 @@ Peel Chain, Rapid Movement – heuristische Prüfer mit erklärbaren Evidenzen
 
 import logging
 from typing import Any, Dict, List, Optional
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, Query
 from pydantic import BaseModel
 
-from app.auth.dependencies import get_current_user, get_current_user_strict
+from app.auth.dependencies import get_current_user_strict
 from app.db.neo4j_client import neo4j_client
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 router = APIRouter()

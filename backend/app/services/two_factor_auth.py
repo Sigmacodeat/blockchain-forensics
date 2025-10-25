@@ -4,16 +4,10 @@ Zwei-Faktor-Authentifizierung (2FA) für Blockchain-Forensik-Anwendung
 Implementiert TOTP (Time-based One-Time Password) für zusätzliche Sicherheit.
 """
 
-import asyncio
 import logging
 import secrets
-from typing import Dict, List, Any, Optional, Tuple
-from datetime import datetime, timedelta
+from typing import Dict, List, Any, Optional
 import base64
-import hmac
-import hashlib
-import struct
-import time
 
 # 2FA-Bibliotheken (optional)
 try:
@@ -25,7 +19,6 @@ except ImportError:
     _TWO_FA_AVAILABLE = False
     logging.warning("2FA-Bibliotheken nicht verfügbar - 2FA wird deaktiviert")
 
-from app.services.cache_service import cache_service
 
 logger = logging.getLogger(__name__)
 

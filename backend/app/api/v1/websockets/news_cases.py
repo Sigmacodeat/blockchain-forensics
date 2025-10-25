@@ -8,7 +8,6 @@ Events delivered:
 """
 import asyncio
 import logging
-from typing import Set
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 
 from app.services.news_case_service import news_case_service

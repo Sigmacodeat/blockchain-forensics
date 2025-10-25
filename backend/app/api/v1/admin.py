@@ -4,8 +4,7 @@ System Administration, Data Ingestion, Health Monitoring
 """
 
 import logging
-from typing import Optional
-from fastapi import APIRouter, HTTPException, BackgroundTasks, Query, Depends
+from fastapi import APIRouter, HTTPException, BackgroundTasks, Depends
 from pydantic import BaseModel, Field
 
 from app.ingest.blockchain_ingester import blockchain_ingester

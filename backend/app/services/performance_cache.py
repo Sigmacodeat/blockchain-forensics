@@ -19,7 +19,6 @@ import hashlib
 import json
 import logging
 from typing import Any, Callable, Optional, TypeVar, ParamSpec
-from datetime import timedelta
 from collections import OrderedDict
 
 from app.db.redis_client import redis_client

@@ -1,6 +1,5 @@
 import os
-import asyncio
-from typing import List, Dict, Optional, Set
+from typing import List, Dict, Optional
 from app.db.postgres import postgres_client
 from app.kb.embeddings import openai_embedding, to_pgvector_literal
 

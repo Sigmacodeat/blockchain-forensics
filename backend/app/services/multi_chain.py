@@ -116,8 +116,6 @@ class BaseChainAdapter(ABC):
         """Generische RPC-Anfrage"""
         # Basis-Implementierung für HTTP-RPC mit Retry/Backoff/Timeout
         import aiohttp
-        import math
-        import time
 
         if not self.session:
             self.session = aiohttp.ClientSession()

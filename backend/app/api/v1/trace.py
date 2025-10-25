@@ -14,14 +14,13 @@ from app.tracing.models import TraceRequest, TraceResult, TaintModel, TraceDirec
 from app.tracing.tracer import TransactionTracer
 from app.db.neo4j_client import neo4j_client
 from app.config import settings
-from app.api.websocket import broadcast_trace_progress, broadcast_trace_completed
+from app.api.websocket import broadcast_trace_completed
 from app.observability.metrics import TRACE_REQUESTS, TRACE_LATENCY
 from app.observability.metrics import BRIDGE_EVENTS
 import time
 from app.utils.validators import is_valid_address, normalize_address
-from app.auth.dependencies import get_current_user_strict, get_current_user_optional, require_plan
+from app.auth.dependencies import get_current_user_strict, require_plan
 from app.services.usage_service import check_and_consume_credits
-from app.services.tenant_service import tenant_service
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -631,7 +630,6 @@ async def save_trace_to_graph(result: TraceResult):
         
         from app.db.neo4j_client import neo4j_client
         from app.bridge.hooks import persist_bridge_link
-        from app.bridge.detection import bridge_detection_service
         
         # In Test/Offline keine Neo4j-Verbindung aufbauen, aber Bridge-Links best-effort persistieren
         if _is_test_or_offline():

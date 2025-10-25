@@ -1,4 +1,3 @@
-import asyncio
 import pytest
 
 from app.services.alert_engine import AlertEngine, AlertSeverity

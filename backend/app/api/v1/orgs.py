@@ -6,7 +6,7 @@ from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, status, Response
 from pydantic import BaseModel, Field
 
-from app.auth.dependencies import get_current_user_strict
+from app.auth.dependencies import get_current_user
 from app.services.org_service import org_service
 
 router = APIRouter(prefix="/orgs", tags=["orgs"])
@@ -34,7 +34,7 @@ class MemberOut(BaseModel):
 
 @router.post("/", status_code=status.HTTP_201_CREATED, response_model=OrgOut)
 @router.post("", status_code=status.HTTP_201_CREATED, response_model=OrgOut)
-async def create_org(payload: Dict[str, Any], current_user: dict = Depends(get_current_user_strict)) -> OrgOut:
+async def create_org(payload: Dict[str, Any], current_user: dict = Depends(get_current_user)) -> OrgOut:
     # Manual validation to ensure 400 (Bad Request) instead of 422 for simple input errors
     raw_name = (payload or {}).get("name")
     if not isinstance(raw_name, str):
@@ -57,13 +57,13 @@ async def create_org(payload: Dict[str, Any], current_user: dict = Depends(get_c
 
 @router.get("/", response_model=OrgsOut)
 @router.get("", response_model=OrgsOut)
-async def list_my_orgs(current_user: dict = Depends(get_current_user_strict)) -> OrgsOut:
+async def list_my_orgs(current_user: dict = Depends(get_current_user)) -> OrgsOut:
     orgs = await org_service.list_orgs_for_user(str(current_user["user_id"]))
     return OrgsOut(organizations=orgs)  # type: ignore[arg-type]
 
 
 @router.get("/{org_id}", response_model=OrgOut)
-async def get_org(org_id: str, current_user: dict = Depends(get_current_user_strict)) -> OrgOut:
+async def get_org(org_id: str, current_user: dict = Depends(get_current_user)) -> OrgOut:
     meta = await org_service.get_org(org_id)
     if not meta:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Organisation nicht gefunden")
@@ -76,7 +76,7 @@ async def get_org(org_id: str, current_user: dict = Depends(get_current_user_str
 
 
 @router.get("/{org_id}/members", response_model=MemberOut)
-async def list_members(org_id: str, current_user: dict = Depends(get_current_user_strict)) -> MemberOut:
+async def list_members(org_id: str, current_user: dict = Depends(get_current_user)) -> MemberOut:
     meta = await org_service.get_org(org_id)
     if not meta:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Organisation nicht gefunden")
@@ -90,7 +90,7 @@ async def list_members(org_id: str, current_user: dict = Depends(get_current_use
 
 
 @router.post("/{org_id}/members", status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
-async def add_member(org_id: str, payload: Dict[str, Any], current_user: dict = Depends(get_current_user_strict)) -> Response:
+async def add_member(org_id: str, payload: Dict[str, Any], current_user: dict = Depends(get_current_user)) -> Response:
     user_id = str(payload.get("user_id", "")).strip()
     if not user_id:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="user_id erforderlich")
@@ -101,7 +101,7 @@ async def add_member(org_id: str, payload: Dict[str, Any], current_user: dict = 
 
 
 @router.delete("/{org_id}/members/{user_id}", status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
-async def remove_member(org_id: str, user_id: str, current_user: dict = Depends(get_current_user_strict)) -> Response:
+async def remove_member(org_id: str, user_id: str, current_user: dict = Depends(get_current_user)) -> Response:
     meta = await org_service.get_org(org_id)
     if not meta:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Organisation nicht gefunden")

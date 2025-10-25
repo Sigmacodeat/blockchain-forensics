@@ -4,10 +4,9 @@
 Bietet REST-API für Zwei-Faktor-Authentifizierung.
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
-from typing import Dict, List, Optional, Any
-import asyncio
+from typing import Dict, List, Any
 
 from app.services.two_factor_auth import two_fa_manager
 from app.auth.dependencies import get_current_user

@@ -9,7 +9,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from typing import List, Optional
 import logging
 
-from app.ml.behavioral_scam_detector import behavioral_scam_detector, ScamEvidence
+from app.ml.behavioral_scam_detector import behavioral_scam_detector
 from app.services.multi_chain import multi_chain_engine
 from app.api.deps import get_current_user, require_plan
 from pydantic import BaseModel

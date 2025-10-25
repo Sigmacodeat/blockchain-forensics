@@ -13,7 +13,7 @@ import json
 import logging
 import os
 from collections import defaultdict
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Dict
 
 from app.config import settings
 

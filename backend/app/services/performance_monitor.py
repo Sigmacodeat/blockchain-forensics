@@ -6,14 +6,12 @@ Umfassende Lösung für System-Monitoring, Logging und Performance-Optimierung
 import logging
 import time
 import psutil
-import asyncio
-from typing import Dict, List, Optional, Any, Callable
+from typing import Dict, List, Optional, Any
 from datetime import datetime, timedelta
 from collections import defaultdict, deque
 import threading
 import json
 
-from app.config import settings
 
 logger = logging.getLogger(__name__)
 

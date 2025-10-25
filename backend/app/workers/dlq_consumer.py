@@ -16,7 +16,7 @@ import logging
 import sys
 from typing import Optional
 
-from confluent_kafka import Consumer, KafkaError, KafkaException
+from confluent_kafka import Consumer, KafkaError
 
 from app.config import settings
 from app.messaging.kafka_client import KafkaProducerClient

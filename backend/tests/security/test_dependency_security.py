@@ -8,7 +8,6 @@ import pytest
 import pkg_resources
 import subprocess
 import json
-from typing import List, Dict
 
 
 class TestDependencySecurity:

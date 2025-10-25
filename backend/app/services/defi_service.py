@@ -4,11 +4,9 @@ DeFi-Service für Blockchain-Forensik-Anwendung
 Implementiert DeFi-Integration für Liquidity Pools, Staking und Yield Farming.
 """
 
-import asyncio
 import logging
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Any, Optional
 from datetime import datetime
-from decimal import Decimal
 
 # DeFi-Bibliotheken (optional)
 try:
@@ -21,7 +19,6 @@ except ImportError:
     _DEFI_AVAILABLE = False
     logging.warning("DeFi-Bibliotheken nicht verfügbar - DeFi-Features werden deaktiviert")
 
-from app.services.wallet_service import wallet_service
 from app.services.cache_service import cache_service
 
 logger = logging.getLogger(__name__)

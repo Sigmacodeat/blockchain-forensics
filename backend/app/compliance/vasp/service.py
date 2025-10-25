@@ -15,7 +15,6 @@ from datetime import datetime
 import logging
 import os
 import httpx
-import re
 
 from .models import (
     Vasp,

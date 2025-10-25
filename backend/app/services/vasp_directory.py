@@ -8,7 +8,7 @@ Provides VASP lookup, screening, and management.
 
 import logging
 from datetime import datetime
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Dict
 from uuid import uuid4
 
 from app.models.vasp import (

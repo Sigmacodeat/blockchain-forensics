@@ -37,8 +37,7 @@ Handles IVMS101 validation, message preparation, and sending.
 
 import logging
 import uuid
-from typing import Dict, Any, Optional, List
-from datetime import datetime
+from typing import Dict, Any, Optional
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 
@@ -53,7 +52,6 @@ try:
 except Exception:  # In Test-/Dev-Umgebungen kann dieses Modul fehlen; Tests patchen es per MagicMock
     SessionLocal = None  # type: ignore
 from app.messaging.kafka_client import KafkaTopics
-from app.services.signing import manifest_service
 
 logger = logging.getLogger(__name__)
 

@@ -6,11 +6,9 @@ Unterstützt verschiedene Exportformate (JSON, CSV, PDF) und sicheren Import.
 
 import json
 import csv
-import io
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 from datetime import datetime
 from pathlib import Path
-import asyncio
 import logging
 
 # PDF-Export (optional)

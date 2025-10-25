@@ -4,8 +4,7 @@ Tests für Ultra-Advanced Clustering Engine
 """
 
 import pytest
-import asyncio
-from unittest.mock import Mock, AsyncMock
+from unittest.mock import AsyncMock
 
 # Import würde normalerweise so aussehen:
 # from app.ml.unified_clustering_api import unified_clustering_engine
@@ -140,7 +139,6 @@ class TestPerformanceComparison:
     @pytest.mark.asyncio
     async def test_speed_benchmark(self):
         """Test clustering speed"""
-        import time
         
         # start = time.time()
         # result = await unified_clustering_engine.cluster_address('0x123', 'ethereum')

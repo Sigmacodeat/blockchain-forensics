@@ -14,7 +14,6 @@ import pytest
 import time
 import asyncio
 from datetime import datetime, timedelta
-from typing import List
 import statistics
 
 # Performance targets
@@ -64,7 +63,7 @@ class TestKYTPerformance:
             p95_latency = statistics.quantiles(latencies, n=20)[18]  # 95th percentile
             p99_latency = statistics.quantiles(latencies, n=100)[98]  # 99th percentile
             
-            print(f"\n📊 KYT Screening Performance:")
+            print("\n📊 KYT Screening Performance:")
             print(f"   Average: {avg_latency:.2f}ms")
             print(f"   P95: {p95_latency:.2f}ms")
             print(f"   P99: {p99_latency:.2f}ms")
@@ -72,9 +71,9 @@ class TestKYTPerformance:
             
             # Soft assertion - log warning but don't fail
             if avg_latency > TARGETS['kyt_screening_latency_ms']:
-                print(f"   ⚠️  WARNING: Average latency exceeds target")
+                print("   ⚠️  WARNING: Average latency exceeds target")
             else:
-                print(f"   ✅ PASS: Within target")
+                print("   ✅ PASS: Within target")
                 
         except ImportError:
             pytest.skip("KYT engine not available")
@@ -109,14 +108,14 @@ class TestChainAdapterPerformance:
             
             if latencies:
                 avg_latency = statistics.mean(latencies)
-                print(f"\n📊 Chain RPC Performance:")
+                print("\n📊 Chain RPC Performance:")
                 print(f"   Average: {avg_latency:.2f}ms")
                 print(f"   Target: <{TARGETS['chain_rpc_call_ms']}ms")
                 
                 if avg_latency <= TARGETS['chain_rpc_call_ms']:
-                    print(f"   ✅ PASS")
+                    print("   ✅ PASS")
                 else:
-                    print(f"   ⚠️  WARNING: Exceeds target")
+                    print("   ⚠️  WARNING: Exceeds target")
                     
         except ImportError:
             pytest.skip("Ethereum adapter not available")
@@ -141,9 +140,9 @@ class TestChainAdapterPerformance:
         
         total_time = time.perf_counter() - start
         
-        print(f"\n📊 Multi-Chain Parallel Performance:")
+        print("\n📊 Multi-Chain Parallel Performance:")
         print(f"   5 chains in parallel: {total_time*1000:.2f}ms")
-        print(f"   Expected: <100ms (efficient parallelization)")
+        print("   Expected: <100ms (efficient parallelization)")
         
         assert total_time < 0.5, "Parallel calls should be efficient"
 
@@ -176,15 +175,15 @@ class TestNFTDetectionPerformance:
             findings = await nft_wash_detector.detect_wash_trading(trades)
             duration = time.perf_counter() - start
             
-            print(f"\n📊 NFT Detection Performance:")
+            print("\n📊 NFT Detection Performance:")
             print(f"   1000 trades analyzed in: {duration:.2f}s")
             print(f"   Findings: {len(findings)}")
             print(f"   Target: <{TARGETS['nft_detection_1000_trades_s']}s")
             
             if duration <= TARGETS['nft_detection_1000_trades_s']:
-                print(f"   ✅ PASS")
+                print("   ✅ PASS")
             else:
-                print(f"   ⚠️  WARNING: Exceeds target")
+                print("   ⚠️  WARNING: Exceeds target")
                 
         except ImportError:
             pytest.skip("NFT detector not available")
@@ -221,14 +220,14 @@ class TestSARGenerationPerformance:
             
             duration = time.perf_counter() - start
             
-            print(f"\n📊 SAR Generation Performance:")
+            print("\n📊 SAR Generation Performance:")
             print(f"   Duration: {duration:.2f}s")
             print(f"   Target: <{TARGETS['sar_generation_s']}s")
             
             if duration <= TARGETS['sar_generation_s']:
-                print(f"   ✅ PASS")
+                print("   ✅ PASS")
             else:
-                print(f"   ⚠️  WARNING: Exceeds target")
+                print("   ⚠️  WARNING: Exceeds target")
                 
         except Exception as e:
             pytest.skip(f"SAR generator not available: {e}")
@@ -249,14 +248,14 @@ class TestEntityEnrichmentPerformance:
         
         duration = (time.perf_counter() - start) * 1000
         
-        print(f"\n📊 Entity Enrichment Performance:")
+        print("\n📊 Entity Enrichment Performance:")
         print(f"   Cached lookup: {duration:.2f}ms")
         print(f"   Target: <{TARGETS['entity_enrichment_ms']}ms")
         
         if duration <= TARGETS['entity_enrichment_ms']:
-            print(f"   ✅ PASS")
+            print("   ✅ PASS")
         else:
-            print(f"   ⚠️  WARNING: Exceeds target")
+            print("   ⚠️  WARNING: Exceeds target")
 
 
 class TestTracingPerformance:
@@ -279,14 +278,14 @@ class TestTracingPerformance:
         
         avg_latency = statistics.mean(latencies)
         
-        print(f"\n📊 Trace Hop Performance:")
+        print("\n📊 Trace Hop Performance:")
         print(f"   Average per hop: {avg_latency:.2f}ms")
         print(f"   Target: <{TARGETS['trace_hop_ms']}ms")
         
         if avg_latency <= TARGETS['trace_hop_ms']:
-            print(f"   ✅ PASS")
+            print("   ✅ PASS")
         else:
-            print(f"   ⚠️  WARNING: Exceeds target")
+            print("   ⚠️  WARNING: Exceeds target")
 
 
 class TestSystemScalability:
@@ -315,7 +314,7 @@ class TestSystemScalability:
             duration = time.perf_counter() - start
             success_count = sum(1 for r in results if not isinstance(r, Exception))
             
-            print(f"\n📊 Concurrent KYT Performance:")
+            print("\n📊 Concurrent KYT Performance:")
             print(f"   100 requests in: {duration:.2f}s")
             print(f"   Success rate: {success_count}/100")
             print(f"   Throughput: {100/duration:.2f} req/s")
@@ -352,7 +351,7 @@ class TestSystemScalability:
         
         memory_increase = peak_memory - initial_memory
         
-        print(f"\n📊 Memory Efficiency:")
+        print("\n📊 Memory Efficiency:")
         print(f"   Initial: {initial_memory:.2f} MB")
         print(f"   Peak: {peak_memory:.2f} MB")
         print(f"   Increase: {memory_increase:.2f} MB")

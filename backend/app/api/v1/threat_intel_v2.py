@@ -1,13 +1,12 @@
 from __future__ import annotations
-from typing import Any, Dict, List, Optional
-from fastapi import APIRouter, HTTPException, status, Query, Depends
+from typing import Any, Dict, List
+from fastapi import APIRouter, HTTPException, Query, Depends
 from pydantic import BaseModel, Field
 from datetime import datetime
 
 from app.intel.threat_intel_v2 import (
     threat_intel_v2,
     NormalizedIntelItem,
-    IntelNormalizerPlugin,
     TLPLevel,
     IntelConfidence
 )

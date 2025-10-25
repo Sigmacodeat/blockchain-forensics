@@ -9,7 +9,7 @@ Privacy Demixing API Endpoints
 - POST /api/v1/demixing/privacy-coin - Privacy Coin Tracing (limited)
 """
 
-from fastapi import APIRouter, Depends, HTTPException, Body
+from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
 from datetime import datetime

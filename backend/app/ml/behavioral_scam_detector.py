@@ -31,9 +31,8 @@ Automatische Erkennung von 15 Scam-Patterns basierend auf On-Chain-Behavior.
 
 import logging
 import numpy as np
-from typing import Dict, List, Optional, Tuple, Any
-from datetime import datetime, timedelta
-from collections import defaultdict, Counter
+from typing import Dict, List, Optional, Any
+from datetime import datetime
 from dataclasses import dataclass, field
 
 logger = logging.getLogger(__name__)

@@ -4,15 +4,13 @@ Wallet API Endpunkte für Blockchain-Forensik-Plattform
 Bietet REST-API für Wallet-Operationen mit KI-Integration.
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 from typing import Dict, List, Optional, Any
 import asyncio
-from decimal import Decimal
 
 from app.services.wallet_service import wallet_service
 from app.auth.dependencies import get_current_user
-from app.db.session import get_db
 
 router = APIRouter(prefix="/api/v1/wallet", tags=["wallet"])
 

@@ -10,7 +10,7 @@ from typing import Dict, List, Optional
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, HttpUrl
 
-from app.services.webhook_service import webhook_service, WebhookConfig, WebhookDelivery
+from app.services.webhook_service import webhook_service
 
 logger = logging.getLogger(__name__)
 

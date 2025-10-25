@@ -61,7 +61,6 @@ def test_webhook_ingest_with_bulk_upsert_stub(client, monkeypatch):
         return inserted_existing
 
     # Patch repo function
-    import builtins
     backend_dir = Path(__file__).resolve().parents[1]
     service_path = backend_dir / "app" / "compliance" / "sanctions" / "service.py"
     # Ensure module loaded to pick up stub at runtime

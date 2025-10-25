@@ -12,7 +12,6 @@ import logging
 
 from app.services.universal_screening import (
     universal_screening_service,
-    UniversalScreeningResult,
 )
 from app.auth.dependencies import get_current_user_optional, require_plan
 

@@ -20,7 +20,6 @@ from app.intel.models import (
     IntelEnrichmentResult,
     ThreatLevel,
     IntelCategory,
-    IntelSource,
     IntelSharingMessage,
     TLPLevel,
     DarkWebIntel

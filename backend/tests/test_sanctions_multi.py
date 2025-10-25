@@ -2,8 +2,6 @@
 Tests for Multi-List Sanctions Screening
 """
 import os
-import json
-import pytest
 from fastapi.testclient import TestClient
 
 os.environ["TEST_MODE"] = "1"

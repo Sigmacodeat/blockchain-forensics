@@ -3,10 +3,8 @@ Web3 Payment Endpoint
 Handles direct wallet payments (MetaMask, TronLink, etc.)
 """
 import logging
-from datetime import datetime, timedelta
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
-from typing import Optional
 
 from app.auth.middleware import require_auth, get_current_user
 from app.db.postgres_client import postgres_client

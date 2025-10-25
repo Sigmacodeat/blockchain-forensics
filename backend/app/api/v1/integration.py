@@ -9,8 +9,7 @@ from fastapi import APIRouter, HTTPException, Query, Body
 from datetime import datetime
 
 from app.services.service_orchestrator import (
-    service_orchestrator, EventType, ServiceStatus,
-    publish_system_event, execute_data_pipeline, trigger_workflow, get_system_overview
+    service_orchestrator, EventType, publish_system_event, execute_data_pipeline, trigger_workflow, get_system_overview
 )
 
 logger = logging.getLogger(__name__)

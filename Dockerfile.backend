@@ -63,7 +63,7 @@ RUN mkdir -p /app/logs /app/data /app/temp && \
     chown -R forensics:forensics /app
 
 # Set environment variables
-ENV PYTHONPATH=/app \
+ENV PYTHONPATH=/app:/app/backend \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     LOG_LEVEL=INFO \

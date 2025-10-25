@@ -17,7 +17,7 @@ Scannt URLs, Domains und DApp-Connections auf Phishing.
 
 import re
 import logging
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 from enum import Enum
 from datetime import datetime

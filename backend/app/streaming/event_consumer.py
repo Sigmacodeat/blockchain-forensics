@@ -16,8 +16,8 @@ Features:
 import logging
 import asyncio
 import signal
-from typing import Optional, Dict, List, Any
-from confluent_kafka import Consumer, KafkaError, KafkaException
+from typing import Optional, Dict, Any
+from confluent_kafka import Consumer, KafkaError
 from io import BytesIO
 import json
 

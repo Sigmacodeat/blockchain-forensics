@@ -11,7 +11,7 @@ Implementiert einfache ML-Modelle zur Erkennung anomaler Transaktionen:
 from __future__ import annotations
 import numpy as np
 import pandas as pd
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Any, Optional
 import logging
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler

@@ -1,4 +1,3 @@
-import pytest
 from app.compliance.rule_engine import rule_engine
 
 

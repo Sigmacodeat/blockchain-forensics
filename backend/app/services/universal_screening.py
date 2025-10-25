@@ -14,10 +14,8 @@ import asyncio
 import logging
 from typing import Dict, List, Optional, Any, Set
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import datetime
 from enum import Enum
-import hashlib
-import json
 
 logger = logging.getLogger(__name__)
 
@@ -195,12 +193,6 @@ class UniversalScreeningService:
     ) -> UniversalScreeningResult:
         # Metrics imported lazily to avoid circular imports
         try:
-            from app.monitoring.metrics import (
-                universal_screening_requests,
-                universal_screening_duration,
-                universal_screening_chains_screened,
-                universal_screening_risk_score
-            )
             import time
             _start = time.time()
         except:
@@ -265,7 +257,6 @@ class UniversalScreeningService:
         try:
             from app.services.compliance_service import service as compliance_service
             from app.analytics.exposure_service import exposure_service
-            from app.services.multi_chain import multi_chain_engine
         except Exception as e:
             logger.error(f"Import error in _screen_chain: {e}")
             # Erstelle minimales Ergebnis

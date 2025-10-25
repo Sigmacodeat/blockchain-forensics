@@ -1,18 +1,16 @@
 """Alert Management API"""
 
-from typing import Dict, List, Optional, Any, Literal
+from typing import Dict, List, Optional, Any
 import logging
 import time
 import re
 from datetime import datetime, timedelta
 from fastapi import APIRouter, HTTPException, Depends, Query, Response
 from pydantic import BaseModel, Field
-from app.auth.dependencies import get_current_user_strict, get_current_user, require_plan
+from app.auth.dependencies import get_current_user_strict
 from app.services.alert_service import alert_service
 from app.services.alert_annotation_service import alert_annotation_service
 from app.services.kpi_service import kpi_service
-from app.db.postgres import postgres_client
-from app.models.audit_log import log_audit_event, AuditAction
 try:
     from app.services.case_service import case_service
 except Exception:

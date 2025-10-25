@@ -13,7 +13,6 @@ AI-Agent kann jetzt Firewall-Features nutzen:
 """
 
 import logging
-from typing import Dict, List, Any
 import json
 
 logger = logging.getLogger(__name__)

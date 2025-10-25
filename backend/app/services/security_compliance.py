@@ -6,18 +6,15 @@ Umfassende Lösung für Audit-Trails, digitale Signaturen und Compliance
 import logging
 import json
 import hashlib
-import hmac
 from typing import Dict, List, Optional, Any, Union
 from datetime import datetime, timedelta
 from pathlib import Path
 import os
-import asyncio
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
 from cryptography.hazmat.backends import default_backend
 from cryptography.exceptions import InvalidSignature
 
-from app.config import settings
 
 logger = logging.getLogger(__name__)
 

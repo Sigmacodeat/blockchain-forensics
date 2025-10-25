@@ -1,6 +1,5 @@
 import os
 from datetime import datetime, timedelta
-from types import SimpleNamespace
 import pytest
 
 os.environ["TEST_MODE"] = "1"

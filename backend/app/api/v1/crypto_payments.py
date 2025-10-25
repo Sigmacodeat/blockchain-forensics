@@ -6,7 +6,7 @@ import logging
 import uuid
 from datetime import datetime, timedelta
 from typing import List, Optional, Dict, Any
-from fastapi import APIRouter, HTTPException, Depends, Request, Body
+from fastapi import APIRouter, HTTPException, Depends, Body
 from pydantic import BaseModel, Field
 
 # Auth dependencies (fallback in TEST_MODE)

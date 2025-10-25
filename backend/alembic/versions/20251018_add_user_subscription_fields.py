@@ -7,7 +7,6 @@ Create Date: 2025-10-18 16:30:00.000000
 """
 from alembic import op
 import sqlalchemy as sa
-from sqlalchemy.dialects import postgresql
 
 # revision identifiers
 revision = '20251018_subscription'

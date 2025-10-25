@@ -7,7 +7,7 @@ import logging
 import os
 from typing import List, Dict, Optional
 from datetime import datetime
-from sqlalchemy import create_engine, text
+from sqlalchemy import text
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
 from contextlib import asynccontextmanager

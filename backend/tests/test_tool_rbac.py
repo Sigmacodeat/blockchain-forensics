@@ -1,6 +1,5 @@
-import types
 
-from app.ai_agents.tool_rbac import filter_tools_for_context, is_tool_allowed
+from app.ai_agents.tool_rbac import filter_tools_for_context
 from app.config import settings
 
 

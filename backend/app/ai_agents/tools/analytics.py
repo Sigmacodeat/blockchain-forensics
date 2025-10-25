@@ -7,7 +7,7 @@ import logging
 from typing import List, Optional, Dict, Any
 from langchain.tools import tool
 from pydantic.v1 import BaseModel, Field
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 

@@ -10,13 +10,10 @@ Identifiziert Contract Functions via:
 Erweitert die Basic ABI-Decoding aus evm_log_decoder.py
 """
 
-import hashlib
 import httpx
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
-import asyncio
 from functools import lru_cache
-import json
 
 
 @dataclass

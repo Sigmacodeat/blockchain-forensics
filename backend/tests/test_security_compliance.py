@@ -2,7 +2,6 @@
 Tests for Security & Compliance Services
 """
 
-import pytest
 import json
 from datetime import datetime, timedelta
 from app.services.security_compliance import (

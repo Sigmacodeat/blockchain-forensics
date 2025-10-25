@@ -5,10 +5,9 @@ Integriert Trust Wallet Core für Multi-Chain-Wallet-Funktionalität
 mit Forensik-spezifischen Features.
 """
 
-import os
 import json
 import logging
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Any
 from pathlib import Path
 import asyncio
 from decimal import Decimal
@@ -22,7 +21,6 @@ except ImportError:
     logging.warning("Trust Wallet Core nicht verfügbar - Wallet-Features werden deaktiviert")
 
 from app.config import settings
-from app.db.session import get_db
 # from app.services.ai_agent_service import AIAgentService  # TODO: Implement AI Agent Service
 
 logger = logging.getLogger(__name__)
@@ -164,7 +162,8 @@ class WalletService:
                 return str(result)
 
             def _hex_to_base64(tx_hex: str) -> str:
-                import base64, binascii
+                import base64
+                import binascii
                 b = binascii.unhexlify(tx_hex[2:] if tx_hex.startswith("0x") else tx_hex)
                 return base64.b64encode(b).decode("ascii")
 

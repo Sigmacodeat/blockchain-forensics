@@ -4,12 +4,9 @@ NFT-Service für Blockchain-Forensik-Anwendung
 Implementiert NFT-Verwaltung, Portfolio-Tracking und Metadaten-Analyse.
 """
 
-import asyncio
 import logging
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Any, Optional
 from datetime import datetime
-import json
-from pathlib import Path
 
 # NFT-Bibliotheken (optional)
 try:
@@ -21,7 +18,6 @@ except ImportError:
     _NFT_AVAILABLE = False
     logging.warning("NFT-Bibliotheken nicht verfügbar - NFT-Features werden deaktiviert")
 
-from app.services.wallet_service import wallet_service
 from app.services.cache_service import cache_service
 
 logger = logging.getLogger(__name__)

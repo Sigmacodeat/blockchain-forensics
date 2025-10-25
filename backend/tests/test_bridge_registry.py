@@ -5,7 +5,7 @@ from datetime import datetime
 from decimal import Decimal
 
 from app.bridge.registry import BridgeRegistry, BridgeContract, bridge_registry
-from app.bridge.detection import BridgeDetectionService, bridge_detection_service
+from app.bridge.detection import BridgeDetectionService
 from app.schemas import CanonicalEvent
 
 

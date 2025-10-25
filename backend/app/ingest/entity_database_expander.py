@@ -18,7 +18,6 @@ Total Target: 5,000+ entities (moving towards Chainalysis' 12,000+)
 
 from __future__ import annotations
 import asyncio
-import json
 import logging
 from typing import Dict, List, Any
 from datetime import datetime

@@ -1,6 +1,5 @@
 import os
 import json
-import asyncio
 
 from app.intel.defi.registry import get_all_protocols, get_labels_seed
 

@@ -5,7 +5,7 @@ Authentication API Endpoints
 import logging
 import uuid
 from datetime import datetime
-from typing import Dict, Any, cast
+from typing import cast
 from fastapi import APIRouter, HTTPException, status, Depends, Request
 from fastapi.responses import RedirectResponse
 import os
@@ -18,7 +18,7 @@ from sqlalchemy.orm import Session
 
 from app.auth.models import UserCreate, UserLogin, User, Token, AuthResponse, UserRole
 from app.auth.jwt import create_access_token, create_refresh_token, verify_password, get_password_hash, decode_token
-from app.auth.dependencies import get_current_user, get_current_user_optional, require_admin
+from app.auth.dependencies import get_current_user, require_admin
 from app.db.session import get_db
 from app.models.user import UserORM, SubscriptionPlan
 from app.services.partner_service import partner_service

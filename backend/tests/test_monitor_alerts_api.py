@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import AsyncMock, patch
+from unittest.mock import patch
 from fastapi.testclient import TestClient
 from app.main import app
 from app.auth.dependencies import get_current_user_strict
@@ -220,7 +220,6 @@ def test_suppression_events_endpoint():
 
 def test_suppression_events_with_reason_filter():
     """Test filtering suppression events by reason"""
-    from app.services.alert_engine import alert_engine
 
     # Get suppression events with reason filter
     res = client.get("/api/v1/alerts/suppressions?reason=dedup_window&limit=10")

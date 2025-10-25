@@ -6,7 +6,7 @@ TRM Labs Mai 2025 Feature: Custom Ledgers für Bulk Transfer Data.
 """
 
 from fastapi import APIRouter, HTTPException, Depends, UploadFile, File, Query
-from typing import List, Optional, Dict, Any
+from typing import Optional, Dict, Any
 from pydantic import BaseModel, Field
 import logging
 

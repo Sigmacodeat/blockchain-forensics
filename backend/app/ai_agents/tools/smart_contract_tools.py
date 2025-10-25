@@ -6,12 +6,10 @@ Vollständige Contract-Steuerung über Chat.
 """
 
 import logging
-from typing import Optional, List, Dict, Any
+from typing import Optional, List
 from langchain.tools import tool
 from pydantic.v1 import BaseModel, Field
-import json
 
-from app.analytics.smart_contract_analyzer import smart_contract_analyzer
 from app.contracts.service import contracts_service
 
 logger = logging.getLogger(__name__)
@@ -237,7 +235,7 @@ async def analyze_contract_tool(contract_address: str, chain: str = "ethereum") 
         else:
             result += "\n\n✅ No major vulnerabilities detected"
         
-        result += f"\n\n💡 **Recommendation**: "
+        result += "\n\n💡 **Recommendation**: "
         if score < 0.3:
             result += "Low risk - appears safe to interact"
         elif score < 0.7:

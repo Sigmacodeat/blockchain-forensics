@@ -10,22 +10,15 @@ Features:
 """
 
 from __future__ import annotations
-import asyncio
 import logging
-from typing import Any, Dict, List, Optional, Set, Callable
+from typing import Any, Dict, List, Optional, Set
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from enum import Enum
-import json
-import hashlib
 import base64
 
 from cryptography.fernet import Fernet
-from cryptography.hazmat.primitives import hashes, serialization
-from cryptography.hazmat.primitives.asymmetric import rsa, padding
-from cryptography.hazmat.backends import default_backend
 
-from app.db.redis_client import redis_client
 from app.config import settings
 
 logger = logging.getLogger(__name__)

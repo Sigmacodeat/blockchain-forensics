@@ -10,8 +10,7 @@ from pydantic import BaseModel, Field
 
 from app.services.feature_flag_service import (
     feature_flag_service,
-    FeatureFlagStatus,
-    FeatureFlag
+    FeatureFlagStatus
 )
 from app.auth.dependencies import require_admin
 

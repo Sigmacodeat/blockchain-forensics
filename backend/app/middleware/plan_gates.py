@@ -2,16 +2,14 @@
 Plan Gates Middleware
 Server-side enforcement of subscription plan restrictions
 """
-from typing import Callable, List, Optional
+from typing import List, Optional
 from fastapi import Request, HTTPException, Depends
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
-from sqlalchemy.orm import Session
 
 from app.auth.dependencies import get_current_user
 from app.models.user import User
 from app.config.pricing import get_plan_config
-from app.db.session import get_db
 
 
 class PlanGateMiddleware(BaseHTTPMiddleware):

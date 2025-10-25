@@ -5,13 +5,12 @@ Premium analytics with real-time data, drill-down, and exports
 
 from typing import Dict, List, Optional, Any
 from datetime import datetime, timedelta
-from sqlalchemy import func, and_, or_, select, case
+from sqlalchemy import func, and_, case
 from sqlalchemy.orm import Session
 # TODO: Models need to be created - commented out for now
 # from app.models.trace import Trace
 # from app.models.case import Case
 # from app.models.alert import Alert
-from app.models.user import UserORM as User
 import json
 from collections import defaultdict
 import pandas as pd

@@ -9,7 +9,7 @@ from typing import List, Dict, Any
 from fastapi import APIRouter, Depends, Query
 from pydantic import BaseModel
 
-from app.auth.dependencies import get_current_user, require_admin, require_plan
+from app.auth.dependencies import get_current_user, require_plan
 from app.db.session import get_db
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import text

@@ -5,8 +5,8 @@ OWASP-compliant input validation and sanitization.
 """
 
 import re
-from typing import Any, Dict, List, Optional
-from pydantic import BaseModel, validator, ValidationError
+from typing import List, Optional
+from pydantic import BaseModel, validator
 import bleach
 from fastapi import HTTPException
 

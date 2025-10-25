@@ -5,14 +5,13 @@ Endpoints for entity-specific comments and discussions
 
 import logging
 from typing import Dict, List, Optional, Any
-from fastapi import APIRouter, HTTPException, Query, Body, Path
+from fastapi import APIRouter, HTTPException, Query, Body
 from pydantic import BaseModel, Field
 
 from app.models.comment import (
     Comment, CommentThread, CommentStatus, CommentQuery,
     create_comment, get_comment, update_comment, delete_comment, like_comment,
-    query_comments, get_comment_replies, get_entity_comments,
-    create_thread, get_thread, resolve_thread, get_entity_threads,
+    query_comments, get_comment_replies, create_thread, get_thread, resolve_thread, get_entity_threads,
     comments, comment_threads
 )
 

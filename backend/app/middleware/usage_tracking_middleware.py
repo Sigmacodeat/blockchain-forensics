@@ -7,10 +7,9 @@ Tracked automatisch alle API-Calls und enforced Quotas
 
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
-from starlette.responses import Response, JSONResponse
+from starlette.responses import JSONResponse
 from app.services.usage_tracking import usage_tracking_service
 import logging
-import time
 
 logger = logging.getLogger(__name__)
 

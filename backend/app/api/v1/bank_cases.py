@@ -6,7 +6,6 @@ Complete API for Bank Compliance Case Management
 """
 
 from typing import List, Optional, Dict, Any
-from datetime import datetime
 from fastapi import APIRouter, HTTPException, Depends, Query
 from pydantic import BaseModel, Field
 
@@ -17,7 +16,7 @@ from app.services.case_management import (
     CasePriority,
     CaseDecision
 )
-from app.auth.dependencies import get_current_user, require_plan
+from app.auth.dependencies import require_plan
 
 import logging
 logger = logging.getLogger(__name__)

@@ -2,7 +2,7 @@
 Link Tracking Models
 """
 
-from sqlalchemy import Column, String, DateTime, Integer, JSONB, Boolean
+from sqlalchemy import Column, String, DateTime, Integer, JSONB
 from sqlalchemy.dialects.postgresql import UUID
 from datetime import datetime
 import uuid

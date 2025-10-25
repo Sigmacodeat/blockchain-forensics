@@ -1,6 +1,5 @@
 import os
 import aiohttp
-import asyncio
 from typing import List, Optional
 
 OPENAI_EMBEDDINGS_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")

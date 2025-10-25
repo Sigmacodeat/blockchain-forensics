@@ -1,7 +1,6 @@
 import asyncio
 import os
 import logging
-from datetime import timedelta
 from app.db.postgres import postgres_client
 
 logger = logging.getLogger(__name__)

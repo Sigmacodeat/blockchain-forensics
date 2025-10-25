@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useNewsCaseStream } from '@/hooks/useNewsCaseStream'
 import RiskCopilot from '@/components/RiskCopilot'
@@ -58,7 +58,14 @@ const levelColor: Record<string, string> = {
 
 export default function NewsCasePublicPage() {
   const { slug, lang } = useParams()
-  const { connected, error, snapshot, events } = useNewsCaseStream(slug)
+  const { connected, error, snapshot, events, connect } = useNewsCaseStream(slug)
+  const [wasConnectedOnce, setWasConnectedOnce] = useState(false)
+
+  useEffect(() => {
+    if (connected) {
+      setWasConnectedOnce(true)
+    }
+  }, [connected])
 
   return (
     <div className="min-h-[70vh] py-10">
@@ -80,6 +87,24 @@ export default function NewsCasePublicPage() {
             {error && <span className="text-sm text-red-600">{error}</span>}
           </div>
         </div>
+
+        {wasConnectedOnce && !connected && (
+          <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-200">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                Verbindung unterbrochen. Wir versuchen automatisch, die Verbindung wiederherzustellen.
+                {error && <span className="ml-1 font-medium">Letzter Fehler: {error}</span>}
+              </div>
+              <button
+                type="button"
+                onClick={() => connect()}
+                className="inline-flex items-center justify-center rounded-md border border-amber-300 bg-white px-3 py-1.5 text-sm font-medium text-amber-700 shadow-sm transition hover:bg-amber-100 dark:border-amber-400/40 dark:bg-transparent dark:text-amber-100"
+              >
+                Jetzt neu verbinden
+              </button>
+            </div>
+          </div>
+        )}
 
         {snapshot && (
           <div className="mt-6 rounded-lg border border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900">

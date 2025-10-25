@@ -1,4 +1,3 @@
-import asyncio
 import pytest
 
 from app.streaming import monitor_consumer as mc

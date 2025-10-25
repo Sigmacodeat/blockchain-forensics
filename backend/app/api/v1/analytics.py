@@ -1,13 +1,13 @@
 from fastapi import APIRouter, Depends, Request, HTTPException
 from pydantic import BaseModel, Field
 from typing import Any, Dict, Optional, List
-import os, logging
+import os
+import logging
 from uuid import uuid4
 from datetime import datetime, timezone
 from app.db.postgres import postgres_client
 from app.auth.dependencies import require_role
 import aiohttp
-from datetime import datetime
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -190,7 +190,7 @@ async def ingest_event(req: Request, payload: AnalyticsEvent):
                         200,
                         0.0,
                     )
-        except Exception as e:
+        except Exception:
             # Swallow DB errors to not break UX
             return {"status": "accepted", "persisted": False}
     # Optional: forward to PostHog if configured
@@ -645,7 +645,6 @@ async def get_trend_data(
     - revenue: Revenue trends
     - activity: Platform activity metrics
     """
-    from app.models.user import User
     
     # Check admin role
     if current_user and current_user.get('role') != 'admin':

@@ -13,14 +13,12 @@ Tests cover:
 import pytest
 import asyncio
 from fastapi.testclient import TestClient
-from httpx import AsyncClient
 from app.main import app
 from app.models.case import Case, CaseStatus, CasePriority, CaseQuery
 from app.models.comment import Comment, CommentStatus
 from app.models.user import User, UserRole, UserStatus
 from app.models.notification import Notification, NotificationType, NotificationPriority
 from app.services.alert_engine import Alert, AlertType, AlertSeverity
-import json
 
 
 class TestCaseManagement:
@@ -475,7 +473,6 @@ class TestPerformance:
     def test_concurrent_operations(self):
         """Test concurrent operations"""
         import threading
-        import time
 
         results = []
         errors = []

@@ -2,8 +2,6 @@
 Tests for Extended Alert Rules
 """
 
-import pytest
-from datetime import datetime, timedelta
 import asyncio
 from app.services.alert_engine import (
     AnomalyDetectionRule, SmartContractExploitRule, WhaleMovementRule,

@@ -6,18 +6,13 @@ Provides comprehensive security features for the blockchain forensics platform
 import asyncio
 import logging
 import time
-from typing import Dict, List, Optional, Tuple, Any
+from typing import Dict, List, Optional, Any
 from collections import defaultdict, deque
 from datetime import datetime, timedelta
 from dataclasses import dataclass, field
 import re
-import ipaddress
-from urllib.parse import urlparse
 
 from fastapi import Request, HTTPException, status
-from fastapi.responses import JSONResponse
-import jwt
-from app.config import settings
 
 logger = logging.getLogger(__name__)
 

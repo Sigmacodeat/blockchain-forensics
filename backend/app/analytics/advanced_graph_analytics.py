@@ -10,12 +10,9 @@ Implementiert erweiterte Graph-Analysen für Wallet-Clustering:
 """
 
 from __future__ import annotations
-import asyncio
 import logging
-from typing import Dict, List, Any, Optional, Tuple, Set
-from collections import defaultdict
+from typing import Dict, List, Any, Optional
 import networkx as nx
-import numpy as np
 from datetime import datetime
 
 # Import Neo4j client for graph queries

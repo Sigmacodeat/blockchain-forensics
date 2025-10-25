@@ -16,11 +16,9 @@ Integrates with enrichment pipeline to enhance address risk scoring.
 import logging
 import asyncio
 import aiohttp
-import json
-from typing import Dict, List, Set, Optional, Any
+from typing import Dict, List, Optional, Any
 from datetime import datetime, timedelta
 from dataclasses import dataclass
-from pathlib import Path
 
 logger = logging.getLogger(__name__)
 

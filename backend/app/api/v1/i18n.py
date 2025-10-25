@@ -3,7 +3,6 @@ i18n API endpoints for language preference management.
 """
 from fastapi import APIRouter, Request, Response
 from pydantic import BaseModel, Field
-from typing import Optional
 import logging
 
 router = APIRouter()

@@ -135,7 +135,6 @@ try:
 except Exception:
     scam_detection_router = None
 from fastapi import Depends, HTTPException
-import os
 from app.auth.dependencies import get_current_user, get_current_user_strict
 try:
     from .cases import router as cases_router
@@ -369,7 +368,9 @@ if graph_engine_v2_router is not None:
 
 # Public chatbot-config endpoints (always available)
 from fastapi import Response, Request
-import json, time, hashlib
+import json
+import time
+import hashlib
 from pathlib import Path
 from datetime import datetime, timezone
 import logging

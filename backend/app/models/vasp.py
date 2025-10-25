@@ -5,7 +5,7 @@ VASP (Virtual Asset Service Provider) Models
 Models for Travel Rule compliance and VASP directory management.
 """
 
-from pydantic import BaseModel, Field, validator, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 from enum import Enum

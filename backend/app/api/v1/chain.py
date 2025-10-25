@@ -2,7 +2,7 @@
 Chain utility endpoints to quickly test adapter RPCs
 """
 from fastapi import APIRouter, Query
-from typing import Any, Dict, Optional, cast
+from typing import Any, Dict, cast
 
 from app.schemas.chain_responses import (
     SolanaBlockResponse,

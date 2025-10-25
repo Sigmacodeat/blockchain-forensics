@@ -2,10 +2,10 @@
 Plan Gates - Authorization basierend auf Subscription Plans
 """
 from typing import Callable
-from fastapi import HTTPException, Depends
+from fastapi import HTTPException
 from functools import wraps
 
-from app.models.user import User, SubscriptionPlan
+from app.models.user import SubscriptionPlan
 
 
 # Plan Hierarchy (höhere Zahl = höherer Plan)

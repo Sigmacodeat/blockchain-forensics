@@ -19,7 +19,7 @@ from app.config import settings
 import os
 from app.models.audit_log import log_audit_event, AuditAction
 from app.auth.jwt import decode_token
-from app.auth.dependencies import get_current_user_strict, require_admin
+from app.auth.dependencies import require_admin
 from app.auth.models import UserRole
 
 router = APIRouter()

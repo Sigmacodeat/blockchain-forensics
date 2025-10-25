@@ -7,7 +7,6 @@ Hilfsfunktionen zum sicheren Persistieren von Cross-Chain-Bridge-Links.
 from __future__ import annotations
 
 import os
-from typing import Optional
 
 from app.db.neo4j_client import neo4j_client
 

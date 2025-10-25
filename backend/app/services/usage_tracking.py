@@ -13,7 +13,6 @@ Features:
 from datetime import datetime, timedelta
 from typing import Dict, Any, Optional
 import logging
-from app.config import settings
 from app.db.redis_client import redis_client
 from app.db.postgres_client import postgres_client
 from app.services.partner_service import partner_service

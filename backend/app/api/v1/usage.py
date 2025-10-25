@@ -61,7 +61,7 @@ async def get_usage_summary(
         }
     except HTTPException:
         raise
-    except Exception as e:
+    except Exception:
         # Non-fatal; return empty aggregate if Redis not available
         return {"days": days, "key_prefix": key_prefix, "total": 0, "daily": {}}
 

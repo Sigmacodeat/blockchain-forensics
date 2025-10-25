@@ -15,11 +15,10 @@ CATEGORIES:
 Reference: Meiklejohn et al., Reid & Harrigan, Chainalysis methodology
 """
 from __future__ import annotations
-import asyncio
 import math
 from collections import defaultdict, Counter
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Dict, Any, List, Set, Tuple, Optional
 import logging
 

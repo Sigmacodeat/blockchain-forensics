@@ -7,7 +7,6 @@ All tests use mocked Neo4j client
 import pytest
 from datetime import datetime
 from decimal import Decimal
-from unittest.mock import AsyncMock, MagicMock, patch
 
 from app.db.utxo_graph import UTXOGraph
 from app.schemas import CanonicalEvent

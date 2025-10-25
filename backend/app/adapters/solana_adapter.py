@@ -10,7 +10,7 @@ Full implementation for Solana blockchain:
 """
 
 import logging
-from typing import List, Dict, Any, Optional, AsyncGenerator
+from typing import Dict, Any, Optional, AsyncGenerator
 import asyncio
 from datetime import datetime
 from decimal import Decimal

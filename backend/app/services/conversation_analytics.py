@@ -5,11 +5,10 @@ User-Identity-Resolution + Multi-Session-Tracking + AI-Powered Insights
 
 import logging
 import hashlib
-import json
 from typing import Optional, List, Dict, Any
 from datetime import datetime, timedelta
 from sqlalchemy.orm import Session
-from sqlalchemy import func, and_, or_, desc
+from sqlalchemy import func, and_
 
 logger = logging.getLogger(__name__)
 

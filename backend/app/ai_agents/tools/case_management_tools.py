@@ -1,7 +1,7 @@
 """Case Management Tools for AI Agent"""
 
 import logging
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional
 from langchain.tools import tool
 from pydantic.v1 import BaseModel, Field
 from datetime import datetime

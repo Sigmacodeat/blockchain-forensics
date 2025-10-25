@@ -290,7 +290,7 @@ class RiskModelTrainer:
             'recall_curve': recall.tolist()[:100]
         }
         
-        logger.info(f"Model Evaluation:")
+        logger.info("Model Evaluation:")
         logger.info(f"  ROC-AUC: {roc_auc:.4f}")
         logger.info(f"  Precision: {metrics['precision']:.4f}")
         logger.info(f"  Recall: {metrics['recall']:.4f}")

@@ -6,8 +6,7 @@ Bietet REST-API für Multi-Sig Wallet-Operationen.
 
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
-from typing import Dict, List, Optional, Any
-import asyncio
+from typing import Dict, List, Any
 
 from app.services.multisig_wallet_service import multisig_manager
 from app.auth.dependencies import get_current_user

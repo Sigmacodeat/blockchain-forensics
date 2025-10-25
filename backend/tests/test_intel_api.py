@@ -4,7 +4,6 @@ import pathlib
 import json
 import types
 from fastapi.testclient import TestClient
-import pytest
 
 # Ensure backend on PYTHONPATH
 ROOT = pathlib.Path(__file__).resolve().parents[2]

@@ -1,4 +1,3 @@
-import os
 import pytest
 from app.adapters.solana_adapter import create_solana_adapter
 

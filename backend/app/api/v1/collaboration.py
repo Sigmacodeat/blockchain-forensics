@@ -5,7 +5,7 @@ Case Sharing, Comments, Team Features
 
 import logging
 from datetime import datetime
-from typing import List, Dict, Optional
+from typing import List, Dict
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel, EmailStr
 

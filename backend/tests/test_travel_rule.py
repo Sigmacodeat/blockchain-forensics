@@ -236,7 +236,6 @@ class TestTravelRuleAPI:
                 }
             }
 
-            from app.api.v1.travel_rule import prepare_travel_rule_message
             from fastapi.testclient import TestClient
             from app.main import app
 
@@ -261,7 +260,6 @@ class TestTravelRuleAPI:
         with patch('app.api.v1.travel_rule.travel_rule_service') as mock_service:
             mock_service._validate_ivms101.return_value = []
 
-            from app.api.v1.travel_rule import validate_ivms101_payload
             from fastapi.testclient import TestClient
             from app.main import app
 

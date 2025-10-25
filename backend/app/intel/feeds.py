@@ -32,12 +32,10 @@ Goal: 12,000+ unique threat entities
 """
 from __future__ import annotations
 import asyncio
-import json
 import re
-from typing import Dict, List, Any, Set
+from typing import Dict, List, Any
 import httpx
 import logging
-from datetime import datetime, timedelta
 
 logger = logging.getLogger(__name__)
 

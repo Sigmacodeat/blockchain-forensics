@@ -4,10 +4,8 @@ Unterstützt Anomalie-Erkennung und ML-basierte Alert-Regeln
 """
 
 import logging
-import json
 import pickle
-import hashlib
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Any
 from datetime import datetime, timedelta
 from pathlib import Path
 import numpy as np
@@ -15,7 +13,6 @@ from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report, confusion_matrix
 
-from app.config import settings
 
 logger = logging.getLogger(__name__)
 

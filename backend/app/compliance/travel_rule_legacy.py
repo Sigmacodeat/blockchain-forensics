@@ -30,20 +30,16 @@ FEATURES:
 7. Counterparty Validation
 """
 from __future__ import annotations
-from dataclasses import dataclass, field, asdict
-from datetime import datetime, timedelta
+from dataclasses import dataclass, field
+from datetime import datetime
 from decimal import Decimal
 from enum import Enum
-from typing import Dict, Any, List, Optional, Set
-import asyncio
-import hashlib
-import json
+from typing import Dict, Any, List, Optional
 import logging
 import uuid
 
 import httpx
 from app.db.postgres import postgres_client
-from app.db.redis_client import redis_client
 
 logger = logging.getLogger(__name__)
 

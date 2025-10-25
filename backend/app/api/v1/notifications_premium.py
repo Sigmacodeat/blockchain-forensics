@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, Query
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
 from app.services.notification_service_premium import PremiumNotificationService

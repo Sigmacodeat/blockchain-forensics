@@ -125,7 +125,7 @@ async def _handle_marketing_conversation(session_id: str, message: str, user_dat
             "stage": stage_response.stage,
             "user_context": stage_response.user_context
         }
-    except Exception as e:
+    except Exception:
         # Fallback to standard response
         return None
 

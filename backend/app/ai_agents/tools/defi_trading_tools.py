@@ -6,7 +6,6 @@ DEX Swaps, Staking, Yield Farming via Chat.
 """
 
 import logging
-from typing import Optional, List, Dict, Any
 from langchain.tools import tool
 from pydantic.v1 import BaseModel, Field
 

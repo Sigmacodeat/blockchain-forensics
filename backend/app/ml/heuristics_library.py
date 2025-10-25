@@ -17,9 +17,9 @@ Implementiert 120+ Heuristiken für präzises Wallet Clustering
 """
 
 import logging
-from typing import Dict, List, Set, Optional, Tuple
-from datetime import datetime, timedelta
-from collections import defaultdict, Counter
+from typing import Dict, List, Set, Optional
+from datetime import timedelta
+from collections import defaultdict
 from dataclasses import dataclass, field
 
 logger = logging.getLogger(__name__)

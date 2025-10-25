@@ -11,7 +11,7 @@ from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks
 from pydantic import BaseModel, Field
 
-from app.auth.dependencies import get_current_user, require_plan
+from app.auth.dependencies import require_plan
 from app.services.bitcoin_investigation_service import bitcoin_investigation_service
 from app.ai_agents.bitcoin_investigation_agent import bitcoin_investigation_agent
 from app.services.bitcoin_report_generator import bitcoin_report_generator

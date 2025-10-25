@@ -21,11 +21,15 @@ class OrgService:
     ORG_MEMBERS = "org:{org_id}:members"
     USER_ORGS = "user:{user_id}:orgs"
 
+    def __init__(self) -> None:
+        # In-memory fallback stores used when Redis is unavailable (e.g., TEST_MODE)
+        self._mem_meta: dict[str, dict[str, str]] = {}
+        self._mem_members: dict[str, set[str]] = {}
+        self._mem_user_orgs: dict[str, set[str]] = {}
+
     async def create_org(self, name: str, owner_id: str, created_at_iso: str) -> Dict[str, str]:
         await redis_client._ensure_connected()  # type: ignore[attr-defined]
         client = getattr(redis_client, "client", None)
-        if client is None:
-            raise RuntimeError("Redis not available")
         org_id = str(uuid.uuid4())
         meta = {
             "id": org_id,
@@ -33,6 +37,12 @@ class OrgService:
             "owner_id": owner_id,
             "created_at": created_at_iso,
         }
+        if client is None:
+            # In-memory fallback
+            self._mem_meta[org_id] = meta
+            self._mem_members.setdefault(org_id, set()).add(owner_id)
+            self._mem_user_orgs.setdefault(owner_id, set()).add(org_id)
+            return meta
         meta_key = self.ORG_META.format(org_id=org_id)
         members_key = self.ORG_MEMBERS.format(org_id=org_id)
         user_orgs_key = self.USER_ORGS.format(user_id=owner_id)
@@ -47,7 +57,7 @@ class OrgService:
         await redis_client._ensure_connected()  # type: ignore[attr-defined]
         client = getattr(redis_client, "client", None)
         if client is None:
-            return None
+            return self._mem_meta.get(org_id)
         raw = await client.get(self.ORG_META.format(org_id=org_id))
         return json.loads(raw) if raw else None
 
@@ -55,7 +65,8 @@ class OrgService:
         await redis_client._ensure_connected()  # type: ignore[attr-defined]
         client = getattr(redis_client, "client", None)
         if client is None:
-            return []
+            ids = list(self._mem_user_orgs.get(user_id, set()))
+            return [self._mem_meta[oid] for oid in ids if oid in self._mem_meta]
         org_ids = await client.smembers(self.USER_ORGS.format(user_id=user_id))
         if not org_ids:
             return []
@@ -74,13 +85,13 @@ class OrgService:
         """Add member; only owner can add."""
         await redis_client._ensure_connected()  # type: ignore[attr-defined]
         client = getattr(redis_client, "client", None)
-        if client is None:
-            return False
         meta = await self.get_org(org_id)
-        if not meta:
+        if not meta or meta.get("owner_id") != requester_id:
             return False
-        if meta.get("owner_id") != requester_id:
-            return False
+        if client is None:
+            self._mem_members.setdefault(org_id, set()).add(user_id)
+            self._mem_user_orgs.setdefault(user_id, set()).add(org_id)
+            return True
         pipe = client.pipeline()
         pipe.sadd(self.ORG_MEMBERS.format(org_id=org_id), user_id)
         pipe.sadd(self.USER_ORGS.format(user_id=user_id), org_id)
@@ -91,13 +102,19 @@ class OrgService:
         """Remove member; only owner can remove. Owner cannot remove self if sole member."""
         await redis_client._ensure_connected()  # type: ignore[attr-defined]
         client = getattr(redis_client, "client", None)
-        if client is None:
-            return False
         meta = await self.get_org(org_id)
-        if not meta:
+        if not meta or meta.get("owner_id") != requester_id:
             return False
-        if meta.get("owner_id") != requester_id:
-            return False
+        if client is None:
+            members = self._mem_members.get(org_id, set())
+            if user_id == meta.get("owner_id") and (not members or len(members) <= 1):
+                return False
+            members.discard(user_id)
+            self._mem_members[org_id] = members
+            uorgs = self._mem_user_orgs.get(user_id, set())
+            uorgs.discard(org_id)
+            self._mem_user_orgs[user_id] = uorgs
+            return True
         # Prevent removing owner if they are the only member
         members = await client.smembers(self.ORG_MEMBERS.format(org_id=org_id))
         if user_id == meta.get("owner_id") and (not members or (len(members) <= 1)):
@@ -116,7 +133,7 @@ class OrgService:
         await redis_client._ensure_connected()  # type: ignore[attr-defined]
         client = getattr(redis_client, "client", None)
         if client is None:
-            return []
+            return list(self._mem_members.get(org_id, set()))
         members = await client.smembers(self.ORG_MEMBERS.format(org_id=org_id))
         return list(members or [])
 

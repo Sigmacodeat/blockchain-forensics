@@ -4,7 +4,7 @@ Funnel Analysis, Cohort Analysis, Retention Metrics
 """
 
 import logging
-from typing import Dict, Any, List, Optional, Tuple
+from typing import Dict, Any, List, Optional
 from datetime import datetime, timedelta
 from app.db.postgres_client import postgres_client
 

@@ -6,14 +6,12 @@ Test webhook registration, delivery, and error handling
 """
 
 import pytest
-from unittest.mock import AsyncMock, patch, MagicMock
+from unittest.mock import AsyncMock, patch
 from datetime import datetime
 
 from app.services.webhook_service import (
     WebhookService,
-    WebhookConfig,
-    WebhookDelivery,
-    webhook_service
+    WebhookDelivery
 )
 
 

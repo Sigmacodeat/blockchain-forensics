@@ -5,7 +5,6 @@ User persistence and relational data
 
 import logging
 import time
-import asyncio
 from typing import Optional, Dict, Any
 from contextlib import asynccontextmanager
 import os

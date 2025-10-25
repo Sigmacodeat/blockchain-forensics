@@ -2,7 +2,6 @@
 Prometheus metrics definitions
 """
 from prometheus_client import Counter, Histogram, Gauge
-import os
 
 # Ensure metrics are only registered once even if this module is imported multiple times
 if not globals().get("_METRICS_INITIALIZED", False):
@@ -577,4 +576,51 @@ if not globals().get("_METRICS_INITIALIZED", False):
     ALERT_BATCHES_PROCESSED = Counter(
         "alert_batches_processed_total",
         "Total number of alert batches processed",
+    )
+
+    # ==========================
+    # WebSocket Connection Metrics
+    # ==========================
+
+    WEBSOCKET_CONNECTIONS_TOTAL = Counter(
+        "websocket_connections_total",
+        "Total number of WebSocket connections established",
+        labelnames=("endpoint", "auth_method"),  # endpoint: alerts|room|trace|general|collab, auth_method: jwt|api_key|none
+    )
+
+    WEBSOCKET_CONNECTIONS_ACTIVE = Gauge(
+        "websocket_connections_active",
+        "Current number of active WebSocket connections",
+        labelnames=("endpoint",),
+    )
+
+    WEBSOCKET_CONNECTION_DURATION = Histogram(
+        "websocket_connection_duration_seconds",
+        "Duration of WebSocket connections",
+        labelnames=("endpoint", "auth_method"),
+        buckets=(1, 5, 10, 30, 60, 300, 600, 1800, 3600),  # 1s to 1h
+    )
+
+    WEBSOCKET_AUTH_FAILURES = Counter(
+        "websocket_auth_failures_total",
+        "Total number of WebSocket authentication failures",
+        labelnames=("endpoint", "reason"),  # reason: invalid_token|plan_insufficient|missing_auth|api_key_invalid
+    )
+
+    WEBSOCKET_MESSAGES_RECEIVED = Counter(
+        "websocket_messages_received_total",
+        "Total number of WebSocket messages received",
+        labelnames=("endpoint", "message_type"),
+    )
+
+    WEBSOCKET_MESSAGES_SENT = Counter(
+        "websocket_messages_sent_total",
+        "Total number of WebSocket messages sent",
+        labelnames=("endpoint", "message_type"),
+    )
+
+    WEBSOCKET_CONNECTION_ERRORS = Counter(
+        "websocket_connection_errors_total",
+        "Total number of WebSocket connection errors",
+        labelnames=("endpoint", "error_type"),  # error_type: timeout|disconnect|protocol_error
     )

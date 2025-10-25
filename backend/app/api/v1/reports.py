@@ -7,15 +7,14 @@ Multi-format forensic report generation and export
 
 import logging
 import zipfile
-from typing import Optional, Dict, Any
-from fastapi import APIRouter, HTTPException, Depends, Response, Query
+from typing import Optional
+from fastapi import APIRouter, HTTPException, Depends, Query
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from io import BytesIO
 from datetime import datetime
 
 from app.auth.dependencies import get_current_user_strict
-from app.services.audit_service import audit_service
 from app.reports.advanced_exporter import advanced_exporter
 from app.reports.pdf_generator import PDFReportGenerator
 from app.services.usage_service import check_and_consume_credits
@@ -188,7 +187,6 @@ async def generate_batch_reports(
     - Complete data export for archival
     - Multi-format distribution
     """
-    import zipfile
     from io import BytesIO
     
     try:

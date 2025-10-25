@@ -5,7 +5,6 @@ Start: via lifespan in app.main
 from __future__ import annotations
 import asyncio
 import logging
-import os
 from typing import Iterable, Tuple
 
 from app.services.kpi_service import kpi_service

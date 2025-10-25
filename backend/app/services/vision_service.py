@@ -4,9 +4,8 @@ Vision API Service for enhanced OCR and entity extraction
 
 import logging
 import os
-import asyncio
 import base64
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any
 import time
 
 logger = logging.getLogger(__name__)
@@ -28,8 +27,6 @@ class VisionAPIService:
         try:
             if self.api_provider == "google":
                 # Google Cloud Vision API
-                from google.cloud import vision
-                from google.oauth2 import service_account
 
                 # For demo, we'll use a simple HTTP client
                 # In production, use proper Google Cloud credentials
@@ -41,7 +38,6 @@ class VisionAPIService:
             elif self.api_provider == "azure":
                 # Azure Computer Vision
                 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
-                from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
                 from msrest.authentication import CognitiveServicesCredentials
 
                 self._client = ComputerVisionClient(

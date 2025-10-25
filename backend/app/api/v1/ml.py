@@ -7,7 +7,7 @@ Endpoints für Model Training, Evaluation und Explainability
 
 import logging
 from typing import Dict, Optional
-from fastapi import APIRouter, HTTPException, BackgroundTasks, UploadFile, File
+from fastapi import APIRouter, HTTPException, BackgroundTasks
 from pydantic import BaseModel, Field
 
 from app.ml.model_trainer import model_trainer

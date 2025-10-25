@@ -8,7 +8,6 @@ from fastapi import Request, HTTPException
 from starlette.middleware.base import BaseHTTPMiddleware
 import redis
 import time
-from typing import Optional
 
 class RateLimitMiddleware(BaseHTTPMiddleware):
     def __init__(self, app, redis_url: str, requests_per_minute: int = 100):

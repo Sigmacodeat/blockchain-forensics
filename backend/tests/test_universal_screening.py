@@ -10,7 +10,6 @@ from datetime import datetime
 from app.services.universal_screening import (
     universal_screening_service,
     UniversalScreeningResult,
-    ChainScreeningResult,
     RiskLevel,
     AttributionSource,
     AttributionEvidence,

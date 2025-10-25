@@ -4,7 +4,7 @@
   "showUnreadBadge": true,
   "showQuickReplies": true,
   "showProactiveMessages": true,
-  "showVoiceInput": true,
+  "showVoiceInput": false,
   "enableCryptoPayments": true,
   "enableIntentDetection": true,
   "enableSentimentAnalysis": true,

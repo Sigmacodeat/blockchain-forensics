@@ -7,9 +7,8 @@ Bietet REST-API für Sprach-Management und Übersetzungen.
 from fastapi import APIRouter, HTTPException, Depends, Request, Response
 from pydantic import BaseModel, Field
 from typing import Dict, List, Optional, Any
-import asyncio
 
-from app.services.i18n_service import translation_manager, i18n_middleware, t, get_current_language
+from app.services.i18n_service import translation_manager, get_current_language
 from app.auth.dependencies import get_current_user
 
 router = APIRouter(prefix="/api/v1/i18n", tags=["i18n"])
@@ -137,7 +136,7 @@ async def add_translation(
         )
 
         return {
-            "message": f"Übersetzung hinzugefügt",
+            "message": "Übersetzung hinzugefügt",
             "language": request.language,
             "key": request.key,
             "value": request.value

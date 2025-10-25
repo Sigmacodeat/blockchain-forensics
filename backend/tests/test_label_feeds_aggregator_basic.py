@@ -1,7 +1,6 @@
 import os
 import json
 from pathlib import Path
-import asyncio
 import pytest
 
 from app.ingest.label_feeds_aggregator import normalize_and_dedupe, fetch_sources, aggregate_label_feeds

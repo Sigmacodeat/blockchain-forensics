@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import logging
 from typing import Any, Dict, List, Optional
-from fastapi import APIRouter, HTTPException, Body, Depends
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 
 from app.services.alert_policy_service import alert_policy_service

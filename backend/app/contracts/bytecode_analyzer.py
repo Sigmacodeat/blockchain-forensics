@@ -8,8 +8,7 @@ Implementiert ML-basierte Bytecode-Analyse ähnlich wie Chainalysis/AnChain:
 - Malicious Pattern Recognition
 """
 
-import re
-from typing import Dict, List, Optional, Tuple, Set
+from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
 from collections import Counter
 import hashlib

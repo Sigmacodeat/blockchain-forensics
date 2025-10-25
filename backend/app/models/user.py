@@ -7,19 +7,18 @@ Includes:
 - SQLAlchemy ORM model for persistent storage (users table)
 """
 
-from datetime import datetime, timedelta
+from datetime import datetime
 from enum import Enum
-from pydantic import BaseModel, Field, EmailStr, field_validator, ConfigDict
-from typing import Optional, Dict, Any, List, Tuple
+from pydantic import BaseModel, Field, EmailStr, ConfigDict
+from typing import Optional, Dict, List, Tuple
 import hashlib
 
 # SQLAlchemy ORM imports for persistent storage
-from sqlalchemy import Column, String, DateTime, Boolean, JSON, Enum as SAEnum, ForeignKey, Text
+from sqlalchemy import Column, String, DateTime, Boolean, JSON, ForeignKey, Text
 from sqlalchemy.dialects.postgresql import UUID as PGUUID
 from sqlalchemy import String as SAString
 import os
 from sqlalchemy.orm import declarative_base
-import uuid as uuid_lib
 
 # Shared SQLAlchemy Base for this module
 Base = declarative_base()

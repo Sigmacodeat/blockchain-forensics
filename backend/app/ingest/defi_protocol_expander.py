@@ -22,7 +22,6 @@ Target: 500+ protocols with contract addresses across 10+ chains
 
 from __future__ import annotations
 import asyncio
-import json
 import logging
 from typing import Dict, List, Any, Optional
 from dataclasses import dataclass

@@ -1,4 +1,3 @@
-import asyncio
 import pytest
 
 from app.analytics.exposure_service import exposure_service

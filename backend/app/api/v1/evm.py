@@ -1,7 +1,7 @@
 """
 EVM Decoder API
 """
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 from fastapi import APIRouter, Body, HTTPException
 from pydantic import BaseModel, Field
 import time

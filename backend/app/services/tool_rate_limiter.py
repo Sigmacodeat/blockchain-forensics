@@ -7,8 +7,7 @@ Rate limits for AI tool calls based on user plan.
 
 import logging
 import time
-from typing import Dict, Optional, Tuple
-from datetime import datetime
+from typing import Dict, Tuple
 
 logger = logging.getLogger(__name__)
 

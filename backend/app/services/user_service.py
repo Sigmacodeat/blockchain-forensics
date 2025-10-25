@@ -4,7 +4,6 @@ Handles user management, plan updates, and authentication
 """
 from datetime import datetime
 from typing import Optional, Dict
-from fastapi import HTTPException
 
 from app.models.user import User, SubscriptionPlan, SubscriptionStatus
 

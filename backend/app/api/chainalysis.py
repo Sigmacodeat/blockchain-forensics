@@ -4,10 +4,9 @@ Chainalysis API Endpunkte für Blockchain-Forensik
 Bietet REST-API für Chainalysis-Integration und Compliance-Prüfungen.
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
-from typing import Dict, List, Optional, Any
-import asyncio
+from typing import Dict, List, Any
 
 from app.services.chainalysis_integration import chainalysis_manager
 from app.auth.dependencies import get_current_user

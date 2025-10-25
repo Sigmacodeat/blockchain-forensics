@@ -2,7 +2,7 @@
 Tests für Graph Analytics Module
 """
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, patch
 from app.analytics.graph_analytics_service import GraphAnalyticsService
 from app.analytics.pattern_detector import PatternDetector
 from app.analytics.network_stats import NetworkStats

@@ -452,6 +452,7 @@ class NewsCaseService:
                 await asyncio.sleep(interval)
             except asyncio.CancelledError:
                 break
+            except Exception as e:
                 logger.warning("watch loop error for %s: %s", slug, e)
                 await asyncio.sleep(interval)
 
@@ -476,14 +477,15 @@ class NewsCaseService:
             if backlog_count and backlog_count > 0:
                 bl = self._backlog.get(slug)
                 if bl:
-                    for evt in list(bl)[-int(backlog_count):]:
+                    n = min(backlog_count, len(bl))
                     for evt in list(bl)[-n:]:
                         try:
                             await q.put(evt)
-                        except Exception:
+                        except Exception as e:
+                            logger.debug("backlog replay failed for %s: %s", slug, e)
                             break
-        except Exception:
-            pass
+        except Exception as e:
+            logger.debug("backlog replay failed for %s: %s", slug, e)
         return q
 
 

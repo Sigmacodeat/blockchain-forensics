@@ -5,9 +5,9 @@ VASP & Travel Rule API
 API endpoints for VASP directory and Travel Rule compliance.
 """
 
-from fastapi import APIRouter, Body, HTTPException, Query, Depends
+from fastapi import APIRouter, HTTPException, Query, Depends
 from pydantic import BaseModel, Field
-from typing import Optional, List, Dict, Any
+from typing import Optional, List
 from datetime import datetime
 
 from app.models.vasp import (
@@ -19,12 +19,10 @@ from app.models.vasp import (
     TravelRuleProtocol,
     TravelRuleMessage,
     TravelRuleStatus,
-    TravelRuleTransactionType,
     OriginatorInfo,
     BeneficiaryInfo,
     VASPScreeningResult,
     VASPQuery,
-    TravelRuleQuery,
     VASPStatistics,
 )
 from app.services.vasp_directory import VASPDirectory

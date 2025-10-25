@@ -8,7 +8,7 @@ from fastapi import APIRouter, Depends, Query, HTTPException
 from sqlalchemy.orm import Session
 from sqlalchemy import func, and_, desc
 from datetime import datetime, timedelta
-from typing import List, Dict, Any, Optional
+from typing import Dict, Any, Optional
 
 from app.db.session import get_db
 from app.auth.dependencies import require_admin

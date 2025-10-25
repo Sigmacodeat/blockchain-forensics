@@ -9,12 +9,11 @@ Two-Tier Demo System:
 """
 
 from fastapi import APIRouter, HTTPException, Request, Depends
-from fastapi.responses import JSONResponse
 from typing import Dict, Any
 import logging
 
 from app.services.demo_service import demo_service
-from app.auth.dependencies import get_current_user_optional, require_admin
+from app.auth.dependencies import require_admin
 
 logger = logging.getLogger(__name__)
 

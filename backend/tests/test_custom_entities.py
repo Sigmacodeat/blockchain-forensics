@@ -4,8 +4,7 @@ Tests für Custom Entities Service
 """
 
 import pytest
-from unittest.mock import Mock, patch, AsyncMock
-from datetime import datetime
+from unittest.mock import patch, AsyncMock
 
 from app.services.custom_entities import (
     custom_entities_service,

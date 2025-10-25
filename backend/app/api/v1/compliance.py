@@ -7,7 +7,6 @@ from app.services.compliance_service import service
 from app.observability.metrics import COMPLIANCE_REQUESTS, COMPLIANCE_LATENCY
 from app.config import settings
 from app.compliance.screening_engine import screening_engine
-from app.compliance.sanctions_updater import sanctions_updater
 from app.models.audit_log import log_audit_event, AuditAction
 from app.compliance.sources.sanctions_indexer import sanctions_indexer
 from app.compliance.travel_rule.adapters import travel_rule_manager, TravelRulePayload, TravelRuleResponse
@@ -15,7 +14,7 @@ from app.compliance.travel_rule.service import travel_rule_service
 from app.compliance.vasp.service import vasp_service
 from app.compliance.vasp_risk import vasp_risk_registry
 from app.repos import vasp_risk_repo
-from app.compliance.vasp.models import VaspType, VaspRiskLevel, ComplianceStatus
+from app.compliance.vasp.models import VaspType
 from app.auth.models import UserRole
 from app.auth.dependencies import require_roles_if
 from app.intel.exchange_liaison import (

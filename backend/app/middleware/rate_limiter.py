@@ -5,10 +5,9 @@ Redis-backed, Cluster-Ready
 
 import time
 from typing import Dict, Optional, Callable
-from fastapi import Request, HTTPException
+from fastapi import Request
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
-import hashlib
 
 # Redis Client (falls verfügbar)
 try:

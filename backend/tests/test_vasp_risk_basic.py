@@ -34,7 +34,7 @@ def test_vasp_risk_history(client: TestClient):
     # Ensure at least one record exists
     client.post(f"/api/v1/compliance/vasp/{vasp_id}/risk/score")
 
-    r = client.get(f"/api/v1/compliance/vasp/risk/history", params={"vasp_id": vasp_id, "limit": 10})
+    r = client.get("/api/v1/compliance/vasp/risk/history", params={"vasp_id": vasp_id, "limit": 10})
     assert r.status_code == 200
     data = r.json()
     assert isinstance(data.get("items"), list)

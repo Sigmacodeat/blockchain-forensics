@@ -7,9 +7,11 @@ from __future__ import annotations
 
 import logging
 from typing import List, Optional, Dict, Any
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import Response
-import json, hashlib
+import json
+import hashlib
+import time
 from pydantic import BaseModel, Field
 
 from app.services.news_case_service import news_case_service
@@ -38,8 +40,42 @@ class UpdateNewsCaseRequest(BaseModel):
     auto_trace: Optional[bool] = Field(default=None, description="Auto-Trace schalten")
 
 
+_RATE_LIMIT_BUCKET: Dict[str, list[float]] = {}
+_RATE_LIMIT_MAX = 10
+_RATE_LIMIT_WINDOW = 60.0
+
+
+def _rate_limit_key(request: Request) -> str:
+    client = request.client.host if request.client else "anonymous"
+    return f"news_cases:create:{client}"
+
+
+def _check_rate_limit(key: str, limit: int, window_seconds: float) -> tuple[bool, int, float]:
+    now = time.time()
+    bucket = _RATE_LIMIT_BUCKET.get(key, [])
+    bucket = [ts for ts in bucket if ts > now - window_seconds]
+    bucket.append(now)
+    _RATE_LIMIT_BUCKET[key] = bucket
+    count = len(bucket)
+    allowed = count <= limit
+    retry_after = max(0.0, window_seconds - (now - bucket[0])) if bucket else window_seconds
+    return allowed, count, retry_after
+
+
 @router.post("", status_code=201)
-async def create_news_case(payload: CreateNewsCaseRequest) -> Dict[str, Any]:
+async def create_news_case(request: Request, payload: CreateNewsCaseRequest) -> Dict[str, Any]:
+    key = _rate_limit_key(request)
+    allowed, count, retry_after = _check_rate_limit(key, _RATE_LIMIT_MAX, _RATE_LIMIT_WINDOW)
+    if not allowed:
+        raise HTTPException(
+            status_code=429,
+            detail="Too many requests",
+            headers={
+                "Retry-After": f"{int(retry_after)}",
+                "X-RateLimit-Limit": str(_RATE_LIMIT_MAX),
+                "X-RateLimit-Remaining": "0",
+            },
+        )
     try:
         case = await news_case_service.create(
             slug=payload.slug.strip().lower(),

@@ -5,9 +5,9 @@ PostgreSQL-basiert mit vollständiger Tenant-Isolation
 from datetime import datetime
 from enum import Enum
 from pydantic import BaseModel, Field
-from typing import Optional, List
-from sqlalchemy import Column, String, DateTime, Boolean, Integer, ForeignKey, Enum as SAEnum
-from sqlalchemy.orm import relationship, declarative_base
+from typing import Optional
+from sqlalchemy import Column, String, DateTime, Integer, ForeignKey, Enum as SAEnum
+from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
 

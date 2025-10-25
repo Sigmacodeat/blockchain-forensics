@@ -1,7 +1,6 @@
 """
 Tests for Risk Streaming SSE Endpoint
 """
-import pytest
 from fastapi.testclient import TestClient
 from app.main import app
 import json

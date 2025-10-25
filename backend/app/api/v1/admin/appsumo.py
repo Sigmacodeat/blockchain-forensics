@@ -6,11 +6,10 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List, Optional
 from pydantic import BaseModel
-from datetime import datetime
 
 from app.db.session import get_db
 from app.services.appsumo_service import AppSumoService
-from app.api.v1.auth import get_current_user, require_admin
+from app.api.v1.auth import require_admin
 
 router = APIRouter(prefix="/appsumo", tags=["AppSumo Admin"])
 

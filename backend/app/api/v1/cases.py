@@ -5,13 +5,12 @@ Endpoints for investigation cases and evidence management
 
 import logging
 from typing import Dict, List, Optional, Any
-from fastapi import APIRouter, HTTPException, Query, Body, Path, Depends
+from fastapi import APIRouter, HTTPException, Query, Body, Depends
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 import os
 from datetime import datetime
 
-import os
 try:
     from app.services.case_service import case_service
 except Exception:
@@ -30,8 +29,8 @@ except ImportError:
     CaseDecision = None  # type: ignore
 
 from app.models.case import CaseStatus, CasePriority
-from app.auth.dependencies import get_current_user_strict, get_current_user, require_plan
-from app.utils.auth_helpers import require_org_ownership, is_resource_accessible
+from app.auth.dependencies import get_current_user_strict, require_plan
+from app.utils.auth_helpers import is_resource_accessible
 
 logger = logging.getLogger(__name__)
 

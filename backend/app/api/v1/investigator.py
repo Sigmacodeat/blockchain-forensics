@@ -7,7 +7,6 @@ import logging
 from typing import Dict, List, Optional, Any
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field
-import asyncio
 
 from app.db.neo4j_client import neo4j_client
 from app.services.alert_service import alert_service

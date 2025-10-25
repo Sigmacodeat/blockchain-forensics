@@ -1,6 +1,5 @@
 from typing import Optional, Dict, Any  # ensure types available for top-level helper
 
-from typing import Optional, Dict, Any
 
 def resolve_counterpart_chain(receipt: Optional[Dict[str, Any]], to_addr: Optional[str], chain: Optional[str] = None) -> str:
     """Resolve destination chain for a bridge tx using registry and log topic hints.

@@ -7,9 +7,8 @@ Implementiert Cross-Chain-Swaps und Bridge-Funktionen für Multi-Chain-Wallets.
 import asyncio
 import logging
 import time
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Any, Optional
 from datetime import datetime, timedelta
-from decimal import Decimal
 
 # Cross-Chain-Bibliotheken (optional)
 try:
@@ -22,7 +21,6 @@ except ImportError:
     _CROSS_CHAIN_AVAILABLE = False
     logging.warning("Cross-Chain-Bibliotheken nicht verfügbar - Features werden deaktiviert")
 
-from app.services.wallet_service import wallet_service
 from app.services.cache_service import cache_service
 
 logger = logging.getLogger(__name__)

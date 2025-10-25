@@ -3,9 +3,8 @@
 import logging
 from typing import Dict, List, Set, Optional, Tuple
 from decimal import Decimal
-from collections import deque, defaultdict
+from collections import deque
 from datetime import datetime
-import asyncio
 import uuid
 
 from app.tracing.models import (
@@ -34,7 +33,7 @@ except Exception:
             return []
     neo4j_client = _DummyNeo4j()  # type: ignore
 
-from app.observability.metrics import TRACE_REQUESTS, TRACE_LATENCY, TRACE_EDGES_CREATED, BRIDGE_EVENTS
+from app.observability.metrics import TRACE_EDGES_CREATED, BRIDGE_EVENTS
 
 logger = logging.getLogger(__name__)
 

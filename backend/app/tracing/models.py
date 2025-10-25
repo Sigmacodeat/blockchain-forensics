@@ -1,6 +1,6 @@
 """Tracing Data Models"""
 
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional
 from pydantic import BaseModel, Field
 from decimal import Decimal
 from enum import Enum

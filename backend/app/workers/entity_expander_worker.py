@@ -14,7 +14,7 @@ Schedule:
 from __future__ import annotations
 import asyncio
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from app.ingest.entity_database_expander import run_expansion
 

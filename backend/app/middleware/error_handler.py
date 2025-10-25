@@ -2,7 +2,6 @@
 Structured error handling middleware
 Produces consistent JSON error objects across the API
 """
-from typing import Optional
 from fastapi import Request
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError

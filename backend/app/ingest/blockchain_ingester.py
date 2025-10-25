@@ -5,12 +5,9 @@ Fetches real blockchain data and stores in TimescaleDB
 
 import logging
 import asyncio
-from typing import Optional
-from datetime import datetime
 
 from app.adapters.web3_client import web3_client
 from app.db.postgres_client import postgres_client
-from app.config import settings
 
 logger = logging.getLogger(__name__)
 

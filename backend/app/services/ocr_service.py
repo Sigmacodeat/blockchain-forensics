@@ -4,8 +4,7 @@ OCR Service for extracting text from images and PDFs
 
 import logging
 import os
-import asyncio
-from typing import Optional, Dict, Any
+from typing import Dict, Any
 import time
 
 logger = logging.getLogger(__name__)

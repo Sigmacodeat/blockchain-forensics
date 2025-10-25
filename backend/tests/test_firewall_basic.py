@@ -10,8 +10,7 @@ from datetime import datetime
 from app.services.ai_firewall_core import (
     ai_firewall,
     Transaction,
-    ThreatLevel,
-    ActionType
+    ThreatLevel
 )
 
 

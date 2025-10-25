@@ -1,5 +1,4 @@
 import pytest
-import asyncio
 
 from backend.app.ai_agents.tools import (
     intelligence_stats_tool,

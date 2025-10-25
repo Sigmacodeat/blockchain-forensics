@@ -6,7 +6,7 @@ Endpoints für Audit-Trails, digitale Signaturen und Compliance-Management
 import logging
 from typing import Dict, List, Optional, Any
 from fastapi import APIRouter, HTTPException, Query, Body
-from datetime import datetime, timedelta
+from datetime import datetime
 from pydantic import BaseModel
 
 from app.security.security_enhancements import (

@@ -9,8 +9,6 @@ JSON-RPC based UTXO tracing with heuristics:
 from typing import Dict, Any, List, Optional, AsyncGenerator
 from datetime import datetime
 from decimal import Decimal
-import hashlib
-import json
 from app.utils.jsonrpc import json_rpc
 from app.config import settings
 from app.schemas import CanonicalEvent

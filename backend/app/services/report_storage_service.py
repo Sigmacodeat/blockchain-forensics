@@ -1,8 +1,6 @@
 """Report Storage Service - S3-based persistent storage"""
 
 import logging
-import hashlib
-from typing import Optional, Dict
 from datetime import datetime, timedelta
 import os
 import base64

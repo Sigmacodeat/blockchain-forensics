@@ -3,7 +3,6 @@ NOWPayments Webhook Handler
 Processes Instant Payment Notifications (IPN) from NOWPayments
 """
 import logging
-from datetime import datetime
 from fastapi import APIRouter, Request, HTTPException
 from typing import Dict, Any
 

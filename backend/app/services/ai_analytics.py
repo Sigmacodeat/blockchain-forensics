@@ -4,10 +4,10 @@ Auto-Optimization & Predictive Insights
 """
 
 import logging
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List
 from datetime import datetime, timedelta
 from sqlalchemy.orm import Session
-from sqlalchemy import func, and_, desc
+from sqlalchemy import and_
 
 logger = logging.getLogger(__name__)
 

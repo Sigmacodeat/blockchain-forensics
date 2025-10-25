@@ -84,7 +84,6 @@ class LinkTracker:
             )
         """
         from app.models.link_tracking import TrackedLink
-        from app.db.session import get_db
         
         # Generate Tracking-ID
         tracking_id = f"trk_{hashlib.md5(f'{source_platform}{source_username}{datetime.utcnow()}'.encode()).hexdigest()[:12]}"

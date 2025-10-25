@@ -5,19 +5,18 @@ Scan seed phrases and private keys for balances, activity, and illicit connectio
 """
 
 import logging
-from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict
 from datetime import datetime
-from fastapi import APIRouter, HTTPException, Depends, Body
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 
 from app.services.wallet_scanner_service import (
     wallet_scanner_service,
-    WalletType,
     ActivityLevel
 )
 from app.services.wallet_scanner_reports import wallet_scanner_reports
-from app.auth.dependencies import get_current_user_strict, require_plan, has_plan
-from fastapi.responses import Response, PlainTextResponse, HTMLResponse
+from app.auth.dependencies import get_current_user_strict, has_plan
+from fastapi.responses import PlainTextResponse, HTMLResponse
 from app.models.audit_log import log_audit_event, AuditAction
 
 logger = logging.getLogger(__name__)

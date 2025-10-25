@@ -3,9 +3,7 @@
 import pytest
 import json
 from pathlib import Path
-from unittest.mock import AsyncMock, MagicMock, patch
-from decimal import Decimal
-from datetime import datetime
+from unittest.mock import AsyncMock, patch
 
 from app.adapters import (
     PolygonAdapter,

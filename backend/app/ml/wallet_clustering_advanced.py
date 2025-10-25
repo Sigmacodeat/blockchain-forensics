@@ -23,10 +23,10 @@ Achieves: 94%+ accuracy (comparable to Chainalysis' 96%)
 
 from __future__ import annotations
 import logging
-from typing import Dict, List, Set, Optional, Tuple, Any
+from typing import Dict, List, Set, Optional, Any
 from dataclasses import dataclass, field
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 

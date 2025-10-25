@@ -16,10 +16,8 @@ Machine Learning für Wallet-Verhaltensmuster
 
 import logging
 import numpy as np
-from typing import Dict, List, Optional, Tuple
-from datetime import datetime, timedelta
-from collections import Counter, defaultdict
-import pickle
+from typing import Dict, List, Tuple
+from collections import Counter
 
 try:
     import xgboost as xgb

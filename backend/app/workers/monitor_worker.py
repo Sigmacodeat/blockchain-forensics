@@ -6,7 +6,7 @@ from __future__ import annotations
 import asyncio
 import logging
 import signal
-from typing import Optional, Dict, Any
+from typing import Dict, Any
 from collections import deque
 from datetime import datetime
 

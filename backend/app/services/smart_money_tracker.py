@@ -14,10 +14,10 @@ Identifiziert profitables Trading-Verhalten und ermöglicht Copy-Trading-Signals
 """
 
 import logging
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Any
 from datetime import datetime, timedelta
-from collections import defaultdict, Counter
-from dataclasses import dataclass, field
+from collections import defaultdict
+from dataclasses import dataclass
 import numpy as np
 
 logger = logging.getLogger(__name__)

@@ -1,6 +1,6 @@
 """Tests für neue Chain-Adapter (Fantom, Celo, Moonbeam, Aurora, Starknet, Cardano, NEAR, Sui, Aptos)"""
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, patch
 
 
 @pytest.mark.asyncio

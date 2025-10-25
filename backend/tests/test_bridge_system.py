@@ -7,7 +7,7 @@ All tests use mocks - no live blockchain or database connections
 import pytest
 from datetime import datetime
 from decimal import Decimal
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock
 
 from app.bridge.registry import BridgeRegistry, BridgeContract
 from app.bridge.detection import BridgeDetectionService

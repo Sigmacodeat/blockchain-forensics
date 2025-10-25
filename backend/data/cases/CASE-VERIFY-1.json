@@ -5,12 +5,12 @@
     "description": "desc",
     "lead_investigator": "bob",
     "status": "active",
-    "created_at": "2025-10-25T08:25:40.673722"
+    "created_at": "2025-10-25T09:02:11.246792"
   },
   "entities": [],
   "evidence": [],
   "format": "json",
-  "prev_checksum_sha256": "70adda83dd249870211f18f54480c36ca0f26f6288020371aa51848127568a00",
-  "checksum_sha256": "11199ad3a1ee0204ba2cbcb2cb55bebea400c3dd5f559f751bd994ae93f459ca",
-  "signature_hmac_sha256": "5c56cb238b424270645e24fd2f252c4b40bc2b7c5f3ce9251782abde2763548c"
+  "prev_checksum_sha256": "01b8fd0ea27eee933d15b3faa58c3c038f28dcd148ab8190815f3c54daf5f3d9",
+  "checksum_sha256": "7a68a9063380adecb9f6f792234bf17361313fe8a015f2fb865119517a9e847f",
+  "signature_hmac_sha256": "ea3ffab58e38a2477ad3f3fed146c6c92bb16d4f68ef896719f9477a3544c89a"
 }

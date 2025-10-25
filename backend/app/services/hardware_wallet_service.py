@@ -4,9 +4,8 @@ Hardware Wallet Integration für Blockchain-Forensik-Plattform
 Unterstützt Ledger und Trezor für sichere Schlüsselverwaltung.
 """
 
-import asyncio
 import logging
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Any
 from enum import Enum
 import json
 
@@ -20,7 +19,6 @@ except ImportError:
     _HARDWARE_WALLETS_AVAILABLE = False
     logging.warning("Hardware Wallet Libraries nicht verfügbar")
 
-from app.services.wallet_service import wallet_service
 
 logger = logging.getLogger(__name__)
 

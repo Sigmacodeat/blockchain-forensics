@@ -8,8 +8,7 @@ Testet das Zusammenspiel von:
 - Message Flow
 """
 import pytest
-import asyncio
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, patch
 
 
 class TestWorkerIntegration:

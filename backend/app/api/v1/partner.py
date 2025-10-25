@@ -8,7 +8,7 @@ Partner / Affiliate API
 from __future__ import annotations
 
 import logging
-from typing import Optional, Dict, Any, List
+from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import StreamingResponse
 
@@ -22,7 +22,8 @@ from app.db.session import get_db
 from sqlalchemy.orm import Session
 from app.services.notification_service_premium import PremiumNotificationService
 from app.models.user import UserORM
-import io, csv
+import io
+import csv
 
 logger = logging.getLogger(__name__)
 

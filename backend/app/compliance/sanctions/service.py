@@ -1,6 +1,5 @@
 from typing import Optional, List, Dict, Any, Tuple
 from datetime import datetime
-from typing import cast
 import inspect
 
 class SanctionsService:

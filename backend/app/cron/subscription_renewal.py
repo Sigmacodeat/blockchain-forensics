@@ -4,12 +4,12 @@ Runs daily to check expiring subscriptions and process renewals
 """
 import logging
 import asyncio
-from datetime import datetime, timedelta
-from typing import List, Dict, Any
+from datetime import datetime
+from typing import List
 
 from app.services.subscription_service import subscription_service
 from app.services.notification_service import notification_service
-from app.models.user import User, SubscriptionStatus
+from app.models.user import User
 
 logger = logging.getLogger(__name__)
 

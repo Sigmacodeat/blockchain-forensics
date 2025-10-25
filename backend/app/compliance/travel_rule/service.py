@@ -305,7 +305,6 @@ class TravelRuleService:
         out: List[Dict[str, Any]] = []
         try:
             if self._redis_client:
-                import asyncio
                 # Use async Redis client
                 async def _load() -> List[Dict[str, Any]]:
                     items: List[Dict[str, Any]] = []

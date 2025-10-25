@@ -14,7 +14,6 @@ from typing import Dict, List, Optional
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field
 
-from app.bridge.bridge_detector import bridge_detector
 from app.bridge.registry import bridge_registry, BridgeContract
 from app.bridge.detection import bridge_detection_service
 from app.schemas.canonical_event import CanonicalEvent

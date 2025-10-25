@@ -6,7 +6,7 @@ Implementiert effiziente Pagination für Transaktionslisten und andere Daten.
 
 import asyncio
 import logging
-from typing import Dict, List, Any, Optional, Tuple, Generic, TypeVar
+from typing import Dict, List, Any, Optional, Generic, TypeVar
 from dataclasses import dataclass
 from math import ceil
 

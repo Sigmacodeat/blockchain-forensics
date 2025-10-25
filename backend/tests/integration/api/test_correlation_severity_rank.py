@@ -1,6 +1,5 @@
-import pytest
 from app.services.alert_engine import AlertCorrelationEngine, Alert, AlertType, AlertSeverity
-from datetime import datetime, timedelta
+from datetime import datetime
 
 
 def make_alert(alert_type: AlertType, severity: AlertSeverity) -> Alert:

@@ -12,10 +12,9 @@ Predictive Analytics und Machine Learning für:
 import numpy as np
 import pandas as pd
 import logging
-from typing import Dict, List, Optional, Tuple, Any
-from datetime import datetime, timedelta
+from typing import Dict, List, Any
+from datetime import datetime
 from dataclasses import dataclass
-import json
 
 logger = logging.getLogger(__name__)
 

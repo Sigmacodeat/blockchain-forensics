@@ -5,11 +5,11 @@
     "description": "desc",
     "lead_investigator": "alice",
     "status": "active",
-    "created_at": "2025-10-25T08:25:40.573751"
+    "created_at": "2025-10-25T09:02:11.100943"
   },
   "entities": [],
   "evidence": [],
   "format": "json",
-  "prev_checksum_sha256": "36c8c83052e616616d3139788500a0802782f1d27a95f6935cd4526be9935897",
-  "checksum_sha256": "7551ad1aa95513986afe647d0f93274269cb5bd8bd39b5fa16015a3d870060ee"
+  "prev_checksum_sha256": "6297242476b1a2ce154d59b4cdeaff56f6d243311d0d9625c4b48df3a338cdb3",
+  "checksum_sha256": "bd12e571beb8ab2efcf54856a2de5a8483e257cd072d7540e7a56ac3d6ae1566"
 }

@@ -1,5 +1,4 @@
 import pytest
-import asyncio
 from decimal import Decimal
 from unittest.mock import AsyncMock, MagicMock
 

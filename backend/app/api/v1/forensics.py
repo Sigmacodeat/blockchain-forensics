@@ -37,7 +37,7 @@ from app.services.forensic_visualizer import forensic_visualizer
 from app.analytics.taint_tracer import trace_forward
 from app.analytics.wallet_clustering import suggest_clusters
 from app.cases.service import case_service
-from app.cases.models import Case as CaseModel, Entity as CaseEntity, EvidenceLink as CaseEvidenceLink
+from app.cases.models import Entity as CaseEntity, EvidenceLink as CaseEvidenceLink
 
 logger = logging.getLogger(__name__)
 
@@ -962,7 +962,8 @@ async def get_bridge_transfers(
         transfers = await multi_chain_engine.get_cross_chain_transfers(st, et)
 
         # Record-Hashes für Provenance ergänzen
-        import hashlib, json
+        import hashlib
+        import json
         enriched = []
         for t in transfers:
             try:

@@ -4,11 +4,10 @@ Caching-System für Blockchain-Forensik-Anwendung
 Implementiert Redis-Caching für häufige Abfragen und Daten.
 """
 
-import asyncio
 import json
 import logging
-from typing import Dict, List, Any, Optional, Union
-from datetime import datetime, timedelta
+from typing import Dict, List, Any, Optional
+from datetime import datetime
 import hashlib
 
 # Redis-Caching (optional)

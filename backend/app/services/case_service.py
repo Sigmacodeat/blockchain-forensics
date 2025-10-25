@@ -8,11 +8,9 @@ Handles case creation, updates, notes, attachments, and timeline events.
 
 import logging
 import uuid
-import hashlib
 from typing import Dict, Any, Optional, List
 from datetime import datetime
 from sqlalchemy.orm import Session
-from sqlalchemy.exc import IntegrityError
 
 from app.models.case import (
     Case,
@@ -20,8 +18,7 @@ from app.models.case import (
     CaseAttachment,
     CaseEvent,
     CaseStatus,
-    CasePriority,
-    Base
+    CasePriority
 )
 from app.db.session import SessionLocal
 from app.messaging.kafka_client import KafkaTopics

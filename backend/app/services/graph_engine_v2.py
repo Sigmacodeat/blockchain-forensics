@@ -13,11 +13,10 @@ Features:
 from __future__ import annotations
 import asyncio
 import logging
-from typing import Any, Dict, List, Optional, Set, Callable
+from typing import Any, Dict, List, Optional, Set
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import datetime
 import heapq
-import functools
 from collections import deque
 
 try:

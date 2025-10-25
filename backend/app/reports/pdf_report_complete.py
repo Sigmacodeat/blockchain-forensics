@@ -6,7 +6,7 @@ Install: pip install reportlab
 """
 
 import logging
-from typing import Dict, List, Optional, Tuple, Any
+from typing import Dict, Optional, Tuple, Any
 from datetime import datetime
 from io import BytesIO
 import hashlib

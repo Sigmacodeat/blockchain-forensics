@@ -6,7 +6,7 @@ gegenüber Hochrisiko-/Sanktions-Entitäten.
 """
 from __future__ import annotations
 
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
 from fastapi import APIRouter, HTTPException, Query, Body, Depends
 
 from app.analytics.exposure_service import exposure_service

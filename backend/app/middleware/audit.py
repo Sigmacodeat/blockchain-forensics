@@ -7,8 +7,7 @@ Automatically logs API access and security events for compliance.
 
 import time
 import logging
-from typing import Optional
-from fastapi import Request, Response
+from fastapi import Request
 from starlette.middleware.base import BaseHTTPMiddleware
 from app.audit.logger import log_api_access, log_security_event, AuditSeverity
 from app.auth.jwt import decode_token

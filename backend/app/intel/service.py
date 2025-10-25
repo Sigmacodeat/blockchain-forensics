@@ -12,9 +12,8 @@ Comprehensive threat intelligence service integrating:
 Inspired by Chainalysis, TRM Labs, Elliptic intelligence capabilities.
 """
 from __future__ import annotations
-import asyncio
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Dict, Any, List, Optional
 from collections import defaultdict
 

@@ -20,8 +20,8 @@ import json
 import csv
 import hashlib
 from datetime import datetime
-from typing import Dict, Any, Optional, List
-from io import BytesIO, StringIO
+from typing import Dict, Any, List
+from io import StringIO
 
 logger = logging.getLogger(__name__)
 

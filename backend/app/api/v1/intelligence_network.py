@@ -6,15 +6,14 @@ TRM Beacon-style intelligence sharing network for coordinated threat response.
 
 import logging
 from typing import List, Optional
-from fastapi import APIRouter, HTTPException, Depends, Query, Body
+from fastapi import APIRouter, HTTPException, Depends, Query
 from pydantic import BaseModel, Field
 
 from app.services.intelligence_sharing_service import (
     intelligence_sharing_service,
     FlagReason,
     InvestigatorTier,
-    FlagStatus,
-    AlertAction
+    FlagStatus
 )
 from app.auth.dependencies import get_current_user_strict, require_plan
 from app.models.audit_log import log_audit_event, AuditAction

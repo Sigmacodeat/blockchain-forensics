@@ -2,7 +2,6 @@
 from __future__ import annotations
 import logging
 from typing import Optional, Dict, Any, List
-from app.adapters.base import IChainAdapter
 from app.services.multi_chain import ChainInfo, BaseChainAdapter
 
 logger = logging.getLogger(__name__)

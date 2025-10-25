@@ -7,8 +7,6 @@ Testet JWT-Authentication, RBAC und Session Management.
 import pytest
 from fastapi.testclient import TestClient
 from app.main import app
-import jwt
-import time
 
 client = TestClient(app)
 

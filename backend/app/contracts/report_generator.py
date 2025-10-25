@@ -4,10 +4,9 @@ Contract Analysis Report Generator
 Generates professional audit reports in PDF and JSON formats.
 """
 
-from typing import Dict, Optional
+from typing import Dict
 import json
 from datetime import datetime
-from io import BytesIO
 
 
 class ReportGenerator:
@@ -112,7 +111,7 @@ class ReportGenerator:
                     f"### {i}. {finding.get('kind', 'Unknown')}",
                     "",
                     f"**Severity:** {finding.get('severity', 'unknown').upper()}  ",
-                    f"**Evidence:**",
+                    "**Evidence:**",
                     "",
                     f"> {finding.get('evidence', 'No details available')}",
                     "",

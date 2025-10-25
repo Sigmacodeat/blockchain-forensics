@@ -5,8 +5,7 @@ Redis-based caching for functions
 
 import logging
 import functools
-import json
-from typing import Callable, Any, Optional
+from typing import Callable, Any
 import hashlib
 
 logger = logging.getLogger(__name__)

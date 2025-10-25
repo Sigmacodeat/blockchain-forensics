@@ -4,10 +4,9 @@ DeFi API Endpunkte für Blockchain-Forensik-Anwendung
 Bietet REST-API für DeFi-Operationen und Analytics.
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
-from typing import Dict, List, Optional, Any
-import asyncio
+from typing import Dict, List, Any
 
 from app.services.defi_service import defi_service, defi_analytics
 from app.intel.defi.registry import get_all_protocols, get_labels_seed

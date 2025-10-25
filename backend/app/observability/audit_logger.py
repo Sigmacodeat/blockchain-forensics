@@ -318,7 +318,7 @@ def configure_audit_logger():
         file_handler = logging.FileHandler(f"{log_dir}/audit.log")
         file_handler.setFormatter(JSONFormatter())
         audit_logger.addHandler(file_handler)
-    except Exception as e:
+    except Exception:
         # Fallback zu Console
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(JSONFormatter())

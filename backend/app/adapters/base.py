@@ -1,7 +1,7 @@
 """Base Chain Adapter Interface"""
 
 from abc import ABC, abstractmethod
-from typing import Optional, List, AsyncGenerator
+from typing import Optional, AsyncGenerator
 from app.schemas import CanonicalEvent
 
 

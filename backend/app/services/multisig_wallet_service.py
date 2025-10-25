@@ -4,9 +4,8 @@ Multi-Signature Wallet Service
 Implementiert Multi-Sig Wallets für erweiterte Sicherheit und Compliance.
 """
 
-import asyncio
 import logging
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Any, Optional
 from datetime import datetime, timedelta
 import json
 from pathlib import Path
@@ -22,7 +21,6 @@ except ImportError:
     _CRYPTO_AVAILABLE = False
     logging.warning("ECDSA nicht verfügbar - Multi-Sig Features werden deaktiviert")
 
-from app.services.wallet_service import wallet_service
 
 logger = logging.getLogger(__name__)
 

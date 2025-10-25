@@ -41,7 +41,6 @@ def try_register_avro_schema(topic: str, schema_dict: dict) -> bool:
         return True
     except Exception:
         return False
-import asyncio
 import logging
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 

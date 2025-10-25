@@ -7,7 +7,6 @@ try:
 except Exception:  # ModuleNotFoundError or any import issue
     AsyncGraphDatabase = None  # type: ignore
     AsyncDriver = None  # type: ignore
-from datetime import datetime
 from contextlib import asynccontextmanager
 import os
 
@@ -17,7 +16,7 @@ if os.getenv("PYTEST_CURRENT_TEST") and not os.getenv("TEST_MODE"):
 
 from app.config import settings
 from app.schemas import CanonicalEvent
-from app.tracing.models import TraceResult, TraceNode, TraceEdge
+from app.tracing.models import TraceResult, TraceEdge
 
 logger = logging.getLogger(__name__)
 

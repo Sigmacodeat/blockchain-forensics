@@ -7,9 +7,9 @@ import os
 from app.contracts.bytecode_analyzer import bytecode_analyzer, BytecodeAnalysis
 from app.contracts.vulnerability_detector import vulnerability_detector, VulnerabilityReport
 from app.contracts.exploit_detector import exploit_detector, ExploitDetection
-from app.contracts.function_signature_matcher import function_signature_matcher, ContractInterface
+from app.contracts.function_signature_matcher import function_signature_matcher
 from app.contracts.event_signature_matcher import event_signature_matcher
-from app.contracts.models import ContractAnalysis, ContractRiskIssue
+from app.contracts.models import ContractRiskIssue
 import logging
 
 logger = logging.getLogger(__name__)
@@ -408,7 +408,7 @@ class ContractsService:
             has_access = any(s in sel_lower for s in access_selectors)
             if is_proxy and has_upgrade and not has_access:
                 all_findings.append(ContractRiskIssue(
-                    id=f"upgradeability_unprotected",
+                    id="upgradeability_unprotected",
                     address=address,
                     kind="unprotected_upgradeability",
                     severity="high",

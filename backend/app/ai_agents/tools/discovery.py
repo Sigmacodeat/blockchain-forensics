@@ -5,7 +5,7 @@ Meta-tools that provide self-awareness.
 """
 
 import logging
-from typing import Optional, List, Dict, Any
+from typing import Optional, Dict, Any
 from langchain.tools import tool
 from pydantic.v1 import BaseModel, Field
 

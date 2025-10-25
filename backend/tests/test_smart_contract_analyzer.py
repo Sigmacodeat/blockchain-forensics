@@ -1,4 +1,3 @@
-import asyncio
 import pytest
 
 from app.analytics.smart_contract_analyzer import smart_contract_analyzer

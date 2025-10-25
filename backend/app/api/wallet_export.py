@@ -4,11 +4,10 @@ Wallet Export/Import API Endpunkte
 Erweitert die Wallet-API um Export- und Import-Funktionalitäten.
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks, UploadFile, File, Form
+from fastapi import APIRouter, HTTPException, Depends, UploadFile, File, Form
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 from typing import Dict, List, Optional, Any
-import asyncio
 from pathlib import Path
 
 from app.services.wallet_export_service import wallet_export_service
@@ -182,7 +181,6 @@ except ImportError:
 
 # Fallback für fehlende aiofiles
 if not aiofiles:
-    import json
 
     class MockAioFiles:
         @staticmethod

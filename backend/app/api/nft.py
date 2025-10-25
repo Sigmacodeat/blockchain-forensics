@@ -4,10 +4,9 @@ NFT API Endpunkte für Blockchain-Forensik-Anwendung
 Bietet REST-API für NFT-Verwaltung und Portfolio-Analyse.
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 from typing import Dict, List, Optional, Any
-import asyncio
 
 from app.services.nft_service import nft_service, nft_analyzer
 from app.auth.dependencies import get_current_user

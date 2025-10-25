@@ -5,11 +5,11 @@ Comprehensive entity profiling with OSINT integration.
 """
 
 import logging
-from typing import List, Optional
-from fastapi import APIRouter, HTTPException, Depends, Query
+from typing import List
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 
-from app.services.entity_profiler_service import entity_profiler_service, EntityType, AttributionConfidence
+from app.services.entity_profiler_service import entity_profiler_service, EntityType
 from app.auth.dependencies import get_current_user_strict, require_plan
 
 logger = logging.getLogger(__name__)

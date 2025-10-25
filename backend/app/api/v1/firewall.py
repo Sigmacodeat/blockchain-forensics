@@ -18,22 +18,19 @@ REST + WebSocket Endpoints für die AI Firewall.
 
 import logging
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect, Depends
-from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 from typing import Dict, List, Optional, Any
 from datetime import datetime
-from enum import Enum
 
 from app.services.ai_firewall_core import (
     ai_firewall,
     Transaction,
-    ThreatDetection,
     ThreatLevel,
     ActionType,
     FirewallRule,
     CustomerMonitor
 )
-from app.api.dependencies import get_current_user, require_plan
+from app.api.dependencies import get_current_user
 from app.models.user import User
 
 logger = logging.getLogger(__name__)

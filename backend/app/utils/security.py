@@ -7,7 +7,6 @@ Input validation, sanitization, and security helpers.
 
 import re
 import html
-from typing import Optional
 import logging
 
 logger = logging.getLogger(__name__)

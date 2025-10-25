@@ -12,7 +12,6 @@ try:
 except Exception:
     aioredis = None  # type: ignore
     _REDIS_AVAILABLE = False
-from datetime import timedelta
 
 from app.config import settings
 from app.metrics import (

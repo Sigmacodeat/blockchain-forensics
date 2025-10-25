@@ -4,13 +4,12 @@ Professional Attribution & Intelligence
 """
 
 import logging
-from fastapi import APIRouter, Depends, HTTPException, Request, Response
+from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
-from sqlalchemy import func, desc
+from sqlalchemy import desc
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
-from datetime import datetime, timedelta
 
 from app.db.session import get_db
 from app.auth.dependencies import require_admin

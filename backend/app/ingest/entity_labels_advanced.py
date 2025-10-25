@@ -18,7 +18,7 @@ Total New: 3,500 labels → Total: 8,500 labels
 from __future__ import annotations
 import asyncio
 import logging
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 from datetime import datetime
 import httpx
 

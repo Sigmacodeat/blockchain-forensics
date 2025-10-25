@@ -3,7 +3,7 @@ Admin-Endpoint für Chat-Analytics
 """
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
-from sqlalchemy import func, desc
+from sqlalchemy import func
 from datetime import datetime, timedelta
 from typing import Literal
 from app.db.session import get_db

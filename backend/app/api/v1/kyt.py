@@ -1,8 +1,7 @@
 """KYT (Know Your Transaction) API - Real-Time Transaction Monitoring"""
-import asyncio
 import json
 import logging
-from fastapi import APIRouter, WebSocket, WebSocketDisconnect, HTTPException, Depends, Body
+from fastapi import APIRouter, WebSocket, WebSocketDisconnect, HTTPException, Depends
 from typing import Optional
 from datetime import datetime
 from pydantic import BaseModel, Field
@@ -19,7 +18,7 @@ try:
 except Exception:  # pragma: no cover
     root_validator = None  # type: ignore
 
-from app.services.kyt_engine import kyt_engine, Transaction, RiskLevel
+from app.services.kyt_engine import kyt_engine, Transaction
 from app.auth.dependencies import require_plan, has_plan
 from app.auth.jwt import decode_token
 from app.db.postgres_client import postgres_client

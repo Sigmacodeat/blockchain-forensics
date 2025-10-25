@@ -14,9 +14,7 @@ Hauptheuristiken:
 """
 
 import logging
-from typing import Dict, List, Set, Optional, Tuple
-from datetime import datetime, timedelta
-from collections import defaultdict
+from typing import Dict, Set, Optional
 
 from app.db.neo4j_client import neo4j_client
 

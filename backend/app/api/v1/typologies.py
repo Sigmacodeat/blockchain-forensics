@@ -4,7 +4,7 @@ Typology DSL API
 - Simulate rule evaluation against an event
 """
 from __future__ import annotations
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
 from fastapi import APIRouter, Body, Query, Depends, HTTPException
 from pydantic import BaseModel
 

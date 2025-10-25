@@ -6,10 +6,9 @@ Broadcasts events: flag.created, flag.confirmed, check.performed, member.joined
 import logging
 import json
 from typing import Set
-from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Depends
+from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from datetime import datetime
 
-from app.auth.dependencies import get_current_user_from_ws
 
 logger = logging.getLogger(__name__)
 

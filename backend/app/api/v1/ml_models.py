@@ -4,10 +4,9 @@ Endpoints für ML-Modelle und Anomalie-Erkennung
 """
 
 import logging
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Any
 from fastapi import APIRouter, HTTPException, Query, Body
 from pydantic import BaseModel, Field
-import json
 from datetime import datetime
 
 from app.services.ml_model_service import ml_model_service

@@ -4,11 +4,9 @@ Handles :BRIDGE_LINK edge creation and cross-chain graph connections
 """
 
 import logging
-from typing import Dict, List, Optional, Any
-from datetime import datetime
+from typing import Dict, List, Any
 
 from app.db.neo4j_client import neo4j_client
-from app.bridge.detection import bridge_detection_service
 
 logger = logging.getLogger(__name__)
 

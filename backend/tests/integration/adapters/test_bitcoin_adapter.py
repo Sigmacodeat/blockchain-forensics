@@ -7,9 +7,8 @@ All tests use mock RPC responses from fixtures
 import pytest
 import json
 from pathlib import Path
-from unittest.mock import AsyncMock, patch
+from unittest.mock import patch
 from decimal import Decimal
-from datetime import datetime
 
 from app.adapters.bitcoin_adapter import BitcoinAdapter
 

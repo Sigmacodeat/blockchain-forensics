@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 import asyncio
 import json
 from fastapi import APIRouter, Body, Depends, HTTPException, Query

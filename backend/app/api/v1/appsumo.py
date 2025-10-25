@@ -17,8 +17,7 @@ from app.services.appsumo_service import AppSumoService
 from app.models.appsumo import (
     AppSumoCodeRedemption,
     AppSumoCodeInfo,
-    UserProductDetails,
-    AppSumoMetricsSummary
+    UserProductDetails
 )
 from app.database import get_db
 from app.auth.dependencies import get_current_user, require_admin

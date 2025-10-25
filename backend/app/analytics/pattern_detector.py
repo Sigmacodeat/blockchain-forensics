@@ -11,9 +11,8 @@ Erkennt verdächtige Muster im Transaction Graph:
 from __future__ import annotations
 
 import logging
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, Optional
 from datetime import datetime, timedelta
-from decimal import Decimal
 
 from app.db.neo4j_client import neo4j_client
 

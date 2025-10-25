@@ -13,7 +13,6 @@ Features:
 - Rate limiting and abuse prevention
 """
 from __future__ import annotations
-import asyncio
 import hashlib
 import logging
 from datetime import datetime, timedelta

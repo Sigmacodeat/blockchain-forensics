@@ -1,6 +1,4 @@
-import os
 import json
-import pytest
 
 from app.streaming.producer import EventProducer
 

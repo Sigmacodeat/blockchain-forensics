@@ -1,6 +1,6 @@
 from __future__ import annotations
-from typing import Any, Dict, Optional
-from fastapi import APIRouter, Depends, HTTPException, Request, status, Query
+from typing import Any, Dict
+from fastapi import APIRouter, Depends, HTTPException, Request, Query
 from app.auth.dependencies import get_current_user_strict
 from app.db.redis_client import redis_client
 from datetime import datetime

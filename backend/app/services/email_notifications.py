@@ -3,7 +3,7 @@ Email Notification Service for Crypto Payments
 Sends notifications for payment events
 """
 import logging
-from typing import Dict, Any, Optional
+from typing import Dict, Any
 from datetime import datetime
 
 from app.config import settings

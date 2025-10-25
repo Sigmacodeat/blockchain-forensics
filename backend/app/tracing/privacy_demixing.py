@@ -25,10 +25,8 @@ Privacy Protocol Demixing System
 """
 
 import logging
-from typing import Dict, List, Optional, Tuple, Set
+from typing import Dict, List
 from datetime import datetime, timedelta
-from collections import defaultdict
-import asyncio
 
 logger = logging.getLogger(__name__)
 
@@ -200,8 +198,8 @@ class PrivacyDemixer:
         
         for denomination in pools:
             # Query transactions to Tornado contracts
-            query = f"""
-                MATCH (from:Address {{address: $address, chain: $chain}})
+            query = """
+                MATCH (from:Address {address: $address, chain: $chain})
                      -[tx:TRANSACTION]->(mixer:Address)
                 WHERE mixer.label CONTAINS 'Tornado Cash'
                   AND tx.value = $denomination

@@ -1,5 +1,3 @@
-import os
-import pytest
 
 from app.services.typology_engine import TypologyEngine, typology_engine
 

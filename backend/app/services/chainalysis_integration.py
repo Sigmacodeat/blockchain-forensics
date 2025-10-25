@@ -4,11 +4,9 @@ Chainalysis Integration für Blockchain-Forensik
 Integriert Chainalysis APIs für erweiterte Blockchain-Analyse und Compliance.
 """
 
-import asyncio
 import logging
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Any, Optional
 from datetime import datetime
-import json
 
 # Chainalysis SDK (optional)
 try:

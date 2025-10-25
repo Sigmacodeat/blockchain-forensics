@@ -4,12 +4,11 @@ Provides instant notifications when payment status changes
 """
 import logging
 import asyncio
-from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Depends
+from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from typing import Dict
 from datetime import datetime
 
 from app.db.postgres_client import postgres_client
-from app.auth.middleware import get_current_user_ws
 
 logger = logging.getLogger(__name__)
 

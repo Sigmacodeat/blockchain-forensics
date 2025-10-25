@@ -6,8 +6,7 @@ Implementiert FATF Travel Rule für VASP-Screening und Transaktions-Monitoring.
 """
 
 import logging
-from typing import Dict, List, Optional, Any
-from datetime import datetime
+from typing import Dict, Optional, Any
 
 logger = logging.getLogger(__name__)
 

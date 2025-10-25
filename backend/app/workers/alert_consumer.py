@@ -14,7 +14,7 @@ import argparse
 import logging
 import sys
 import json
-from typing import Optional, Dict, Any
+from typing import Dict, Any
 from datetime import datetime
 
 try:

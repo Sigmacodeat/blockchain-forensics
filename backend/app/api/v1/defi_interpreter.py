@@ -6,7 +6,7 @@ Human-readable interpretation of complex DeFi transactions.
 
 import logging
 from typing import List
-from fastapi import APIRouter, HTTPException, Depends, Query
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 
 from app.services.defi_interpreter_service import defi_interpreter_service

@@ -23,7 +23,7 @@ Target: 5,000+ VASP integrations (competing with Chainalysis' 10,000)
 from __future__ import annotations
 import logging
 from typing import Dict, List, Optional, Any
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum
 

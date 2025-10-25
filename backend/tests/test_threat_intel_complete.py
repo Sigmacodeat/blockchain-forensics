@@ -9,9 +9,7 @@ Tests for the complete threat intelligence system including:
 - Community reports
 """
 import pytest
-import asyncio
-from datetime import datetime
-from app.intel.service import ThreatIntelService, get_threat_intel_service
+from app.intel.service import ThreatIntelService
 from app.intel.darkweb import DarkWebMonitor, DarkWebIntelStore
 from app.intel.sharing import IntelSharingNetwork
 from app.intel.models import (

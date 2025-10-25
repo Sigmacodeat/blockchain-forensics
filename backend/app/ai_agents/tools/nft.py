@@ -4,7 +4,7 @@ Trace NFT ownership, detect wash trading, and analyze collections.
 """
 
 import logging
-from typing import Optional, Dict, Any
+from typing import Dict, Any
 from langchain.tools import tool
 from pydantic.v1 import BaseModel, Field
 

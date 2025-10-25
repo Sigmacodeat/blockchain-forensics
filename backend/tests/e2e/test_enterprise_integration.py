@@ -6,26 +6,16 @@ Comprehensive End-to-End Test Suite
 import asyncio
 import pytest
 import time
-from typing import Dict, List, Any, Optional
-from datetime import datetime, timedelta
 from fastapi.testclient import TestClient
 from httpx import AsyncClient
-import json
 
 from app.main import app
 from tests.helpers.auth_overrides import set_test_user, clear_auth_overrides
-from app.models.case import Case, CaseStatus, CasePriority
 # Optional Evidence model (may not be present in minimal test env)
 try:
-    from app.models.case import Evidence, EvidenceStatus  # type: ignore
     _EVIDENCE_AVAILABLE = True
 except Exception:
     _EVIDENCE_AVAILABLE = False
-from app.models.comment import Comment, CommentStatus, CommentThread
-from app.models.user import User, UserRole, UserStatus
-from app.models.notification import Notification, NotificationType, NotificationPriority
-from app.models.report import Report, ReportType, ReportStatus
-from app.services.alert_engine import Alert, AlertType, AlertSeverity
 
 
 class TestSystemIntegration:
@@ -422,7 +412,6 @@ class TestPerformanceIntegration:
     def test_concurrent_requests(self):
         """Test handling of concurrent requests"""
         import concurrent.futures
-        import threading
 
         def make_request(i):
             try:

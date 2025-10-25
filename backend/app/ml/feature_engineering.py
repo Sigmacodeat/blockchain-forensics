@@ -7,8 +7,8 @@ Basierend auf Chainalysis/Elliptic Research Papers
 """
 
 import logging
-from typing import Dict, List, Optional
-from datetime import datetime, timedelta
+from typing import Dict
+from datetime import datetime
 import numpy as np
 from collections import Counter
 

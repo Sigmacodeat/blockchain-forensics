@@ -2,6 +2,8 @@ import React from 'react'
 import { useI18n } from '@/contexts/I18nContext'
 import { useToastSuccess, useToastError } from '@/components/ui/toast'
 
+import { useWebSocket } from '@/hooks/useWebSocket'
+
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 type CaseItem = {
@@ -20,6 +22,19 @@ type CreatePayload = {
   auto_trace?: boolean
 }
 
+type NewsCaseEvent = {
+  type: 'news_case.snapshot' | 'news_case.status' | 'news_case.tx' | 'news_case.kyt'
+  slug: string
+  snapshot?: any
+  tx?: any
+  risk_level?: string
+  risk_score?: number
+  alerts?: any[]
+  from_labels?: string[]
+  to_labels?: string[]
+  timestamp: number
+}
+
 export default function NewsCasesManager() {
   const { currentLanguage } = useI18n()
   const [loading, setLoading] = React.useState(false)
@@ -28,6 +43,9 @@ export default function NewsCasesManager() {
   const toastSuccess = useToastSuccess()
   const toastError = useToastError()
 
+  // WS State per slug
+  const [wsStates, setWsStates] = React.useState<Record<string, { connected: boolean; txCount: number; kytAlerts: number; lastUpdate: number }>>({})
+
   const [form, setForm] = React.useState<CreatePayload>({
     slug: '',
     name: '',
@@ -35,6 +53,45 @@ export default function NewsCasesManager() {
     addresses: [{ chain: 'ethereum', address: '' }],
     auto_trace: false,
   })
+
+  // WS Hook für jeden NewsCase
+  const updateWsState = React.useCallback((slug: string, update: Partial<typeof wsStates[string]>) => {
+    setWsStates(prev => ({
+      ...prev,
+      [slug]: { ...prev[slug], ...update }
+    }))
+  }, [])
+
+  // Für jeden gelisteten Item WS-Verbindung aufbauen
+  React.useEffect(() => {
+    const wsConnections: Record<string, any> = {}
+    items.forEach(item => {
+      const wsUrl = `${API_URL.replace('http', 'ws')}/api/v1/ws/news-cases/${item.slug}?backlog=50`
+      const { isConnected, lastMessage } = useWebSocket(wsUrl, true)
+      
+      if (isConnected !== wsStates[item.slug]?.connected) {
+        updateWsState(item.slug, { connected: isConnected })
+      }
+      
+      if (lastMessage) {
+        const event = lastMessage as NewsCaseEvent
+        if (event.type === 'news_case.tx') {
+          updateWsState(item.slug, { txCount: (wsStates[item.slug]?.txCount || 0) + 1, lastUpdate: Date.now() })
+        } else if (event.type === 'news_case.kyt') {
+          updateWsState(item.slug, { kytAlerts: (wsStates[item.slug]?.kytAlerts || 0) + 1, lastUpdate: Date.now() })
+        } else if (event.type === 'news_case.status' || event.type === 'news_case.snapshot') {
+          updateWsState(item.slug, { lastUpdate: Date.now() })
+        }
+      }
+      
+      wsConnections[item.slug] = { isConnected, lastMessage }
+    })
+    
+    return () => {
+      // Cleanup wenn Items ändern
+      Object.values(wsConnections).forEach(conn => conn?.close?.())
+    }
+  }, [items, wsStates, updateWsState])
 
   // Simple chain/address validation
   const validateAddress = (chain: string, address: string): string | null => {
@@ -228,17 +285,30 @@ export default function NewsCasesManager() {
             {items.length === 0 && (
               <div className="text-sm text-slate-500">Noch keine Einträge.</div>
             )}
-            {items.map((it) => (
+            {items.map((it) => {
+              const wsState = wsStates[it.slug] || { connected: false, txCount: 0, kytAlerts: 0, lastUpdate: 0 }
+              const hasActivity = wsState.txCount > 0 || wsState.kytAlerts > 0
+              const lastUpdateStr = wsState.lastUpdate ? new Date(wsState.lastUpdate).toLocaleTimeString() : ''
+              
+              return (
               <div key={it.slug} className="rounded border border-slate-200 dark:border-slate-800 p-3">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="font-medium">{it.name}</div>
+                    <div className="font-medium flex items-center gap-2">
+                      {it.name}
+                      {wsState.connected && <span className="text-green-500">🟢</span>}
+                      {!wsState.connected && <span className="text-red-500">🔴</span>}
+                      {hasActivity && (
+                        <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">{wsState.txCount} TX, {wsState.kytAlerts} Alerts</span>
+                      )}
+                    </div>
                     <div className="text-xs text-slate-500">Slug: <code className="bg-slate-100 px-1 rounded">{it.slug}</code></div>
                     {typeof (it as any).auto_trace !== 'undefined' && (
                       <div className="text-xs mt-0.5">
                         Auto-Trace: {(it as any).auto_trace ? 'aktiv' : 'aus'}
                       </div>
                     )}
+                    {lastUpdateStr && <div className="text-xs text-slate-400">Letztes Update: {lastUpdateStr}</div>}
                   </div>
                   <div className="flex items-center gap-2">
                     <a href={`/${currentLanguage}/news/${encodeURIComponent(it.slug)}`} target="_blank" rel="noreferrer" className="text-sm text-primary-600">Öffnen</a>
@@ -257,7 +327,8 @@ export default function NewsCasesManager() {
                   </div>
                 )}
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </div>

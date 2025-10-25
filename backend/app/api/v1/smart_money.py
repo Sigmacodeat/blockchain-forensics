@@ -9,7 +9,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from typing import List, Optional
 import logging
 
-from app.services.smart_money_tracker import smart_money_tracker, SmartMoneyProfile, TradingSignal
+from app.services.smart_money_tracker import smart_money_tracker
 from app.services.multi_chain import multi_chain_engine
 from app.api.deps import get_current_user, require_plan
 from pydantic import BaseModel

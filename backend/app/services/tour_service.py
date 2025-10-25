@@ -4,10 +4,9 @@ Guided Tours Service für Blockchain-Forensik-Anwendung
 Implementiert interaktive Touren für neue Benutzer zur Einführung in die Plattform.
 """
 
-import asyncio
 import logging
-from typing import Dict, List, Any, Optional, Tuple
-from datetime import datetime, timedelta
+from typing import Dict, List, Any, Optional
+from datetime import datetime
 from dataclasses import dataclass
 from enum import Enum
 

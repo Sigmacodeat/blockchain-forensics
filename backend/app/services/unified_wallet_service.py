@@ -16,7 +16,6 @@ Provides: ONE unified interface für alle Wallet-Operations
 import logging
 from typing import List, Dict, Any, Optional
 from datetime import datetime
-from decimal import Decimal
 
 from app.services.wallet_scanner_service import wallet_scanner_service
 from app.services.bitcoin_investigation_service import bitcoin_investigation_service

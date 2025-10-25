@@ -4,7 +4,7 @@ import os
 from typing import List, Optional
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
-from starlette.responses import Response, JSONResponse
+from starlette.responses import JSONResponse
 from fastapi import status
 
 from app.auth.jwt import decode_token

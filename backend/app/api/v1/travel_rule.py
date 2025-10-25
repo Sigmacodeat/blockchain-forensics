@@ -10,7 +10,6 @@ import logging
 from typing import Dict, Any
 from fastapi import APIRouter, HTTPException, Depends, status
 from pydantic import BaseModel, Field
-from datetime import datetime
 
 from app.services.travel_rule_service import travel_rule_service
 try:
@@ -328,7 +327,8 @@ async def validate_ivms101_payload(
     """
     try:
         # Accept stringified JSON/dict from query param and parse
-        import json, ast
+        import json
+        import ast
         parsed: Dict[str, Any]
         try:
             parsed = json.loads(payload)

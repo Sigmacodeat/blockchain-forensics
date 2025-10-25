@@ -3,7 +3,6 @@ Chat Feedback Model - User-Feedback zu AI-Antworten
 """
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, DateTime, Enum, Text, ForeignKey
-from sqlalchemy.orm import relationship
 import enum
 from app.db.base_class import Base
 

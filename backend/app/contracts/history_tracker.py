@@ -7,7 +7,6 @@ Tracks contract upgrades, proxy changes, and risk evolution over time.
 from typing import Dict, List, Optional
 from datetime import datetime, timedelta
 from dataclasses import dataclass
-import json
 
 
 @dataclass

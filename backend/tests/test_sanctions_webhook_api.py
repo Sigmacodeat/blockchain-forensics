@@ -2,7 +2,6 @@ import os
 import sys
 import pathlib
 from fastapi.testclient import TestClient
-import pytest
 
 # Ensure backend on PYTHONPATH
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -15,7 +14,6 @@ os.environ.setdefault("TEST_MODE", "1")
 os.environ.setdefault("PYTEST_CURRENT_TEST", "1")
 
 from app.main import app  # noqa: E402
-from app.api.v1 import sanctions as s_api  # noqa: E402
 
 client = TestClient(app)
 

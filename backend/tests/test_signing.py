@@ -4,7 +4,6 @@ Tests für Signing und Manifest Service
 
 import pytest
 from app.services.signing import (
-    SigningProvider,
     DummySigningProvider,
     ManifestService,
     manifest_service,

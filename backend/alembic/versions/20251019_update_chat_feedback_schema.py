@@ -8,7 +8,6 @@ Updates chat_feedback table for new Thumbs Up/Down system
 """
 from alembic import op
 import sqlalchemy as sa
-from sqlalchemy.dialects import postgresql
 
 # revision identifiers, used by Alembic.
 revision = '20251019_update_chat_feedback_schema'

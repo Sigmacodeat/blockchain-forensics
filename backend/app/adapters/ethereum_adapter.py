@@ -1,12 +1,12 @@
 """Ethereum Chain Adapter"""
 
 import logging
-from typing import Optional, AsyncGenerator, AsyncIterator, Dict, Any, cast
+from typing import Optional, AsyncGenerator, Dict, Any, cast
 from datetime import datetime
 from decimal import Decimal
 try:
     from web3 import Web3, AsyncWeb3, AsyncHTTPProvider  # type: ignore
-    from web3.types import BlockData, TxData, HexStr  # type: ignore
+    from web3.types import HexStr  # type: ignore
     _WEB3_AVAILABLE = True
 except Exception:  # pragma: no cover
     Web3 = None  # type: ignore

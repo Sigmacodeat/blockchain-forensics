@@ -8,7 +8,7 @@ import psutil
 import asyncio
 import platform
 from typing import Dict, Any, Optional
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from fastapi import APIRouter, Depends, HTTPException, Response
 from pydantic import BaseModel

@@ -2,7 +2,6 @@
 Tests for ML Model Service
 """
 
-import pytest
 import numpy as np
 from datetime import datetime, timedelta
 from app.services.ml_model_service import ml_model_service

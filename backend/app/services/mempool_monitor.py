@@ -8,7 +8,6 @@ import asyncio
 import logging
 import os
 from typing import Optional, Dict, Any, List
-from decimal import Decimal
 
 logger = logging.getLogger(__name__)
 

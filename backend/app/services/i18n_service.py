@@ -4,12 +4,10 @@ Internationalisierung-Service für Blockchain-Forensik-Anwendung
 Implementiert Mehrsprachigkeit (i18n) für globale Benutzerfreundlichkeit.
 """
 
-import asyncio
 import logging
 import json
-from typing import Dict, List, Any, Optional, Union
+from typing import Dict, List, Any
 from pathlib import Path
-import os
 
 logger = logging.getLogger(__name__)
 

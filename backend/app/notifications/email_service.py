@@ -4,7 +4,7 @@ Alert notifications via Email
 """
 
 import logging
-from typing import List, Dict, Optional
+from typing import List
 from datetime import datetime
 from app.config import settings
 

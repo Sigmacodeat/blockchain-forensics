@@ -9,9 +9,8 @@ import time
 from typing import Optional, Dict, Any
 from contextlib import asynccontextmanager
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import datetime
 
-from app.config import settings
 from app.observability.metrics import (
     DB_CONNECTION_POOL_SIZE, DB_CONNECTION_POOL_ACTIVE,
     DB_CONNECTION_POOL_IDLE, DB_CONNECTION_POOL_WAITING,

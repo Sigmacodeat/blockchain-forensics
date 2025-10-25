@@ -3,7 +3,6 @@ Performance Optimization Service
 Advanced caching, query optimization, and performance monitoring
 """
 
-import asyncio
 import time
 import logging
 from typing import Dict, List, Optional, Any, Callable
@@ -12,7 +11,6 @@ from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from collections import defaultdict
 
-from app.config import settings
 from app.services.connection_pooling import get_redis_connection
 
 logger = logging.getLogger(__name__)

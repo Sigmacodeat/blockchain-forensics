@@ -130,6 +130,7 @@ const SettingsPage = React.lazy(() => import('@/pages/SettingsPage'))
 const FirewallControlCenter = React.lazy(() => import('@/pages/FirewallControlCenter'))
 const PartnerDashboard = React.lazy(() => import('@/pages/PartnerDashboard'))
 const NewsCasesManager = React.lazy(() => import('@/pages/NewsCasesManager'))
+const OptimizationDashboard = React.lazy(() => import('@/pages/OptimizationDashboard'))
 
 // Bank System Pages
 const CaseManagement = React.lazy(() => import('@/pages/bank/CaseManagement'))
@@ -190,6 +191,7 @@ function App() {
                   {/* Public */}
                   <Route index element={<PublicLayout><React.Suspense fallback={<div />}> <LandingPage /> </React.Suspense></PublicLayout>} />
                   <Route path="features" element={<PublicLayout><React.Suspense fallback={<div />}> <FeaturesPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="optimization" element={<PublicLayout><React.Suspense fallback={<div />}> <OptimizationDashboard /> </React.Suspense></PublicLayout>} />
                   <Route path="pricing" element={<PublicLayout><React.Suspense fallback={<div />}> <PricingPage /> </React.Suspense></PublicLayout>} />
                   <Route path="news/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <NewsCasePublicPage /> </React.Suspense></PublicLayout>} />
                   {/* Chatbot-Route entfernt - wird über chatbot.blocksigmakode.ai bereitgestellt */}

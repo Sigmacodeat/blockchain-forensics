@@ -4,7 +4,7 @@ KI-Agent Integration für Wallet-Analyse
 Erweitert den bestehenden AIAgentService um Wallet-spezifische Funktionen.
 """
 
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 import asyncio
 import logging
 

@@ -14,9 +14,8 @@ Expected Conversion:
 """
 
 import logging
-from typing import Dict, Optional
+from typing import Dict
 from datetime import datetime
-import asyncio
 
 logger = logging.getLogger(__name__)
 

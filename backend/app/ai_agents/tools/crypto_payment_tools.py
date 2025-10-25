@@ -3,7 +3,6 @@ AI Agent Tools for Crypto Payments
 Allows AI to create payments, check status, and provide payment info
 """
 import logging
-from typing import Optional, Dict, Any
 from langchain.tools import BaseTool
 from pydantic import BaseModel, Field
 
@@ -90,12 +89,12 @@ class GetPaymentEstimateTool(BaseTool):
             crypto_amount = estimate.get("estimated_amount", 0)
             currency_info = crypto_payment_service.get_currency_info(currency.lower())
             
-            result = f"💰 **Payment-Schätzung**\n\n"
+            result = "💰 **Payment-Schätzung**\n\n"
             result += f"**Plan**: {plan.title()}\n"
             result += f"**Preis**: ${price_usd} USD\n\n"
-            result += f"**Du zahlst**:\n"
+            result += "**Du zahlst**:\n"
             result += f"{currency_info['logo']} **{crypto_amount:.8f} {currency_info['symbol'].upper()}**\n\n"
-            result += f"💡 Die finale Amount wird bei Payment-Erstellung berechnet (Live Exchange-Rate)."
+            result += "💡 Die finale Amount wird bei Payment-Erstellung berechnet (Live Exchange-Rate)."
             
             return result
         except Exception as e:
@@ -175,22 +174,22 @@ class CreateCryptoPaymentTool(BaseTool):
             # Format response with payment details
             currency_info = crypto_payment_service.get_currency_info(currency.lower())
             
-            result = f"✅ **Payment erstellt!**\n\n"
+            result = "✅ **Payment erstellt!**\n\n"
             result += f"**Plan**: {plan.title()}\n"
             result += f"**Order ID**: `{order_id}`\n\n"
-            result += f"💰 **Zu zahlender Betrag**:\n"
+            result += "💰 **Zu zahlender Betrag**:\n"
             result += f"{currency_info['logo']} **{payment_data['pay_amount']} {currency_info['symbol'].upper()}**\n"
             result += f"≈ ${payment_data['price_amount']} USD\n\n"
-            result += f"📍 **Zahlungsadresse**:\n"
+            result += "📍 **Zahlungsadresse**:\n"
             result += f"```\n{payment_data['pay_address']}\n```\n\n"
             
             if payment_data.get("payin_extra_id"):
                 result += f"🔖 **Extra ID**: `{payment_data['payin_extra_id']}`\n\n"
             
-            result += f"⏰ **Gültigkeit**: 15 Minuten\n\n"
+            result += "⏰ **Gültigkeit**: 15 Minuten\n\n"
             result += f"⚠️ **WICHTIG**: Sende nur **{currency_info['symbol'].upper()}** an diese Adresse!\n\n"
             result += f"🔗 [Payment-Page öffnen]({crypto_payment_service.get_payment_url(payment_data['payment_id'])})\n\n"
-            result += f"💡 **Tipp**: Die Zahlung wird automatisch erkannt und dein Plan aktiviert!"
+            result += "💡 **Tipp**: Die Zahlung wird automatisch erkannt und dein Plan aktiviert!"
             
             # Return payment_id for frontend to display QR code
             result += f"\n\n[PAYMENT_ID:{payment_data['payment_id']}]"
@@ -245,7 +244,7 @@ class CheckPaymentStatusTool(BaseTool):
                 "expired": "⏱️ **Zahlung abgelaufen**\n\nBitte erstelle eine neue Zahlung."
             }
             
-            result = f"📊 **Payment-Status**\n\n"
+            result = "📊 **Payment-Status**\n\n"
             result += f"**Order ID**: `{payment['order_id']}`\n"
             result += f"**Betrag**: {amount} {currency}\n\n"
             result += status_messages.get(status, f"Status: {status}")

@@ -4,20 +4,15 @@ Enterprise-grade notifications with multiple channels and preferences
 """
 
 import logging
-import json
 import aiohttp
 from typing import Dict, Any, List, Optional
-from datetime import datetime, timedelta
+from datetime import datetime
 from sqlalchemy.orm import Session
-from sqlalchemy import and_, or_
-from app.models.user import UserORM, User
+from app.models.user import UserORM
 from app.models.notification import (
-    Notification, NotificationSettings, NotificationTemplate,
-    NotificationType, NotificationPriority, NotificationChannel,
-    create_notification, get_notification, mark_notification_read,
+    NotificationType, NotificationPriority, create_notification, mark_notification_read,
     mark_all_notifications_read, delete_notification, query_notifications,
     get_user_notification_settings, update_notification_settings,
-    create_notification_template, get_notification_template, render_notification_template,
     get_unread_count, NotificationQuery
 )
 from app.notifications.email_service import email_service

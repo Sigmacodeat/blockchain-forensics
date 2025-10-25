@@ -10,7 +10,7 @@ Hinweis: Ohne echten Tron-Client werden Offline-Stubs genutzt.
 """
 from __future__ import annotations
 import logging
-from typing import Optional, Dict, Any, List, List
+from typing import Optional, Dict, Any, List
 from datetime import datetime
 from decimal import Decimal
 

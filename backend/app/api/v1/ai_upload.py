@@ -9,7 +9,6 @@ import uuid
 from typing import Dict, Any, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form
-from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 from app.auth.dependencies import get_current_user

@@ -4,8 +4,6 @@ Real-time alerts to Slack channels
 """
 
 import logging
-from typing import Dict
-import json
 
 logger = logging.getLogger(__name__)
 

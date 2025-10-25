@@ -3,7 +3,7 @@ Chains API - Supported Blockchain Networks
 """
 
 from fastapi import APIRouter
-from typing import List, Dict, Any
+from typing import Dict, Any
 
 router = APIRouter()
 

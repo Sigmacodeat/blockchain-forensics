@@ -3,10 +3,8 @@ AI Agent API
 Endpunkte für AI-gestützte forensische Analyse mit LangChain
 """
 
-import asyncio
 import logging
 import os
-import re
 import importlib
 from time import monotonic
 from typing import List, Dict, Optional, Any
@@ -14,7 +12,7 @@ from fastapi import APIRouter, HTTPException, Depends, Request
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel, Field
 
-from app.ai_agents import forensic_agent, ForensicAgent as _ForensicAgentCls
+from app.ai_agents import ForensicAgent as _ForensicAgentCls
 from app.ai_agents.agent import ForensicAgent
 from app.ai_agents.tools import (
     risk_score_tool,
@@ -23,20 +21,13 @@ from app.ai_agents.tools import (
     list_alert_rules_tool,
     simulate_alerts_tool,
     trace_address_tool,
-    code_extract_tool,
-    text_extract_tool,
     FORENSIC_TOOLS,
 )
-from app.ai_agents.tools import (
-    create_crypto_payment as tool_create_crypto_payment,
-)
-import app.ai_agents.tools as tools_pkg
 from app.ai_agents.cot import get_cot
 from app.config import settings
 from app.observability.metrics import TRACE_REQUESTS, TRACE_LATENCY
 from app.auth.dependencies import (
     require_roles_if,
-    require_plan,
 )
 import app.auth.dependencies as auth_deps
 from app.auth.models import UserRole

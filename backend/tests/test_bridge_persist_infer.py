@@ -1,4 +1,3 @@
-import os
 import pytest
 from types import SimpleNamespace
 from decimal import Decimal

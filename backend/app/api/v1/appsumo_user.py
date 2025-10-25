@@ -2,7 +2,7 @@
 AppSumo User API - Code Redemption
 """
 
-from fastapi import APIRouter, Depends, HTTPException, status, Request
+from fastapi import APIRouter, Depends, Request
 from sqlalchemy.ext.asyncio import AsyncSession
 from pydantic import BaseModel
 

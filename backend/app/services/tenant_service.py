@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
 from app.db.redis_client import redis_client
 from app.services.plan_service import plan_service
 

@@ -16,10 +16,9 @@ Features:
 """
 
 import logging
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Dict, List, Optional, Set
 from dataclasses import dataclass
 from datetime import datetime
-from decimal import Decimal
 
 from app.schemas.canonical_event import CanonicalEvent
 from app.db.neo4j_client import neo4j_client

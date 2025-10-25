@@ -4,10 +4,8 @@ This module exposes a `process_event` function for unit/integration tests
 and a `run_once` helper that polls Kafka a single message (optional).
 """
 from __future__ import annotations
-import asyncio
 import json
 import logging
-from datetime import datetime, timedelta
 from typing import Any, Dict, Optional, Tuple
 
 from app.compliance.rule_engine import rule_engine

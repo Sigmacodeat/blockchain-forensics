@@ -8,7 +8,7 @@ Provides status, metrics, and manual event publishing.
 
 import logging
 from typing import Dict, List, Optional
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
 def _get_event_publisher():
@@ -21,7 +21,6 @@ def _get_event_consumer():
     from app.streaming.event_consumer import event_consumer as _ec
     return _ec
 from app.schemas.canonical_event import CanonicalEvent
-from app.config import settings
 
 logger = logging.getLogger(__name__)
 

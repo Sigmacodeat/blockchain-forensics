@@ -3,9 +3,8 @@ Feature Access End-to-End Tests
 Tests für Plan-basierte Zugriffskontrolle über alle Module hinweg
 """
 import pytest
-from unittest.mock import Mock, patch, AsyncMock
+from unittest.mock import patch
 from fastapi import HTTPException
-from datetime import datetime, timedelta
 
 from app.models.user import User, SubscriptionPlan, SubscriptionStatus
 

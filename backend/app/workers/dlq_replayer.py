@@ -16,10 +16,10 @@ import asyncio
 import json
 import logging
 import sys
-from datetime import datetime, timedelta
-from typing import Optional, List, Dict, Any
+from datetime import datetime
+from typing import Optional, Dict, Any
 
-from confluent_kafka import Consumer, Producer, KafkaError, KafkaException
+from confluent_kafka import Consumer, Producer, KafkaError
 
 from app.config import settings
 from app.observability.metrics import DLQ_REPLAY_TOTAL, DLQ_REPLAY_ERRORS

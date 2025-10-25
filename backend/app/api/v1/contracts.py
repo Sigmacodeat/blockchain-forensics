@@ -12,7 +12,7 @@ from app.contracts.report_generator import report_generator
 from app.contracts.webhook_manager import webhook_manager, WebhookConfig
 from app.auth.dependencies import require_plan
 from app.analytics.smart_contract_analyzer import smart_contract_analyzer
-from fastapi.responses import Response, JSONResponse
+from fastapi.responses import Response
 
 router = APIRouter(tags=["Contracts"]) 
 
@@ -393,7 +393,6 @@ async def compare_contracts(request: ContractComparisonRequest):
         )
         
         # Calculate bytecode similarity
-        from app.contracts.bytecode_analyzer import bytecode_analyzer
         
         bytecode1 = result1.get("statistics", {}).get("bytecode_hash", "")
         bytecode2 = result2.get("statistics", {}).get("bytecode_hash", "")
@@ -504,7 +503,7 @@ def _generate_comparison_summary(
     elif risk_delta > 0.1:
         lines.append(f"ℹ️ Moderate risk difference ({risk_delta:.2f})")
     else:
-        lines.append(f"✅ Similar risk profile")
+        lines.append("✅ Similar risk profile")
     
     return "\n".join(lines)
 

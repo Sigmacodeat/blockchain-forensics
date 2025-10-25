@@ -4,14 +4,13 @@ Generates reports and exports for investigation cases
 """
 
 import logging
-import os
 import json
 import zipfile
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Optional
 
-from app.models.case import Case, Evidence, CaseActivity, get_case, get_case_evidence, get_case_activities
+from app.models.case import Case, get_case, get_case_evidence, get_case_activities
 
 logger = logging.getLogger(__name__)
 

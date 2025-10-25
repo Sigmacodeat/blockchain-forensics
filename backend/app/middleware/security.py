@@ -4,7 +4,7 @@ Security Middleware für automatische Audit-Logging und Security-Checks
 
 import logging
 import time
-from typing import Dict, Any, Optional, List
+from typing import List
 from fastapi import Request, HTTPException
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response

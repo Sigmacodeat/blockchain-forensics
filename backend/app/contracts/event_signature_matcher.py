@@ -7,7 +7,6 @@ Identifiziert Contract Events via:
 - Common ERC standard events
 """
 
-import hashlib
 import httpx
 from typing import Dict, List, Optional
 from dataclasses import dataclass

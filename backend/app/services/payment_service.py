@@ -10,7 +10,7 @@ except ImportError:
     STRIPE_AVAILABLE = False
 
 from datetime import datetime, timedelta
-from typing import Dict, Optional
+from typing import Dict
 from fastapi import HTTPException
 
 from app.models.user import User, SubscriptionPlan, SubscriptionStatus

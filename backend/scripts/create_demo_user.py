@@ -12,17 +12,16 @@ Creates a demo user account with:
 """
 
 import sys
-import os
 from pathlib import Path
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from sqlalchemy.orm import Session
-from app.db.session import engine, get_db
+from app.db.session import get_db
 from app.models.user import UserORM, UserRole
 from app.auth.jwt import get_password_hash
-from datetime import datetime, timedelta
+from datetime import datetime
 import logging
 import uuid
 
@@ -74,7 +73,7 @@ def create_demo_user(db: Session):
     logger.info(f"   Organization: {demo_user.organization}")
     logger.info("")
     logger.info("🔐 Login Credentials:")
-    logger.info(f"   URL: http://localhost:3000/en/login")
+    logger.info("   URL: http://localhost:3000/en/login")
     logger.info(f"   Email: {demo_email}")
     logger.info(f"   Password: {demo_password}")
     

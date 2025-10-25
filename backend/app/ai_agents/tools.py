@@ -152,6 +152,18 @@ class CommunityReportInput(BaseModel):
         allow_population_by_field_name = True
 
 
+class AnalyzeCrossChainBridgeInput(BaseModel):
+    """Input for analyze_cross_chain_bridge tool"""
+    address: str = Field(..., description="Blockchain address to analyze for bridge activities")
+    chain: str = Field(..., description="Primary chain of the address (ethereum, polygon, bsc, etc.)")
+    max_depth: int = Field(default=3, description="Maximum bridge hop depth to analyze (1-5)")
+    include_incoming: bool = Field(default=True, description="Include incoming bridge transfers")
+    include_outgoing: bool = Field(default=True, description="Include outgoing bridge transfers")
+    from_timestamp: Optional[str] = Field(None, description="Start timestamp for bridge analysis (ISO format)")
+    to_timestamp: Optional[str] = Field(None, description="End timestamp for bridge analysis (ISO format)")
+    min_value_usd: Optional[float] = Field(None, description="Minimum bridge transfer value in USD to include")
+
+
 # ================================
 # Intelligence Network: Input Schemas
 # ================================
@@ -1406,10 +1418,10 @@ async def get_payment_estimate_tool(plan: str, currency: str) -> str:
         crypto_amount = estimate.get("estimated_amount", 0)
         currency_info = crypto_payment_service.get_currency_info(currency.lower())
         
-        result = f"💰 **Payment-Schätzung**\n\n"
+        result = "💰 **Payment-Schätzung**\n\n"
         result += f"**Plan**: {plan.title()}\n**Preis**: ${price_usd} USD\n\n"
         result += f"**Du zahlst**: {currency_info['logo']} **{crypto_amount:.8f} {currency_info['symbol'].upper()}**\n\n"
-        result += f"💡 Finale Amount wird bei Erstellung berechnet (Live Exchange-Rate)."
+        result += "💡 Finale Amount wird bei Erstellung berechnet (Live Exchange-Rate)."
         return result
     except Exception as e:
         logger.error(f"Error getting estimate: {e}")
@@ -1471,7 +1483,7 @@ async def create_crypto_payment_tool(user_id: str, plan: str, currency: str) -> 
         
         currency_info = crypto_payment_service.get_currency_info(currency.lower())
         
-        result = f"✅ **Payment erstellt!**\n\n"
+        result = "✅ **Payment erstellt!**\n\n"
         result += f"**Plan**: {plan.title()}\n**Order ID**: `{order_id}`\n\n"
         result += f"💰 **Zu zahlender Betrag**:\n{currency_info['logo']} **{payment_data['pay_amount']} {currency_info['symbol'].upper()}**\n"
         result += f"≈ ${payment_data['price_amount']} USD\n\n"
@@ -1480,10 +1492,10 @@ async def create_crypto_payment_tool(user_id: str, plan: str, currency: str) -> 
         if payment_data.get("payin_extra_id"):
             result += f"🔖 **Extra ID**: `{payment_data['payin_extra_id']}`\n\n"
         
-        result += f"⏰ **Gültigkeit**: 15 Minuten\n\n"
+        result += "⏰ **Gültigkeit**: 15 Minuten\n\n"
         result += f"⚠️ **WICHTIG**: Nur **{currency_info['symbol'].upper()}** an diese Adresse senden!\n\n"
         result += f"🔗 [Payment-Page]({crypto_payment_service.get_payment_url(payment_data['payment_id'])})\n\n"
-        result += f"💡 Zahlung wird automatisch erkannt und Plan aktiviert!\n\n"
+        result += "💡 Zahlung wird automatisch erkannt und Plan aktiviert!\n\n"
         result += f"[PAYMENT_ID:{payment_data['payment_id']}]"
         
         return result
@@ -1572,26 +1584,151 @@ async def get_user_plan_tool(user_id: str) -> str:
         
         info = plan_info.get(current_plan, plan_info["community"])
         
-        result = f"📊 **Dein aktueller Plan**\n\n"
+        result = "📊 **Dein aktueller Plan**\n\n"
         result += f"**{info['name']}** - {info['price']}\n\n"
-        result += f"**Features**:\n"
+        result += "**Features**:\n"
         for feature in info['features']:
             result += f"• {feature}\n"
         
         if info['next']:
             result += f"\n💡 **Upgrade-Empfehlung**: {plan_info[info['next']]['name']}\n"
             result += f"**Kosten**: {info['upgrade_cost']}\n"
-            result += f"**Zusätzliche Features**:\n"
+            result += "**Zusätzliche Features**:\n"
             for feature in info['upgrade_features']:
                 result += f"• {feature}\n"
             result += f"\nMöchtest du upgraden? Sage einfach 'Upgrade auf {plan_info[info['next']]['name']}'!"
         else:
-            result += f"\n🎉 Du hast bereits den höchsten Plan!"
+            result += "\n🎉 Du hast bereits den höchsten Plan!"
         
         return result
     except Exception as e:
         logger.error(f"Error getting user plan: {e}")
         return "❌ Fehler beim Abrufen deines Plans."
+
+
+@tool("analyze_cross_chain_bridge", args_schema=AnalyzeCrossChainBridgeInput)
+async def analyze_cross_chain_bridge_tool(
+    address: str,
+    chain: str,
+    max_depth: int = 3,
+    include_incoming: bool = True,
+    include_outgoing: bool = True,
+    from_timestamp: Optional[str] = None,
+    to_timestamp: Optional[str] = None,
+    min_value_usd: Optional[float] = None,
+) -> Dict[str, Any]:
+    """
+    Analyze cross-chain bridge activities for a blockchain address.
+    Useful for detecting money laundering, bridge exploits, and multi-chain fund movements.
+    Returns bridge transfers, volumes, and risk indicators.
+    """
+    try:
+        # Use Neo4j to query bridge transactions
+        # This is a simplified implementation - in production would use specialized bridge indexer
+        bridge_transfers = []
+
+        # Query for outgoing bridge transfers
+        if include_outgoing:
+            outgoing_query = """
+            MATCH (a:Address {address: $address, chain: $chain})-[r:BRIDGE_TRANSFER]->(t:BridgeTransaction)
+            WHERE ($from_timestamp IS NULL OR r.timestamp >= datetime($from_timestamp))
+            AND ($to_timestamp IS NULL OR r.timestamp <= datetime($to_timestamp))
+            AND ($min_value_usd IS NULL OR r.value_usd >= $min_value_usd)
+            RETURN r, t ORDER BY r.timestamp DESC LIMIT 50
+            """
+            outgoing_result = await neo4j_client.query(outgoing_query, {
+                "address": address,
+                "chain": chain,
+                "from_timestamp": from_timestamp,
+                "to_timestamp": to_timestamp,
+                "min_value_usd": min_value_usd
+            })
+
+            for record in outgoing_result:
+                bridge_transfers.append({
+                    "type": "outgoing",
+                    "timestamp": record["r"]["timestamp"].isoformat(),
+                    "from_chain": chain,
+                    "to_chain": record["r"]["to_chain"],
+                    "value_usd": record["r"]["value_usd"],
+                    "bridge_name": record["t"]["bridge_name"],
+                    "tx_hash": record["r"]["tx_hash"],
+                    "risk_score": record["r"].get("risk_score", 0.0)
+                })
+
+        # Query for incoming bridge transfers
+        if include_incoming:
+            incoming_query = """
+            MATCH (a:Address {address: $address, chain: $chain})<-[r:BRIDGE_TRANSFER]-(t:BridgeTransaction)
+            WHERE ($from_timestamp IS NULL OR r.timestamp >= datetime($from_timestamp))
+            AND ($to_timestamp IS NULL OR r.timestamp <= datetime($to_timestamp))
+            AND ($min_value_usd IS NULL OR r.value_usd >= $min_value_usd)
+            RETURN r, t ORDER BY r.timestamp DESC LIMIT 50
+            """
+            incoming_result = await neo4j_client.query(incoming_query, {
+                "address": address,
+                "chain": chain,
+                "from_timestamp": from_timestamp,
+                "to_timestamp": to_timestamp,
+                "min_value_usd": min_value_usd
+            })
+
+            for record in incoming_result:
+                bridge_transfers.append({
+                    "type": "incoming",
+                    "timestamp": record["r"]["timestamp"].isoformat(),
+                    "from_chain": record["r"]["from_chain"],
+                    "to_chain": chain,
+                    "value_usd": record["r"]["value_usd"],
+                    "bridge_name": record["t"]["bridge_name"],
+                    "tx_hash": record["r"]["tx_hash"],
+                    "risk_score": record["r"].get("risk_score", 0.0)
+                })
+
+        # Sort by timestamp descending
+        bridge_transfers.sort(key=lambda x: x["timestamp"], reverse=True)
+
+        # Calculate summary statistics
+        total_volume_usd = sum(t["value_usd"] for t in bridge_transfers)
+        total_transfers = len(bridge_transfers)
+        high_risk_count = sum(1 for t in bridge_transfers if t["risk_score"] > 0.7)
+        chains_involved = set()
+        bridges_used = set()
+
+        for transfer in bridge_transfers:
+            chains_involved.add(transfer["from_chain"])
+            chains_involved.add(transfer["to_chain"])
+            bridges_used.add(transfer["bridge_name"])
+
+        # Risk assessment
+        risk_factors = []
+        if high_risk_count > 0:
+            risk_factors.append(f"{high_risk_count} high-risk transfers detected")
+        if len(bridges_used) > 3:
+            risk_factors.append("Multiple bridge protocols used")
+        if len(chains_involved) > 5:
+            risk_factors.append("Activity across many chains")
+
+        return {
+            "address": address,
+            "primary_chain": chain,
+            "total_bridge_transfers": total_transfers,
+            "total_volume_usd": total_volume_usd,
+            "chains_involved": list(chains_involved),
+            "bridges_used": list(bridges_used),
+            "high_risk_count": high_risk_count,
+            "risk_factors": risk_factors,
+            "recent_transfers": bridge_transfers[:10],  # Return most recent 10
+            "analysis_period": {
+                "from_timestamp": from_timestamp,
+                "to_timestamp": to_timestamp,
+                "min_value_usd": min_value_usd
+            }
+        }
+
+    except Exception as e:
+        logger.error(f"Error in analyze_cross_chain_bridge_tool: {e}")
+        return {"error": str(e)}
 
 
 class RetryFailedPaymentInput(BaseModel):
@@ -1658,12 +1795,12 @@ async def retry_failed_payment_tool(payment_id: int, user_id: str) -> str:
         
         currency_info = crypto_payment_service.get_currency_info(original["pay_currency"])
         
-        result = f"🔄 **Payment neu erstellt!**\n\n"
+        result = "🔄 **Payment neu erstellt!**\n\n"
         result += f"**Original**: Payment {payment_id} ({original['payment_status']})\n"
         result += f"**Neu**: Payment {new_payment['payment_id']}\n\n"
         result += f"💰 **Amount**: {new_payment['pay_amount']} {currency_info['symbol'].upper()}\n"
         result += f"📍 **Address**: `{new_payment['pay_address']}`\n\n"
-        result += f"⏰ **Gültigkeit**: 15 Minuten\n\n"
+        result += "⏰ **Gültigkeit**: 15 Minuten\n\n"
         result += f"[PAYMENT_ID:{new_payment['payment_id']}]"
         
         return result
@@ -1753,15 +1890,15 @@ async def suggest_web3_payment_tool(user_id: str, plan: str, currency: str) -> s
         
         wallet_name = wallet_names.get(currency.lower(), "MetaMask")
         
-        result = f"\n\n💡 **TIPP: Web3 One-Click-Payment verfügbar!**\n\n"
+        result = "\n\n💡 **TIPP: Web3 One-Click-Payment verfügbar!**\n\n"
         result += f"Statt manuell zu bezahlen, kannst du mit **{wallet_name}** direkt aus dem Chat bezahlen:\n\n"
-        result += f"✅ **Vorteile**:\n"
-        result += f"• 🚀 **One-Click**: Wallet öffnet sich automatisch\n"
-        result += f"• ⚡ **Schneller**: Keine Copy-Paste von Adressen\n"
-        result += f"• 🔒 **Sicherer**: Keine Tippfehler möglich\n"
-        result += f"• 💎 **Komfortabel**: Wie PayPal, aber mit Crypto\n\n"
+        result += "✅ **Vorteile**:\n"
+        result += "• 🚀 **One-Click**: Wallet öffnet sich automatisch\n"
+        result += "• ⚡ **Schneller**: Keine Copy-Paste von Adressen\n"
+        result += "• 🔒 **Sicherer**: Keine Tippfehler möglich\n"
+        result += "• 💎 **Komfortabel**: Wie PayPal, aber mit Crypto\n\n"
         result += f"Wenn du eine Zahlung erstellst, erscheint automatisch ein **'Connect {wallet_name} & Pay'** Button im Widget!\n\n"
-        result += f"Möchtest du das Payment jetzt erstellen?"
+        result += "Möchtest du das Payment jetzt erstellen?"
         
         return result
     except Exception as e:
@@ -1820,11 +1957,11 @@ async def get_payment_history_tool(user_id: str, limit: int = 5) -> str:
             
             # Add action buttons based on status
             if p['payment_status'] == 'finished':
-                result += f"   🔹 Aktionen: Download Invoice | View TX\n"
+                result += "   🔹 Aktionen: Download Invoice | View TX\n"
             elif p['payment_status'] in ['failed', 'expired']:
                 result += f"   🔹 Aktionen: 🔄 Retry Payment (ID: {p['payment_id']})\n"
             elif p['payment_status'] in ['pending', 'waiting']:
-                result += f"   🔹 Aktionen: Check Status | View Address\n"
+                result += "   🔹 Aktionen: Check Status | View Address\n"
             
             result += "\n"
         
@@ -1832,7 +1969,7 @@ async def get_payment_history_tool(user_id: str, limit: int = 5) -> str:
         total_finished = sum(1 for p in payments if p['payment_status'] == 'finished')
         total_spent = sum(p['price_amount'] for p in payments if p['payment_status'] == 'finished')
         
-        result += f"📊 **Statistik:**\n"
+        result += "📊 **Statistik:**\n"
         result += f"• Erfolgreiche Zahlungen: {total_finished}/{len(payments)}\n"
         result += f"• Total ausgegeben: ${total_spent:.2f}\n\n"
         result += f"💡 **Tipp**: Sage 'Retry Payment {payments[0]['payment_id']}' um eine fehlgeschlagene Zahlung zu wiederholen!"
@@ -2057,6 +2194,7 @@ FORENSIC_TOOLS = [
     simulate_alerts_tool,
     risk_score_tool,
     bridge_lookup_tool,
+    analyze_cross_chain_bridge_tool,
     trigger_alert_tool,
     write_evidence_tool,
     run_playbooks_tool,

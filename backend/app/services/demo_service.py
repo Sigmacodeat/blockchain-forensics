@@ -13,9 +13,8 @@ import logging
 import uuid
 from datetime import datetime, timedelta
 from typing import Optional, Dict, Any
-from sqlalchemy.orm import Session
 
-from app.models.user import UserORM, UserRole, SubscriptionPlan
+from app.models.user import UserORM, UserRole
 from app.auth.jwt import get_password_hash, create_access_token
 from app.db.postgres_client import postgres_client
 
@@ -140,7 +139,7 @@ class DemoService:
         try:
             import os
             if os.getenv("TEST_MODE") == "1" or os.getenv("PYTEST_CURRENT_TEST"):
-                user_id = f"demo_live_test"
+                user_id = "demo_live_test"
                 demo_email = f"{user_id}@demo.sigmacode.io"
                 expires_at = datetime.utcnow() + timedelta(minutes=self.LIVE_DEMO_DURATION_MINUTES)
                 _features = [

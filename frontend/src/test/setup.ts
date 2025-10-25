@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom'
+import React from 'react'
 
 // Mock window.matchMedia
 Object.defineProperty(window, 'matchMedia', {
@@ -45,3 +46,16 @@ global.ResizeObserver = class ResizeObserver {
     return null
   }
 }
+
+// Mock AuthProvider for tests
+jest.mock('../contexts/AuthContext', () => ({
+  AuthProvider: ({ children }: { children: React.ReactNode }) => React.createElement('div', { 'data-testid': 'auth-provider' }, children),
+  useAuth: () => ({
+    user: { id: 'test-user', plan: 'community' },
+    isAuthenticated: true,
+    login: jest.fn(),
+    logout: jest.fn(),
+    hasPermission: jest.fn(() => true),
+    hasPlan: jest.fn(() => true),
+  }),
+}))

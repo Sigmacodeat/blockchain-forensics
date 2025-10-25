@@ -10,9 +10,8 @@ Features:
 """
 
 from __future__ import annotations
-import asyncio
 import logging
-from typing import Any, Dict, List, Optional, Set, Callable, Awaitable
+from typing import Any, Dict, List, Optional
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from enum import Enum
@@ -20,7 +19,6 @@ import json
 import hashlib
 
 from app.db.redis_client import redis_client
-from app.config import settings
 from app.services.evidence_vault import evidence_vault
 from app.services.soar_engine import soar_engine
 

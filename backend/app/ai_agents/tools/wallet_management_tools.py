@@ -6,14 +6,11 @@ Vollständige Wallet-Steuerung über Chat für alle 50+ Chains.
 """
 
 import logging
-from typing import Optional, List, Dict, Any
+from typing import Optional
 from langchain.tools import tool
 from pydantic.v1 import BaseModel, Field
 
 from app.services.wallet_service import wallet_service
-from app.services.wallet_ai_service import wallet_ai_agent
-from app.services.multisig_wallet_service import multisig_manager
-from app.services.hardware_wallet_service import hardware_wallet_manager, HardwareWalletType
 
 logger = logging.getLogger(__name__)
 
@@ -175,7 +172,7 @@ async def get_wallet_balance_tool(chain: str, address: str) -> str:
 {risk_emoji} **Risk Score**: {risk_score:.2f}"""
         
         if balance_data.get("risk_factors"):
-            result += f"\n\n⚠️ **Risk Factors**:\n"
+            result += "\n\n⚠️ **Risk Factors**:\n"
             for factor in balance_data["risk_factors"][:3]:
                 result += f"  • {factor}\n"
         
@@ -377,7 +374,7 @@ async def analyze_wallet_tool(wallet_id: str) -> str:
             result += "\n"
         
         if analysis.get("recommendations"):
-            result += f"💡 **Recommendations**:\n"
+            result += "💡 **Recommendations**:\n"
             for rec in analysis['recommendations'][:3]:
                 result += f"  • {rec}\n"
         

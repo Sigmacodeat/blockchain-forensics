@@ -21,7 +21,7 @@ import asyncio
 import json
 import re
 import xml.etree.ElementTree as ET
-from typing import Dict, List, Any, Optional, Set
+from typing import Dict, List, Any, Optional
 import httpx
 import logging
 from datetime import datetime, timedelta

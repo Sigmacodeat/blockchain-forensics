@@ -12,7 +12,7 @@ Role Limits:
 """
 
 import logging
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, Optional
 from fastapi import HTTPException, status
 from datetime import datetime
 

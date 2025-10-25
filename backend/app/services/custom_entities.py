@@ -17,10 +17,15 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
 import hashlib
-import json
 
 logger = logging.getLogger(__name__)
 
+
+# Expose multi_chain_engine at module scope for test patching
+try:
+    from app.services.multi_chain import multi_chain_engine as multi_chain_engine  # type: ignore
+except Exception:
+    multi_chain_engine = None  # type: ignore
 
 class EntityType(str, Enum):
     """Entity Type Classification"""
@@ -509,10 +514,17 @@ class CustomEntitiesService:
     async def _fetch_address_insights(self, addr: EntityAddress) -> Dict[str, Any]:
         """Fetch Insights für einzelne Adresse"""
         try:
-            from app.services.multi_chain import multi_chain_engine
-            
+            engine = multi_chain_engine
+            if not engine or not hasattr(engine, "get_address_transactions_paged"):
+                return {
+                    "chain_id": addr.chain_id,
+                    "tx_count": 0,
+                    "value_usd": 0.0,
+                    "counterparties": [],
+                }
+
             # Hole Transaktionen (limitiert für Performance)
-            txs = await multi_chain_engine.get_address_transactions_paged(
+            txs = await engine.get_address_transactions_paged(
                 chain_id=addr.chain_id,
                 address=addr.address,
                 limit=100,

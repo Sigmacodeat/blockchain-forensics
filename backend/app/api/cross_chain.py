@@ -7,7 +7,6 @@ Bietet REST-API für Cross-Chain-Swaps und Bridge-Operationen.
 from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
 from pydantic import BaseModel, Field
 from typing import Dict, List, Optional, Any
-import asyncio
 
 from app.services.cross_chain_service import cross_chain_service, cross_chain_analytics
 from app.auth.dependencies import get_current_user

@@ -9,10 +9,10 @@ Metrics für:
 - Custom Ledgers
 """
 
-from prometheus_client import Counter, Histogram, Gauge, Info
+from prometheus_client import Counter, Histogram, Gauge
 import time
 from functools import wraps
-from typing import Callable, Any
+from typing import Callable
 import logging
 
 logger = logging.getLogger(__name__)
@@ -213,7 +213,7 @@ def track_universal_screening():
                 
                 return result
                 
-            except Exception as e:
+            except Exception:
                 status = 'error'
                 raise
             finally:
@@ -244,7 +244,7 @@ def track_custom_entity_operation(operation: str):
                 
                 return result
                 
-            except Exception as e:
+            except Exception:
                 status = 'error'
                 raise
             finally:
@@ -281,7 +281,7 @@ def track_indirect_risk():
                 
                 return result
                 
-            except Exception as e:
+            except Exception:
                 status = 'error'
                 raise
             finally:
@@ -313,7 +313,7 @@ def track_ledger_operation(operation: str):
                 
                 return result
                 
-            except Exception as e:
+            except Exception:
                 if operation == 'upload_csv':
                     custom_ledgers_csv_upload.labels(status='error').inc()
                 raise
@@ -340,7 +340,7 @@ def track_api_request(endpoint: str):
                 result = await func(*args, **kwargs)
                 return result
                 
-            except Exception as e:
+            except Exception:
                 status = 500
                 raise
             finally:

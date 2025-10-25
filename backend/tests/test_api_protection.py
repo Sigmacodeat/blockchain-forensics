@@ -5,7 +5,7 @@ Testet die neuen Plan-based und Org-based Guards
 
 import pytest
 from fastapi import HTTPException
-from app.auth.dependencies import require_plan, has_plan, require_admin
+from app.auth.dependencies import has_plan, require_admin
 from app.auth.models import UserRole
 from app.utils.auth_helpers import require_org_ownership, is_resource_accessible
 

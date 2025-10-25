@@ -97,7 +97,6 @@ class TestTokenGeneration:
 
     def test_no_insecure_random_for_tokens(self):
         """Test: Kein unsicherer random-Generator für Security-Tokens"""
-        import random
         
         # FALSCH (sollte nicht verwendet werden):
         # insecure_token = str(random.randint(100000, 999999))

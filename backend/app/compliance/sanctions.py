@@ -9,7 +9,6 @@ Nutzt sanctions_indexer aus app.intel.sanctions.
 import asyncio
 import logging
 from typing import Dict, List, Optional, Any
-from datetime import datetime
 
 try:
     from app.intel.sanctions import sanctions_indexer
@@ -170,7 +169,7 @@ class SanctionsService:
                                 "confidence": 1.0,
                                 "source": alias["source"]
                             }],
-                            "explain": f"Address matched in test data"
+                            "explain": "Address matched in test data"
                         }
 
         # Screen Name (einfaches Fuzzy-Matching)
@@ -195,7 +194,7 @@ class SanctionsService:
                                     "confidence": 0.9,  # Fuzzy match confidence
                                     "source": alias["source"]
                                 }],
-                                "explain": f"Name fuzzy matched in test data"
+                                "explain": "Name fuzzy matched in test data"
                             }
 
             # Auch gegen canonical_name prüfen
@@ -213,7 +212,7 @@ class SanctionsService:
                             "confidence": 0.95,
                             "source": "ofac"
                         }],
-                        "explain": f"Name matched canonical name in test data"
+                        "explain": "Name matched canonical name in test data"
                     }
 
         # Screen ENS
@@ -234,7 +233,7 @@ class SanctionsService:
                                 "confidence": 1.0,
                                 "source": alias["source"]
                             }],
-                            "explain": f"ENS matched in test data"
+                            "explain": "ENS matched in test data"
                         }
 
         return {

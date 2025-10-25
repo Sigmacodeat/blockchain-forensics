@@ -11,7 +11,7 @@ Testet alle Komponenten:
 
 import pytest
 from app.contracts.bytecode_analyzer import bytecode_analyzer
-from app.contracts.vulnerability_detector import vulnerability_detector, VulnerabilitySeverity
+from app.contracts.vulnerability_detector import vulnerability_detector
 from app.contracts.exploit_detector import exploit_detector
 from app.contracts.function_signature_matcher import function_signature_matcher
 

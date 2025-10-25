@@ -4,8 +4,7 @@ Async Queue Service for background processing
 
 import asyncio
 import logging
-import json
-from typing import Dict, Any, Callable, List
+from typing import Dict, Any, Callable
 import time
 import os
 

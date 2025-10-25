@@ -5,7 +5,7 @@ Risk Scoring v1
 """
 from __future__ import annotations
 
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from typing import Dict, List
 import os
 

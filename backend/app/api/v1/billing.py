@@ -5,7 +5,7 @@ Billing & Plans API
 """
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, HTTPException, status, Request, Response
+from fastapi import APIRouter, Depends, HTTPException, Request, Response
 from fastapi.responses import StreamingResponse
 from typing import Any, Dict, Optional
 
@@ -25,7 +25,6 @@ router = APIRouter()
 # ============================================================================
 
 from pydantic import BaseModel
-from typing import Optional, List
 
 class UnifiedSubscription(BaseModel):
     """Unified subscription (Stripe or Crypto)"""
@@ -292,7 +291,6 @@ async def get_subscription(
         )
         
         if crypto_sub:
-            from datetime import datetime, timedelta
             return UnifiedSubscription(
                 id=str(crypto_sub["id"]),
                 plan=crypto_sub["plan_name"],
@@ -501,7 +499,8 @@ async def export_invoices_csv(current_user: dict = Depends(get_current_user_stri
             )
 
         # Build CSV
-        import io, csv
+        import io
+        import csv
 
         buf = io.StringIO()
         writer = csv.writer(buf)
@@ -542,7 +541,7 @@ async def get_usage_stats(request: Request, current_user: dict = Depends(get_cur
     tenant_id = _resolve_tenant_id(request, current_user)
     
     try:
-        from datetime import datetime, timedelta
+        from datetime import datetime
         # Get current period (monthly cycle)
         now = datetime.utcnow()
         period_start = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)

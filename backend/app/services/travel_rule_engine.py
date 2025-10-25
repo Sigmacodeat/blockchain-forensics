@@ -20,7 +20,6 @@ from app.models.vasp import (
     OriginatorInfo,
     BeneficiaryInfo,
     VASP,
-    VASPScreeningResult,
 )
 
 logger = logging.getLogger(__name__)

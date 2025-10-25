@@ -68,7 +68,7 @@ def test_share_and_fetch_and_verify_flow():
         message_id = msg["message_id"]
 
         # Fetch messages for org_beta
-        list_res = client.get(f"/api/v1/intel/sharing/messages/org_beta")
+        list_res = client.get("/api/v1/intel/sharing/messages/org_beta")
         assert list_res.status_code == 200
         listing = list_res.json()
         assert listing["count"] >= 1

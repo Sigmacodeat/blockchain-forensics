@@ -113,9 +113,9 @@ run_test_section "Backend Integration Tests - Adapters" \
 run_test_section "Backend Integration Tests - Workers" \
     "pytest tests/integration/workers -v -m integration --tb=short"
 
-# 3. Security Tests
-run_test_section "Backend Security Tests" \
-    "pytest tests/security -v -m security --tb=short"
+# 3. Security Tests (auskommentiert - kein tests/security Verzeichnis)
+# run_test_section "Backend Security Tests" \
+#     "pytest tests/security -v -m security --tb=short"
 
 # 4. E2E Tests (optional via ENABLE_BACKEND_E2E=1)
 if [ -d "tests/e2e" ] && [ "$(ls -A tests/e2e)" ]; then

@@ -8,7 +8,6 @@ from typing import Dict, Optional, List, Tuple, Any
 from datetime import datetime
 from io import BytesIO
 import hashlib
-import json
 
 try:
     from reportlab.lib.pagesizes import letter, A4
@@ -25,7 +24,7 @@ try:
 except ImportError:
     REPORTLAB_AVAILABLE = False
 
-from app.services.signing import manifest_service, generate_report_hash_and_manifest
+from app.services.signing import generate_report_hash_and_manifest
 
 logger = logging.getLogger(__name__)
 
@@ -318,7 +317,7 @@ class PDFReportGenerator:
         ).hexdigest()
         
         story.append(Paragraph(
-            f"<font size=8>Digital Signature (SHA-256):</font>",
+            "<font size=8>Digital Signature (SHA-256):</font>",
             self.styles['Normal']
         ))
         story.append(Paragraph(

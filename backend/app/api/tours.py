@@ -4,10 +4,9 @@ Guided Tours API Endpunkte für Blockchain-Forensik-Anwendung
 Bietet REST-API für Tour-Management und Analytics.
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
-from typing import Dict, List, Optional, Any
-import asyncio
+from typing import Dict, List, Any
 
 from app.services.tour_service import tour_service, TourStatus, TourType
 from app.auth.dependencies import get_current_user

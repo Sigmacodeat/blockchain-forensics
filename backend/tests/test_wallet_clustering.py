@@ -5,8 +5,7 @@ All tests use mocked Neo4j client
 """
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
-from collections import defaultdict
+from unittest.mock import AsyncMock, patch
 
 from app.ml.wallet_clustering import WalletClusterer
 

@@ -3,12 +3,10 @@
 Admin Account Creator
 Erstellt Admin- und Test-Accounts für die Plattform
 """
-import asyncio
 import bcrypt
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 import os
-import uuid
 from datetime import datetime
 
 # Database URL aus Environment oder Default (Docker: Port 5435)
@@ -97,9 +95,9 @@ def create_admin_accounts():
         print("🔑 LOGIN-INFORMATIONEN")
         print("="*60)
         print("\n👑 Admin-Account:")
-        print(f"  Email:    admin@blockchain-forensics.com")
-        print(f"  Passwort: Admin2025!Secure")
-        print(f"  Rolle:    admin")
+        print("  Email:    admin@blockchain-forensics.com")
+        print("  Passwort: Admin2025!Secure")
+        print("  Rolle:    admin")
         
         print("\n👤 Test-Accounts:")
         for acc in accounts[1:]:

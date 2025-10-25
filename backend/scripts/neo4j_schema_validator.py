@@ -12,7 +12,6 @@ Hinweis:
 - Es werden nur leichte COUNT/EXISTS-Queries ausgeführt.
 - Keine Änderungen an Daten.
 """
-import argparse
 import asyncio
 import os
 import sys

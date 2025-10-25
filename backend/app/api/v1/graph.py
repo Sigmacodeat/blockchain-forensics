@@ -7,7 +7,6 @@ import time
 import uuid
 import os
 import logging
-from functools import lru_cache
 from typing import Dict, Tuple, Any, List, Optional
 
 from fastapi import APIRouter, HTTPException, Query, Body
@@ -15,7 +14,6 @@ from pydantic import BaseModel, Field
 from app.services.graph_service import service as graph
 from app.db.neo4j_client import neo4j_client
 from app.ml.wallet_clustering import wallet_clusterer
-from app.services.alert_service import alert_service
 
 router = APIRouter()
 
@@ -282,8 +280,8 @@ async def cross_chain_path(
     try:
         req_id = str(uuid.uuid4())
         t0 = time.time()
-        q = f"""
-        MATCH (src:Address {{address: $src}}), (dst:Address {{address: $dst}})
+        q = """
+        MATCH (src:Address {address: $src}), (dst:Address {address: $dst})
         CALL apoc.algo.dijkstra(src, dst, 'SENT|RECEIVED|BRIDGE_LINK>', 'weight')
         YIELD path AS p, weight AS w
         WITH p LIMIT $limit

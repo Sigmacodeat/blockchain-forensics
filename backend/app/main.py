@@ -33,7 +33,6 @@ from app.api.tours import router as tours_router
 from app.middleware.security import SecurityAuditMiddleware, GDPRComplianceMiddleware
 from app.middleware.rate_limit import RateLimitMiddleware as SimpleRateLimitMiddleware
 from app.middleware.org_access import OrgAccessMiddleware
-from app.middleware.security_headers import SecurityHeadersMiddleware
 from app.middleware.idempotency import IdempotencyMiddleware
 from app.middleware.analytics import AnalyticsMiddleware
 try:
