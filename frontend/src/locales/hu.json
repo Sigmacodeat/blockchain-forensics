@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Demó foglalása",
+      "pricing": "Árak megtekintése",
+      "subtitle": "Kezdj most egy ingyenes demóval, vagy lépj kapcsolatba csapatunkkal",
+      "title": "Kezdj most"
+    },
+    "header": {
+      "badge": "Rólunk",
+      "subtitle": "A vezető vállalati platformot fejlesztjük a blockchain intelligenciához, amely támogatja a bűnüldöző szerveket, VASP-okat és pénzügyi intézményeket a kriptobűnözés elleni védelemben.",
+      "title": "A blockchain kriminalisztika jövője"
+    },
+    "mission": {
+      "desc": "Átláthatóvá és nyomon követhetővé tesszük a blockchain tranzakciókat. Célunk a kriptobűnözés elleni küzdelem és a legitim piaci szereplők számára olyan eszközök biztosítása, amelyekkel teljesíthetik a megfelelőségi követelményeket és minimalizálhatják a kockázatokat.",
+      "title": "Küldetésünk"
+    },
+    "seo": {
+      "description": "A vezető vállalati platformot építjük a blockchain kriminalisztikához: megfelelőség, vizsgálatok és intelligencia világszerte.",
+      "title": "Rólunk | SIGMACODE Blockchain Kriminalisztika"
+    },
+    "stats": {
+      "badge": "Számokban",
+      "blockchains": "Blockchainek",
+      "enterprise_customers": "Vállalati ügyfelek",
+      "recovered_assets": "Helyreállított eszközök",
+      "sla_guaranteed": "SLA által garantált",
+      "supported": "támogatott",
+      "supported_by_tech": "technológiánk által támogatott",
+      "title": "Hatásunk",
+      "uptime": "Üzemidő",
+      "worldwide": "világszerte"
+    },
+    "team": {
+      "badge": "Szakértelem",
+      "compliance": {
+        "desc": "Szabályozási szakértők AML/CFT és nemzetközi szankciók területén",
+        "h1": "Korábbi szabályozók",
+        "h2": "AML szakértők",
+        "h3": "Jogi tanácsadók",
+        "title": "Megfelelőség és jog"
+      },
+      "forensics": {
+        "desc": "Korábbi bűnüldöző szervek munkatársai, akik többéves tapasztalattal rendelkeznek kriptobűnözési vizsgálatokban",
+        "h1": "FBI/BKA öregdiákok",
+        "h2": "Darknet-leállítások",
+        "h3": "Eszköz-helyreállítás",
+        "title": "Kriminalisztikai szakértők"
+      },
+      "subtitle": "Szakértők a blockchain kriminalisztika, bűnüldözés, FinTech és gépi tanulás területén",
+      "tech": {
+        "desc": "Vezető technológiai cégek mérnökei blockchain szakértelemmel",
+        "h1": "Korábbi FAANG",
+        "h2": "Blockchain alapfejlesztők",
+        "h3": "Biztonsági szakértők",
+        "title": "Technológiai szakemberek"
+      },
+      "title": "Csapatunk"
+    },
+    "trust": {
+      "badge": "Bizalom",
+      "ce": {
+        "desc": "Top-10 tőzsde AML és tranzakciófigyelés céljából",
+        "title": "Kriptotőzsdék"
+      },
+      "fi": {
+        "desc": "Első osztályú bankok kripto-expozícióval",
+        "title": "Bankok és FinTech cégek"
+      },
+      "le": {
+        "desc": "FBI, Europol, nemzeti bűnüldöző szervek",
+        "title": "Bűnüldöző szervek"
+      },
+      "reg": {
+        "desc": "Pénzügyi felügyeleti hatóságok piacfelügyelet céljából",
+        "title": "Szabályozók"
+      },
+      "subtitle": "Vezető szervezetek világszerte bíznak technológiánkban",
+      "title": "Kik bíznak bennünk"
+    },
+    "values": {
+      "badge": "Értékeink",
+      "compliance": {
+        "desc": "GDPR, eIDAS, OFAC megfelelőség. Értjük a szabályozási követelményeket, és beépítjük őket.",
+        "title": "Első a megfelelőség"
+      },
+      "customer": {
+        "desc": "Szoros együttműködés a bűnüldöző szervekkel és az iparággal. Az Ön igényei határozzák meg ütemtervünket.",
+        "title": "Ügyfélközpontúság"
+      },
+      "global": {
+        "desc": "100+ blockchain, többnyelvű támogatás és nemzetközi szankciós listák lefedése.",
+        "title": "Globális elérhetőség"
+      },
+      "innovation": {
+        "desc": "Legkorszerűbb technológia: AI/ML, gráfanalitikák és valós idejű feldolgozás a legjobb eredmények érdekében.",
+        "title": "Innováció"
+      },
+      "team": {
+        "desc": "Interdiszciplináris csapat kriminalisztikai szakértőkből, fejlesztőkből és megfelelőségi szakemberekből.",
+        "title": "Csapatmunka"
+      },
+      "title": "Mi hajt minket",
+      "trust": {
+        "desc": "Vállalati szintű biztonság SOC2/ISO27001 tanúsítványokkal. Adatai nálunk biztonságban vannak.",
+        "title": "Bizalom és biztonság"
+      }
+    },
+    "vision": {
+      "desc": "Egy olyan világ, ahol a blockchain technológia teljes potenciálját kiaknázhatja – átláthatóan, biztonságosan és megfelelőségi követelményeknek megfelelően. Mi építjük az infrastruktúrát egy olyan jövőhöz, ahol a digitális eszközök mainstreammé válnak anélkül, hogy bűnözést ösztönöznének.",
+      "title": "Vízióink"
+    }
+  },
+  "accessibility": {
+    "activate": "Aktiválás",
+    "close_dialog": "Párbeszéd bezárása",
+    "font_size": "Betűméret",
+    "font_size_large": "Nagy betűméret",
+    "font_size_normal": "Normál betűméret",
+    "font_size_xlarge": "Extra nagy betűméret",
+    "high_contrast_detected": "Magas kontraszt észlelve",
+    "keyboard_shortcuts": "Billentyűparancsok",
+    "navigate_backward": "Vissza navigálás",
+    "navigate_forward": "Előre navigálás",
+    "no_system_preferences": "Nincsenek speciális rendszerbeállítások észlelve",
+    "reduced_motion_detected": "Csökkentett mozgás észlelve",
+    "settings": "Akadálymentesítési beállítások",
+    "skip_to_content": "Ugrás a tartalomra",
+    "system_preferences": "Rendszerbeállítások"
+  },
+  "address_analysis": {
+    "title": "cím_analízis.cím",
+    "wip_desc": "cím_analízis.munka_folyamatban_leírás",
+    "wip_title": "cím_analízis.munka_folyamatban_cím"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI ügynökök",
+      "app_name": "Alkalmazás neve",
+      "cross_chain": "Keresztlánc",
+      "max_trace_depth": "Maximális követési mélység",
+      "ml_clustering": "ML klaszterezés",
+      "title": "Konfiguráció",
+      "version": "Verzió"
+    },
+    "disabled": "✗ Letiltva",
+    "enabled": "✓ Engedélyezve",
+    "error": "Hiba",
+    "health": {
+      "connected": "✓ Csatlakoztatva",
+      "disconnected": "✗ Leválasztva",
+      "error": "Nem sikerült betölteni az egészségi állapotot",
+      "title": "Adatbázis állapota"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Tranzakciókat kér le az Ethereum RPC-től",
+        "ingesting": "Betöltés folyamatban...",
+        "placeholder": "0x...",
+        "start": "Címadatok betöltésének megkezdése",
+        "success": "✓ A betöltés a háttérben elkezdődött",
+        "title": "Címadatok betöltése"
+      },
+      "block": {
+        "help": "Importálja az összes tranzakciót egy blokkból",
+        "ingesting": "Betöltés folyamatban...",
+        "placeholder": "Blokkszám",
+        "start": "Blokk importálás megkezdése",
+        "success": "✓ Blokk betöltés elkezdődött",
+        "title": "Blokkadatok betöltése"
+      }
+    },
+    "stats": {
+      "db_size": "Adatbázis mérete",
+      "title": "Rendszerstatisztikák",
+      "total_addresses": "Összes cím",
+      "total_traces": "Összes követés",
+      "total_transactions": "Összes tranzakció"
+    },
+    "subtitle": "Monitorozás, konfiguráció és adatkezelés",
+    "tabs": {
+      "config": "Konfiguráció",
+      "ingestion": "Adatbetöltés",
+      "overview": "Áttekintés",
+      "users": "Felhasználókezelés"
+    },
+    "title": "Rendszeradminisztráció"
+  },
+  "agent": {
+    "cancel": "Mégse",
+    "error": "Hiba történt.",
+    "error_unknown": "Váratlan hiba történt. Próbáld újra.",
+    "examples": {
+      "1": "Trace-eld a 0xABC… címet az utolsó 5 hopra",
+      "2": "Ellenőrizd a 0x… címet szankciós listákon",
+      "3": "Foglaljuk össze a mai magas kockázatú riasztásokat",
+      "title": "Gyors ötletek"
+    },
+    "instructions": "Kérj tőlem trace-et, szankciószűrést, esetelemzést vagy monitoring mutatókat.",
+    "loading": "A kérés feldolgozása folyamatban…",
+    "placeholder": "Írd le, mire van szükséged. Példa: Trace 0xABCD 3 hop mélységben",
+    "retry": "Próbáld újra",
+    "send": "Küldés",
+    "subtitle": "Forenzikus copilota blockláncokhoz",
+    "title": "Forensic Copilot",
+    "welcome": "Szia! Pénztárcákat, trace-eket, riasztásokat és eseteket elemzek. Mivel kezdjük?"
+  },
+  "auth": {
+    "fields": {
+      "email": "E-mail",
+      "organization_opt": "Szervezet (opcionális)",
+      "password": "Jelszó",
+      "password_confirm": "Jelszó megerősítése",
+      "username": "Felhasználónév"
+    },
+    "forgot": {
+      "back_to_login": "Vissza a bejelentkezéshez",
+      "dev_note": "Mivel nincs e-mail szolgáltatás beállítva, ellenőrizd a szervernaplókat a visszaállítási linkért.",
+      "dev_note_label": "Megjegyzés (fejlesztői mód):",
+      "error": "Hiba a küldés során",
+      "info_sent": "Ha létezik fiók ezzel az e-mail címmel, a visszaállítási linket elküldtük.",
+      "sent": "Visszaállítási link elküldve!",
+      "submit": "Visszaállítási link küldése",
+      "submitting": "Küldés folyamatban...",
+      "subtitle": "Semmi gond! Add meg az e-mail címedet, és küldünk egy visszaállítási linket.",
+      "title": "Elfelejtetted a jelszavad?",
+      "title_sent": "E-mail elküldve!"
+    },
+    "login": {
+      "failed": "Bejelentkezés sikertelen",
+      "fill_all_fields": "Kérjük, tölts ki minden mezőt",
+      "forgot_password": "Elfelejtetted a jelszavad?",
+      "google": "Bejelentkezés Google-lal",
+      "google_retry": "Újra bejelentkezés Google-lal",
+      "no_account": "Még nincs fiókod?",
+      "oauth_failed": "OAuth bejelentkezés sikertelen. Kérjük, próbáld újra.",
+      "oauth_processing": "OAuth bejelentkezés feldolgozása folyamatban…",
+      "or": "vagy",
+      "register_now": "Regisztrálj most",
+      "remember_me": "Maradj bejelentkezve",
+      "submit": "Bejelentkezés",
+      "submitting": "Bejelentkezés folyamatban...",
+      "subtitle": "Jelentkezz be a folytatáshoz"
+    },
+    "placeholders": {
+      "email": "elemző@példa.com",
+      "organization": "FBI, Chainalysis, stb.",
+      "password": "••••••••",
+      "username": "janos_elemzo"
+    },
+    "register": {
+      "accept": "Elfogadom a",
+      "already": "Már regisztráltál?",
+      "and": "és",
+      "failed": "Regisztráció sikertelen",
+      "fill_all_fields": "Kérjük, tölts ki minden kötelező mezőt",
+      "google": "Regisztráció Google-lal",
+      "login_now": "Jelentkezz be most",
+      "password_hint": "Legalább 8 karakter",
+      "password_too_short": "A jelszónak legalább 8 karakterből kell állnia",
+      "passwords_no_match": "A jelszavak nem egyeznek",
+      "submit": "Regisztráció",
+      "submitting": "Regisztráció folyamatban...",
+      "subtitle": "Kezdd el a kriminalisztikai elemzést",
+      "title": "Fiók létrehozása"
+    }
+  },
+  "common": {
+    "access_denied": "Hozzáférés megtagadva (csak admin)",
+    "account": "Fiók",
+    "back": "Vissza",
+    "close": "Bezárás",
+    "info": "Információ",
+    "language": "Nyelv",
+    "loading": "Betöltés...",
+    "next": "Következő",
+    "page": "Oldal",
+    "prev": "Előző",
+    "recent": "Nemrég használt",
+    "no_results": "Nincs találat",
+    "refresh": "Frissítés",
+    "search": "Keresés",
+    "success": "Siker",
+    "theme": "Téma",
+    "view": "Megtekintés",
+    "wip": {
+      "title": "Hamarosan",
+      "desc": "Ez a funkció még fejlesztés alatt áll.",
+      "cta": "Tudj meg többet"
+    },
+    "start_free": "Ingyenes kezdés",
+    "error": "Hiba",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "delete": "Törlés",
+    "edit": "Szerkesztés",
+    "create": "Létrehozás",
+    "finish": "Befejezés",
+    "open": "Megnyitás",
+    "yes": "Igen",
+    "no": "Nem",
+    "confirm": "Megerősítés",
+    "welcome": "Üdvözöljük",
+    "dashboard": "Irányítópult",
+    "settings": "Beállítások",
+    "profile": "Profil",
+    "logout": "Kijelentkezés",
+    "login": "Bejelentkezés",
+    "register": "Regisztráció",
+    "email": "E-mail",
+    "password": "Jelszó",
+    "username": "Felhasználónév",
+    "documents": "Dokumentumok"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "korreláció.vezérlők.min_súlyosság",
+      "refresh": "korreláció.vezérlők.frissítés",
+      "title": "korreláció.vezérlők.cím",
+      "window": "korreláció.vezérlők.ablak",
+      "window_15m": "korreláció.vezérlők.ablak_15p",
+      "window_1h": "korreláció.vezérlők.ablak_1ó",
+      "window_24h": "korreláció.vezérlők.ablak_24ó",
+      "window_2h": "korreláció.vezérlők.ablak_2ó",
+      "window_30m": "korreláció.vezérlők.ablak_30p",
+      "window_5m": "korreláció.vezérlők.ablak_5p"
+    },
+    "header": {
+      "subtitle": "korreláció.fejléc.alcím",
+      "title": "korreláció.fejléc.cím"
+    },
+    "overview": {
+      "active_rules": "korreláció.áttekintés.aktív_szabályok",
+      "analyzed": "korreláció.áttekintés.elemezve",
+      "empty": "korreláció.áttekintés.üres",
+      "found": "korreláció.áttekintés.talált",
+      "loading": "korreláció.áttekintés.betöltés",
+      "min_sev": "korreláció.áttekintés.min_súly",
+      "rate": "korreláció.áttekintés.arány",
+      "title": "korreláció.áttekintés.cím",
+      "window": "korreláció.áttekintés.ablak"
+    },
+    "rules": {
+      "empty": "korreláció.szabályok.üres",
+      "footer": "korreláció.szabályok.lábléc",
+      "loading": "korreláció.szabályok.betöltés",
+      "min": "korreláció.szabályok.min",
+      "minutes": "korreláció.szabályok.percek",
+      "required_patterns": "korreláció.szabályok.kötelező_minták",
+      "title": "korreláció.szabályok.cím",
+      "window": "korreláció.szabályok.ablak"
+    },
+    "sev": {
+      "critical": "korreláció.súlyosság.kritikus",
+      "high": "korreláció.súlyosság.magas",
+      "low": "korreláció.súlyosság.alacsony",
+      "medium": "korreláció.súlyosság.közepes"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "korreláció.elnyomások.bontás.ok_szerint",
+        "by_type": "korreláció.elnyomások.bontás.típus_szerint",
+        "title": "korreláció.elnyomások.bontás.cím"
+      },
+      "rate": "korreláció.elnyomások.arány",
+      "title": "korreláció.elnyomások.cím",
+      "top_entity": "korreláció.elnyomások.top_entitás",
+      "total": "korreláció.elnyomások.összesen"
+    },
+    "test": {
+      "add_alert": "korreláció.teszt.riasztás_hozzáadása",
+      "alerts_label": "korreláció.teszt.riasztások_címke",
+      "match": "korreláció.teszt.illeszkedés",
+      "no_alerts": "korreláció.teszt.nincs_riasztás",
+      "no_match": "korreláció.teszt.nincs_illeszkedés",
+      "pick_rule": "korreláció.teszt.szabály_választás",
+      "pick_rule_ph": "korreláció.teszt.szabály_választás_helyőrző",
+      "result": "korreláció.teszt.eredmény",
+      "run": "korreláció.teszt.futtatás",
+      "testing": "korreláció.teszt.tesztelés",
+      "title": "korreláció.teszt.cím"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "lefedettség.műveletek.másolás_tőle",
+      "copy_mint": "lefedettség.műveletek.másolás_verés",
+      "export_csv": "lefedettség.műveletek.csv_exportálás",
+      "export_csv_page": "lefedettség.műveletek.csv_exportálás_oldal",
+      "fetch": "lefedettség.műveletek.lekérés"
+    },
+    "bitcoin": {
+      "block_title": "lefedettség.bitcoin.blokk_cím",
+      "compute": "lefedettség.bitcoin.számítás",
+      "decoded": "lefedettség.bitcoin.dekódolt",
+      "edges_title": "lefedettség.bitcoin.élek_cím",
+      "height_ph": "lefedettség.bitcoin.magasság_helyőrző",
+      "ingest_edges": "lefedettség.bitcoin.élek_betöltése",
+      "method_heuristic": "lefedettség.bitcoin.módszer_heurisztikus",
+      "method_proportional": "lefedettség.bitcoin.módszer_arányos",
+      "normalized": "lefedettség.bitcoin.normalizált",
+      "tx_title": "lefedettség.bitcoin.tx_cím",
+      "txid_ph": "lefedettség.bitcoin.txid_helyőrző"
+    },
+    "compliance": {
+      "add_watch": "lefedettség.megfelelőség.figyelés_hozzáadása",
+      "address_ph": "lefedettség.megfelelőség.cím_helyőrző",
+      "chain_ph": "lefedettség.megfelelőség.lánc_helyőrző",
+      "entries": "lefedettség.megfelelőség.bejegyzések",
+      "error": "lefedettség.megfelelőség.hiba",
+      "filter_address_ph": "lefedettség.megfelelőség.szűrő_cím_helyőrző",
+      "filter_chain_ph": "lefedettség.megfelelőség.szűrő_lánc_helyőrző",
+      "list_watch": "lefedettség.megfelelőség.figyelőlista",
+      "screen": "lefedettség.megfelelőség.képernyő",
+      "title": "lefedettség.megfelelőség.cím",
+      "watchlist": "lefedettség.megfelelőség.figyelőlista"
+    },
+    "ethereum": {
+      "canonical": "lefedettség.ethereum.kanonikus",
+      "copy_hash": "lefedettség.ethereum.hash_másolás",
+      "decoded": "lefedettség.ethereum.dekódolt",
+      "error": "lefedettség.ethereum.hiba",
+      "open_etherscan": "lefedettség.ethereum.etherscan_megnyitása",
+      "tx_hash_ph": "lefedettség.ethereum.tx_hash_helyőrző",
+      "tx_title": "lefedettség.ethereum.tx_cím"
+    },
+    "ingest": {
+      "canonical_notice": "lefedettség.betöltés.kanonikus_értesítés",
+      "edges_notice": "lefedettség.betöltés.élek_értesítés",
+      "loading": "lefedettség.betöltés.betöltés"
+    },
+    "labels": {
+      "add": "lefedettség.címkék.hozzáadás",
+      "address_ph": "lefedettség.címkék.cím_helyőrző",
+      "category_ph": "lefedettség.címkék.kategória_helyőrző",
+      "chain_ph": "lefedettség.címkék.lánc_helyőrző",
+      "error": "lefedettség.címkék.hiba",
+      "label_ph": "lefedettség.címkék.címke_helyőrző",
+      "lookup": "lefedettség.címkék.keresés",
+      "title": "lefedettség.címkék.cím"
+    },
+    "monitoring": {
+      "fetch": "lefedettség.figyelés.lekérés",
+      "key_counters": "lefedettség.figyelés.kulcs_számlálók",
+      "title": "lefedettség.figyelés.cím"
+    },
+    "rpc_unavailable": "lefedettség.rpc_nem_elérhető",
+    "solana": {
+      "canonical_error": "lefedettség.solana.kanonikus_hiba",
+      "canonical_title": "lefedettség.solana.kanonikus_cím",
+      "error": "lefedettség.solana.hiba",
+      "ingest_canonical": "lefedettség.solana.kanonikus_betöltés",
+      "signature_ph": "lefedettség.solana.aláírás_helyőrző",
+      "title": "lefedettség.solana.cím",
+      "transfers": "lefedettség.solana.átutalások"
+    },
+    "table": {
+      "actions": "lefedettség.táblázat.műveletek",
+      "address": "lefedettség.táblázat.cím",
+      "amount_ui": "lefedettség.táblázat.összeg_felhasználói_felület",
+      "chain": "lefedettség.táblázat.lánc",
+      "created": "lefedettség.táblázat.létrehozva",
+      "decimals": "lefedettség.táblázat.tizedesek",
+      "fee": "lefedettség.táblázat.díj",
+      "from": "lefedettség.táblázat.tól",
+      "from_vout": "lefedettség.táblázat.tól_vout",
+      "method": "lefedettség.táblázat.módszer",
+      "mint": "lefedettség.táblázat.verés",
+      "reason": "lefedettség.táblázat.ok",
+      "to": "lefedettség.táblázat.hoz",
+      "to_vout": "lefedettség.táblázat.hoz_vout",
+      "value_btc": "lefedettség.táblázat.érték_btc"
+    },
+    "totals": {
+      "page_sum": "lefedettség.összegek.oldal_összeg",
+      "page_sum_btc": "lefedettség.összegek.oldal_összeg_btc",
+      "total_amount": "lefedettség.összegek.teljes_összeg",
+      "total_value_btc": "lefedettség.összegek.teljes_érték_btc"
+    }
+  },
+  "dashboard": {
+    "actions": "Műveletek",
+    "active": "Aktív",
+    "administration": "Adminisztráció",
+    "alert_aging": "Riasztások öregedése",
+    "alert_engine": "Riasztási motor",
+    "alert_monitoring": "Riasztási figyelés",
+    "alert_overview": "Riasztási áttekintés",
+    "analyst_throughput": "Elemzői kapacitás",
+    "audit_kpis": "Audit KPI-k",
+    "backlog": "Hátralék",
+    "bucket_placeholder": "24ó,3n,7n,>7n",
+    "buckets": "Vödrök",
+    "case_management": "Ügykezelés",
+    "connected": "Csatlakoztatva",
+    "correlation_analysis": "Korrelációs elemzés",
+    "database": "Adatbázis",
+    "database_response": "Adatbázis válaszidő",
+    "days": "Napok",
+    "disconnected": "Leválasztva",
+    "failed_actions": "Sikertelen műveletek",
+    "false_positive_rate": "Hamis pozitív arány",
+    "fp": "HP",
+    "graph_db": "Gráf adatbázis",
+    "graph_explorer": "Gráf felfedező",
+    "healthy": "Egészséges",
+    "inactive": "Inaktív",
+    "issues": "Problémák",
+    "last_24h": "Utolsó 24 óra",
+    "last_update": "Utolsó frissítés",
+    "mttr": "MTTR",
+    "open_alerts": "Nyitott riasztások",
+    "open_cases": "Nyitott ügyek",
+    "performance": "Teljesítmény",
+    "priority_distribution": "Prioritási eloszlás",
+    "quick_access": "Gyors hozzáférés",
+    "recent_alerts": "Legutóbbi riasztások",
+    "response_time": "Válaszidő",
+    "rule_effectiveness": "Szabály hatékonysága",
+    "sanctions_hits": "Szankciós találatok",
+    "service_status": "Szolgáltatás állapota",
+    "severity_breakdown": "Súlyossági bontás",
+    "sla_breach_rate": "SLA megsértési arány",
+    "sla_hours": "SLA (ó)",
+    "status_breakdown": "Állapot bontás",
+    "success_rate": "Sikerességi arány",
+    "suppression_rate": "Elnyomási arány",
+    "system_details": "Rendszer részletek",
+    "system_load": "Rendszer terhelés",
+    "system_overview": "Rendszer áttekintés",
+    "system_status": "Rendszer állapota",
+    "title": "SIGMACODE Blockchain Kriminalisztikai Műszerfal",
+    "total_alerts": "Összes riasztás",
+    "total_cases": "Összes ügy",
+    "total_logs": "Összes napló",
+    "transaction_tracing": "Tranzakció követés",
+    "uptime": "Üzemidő",
+    "welcome": "Üdvözöljük vissza",
+    "overview": "Áttekintés",
+    "recent_activity": "Legutóbbi tevékenység",
+    "quick_actions": "Gyors műveletek",
+    "statistics": "Statisztikák",
+    "notifications": "Értesítések",
+    "hero": {
+      "welcome": "Üdv újra",
+      "subtitle": "Itt láthatja, mi történik ma a vizsgálataival."
+    },
+    "quickActions": {
+      "title": "Gyors műveletek",
+      "newTrace": "Új nyomkövetés",
+      "newCase": "Új eset",
+      "riskCheck": "Kockázat ellenőrzés",
+      "aiAgent": "AI Ügynök"
+    },
+    "stats": {
+      "cases": "Aktív esetek",
+      "traces": "Mai nyomkövetések",
+      "alerts": "Értesítések",
+      "uptime": "Működési idő"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Autonóm ügynökök LangChain és GPT-4 integrációval",
+        "title": "AI ügynökök"
+      },
+      "badge": "AI és gépi tanulás",
+      "desc": "Gépi tanulási modellek anomália detektálásra, kockázati pontozásra és autonóm AI ügynökökre 24/7 vizsgálatokhoz.",
+      "pattern": {
+        "desc": "Csalási minták felismerése és viselkedési elemzés",
+        "title": "Mintafelismerés"
+      },
+      "risk": {
+        "desc": "ML-alapú kockázati értékelés címek és tranzakciók számára",
+        "title": "Kockázati pontozás"
+      },
+      "smart_contract": {
+        "desc": "Bájtkód hasonlóság és sebezhetőség detektálás",
+        "title": "Okosszerződés elemzés"
+      },
+      "title": "AI-alapú elemzések"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "ML-alapú szokatlan tranzakciós minták detektálása",
+        "title": "Anomália detektálás"
+      },
+      "badge": "Valós idejű figyelés",
+      "custom_rules": {
+        "desc": "Saját riasztási szabályok Rule DSL és házirendmotorral",
+        "title": "Egyedi szabályok"
+      },
+      "desc": "15+ konfigurálható riasztási szabály gépi tanulással. Értesítéseket kapsz szankciókról, keverésről, nagy értékű átutalásokról és anomáliákról.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io és más keverő szolgáltatások",
+        "title": "Keverés detektálás"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK szankciós listák napi frissítésekkel",
+        "title": "Szankciós szűrés"
+      },
+      "title": "Intelligens riasztási motor"
+    },
+    "case": {
+      "badge": "Vizsgálati munkafolyamat",
+      "desc": "Teljes vizsgálati kezelés bizonyítéklánc-felügyelettel, eIDAS aláírásokkal és bíróságon elfogadható jelentésekkel.",
+      "eidas": {
+        "desc": "Minősített elektronikus aláírások az EU szabvány szerint",
+        "title": "eIDAS aláírások"
+      },
+      "evidence": {
+        "desc": "Zökkenőmentes bizonyítéklánc bíróságon elfogadható bizonyítékokhoz",
+        "title": "Bizonyítéklánc"
+      },
+      "export": {
+        "desc": "PDF/Excel exportálás időbélyegzővel és audit nyomvonallal",
+        "title": "Exportálás és jelentések"
+      },
+      "title": "Ügykezelés és bizonyítéklánc",
+      "tracking": {
+        "desc": "Strukturált ügykezelés munkafolyamat-státusszal",
+        "title": "Ügykövetés"
+      }
+    },
+    "cta": {
+      "demo": "Demó igénylése",
+      "pricing": "Árak megtekintése",
+      "subtitle": "Kezdj most egy ingyenes demóval",
+      "title": "Készen állsz a teljes csomagra?",
+      "start": "Kezdés Ingyen"
+    },
+    "graph": {
+      "badge": "Gráf intelligencia",
+      "clustering": {
+        "desc": "Kapcsolódó tárcák automatikus klaszterezése",
+        "title": "Tárca klaszterezés"
+      },
+      "community": {
+        "desc": "Közös érdekű tárca csoportok felismerése",
+        "title": "Közösség detektálás"
+      },
+      "desc": "Neo4j-alapú gráf adatbázis entitás klaszterezéshez, közösség detektáláshoz és vizuális vizsgálatokhoz.",
+      "labels": {
+        "desc": "Tőzsde/VASP/DeFi címkék közösségi intelligenciával",
+        "title": "Entitás címkék"
+      },
+      "title": "Entitás felbontás és hálózati elemzés",
+      "visual": {
+        "desc": "Interaktív gráf felfedező komplex elemzésekhez",
+        "title": "Vizuális vizsgálat"
+      }
+    },
+    "header": {
+      "badge": "Teljes funkciók",
+      "cta_try": "Ingyenes kipróbálás",
+      "subtitle": "A tranzakció követéstől az AI-alapú elemzésekig – minden eszköz a professzionális vizsgálatokhoz",
+      "title": "A teljes blockchain kriminalisztikai csomag"
+    },
+    "security": {
+      "audit": {
+        "desc": "Teljes audit nyomvonalak megfelelőségi bizonyítékokhoz",
+        "title": "Audit naplók"
+      },
+      "badge": "Vállalati biztonság",
+      "desc": "Vállalati szintű biztonság RBAC-val, SSO/SAML-lel, audit naplókkal és GDPR megfelelőséggel.",
+      "privacy": {
+        "desc": "GDPR megfelelőség PII anonimizálással",
+        "title": "Adatvédelem"
+      },
+      "rbac": {
+        "desc": "Granuláris szerepkör alapú hozzáférés-vezérlés egyedi szerepkörökkel",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Egyszeri bejelentkezés SAML 2.0 és OAuth 2.0 támogatással",
+        "title": "SSO/SAML"
+      },
+      "title": "Biztonság és megfelelőség"
+    },
+    "seo": {
+      "description": "Vállalati szintű blockchain forensics: Multi-chain nyomkövetés, AI ügynökök, valós idejű kockázatértékelés és megfelelőségi eszközök.",
+      "title": "Funkciók | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Pontosság",
+      "ai_agents": "AI ügynökök",
+      "alert_rules": "Riasztási szabályok",
+      "blockchains": "Blockchainek",
+      "bridges": "Híd protokollok",
+      "case_templates": "Ügy sablonok",
+      "compliance": "Megfelelőség",
+      "encryption": "Titkosítás",
+      "entities": "Entitások",
+      "evidence_types": "Bizonyíték típusok",
+      "false_positives": "Hamis pozitívok",
+      "max_depth": "Maximális követési mélység",
+      "ml_models": "ML modellek",
+      "query_time": "Lekérdezési idő",
+      "relationships": "Kapcsolatok",
+      "response_time": "Válaszidő",
+      "security_certs": "Biztonsági tanúsítványok",
+      "uptime_sla": "Üzemidő SLA"
+    },
+    "tracing": {
+      "badge": "Tranzakció követés",
+      "bridge": {
+        "desc": "Keresztlánc hidak és becsomagolt eszközök automatikus felismerése",
+        "title": "Híd detektálás"
+      },
+      "cross_chain": {
+        "desc": "100+ blockchain támogatott: EVM, UTXO, Solana, Cosmos és több",
+        "title": "Keresztlánc követés"
+      },
+      "demixing": {
+        "desc": "Tornado Cash, Mixer és adatvédelmi érmék heurisztikus elemzése",
+        "title": "Adatvédelmi érme dekeverés"
+      },
+      "desc": "Kövesd a tranzakciókat az összes fontos blockchainen keresztül. Keresztlánc híd detektálással, adatvédelmi érme dekeveréssel és rekurzív előre/hátra követéssel.",
+      "recursive": {
+        "desc": "Előre/hátra követés konfigurálható mélységgel és szűrőkkel",
+        "title": "Rekurzív követés"
+      },
+      "title": "Többláncú tranzakció intelligencia"
+    },
+    "hero": {
+      "badge": "Funkciók",
+      "title": "Vállalati szintű Blockchain Forensics",
+      "subtitle": "Minden eszköz, amire szüksége van kripto bűncselekmények kivizsgálásához, a megfelelőség biztosításához és vállalkozása védelméhez."
+    }
+  },
+  "footer": {
+    "blog": "Blog",
+    "careers": "Karrier",
+    "company": "Cég",
+    "contact": "Kapcsolat",
+    "imprint": "Impresszum",
+    "legal": "Jogi információk",
+    "privacy": "Adatvédelem",
+    "product": "Termék",
+    "request_demo": "Demó igénylése",
+    "rights_reserved": "Minden jog fenntartva.",
+    "security": "Biztonság",
+    "tagline": "Vállalati blockchain AI megfelelőségi és vizsgálati célokra – biztonságos, gyors, bíróságon elfogadható.",
+    "terms": "Feltételek"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Aktív csomópontok",
+      "avg_degree": "Átlagos fok",
+      "density": "Hálózati sűrűség",
+      "total_edges": "Összes élek",
+      "total_nodes": "Összes csomópontok"
+    },
+    "centrality": {
+      "taint": "Szennyezés",
+      "title": "Központisági elemzés"
+    },
+    "communities": {
+      "algorithm": "Algoritmus",
+      "avg_size": "Átlagos méret",
+      "avg_taint": "Átlagos szennyezés",
+      "empty": "Kattints ",
+      "label_propagation": "Címke terjesztés",
+      "loading": "Közösségek detektálása...",
+      "louvain": "Louvain (Modularitás)",
+      "title": "Közösség detektálás",
+      "total": "Összes közösség"
+    },
+    "degree": {
+      "title": "Fokszám eloszlás",
+      "x": "Fok",
+      "y": "Szám"
+    },
+    "filters": {
+      "cross_chain": "Keresztlánc (Híd réteg)",
+      "from": "Tól (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Eddig (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Haladó hálózati elemzések és mintafelismerés",
+      "title": "Gráf analitikák és hálózati intelligencia"
+    },
+    "hubs": {
+      "in": "Be",
+      "out": "Ki",
+      "title": "Hálózati csomópontok (Magas fokú csomópontok)",
+      "total": "Összesen"
+    },
+    "loading": {
+      "stats": "Statisztikák betöltése..."
+    },
+    "patterns": {
+      "circle_length": "Kör hossza",
+      "detected": "Észlelt körök",
+      "empty_desc": "Ez jó jel – nem találtunk egyértelmű pénzmosási köröket",
+      "empty_title": "Nem észleltek körkörös mintákat",
+      "high_risk": "Magas kockázat",
+      "hops": "ugrások",
+      "loading": "Minták detektálása...",
+      "more_addresses": "további címek",
+      "risk_score": "Kockázati pontszám",
+      "title": "Körkörös minták (Potenciális pénzmosás)",
+      "total": "Összesen",
+      "total_value": "Teljes érték",
+      "tx_path": "Tranzakciós útvonal:"
+    },
+    "tabs": {
+      "communities": "Közösség detektálás",
+      "overview": "Hálózati áttekintés",
+      "patterns": "Mintafelismerés"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "nyomozó.műveletek.klaszterezés",
+      "clustering": "nyomozó.műveletek.klaszterezés_folyamatban",
+      "pause_timeline": "nyomozó.műveletek.idővonal_szüneteltetése",
+      "play_timeline": "nyomozó.műveletek.idővonal_lejátszása",
+      "title": "nyomozó.műveletek.cím"
+    },
+    "connected": {
+      "taint": "nyomozó.kapcsolatok.szennyezés",
+      "title": "nyomozó.kapcsolatok.cím",
+      "tx": "nyomozó.kapcsolatok.tranzakció"
+    },
+    "graph": {
+      "connections": "nyomozó.gráf.kapcsolatok",
+      "enter_address": "nyomozó.gráf.cím_megadása",
+      "loading": "nyomozó.gráf.betöltés",
+      "nodes": "nyomozó.gráf.csomópontok",
+      "title": "nyomozó.gráf.cím"
+    },
+    "header": {
+      "subtitle": "nyomozó.fejléc.alcím",
+      "title": "nyomozó.fejléc.cím"
+    },
+    "path": {
+      "bridges": "nyomozó.útvonal.hidak",
+      "hops": "nyomozó.útvonal.ugrások",
+      "risk_score": "nyomozó.útvonal.kockázati_pontszám",
+      "title": "nyomozó.útvonal.cím",
+      "total_value": "nyomozó.útvonal.teljes_érték"
+    },
+    "search": {
+      "explore": "nyomozó.keresés.felfedezés",
+      "placeholder": "nyomozó.keresés.helyőrző",
+      "title": "nyomozó.keresés.cím"
+    },
+    "settings": {
+      "from": "nyomozó.beállítások.tól",
+      "hops_1": "nyomozó.beállítások.ugrás_1",
+      "hops_2": "nyomozó.beállítások.ugrás_2",
+      "hops_3": "nyomozó.beállítások.ugrás_3",
+      "hops_4": "nyomozó.beállítások.ugrás_4",
+      "hops_5": "nyomozó.beállítások.ugrás_5",
+      "include_bridges": "nyomozó.beállítások.hidak_belefoglalása",
+      "max_hops": "nyomozó.beállítások.max_ugrások",
+      "title": "nyomozó.beállítások.cím",
+      "to": "nyomozó.beállítások.hoz"
+    },
+    "timeline": {
+      "empty": "nyomozó.idővonal.üres",
+      "events": "nyomozó.idővonal.események",
+      "risk": "nyomozó.idővonal.kockázat",
+      "select_address": "nyomozó.idővonal.cím_kiválasztása",
+      "title": "nyomozó.idővonal.cím",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Most demó igénylése",
+      "pricing": "Árak megtekintése"
+    },
+    "cta2": {
+      "demo": "Ingyenes demó igénylése",
+      "pricing": "Árak megtekintése",
+      "subtitle": "Kezdj most egy ingyenes demóval, és tapasztald meg a blockchain kriminalisztika jövőjét",
+      "title": "Készen állsz a vállalati blockchain intelligenciára?"
+    },
+    "features": {
+      "badge": "Funkciók",
+      "subtitle": "Vállalati szintű eszközök megfelelőséghez, vizsgálatokhoz és kockázatkezeléshez",
+      "title": "Minden, amire szükséged van a blockchain kriminalisztikához"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Blockchain Kriminalisztika",
+      "point1": "100+ Blockchain",
+      "point2": "OFAC/UN/EU szankciók",
+      "point3": "Valós idejű figyelés",
+      "subtitle": "AI-vezérelt megfelelőség, vizsgálatok és kockázatfigyelés – valós időben és vállalati szinten.",
+      "title": "Vállalati blockchain intelligencia"
+    },
+    "pricing": {
+      "badge": "Árazás",
+      "subtitle": "Ingyenestől a vállalati szintig – kezdj most",
+      "title": "Rugalmas csomagok minden vállalati mérethez",
+      "view_all": "Összes ár megtekintése"
+    },
+    "seo": {
+      "description": "AI-vezérelt megfelelőség, vizsgálatok és kockázatfigyelés – valós időben és vállalati szinten. SIGMACODE Blockchain Kriminalisztika.",
+      "title": "SIGMACODE | Vállalati Blockchain Intelligencia"
+    },
+    "tech": {
+      "badge": "Technológia",
+      "subtitle": "Vállalati szintű infrastruktúra a maximális teljesítmény és biztonság érdekében",
+      "title": "Legkorszerűbb technológiai stack"
+    },
+    "use_cases": {
+      "badge": "Használati esetek",
+      "subtitle": "A bűnüldöző szervektől a FinTech-ig",
+      "title": "A megfelelő megoldás minden használati esetre"
+    }
+  },
+  "layout": {
+    "main_navigation": "Fő navigáció",
+    "quick_search_title": "Gyors keresés (Ctrl/⌘+K)",
+    "quick_search_placeholder": "Gyors keresés...",
+    "quick_search_hint": "Tipp: Cmd/Ctrl+K",
+    "skip_to_content": "Ugrás a tartalomra",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Kezdőlap",
+        "features": "Funkciók",
+        "pricing": "Árak",
+        "docs": "Dokumentáció"
+      }
+    },
+    "footer": {
+      "company": "Vállalat",
+      "legal": "Jogi",
+      "privacy": "Adatvédelem",
+      "terms": "Felhasználási feltételek"
+    }
+  },
+  "wizard": {
+    "title": "Vezérelt forenzikus munkafolyamat",
+    "desc": "Ez a párbeszéd több lépésben vezet végig egy forenzikus műveleten. Navigálj Tab-bal, zárd be ESC-el.",
+    "choose_action": "Válassz műveletet",
+    "trace": {
+      "title": "Követés",
+      "desc": "Cím vagy tranzakció elemzése"
+    },
+    "case": {
+      "title": "Ügy létrehozása",
+      "desc": "Új ügy létrehozása prioritással"
+    },
+    "sanctions": {
+      "title": "Szankciók ellenőrzése",
+      "desc": "OFAC/UN/EU/UK stb. ellenőrzése"
+    },
+    "labels": {
+      "address_opt": "Cím (opcionális)",
+      "tx_opt": "Tranzakció hash (opcionális)",
+      "time_range": "Időszak:",
+      "case_title": "Ügy címe",
+      "priority": "Prioritás:",
+      "notes_opt": "Megjegyzések / Kontextus (opcionális)",
+      "address": "Cím"
+    },
+    "placeholders": {
+      "address": "pl. 0x... vagy bc1...",
+      "tx": "pl. 0x...",
+      "case_title": "pl. Híd exploit vizsgálat",
+      "notes": "pl. Kapcsolódik a #123/#124 riasztásokhoz"
+    },
+    "review": {
+      "title": "Ellenőrzés",
+      "hint": "Az asszisztens automatikusan végrehajtja a megfelelő eszközláncot."
+    },
+    "execute": "Végrehajtás",
+    "errors": {
+      "address_invalid": "A cím érvénytelennek tűnik. Elvárt EVM (0x...) vagy Bech32 (bc1...).",
+      "tx_invalid": "A tranzakció hash érvénytelennek tűnik (66 karakter, 0x... hex).",
+      "case_title_required": "A cím kötelező."
+    },
+    "next": "Következő",
+    "prev": "Vissza",
+    "finish": "Befejezés"
+  },
+  "chat": {
+    "error_fetch": "Hiba a válasz lekérése közben. Próbáld újra.",
+    "loading_agent": "Az asszisztens elemez...",
+    "assistant_title": "Forenzikus asszisztens",
+    "powered_by_ai": "AI által támogatva",
+    "online": "Online",
+    "empty_title": "Miben segíthetek?",
+    "empty_desc": "Tegyen fel forenzikus kérdéseket vagy használja az alábbi gyors műveleteket",
+    "command_palette": {
+      "title": "Forenzikus parancsok",
+      "desc": "Válasszon sablont vagy nyomja meg az ESC-et a bezáráshoz. Navigáljon Tab-bal."
+    },
+    "input_placeholder": "Forenzikus kérdés feltevése... (Ctrl+K parancsokhoz)",
+    "input_aria_label": "Forenzikus parancs bevitele",
+    "help_text": "Nyomja meg a Ctrl vagy Cmd és K billentyűket a parancspaletta megnyitásához. Nyomja meg az Entert az üzenet elküldéséhez.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 Magas kockázatú követés",
+        "query": "Mutassa az összes magas kockázatú tranzakciót az elmúlt 7 napból 70 feletti kockázati pontszámmal"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer aktivitás",
+        "query": "Keresse meg az összes Tornado Cash és mixer interakciót az elmúlt 24 órából"
+      },
+      "daily_summary": {
+        "label": "📊 Napi összefoglaló",
+        "query": "Foglalja össze a mai forenzikus aktivitást: elemzett tranzakciók, riasztások, létrehozott ügyek"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Szankciók ellenőrzése",
+        "query": "Mutassa az összes OFAC szankciós találatot erre a hétre"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Híd transzferek",
+        "query": "Listázza a legutóbbi nagy értékű (>$100k) cross‑chain híd transzfereket"
+      },
+      "active_cases": {
+        "label": "📁 Aktív ügyek",
+        "query": "Mutassa az összes nyitott, hozzám rendelt ügyet magas vagy kritikus prioritással"
+      }
+    },
+    "title": "Chat",
+    "placeholder": "Írja be az üzenetét...",
+    "send": "Küldés",
+    "retry": "Újra",
+    "loading": "Kapcsolódás..."
+  },
+  "cookie": {
+    "banner_aria": "Cookie banner",
+    "title": "Cookies & Privacy",
+    "title_short": "Cookies",
+    "description": "We use essential cookies to operate this website. Optional analytics cookies help us understand and improve usage. You can accept all cookies or allow only necessary ones. You can change your choice at any time in the settings.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Service",
+    "imprint_link": "Imprint",
+    "only_necessary": "Only necessary",
+    "accept_all": "Accept all",
+    "preferences": "Preferences",
+    "save_preferences": "Save preferences",
+    "manage": "Cookie settings",
+    "analytics_title": "Analytics cookies",
+    "analytics_desc": "Helps us understand usage to improve the website.",
+    "marketing_title": "Marketing cookies",
+    "marketing_desc": "Enables personalized content and offers.",
+    "all_optional_title": "Enable all optional",
+    "all_optional_desc": "Enables both analytics and marketing cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Bezárás",
+        "close_title": "Riasztás bezárása",
+        "copy_alert_id_title": "Riasztás-ID másolása",
+        "copy_entity": "Entitás másolása",
+        "copy_entity_id_title": "Entitás-ID másolása",
+        "copy_id": "ID másolása",
+        "copy_rule": "Szabály másolása",
+        "copy_rule_id_title": "Szabály-ID másolása",
+        "details": "Részletek",
+        "details_title": "Részletek megjelenítése",
+        "reset": "Visszaállítás"
+      },
+      "audit": {
+        "empty": "Nincsenek események",
+        "title": "Audit nyomvonal"
+      },
+      "csv": {
+        "export_all": "CSV exportálás (Összes)",
+        "export_all_title": "Összes szűrt sor CSV exportálása (Szerver)",
+        "export_page": "CSV exportálás (Oldal)",
+        "export_page_title": "Oldal CSV exportálása",
+        "no_filtered_data": "Nincsenek szűrt adatok",
+        "no_page_data": "Nincsenek adatok ezen az oldalon"
+      },
+      "empty": "Nem találtunk riasztásokat",
+      "filters": {
+        "all": "(összes)",
+        "search_label": "Keresés (szabály_id / entitás_id)",
+        "search_placeholder": "Keresés...",
+        "severity": "Súlyosság",
+        "source": "Forrás",
+        "source_persisted": "Perzisztált (KYT)",
+        "source_realtime": "Valós idejű (Riasztási motor)",
+        "status": "Állapot"
+      },
+      "kpi": {
+        "event_time_set": "Eseményidő beállítása (first_seen_at)",
+        "event_time_title": "Eseményidő = first_seen_at",
+        "false_positive": "Hamis pozitívként jelölés",
+        "title": "KPI-annotációk",
+        "true_positive": "Igaz pozitívként jelölés"
+      },
+      "loading": "Riasztások betöltése...",
+      "modal": {
+        "alert_id": "Riasztás ID",
+        "chain": "Lánc",
+        "context": "Kontextus",
+        "entity": "Entitás",
+        "rule_id": "Szabály ID",
+        "severity": "Súlyosság",
+        "title": "Riasztás részletek"
+      },
+      "pagination": {
+        "next": "Tovább",
+        "page": "Oldal",
+        "prev": "Vissza"
+      },
+      "severity": {
+        "critical": "kritikus",
+        "high": "magas",
+        "low": "alacsony",
+        "medium": "közepes"
+      },
+      "status": {
+        "assigned": "kiosztva",
+        "closed": "lezárva",
+        "open": "nyitva",
+        "snoozed": "elhalasztva"
+      },
+      "subtitle": "Valós idejű szabályok és perzisztált riasztások (KYT)",
+      "table": {
+        "first": "első",
+        "last": "utolsó"
+      },
+      "title": "Figyelési riasztások",
+      "toasts": {
+        "copy_failed": "Másolás sikertelen",
+        "disposition_failed": "Diszpozíció sikertelen",
+        "disposition_set": "Diszpozíció beállítva",
+        "entity_copied": "Entitás másolva",
+        "event_time_failed": "Eseményidő beállítása sikertelen",
+        "event_time_set": "Eseményidő beállítva",
+        "export_failed": "Szerver exportálás sikertelen",
+        "export_started": "Szerver exportálás elkezdődött",
+        "id_copied": "ID másolva",
+        "rule_copied": "Szabály másolva"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Rólunk",
+    "analytics": "Analitikák",
+    "close_menu": "Navigáció bezárása",
+    "dashboard": "Irányítópult",
+    "features": "Funkciók",
+    "home": "Kezdőlap",
+    "logout": "Kijelentkezés",
+    "open_menu": "Navigáció megnyitása",
+    "pricing": "Árak",
+    "settings": "Beállítások",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Frissítés"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Magok",
+        "title": "CPU használat"
+      },
+      "db": {
+        "connected": "Csatlakoztatva",
+        "disconnected": "Leválasztva",
+        "response": "Válasz",
+        "title": "Adatbázis"
+      },
+      "memory": {
+        "available": "elérhető",
+        "title": "Memóriahasználat"
+      },
+      "system_status": {
+        "healthy": "Egészséges",
+        "issues": "Problémák",
+        "title": "Rendszer állapota",
+        "uptime": "Üzemidő"
+      }
+    },
+    "common": {
+      "no": "Nem",
+      "yes": "Igen"
+    },
+    "header": {
+      "last_refresh": "Utolsó frissítés",
+      "subtitle": "Átfogó rendszer-teljesítmény, mérőszámok és SLO-k figyelése",
+      "title": "Teljesítmény és megfigyelhetőségi műszerfal"
+    },
+    "metrics": {
+      "empty": "Nincsenek mérőszám adatok elérhetők",
+      "loading": "Mérőszámok betöltése...",
+      "max": "Max",
+      "measurements": "Mérések",
+      "min": "Min",
+      "title": "Teljesítmény mérőszámok (1 óra)",
+      "trend": "Trend"
+    },
+    "recent_alerts": {
+      "empty": "Nincsenek aktuális riasztások",
+      "title": "Legutóbbi teljesítmény riasztások"
+    },
+    "services": {
+      "active": "Aktív",
+      "inactive": "Inaktív",
+      "title": "Szolgáltatás állapota"
+    },
+    "slo": {
+      "empty": "Nincsenek SLO adatok elérhetők",
+      "loading": "SLO-k betöltése...",
+      "threshold": "Küszöb",
+      "title": "SLO megfelelőség",
+      "violations": "Sértések"
+    },
+    "system_details": {
+      "database": "Adatbázis",
+      "db_connected": "Csatlakoztatva",
+      "db_type": "Típus",
+      "debug": "Hibakeresés",
+      "environment": "Környezet",
+      "log_level": "Naplózási szint",
+      "mode": "Mód",
+      "platform": "Platform",
+      "python_version": "Python verzió",
+      "response_time": "Válaszidő",
+      "system_info": "Rendszer információk",
+      "title": "Rendszer részletek",
+      "version": "Verzió"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "További blockchainek",
+        "i2": "Extra felhasználói helyek",
+        "i3": "Prémium szankciók (bővített listák)",
+        "i4": "Haladó export formátumok",
+        "i5": "Elsőbbségi támogatás",
+        "i6": "White-Label (Vállalati)",
+        "title": "Elérhető kiegészítők"
+      },
+      "badge": "Rugalmas bővítések",
+      "overage": {
+        "extra_credits": "Extra kreditek",
+        "monthly_cap": "Havi felső korlát",
+        "note": "Többet használsz, mint a kereted? Semmi gond – a túlfogyasztás automatikusan kiszámlázásra kerül.",
+        "title": "Túlfogyasztási árazás"
+      },
+      "subtitle": "Bővítsd a tervedet igény szerint",
+      "title": "Kiegészítők és túlfogyasztás"
+    },
+    "card": {
+      "custom": "Egyedi",
+      "desc_business": "Nagyobb csapatok számára",
+      "desc_community": "Hobbistáknak és nyílt forráskódú projektekhez",
+      "desc_enterprise": "Vállalatoknak és szabályozóknak",
+      "desc_pro": "Növekvő vállalatok számára",
+      "desc_starter": "Kis csapatok számára",
+      "per_month": "havonta",
+      "popular": "Legnépszerűbb",
+      "popular_label": "Legnépszerűbb",
+      "save_year": "Spórolj ${{amount}}/év"
+    },
+    "cta": {
+      "active_plan": "✓ Aktív terv",
+      "contact_sales": "Kapcsolatfelvétel az értékesítéssel",
+      "demo": "Demó igénylése",
+      "more_about": "Tudj meg többet rólunk",
+      "saving": "Mentés…",
+      "set_tenant_plan": "Bérlői tervként",
+      "start_now": "Kezdj most",
+      "subscribe": "Feliratkozás most",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Jelenlegi terv",
+    "enterprise": {
+      "card_desc": "Vállalatoknak és szabályozóknak",
+      "subtitle": "Egyedi árazás, SLA, integrációk, helyszíni/VPC",
+      "title": "Pénzügyi intézményeknek és szabályozóknak"
+    },
+    "faq": {
+      "subtitle": "Lépj kapcsolatba értékesítési csapatunkkal egy személyes demóért",
+      "title": "Még kérdéseid vannak?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchainek",
+      "cases": "Ügyek",
+      "credits": "Kreditek/Hónap",
+      "priority": "Prioritás",
+      "users": "Felhasználók"
+    },
+    "header": {
+      "badge": "Rugalmas árazás",
+      "subtitle": "Ingyenes közösségi eszközöktől a white-label vállalati megoldásokig. Kezdj ma és skálázd, ahogy nősz.",
+      "title": "A megfelelő terv minden csapat számára"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI ügynökök",
+        "i2": "Gráf analitikák",
+        "i3": "Kockázati pontozás",
+        "i4": "ML modellek",
+        "title": "Haladó analitikák"
+      },
+      "badge": "Mit tartalmaz?",
+      "performance": {
+        "i1": "Valós idejű riasztások",
+        "i2": "API hozzáférés",
+        "i3": "Elsőbbségi sor",
+        "i4": "99.9% üzemidő",
+        "title": "Teljesítmény"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Audit naplók",
+        "i4": "GDPR-kompatibilis",
+        "title": "Biztonság és megfelelőség"
+      },
+      "team": {
+        "i1": "Többfelhasználós",
+        "i2": "Ügykezelés",
+        "i3": "Bizonyítéklánc",
+        "i4": "Együttműködés",
+        "title": "Csapat funkciók"
+      },
+      "title": "Minden funkció áttekintése"
+    },
+    "more": "további",
+    "seo": {
+      "description": "Tisztességes és átlátható árazás a blockchain forensics számára. Ingyenes Community csomagtól az Enterprise-ig. Bármikor lemondható.",
+      "title": "Árak | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Önkiszolgáló tervek startupoktól a középvállalkozásokig",
+      "title": "Csapatok és vállalatok számára"
+    },
+    "toggle": {
+      "annual": "Éves",
+      "monthly": "Havi",
+      "save": "Spórolj {{pct}}%"
+    },
+    "top_features": "LEGJOBB FUNKCIÓK",
+    "hero": {
+      "badge": "Árak",
+      "title": "Egyszerű és átlátható árak",
+      "subtitle": "Válassza ki az Önnek megfelelő csomagot. Minden csomag tartalmazza az alapfunkciókat. Bármikor frissíthet."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Frissítés"
+    },
+    "audit": {
+      "empty": "Nincsenek audit nyomvonal bejegyzések elérhetők",
+      "loading": "Audit nyomvonal betöltése...",
+      "title": "Aktuális audit nyomvonal bejegyzések",
+      "user": "Felhasználó",
+      "view_all": "Összes megtekintése →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Audit nyomvonal integritás"
+      },
+      "failed_logins": {
+        "title": "Sikertelen bejelentkezési kísérletek"
+      },
+      "gdpr": {
+        "title": "GDPR megfelelőség"
+      },
+      "security_incidents": {
+        "title": "Biztonsági incidensek"
+      }
+    },
+    "common": {
+      "implemented": "Megvalósítva",
+      "not_implemented": "Nem valósítva meg",
+      "unknown": "Ismeretlen"
+    },
+    "compliance": {
+      "anonymization": "Anonimizálás",
+      "certifications": "Tanúsítványok",
+      "consent_management": "Hozzájárulás kezelés",
+      "data_portability": "Adat hordozhatóság",
+      "empty": "Nincsenek megfelelőségi adatok elérhetők",
+      "encryption": "Titkosítás",
+      "loading": "Megfelelőségi állapot betöltése...",
+      "right_to_erasure": "Törlési jog",
+      "title": "GDPR megfelelőségi állapot"
+    },
+    "header": {
+      "last_refresh": "Utolsó frissítés",
+      "subtitle": "Audit nyomvonalak, GDPR megfelelőség és biztonsági figyelés",
+      "title": "Biztonsági és megfelelőségi műszerfal"
+    },
+    "quick_actions": {
+      "audit_export": "Audit exportálás",
+      "compliance_report": "Megfelelőségi jelentés",
+      "gdpr_status": "GDPR állapot",
+      "incident_report": "Incidens jelentés",
+      "integrity_check": "Integritás ellenőrzés",
+      "security_scan": "Biztonsági szkennelés",
+      "title": "Biztonsági és megfelelőségi műveletek"
+    },
+    "retention": {
+      "days": "Napok",
+      "empty": "Nincsenek adatmegőrzési adatok elérhetők",
+      "title": "Adatmegőrzési megfelelőség",
+      "violations": {
+        "count": "Sértések",
+        "days_old": "Napok óta",
+        "more": "és",
+        "more_suffix": "további",
+        "title": "Megőrzési sértések"
+      }
+    },
+    "security": {
+      "compliance_status": "Megfelelőségi állapot",
+      "empty": "Nincsenek biztonsági adatok elérhetők",
+      "failed_logins": "Sikertelen bejelentkezések",
+      "incidents": "Biztonsági incidensek",
+      "rate_limited_ips": "Sebességkorlátozott IP-k",
+      "suspicious_activities": "Gyanús tevékenységek",
+      "title": "Biztonsági áttekintés"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Nyitott riasztások korcsoportok szerint (pl. 24 óra, 3 nap, 7 nap, >7 nap)",
+    "alert_engine": "Valós idejű figyelés gyanús tranzakciókra és mintákra ML algoritmusokkal",
+    "alert_overview": "Összes aktív biztonsági riasztás áttekintése és azok súlyossága (Kritikus/Magas/Közepes/Alacsony)",
+    "analyst_throughput": "Az elemzők által lezárt ügyek száma a kiválasztott időablakban",
+    "backlog": "Nyitott (még nem elismert) riasztások és nyitott ügyek teljes száma",
+    "database": "PostgreSQL/TimescaleDB csatlakozási állapot és válaszidő idősoros adatokhoz",
+    "graph_db": "Neo4j gráf adatbázis komplex kapcsolati elemzésekhez és hálózati leképezéshez",
+    "system_status": "Az összes rendszerkomponens aktuális állapotát mutatja. Zöld = Egészséges, Piros = Problémák észlelve",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Elérhető túrák",
+    "completed": "befejezve",
+    "finish": "Befejezés",
+    "no_tours_available": "Nincsenek túrák elérhetők ehhez az oldalhoz",
+    "of": "valami közül",
+    "select_tour_description": "Válassz egy túrát, hogy megismerd a platform funkcióit",
+    "skip": "Kihagyás",
+    "start": "túrák.indítás",
+    "start_tour": "Túra indítása",
+    "step": "Lépés",
+    "steps": "lépések"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "követés.eredmény.részletek",
+      "direction": "követés.eredmény.irány",
+      "error_title": "követés.eredmény.hiba_cím",
+      "exec_time": "követés.eredmény.végrehajtási_idő",
+      "export": "követés.eredmény.exportálás",
+      "flow_graph": "követés.eredmény.áramlási_gráf",
+      "high_risk": "követés.eredmény.magas_kockázat",
+      "high_risk_title": "követés.eredmény.magas_kockázat_cím",
+      "loading": "követés.eredmény.betöltés",
+      "max_hop": "követés.eredmény.max_ugrás",
+      "not_found": "követés.eredmény.nem_talált",
+      "report": "követés.eredmény.jelentés",
+      "sanctioned_title": "követés.eredmény.szankcionált_cím",
+      "sanctioned_warning": "követés.eredmény.szankcionált_figyelmeztetés",
+      "source": "követés.eredmény.forrás",
+      "taint": "követés.eredmény.szennyezés",
+      "taint_model": "követés.eredmény.szennyezési_modell",
+      "title": "követés.eredmény.cím",
+      "total_edges": "követés.eredmény.összes_élek",
+      "total_nodes": "követés.eredmény.összes_csomópontok"
+    },
+    "simple": {
+      "address_ph": "követés.egyszerű.cím_helyőrző",
+      "chain_btc": "követés.egyszerű.lánc_btc",
+      "chain_eth": "követés.egyszerű.lánc_eth",
+      "chain_sol": "követés.egyszerű.lánc_sol",
+      "cluster": {
+        "clustering": "követés.egyszerű.klaszter.klaszterezés",
+        "export_members": "követés.egyszerű.klaszter.tagok_exportálása",
+        "label": "követés.egyszerű.klaszter.címke",
+        "lookup": "követés.egyszerű.klaszter.keresés",
+        "member_address": "követés.egyszerű.klaszter.tag_cím",
+        "members": "követés.egyszerű.klaszter.tagok",
+        "title": "követés.egyszerű.klaszter.cím"
+      },
+      "depth_ph": "követés.egyszerű.mélység_helyőrző",
+      "edges": "követés.egyszerű.élek",
+      "error_cluster": "követés.egyszerű.hiba_klaszter",
+      "error_trace": "követés.egyszerű.hiba_követés",
+      "export_paths": "követés.egyszerű.útvonalak_exportálása",
+      "export_targets": "követés.egyszerű.célok_exportálása",
+      "high_risk": "követés.egyszerű.magas_kockázat",
+      "model_fifo": "követés.egyszerű.modell_fifo",
+      "model_haircut": "követés.egyszerű.modell_hajvágás",
+      "model_proportional": "követés.egyszerű.modell_arányos",
+      "nodes": "trace.simple.nodes",
+      "run": "trace.simple.run",
+      "summary": "trace.simple.summary",
+      "th_path": "trace.simple.th_path",
+      "th_paths": "trace.simple.th_paths",
+      "th_taint": "trace.simple.th_taint",
+      "th_target": "trace.simple.th_target",
+      "threshold_ph": "trace.simple.threshold_ph",
+      "title": "trace.simple.title",
+      "tracing": "trace.simple.tracing"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "wallet.test.analytics.desc",
+        "title": "wallet.test.analytics.title",
+        "wip": "wallet.test.analytics.wip"
+      },
+      "export": {
+        "csv": "wallet.test.export.csv",
+        "desc": "wallet.test.export.desc",
+        "json": "wallet.test.export.json",
+        "pdf": "wallet.test.export.pdf",
+        "section_export": "wallet.test.export.section_export",
+        "section_import": "wallet.test.export.section_import",
+        "title": "wallet.test.export.title"
+      },
+      "header": {
+        "title": "wallet.test.header.title"
+      },
+      "import": {
+        "add_wallet": "wallet.test.import.add_wallet",
+        "json": "wallet.test.import.json",
+        "restore_backup": "wallet.test.import.restore_backup"
+      },
+      "multisig": {
+        "desc": "wallet.test.multisig.desc",
+        "title": "wallet.test.multisig.title",
+        "wip": "wallet.test.multisig.wip"
+      },
+      "overview": {
+        "active_wallets": "wallet.test.overview.active_wallets",
+        "activity": {
+          "liquidity": "wallet.test.overview.activity.liquidity",
+          "nft": "wallet.test.overview.activity.nft",
+          "receive": "wallet.test.overview.activity.receive"
+        },
+        "month_change": "wallet.test.overview.month_change",
+        "multisig": "wallet.test.overview.multisig",
+        "new_this_week": "wallet.test.overview.new_this_week",
+        "recent": "wallet.test.overview.recent",
+        "security_grade": "wallet.test.overview.security_grade",
+        "security_score": "wallet.test.overview.security_score",
+        "status": {
+          "2fa": "wallet.test.overview.status.2fa",
+          "active": "wallet.test.overview.status.active",
+          "backup": "wallet.test.overview.status.backup",
+          "backup_available": "wallet.test.overview.status.backup_available",
+          "hardware": "wallet.test.overview.status.hardware",
+          "hw_connected": "wallet.test.overview.status.hw_connected",
+          "recovery": "wallet.test.overview.status.recovery",
+          "secured": "wallet.test.overview.status.secured",
+          "title": "wallet.test.overview.status.title"
+        },
+        "total_volume": "wallet.test.overview.total_volume"
+      },
+      "sidebar": {
+        "title": "wallet.test.sidebar.title"
+      },
+      "tabs": {
+        "analytics": "wallet.test.tabs.analytics",
+        "crosschain": "wallet.test.tabs.crosschain",
+        "export": "wallet.test.tabs.export",
+        "multisig": "wallet.test.tabs.multisig",
+        "nft": "wallet.test.tabs.nft",
+        "overview": "wallet.test.tabs.overview",
+        "transactions": "wallet.test.tabs.transactions"
+      },
+      "transactions": {
+        "desc": "wallet.test.transactions.desc",
+        "export": "wallet.test.transactions.export",
+        "title": "wallet.test.transactions.title",
+        "wip": "wallet.test.transactions.wip"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Web Analytics"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

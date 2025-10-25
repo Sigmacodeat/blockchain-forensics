@@ -1,0 +1,66 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: demo-cleanup
+  namespace: blockchain-forensics
+  labels:
+    app: blockchain-forensics
+    component: demo-cleanup
+spec:
+  # Run every 5 minutes
+  schedule: "*/5 * * * *"
+  
+  # Keep last 3 successful and 1 failed job for debugging
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 1
+  
+  # Don't start new job if previous is still running
+  concurrencyPolicy: Forbid
+  
+  jobTemplate:
+    spec:
+      # Clean up pods after 1 hour
+      ttlSecondsAfterFinished: 3600
+      
+      template:
+        metadata:
+          labels:
+            app: blockchain-forensics
+            component: demo-cleanup
+        spec:
+          restartPolicy: OnFailure
+          
+          containers:
+          - name: cleanup
+            image: blockchain-forensics-backend:latest
+            imagePullPolicy: Always
+            
+            command:
+              - python
+              - scripts/demo_cleanup.py
+            
+            env:
+              # Database connection
+              - name: DATABASE_URL
+                valueFrom:
+                  secretKeyRef:
+                    name: backend-secrets
+                    key: database-url
+              
+              # Redis connection (for session cleanup)
+              - name: REDIS_URL
+                valueFrom:
+                  secretKeyRef:
+                    name: backend-secrets
+                    key: redis-url
+            
+            resources:
+              requests:
+                memory: "128Mi"
+                cpu: "100m"
+              limits:
+                memory: "256Mi"
+                cpu: "200m"
+          
+          # Use service account with DB access
+          serviceAccountName: backend-service-account

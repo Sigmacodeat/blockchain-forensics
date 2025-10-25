@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    /* Brand tokens */
+    --primary: 199 89% 48%; /* matches primary-500-ish */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --input: 214.3 31.8% 91.4%;
+    --border: 214.3 31.8% 91.4%;
+    --ring: 199 89% 48%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --card: 222.2 47.4% 11.2%;
+    --card-foreground: 210 40% 98%;
+
+    /* Brand tokens */
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --input: 217.2 32.6% 17.5%;
+    --border: 217.2 32.6% 17.5%;
+    --ring: 199 89% 48%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased font-sans;
+  }
+  h1 {
+    @apply text-foreground;
+  }
+  h2 {
+    @apply text-foreground;
+  }
+  h3 {
+    @apply text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-background { background-color: hsl(var(--background)); }
+  .text-foreground { color: hsl(var(--foreground)); }
+  .bg-muted { background-color: hsl(var(--muted)); }
+  .text-muted-foreground { color: hsl(var(--muted-foreground)); }
+  .bg-card { background-color: hsl(var(--card)); }
+  .text-card-foreground { color: hsl(var(--card-foreground)); }
+
+  /* Brand utilities */
+  .bg-primary { background-color: hsl(var(--primary)); }
+  .text-primary { color: hsl(var(--primary)); }
+  .text-primary-foreground { color: hsl(var(--primary-foreground)); }
+
+  .bg-secondary { background-color: hsl(var(--secondary)); }
+  .text-secondary-foreground { color: hsl(var(--secondary-foreground)); }
+
+  .bg-accent { background-color: hsl(var(--accent)); }
+  .text-accent-foreground { color: hsl(var(--accent-foreground)); }
+
+  .border-input { border-color: hsl(var(--input)); }
+  .border-border { border-color: hsl(var(--border)); }
+  .ring-ring { --tw-ring-color: hsl(var(--ring)); }
+
+  /* Subtle animated glow for logo shield */
+  .logo-shield { animation: shield-glow 3.2s ease-in-out infinite; }
+  @keyframes shield-glow {
+    0%, 100% { filter: drop-shadow(0 0 0 currentColor); }
+    50% { filter: drop-shadow(0 0 6px currentColor); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .logo-shield { animation: none; }
+  }
+
+  /* Typography helpers for better mobile wrapping */
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+  .hyphens-auto { hyphens: auto; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-200 text-gray-900 rounded-lg hover:bg-gray-300 transition-colors font-medium dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600;
+  }
+  
+  .btn-danger {
+    @apply px-4 py-2 bg-danger-600 text-white rounded-lg hover:bg-danger-700 transition-colors font-medium;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md border border-gray-200 dark:bg-slate-800 dark:border-slate-700;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-slate-800 dark:border-slate-600 dark:text-slate-100;
+  }
+
+  /* Accessibility: Screen Reader Only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  .sr-only:focus,
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}
+
+@layer components {
+  .badge-scan {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .badge-scan::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background:
+      linear-gradient(120deg, transparent 0%, rgba(255,255,255,0) 42%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0) 58%, transparent 100%),
+      repeating-linear-gradient(90deg, hsla(var(--ring), 0.06) 0 2px, transparent 2px 6px);
+    background-size: 240% 100%, 16px 100%;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: -1;
+    animation: badge-scan-pass 3.6s linear infinite;
+  }
+  .badge-scan-glow {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  }
+  .badge-scan:hover {
+    box-shadow: 0 0 0 1px hsla(var(--ring), 0.12), 0 0 10px hsla(var(--ring), 0.18);
+  }
+  @keyframes badge-scan-pass {
+    0% { background-position: 240% 0, 0 0; }
+    100% { background-position: -40% 0, 16px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .badge-scan::before { animation: none; }
+  }
+}
+
+@layer components {
+  .badge-scan-border { position: relative; }
+  .badge-scan-border::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: conic-gradient(
+      from 0deg,
+      hsla(var(--ring), 0) 0%,
+      hsla(var(--ring), 0.7) 12%,
+      hsla(var(--ring), 0) 24%,
+      hsla(var(--primary), 0.75) 42%,
+      hsla(var(--ring), 0) 60%,
+      hsla(var(--ring), 0.6) 78%,
+      hsla(var(--ring), 0) 100%
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: badge-orbit 3s linear infinite;
+    pointer-events: none;
+  }
+  @keyframes badge-orbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .badge-scan-border::after { animation: none; }
+  }
+}

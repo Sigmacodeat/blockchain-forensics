@@ -1,0 +1,118 @@
+groups:
+- name: api_slo
+  interval: 30s
+  rules:
+  # Recording rules
+  - record: job:http_request_errors:rate5m
+    expr: sum(rate(http_requests_total{status=~"5.."}[5m])) by (job)
+  - record: job:http_request_total:rate5m
+    expr: sum(rate(http_requests_total[5m])) by (job)
+  - record: job:http_error_rate_percent:rate5m
+    expr: 100 * (job:http_request_errors:rate5m / clamp_min(job:http_request_total:rate5m, 1))
+  - record: job:http_request_duration_seconds:p95
+    expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, job))
+
+  # Alerts
+  - alert: APIHighErrorRate
+    expr: job:http_error_rate_percent:rate5m > 1
+    for: 10m
+    labels:
+      severity: warning
+      team: platform
+    annotations:
+      summary: "API hohe Fehlerquote (>1% in 10m)"
+      description: "{{ $labels.job }} error rate ist {{ $value | printf "%.2f" }}% in den letzten 10m"
+
+  - alert: APISevereErrorRate
+    expr: job:http_error_rate_percent:rate5m > 5
+    for: 5m
+    labels:
+      severity: critical
+      team: platform
+    annotations:
+      summary: "API kritische Fehlerquote (>5% in 5m)"
+      description: "{{ $labels.job }} error rate ist {{ $value | printf "%.2f" }}% in den letzten 5m"
+
+  - alert: APILatencyP95High
+    expr: job:http_request_duration_seconds:p95 > 0.5
+    for: 10m
+    labels:
+      severity: warning
+      team: platform
+    annotations:
+      summary: "API P95 Latenz hoch (>500ms)"
+      description: "{{ $labels.job }} P95 ist {{ $value | printf "%.3f" }}s in den letzten 10m"
+
+  - alert: APILatencyP95Severe
+    expr: job:http_request_duration_seconds:p95 > 1
+    for: 5m
+    labels:
+      severity: critical
+      team: platform
+    annotations:
+      summary: "API P95 Latenz kritisch (>1s)"
+      description: "{{ $labels.job }} P95 ist {{ $value | printf "%.3f" }}s in den letzten 5m"
+
+- name: webhook_slo
+  interval: 30s
+  rules:
+  - record: job:webhook_errors:rate5m
+    expr: sum(rate(webhook_events_total{result="error"}[5m])) by (job)
+  - record: job:webhook_total:rate5m
+    expr: sum(rate(webhook_events_total[5m])) by (job)
+  - record: job:webhook_error_rate_percent:rate5m
+    expr: 100 * (job:webhook_errors:rate5m / clamp_min(job:webhook_total:rate5m, 1))
+
+  - alert: WebhookErrorBurst
+    expr: job:webhook_error_rate_percent:rate5m > 0
+    for: 5m
+    labels:
+      severity: warning
+      team: platform
+    annotations:
+      summary: "Webhook Fehler aufgetreten"
+      description: "{{ $labels.job }} hat Fehler in Webhooks in den letzten 5m gesehen"
+
+- name: dsr_worker
+  interval: 30s
+  rules:
+  # Recording rules
+  - record: job:dsr_exports_processed:rate5m
+    expr: sum(rate(dsr_exports_processed_total[5m])) by (job)
+  - record: job:dsr_deletes_processed:rate5m
+    expr: sum(rate(dsr_deletes_processed_total[5m])) by (job)
+  - record: job:dsr_process_errors:rate5m
+    expr: sum(rate(dsr_process_errors_total[5m])) by (job)
+  - record: job:dsr_scan_seconds:p95
+    expr: histogram_quantile(0.95, sum(rate(dsr_scan_seconds_sum[5m])) by (job) / sum(rate(dsr_scan_seconds_count[5m])) by (job))
+
+  # Alerts
+  - alert: DSRWorkerNoProgress
+    expr: job:dsr_exports_processed:rate5m == 0 and job:dsr_deletes_processed:rate5m == 0
+    for: 15m
+    labels:
+      severity: warning
+      team: platform
+    annotations:
+      summary: "DSR Worker ohne Fortschritt"
+      description: "{{ $labels.job }} verarbeitet seit >15m keine DSR-Exports/Deletes."
+
+  - alert: DSRWorkerErrors
+    expr: job:dsr_process_errors:rate5m > 0
+    for: 10m
+    labels:
+      severity: warning
+      team: platform
+    annotations:
+      summary: "DSR Worker Fehler entdeckt"
+      description: "{{ $labels.job }} meldet Fehler in DSR-Verarbeitung (Rate > 0 in 10m)."
+
+  - alert: DSRWorkerScanSlow
+    expr: job:dsr_scan_seconds:p95 > 2
+    for: 10m
+    labels:
+      severity: warning
+      team: platform
+    annotations:
+      summary: "DSR Worker Scan langsam (P95 > 2s)"
+      description: "{{ $labels.job }} DSR Scan P95 ist {{ $value | printf "%.2f" }}s in den letzten 10m."

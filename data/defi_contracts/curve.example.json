@@ -1,0 +1,4 @@
+[
+  {"slug": "curve", "chain": "ethereum", "address": "0xa5407eae9ba41422680e2e00537571bcc53efbfd", "label": "Curve 3pool", "type": "pool"},
+  {"slug": "curve", "chain": "ethereum", "address": "0x1ae0f2a1a9bccaee6b76d2bcf2f2ac0f1d7ccf5d", "label": "Curve Factory", "type": "factory"}
+]

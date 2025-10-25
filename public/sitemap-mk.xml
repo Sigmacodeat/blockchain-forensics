@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sigmacode.io/mk</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/about</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/about" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/about" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/about" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/about" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/about" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/about" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/about" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/about" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/about" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/about" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/about" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/about" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/about" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/about" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/about" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/about" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/about" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/about" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/about" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/about" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/about" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/about" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/about" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/about" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/about" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/about" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/about" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/about" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/about" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/about" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/about" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/about" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/features</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/features" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/features" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/features" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/features" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/features" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/features" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/features" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/features" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/features" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/features" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/features" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/features" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/features" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/features" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/features" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/features" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/features" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/features" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/features" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/features" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/features" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/features" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/features" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/features" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/features" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/features" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/features" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/features" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/features" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/features" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/features" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/features" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/features" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/features" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/features" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/features" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/features" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/features" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/features" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/features" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/features" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/pricing</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/pricing" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/pricing" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/pricing" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/pricing" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/pricing" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/pricing" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/pricing" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/pricing" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/pricing" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/pricing" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/pricing" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/pricing" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/pricing" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/pricing" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/pricing" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/pricing" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/pricing" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/pricing" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/pricing" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/pricing" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/pricing" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/pricing" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/pricing" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/pricing" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/pricing" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/pricing" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/pricing" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/pricing" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/pricing" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/pricing" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/pricing" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/pricing" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/pricing" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/pricing" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/pricing" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/pricing" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/pricing" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/pricing" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/pricing" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/trace</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/trace" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/trace" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/trace" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/trace" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/trace" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/trace" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/trace" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/trace" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/trace" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/trace" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/trace" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/trace" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/trace" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/trace" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/trace" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/trace" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/trace" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/trace" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/trace" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/trace" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/trace" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/trace" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/trace" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/trace" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/trace" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/trace" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/trace" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/trace" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/trace" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/trace" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/trace" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/trace" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/trace" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/trace" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/trace" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/trace" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/trace" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/trace" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/trace" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/trace" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/trace" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/trace" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/analytics</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/analytics" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/analytics" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/analytics" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/analytics" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/analytics" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/analytics" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/analytics" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/analytics" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/analytics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/analytics" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/analytics" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/analytics" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/analytics" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/analytics" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/analytics" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/analytics" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/analytics" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/analytics" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/analytics" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/analytics" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/analytics" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/analytics" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/analytics" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/analytics" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/analytics" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/analytics" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/analytics" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/analytics" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/analytics" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/analytics" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/analytics" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/analytics" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/analytics" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/analytics" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/analytics" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/analytics" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/analytics" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/analytics" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/analytics" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/analytics" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/analytics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/analytics" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/investigator</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/investigator" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/investigator" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/investigator" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/investigator" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/investigator" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/investigator" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/investigator" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/investigator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/investigator" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/investigator" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/investigator" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/investigator" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/investigator" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/investigator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/investigator" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/investigator" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/investigator" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/investigator" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/investigator" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/investigator" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/investigator" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/investigator" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/investigator" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/investigator" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/investigator" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/investigator" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/investigator" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/investigator" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/investigator" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/investigator" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/investigator" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/investigator" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/investigator" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/investigator" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/investigator" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/investigator" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/investigator" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/investigator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/investigator" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/investigator" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/investigator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/investigator" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/login</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/login" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/login" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/login" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/login" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/login" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/login" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/login" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/login" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/login" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/login" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/login" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/login" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/login" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/login" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/login" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/login" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/login" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/login" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/login" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/login" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/login" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/login" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/login" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/login" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/login" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/login" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/login" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/login" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/login" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/login" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/login" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/login" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/login" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/login" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/login" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/login" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/login" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/login" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/login" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/register</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/register" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/register" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/register" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/register" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/register" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/register" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/register" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/register" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/register" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/register" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/register" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/register" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/register" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/register" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/register" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/register" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/register" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/register" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/register" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/register" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/register" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/register" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/register" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/register" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/register" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/register" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/register" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/register" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/register" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/register" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/register" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/register" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/register" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/register" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/register" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/register" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/register" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/register" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/register" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/register" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/register" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/register" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/legal/privacy</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/legal/privacy" />
+  </url>
+  <url>
+    <loc>https://sigmacode.io/mk/legal/terms</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://sigmacode.io/ar/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://sigmacode.io/be/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://sigmacode.io/bg/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://sigmacode.io/bs/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://sigmacode.io/cs/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://sigmacode.io/da/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://sigmacode.io/de/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://sigmacode.io/el/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sigmacode.io/en/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sigmacode.io/es/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://sigmacode.io/et/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://sigmacode.io/fi/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sigmacode.io/fr/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="ga" href="https://sigmacode.io/ga/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://sigmacode.io/hi/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://sigmacode.io/hu/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://sigmacode.io/is/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://sigmacode.io/it/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sigmacode.io/ja/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sigmacode.io/ko/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://sigmacode.io/lb/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://sigmacode.io/lt/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://sigmacode.io/lv/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://sigmacode.io/mk/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="mt" href="https://sigmacode.io/mt/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://sigmacode.io/nb/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sigmacode.io/nl/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="nn" href="https://sigmacode.io/nn/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sigmacode.io/pl/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sigmacode.io/pt/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="rm" href="https://sigmacode.io/rm/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sigmacode.io/ro/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sigmacode.io/ru/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://sigmacode.io/sk/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://sigmacode.io/sl/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://sigmacode.io/sq/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://sigmacode.io/sr/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://sigmacode.io/sv/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sigmacode.io/tr/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://sigmacode.io/uk/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sigmacode.io/zh-CN/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sigmacode.io/en/legal/terms" />
+  </url>
+</urlset>

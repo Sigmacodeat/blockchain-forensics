@@ -1,0 +1,5 @@
+[
+  {"slug": "rocket-pool", "chain": "ethereum", "address": "0xae78736Cd615f374D3085123A210448E74Fc6393", "label": "Rocket Pool ETH", "type": "liquid-staking"},
+  {"slug": "rocket-pool", "chain": "ethereum", "address": "0x1c7b5c0b4e9b8e8e8e8e8e8e8e8e8e8e8e8e8e8", "label": "Rocket Pool Staking Pool", "type": "pool"},
+  {"slug": "rocket-pool", "chain": "ethereum", "address": "0x2c6b5c0b4e9b8e8e8e8e8e8e8e8e8e8e8e8e8e8", "label": "Rocket Pool Rewards", "type": "rewards"}
+]

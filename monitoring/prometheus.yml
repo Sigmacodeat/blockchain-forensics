@@ -1,0 +1,47 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: 'blockchain-forensics'
+    environment: 'production'
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          # - alertmanager:9093
+
+# Load rules once and periodically evaluate them
+rule_files:
+  - /etc/prometheus/alerts.yml
+  - /etc/prometheus/recording-rules.yml
+
+# Scrape configurations
+scrape_configs:
+  # Blockchain Forensics Backend
+  - job_name: 'blockchain-forensics-backend'
+    static_configs:
+      - targets: ['host.docker.internal:8000']
+    metrics_path: '/metrics'
+    scrape_interval: 10s
+    scrape_timeout: 5s
+
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Webhook Listener (Node example)
+  - job_name: 'webhook-listener'
+    static_configs:
+      - targets: ['host.docker.internal:3062']
+    metrics_path: '/metrics'
+    scrape_interval: 10s
+
+  # Webhook Worker (Node example)
+  - job_name: 'webhook-worker'
+    static_configs:
+      - targets: ['host.docker.internal:9101']
+    metrics_path: '/metrics'
+    scrape_interval: 10s

@@ -1,0 +1,29 @@
+{
+  "number": 8000000,
+  "hash": "0x5555aaaa6666bbbb7777cccc8888dddd9999eeee0000ffff1111aaaa2222bbbb",
+  "parentHash": "0x6666bbbb7777cccc8888dddd9999eeee0000ffff1111aaaa2222bbbb3333cccc",
+  "timestamp": 1704180000,
+  "gasLimit": 30000000,
+  "gasUsed": 14000000,
+  "miner": "0x0000000000000000000000000000000000000000",
+  "difficulty": 0,
+  "totalDifficulty": 0,
+  "size": 50000,
+  "transactions": [
+    {
+      "hash": "0xe1f2a3b4c5d6e1f2a3b4c5d6e1f2a3b4c5d6e1f2a3b4c5d6e1f2a3b4c5d6e1f2",
+      "from": "0xaaaaaabbbbbbccccccddddddeeeeeeffffffffff",
+      "to": "0x3154cf16ccdb4c6d922629664174b904d80f2c35",
+      "value": "3000000000000000000",
+      "gas": 190000,
+      "gasPrice": 30000000,
+      "nonce": 55,
+      "transactionIndex": 0,
+      "blockNumber": 8000000,
+      "blockHash": "0x5555aaaa6666bbbb7777cccc8888dddd9999eeee0000ffff1111aaaa2222bbbb",
+      "input": "0x32b7006d",
+      "chainId": 8453,
+      "type": "0x2"
+    }
+  ]
+}

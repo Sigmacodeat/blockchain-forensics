@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Cuir in áirithe demo",
+      "pricing": "Féach ar phraghsanna",
+      "subtitle": "Tosaigh anois le taispeántas saor in aisce nó déan teagmháil lenár bhfoireann",
+      "title": "Tosaigh anois"
+    },
+    "header": {
+      "badge": "Fúinn",
+      "subtitle": "Táimid ag forbairt an t-ardán fiontraíochta tosaigh do Blockchain Intelligence, ag tacú le forghníomhú dlí, VASPanna agus institiúidí airgeadais i gcosaint ar choireacht criptithe.",
+      "title": "Todhchaí na fóiréinsice blockchain"
+    },
+    "mission": {
+      "desc": "Déanaimid idirbhearta blockchain trédhearcach agus inrianaithe. Is é ár gcuspóir coireacht criptithe a chomhrac agus uirlisí a thabhairt do rannpháirtithe dlisteanacha sa mhargadh chun riachtanais chomhlíonta a chomhlíonadh agus rioscaí a íoslaghdú.",
+      "title": "Ár Misean"
+    },
+    "seo": {
+      "description": "Táimid ag tógáil an t-ardán fiontraíochta tosaigh do fhóiréinsic blockchain: comhlíonadh, imscrúduithe agus faisnéis dhomhanda.",
+      "title": "Fúinn | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "badge": "I líon",
+      "blockchains": "Blocshlabhraí",
+      "enterprise_customers": "Custaiméirí Fiontraíochta",
+      "recovered_assets": "Sócmhainní Aisghafa",
+      "sla_guaranteed": "ráthaithe ag SLA",
+      "supported": "tacaithe",
+      "supported_by_tech": "tacaithe ag ár dteicneolaíocht",
+      "title": "Ár dTionchar",
+      "uptime": "Am Rith",
+      "worldwide": "ar fud an domhain"
+    },
+    "team": {
+      "badge": "Saineolas",
+      "compliance": {
+        "desc": "Saineolaithe rialála ar AML/CFT agus smachtbhannaí idirnáisiúnta",
+        "h1": "Iar-Rialtóirí",
+        "h2": "Speisialtóirí AML",
+        "h3": "Comhairleoirí Dlí",
+        "title": "Comhlíonadh & Dlí"
+      },
+      "forensics": {
+        "desc": "Iar-fhorghníomhú dlí le taithí blianta fada in imscrúduithe ar choireacht criptithe",
+        "h1": "Alumni FBI/BKA",
+        "h2": "Tógálacha Darknet",
+        "h3": "Aisghabháil Sócmhainní",
+        "title": "Saineolaithe Fóiréinsice"
+      },
+      "subtitle": "Saineolaithe i bhfóiréinsic blockchain, forghníomhú dlí, FinTech agus foghlaim meaisín",
+      "tech": {
+        "desc": "Innealtóirí ó chuideachtaí teicneolaíochta barrleibhéil le saineolas blockchain",
+        "h1": "Iar-FAANG",
+        "h2": "Forbróirí Croí Blockchain",
+        "h3": "Saineolaithe Slándála",
+        "title": "Speisialtóirí Teicneolaíochta"
+      },
+      "title": "Ár bhFoireann"
+    },
+    "trust": {
+      "badge": "Muínín",
+      "ce": {
+        "desc": "Malartuithe criptithe barr-10 le haghaidh AML agus monatóireacht idirbhearta",
+        "title": "Malartuithe Criptithe"
+      },
+      "fi": {
+        "desc": "Bainc chéim 1 le nochtadh criptithe",
+        "title": "Bainc & FinTechs"
+      },
+      "le": {
+        "desc": "FBI, Europol, údaráis náisiúnta forghníomhaithe dlí",
+        "title": "Forghníomhú Dlí"
+      },
+      "reg": {
+        "desc": "Údaráis airgeadais le haghaidh faireachas margaidh",
+        "title": "Rialtóirí"
+      },
+      "subtitle": "Eagraíochtaí tosaigh ar fud an domhain ag brath ar ár dteicneolaíocht",
+      "title": "Cé a chuireann muínín ionainn"
+    },
+    "values": {
+      "badge": "Ár Luachanna",
+      "compliance": {
+        "desc": "Comhlíontach le GDPR, eIDAS, OFAC. Tuigimid riachtanais rialála agus ionchorpraímid iad.",
+        "title": "Comhlíonadh Ar Dtús"
+      },
+      "customer": {
+        "desc": "Comhoibriú dlúth le forghníomhú dlí agus an tionscal. Is iad do riachtanais ár dtreochlár.",
+        "title": "Dírithe ar Chustaiméirí"
+      },
+      "global": {
+        "desc": "100+ blocshlabhraí, tacaíocht ilteangach agus liostaí smachtbhannaí idirnáisiúnta clúdaithe.",
+        "title": "Raon Domhanda"
+      },
+      "innovation": {
+        "desc": "Teicneolaíocht cheannródaíoch: AI/ML, anailísíocht graf agus próiseáil fíor-ama le haghaidh na torthaí is fearr.",
+        "title": "Nuálaíocht"
+      },
+      "team": {
+        "desc": "Foireann idirdhisciplíneach de shaineolaithe fóiréinsice, forbróirí agus speisialtóirí comhlíonta.",
+        "title": "Obair Foirne"
+      },
+      "title": "Cad a spreagann sinn",
+      "trust": {
+        "desc": "Slándáil ar leibhéal fiontraíochta le deimhnithe SOC2/ISO27001. Tá do shonraí slán linn.",
+        "title": "Muínín & Slándáil"
+      }
+    },
+    "vision": {
+      "desc": "Domhan inar féidir le teicneolaíocht blockchain a lánacmhainneacht a bhaint amach – trédhearcach, slán agus comhlíontach. Táimid ag tógáil an bhonneagair le haghaidh todhchaí ina mbeidh sócmhainní digiteacha príomhshrutha gan coireacht a chur chun cinn.",
+      "title": "Ár bhFís"
+    }
+  },
+  "accessibility": {
+    "activate": "Gníomhachtaigh",
+    "close_dialog": "Dún dialóg",
+    "font_size": "Méid Cló",
+    "font_size_large": "Méid cló mór",
+    "font_size_normal": "Méid cló gnáth",
+    "font_size_xlarge": "Méid cló an-mhór",
+    "high_contrast_detected": "Ardchodarsnacht braite",
+    "keyboard_shortcuts": "Aicearraí méarchláir",
+    "navigate_backward": "Nascleanúint ar gcúl",
+    "navigate_forward": "Nascleanúint ar aghaidh",
+    "no_system_preferences": "Níor aimsíodh roghanna speisialta córais",
+    "reduced_motion_detected": "Gluaiseacht laghdaithe braite",
+    "settings": "Socruithe Inrochtaineachta",
+    "skip_to_content": "Léim chuig ábhar",
+    "system_preferences": "Roghanna Córais"
+  },
+  "address_analysis": {
+    "title": "Anailís Seoltaí",
+    "wip_desc": "Tá an modúl seo á fhorbairt agus beidh sé ar fáil go luath.",
+    "wip_title": "Anailís Seoltaí (faoi obair)"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "Gníomhairí AI",
+      "app_name": "Ainm Aip",
+      "cross_chain": "Tras-Slabhra",
+      "max_trace_depth": "Doimhneacht Rianaithe Uasta",
+      "ml_clustering": "Clústar ML",
+      "title": "Cumraíocht",
+      "version": "Leagan"
+    },
+    "disabled": "✗ Díchumasaithe",
+    "enabled": "✓ Cumasaithe",
+    "error": "Earráid",
+    "health": {
+      "connected": "✓ Ceangailte",
+      "disconnected": "✗ Dícheangailte",
+      "error": "Theip ar stádas sláinte a luchtú",
+      "title": "Sláinte Bunachar Sonraí"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Fáiltíonn idirbhearta ó Ethereum RPC",
+        "ingesting": "Ag ionghabháil...",
+        "placeholder": "0x...",
+        "start": "Tosaigh Ionghabháil",
+        "success": "✓ Tosaíodh ionghabháil sa chúlra",
+        "title": "Ionghabháil Sonraí Seoltaí"
+      },
+      "block": {
+        "help": "Iompórtálann gach idirbheart ó bhloc",
+        "ingesting": "Ag ionghabháil...",
+        "placeholder": "Uimhir bhloc",
+        "start": "Tosaigh Iompórtáil Bloc",
+        "success": "✓ Tosaíodh ionghabháil bloc",
+        "title": "Ionghabháil Sonraí Bloc"
+      }
+    },
+    "stats": {
+      "db_size": "Méid Bunachar Sonraí",
+      "title": "Staitisticí Córais",
+      "total_addresses": "Iomlán Seoltaí",
+      "total_traces": "Iomlán Rian",
+      "total_transactions": "Iomlán Idirbhearta"
+    },
+    "subtitle": "Monatóireacht, Cumraíocht & Bainistíocht Sonraí",
+    "tabs": {
+      "config": "Cumraíocht",
+      "ingestion": "Ionghabháil Sonraí",
+      "overview": "Forbhreathnú",
+      "users": "Bainistíocht Úsáideoirí"
+    },
+    "title": "Riarachán Córais"
+  },
+  "agent": {
+    "cancel": "Cealaigh",
+    "error": "Earráid",
+    "error_unknown": "Earráid anaithnid",
+    "examples": {
+      "1": "Déan anailís ar idirbhearta don seoladh 0x123... le haghaidh gníomhaíochta amhrasach",
+      "2": "Gin tuarascáil le haghaidh idirbhearta ard-toirte ar Ethereum",
+      "3": "Aimsigh naisc idir dhá sparán ar bhlocshlabhra ar leith",
+      "title": "Samplaí d’Ordú Gníomhaire"
+    },
+    "instructions": "Scríobh ordú chun idirghníomhú leis an ngníomhaire AI le haghaidh anailíse nó rianaithe",
+    "loading": "Ag luchtú...",
+    "placeholder": "Scríobh ordú, m.sh. 'Déan anailís ar an seoladh 0x123...'",
+    "retry": "Atriail",
+    "send": "Seol",
+    "subtitle": "Idirghníomhaigh lenár ngníomhairí AI le haghaidh anailíse tapa agus domhain",
+    "title": "Gníomhaire AI",
+    "welcome": "Fáilte chuig an nGníomhaire AI! Conas is féidir liom cabhrú leat inniu?"
+  },
+  "auth": {
+    "fields": {
+      "email": "Ríomhphost",
+      "organization_opt": "Eagraíocht (roghnach)",
+      "password": "Focal Faire",
+      "password_confirm": "Deimhnigh Focal Faire",
+      "username": "Ainm Úsáideora"
+    },
+    "forgot": {
+      "back_to_login": "Ar ais chuig logáil isteach",
+      "dev_note": "Toisc nach bhfuil seirbhís ríomhphoist cumraithe, seiceáil logaí an fhreastalaí le haghaidh an nasc athshocraithe.",
+      "dev_note_label": "Nóta (Mód Forbartha):",
+      "error": "Earráid agus é á sheoladh",
+      "info_sent": "Má tá cuntas leis an ríomhphost seo ann, seoladh nasc athshocraithe.",
+      "sent": "Seoladh nasc athshocraithe!",
+      "submit": "Seol nasc athshocraithe",
+      "submitting": "Ag seoladh...",
+      "subtitle": "Fadhb ar bith! Cuir isteach do ríomhphost agus seolfaimid nasc athshocraithe chugat.",
+      "title": "Focal faire dearmadta?",
+      "title_sent": "Ríomhphost seolta!"
+    },
+    "login": {
+      "failed": "Theip ar logáil isteach",
+      "fill_all_fields": "Líon gach réimse le do thoil",
+      "forgot_password": "Focal faire dearmadta?",
+      "google": "Logáil isteach le Google",
+      "google_retry": "Atriail le Google",
+      "no_account": "Gan cuntas fós?",
+      "oauth_failed": "Theip ar OAuth. Bain triail eile as.",
+      "oauth_processing": "Logáil isteach OAuth á phróiseáil…",
+      "or": "nó",
+      "register_now": "Cláraigh anois",
+      "remember_me": "Coinnigh mé logáilte isteach",
+      "submit": "Logáil isteach",
+      "submitting": "Ag logáil isteach...",
+      "subtitle": "Logáil isteach chun leanúint ar aghaidh"
+    },
+    "placeholders": {
+      "email": "anailísí@sampla.com",
+      "organization": "FBI, Chainalysis, srl.",
+      "password": "••••••••",
+      "username": "sean_anailísí"
+    },
+    "register": {
+      "accept": "Glacaim leis na",
+      "already": "Cláraithe cheana?",
+      "and": "agus",
+      "failed": "Theip ar chlárú",
+      "fill_all_fields": "Líon gach réimse éigeantach le do thoil",
+      "google": "Cláraigh le Google",
+      "login_now": "Logáil isteach anois",
+      "password_hint": "8 gcarachtar ar a laghad",
+      "password_too_short": "Caithfidh an focal faire a bheith 8 gcarachtar ar a laghad",
+      "passwords_no_match": "Ní mheaitseálann na focail faire",
+      "submit": "Cláraigh",
+      "submitting": "Ag clárú...",
+      "subtitle": "Tosaigh d’anailís fhóiréinseach",
+      "title": "Cruthaigh cuntas"
+    }
+  },
+  "common": {
+    "access_denied": "Rochtain diúltaithe (riarthóir amháin)",
+    "account": "Cuntas",
+    "back": "Ar ais",
+    "close": "Dún",
+    "info": "Faisnéis",
+    "language": "Teanga",
+    "loading": "Ag luchtú...",
+    "next": "Ar aghaidh",
+    "page": "Leathanach",
+    "prev": "Roimhe",
+    "refresh": "Athnuaigh",
+    "search": "Cuardaigh",
+    "success": "Rath",
+    "theme": "Téama",
+    "view": "Féach",
+    "wip": {
+      "title": "Ag teacht go luath",
+      "desc": "Tá an ghné seo fós faoi fhorbairt.",
+      "cta": "Foghlaim níos mó"
+    },
+    "start_free": "Tosaigh saor in aisce",
+    "error": "Earráid",
+    "save": "Sábháil",
+    "cancel": "Cealaigh",
+    "delete": "Scrios",
+    "edit": "Edit",
+    "create": "Create",
+    "finish": "Finish",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm",
+    "welcome": "Welcome",
+    "dashboard": "Dashboard",
+    "settings": "Socruithe",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "documents": "Documents",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Déine Íosta",
+      "refresh": "Athnuaigh",
+      "title": "Rialuithe",
+      "window": "Fuinneog Ama",
+      "window_15m": "15 nóiméad",
+      "window_1h": "1 uair",
+      "window_24h": "24 uair",
+      "window_2h": "2 uair",
+      "window_30m": "30 nóiméad",
+      "window_5m": "5 nóiméad"
+    },
+    "header": {
+      "subtitle": "Anailís chomhghaolaithe chun patrúin agus aimhrialtachtaí a bhrath",
+      "title": "Anailís Chomhghaolaithe"
+    },
+    "overview": {
+      "active_rules": "Rialacha Gníomhacha",
+      "analyzed": "Anailísithe",
+      "empty": "Níor aimsíodh aon sonraí comhghaolaithe",
+      "found": "Aimsithe",
+      "loading": "Ag luchtú forbhreathnú...",
+      "min_sev": "Déine Íosta",
+      "rate": "Ráta",
+      "title": "Forbhreathnú Comhghaolaithe",
+      "window": "Fuinneog Ama"
+    },
+    "rules": {
+      "empty": "Níor aimsíodh aon rialacha gníomhacha",
+      "footer": "Deireadh liosta rialacha",
+      "loading": "Ag luchtú rialacha...",
+      "min": "Íosmhéid",
+      "minutes": "Nóiméid",
+      "required_patterns": "Patrúin Riachtanacha",
+      "title": "Rialacha Comhghaolaithe",
+      "window": "Fuinneog Ama"
+    },
+    "sev": {
+      "critical": "Criticiúil",
+      "high": "Ard",
+      "low": "Íseal",
+      "medium": "Meánach"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Miondealú de réir cúise",
+        "by_type": "Miondealú de réir cineáil",
+        "title": "Miondealú Suppressions"
+      },
+      "rate": "Ráta Suppressions",
+      "title": "Suppressions",
+      "top_entity": "Príomh-Aonán",
+      "total": "Iomlán"
+    },
+    "test": {
+      "add_alert": "Cuir foláireamh leis",
+      "alerts_label": "Foláirimh",
+      "match": "Meaitseálann",
+      "no_alerts": "Gan foláirimh",
+      "no_match": "Ní mheaitseálann",
+      "pick_rule": "Roghnaigh riail",
+      "pick_rule_ph": "Roghnaigh riail...",
+      "result": "Toradh",
+      "run": "Rith",
+      "testing": "Ag tástáil...",
+      "title": "Tástáil Rialacha"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Cóipeáil ó",
+      "copy_mint": "Cóipeáil mint",
+      "export_csv": "Easpórtáil CSV",
+      "export_csv_page": "Easpórtáil CSV don leathanach",
+      "fetch": "Faigh sonraí"
+    },
+    "bitcoin": {
+      "block_title": "Forbhreathnú Bloc",
+      "compute": "Ríomh",
+      "decoded": "Díchódaithe",
+      "edges_title": "Imeall Idirbhearta",
+      "height_ph": "Airde Bloc",
+      "ingest_edges": "Ionghabháil imeall",
+      "method_heuristic": "Modh Heuristic",
+      "method_proportional": "Modh Comhréireach",
+      "normalized": "Normalaithe",
+      "tx_title": "Forbhreathnú Idirbhearta",
+      "txid_ph": "ID Idirbheart"
+    },
+    "compliance": {
+      "add_watch": "Cuir le liosta faire",
+      "address_ph": "Seoladh",
+      "chain_ph": "Slabhra",
+      "entries": "Iontrálacha",
+      "error": "Earráid le linn scanadh comhlíonta",
+      "filter_address_ph": "Scag de réir seoladh",
+      "filter_chain_ph": "Scag de réir slabhra",
+      "list_watch": "Liosta Faire",
+      "screen": "Scan",
+      "title": "Scanadh Comhlíonta",
+      "watchlist": "Liosta Faire"
+    },
+    "ethereum": {
+      "canonical": "Canónach",
+      "copy_hash": "Cóipeáil hash",
+      "decoded": "Díchódaithe",
+      "error": "Earráid agus sonraí Ethereum á luchtú",
+      "open_etherscan": "Oscail in Etherscan",
+      "tx_hash_ph": "Hash Idirbheart",
+      "tx_title": "Forbhreathnú Idirbhearta"
+    },
+    "ingest": {
+      "canonical_notice": "Fógra: Sonraí canónacha á n-ionghabháil",
+      "edges_notice": "Fógra: Imeall idirbhearta á n-ionghabháil",
+      "loading": "Ag luchtú..."
+    },
+    "labels": {
+      "add": "Cuir lipéad leis",
+      "address_ph": "Seoladh",
+      "category_ph": "Catagóir",
+      "chain_ph": "Slabhra",
+      "error": "Earráid agus lipéad á chur leis nó á chuardach",
+      "label_ph": "Lipéad",
+      "lookup": "Cuardaigh",
+      "title": "Bainistíocht Lipéad"
+    },
+    "monitoring": {
+      "fetch": "Faigh sonraí",
+      "key_counters": "Cuntais Eochair",
+      "title": "Monatóireacht Clúdaigh"
+    },
+    "rpc_unavailable": "Seirbhís RPC neamhfheidhmiúil",
+    "solana": {
+      "canonical_error": "Earráid agus sonraí canónacha á luchtú",
+      "canonical_title": "Sonraí Canónacha Solana",
+      "error": "Earráid agus sonraí Solana á luchtú",
+      "ingest_canonical": "Ionghabháil sonraí canónacha",
+      "signature_ph": "Síniú",
+      "title": "Forbhreathnú Solana",
+      "transfers": "Aistrithe"
+    },
+    "table": {
+      "actions": "Gníomhartha",
+      "address": "Seoladh",
+      "amount_ui": "Méid",
+      "chain": "Slabhra",
+      "created": "Cruthaithe",
+      "decimals": "Deachúlacha",
+      "fee": "Táille",
+      "from": "Ó",
+      "from_vout": "Ó Vout",
+      "method": "Modh",
+      "mint": "Mint",
+      "reason": "Cúis",
+      "to": "Chuig",
+      "to_vout": "Chuig Vout",
+      "value_btc": "Luach i BTC"
+    },
+    "totals": {
+      "page_sum": "Suim an leathanaigh",
+      "page_sum_btc": "Suim an leathanaigh i BTC",
+      "total_amount": "Iomlán an Mhéid",
+      "total_value_btc": "Luach iomlán i BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Gníomhartha",
+    "active": "Gníomhach",
+    "administration": "Riarachán",
+    "alert_aging": "Aosú Foláirimh",
+    "alert_engine": "Inneall Foláirimh",
+    "alert_monitoring": "Monatóireacht Foláirimh",
+    "alert_overview": "Forbhreathnú Foláirimh",
+    "analyst_throughput": "Tréchur Anailísí",
+    "audit_kpis": "KPIanna Iniúchta",
+    "backlog": "Riaráiste",
+    "bucket_placeholder": "24h,3d,7d,>7d",
+    "buckets": "Buicéid",
+    "case_management": "Bainistíocht Cásanna",
+    "connected": "Ceangailte",
+    "correlation_analysis": "Anailís Chomhghaolaithe",
+    "database": "Bunachar Sonraí",
+    "database_response": "Freagairt Bunachar Sonraí",
+    "days": "Laethanta",
+    "disconnected": "Dícheangailte",
+    "failed_actions": "Gníomhartha Teipthe",
+    "false_positive_rate": "Ráta Bréagach Posaitíveach",
+    "fp": "FP",
+    "graph_db": "Bunachar Sonraí Graf",
+    "graph_explorer": "Taiscéalaí Graf",
+    "healthy": "Sláintiúil",
+    "inactive": "Neamhghníomhach",
+    "issues": "Ceisteanna",
+    "last_24h": "24 uair anuas",
+    "last_update": "Nuashonrú Deireanach",
+    "mttr": "MTTR",
+    "open_alerts": "Foláirimh Oscailte",
+    "open_cases": "Cásanna Oscailte",
+    "performance": "Feidhmíocht",
+    "priority_distribution": "Dáileadh Tosaíochta",
+    "quick_access": "Rochtain Thapa",
+    "recent_alerts": "Foláirimh Le Déanaí",
+    "response_time": "Am Freagartha",
+    "rule_effectiveness": "Éifeachtúlacht Rialacha",
+    "sanctions_hits": "Buaite Smachtbhannaí",
+    "service_status": "Stádas Seirbhíse",
+    "severity_breakdown": "Miondealú Déine",
+    "sla_breach_rate": "Ráta Sárú SLA",
+    "sla_hours": "SLA (uair)",
+    "status_breakdown": "Miondealú Stádais",
+    "success_rate": "Ráta Ratha",
+    "suppression_rate": "Ráta Suppressions",
+    "system_details": "Sonraí Córais",
+    "system_load": "Ualach Córais",
+    "system_overview": "Forbhreathnú Córais",
+    "system_status": "Stádas Córais",
+    "title": "Painéal Fóiréinsice Blockchain SIGMACODE",
+    "total_alerts": "Iomlán Foláirimh",
+    "total_cases": "Iomlán Cásanna",
+    "total_logs": "Iomlán Logaí",
+    "transaction_tracing": "Rianú Idirbhearta",
+    "uptime": "Am Rith",
+    "welcome": "Fáilte ar ais",
+    "overview": "Forbhréathachán",
+    "recent_activity": "Gníomhaíocht le déanaí",
+    "quick_actions": "Gníomhartha tapaidh",
+    "statistics": "Staitisticí",
+    "notifications": "Fógraí",
+    "hero": {
+      "welcome": "Welcome back",
+      "subtitle": "Here is what's happening with your investigations today."
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "newTrace": "New Trace",
+      "newCase": "New Case",
+      "riskCheck": "Risk Check",
+      "aiAgent": "AI Agent"
+    },
+    "stats": {
+      "cases": "Cásanna gníomhacha",
+      "traces": "Riantaí inniu",
+      "alerts": "Foláirimh",
+      "uptime": "Am oibre"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Gníomhairí uathrialacha le comhtháthú LangChain agus GPT-4",
+        "title": "Gníomhairí AI"
+      },
+      "badge": "AI & Foghlaim Meaisín",
+      "desc": "Múnlaí foghlama meaisín le haghaidh braite aimhrialtachtaí, scóráil riosca agus gníomhairí AI uathrialacha le haghaidh imscrúduithe 24/7.",
+      "pattern": {
+        "desc": "Braite patrún calaoise agus anailís iompraíochta",
+        "title": "Aitheantas Patrún"
+      },
+      "risk": {
+        "desc": "Scóráil riosca bunaithe ar ML do sheoltaí agus idirbhearta",
+        "title": "Scóráil Riosca"
+      },
+      "smart_contract": {
+        "desc": "Cosúlacht cód-bhyte agus braite leochaileachtaí",
+        "title": "Anailís Conartha Cliste"
+      },
+      "title": "Anailísíocht faoi thiomáint AI"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "Braite bunaithe ar ML de phatrúin idirbhearta neamhghnácha",
+        "title": "Braite Ainhrialtachtaí"
+      },
+      "badge": "Monatóireacht Fíor-Ama",
+      "custom_rules": {
+        "desc": "Rialacha foláirimh saincheaptha le Rule DSL agus inneall polasaí",
+        "title": "Rialacha Saincheaptha"
+      },
+      "desc": "15+ rialacha foláirimh in-chumraithe le foghlaim meaisín. Faigh fógraí faoi smachtbhannaí, meascadh, aistrithe ardluacha agus aimhrialtachtaí.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io agus seirbhísí measctha eile",
+        "title": "Braite Meascadh"
+      },
+      "sanctions": {
+        "desc": "Liostaí smachtbhannaí OFAC/UN/EU/UK le nuashonruithe laethúla",
+        "title": "Scagadh Smachtbhannaí"
+      },
+      "title": "Inneall Foláirimh Chliste"
+    },
+    "case": {
+      "badge": "Sreabhadh Imscrúdaithe",
+      "desc": "Bainistíocht imscrúdaithe iomlán le slabhra coimeádta fianaise, sínithe eIDAS agus tuarascálacha inghlactha sa chúirt.",
+      "eidas": {
+        "desc": "Sínithe leictreonacha cáilithe de réir caighdeán an AE",
+        "title": "Sínithe eIDAS"
+      },
+      "evidence": {
+        "desc": "Slabhra coimeádta gan bhriseadh le haghaidh fianaise inghlactha sa chúirt",
+        "title": "Slabhra Fianaise"
+      },
+      "export": {
+        "desc": "Easpórtáil PDF/Excel le stampáil ama agus rian iniúchta",
+        "title": "Easpórtáil & Tuarascálacha"
+      },
+      "title": "Bainistíocht Cásanna & Slabhra Fianaise",
+      "tracking": {
+        "desc": "Bainistíocht cásanna struchtúrtha le stádas sreafa oibre",
+        "title": "Rianú Cásanna"
+      }
+    },
+    "cta": {
+      "demo": "Iarr taispeántas",
+      "pricing": "Féach ar phraghsanna",
+      "subtitle": "Tosaigh anois le taispeántas saor in aisce",
+      "title": "Réidh don tsraith iomlán?",
+      "start": "Tosaigh Saor in Aisce"
+    },
+    "graph": {
+      "badge": "Faisnéis Ghraf",
+      "clustering": {
+        "desc": "Clústar uathoibríoch de sparán gaolmhara",
+        "title": "Clústar Sparán"
+      },
+      "community": {
+        "desc": "Braite grúpaí sparán le leasanna comhroinnte",
+        "title": "Braite Pobail"
+      },
+      "desc": "Bunachar sonraí graf bunaithe ar Neo4j le haghaidh clústar aonán, braite pobail agus imscrúdú amhairc.",
+      "labels": {
+        "desc": "Lipéid malartaithe/VASP/DeFi le faisnéis pobail",
+        "title": "Lipéid Aonán"
+      },
+      "title": "Réiteach Aonán & Anailís Líonra",
+      "visual": {
+        "desc": "Taiscéalaí graf idirghníomhach le haghaidh anailísí casta",
+        "title": "Imscrúdú Amhairc"
+      }
+    },
+    "header": {
+      "badge": "Gnéithe Iomlána",
+      "cta_try": "Triail saor in aisce",
+      "subtitle": "Ó rianú idirbhearta go hanailís faoi thiomáint AI – na huirlisí go léir le haghaidh imscrúduithe gairmiúla",
+      "title": "An tsraith iomlán fóiréinsice blockchain"
+    },
+    "security": {
+      "audit": {
+        "desc": "Rian iniúchta iomlán le haghaidh cruthúnais chomhlíonta",
+        "title": "Logaí Iniúchta"
+      },
+      "badge": "Slándáil Leibhéal Fiontraíochta",
+      "desc": "Slándáil leibhéal fiontraíochta le RBAC, SSO/SAML, logaí iniúchta agus comhlíonadh GDPR.",
+      "privacy": {
+        "desc": "Comhlíonadh GDPR le anaithnidiú PII",
+        "title": "Príobháideacht Sonraí"
+      },
+      "rbac": {
+        "desc": "Rialú rochtana bunaithe ar róil gráinneach le róil shaincheaptha",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Sínigh isteach aonair le SAML 2.0 agus OAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "Slándáil & Comhlíonadh"
+    },
+    "seo": {
+      "description": "An tsraith iomlán fóiréinsice blockchain: rianú, foláirimh, anailísíocht graf, AI/ML, bainistíocht cásanna agus slándáil.",
+      "title": "Gnéithe | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Cruinneas",
+      "ai_agents": "Gníomhairí AI",
+      "alert_rules": "Rialacha Foláirimh",
+      "blockchains": "Blocshlabhraí",
+      "bridges": "Prótacail Droichid",
+      "case_templates": "Teimpléid Cásanna",
+      "compliance": "Comhlíonadh",
+      "encryption": "Criptiú",
+      "entities": "Aonáin",
+      "evidence_types": "Cineálacha Fianaise",
+      "false_positives": "Bréagacha Posaitíveacha",
+      "max_depth": "Doimhneacht Rianaithe Uasta",
+      "ml_models": "Múnlaí ML",
+      "query_time": "Am Fiosrúcháin",
+      "relationships": "Caidrimh",
+      "response_time": "Am Freagartha",
+      "security_certs": "Deimhnithe Slándála",
+      "uptime_sla": "SLA Am Rith"
+    },
+    "tracing": {
+      "badge": "Rianú Idirbhearta",
+      "bridge": {
+        "desc": "Braite uathoibríoch de dhroichid tras-slabhra agus sócmhainní fillte",
+        "title": "Braite Droichead"
+      },
+      "cross_chain": {
+        "desc": "Tacaíocht do 100+ blocshlabhraí: EVM, UTXO, Solana, Cosmos agus níos mó",
+        "title": "Rianú Tras-Slabhra"
+      },
+      "demixing": {
+        "desc": "Anailís heuristic ar Tornado Cash, Meascthóirí agus Boinn Phríobháideachta",
+        "title": "Dímheascadh Boinn Phríobháideachta"
+      },
+      "desc": "Rianaigh idirbhearta thar gach blocshlabhra mór. Le braite droichead tras-slabhra, dímheascadh boinn phríobháideachta agus rianú athchúrsach ar aghaidh/ar gcúl.",
+      "recursive": {
+        "desc": "Rianú ar aghaidh/ar gcúl le doimhneacht agus scagairí in-chumraithe",
+        "title": "Rianú Athchúrsach"
+      },
+      "title": "Faisnéis Idirbheart Il-Slabhra"
+    },
+    "hero": {
+      "badge": "Features",
+      "title": "Enterprise-Grade Blockchain Forensics",
+      "subtitle": "All tools you need to investigate crypto crime, ensure compliance, and protect your business."
+    }
+  },
+  "footer": {
+    "blog": "Blag",
+    "careers": "Gairmeacha",
+    "company": "Cuideachta",
+    "contact": "Teagmháil",
+    "imprint": "Imprint",
+    "legal": "Dlíthiúil",
+    "privacy": "Príobháideacht",
+    "product": "Táirge",
+    "request_demo": "Iarr taispeántas",
+    "rights_reserved": "Gach ceart ar cosaint.",
+    "security": "Slándáil",
+    "tagline": "AI blockchain leibhéal fiontraíochta do chomhlíonadh agus imscrúduithe – slán, tapa, inghlactha sa chúirt.",
+    "terms": "Téarmaí"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Nóid Gníomhacha",
+      "avg_degree": "Meánchéim",
+      "density": "Dlús Líonra",
+      "total_edges": "Iomlán Imeall",
+      "total_nodes": "Iomlán Nóid"
+    },
+    "centrality": {
+      "taint": "Tionchar",
+      "title": "Anailís Lárnachais"
+    },
+    "communities": {
+      "algorithm": "Algartam",
+      "avg_size": "Meánmhéid",
+      "avg_taint": "Meántionchar",
+      "empty": "Cliceáil le tosú ar bhrath pobail",
+      "label_propagation": "Iomadú Lipéad",
+      "loading": "Ag bhrath pobail...",
+      "louvain": "Louvain (Modúlacht)",
+      "title": "Braite Pobail",
+      "total": "Iomlán Pobail"
+    },
+    "degree": {
+      "title": "Dáileadh Céime",
+      "x": "Céim",
+      "y": "Áireamh"
+    },
+    "filters": {
+      "cross_chain": "Tras-Slabhra (Ciseal Droichid)",
+      "from": "Ó (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Go (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Anailísí líonra chun cinn agus braite patrún",
+      "title": "Anailísíocht Graf & Faisnéis Líonra"
+    },
+    "hubs": {
+      "in": "Isteach",
+      "out": "Amach",
+      "title": "Moil Líonra (Nóid Ardchéime)",
+      "total": "Iomlán"
+    },
+    "loading": {
+      "stats": "Ag luchtú staitisticí..."
+    },
+    "patterns": {
+      "circle_length": "Fad Ciorcail",
+      "detected": "Ciorcail Aimsithe",
+      "empty_desc": "Is comhartha maith é seo - níor aimsíodh aon chiorcail sciúrtha airgid soiléire",
+      "empty_title": "Níor aimsíodh patrúin ciorclacha",
+      "high_risk": "Ardriosca",
+      "hops": "léimeanna",
+      "loading": "Ag bhrath patrúin...",
+      "more_addresses": "tuilleadh seoltaí",
+      "risk_score": "Scór Riosca",
+      "title": "Patrúin Ciorclacha (Sciúradh Airgid Féideartha)",
+      "total": "Iomlán",
+      "total_value": "Luach Iomlán",
+      "tx_path": "Conair Idirbheart:"
+    },
+    "tabs": {
+      "communities": "Braite Pobail",
+      "overview": "Forbhreathnú Líonra",
+      "patterns": "Braite Patrún"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Clústar",
+      "clustering": "Ag clústar...",
+      "pause_timeline": "Cuir amlíne ar sos",
+      "play_timeline": "Seinn amlíne",
+      "title": "Gníomhartha Imscrúdaithe"
+    },
+    "connected": {
+      "taint": "Tionchar",
+      "title": "Naisc Ghaolmhara",
+      "tx": "Idirbhearta"
+    },
+    "graph": {
+      "connections": "Naisc",
+      "enter_address": "Cuir isteach seoladh le taiscéaladh",
+      "loading": "Ag luchtú graf...",
+      "nodes": "Nóid",
+      "title": "Taiscéalaí Graf"
+    },
+    "header": {
+      "subtitle": "Anailís dhomhain agus rianú le haghaidh imscrúduithe blockchain",
+      "title": "Imscrúdaitheoir Blockchain"
+    },
+    "path": {
+      "bridges": "Droichid",
+      "hops": "Léimeanna",
+      "risk_score": "Scór Riosca",
+      "title": "Anailís Conaire",
+      "total_value": "Luach Iomlán"
+    },
+    "search": {
+      "explore": "Taiscéal",
+      "placeholder": "Cuir isteach seoladh, idirbheart nó aonán",
+      "title": "Cuardach Imscrúdaithe"
+    },
+    "settings": {
+      "from": "Ó (ISO)",
+      "hops_1": "1 Léim",
+      "hops_2": "2 Léim",
+      "hops_3": "3 Léim",
+      "hops_4": "4 Léim",
+      "hops_5": "5 Léim",
+      "include_bridges": "Cuir droichid tras-slabhra san áireamh",
+      "max_hops": "Uasmhéid Léimeanna",
+      "title": "Socruithe Imscrúdaithe",
+      "to": "Go (ISO)"
+    },
+    "timeline": {
+      "empty": "Níor aimsíodh aon imeachtaí don amlíne",
+      "events": "Imeachtaí",
+      "risk": "Riosca",
+      "select_address": "Roghnaigh seoladh chun an amlíne a thaispeáint",
+      "title": "Amlíne Imeachtaí",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Iarr taispeántas anois",
+      "pricing": "Féach ar phraghsanna"
+    },
+    "cta2": {
+      "demo": "Iarr taispeántas saor in aisce",
+      "pricing": "Féach ar phraghsanna",
+      "subtitle": "Tosaigh anois le taispeántas saor in aisce agus faigh taithí ar thodhchaí na fóiréinsice blockchain",
+      "title": "Réidh le haghaidh faisnéis blockchain leibhéal fiontraíochta?"
+    },
+    "features": {
+      "badge": "Gnéithe",
+      "subtitle": "Uirlisí leibhéal fiontraíochta le haghaidh comhlíonadh, imscrúduithe agus bainistíocht riosca",
+      "title": "Gach rud a theastaíonn uait le haghaidh fóiréinsic blockchain"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Fóiréinsic Blockchain",
+      "point1": "100+ blocshlabhraí",
+      "point2": "Smachtbhannaí OFAC/UN/EU",
+      "point3": "Monatóireacht Fíor-Ama",
+      "subtitle": "Comhlíonadh faoi thiomáint AI, imscrúduithe agus monatóireacht riosca – i bhfíor-am agus ar leibhéal fiontraíochta.",
+      "title": "Faisnéis Blockchain Leibhéal Fiontraíochta"
+    },
+    "pricing": {
+      "badge": "Praghsáil",
+      "subtitle": "Ó saor in aisce go fiontraíocht - tosaigh anois",
+      "title": "Pacáistí solúbtha do gach méid fiontair",
+      "view_all": "Féach ar gach praghas"
+    },
+    "seo": {
+      "description": "Comhlíonadh faoi thiomáint AI, imscrúduithe agus monatóireacht riosca – i bhfíor-am agus ar leibhéal fiontraíochta. SIGMACODE Blockchain Forensics.",
+      "title": "SIGMACODE | Faisnéis Blockchain Leibhéal Fiontraíochta"
+    },
+    "tech": {
+      "badge": "Teicneolaíocht",
+      "subtitle": "Bonneagar leibhéal fiontraíochta le haghaidh feidhmíochta agus slándála uasta",
+      "title": "Cruach teicneolaíochta ceannródaíoch"
+    },
+    "use_cases": {
+      "badge": "Cásanna Úsáide",
+      "subtitle": "Ó fhorghníomhú dlí go FinTech",
+      "title": "An réiteach ceart do gach cás úsáide"
+    }
+  },
+  "layout": {
+    "main_navigation": "Nascleanúint phríomha",
+    "quick_search_title": "Cuardach Tapa (Ctrl/⌘+K)",
+    "skip_to_content": "Léim chuig ábhar",
+    "quick_search_placeholder": "Cuardach tapa...",
+    "quick_search_hint": "Leid: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie banner",
+    "title": "Cookies & Privacy",
+    "title_short": "Cookies",
+    "description": "We use essential cookies to operate this website. Optional analytics cookies help us understand and improve usage. You can accept all cookies or allow only necessary ones. You can change your choice at any time in the settings.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Service",
+    "imprint_link": "Imprint",
+    "only_necessary": "Only necessary",
+    "accept_all": "Accept all",
+    "preferences": "Preferences",
+    "save_preferences": "Save preferences",
+    "manage": "Cookie settings",
+    "analytics_title": "Analytics cookies",
+    "analytics_desc": "Helps us understand usage to improve the website.",
+    "marketing_title": "Marketing cookies",
+    "marketing_desc": "Enables personalized content and offers.",
+    "all_optional_title": "Enable all optional",
+    "all_optional_desc": "Enables both analytics and marketing cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Dún",
+        "close_title": "Dún foláireamh",
+        "copy_alert_id_title": "Cóipeáil ID Foláirimh",
+        "copy_entity": "Cóipeáil Aonán",
+        "copy_entity_id_title": "Cóipeáil ID Aonáin",
+        "copy_id": "Cóipeáil ID",
+        "copy_rule": "Cóipeáil Riail",
+        "copy_rule_id_title": "Cóipeáil ID Riail",
+        "details": "Sonraí",
+        "details_title": "Féach ar shonraí",
+        "reset": "Athshocraigh"
+      },
+      "audit": {
+        "empty": "Gan aon imeachtaí",
+        "title": "Rian Iniúchta"
+      },
+      "csv": {
+        "export_all": "Easpórtáil CSV (Gach)",
+        "export_all_title": "Easpórtáil CSV de gach líne scagtha (Freastalaí)",
+        "export_page": "Easpórtáil CSV (Leathanach)",
+        "export_page_title": "Easpórtáil CSV don leathanach",
+        "no_filtered_data": "Gan aon sonraí scagtha",
+        "no_page_data": "Gan aon sonraí ar an leathanach seo"
+      },
+      "empty": "Níor aimsíodh aon foláirimh",
+      "filters": {
+        "all": "(gach)",
+        "search_label": "Cuardaigh (rule_id / entity_id)",
+        "search_placeholder": "Cuardaigh...",
+        "severity": "Déine",
+        "source": "Foinse",
+        "source_persisted": "Marthanach (KYT)",
+        "source_realtime": "Fíor-am (Inneall Foláirimh)",
+        "status": "Stádas"
+      },
+      "kpi": {
+        "event_time_set": "Socraigh am imeachta (first_seen_at)",
+        "event_time_title": "Am Imeachta = first_seen_at",
+        "false_positive": "Marcáil mar bhréagach posaitíveach",
+        "title": "Anotálacha KPI",
+        "true_positive": "Marcáil mar shann posaitíveach"
+      },
+      "loading": "Ag luchtú foláirimh...",
+      "modal": {
+        "alert_id": "ID Foláirimh",
+        "chain": "Slabhra",
+        "context": "Comhthéacs",
+        "entity": "Aonán",
+        "rule_id": "ID Riail",
+        "severity": "Déine",
+        "title": "Sonraí Foláirimh"
+      },
+      "pagination": {
+        "next": "Ar aghaidh",
+        "page": "Leathanach",
+        "prev": "Roimhe"
+      },
+      "severity": {
+        "critical": "criticiúil",
+        "high": "ard",
+        "low": "íseal",
+        "medium": "meánach"
+      },
+      "status": {
+        "assigned": "sannta",
+        "closed": "dúnta",
+        "open": "oscailte",
+        "snoozed": "curtha ar fionraí"
+      },
+      "subtitle": "Rialacha fíor-ama agus foláirimh mharthanacha (KYT)",
+      "table": {
+        "first": "céad",
+        "last": "deireanach"
+      },
+      "title": "Foláirimh Monatóireachta",
+      "toasts": {
+        "copy_failed": "Theip ar chóipeáil",
+        "disposition_failed": "Theip ar shuíomh",
+        "disposition_set": "Suíomh socraithe",
+        "entity_copied": "Aonán cóipeáilte",
+        "event_time_failed": "Theip ar am imeachta",
+        "event_time_set": "Am imeachta socraithe",
+        "export_failed": "Theip ar easpórtáil freastalaí",
+        "export_started": "Tosaíodh easpórtáil freastalaí",
+        "id_copied": "ID cóipeáilte",
+        "rule_copied": "Riail cóipeáilte"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Fúinn",
+    "analytics": "Anailísíocht",
+    "close_menu": "Dún nascleanúint",
+    "dashboard": "Painéal",
+    "features": "Gnéithe",
+    "home": "Baile",
+    "logout": "Logáil amach",
+    "open_menu": "Oscail nascleanúint",
+    "pricing": "Praghsáil",
+    "settings": "Socruithe",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Athnuaigh"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Croíthe",
+        "title": "Úsáid LAP"
+      },
+      "db": {
+        "connected": "Ceangailte",
+        "disconnected": "Dícheangailte",
+        "response": "Freagairt",
+        "title": "Bunachar Sonraí"
+      },
+      "memory": {
+        "available": "ar fáil",
+        "title": "Úsáid Cuimhne"
+      },
+      "system_status": {
+        "healthy": "Sláintiúil",
+        "issues": "Ceisteanna",
+        "title": "Stádas Córais",
+        "uptime": "Am Rith"
+      }
+    },
+    "common": {
+      "no": "Níl",
+      "yes": "Tá"
+    },
+    "header": {
+      "last_refresh": "Athnuachan Deireanach",
+      "subtitle": "Monatóireacht chuimsitheach ar fheidhmíocht an chórais, méadrachtaí agus SLOanna",
+      "title": "Painéal Feidhmíochta & Inbhraiteachta"
+    },
+    "metrics": {
+      "empty": "Níl aon sonraí méadrachta ar fáil",
+      "loading": "Ag luchtú méadrachtaí...",
+      "max": "Uasmhéid",
+      "measurements": "Tomhais",
+      "min": "Íosmhéid",
+      "title": "Méadrachtaí Feidhmíochta (1 Uair)",
+      "trend": "Treocht"
+    },
+    "recent_alerts": {
+      "empty": "Gan foláirimh le déanaí",
+      "title": "Foláirimh Feidhmíochta Le Déanaí"
+    },
+    "services": {
+      "active": "Gníomhach",
+      "inactive": "Neamhghníomhach",
+      "title": "Stádas Seirbhíse"
+    },
+    "slo": {
+      "empty": "Níl aon sonraí SLO ar fáil",
+      "loading": "Ag luchtú SLOanna...",
+      "threshold": "Tairseach",
+      "title": "Comhlíonadh SLO",
+      "violations": "Sáruithe"
+    },
+    "system_details": {
+      "database": "Bunachar Sonraí",
+      "db_connected": "Ceangailte",
+      "db_type": "Cineál",
+      "debug": "Dífhabhtáil",
+      "environment": "Timpeallacht",
+      "log_level": "Leibhéal Logála",
+      "mode": "Mód",
+      "platform": "Ardán",
+      "python_version": "Leagan Python",
+      "response_time": "Am Freagartha",
+      "system_info": "Faisnéis Córais",
+      "title": "Sonraí Córais",
+      "version": "Leagan"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Blocshlabhraí breise",
+        "i2": "Suíocháin úsáideora breise",
+        "i3": "Smachtbhannaí Préimhe (liostaí leathnaithe)",
+        "i4": "Formáidí easpórtála chun cinn",
+        "i5": "Tacaíocht tosaíochta",
+        "i6": "Lipéad Bán (Fiontraíocht)",
+        "title": "Breiseáin ar Fáil"
+      },
+      "badge": "Breiseáin Sholúbtha",
+      "overage": {
+        "extra_credits": "Creidmheasanna Breise",
+        "monthly_cap": "Caipín Míosúil",
+        "note": "Ag úsáid níos mó ná do chuóta? Gan fadhb - déantar ró-úsáid a ríomh go huathoibríoch.",
+        "title": "Praghsáil Ró-Úsáide"
+      },
+      "subtitle": "Leathnaigh do phlean de réir riachtanais",
+      "title": "Breiseáin & Ró-Úsáid"
+    },
+    "card": {
+      "custom": "Saincheaptha",
+      "desc_business": "Do fhoirne níos mó",
+      "desc_community": "Do chaitheamh aimsire agus foinse oscailte",
+      "desc_enterprise": "Do fhiontair & rialtóirí",
+      "desc_pro": "Do chuideachtaí atá ag fás",
+      "desc_starter": "Do fhoirne beaga",
+      "per_month": "in aghaidh na míosa",
+      "popular": "Is Coitianta",
+      "popular_label": "Is Coitianta",
+      "save_year": "Sábháil ${{amount}}/bliain"
+    },
+    "cta": {
+      "active_plan": "✓ Plean Gníomhach",
+      "contact_sales": "Déan teagmháil le díolacháin",
+      "demo": "Iarr taispeántas",
+      "more_about": "Tuilleadh fúinn",
+      "saving": "Ag sábháil...",
+      "set_tenant_plan": "Mar phlean tionónta",
+      "start_now": "Tosaigh anois",
+      "subscribe": "Liostáil anois",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Plean Reatha",
+    "enterprise": {
+      "card_desc": "Do fhiontair & rialtóirí",
+      "subtitle": "Praghsáil shaincheaptha, SLA, comhtháthú, ar an láthair/VPC",
+      "title": "Do institiúidí airgeadais & rialtóirí"
+    },
+    "faq": {
+      "subtitle": "Déan teagmháil lenár bhfoireann díolacháin le haghaidh taispeántas pearsanta",
+      "title": "Ceisteanna fós?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blocshlabhraí",
+      "cases": "Cásanna",
+      "credits": "Creidmheasanna/Mí",
+      "priority": "Tosaíocht",
+      "users": "Úsáideoirí"
+    },
+    "header": {
+      "badge": "Praghsáil Sholúbtha",
+      "subtitle": "Ó uirlisí pobail saor in aisce go fiontraíocht le lipéad bán. Tosaigh inniu agus scála de réir mar a fhásann tú.",
+      "title": "An plean ceart do gach foireann"
+    },
+    "included": {
+      "analytics": {
+        "i1": "Gníomhairí AI",
+        "i2": "Anailísíocht Graf",
+        "i3": "Scóráil Riosca",
+        "i4": "Múnlaí ML",
+        "title": "Anailísíocht Ardleibhéil"
+      },
+      "badge": "Cad atá san áireamh?",
+      "performance": {
+        "i1": "Foláirimh Fíor-Ama",
+        "i2": "Rochtain API",
+        "i3": "Ciú Tosaíochta",
+        "i4": "Am rith 99.9%",
+        "title": "Feidhmíocht"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Logaí Iniúchta",
+        "i4": "Comhlíontach le GDPR",
+        "title": "Slándáil & Comhlíonadh"
+      },
+      "team": {
+        "i1": "Il-Úsáideoir",
+        "i2": "Bainistíocht Cásanna",
+        "i3": "Slabhra Fianaise",
+        "i4": "Comhoibriú",
+        "title": "Gnéithe Foirne"
+      },
+      "title": "Forbhreathnú ar Gach Gné"
+    },
+    "more": "níos mó",
+    "seo": {
+      "description": "Praghsáil thrédhearcach: Ó phobal go fiontraíocht. Pleananna solúbtha do fhoirne, fiontair agus rialtóirí.",
+      "title": "Praghsáil | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Pleananna féinseirbhíse do thosaithe go dtí an meánmhargadh",
+      "title": "Do Fhoirne & Fiontair"
+    },
+    "toggle": {
+      "annual": "Bliantúil",
+      "monthly": "Míosúil",
+      "save": "Sábháil {{pct}}%"
+    },
+    "top_features": "GNÉITHE BARR",
+    "hero": {
+      "badge": "Pricing",
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your needs. All plans include core features. Upgrade anytime."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Athnuaigh"
+    },
+    "audit": {
+      "empty": "Níl aon iontrálacha rian iniúchta ar fáil",
+      "loading": "Ag luchtú rian iniúchta...",
+      "title": "Iontrálacha Rian Iniúchta Le Déanaí",
+      "user": "Úsáideoir",
+      "view_all": "Féach ar gach ceann →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Ionracas Rian Iniúchta"
+      },
+      "failed_logins": {
+        "title": "Iarrachtaí Logála Isteach Teipthe"
+      },
+      "gdpr": {
+        "title": "Comhlíonadh GDPR"
+      },
+      "security_incidents": {
+        "title": "Eachtraí Slándála"
+      }
+    },
+    "common": {
+      "implemented": "Curtha i bhfeidhm",
+      "not_implemented": "Gan cur i bhfeidhm",
+      "unknown": "Anaithnid"
+    },
+    "compliance": {
+      "anonymization": "Anaithnidiú",
+      "certifications": "Deimhnithe",
+      "consent_management": "Bainistíocht Toilithe",
+      "data_portability": "Iniomparthacht Sonraí",
+      "empty": "Níl aon sonraí comhlíonta ar fáil",
+      "encryption": "Criptiú",
+      "loading": "Ag luchtú stádas comhlíonta...",
+      "right_to_erasure": "Ceart chun Scriosadh",
+      "title": "Stádas Comhlíonta GDPR"
+    },
+    "header": {
+      "last_refresh": "Athnuachan Deireanach",
+      "subtitle": "Rian iniúchta, comhlíonadh GDPR agus monatóireacht slándála",
+      "title": "Painéal Slándála & Comhlíonta"
+    },
+    "quick_actions": {
+      "audit_export": "Easpórtáil Iniúchta",
+      "compliance_report": "Tuarascáil Comhlíonta",
+      "gdpr_status": "Stádas GDPR",
+      "incident_report": "Tuarascáil Eachtra",
+      "integrity_check": "Seiceáil Ionracais",
+      "security_scan": "Scan Slándála",
+      "title": "Gníomhartha Slándála & Comhlíonta"
+    },
+    "retention": {
+      "days": "Laethanta",
+      "empty": "Níl aon sonraí coinneála ar fáil",
+      "title": "Comhlíonadh Coinneála Sonraí",
+      "violations": {
+        "count": "Sáruithe",
+        "days_old": "Laethanta d’aois",
+        "more": "agus",
+        "more_suffix": "níos mó",
+        "title": "Sáruithe Coinneála"
+      }
+    },
+    "security": {
+      "compliance_status": "Stádas Comhlíonta",
+      "empty": "Níl aon sonraí slándála ar fáil",
+      "failed_logins": "Logálacha Teipthe",
+      "incidents": "Eachtraí Slándála",
+      "rate_limited_ips": "IPanna Srianta Ráta",
+      "suspicious_activities": "Gníomhaíochtaí Amhrasacha",
+      "title": "Forbhreathnú Slándála"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Foláirimh oscailte de réir buicéid aoise (m.sh., 24h, 3d, 7d, >7d)",
+    "alert_engine": "Monatóireacht fíor-ama ar idirbhearta agus patrúin amhrasacha le halgartaim ML",
+    "alert_overview": "Forbhreathnú ar gach foláireamh slándála gníomhach agus a ndéine (Criticiúil/Ard/Meánach/Íseal)",
+    "analyst_throughput": "Líon na gcásanna a dhún gach anailísí laistigh den fhuinneog roghnaithe",
+    "backlog": "Líon iomlán na bhfoláireamh oscailte (gan admháil) agus cásanna oscailte",
+    "database": "Stádas ceangail PostgreSQL/TimescaleDB agus am freagartha do shonraí sraithe ama",
+    "graph_db": "Bunachar sonraí graf Neo4j le haghaidh anailíse caidrimh chasta agus mapáil líonra",
+    "system_status": "Taispeánann stádas reatha gach comhpháirt chórais. Glas = Sláintiúil, Dearg = Ceisteanna braite",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Turasanna ar Fáil",
+    "completed": "críochnaithe",
+    "finish": "Críochnaigh",
+    "no_tours_available": "Níl aon turasanna ar fáil don leathanach seo",
+    "of": "de",
+    "select_tour_description": "Roghnaigh turas chun foghlaim faoi ghnéithe an ardáin",
+    "skip": "Scipeáil",
+    "start": "Tosaigh",
+    "start_tour": "Tosaigh Turas",
+    "step": "Céim",
+    "steps": "céimeanna"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Sonraí",
+      "direction": "Treo",
+      "error_title": "Earráid i dtorthaí rianaithe",
+      "exec_time": "Am Rith",
+      "export": "trace.result.export",
+      "flow_graph": "trace.result.flow_graph",
+      "high_risk": "trace.result.high_risk",
+      "high_risk_title": "trace.result.high_risk_title",
+      "loading": "trace.result.loading",
+      "max_hop": "trace.result.max_hop",
+      "not_found": "trace.result.not_found",
+      "report": "trace.result.report",
+      "sanctioned_title": "trace.result.sanctioned_title",
+      "sanctioned_warning": "trace.result.sanctioned_warning",
+      "source": "trace.result.source",
+      "taint": "trace.result.taint",
+      "taint_model": "trace.result.taint_model",
+      "title": "trace.result.title",
+      "total_edges": "trace.result.total_edges",
+      "total_nodes": "trace.result.total_nodes"
+    },
+    "simple": {
+      "address_ph": "trace.simple.address_ph",
+      "chain_btc": "trace.simple.chain_btc",
+      "chain_eth": "trace.simple.chain_eth",
+      "chain_sol": "trace.simple.chain_sol",
+      "cluster": {
+        "clustering": "trace.simple.cluster.clustering",
+        "export_members": "trace.simple.cluster.export_members",
+        "label": "trace.simple.cluster.label",
+        "lookup": "trace.simple.cluster.lookup",
+        "member_address": "trace.simple.cluster.member_address",
+        "members": "trace.simple.cluster.members",
+        "title": "trace.simple.cluster.title"
+      },
+      "depth_ph": "trace.simple.depth_ph",
+      "edges": "trace.simple.edges",
+      "error_cluster": "trace.simple.error_cluster",
+      "error_trace": "trace.simple.error_trace",
+      "export_paths": "trace.simple.export_paths",
+      "export_targets": "trace.simple.export_targets",
+      "high_risk": "trace.simple.high_risk",
+      "model_fifo": "trace.simple.model_fifo",
+      "model_haircut": "trace.simple.model_haircut",
+      "model_proportional": "trace.simple.model_proportional",
+      "nodes": "trace.simple.nodes",
+      "run": "trace.simple.run",
+      "summary": "trace.simple.summary",
+      "th_path": "trace.simple.th_path",
+      "th_paths": "trace.simple.th_paths",
+      "th_taint": "trace.simple.th_taint",
+      "th_target": "trace.simple.th_target",
+      "threshold_ph": "trace.simple.threshold_ph",
+      "title": "trace.simple.title",
+      "tracing": "trace.simple.tracing"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "wallet.test.analytics.desc",
+        "title": "wallet.test.analytics.title",
+        "wip": "wallet.test.analytics.wip"
+      },
+      "export": {
+        "csv": "wallet.test.export.csv",
+        "desc": "wallet.test.export.desc",
+        "json": "wallet.test.export.json",
+        "pdf": "wallet.test.export.pdf",
+        "section_export": "wallet.test.export.section_export",
+        "section_import": "wallet.test.export.section_import",
+        "title": "wallet.test.export.title"
+      },
+      "header": {
+        "title": "wallet.test.header.title"
+      },
+      "import": {
+        "add_wallet": "wallet.test.import.add_wallet",
+        "json": "wallet.test.import.json",
+        "restore_backup": "wallet.test.import.restore_backup"
+      },
+      "multisig": {
+        "desc": "wallet.test.multisig.desc",
+        "title": "wallet.test.multisig.title",
+        "wip": "wallet.test.multisig.wip"
+      },
+      "overview": {
+        "active_wallets": "wallet.test.overview.active_wallets",
+        "activity": {
+          "liquidity": "wallet.test.overview.activity.liquidity",
+          "nft": "wallet.test.overview.activity.nft",
+          "receive": "wallet.test.overview.activity.receive"
+        },
+        "month_change": "wallet.test.overview.month_change",
+        "multisig": "wallet.test.overview.multisig",
+        "new_this_week": "wallet.test.overview.new_this_week",
+        "recent": "wallet.test.overview.recent",
+        "security_grade": "wallet.test.overview.security_grade",
+        "security_score": "wallet.test.overview.security_score",
+        "status": {
+          "2fa": "wallet.test.overview.status.2fa",
+          "active": "wallet.test.overview.status.active",
+          "backup": "wallet.test.overview.status.backup",
+          "backup_available": "wallet.test.overview.status.backup_available",
+          "hardware": "wallet.test.overview.status.hardware",
+          "hw_connected": "wallet.test.overview.status.hw_connected",
+          "recovery": "wallet.test.overview.status.recovery",
+          "secured": "wallet.test.overview.status.secured",
+          "title": "wallet.test.overview.status.title"
+        },
+        "total_volume": "wallet.test.overview.total_volume"
+      },
+      "sidebar": {
+        "title": "wallet.test.sidebar.title"
+      },
+      "tabs": {
+        "analytics": "wallet.test.tabs.analytics",
+        "crosschain": "wallet.test.tabs.crosschain",
+        "export": "wallet.test.tabs.export",
+        "multisig": "wallet.test.tabs.multisig",
+        "nft": "wallet.test.tabs.nft",
+        "overview": "wallet.test.tabs.overview",
+        "transactions": "wallet.test.tabs.transactions"
+      },
+      "transactions": {
+        "desc": "wallet.test.transactions.desc",
+        "export": "wallet.test.transactions.export",
+        "title": "wallet.test.transactions.title",
+        "wip": "wallet.test.transactions.wip"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Web Analytics"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "Rianú"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "Seoladh"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "Athbhreithniú"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "Forghníomhú",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "Ar líne",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

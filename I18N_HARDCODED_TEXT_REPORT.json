@@ -1,0 +1,239 @@
+{
+  "timestamp": "2025-10-19T10:18:41.942Z",
+  "filesChecked": 263,
+  "filesWithHardcodedText": 8,
+  "totalMatches": 43,
+  "details": {
+    "App.tsx": [
+      {
+        "line": 34,
+        "content": "const BusinessplanPage = React.lazy(() => import('@/pages/BusinessplanPage'))",
+        "indicator": "Businessplan"
+      },
+      {
+        "line": 138,
+        "content": "<Route path=\"businessplan\" element={<PublicLayout><React.Suspense fallback={<div />}> <BusinessplanPage /> </React.Suspense></PublicLayout>} />",
+        "indicator": "Businessplan"
+      }
+    ],
+    "pages/LandingPage.tsx": [
+      {
+        "line": 223,
+        "content": "{/* Businessplan Teaser Section */}",
+        "indicator": "Businessplan"
+      }
+    ],
+    "pages/LandingPage.complex.tsx": [
+      {
+        "line": 197,
+        "content": "{/* Businessplan Teaser Section */}",
+        "indicator": "Businessplan"
+      }
+    ],
+    "pages/BusinessplanPage.tsx": [
+      {
+        "line": 7,
+        "content": "export default function BusinessplanPage() {",
+        "indicator": "Businessplan"
+      },
+      {
+        "line": 10,
+        "content": "document.title = 'Businessplan & Förderung 2025-2027 | €2,25 Mio. Förderung bei 81% Quote'",
+        "indicator": "Förderung"
+      },
+      {
+        "line": 15,
+        "content": "metaDescription.setAttribute('content', 'Detaillierter Businessplan mit FFG Basisprogramm, AWS und Wirtschaftsagentur Wien: €2,25 Mio. Förderung (81% Quote) für KI-gestützte Blockchain-Forensik über 24 Monate.')",
+        "indicator": "Förderung"
+      },
+      {
+        "line": 54,
+        "content": "<span className=\"text-sm font-semibold text-primary\">Österreichische Förderungen 2025-2027</span>",
+        "indicator": "Förderung"
+      },
+      {
+        "line": 65,
+        "content": "<div className=\"flex flex-col sm:flex-row gap-3 justify-center\" role=\"group\" aria-label=\"Businessplan Aktionen\">",
+        "indicator": "Businessplan"
+      },
+      {
+        "line": 88,
+        "content": "value=\"2,25 Mio.\"",
+        "indicator": "Mio"
+      },
+      {
+        "line": 89,
+        "content": "label=\"Förderung\"",
+        "indicator": "Förderung"
+      },
+      {
+        "line": 102,
+        "content": "label=\"Laufzeit\"",
+        "indicator": "Laufzeit"
+      },
+      {
+        "line": 155,
+        "content": "subtitle=\"Multi-Förder-Ansatz mit weiblicher Geschäftsführung\"",
+        "indicator": "Geschäftsführung"
+      },
+      {
+        "line": 162,
+        "content": "<span className=\"font-semibold text-pink-600 dark:text-pink-400\">Weibliche Geschäftsführung</span>",
+        "indicator": "Geschäftsführung"
+      },
+      {
+        "line": 171,
+        "content": "<th className=\"text-left py-3 px-4 font-semibold\">Fördergeber</th>",
+        "indicator": "Fördergeber"
+      },
+      {
+        "line": 172,
+        "content": "<th className=\"text-right py-3 px-4 font-semibold\">Volumen</th>",
+        "indicator": "Volumen"
+      },
+      {
+        "line": 173,
+        "content": "<th className=\"text-right py-3 px-4 font-semibold\">Förderung</th>",
+        "indicator": "Förderung"
+      },
+      {
+        "line": 174,
+        "content": "<th className=\"text-right py-3 px-4 font-semibold\">Quote</th>",
+        "indicator": "Quote"
+      },
+      {
+        "line": 278,
+        "content": "Durch <strong>weibliche Geschäftsführung</strong> und <strong>KI-Fokus</strong>:",
+        "indicator": "Geschäftsführung"
+      },
+      {
+        "line": 279,
+        "content": "<span className=\"ml-2 text-xl font-bold\">+485.000 zusätzliche Förderung</span>",
+        "indicator": "Förderung"
+      },
+      {
+        "line": 282,
+        "content": "Von 68% auf <strong className=\"text-2xl text-green-600 dark:text-green-400\">81%</strong> Förderquote gesteigert!",
+        "indicator": "gesteigert"
+      },
+      {
+        "line": 484,
+        "content": "<MarketCard title=\"SOM\" value=\"€120 Mio\" desc=\"1% nach 5 Jahren\" />",
+        "indicator": "Mio"
+      },
+      {
+        "line": 526,
+        "content": "<h2 className=\"text-4xl font-bold mb-6\">Bereit für Fördereinreichung</h2>",
+        "indicator": "Fördereinreichung"
+      },
+      {
+        "line": 528,
+        "content": "Mit weiblicher Geschäftsführung und KI-Fokus: <strong>2,25 Mio. Förderung</strong> bei <strong>81% Quote</strong>",
+        "indicator": "Förderung"
+      }
+    ],
+    "pages/AutomationPage.tsx": [
+      {
+        "line": 156,
+        "content": "<p id=\"depth-help\" className=\"text-xs text-muted-foreground mt-1\">Höhere Tiefe erhöht Laufzeit und Kosten; Empfehlung: 3–5.</p>",
+        "indicator": "Laufzeit"
+      }
+    ],
+    "components/wallet/CrossChainDashboard.tsx": [
+      {
+        "line": 30,
+        "content": "interface SwapQuote {",
+        "indicator": "Quote"
+      },
+      {
+        "line": 71,
+        "content": "const [swapQuote, setSwapQuote] = useState<SwapQuote | null>(null)",
+        "indicator": "Quote"
+      },
+      {
+        "line": 147,
+        "content": "const fetchQuote = async () => {",
+        "indicator": "Quote"
+      },
+      {
+        "line": 152,
+        "content": "const demoQuote: SwapQuote = {",
+        "indicator": "Quote"
+      },
+      {
+        "line": 167,
+        "content": "setSwapQuote(demoQuote)",
+        "indicator": "Quote"
+      },
+      {
+        "line": 171,
+        "content": "console.error('Fehler beim Laden des Quotes:', error)",
+        "indicator": "Quote"
+      },
+      {
+        "line": 177,
+        "content": "fetchQuote()",
+        "indicator": "Quote"
+      },
+      {
+        "line": 378,
+        "content": "{/* Swap Quote */}",
+        "indicator": "Quote"
+      },
+      {
+        "line": 382,
+        "content": "<span className=\"ml-2\">Quote wird geladen...</span>",
+        "indicator": "Quote"
+      },
+      {
+        "line": 386,
+        "content": "{swapQuote && !isLoading && (",
+        "indicator": "Quote"
+      },
+      {
+        "line": 391,
+        "content": "Swap-Quote verfügbar",
+        "indicator": "Quote"
+      },
+      {
+        "line": 400,
+        "content": "{parseFloat(swapQuote.to_amount).toFixed(6)} {swapQuote.to_token}",
+        "indicator": "Quote"
+      },
+      {
+        "line": 406,
+        "content": "1 {swapQuote.from_token} = {swapQuote.exchange_rate.toFixed(6)} {swapQuote.to_token}",
+        "indicator": "Quote"
+      },
+      {
+        "line": 411,
+        "content": "<Badge variant=\"outline\">{swapQuote.provider}</Badge>",
+        "indicator": "Quote"
+      },
+      {
+        "line": 418,
+        "content": "<span className=\"font-semibold\">{swapQuote.fee}%</span>",
+        "indicator": "Quote"
+      },
+      {
+        "line": 422,
+        "content": "<span className=\"font-semibold\">{swapQuote.slippage}%</span>",
+        "indicator": "Quote"
+      }
+    ],
+    "components/marketing/TestimonialCard.tsx": [
+      {
+        "line": 42,
+        "content": "{/* Quote */}",
+        "indicator": "Quote"
+      }
+    ],
+    "components/chat/ChatWidget.tsx": [
+      {
+        "line": 571,
+        "content": "{/* Bot-Icon in Blau, ohne zusätzlichen grünen Punkt */}",
+        "indicator": "zusätzliche"
+      }
+    ]
+  }
+}

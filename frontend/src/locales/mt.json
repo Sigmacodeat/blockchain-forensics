@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "Irriżerva demo",
+      "pricing": "Ara l-Prezzijiet",
+      "subtitle": "Ibda issa b'demo b'xejn jew ikkuntattja t-tim tagħna",
+      "title": "Ibda issa"
+    },
+    "header": {
+      "badge": "Dwarna",
+      "subtitle": "Aħna niżviluppaw il-pjattaforma ewlenija għall-Intelliġenza tal-Blockchain għall-Intrapriżi, li tappoġġja lill-Infurzar tal-Liġi, VASPs u istituzzjonijiet finanzjarji fil-protezzjoni kontra l-kriminalità tal-kripto.",
+      "title": "Il-Futur tal-Forensika tal-Blockchain"
+    },
+    "mission": {
+      "desc": "Aħna nagħmlu t-tranżazzjonijiet tal-blockchain trasparenti u traċċabbli. L-għan tagħna huwa li niġġieldu l-kriminalità tal-kripto u nagħtu lill-parteċipanti leġittimi tas-suq l-għodod biex jissodisfaw ir-rekwiżiti ta’ konformità u jnaqqsu r-riskji.",
+      "title": "Il-Missjoni Tagħna"
+    },
+    "seo": {
+      "description": "Aħna nibnu l-pjattaforma ewlenija għall-Forensika tal-Blockchain: Konformità, Investigazzjonijiet u Intelliġenza globali.",
+      "title": "Dwarna | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "badge": "Fin-Numri",
+      "blockchains": "Blockchains",
+      "enterprise_customers": "Klijenti tal-Intrapriża",
+      "recovered_assets": "Assi Rkuprati",
+      "sla_guaranteed": "garantit permezz ta’ SLA",
+      "supported": "appoġġjati",
+      "supported_by_tech": "appoġġjati mit-teknoloġija tagħna",
+      "title": "L-Impatt Tagħna",
+      "uptime": "Uptime",
+      "worldwide": "mad-dinja kollha"
+    },
+    "team": {
+      "badge": "Kompetenza",
+      "compliance": {
+        "desc": "Esperti tar-regolamentazzjoni għall-AML/CFT u sanzjonijiet internazzjonali",
+        "h1": "Ex-Regolaturi",
+        "h2": "Speċjalisti AML",
+        "h3": "Konsulenti Legali",
+        "title": "Konformità u Legali"
+      },
+      "forensics": {
+        "desc": "Ex-Infurzar tal-Liġi b’esperjenza ta’ snin fl-investigazzjonijiet tal-kriminalità tal-kripto",
+        "h1": "Alumni tal-FBI/BKA",
+        "h2": "Tneħħija tad-Darknet",
+        "h3": "Rkupru tal-Assi",
+        "title": "Esperti Forensiċi"
+      },
+      "subtitle": "Esperti fil-Forensika tal-Blockchain, Infurzar tal-Liġi, FinTech u Machine Learning",
+      "tech": {
+        "desc": "Inġiniera minn kumpaniji teknoloġiċi ewlenin b’kompetenza fil-blockchain",
+        "h1": "Ex-FAANG",
+        "h2": "Żviluppaturi tal-Qalba tal-Blockchain",
+        "h3": "Esperti tas-Sigurtà",
+        "title": "Speċjalisti tat-Teknoloġija"
+      },
+      "title": "It-Tim Tagħna"
+    },
+    "trust": {
+      "badge": "Fiduċja",
+      "ce": {
+        "desc": "L-aqwa 10 skambji għall-AML u monitoraġġ tat-tranżazzjonijiet",
+        "title": "Skambji tal-Kripto"
+      },
+      "fi": {
+        "desc": "Banek tal-Livell 1 b’espożizzjoni għall-kripto",
+        "title": "Banek u FinTechs"
+      },
+      "le": {
+        "desc": "FBI, Europol, awtoritajiet nazzjonali tal-infurzar tal-liġi",
+        "title": "Infurzar tal-Liġi"
+      },
+      "reg": {
+        "desc": "Awtoritajiet ta’ sorveljanza finanzjarja għas-sorveljanza tas-suq",
+        "title": "Regolaturi"
+      },
+      "subtitle": "Organizzazzjonijiet ewlenin mad-dinja kollha jiddependu fuq it-teknoloġija tagħna",
+      "title": "Min Jafda Fina"
+    },
+    "values": {
+      "badge": "Il-Valuri Tagħna",
+      "compliance": {
+        "desc": "Konformi ma’ GDPR, eIDAS, OFAC. Aħna nifhmu r-rekwiżiti regolatorji u nintegrawhom.",
+        "title": "Konformità l-Ewwel"
+      },
+      "customer": {
+        "desc": "Skambju mill-qrib mal-Infurzar tal-Liġi u l-industrija. Ir-rekwiżiti tiegħek huma l-pjan tagħna.",
+        "title": "Orjentat lejn il-Klijent"
+      },
+      "global": {
+        "desc": "100+ blockchain, appoġġ multilingwi u listi ta’ sanzjonijiet internazzjonali koperti.",
+        "title": "Portata Globali"
+      },
+      "innovation": {
+        "desc": "Teknoloġija avvanzata: AI/ML, Graph Analytics u Ipproċessar f’Ħin Real għall-aħjar riżultati.",
+        "title": "Innovazzjoni"
+      },
+      "team": {
+        "desc": "Tim interdixxiplinarju ta’ esperti forensiċi, żviluppaturi u speċjalisti tal-konformità.",
+        "title": "Xogħol f’Tim"
+      },
+      "title": "X’Imexxina",
+      "trust": {
+        "desc": "Sigurtà ta’ livell intrapriża b’ċertifikazzjonijiet SOC2/ISO27001. Id-dejta tiegħek hija sigura magħna.",
+        "title": "Fiduċja u Sigurtà"
+      }
+    },
+    "vision": {
+      "desc": "Dinja fejn it-teknoloġija tal-blockchain tista’ tilħaq il-potenzjal sħiħ tagħha – trasparenti, sigura u konformi. Aħna noħolqu l-infrastruttura għal futur fejn l-assi diġitali jsiru mainstream, mingħajr ma jippromwovu l-kriminalità.",
+      "title": "Il-Viżjoni Tagħna"
+    }
+  },
+  "accessibility": {
+    "activate": "Attiva",
+    "close_dialog": "Agħlaq id-djalogu",
+    "font_size": "Daqs tal-Font",
+    "font_size_large": "Daqs tal-font kbir",
+    "font_size_normal": "Daqs tal-font normali",
+    "font_size_xlarge": "Daqs tal-font extra kbir",
+    "high_contrast_detected": "Kuntrast għoli skopert",
+    "keyboard_shortcuts": "Shortcuts tal-keyboard",
+    "navigate_backward": "Naviga lura",
+    "navigate_forward": "Naviga 'l quddiem",
+    "no_system_preferences": "L-ebda preferenzi speċjali tas-sistema ma nstabu",
+    "reduced_motion_detected": "Mozzjoni mnaqqsa skoperta",
+    "settings": "Settings tal-Aċċessibilità",
+    "skip_to_content": "Aqbeż għall-kontenut",
+    "system_preferences": "Preferenzi tas-Sistema"
+  },
+  "address_analysis": {
+    "title": "Analiżi tal-Indirizz",
+    "wip_desc": "Deskrizzjoni tal-analiżi tal-indirizz taħt żvilupp",
+    "wip_title": "Analiżi tal-Indirizz taħt Żvilupp"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "Aġenti AI",
+      "app_name": "Isem tal-App",
+      "cross_chain": "Cross-Chain",
+      "max_trace_depth": "Fond massimu tat-traċċar",
+      "ml_clustering": "ML Clustering",
+      "title": "Konfigurazzjoni",
+      "version": "Verżjoni"
+    },
+    "disabled": "✗ Diżattivat",
+    "enabled": "✓ Attivat",
+    "error": "Żball",
+    "health": {
+      "connected": "✓ Konness",
+      "disconnected": "✗ Mhux Konness",
+      "error": "Ma setax jittella’ l-istatus tas-saħħa",
+      "title": "Saħħa tad-Database"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Jiġbed tranżazzjonijiet minn Ethereum RPC",
+        "ingesting": "Qed jiġi proċessat...",
+        "placeholder": "0x...",
+        "start": "Ibda l-Ingestjoni",
+        "success": "✓ L-ingestjoni bdiet fl-isfond",
+        "title": "Ingestjoni tad-Dejta tal-Indirizz"
+      },
+      "block": {
+        "help": "Jimporta t-tranżazzjonijiet kollha minn blokk",
+        "ingesting": "Qed jiġi proċessat...",
+        "placeholder": "Numru tal-blokk",
+        "start": "Ibda l-Importazzjoni tal-Blokk",
+        "success": "✓ L-ingestjoni tal-blokk bdiet",
+        "title": "Ingestjoni tad-Dejta tal-Blokk"
+      }
+    },
+    "stats": {
+      "db_size": "Daqs tad-DB",
+      "title": "Statistika tas-Sistema",
+      "total_addresses": "Indirizzi Totali",
+      "total_traces": "Traċċi Totali",
+      "total_transactions": "Tranżazzjonijiet Totali"
+    },
+    "subtitle": "Monitoraġġ, Konfigurazzjoni u Ġestjoni tad-Dejta",
+    "tabs": {
+      "config": "Konfigurazzjoni",
+      "ingestion": "Ingestjoni tad-Dejta",
+      "overview": "Ħarsa Ġenerali",
+      "users": "Ġestjoni tal-Utenti"
+    },
+    "title": "Amministrazzjoni tas-Sistema"
+  },
+  "agent": {
+    "cancel": "Ikkanċella",
+    "error": "Żball",
+    "error_unknown": "Żball mhux magħruf",
+    "examples": {
+      "1": "Eżempju 1",
+      "2": "Eżempju 2",
+      "3": "Eżempju 3",
+      "title": "Eżempji tal-Aġenti"
+    },
+    "instructions": "Istruzzjonijiet",
+    "loading": "Qed jittella’...",
+    "placeholder": "Daħħal il-kmand tiegħek...",
+    "retry": "Erġa’ pprova",
+    "send": "Ibgħat",
+    "subtitle": "Interazzjoni mal-Aġenti AI",
+    "title": "Aġenti Intelliġenti",
+    "welcome": "Merħba lill-Aġenti AI"
+  },
+  "auth": {
+    "fields": {
+      "email": "E-Mail",
+      "organization_opt": "Organizzazzjoni (opzjonali)",
+      "password": "Password",
+      "password_confirm": "Ikkonferma l-Password",
+      "username": "Isem tal-Utent"
+    },
+    "forgot": {
+      "back_to_login": "Lura għal-Login",
+      "dev_note": "Peress li m’hemm l-ebda servizz ta’ e-mail ikkonfigurat, iċċekkja l-logs tas-server għal-link tal-issettjar mill-ġdid.",
+      "dev_note_label": "Nota (Modalità ta’ Żvilupp):",
+      "error": "Żball fl-ibgħat",
+      "info_sent": "Jekk jeżisti kont b’din l-e-mail, intbagħat link tal-issettjar mill-ġdid.",
+      "sent": "Link tal-issettjar mill-ġdid intbagħat!",
+      "submit": "Ibgħat il-Link tal-Issettjar mill-Ġdid",
+      "submitting": "Qed jibgħat...",
+      "subtitle": "L-ebda problema! Daħħal l-e-mail tiegħek u aħna nibgħatulek link tal-issettjar mill-ġdid.",
+      "title": "Insejt il-Password?",
+      "title_sent": "E-Mail Mibgħuta!"
+    },
+    "login": {
+      "failed": "Login falla",
+      "fill_all_fields": "Jekk jogħġbok imla l-oqsma kollha",
+      "forgot_password": "Insejt il-Password?",
+      "google": "Idħol bil-Google",
+      "google_retry": "Erġa’ pprova bil-Google",
+      "no_account": "Għad m’għandekx kont?",
+      "oauth_failed": "OAuth falla. Jekk jogħġbok erġa’ pprova.",
+      "oauth_processing": "Login OAuth qed jiġi proċessat…",
+      "or": "jew",
+      "register_now": "Irreġistra issa",
+      "remember_me": "Ibqa’ loggjat",
+      "submit": "Idħol",
+      "submitting": "Login qed isir...",
+      "subtitle": "Idħol biex tkompli"
+    },
+    "placeholders": {
+      "email": "analyst@example.com",
+      "organization": "FBI, Chainalysis, eċċ.",
+      "password": "••••••••",
+      "username": "john_analyst"
+    },
+    "register": {
+      "accept": "Naċċetta t-",
+      "already": "Diġà rreġistrat?",
+      "and": "u",
+      "failed": "Reġistrazzjoni falla",
+      "fill_all_fields": "Jekk jogħġbok imla l-oqsma obbligatorji kollha",
+      "google": "Irreġistra bil-Google",
+      "login_now": "Idħol issa",
+      "password_hint": "Minimu 8 karattri",
+      "password_too_short": "Il-password trid tkun mill-inqas 8 karattri twila",
+      "passwords_no_match": "Il-passwords ma jaqblux",
+      "submit": "Irreġistra",
+      "submitting": "Reġistrazzjoni qed isir...",
+      "subtitle": "Ibda l-analiżi forensika tiegħek",
+      "title": "Oħloq Kont"
+    }
+  },
+  "common": {
+    "access_denied": "Aċċess miċħud (amministratur biss)",
+    "account": "Kont",
+    "back": "Lura",
+    "close": "Agħlaq",
+    "info": "Informazzjoni",
+    "language": "Lingwa",
+    "loading": "Qed jittella’...",
+    "next": "Li jmiss",
+    "page": "Paġna",
+    "prev": "Preċedenti",
+    "refresh": "Aġġorna",
+    "search": "Fittex",
+    "success": "Suċċess",
+    "theme": "Tema",
+    "view": "Ara",
+    "wip": {
+      "title": "Ġej dalwaqt",
+      "desc": "Din il-karatteristika għadha qed tiġi żviluppata.",
+      "cta": "Itgħallem aktar"
+    },
+    "start_free": "Ibda b'xejn",
+    "error": "Żball",
+    "save": "Salva",
+    "cancel": "Ikkanċella",
+    "delete": "Ħassar",
+    "edit": "Edit",
+    "create": "Create",
+    "finish": "Finish",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm",
+    "welcome": "Welcome",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "documents": "Documents",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "Severità Minima",
+      "refresh": "Aġġorna",
+      "title": "Kontrolli",
+      "window": "Tieqa",
+      "window_15m": "15-il Minuta",
+      "window_1h": "Siegħa",
+      "window_24h": "24 Siegħa",
+      "window_2h": "Sagħtejn",
+      "window_30m": "30 Minuta",
+      "window_5m": "5 Minuti"
+    },
+    "header": {
+      "subtitle": "Analiżi tal-Korrelazzjoni f’Ħin Real",
+      "title": "Analiżi tal-Korrelazzjoni"
+    },
+    "overview": {
+      "active_rules": "Regoli Attivi",
+      "analyzed": "Analizzati",
+      "empty": "L-ebda dejta tal-korrelazzjoni disponibbli",
+      "found": "Instabu",
+      "loading": "Qed jittella’...",
+      "min_sev": "Severità Minima",
+      "rate": "Rata",
+      "title": "Ħarsa Ġenerali tal-Korrelazzjoni",
+      "window": "Tieqa"
+    },
+    "rules": {
+      "empty": "L-ebda regola ma nstabet",
+      "footer": "Paġna tar-Regoli",
+      "loading": "Qed jittella’ r-regoli...",
+      "min": "Minimu",
+      "minutes": "Minuti",
+      "required_patterns": "Mudelli Meħtieġa",
+      "title": "Regoli tal-Korrelazzjoni",
+      "window": "Tieqa"
+    },
+    "sev": {
+      "critical": "Kritika",
+      "high": "Għolja",
+      "low": "Baxxa",
+      "medium": "Medja"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "Skont ir-Raġuni",
+        "by_type": "Skont it-Tip",
+        "title": "Tqassim tas-Soppressjoni"
+      },
+      "rate": "Rata tas-Soppressjoni",
+      "title": "Soppressjonijiet",
+      "top_entity": "Entità Ewlenija",
+      "total": "Total"
+    },
+    "test": {
+      "add_alert": "Żid Allert",
+      "alerts_label": "Allerti",
+      "match": "Tqabbil",
+      "no_alerts": "L-ebda allert",
+      "no_match": "Ebda tqabbil",
+      "pick_rule": "Agħżel Regola",
+      "pick_rule_ph": "Agħżel regola...",
+      "result": "Riżultat",
+      "run": "Esegwi",
+      "testing": "Qed jiġi ttestjat...",
+      "title": "Test tal-Korrelazzjoni"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "Ikkopja minn",
+      "copy_mint": "Ikkopja Mint",
+      "export_csv": "Esporta għal CSV",
+      "export_csv_page": "Esporta l-Paġna għal CSV",
+      "fetch": "Ġib"
+    },
+    "bitcoin": {
+      "block_title": "Titlu tal-Blokk Bitcoin",
+      "compute": "Ikkalkula",
+      "decoded": "Dekodifikat",
+      "edges_title": "Titlu tal-Imeall",
+      "height_ph": "Għoli tal-Blokk...",
+      "ingest_edges": "Ingestjoni tal-Imeall",
+      "method_heuristic": "Metodu Ewristiku",
+      "method_proportional": "Metodu Proporzjonali",
+      "normalized": "Normalizzat",
+      "tx_title": "Titlu tat-Tranżazzjoni",
+      "txid_ph": "ID tat-Tranżazzjoni..."
+    },
+    "compliance": {
+      "add_watch": "Żid Watch",
+      "address_ph": "Indirizz...",
+      "chain_ph": "Katina...",
+      "entries": "Entrati",
+      "error": "Żball",
+      "filter_address_ph": "Filtra l-Indirizz...",
+      "filter_chain_ph": "Filtra l-Katina...",
+      "list_watch": "Lista tal-Watch",
+      "screen": "Skrin",
+      "title": "Konformità",
+      "watchlist": "Lista tal-Watch"
+    },
+    "ethereum": {
+      "canonical": "Kanoniku",
+      "copy_hash": "Ikkopja Hash",
+      "decoded": "Dekodifikat",
+      "error": "Żball",
+      "open_etherscan": "Iftaħ Etherscan",
+      "tx_hash_ph": "Hash tat-Tranżazzjoni...",
+      "tx_title": "Titlu tat-Tranżazzjoni"
+    },
+    "ingest": {
+      "canonical_notice": "Notifika Kanonika",
+      "edges_notice": "Notifika tal-Imeall",
+      "loading": "Qed jittella’..."
+    },
+    "labels": {
+      "add": "Żid",
+      "address_ph": "Indirizz...",
+      "category_ph": "Kategorija...",
+      "chain_ph": "Katina...",
+      "error": "Żball",
+      "label_ph": "Tikketta...",
+      "lookup": "Fittex",
+      "title": "Tikkettjar"
+    },
+    "monitoring": {
+      "fetch": "Ġib",
+      "key_counters": "Kontaturi Ewlenin",
+      "title": "Monitoraġġ"
+    },
+    "rpc_unavailable": "RPC Mhux Disponibbli",
+    "solana": {
+      "canonical_error": "Żball Kanoniku",
+      "canonical_title": "Titlu Kanoniku",
+      "error": "Żball",
+      "ingest_canonical": "Ingestjoni Kanonika",
+      "signature_ph": "Firma...",
+      "title": "Titlu ta’ Solana",
+      "transfers": "Trasferimenti"
+    },
+    "table": {
+      "actions": "Azzjonijiet",
+      "address": "Indirizz",
+      "amount_ui": "Ammont UI",
+      "chain": "Katina",
+      "created": "Maħluq",
+      "decimals": "Deċimali",
+      "fee": "Ħlas",
+      "from": "Minn",
+      "from_vout": "Minn Vout",
+      "method": "Metodu",
+      "mint": "Mint",
+      "reason": "Raġuni",
+      "to": "Għal",
+      "to_vout": "Għal Vout",
+      "value_btc": "Valur BTC"
+    },
+    "totals": {
+      "page_sum": "Somma tal-Paġna",
+      "page_sum_btc": "Somma tal-Paġna BTC",
+      "total_amount": "Ammont Totali",
+      "total_value_btc": "Valur Totali BTC"
+    }
+  },
+  "dashboard": {
+    "actions": "Azzjonijiet",
+    "active": "Attiv",
+    "administration": "Amministrazzjoni",
+    "alert_aging": "Tixjiħ tal-Allerti",
+    "alert_engine": "Magna tal-Allerti",
+    "alert_monitoring": "Monitoraġġ tal-Allerti",
+    "alert_overview": "Ħarsa Ġenerali tal-Allerti",
+    "analyst_throughput": "Produzzjoni tal-Analista",
+    "audit_kpis": "KPIs tal-Awditjar",
+    "backlog": "Backlog",
+    "bucket_placeholder": "24h,3d,7d,>7d",
+    "buckets": "Basktijiet",
+    "case_management": "Ġestjoni tal-Każijiet",
+    "connected": "Konness",
+    "correlation_analysis": "Analiżi tal-Korrelazzjoni",
+    "database": "Database",
+    "database_response": "Rispons tad-Database",
+    "days": "Jiem",
+    "disconnected": "Mhux Konness",
+    "failed_actions": "Azzjonijiet Falluti",
+    "false_positive_rate": "Rata ta’ Fals Pożittiv",
+    "fp": "FP",
+    "graph_db": "Database tal-Graph",
+    "graph_explorer": "Esploratur tal-Graph",
+    "healthy": "B’saħħtu",
+    "inactive": "Inattiv",
+    "issues": "Problemi",
+    "last_24h": "L-Aħħar 24 Siegħa",
+    "last_update": "L-Aħħar Aġġornament",
+    "mttr": "MTTR",
+    "open_alerts": "Allerti Miftuħa",
+    "open_cases": "Każijiet Miftuħa",
+    "performance": "Prestazzjoni",
+    "priority_distribution": "Distribuzzjoni tal-Prijorità",
+    "quick_access": "Aċċess Rapidu",
+    "recent_alerts": "Allerti Riċenti",
+    "response_time": "Ħin ta’ Rispons",
+    "rule_effectiveness": "Effettività tar-Regola",
+    "sanctions_hits": "Sanzjonijiet Milquta",
+    "service_status": "Status tas-Servizz",
+    "severity_breakdown": "Tqassim tas-Severità",
+    "sla_breach_rate": "Rata ta’ Ksur tal-SLA",
+    "sla_hours": "SLA (sigħat)",
+    "status_breakdown": "Tqassim tal-Istatus",
+    "success_rate": "Rata ta’ Suċċess",
+    "suppression_rate": "Rata tas-Soppressjoni",
+    "system_details": "Dettalji tas-Sistema",
+    "system_load": "Tagħbija tas-Sistema",
+    "system_overview": "Ħarsa Ġenerali tas-Sistema",
+    "system_status": "Status tas-Sistema",
+    "title": "Dashboard tal-Forensika tal-Blockchain SIGMACODE",
+    "total_alerts": "Allerti Totali",
+    "total_cases": "Każijiet Totali",
+    "total_logs": "Logs Totali",
+    "transaction_tracing": "Traċċar tat-Tranżazzjonijiet",
+    "uptime": "Uptime",
+    "welcome": "Merħba lura",
+    "overview": "Panorama",
+    "recent_activity": "Attività reċenti",
+    "quick_actions": "Azzjonijiet rapidi",
+    "statistics": "Statistika",
+    "notifications": "Notifiki",
+    "hero": {
+      "welcome": "Welcome back",
+      "subtitle": "Here is what's happening with your investigations today."
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "newTrace": "New Trace",
+      "newCase": "New Case",
+      "riskCheck": "Risk Check",
+      "aiAgent": "AI Agent"
+    },
+    "stats": {
+      "cases": "Każi attivi",
+      "traces": "Traċċi llum",
+      "alerts": "Twissijiet",
+      "uptime": "Ħin ta' ħidma"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "Aġenti awtonomi b’integrazzjoni LangChain u GPT-4",
+        "title": "Aġenti AI"
+      },
+      "badge": "AI u Machine Learning",
+      "desc": "Mudelli ta’ Machine Learning għal Skoperta ta’ Anomaliji, Punteġġ tar-Riskju u aġenti AI awtonomi għal investigazzjonijiet 24/7.",
+      "pattern": {
+        "desc": "Skoperta ta’ mudelli ta’ frodi u analiżi tal-imġiba",
+        "title": "Rikonoxximent tal-Mudelli"
+      },
+      "risk": {
+        "desc": "Punteġġ tar-riskju bbażat fuq ML għal indirizzi u tranżazzjonijiet",
+        "title": "Punteġġ tar-Riskju"
+      },
+      "smart_contract": {
+        "desc": "Similarità tal-bytecode u skoperta ta’ vulnerabbiltajiet",
+        "title": "Analiżi tal-Kuntratti Intelliġenti"
+      },
+      "title": "Analiżi Appoġġjata mill-AI"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "Skoperta bbażata fuq ML ta’ mudelli ta’ tranżazzjonijiet mhux tas-soltu",
+        "title": "Skoperta ta’ Anomaliji"
+      },
+      "badge": "Monitoraġġ f’Ħin Real",
+      "custom_rules": {
+        "desc": "Regoli ta’ allert personalizzati b’Rule DSL u Policy Engine",
+        "title": "Regoli Personalizzati"
+      },
+      "desc": "15+ regola ta’ allert konfigurabbli b’Machine Learning. Irċievi notifiki dwar sanzjonijiet, taħlit, trasferimenti ta’ valur għoli u anomaliji.",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io u servizzi oħra ta’ taħlit",
+        "title": "Skoperta tat-Taħlit"
+      },
+      "sanctions": {
+        "desc": "Listi ta’ sanzjonijiet OFAC/UN/EU/UK b’aġġornamenti ta’ kuljum",
+        "title": "Skrinjar tas-Sanzjonijiet"
+      },
+      "title": "Magna Intelliġenti tal-Allerti"
+    },
+    "case": {
+      "badge": "Fluss tax-Xogħol tal-Investigazzjoni",
+      "desc": "Ġestjoni sħiħa tal-investigazzjoni b’Katina tal-Evidenza, firmi eIDAS u rapporti aċċettabbli fil-qorti.",
+      "eidas": {
+        "desc": "Firmi elettroniċi kwalifikati skont l-istandards tal-UE",
+        "title": "Firmi eIDAS"
+      },
+      "evidence": {
+        "desc": "Katina ta’ Evidenza bla interruzzjoni għal evidenza aċċettabbli fil-qorti",
+        "title": "Katina tal-Evidenza"
+      },
+      "export": {
+        "desc": "Esportazzjoni PDF/Excel b’timestamping u rekord tal-awditjar",
+        "title": "Esportazzjoni u Rapporti"
+      },
+      "title": "Ġestjoni tal-Każijiet u Katina tal-Evidenza",
+      "tracking": {
+        "desc": "Ġestjoni strutturata tal-każijiet bi status tal-fluss tax-xogħol",
+        "title": "Traċċar tal-Każijiet"
+      }
+    },
+    "cta": {
+      "demo": "Itlob Demo",
+      "pricing": "Ara l-Prezzijiet",
+      "subtitle": "Ibda issa b’demo b’xejn",
+      "title": "Lest għas-suite sħiħa?",
+      "start": "Ibda B'xejn"
+    },
+    "graph": {
+      "badge": "Intelliġenza tal-Graph",
+      "clustering": {
+        "desc": "Cluxtering awtomatiku ta’ wallets relatati",
+        "title": "Cluxtering tal-Wallet"
+      },
+      "community": {
+        "desc": "Skoperta ta’ gruppi ta’ wallets b’interessi komuni",
+        "title": "Skoperta tal-Komunità"
+      },
+      "desc": "Database tal-graph ibbażata fuq Neo4j għal cluxtering tal-entitajiet, skoperta tal-komunità u investigazzjoni viżwali.",
+      "labels": {
+        "desc": "Tikkettjar ta’ Exchange/VASP/DeFi b’intelliġenza tal-komunità",
+        "title": "Tikkettjar tal-Entitajiet"
+      },
+      "title": "Riżoluzzjoni tal-Entità u Analiżi tan-Netwerk",
+      "visual": {
+        "desc": "Esploratur tal-graph interattiv għal analiżi kumplessi",
+        "title": "Investigazzjoni Viżwali"
+      }
+    },
+    "header": {
+      "badge": "Karatteristiċi Sħaħ",
+      "cta_try": "Ipprova b’xejn",
+      "subtitle": "Mit-traċċar tat-tranżazzjonijiet sal-analiżi mmexxija mill-AI – l-għodod kollha għal investigazzjonijiet professjonali",
+      "title": "Is-Suite Sħiħa tal-Forensika tal-Blockchain"
+    },
+    "security": {
+      "audit": {
+        "desc": "Rekords tal-awditjar sħaħ għal prova ta’ konformità",
+        "title": "Rekords tal-Awditjar"
+      },
+      "badge": "Sigurtà tal-Intrapriża",
+      "desc": "Sigurtà ta’ livell intrapriża b’RBAC, SSO/SAML, rekords tal-awditjar u konformità mal-GDPR.",
+      "privacy": {
+        "desc": "Konformità mal-GDPR b’anomimizzazzjoni tal-PII",
+        "title": "Privatezza tad-Dejta"
+      },
+      "rbac": {
+        "desc": "Kontroll tal-Aċċess Ibbażat fuq ir-Rwoli b’rwoli personalizzati",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Single Sign-On b’SAML 2.0 u OAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "Sigurtà u Konformità"
+    },
+    "seo": {
+      "description": "Is-suite sħiħa tal-forensika tal-blockchain: Traċċar, Allerti, Analiżi tal-Graph, AI/ML, Ġestjoni tal-Każijiet u Sigurtà.",
+      "title": "Karatteristiċi | SIGMACODE Blockchain Forensics"
+    },
+    "stats": {
+      "accuracy": "Preċiżjoni",
+      "ai_agents": "Aġenti AI",
+      "alert_rules": "Regoli tal-Allerti",
+      "blockchains": "Blockchains",
+      "bridges": "Protokolli tal-Pont",
+      "case_templates": "Mudelli tal-Każijiet",
+      "compliance": "Konformità",
+      "encryption": "Kriptaġġ",
+      "entities": "Entitajiet",
+      "evidence_types": "Tipi ta’ Evidenza",
+      "false_positives": "Falsi Pożittivi",
+      "max_depth": "Fond Massimu tat-Traċċar",
+      "ml_models": "Mudelli ML",
+      "query_time": "Ħin tal-Mistoqsija",
+      "relationships": "Relazzjonijiet",
+      "response_time": "Ħin ta’ Rispons",
+      "security_certs": "Ċertifikazzjonijiet tas-Sigurtà",
+      "uptime_sla": "SLA tal-Uptime"
+    },
+    "tracing": {
+      "badge": "Traċċar tat-Tranżazzjonijiet",
+      "bridge": {
+        "desc": "Skoperta awtomatika ta’ pontijiet cross-chain u assi wrapped",
+        "title": "Skoperta tal-Pont"
+      },
+      "cross_chain": {
+        "desc": "100+ blockchain appoġġjati: EVM, UTXO, Solana, Cosmos u aktar",
+        "title": "Traċċar Cross-Chain"
+      },
+      "demixing": {
+        "desc": "Analiżi ewristika ta’ Tornado Cash, Mixer u Muniti tal-Privatezza",
+        "title": "Demixing tal-Muniti tal-Privatezza"
+      },
+      "desc": "Segwi t-tranżazzjonijiet fuq il-blockchains ewlenin kollha. B’skoperta ta’ pontijiet cross-chain, demixing tal-muniti tal-privatezza u traċċar rikorsiv ’l quddiem/lura.",
+      "recursive": {
+        "desc": "Traċċar ’l quddiem/lura b’fond konfigurabbli u filtri",
+        "title": "Traċċar Rikorsiv"
+      },
+      "title": "Intelliġenza tat-Tranżazzjonijiet Multi-Chain"
+    },
+    "hero": {
+      "badge": "Features",
+      "title": "Enterprise-Grade Blockchain Forensics",
+      "subtitle": "All tools you need to investigate crypto crime, ensure compliance, and protect your business."
+    }
+  },
+  "footer": {
+    "blog": "Blog",
+    "careers": "Karrieri",
+    "company": "Kumpanija",
+    "contact": "Kuntatt",
+    "imprint": "Imprint",
+    "legal": "Legali",
+    "privacy": "Privatezza",
+    "product": "Prodott",
+    "request_demo": "Itlob demo",
+    "rights_reserved": "Id-drittijiet kollha riżervati.",
+    "security": "Sigurtà",
+    "tagline": "AI tal-Blockchain għall-Intrapriża għal konformità u investigazzjonijiet – sigur, veloċi, aċċettabbli fil-qorti.",
+    "terms": "Termini"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "Nodi Attivi",
+      "avg_degree": "Grad Medju",
+      "density": "Densità tan-Netwerk",
+      "total_edges": "Imeall Totali",
+      "total_nodes": "Nodi Totali"
+    },
+    "centrality": {
+      "taint": "Tniġġis",
+      "title": "Analiżi taċ-Ċentralità"
+    },
+    "communities": {
+      "algorithm": "Algoritmu",
+      "avg_size": "Daqs Medju",
+      "avg_taint": "Tniġġis Medju",
+      "empty": "Ikklikkja ",
+      "label_propagation": "Propagazzjoni tat-Tikketta",
+      "loading": "Qed jinstabu komunitajiet...",
+      "louvain": "Louvain (Modularità)",
+      "title": "Skoperta tal-Komunità",
+      "total": "Komunitajiet Totali"
+    },
+    "degree": {
+      "title": "Distribuzzjoni tal-Grad",
+      "x": "Grad",
+      "y": "Għadd"
+    },
+    "filters": {
+      "cross_chain": "Cross-Chain (Saff tal-Pont)",
+      "from": "Minn (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "Sa (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "Analiżi Avvanzata tan-Netwerk u Skoperta tal-Mudelli",
+      "title": "Analiżi tal-Graph u Intelliġenza tan-Netwerk"
+    },
+    "hubs": {
+      "in": "Ġewwa",
+      "out": "Barra",
+      "title": "Ċentri tan-Netwerk (Nodi b’Grad Għoli)",
+      "total": "Total"
+    },
+    "loading": {
+      "stats": "Qed jittella’ l-istatistika..."
+    },
+    "patterns": {
+      "circle_length": "Tul taċ-Ċirku",
+      "detected": "Ċrieki Skoperti",
+      "empty_desc": "Dan huwa sinjal tajjeb - l-ebda ċirku ta’ ħasil tal-flus ovvju ma nstab",
+      "empty_title": "L-ebda mudell ċirkolari skopert",
+      "high_risk": "Riskju Għoli",
+      "hops": "qabżiet",
+      "loading": "Qed jinstabu mudelli...",
+      "more_addresses": "aktar indirizzi",
+      "risk_score": "Punteġġ tar-Riskju",
+      "title": "Mudelli Ċirkolari (Ħasil tal-Flus Potenzjali)",
+      "total": "Total",
+      "total_value": "Valur Totali",
+      "tx_path": "Mogħdija tat-Tranżazzjoni:"
+    },
+    "tabs": {
+      "communities": "Skoperta tal-Komunità",
+      "overview": "Ħarsa Ġenerali tan-Netwerk",
+      "patterns": "Skoperta tal-Mudelli"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "Cluxter",
+      "clustering": "Qed isir il-cluxtering...",
+      "pause_timeline": "Waqqaf il-Linja Żmienija",
+      "play_timeline": "Doqq il-Linja Żmienija",
+      "title": "Azzjonijiet tal-Investigatur"
+    },
+    "connected": {
+      "taint": "Tniġġis",
+      "title": "Konnessjonijiet",
+      "tx": "Tranżazzjoni"
+    },
+    "graph": {
+      "connections": "Konnessjonijiet",
+      "enter_address": "Daħħal Indirizz",
+      "loading": "Qed jittella’...",
+      "nodes": "Nodi",
+      "title": "Graph tal-Investigatur"
+    },
+    "header": {
+      "subtitle": "Għodod għall-Investigazzjoni Forensika",
+      "title": "Investigatur tal-Blockchain"
+    },
+    "path": {
+      "bridges": "Pontijiet",
+      "hops": "Qabżiet",
+      "risk_score": "Punteġġ tar-Riskju",
+      "title": "Mogħdija tat-Traċċar",
+      "total_value": "Valur Totali"
+    },
+    "search": {
+      "explore": "Esplora",
+      "placeholder": "Daħħal indirizz jew ID tat-tranżazzjoni...",
+      "title": "Fittex Investigazzjonijiet"
+    },
+    "settings": {
+      "from": "Minn",
+      "hops_1": "1 Qabża",
+      "hops_2": "2 Qabżiet",
+      "hops_3": "3 Qabżiet",
+      "hops_4": "4 Qabżiet",
+      "hops_5": "5 Qabżiet",
+      "include_bridges": "Inkludi Pontijiet",
+      "max_hops": "Qabżiet Massimi",
+      "title": "Settings tal-Investigatur",
+      "to": "Sa"
+    },
+    "timeline": {
+      "empty": "L-ebda avveniment fil-linja żmienija",
+      "events": "Avvenimenti",
+      "risk": "Riskju",
+      "select_address": "Agħżel Indirizz",
+      "title": "Linja Żmienija",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "Itlob Demo Issa",
+      "pricing": "Ara l-Prezzijiet"
+    },
+    "cta2": {
+      "demo": "Itlob Demo B’Xejn",
+      "pricing": "Ara l-Prezzijiet",
+      "subtitle": "Ibda issa b’demo b’xejn u esperjenza l-futur tal-forensika tal-blockchain",
+      "title": "Lest għall-Intelliġenza tal-Blockchain tal-Intrapriża?"
+    },
+    "features": {
+      "badge": "Karatteristiċi",
+      "subtitle": "Għodod ta’ livell intrapriża għal konformità, investigazzjonijiet u ġestjoni tar-riskju",
+      "title": "Dak kollu li għandek bżonn għall-forensika tal-blockchain"
+    },
+    "hero": {
+      "badge": "sigmacode.io · Forensika tal-Blockchain",
+      "point1": "100+ Blockchain",
+      "point2": "Sanzjonijiet OFAC/UN/EU",
+      "point3": "Monitoraġġ f’Ħin Real",
+      "subtitle": "Konformità mmexxija mill-AI, investigazzjonijiet u monitoraġġ tar-riskju – f’ħin real u ta’ livell intrapriża.",
+      "title": "Intelliġenza tal-Blockchain tal-Intrapriża"
+    },
+    "pricing": {
+      "badge": "Prezzijiet",
+      "subtitle": "Minn b’xejn għal intrapriża - ibda issa",
+      "title": "Pjanijiet Flessibbli għal kull Daqs ta’ Intrapriża",
+      "view_all": "Ara l-Prezzijiet Kollha"
+    },
+    "seo": {
+      "description": "Konformità mmexxija mill-AI, investigazzjonijiet u monitoraġġ tar-riskju – f’ħin real u ta’ livell intrapriża. SIGMACODE Blockchain Forensics.",
+      "title": "SIGMACODE | Intelliġenza tal-Blockchain tal-Intrapriża"
+    },
+    "tech": {
+      "badge": "Teknoloġija",
+      "subtitle": "Infrastruttura ta’ livell intrapriża għal prestazzjoni u sigurtà massimi",
+      "title": "Tech Stack ta’ l-Aħħar Livell"
+    },
+    "use_cases": {
+      "badge": "Każijiet ta’ Użu",
+      "subtitle": "Mill-Infurzar tal-Liġi sal-FinTech",
+      "title": "Is-soluzzjoni t-tajba għal kull każ ta’ użu"
+    }
+  },
+  "layout": {
+    "main_navigation": "Navigazzjoni Prinċipali",
+    "quick_search_title": "Tiftix Rapidu (Ctrl/⌘+K)",
+    "skip_to_content": "Aqbeż għall-kontenut",
+    "quick_search_placeholder": "Fittex malajr...",
+    "quick_search_hint": "Suġġeriment: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie banner",
+    "title": "Cookies & Privacy",
+    "title_short": "Cookies",
+    "description": "We use essential cookies to operate this website. Optional analytics cookies help us understand and improve usage. You can accept all cookies or allow only necessary ones. You can change your choice at any time in the settings.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Service",
+    "imprint_link": "Imprint",
+    "only_necessary": "Only necessary",
+    "accept_all": "Accept all",
+    "preferences": "Preferences",
+    "save_preferences": "Save preferences",
+    "manage": "Cookie settings",
+    "analytics_title": "Analytics cookies",
+    "analytics_desc": "Helps us understand usage to improve the website.",
+    "marketing_title": "Marketing cookies",
+    "marketing_desc": "Enables personalized content and offers.",
+    "all_optional_title": "Enable all optional",
+    "all_optional_desc": "Enables both analytics and marketing cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "Agħlaq",
+        "close_title": "Agħlaq l-Allert",
+        "copy_alert_id_title": "Ikkopja l-ID tal-Allert",
+        "copy_entity": "Ikkopja l-Entità",
+        "copy_entity_id_title": "Ikkopja l-ID tal-Entità",
+        "copy_id": "Ikkopja l-ID",
+        "copy_rule": "Ikkopja r-Regola",
+        "copy_rule_id_title": "Ikkopja l-ID tar-Regola",
+        "details": "Dettalji",
+        "details_title": "Ara d-Dettalji",
+        "reset": "Irrisettja"
+      },
+      "audit": {
+        "empty": "L-ebda Avveniment",
+        "title": "Rekord tal-Awditjar"
+      },
+      "csv": {
+        "export_all": "Esporta CSV (Kollha)",
+        "export_all_title": "Esporta CSV tar-rigħel kollha ffiltrati (Server)",
+        "export_page": "Esporta CSV (Paġna)",
+        "export_page_title": "Esporta CSV tal-paġna",
+        "no_filtered_data": "L-ebda dejta ffiltrata",
+        "no_page_data": "L-ebda dejta fuq din il-paġna"
+      },
+      "empty": "L-ebda allert ma nstab",
+      "filters": {
+        "all": "(kollha)",
+        "search_label": "Fittex (rule_id / entity_id)",
+        "search_placeholder": "Fittex...",
+        "severity": "Severità",
+        "source": "Sors",
+        "source_persisted": "Persistit (KYT)",
+        "source_realtime": "Ħin Real (Magna tal-Allerti)",
+        "status": "Status"
+      },
+      "kpi": {
+        "event_time_set": "Issettja l-Ħin tal-Avveniment (first_seen_at)",
+        "event_time_title": "Ħin tal-Avveniment = first_seen_at",
+        "false_positive": "Immarka bħala Fals Pożittiv",
+        "title": "Annotazzjonijiet KPI",
+        "true_positive": "Immarka bħala Veru Pożittiv"
+      },
+      "loading": "Qed jittellgħu l-allerti...",
+      "modal": {
+        "alert_id": "ID tal-Allert",
+        "chain": "Katina",
+        "context": "Kuntest",
+        "entity": "Entità",
+        "rule_id": "ID tar-Regola",
+        "severity": "Severità",
+        "title": "Dettalji tal-Allert"
+      },
+      "pagination": {
+        "next": "Li jmiss",
+        "page": "Paġna",
+        "prev": "Preċedenti"
+      },
+      "severity": {
+        "critical": "kritika",
+        "high": "għolja",
+        "low": "baxxa",
+        "medium": "medja"
+      },
+      "status": {
+        "assigned": "assentat",
+        "closed": "magħluq",
+        "open": "miftuħ",
+        "snoozed": "snoozed"
+      },
+      "subtitle": "Regoli f’ħin real u allerti persistenti (KYT)",
+      "table": {
+        "first": "l-ewwel",
+        "last": "l-aħħar"
+      },
+      "title": "Allerti tal-Monitoraġġ",
+      "toasts": {
+        "copy_failed": "Ikkopjar falla",
+        "disposition_failed": "Dispożizzjoni falla",
+        "disposition_set": "Dispożizzjoni ssettjata",
+        "entity_copied": "Entità kkopjata",
+        "event_time_failed": "Issettjar tal-ħin tal-avveniment falla",
+        "event_time_set": "Ħin tal-avveniment issettjat",
+        "export_failed": "Esportazzjoni tas-server falla",
+        "export_started": "Esportazzjoni tas-server bdiet",
+        "id_copied": "ID kkopjat",
+        "rule_copied": "Regola kkopjata"
+      }
+    }
+  },
+  "navigation": {
+    "about": "Dwar",
+    "analytics": "Analitiċi",
+    "close_menu": "Agħlaq in-navigazzjoni",
+    "dashboard": "Dashboard",
+    "features": "Karatteristiċi",
+    "home": "Dar",
+    "logout": "Oħroġ",
+    "open_menu": "Iftaħ in-navigazzjoni",
+    "pricing": "Prezzijiet",
+    "settings": "Settings",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "Aġġorna"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "Qlubi",
+        "title": "Użu tal-CPU"
+      },
+      "db": {
+        "connected": "Konness",
+        "disconnected": "Mhux Konness",
+        "response": "Rispons",
+        "title": "Database"
+      },
+      "memory": {
+        "available": "disponibbli",
+        "title": "Użu tal-Memorja"
+      },
+      "system_status": {
+        "healthy": "B’saħħtu",
+        "issues": "Problemi",
+        "title": "Status tas-Sistema",
+        "uptime": "Uptime"
+      }
+    },
+    "common": {
+      "no": "Le",
+      "yes": "Iva"
+    },
+    "header": {
+      "last_refresh": "L-Aħħar Aġġornament",
+      "subtitle": "Monitoraġġ komprensiv tal-prestazzjoni tas-sistema, metriċi u SLOs",
+      "title": "Dashboard tal-Prestazzjoni u Osservabilità"
+    },
+    "metrics": {
+      "empty": "L-ebda dejta tal-metriċi disponibbli",
+      "loading": "Qed jittellgħu l-metriċi...",
+      "max": "Massimu",
+      "measurements": "Kejl",
+      "min": "Minimu",
+      "title": "Metriċi tal-Prestazzjoni (Siegħa)",
+      "trend": "Xejra"
+    },
+    "recent_alerts": {
+      "empty": "L-ebda allert riċenti",
+      "title": "Allerti tal-Prestazzjoni Riċenti"
+    },
+    "services": {
+      "active": "Attiv",
+      "inactive": "Inattiv",
+      "title": "Status tas-Servizz"
+    },
+    "slo": {
+      "empty": "L-ebda dejta SLO disponibbli",
+      "loading": "Qed jittellgħu l-SLOs...",
+      "threshold": "Limitu",
+      "title": "Konformità tal-SLO",
+      "violations": "Vjolazzjonijiet"
+    },
+    "system_details": {
+      "database": "Database",
+      "db_connected": "Konness",
+      "db_type": "Tip",
+      "debug": "Debug",
+      "environment": "Ambjent",
+      "log_level": "Livell tal-Log",
+      "mode": "Modalità",
+      "platform": "Pjattaforma",
+      "python_version": "Verżjoni tal-Python",
+      "response_time": "Ħin ta’ Rispons",
+      "system_info": "Informazzjoni tas-Sistema",
+      "title": "Dettalji tas-Sistema",
+      "version": "Verżjoni"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "Blockchains Addizzjonali",
+        "i2": "Sits tal-Utenti Extra",
+        "i3": "Sanzjonijiet Premium (listi estiżi)",
+        "i4": "Formati ta’ Esportazzjoni Avvanzati",
+        "i5": "Appoġġ ta’ Prijorità",
+        "i6": "White-Label (Intrapriża)",
+        "title": "Add-ons Disponibbli"
+      },
+      "badge": "Estensjonijiet Flessibbli",
+      "overage": {
+        "extra_credits": "Krediti Extra",
+        "monthly_cap": "Limitu Mensili",
+        "note": "Tuża aktar mill-kontingent tiegħek? L-ebda problema - l-overage jiġi kalkulat awtomatikament.",
+        "title": "Prezzijiet tal-Overage"
+      },
+      "subtitle": "Estendi l-pjan tiegħek skont il-bżonn",
+      "title": "Add-ons u Overage"
+    },
+    "card": {
+      "custom": "Personalizzat",
+      "desc_business": "Għal timijiet akbar",
+      "desc_community": "Għal dilettanti u open source",
+      "desc_enterprise": "Għal intrapriżi u regolaturi",
+      "desc_pro": "Għal kumpaniji li qed jikbru",
+      "desc_starter": "Għal timijiet żgħar",
+      "per_month": "kull xahar",
+      "popular": "L-Aktar Popolari",
+      "popular_label": "L-Aktar Popolari",
+      "save_year": "Iffranka ${{amount}}/sena"
+    },
+    "cta": {
+      "active_plan": "✓ Pjan Attiv",
+      "contact_sales": "Ikkuntattja l-Bejgħ",
+      "demo": "Itlob Demo",
+      "more_about": "Aktar dwarna",
+      "saving": "Qed jiffranka…",
+      "set_tenant_plan": "Bħala Pjan tal-Kirjiet",
+      "start_now": "Ibda Issa",
+      "subscribe": "Abbona Issa",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "Pjan Kurrenti",
+    "enterprise": {
+      "card_desc": "Għal Intrapriżi u Regolaturi",
+      "subtitle": "Prezzijiet Personalizzati, SLA, Integrazzjonijiet, On-Prem/VPC",
+      "title": "Għal Istituzzjonijiet Finanzjarji u Regolaturi"
+    },
+    "faq": {
+      "subtitle": "Ikkuntattja t-tim tal-bejgħ tagħna għal demo personalizzata",
+      "title": "Għad għandek mistoqsijiet?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "Blockchains",
+      "cases": "Każijiet",
+      "credits": "Krediti/Xahar",
+      "priority": "Prijorità",
+      "users": "Utenti"
+    },
+    "header": {
+      "badge": "Prezzijiet Flessibbli",
+      "subtitle": "Minn għodod tal-komunità b’xejn sa intrapriża b’white-label. Ibda llum u skala hekk kif tikber.",
+      "title": "Il-pjan it-tajjeb għal kull tim"
+    },
+    "included": {
+      "analytics": {
+        "i1": "Aġenti AI",
+        "i2": "Analitiċi tal-Graph",
+        "i3": "Punteġġ tar-Riskju",
+        "i4": "Mudelli ML",
+        "title": "Analitiċi Avvanzati"
+      },
+      "badge": "X’inhu inkluż?",
+      "performance": {
+        "i1": "Allerti f’Ħin Real",
+        "i2": "Aċċess għall-API",
+        "i3": "Kju ta’ Prijorità",
+        "i4": "99.9% Uptime",
+        "title": "Prestazzjoni"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "Rekords tal-Awditjar",
+        "i4": "Konformi mal-GDPR",
+        "title": "Sigurtà u Konformità"
+      },
+      "team": {
+        "i1": "Multi-Utent",
+        "i2": "Ġestjoni tal-Każijiet",
+        "i3": "Katina tal-Evidenza",
+        "i4": "Kollaborazzjoni",
+        "title": "Karatteristiċi tat-Tim"
+      },
+      "title": "Ħarsa Ġenerali tal-Karatteristiċi Kollha"
+    },
+    "more": "aktar",
+    "seo": {
+      "description": "Prezzijiet trasparenti: Mill-Komunità sal-Intrapriża. Pjanijiet flessibbli għal timijiet, kumpaniji u regolaturi.",
+      "title": "Prezzijiet | SIGMACODE Blockchain Forensics"
+    },
+    "smb": {
+      "subtitle": "Pjanijiet Self-Serve għal Startups sa Mid-Market",
+      "title": "Għal Timijiet u Kumpaniji"
+    },
+    "toggle": {
+      "annual": "Annwali",
+      "monthly": "Kull Xahar",
+      "save": "Iffranka {{pct}}%"
+    },
+    "top_features": "KARATTERISTIĊI EWLENIN",
+    "hero": {
+      "badge": "Pricing",
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your needs. All plans include core features. Upgrade anytime."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "Aġġorna"
+    },
+    "audit": {
+      "empty": "L-ebda entrata tar-rekord tal-awditjar disponibbli",
+      "loading": "Qed jittella’ r-rekord tal-awditjar...",
+      "title": "Entrati Riċenti tar-Rekord tal-Awditjar",
+      "user": "Utent",
+      "view_all": "Ara kollox →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "Integrità tar-Rekord tal-Awditjar"
+      },
+      "failed_logins": {
+        "title": "Tentattivi ta’ Login Falluti"
+      },
+      "gdpr": {
+        "title": "Konformità mal-GDPR"
+      },
+      "security_incidents": {
+        "title": "Inċidenti tas-Sigurtà"
+      }
+    },
+    "common": {
+      "implemented": "Implimentat",
+      "not_implemented": "Mhux Implimentat",
+      "unknown": "Mhux Magħruf"
+    },
+    "compliance": {
+      "anonymization": "Anonimizzazzjoni",
+      "certifications": "Ċertifikazzjonijiet",
+      "consent_management": "Ġestjoni tal-Kunsens",
+      "data_portability": "Portabbiltà tad-Dejta",
+      "empty": "L-ebda dejta ta’ konformità disponibbli",
+      "encryption": "Kriptaġġ",
+      "loading": "Qed jittella’ l-istatus ta’ konformità...",
+      "right_to_erasure": "Dritt għat-Tħassir",
+      "title": "Status ta’ Konformità mal-GDPR"
+    },
+    "header": {
+      "last_refresh": "L-Aħħar Aġġornament",
+      "subtitle": "Rekords tal-Awditjar, Konformità mal-GDPR u Monitoraġġ tas-Sigurtà",
+      "title": "Dashboard tas-Sigurtà u Konformità"
+    },
+    "quick_actions": {
+      "audit_export": "Esportazzjoni tal-Awditjar",
+      "compliance_report": "Rapport ta’ Konformità",
+      "gdpr_status": "Status GDPR",
+      "incident_report": "Rapport tal-Inċident",
+      "integrity_check": "Verifika tal-Integrità",
+      "security_scan": "Skennjar tas-Sigurtà",
+      "title": "Azzjonijiet tas-Sigurtà u Konformità"
+    },
+    "retention": {
+      "days": "Jiem",
+      "empty": "L-ebda dejta ta’ żamma disponibbli",
+      "title": "Konformità taż-Żamma tad-Dejta",
+      "violations": {
+        "count": "Vjolazzjonijiet",
+        "days_old": "Jiem qodma",
+        "more": "u",
+        "more_suffix": "aktar",
+        "title": "Vjolazzjonijiet taż-Żamma"
+      }
+    },
+    "security": {
+      "compliance_status": "Status ta’ Konformità",
+      "empty": "L-ebda dejta tas-sigurtà disponibbli",
+      "failed_logins": "Logins Falluti",
+      "incidents": "Inċidenti tas-Sigurtà",
+      "rate_limited_ips": "IPs Limitati bir-Rata",
+      "suspicious_activities": "Attivitajiet Sospettużi",
+      "title": "Ħarsa Ġenerali tas-Sigurtà"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "Allerti miftuħa skont basktijiet ta’ età (eż., 24h, 3d, 7d, >7d)",
+    "alert_engine": "Monitoraġġ f’ħin real għal tranżazzjonijiet u mudelli sospettużi b’algoritmi ML",
+    "alert_overview": "Ħarsa ġenerali tal-allerti tas-sigurtà attivi kollha u s-severità tagħhom (Kritika/Għolja/Medja/Baxxa)",
+    "analyst_throughput": "Numru ta’ każijiet magħluqa għal kull analista fi ħdan it-tieqa magħżula",
+    "backlog": "Għadd totali ta’ allerti miftuħa (mhux rikonoxxuti) u każijiet miftuħa",
+    "database": "Status tal-konnessjoni PostgreSQL/TimescaleDB u ħin ta’ rispons għal dejta tas-serje temporali",
+    "graph_db": "Database tal-graph Neo4j għal analiżi ta’ relazzjonijiet kumplessi u mappjar tan-netwerk",
+    "system_status": "Juri l-istatus kurrenti tal-komponenti kollha tas-sistema. Aħdar = B’saħħtu, Aħmar = Problemi skoperti",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "Tours Disponibbli",
+    "completed": "kompletat",
+    "finish": "Iffinalizza",
+    "no_tours_available": "L-ebda tour disponibbli għal din il-paġna",
+    "of": "minn",
+    "select_tour_description": "Agħżel tour biex titgħallem dwar il-karatteristiċi tal-pjattaforma",
+    "skip": "Aqbeż",
+    "start": "Ibda",
+    "start_tour": "Ibda t-Tour",
+    "step": "Pass",
+    "steps": "passi"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "Dettalji",
+      "direction": "Direzzjoni",
+      "error_title": "Żball fir-Riżultati tat-Traċċar",
+      "exec_time": "Ħin tal-Eżekuzzjoni",
+      "export": "Esporta",
+      "flow_graph": "Graph tal-Fluss",
+      "high_risk": "Riskju Għoli",
+      "high_risk_title": "Indirizzi ta’ Riskju Għoli Skoperti",
+      "loading": "Qed jittellgħu r-riżultati...",
+      "max_hop": "Qabża Massima",
+      "not_found": "L-ebda riżultat ma nstab",
+      "report": "Ġenera rapport",
+      "sanctioned_title": "Indirizzi taħt Sanzjonijiet Skoperti",
+      "sanctioned_warning": "Twissija: Konnessjonijiet ma’ indirizzi taħt sanzjonijiet skoperti",
+      "source": "Sors",
+      "taint": "Tniġġis",
+      "taint_model": "Mudell tat-Tniġġis",
+      "title": "Riżultati tat-Traċċar",
+      "total_edges": "Imeall Totali",
+      "total_nodes": "Nodi Totali"
+    },
+    "simple": {
+      "address_ph": "0x123...",
+      "chain_btc": "Bitcoin",
+      "chain_eth": "Ethereum",
+      "chain_sol": "Solana",
+      "cluster": {
+        "clustering": "Qed isir il-cluxtering...",
+        "export_members": "Esporta Membri",
+        "label": "Tikketta",
+        "lookup": "Fittex",
+        "member_address": "Indirizz tal-Membru",
+        "members": "Membri",
+        "title": "Cluxter tal-Wallet"
+      },
+      "depth_ph": "Fond (1-5)",
+      "edges": "Imeall",
+      "error_cluster": "Żball waqt il-cluxtering",
+      "error_trace": "Żball waqt it-traċċar",
+      "export_paths": "Esporta Mogħdijiet",
+      "export_targets": "Esporta Miri",
+      "high_risk": "Riskju Għoli",
+      "model_fifo": "FIFO",
+      "model_haircut": "Haircut",
+      "model_proportional": "Proporzjonali",
+      "nodes": "Nodi",
+      "run": "Esegwi",
+      "summary": "Sommarju",
+      "th_path": "Mogħdija",
+      "th_paths": "Mogħdijiet",
+      "th_taint": "Tniġġis",
+      "th_target": "Mira",
+      "threshold_ph": "Limitu (0-100)",
+      "title": "Traċċar Sempliċi",
+      "tracing": "Qed isir it-traċċar..."
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "Analitiċi avvanzati dwar l-attività u x-xejriet tal-wallet",
+        "title": "Analiżi tal-Wallet",
+        "wip": "Taħt żvilupp"
+      },
+      "export": {
+        "csv": "Esporta għal CSV",
+        "desc": "Esporta d-dejta tal-wallet f’formati varji",
+        "json": "Esporta għal JSON",
+        "pdf": "Esporta għal PDF",
+        "section_export": "Esportazzjoni tas-sezzjoni",
+        "section_import": "Importazzjoni tas-sezzjoni",
+        "title": "Esportazzjoni u Importazzjoni"
+      },
+      "header": {
+        "title": "Test tal-Wallet"
+      },
+      "import": {
+        "add_wallet": "Żid wallet",
+        "json": "Importa minn JSON",
+        "restore_backup": "Irrestawra backup"
+      },
+      "multisig": {
+        "desc": "Ġestjoni u analiżi ta’ wallets multisig",
+        "title": "Wallets Multisig",
+        "wip": "Taħt żvilupp"
+      },
+      "overview": {
+        "active_wallets": "Wallets Attivi",
+        "activity": {
+          "liquidity": "Likwidità",
+          "nft": "Attività NFT",
+          "receive": "Tranżazzjonijiet Riċevuti"
+        },
+        "month_change": "Bidla fix-Xahar",
+        "multisig": "Multisig",
+        "new_this_week": "Ġodda din il-ġimgħa",
+        "recent": "Riċenti",
+        "security_grade": "Grad tas-Sigurtà",
+        "security_score": "Punteġġ tas-Sigurtà",
+        "status": {
+          "2fa": "2FA",
+          "active": "Attiv",
+          "backup": "Backup",
+          "backup_available": "Backup Disponibbli",
+          "hardware": "Wallet tal-Ħardwer",
+          "hw_connected": "Ħardwer Konness",
+          "recovery": "Irkupru",
+          "secured": "Sikur",
+          "title": "Status"
+        },
+        "total_volume": "Volum Totali"
+      },
+      "sidebar": {
+        "title": "Navigazzjoni tal-Wallet"
+      },
+      "tabs": {
+        "analytics": "Analitiċi",
+        "crosschain": "Cross-Chain",
+        "export": "Esportazzjoni",
+        "multisig": "Multisig",
+        "nft": "NFT",
+        "overview": "Ħarsa Ġenerali",
+        "transactions": "Tranżazzjonijiet"
+      },
+      "transactions": {
+        "desc": "Ħarsa ġenerali u analiżi tat-tranżazzjonijiet tal-wallet",
+        "export": "Esporta tranżazzjonijiet",
+        "title": "Tranżazzjonijiet",
+        "wip": "Taħt żvilupp"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Analitiċi tal-Web"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "Traċċar"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "Indirizz"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "Reviżjoni"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "Eżegwixxi",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "Online",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

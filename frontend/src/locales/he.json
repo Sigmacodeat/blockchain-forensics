@@ -1,0 +1,2031 @@
+{
+  "common": {
+    "language": "שפה",
+    "loading": "טוען...",
+    "search": "חיפוש",
+    "success": "הצלחה",
+    "back": "חזרה",
+    "next": "הבא",
+    "close": "סגור",
+    "access_denied": "הגישה נדחתה (מנהל בלבד)",
+    "account": "חשבון",
+    "info": "מידע",
+    "page": "עמוד",
+    "prev": "קודם",
+    "refresh": "רענון",
+    "theme": "ערכת נושא",
+    "view": "הצג",
+    "wip": {
+      "title": "בקרוב",
+      "desc": "תכונה זו עדיין בפיתוח.",
+      "cta": "למד עוד"
+    },
+    "start_free": "התחל בחינם",
+    "error": "שגיאה",
+    "save": "שמור",
+    "cancel": "בטל",
+    "delete": "מחק",
+    "edit": "עריכה",
+    "create": "יצירה",
+    "finish": "סיום",
+    "open": "פתיחה",
+    "yes": "כן",
+    "no": "לא",
+    "confirm": "אישור",
+    "welcome": "ברוך הבא",
+    "dashboard": "לוח בקרה",
+    "settings": "הגדרות",
+    "profile": "פרופיל",
+    "logout": "יציאה",
+    "login": "כניסה",
+    "register": "רישום",
+    "email": "דואר אלקטרוני",
+    "password": "סיסמה",
+    "username": "שם משתמש",
+    "documents": "מסמכים",
+    "recent": "בשימוש לאחרונה",
+    "no_results": "לא נמצאו תוצאות"
+  },
+  "landing": {
+    "hero": {
+      "badge": "sigmacode.io · פורנזיקה לבלוקצ'יין",
+      "title": "בינה ארגונית לבלוקצ'יין",
+      "subtitle": "ציות, חקירות וניטור סיכונים מונעי‑בינה מלאכותית — בזמן אמת וברמת ארגון.",
+      "point1": "100+ בלוקצ'יינים",
+      "point2": "רשימות סנקציות OFAC/UN/EU/UK",
+      "point3": "ניטור בזמן אמת"
+    },
+    "features": {
+      "badge": "יכולות",
+      "title": "כל מה שצריך לפורנזיקה של בלוקצ'יין",
+      "subtitle": "כלי אנטרפרייז לציות, חקירות וניהול סיכונים"
+    },
+    "pricing": {
+      "badge": "תמחור",
+      "title": "תוכניות גמישות לכל גודל ארגון",
+      "subtitle": "מהחבילה החינמית ועד אנטרפרייז — התחילו עכשיו",
+      "view_all": "הצג את כל המחירים"
+    },
+    "cta": {
+      "demo": "בקשת דמו",
+      "pricing": "צפו בתמחור"
+    },
+    "cta2": {
+      "demo": "בקשת דמו חינם",
+      "pricing": "צפו בתמחור",
+      "subtitle": "התחילו עכשיו בדמו חינם וחוו את עתיד הפורנזיקה לבלוקצ'יין",
+      "title": "מוכנים לבינה ארגונית לבלוקצ'יין?"
+    },
+    "tech": {
+      "badge": "טכנולוגיה",
+      "title": "תשתית מתקדמת לביצועים ואבטחה מקסימליים",
+      "subtitle": "סטאק טכנולוגי מודרני ברמת אנטרפרייז"
+    },
+    "use_cases": {
+      "badge": "שימושים",
+      "title": "הפתרון הנכון לכל שימוש",
+      "subtitle": "מהפעלת חוק ועד פינטק"
+    },
+    "seo": {
+      "title": "SIGMACODE | בינה ארגונית לבלוקצ'יין",
+      "description": "ציות, חקירות וניטור סיכונים מונעי‑בינה מלאכותית — בזמן אמת וברמת אנטרפרייז. SIGMACODE פורנזיקה לבלוקצ'יין."
+    }
+  },
+  "features": {
+    "header": {
+      "badge": "סט תכונות מלא",
+      "title": "חבילת פורנזיקה מלאה לבלוקצ'יין",
+      "subtitle": "מטְרֵייסִינְג עסקאות ועד ניתוח מונע‑בינה — כל מה שנדרש לחקירות מקצועיות",
+      "cta_try": "Try for free"
+    },
+    "ai": {
+      "badge": "בינה מלאכותית ולמידת מכונה",
+      "desc": "מודלים של ML לזיהוי חריגות, ניקוד סיכון וסוכני AI אוטונומיים לחקירות 24/7.",
+      "title": "ניתוח מונע‑בינה",
+      "agents": {
+        "desc": "Autonomous agents with LangChain and GPT-4 integration",
+        "title": "AI Agents"
+      },
+      "pattern": {
+        "desc": "Detection of fraud patterns and behavioral analysis",
+        "title": "Pattern Recognition"
+      },
+      "risk": {
+        "desc": "ML-based risk assessment for addresses and transactions",
+        "title": "Risk Scoring"
+      },
+      "smart_contract": {
+        "desc": "Bytecode similarity and vulnerability detection",
+        "title": "Smart Contract Analysis"
+      }
+    },
+    "alerts": {
+      "badge": "ניטור בזמן אמת",
+      "desc": "+15 כללי התרעה ניתנים להגדרה עם ML. קבלו התראות על סנקציות, מיקסינג, העברות בהיקף גבוה וחריגות.",
+      "title": "מנוע התרעות חכם",
+      "anomaly": {
+        "desc": "ML-based detection of unusual transaction patterns",
+        "title": "Anomaly Detection"
+      },
+      "custom_rules": {
+        "desc": "Custom alert rules using a Rule DSL and policy engine",
+        "title": "Custom Rules"
+      },
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io, and other mixing services",
+        "title": "Mixing Detection"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK sanctions lists with daily updates",
+        "title": "Sanctions Screening"
+      }
+    },
+    "graph": {
+      "badge": "מודיעין גרפי",
+      "desc": "מסד נתונים גרפי מבוסס Neo4j לקלסטרינג ישויות, גילוי קהילות וחקר חזותי.",
+      "title": "זיהוי ישויות וניתוח רשת",
+      "clustering": {
+        "desc": "Automatic clustering of related wallets",
+        "title": "Wallet Clustering"
+      },
+      "community": {
+        "desc": "Detection of wallet groups with common interests",
+        "title": "Community Detection"
+      },
+      "labels": {
+        "desc": "Exchange/VASP/DeFi labels with community intelligence",
+        "title": "Entity Labels"
+      },
+      "visual": {
+        "desc": "Interactive graph explorer for complex analyses",
+        "title": "Visual Investigation"
+      }
+    },
+    "security": {
+      "badge": "אבטחה ארגונית",
+      "desc": "אבטחה ברמת אנטרפרייז עם RBAC, SSO/SAML, יומני ביקורת וציות ל‑GDPR.",
+      "title": "אבטחה וציות",
+      "audit": {
+        "desc": "Complete audit trails for compliance evidence",
+        "title": "Audit Logs"
+      },
+      "privacy": {
+        "desc": "GDPR compliance with PII anonymization",
+        "title": "Data Privacy"
+      },
+      "rbac": {
+        "desc": "Granular role-based access control with custom roles",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "Single sign-on with SAML 2.0 and OAuth 2.0",
+        "title": "SSO/SAML"
+      }
+    },
+    "seo": {
+      "title": "תכונות | SIGMACODE פורנזיקה לבלוקצ'יין",
+      "description": "חבילת פורנזיקה מלאה: טרייסינג, התרעות, אנליטיקה גרפית, AI/ML, ניהול תיקים ואבטחה."
+    },
+    "cta": {
+      "demo": "בקשת דמו",
+      "pricing": "צפו בתמחור",
+      "subtitle": "התחילו עכשיו עם דמו חינם",
+      "title": "מוכנים לחבילה השלמה?",
+      "start": "התחל בחינם"
+    },
+    "case": {
+      "badge": "Investigation workflow",
+      "desc": "End-to-end investigation management with evidence chain-of-custody, eIDAS signatures, and court-admissible reports.",
+      "eidas": {
+        "desc": "Qualified electronic signatures per EU standards",
+        "title": "eIDAS Signatures"
+      },
+      "evidence": {
+        "desc": "Complete chain-of-custody for court-admissible evidence",
+        "title": "Evidence Chain"
+      },
+      "export": {
+        "desc": "PDF/Excel export with timestamping and audit trail",
+        "title": "Export & Reports"
+      },
+      "title": "Case Management & Evidence Chain",
+      "tracking": {
+        "desc": "Structured case management with workflow statuses",
+        "title": "Case Tracking"
+      }
+    },
+    "stats": {
+      "accuracy": "Accuracy",
+      "ai_agents": "AI Agents",
+      "alert_rules": "Alert Rules",
+      "blockchains": "Blockchains",
+      "bridges": "Bridge Protocols",
+      "case_templates": "Case Templates",
+      "compliance": "Compliance",
+      "encryption": "Encryption",
+      "entities": "Entities",
+      "evidence_types": "Evidence Types",
+      "false_positives": "False Positives",
+      "max_depth": "Max Tracing Depth",
+      "ml_models": "ML Models",
+      "query_time": "Query Time",
+      "relationships": "Relationships",
+      "response_time": "Response Time",
+      "security_certs": "Security Certs",
+      "uptime_sla": "Uptime SLA"
+    },
+    "tracing": {
+      "badge": "Transaction Tracing",
+      "bridge": {
+        "desc": "Automatic detection of cross-chain bridges and wrapped assets",
+        "title": "Bridge Detection"
+      },
+      "cross_chain": {
+        "desc": "100+ blockchains supported: EVM, UTXO, Solana, Cosmos, and more",
+        "title": "Cross-Chain Tracing"
+      },
+      "demixing": {
+        "desc": "Heuristic analysis of Tornado Cash, mixers, and privacy coins",
+        "title": "Privacy Coin Demixing"
+      },
+      "desc": "Trace transactions across all major blockchains—with cross-chain bridge detection, privacy coin demixing, and recursive forward/backward tracing.",
+      "recursive": {
+        "desc": "Forward/backward tracing with configurable depth and filters",
+        "title": "Recursive Tracing"
+      },
+      "title": "Multi-Chain Transaction Intelligence"
+    },
+    "hero": {
+      "badge": "Features",
+      "title": "Enterprise-Grade Blockchain Forensics",
+      "subtitle": "All tools you need to investigate crypto crime, ensure compliance, and protect your business."
+    }
+  },
+  "about": {
+    "header": {
+      "badge": "עלינו",
+      "title": "עתיד הפורנזיקה לבלוקצ'יין",
+      "subtitle": "אנחנו בונים את פלטפורמת האנטרפרייז המובילה למודיעין בלוקצ'יין, המסייעת לאכיפת חוק, VASP וגופים פיננסיים להגן מפני פשיעת קריפטו."
+    },
+    "mission": {
+      "title": "המשימה שלנו",
+      "desc": "הופכים עסקאות בלוקצ'יין לשקופות ובר‑מעקב. שואפים להילחם בפשיעת קריפטו ולצייד גורמים לגיטימיים בכלים לעמידה בדרישות ציות והפחתת סיכון."
+    },
+    "cta": {
+      "title": "התחל עכשיו",
+      "subtitle": "התחילו עכשיו עם דמו חינם או צרו קשר עם הצוות שלנו",
+      "demo": "הזמן הדגמה",
+      "pricing": "צפו בתמחור"
+    },
+    "seo": {
+      "title": "אודות | SIGMACODE פורנזיקה לבלוקצ'יין",
+      "description": "אנחנו בונים את פלטפורמת האנטרפרייז המובילה לפורנזיקה של בלוקצ'יין: ציות, חקירות ומודיעין ברחבי העולם."
+    },
+    "stats": {
+      "badge": "By the numbers",
+      "blockchains": "Blockchains",
+      "enterprise_customers": "Enterprise customers",
+      "recovered_assets": "Recovered assets",
+      "sla_guaranteed": "guaranteed by SLA",
+      "supported": "supported",
+      "supported_by_tech": "powered by our technology",
+      "title": "Our impact",
+      "uptime": "Uptime",
+      "worldwide": "worldwide"
+    },
+    "team": {
+      "badge": "Expertise",
+      "compliance": {
+        "desc": "Regulatory experts for AML/CFT and international sanctions",
+        "h1": "Ex-regulators",
+        "h2": "AML specialists",
+        "h3": "Legal counsel",
+        "title": "Compliance & legal"
+      },
+      "forensics": {
+        "desc": "Ex-law-enforcement with years of experience in crypto crime investigations",
+        "h1": "FBI/BKA alumni",
+        "h2": "Darknet takedowns",
+        "h3": "Asset recovery",
+        "title": "Forensics experts"
+      },
+      "subtitle": "Experts from blockchain forensics, law enforcement, fintech, and machine learning",
+      "tech": {
+        "desc": "Engineers from top tech companies with blockchain expertise",
+        "h1": "Ex-FAANG",
+        "h2": "Blockchain core devs",
+        "h3": "Security experts",
+        "title": "Tech specialists"
+      },
+      "title": "Our team"
+    },
+    "trust": {
+      "badge": "Trust",
+      "ce": {
+        "desc": "Top-10 exchanges for AML and transaction monitoring",
+        "title": "Crypto exchanges"
+      },
+      "fi": {
+        "desc": "Tier-1 banks with crypto exposure",
+        "title": "Banks & fintechs"
+      },
+      "le": {
+        "desc": "FBI, Europol, national law enforcement agencies",
+        "title": "Law Enforcement"
+      },
+      "reg": {
+        "desc": "Financial regulators for market surveillance",
+        "title": "Regulators"
+      },
+      "subtitle": "Leading organizations worldwide rely on our technology",
+      "title": "Who trusts us"
+    },
+    "values": {
+      "badge": "Our values",
+      "compliance": {
+        "desc": "GDPR, eIDAS, OFAC compliant. We understand regulatory requirements and build them in.",
+        "title": "Compliance first"
+      },
+      "customer": {
+        "desc": "Close collaboration with law enforcement and industry. Your requirements are our roadmap.",
+        "title": "Customer focus"
+      },
+      "global": {
+        "desc": "100+ blockchains, multi-language support, and international sanctions lists covered.",
+        "title": "Global reach"
+      },
+      "innovation": {
+        "desc": "Cutting-edge technology: AI/ML, graph analytics, and real-time processing for the best results.",
+        "title": "Innovation"
+      },
+      "team": {
+        "desc": "An interdisciplinary team of forensics experts, developers, and compliance specialists.",
+        "title": "Teamwork"
+      },
+      "title": "What drives us",
+      "trust": {
+        "desc": "Enterprise-grade security with SOC2/ISO27001 certifications. Your data is safe with us.",
+        "title": "Trust & security"
+      }
+    },
+    "vision": {
+      "desc": "A world where blockchain technology can reach its full potential—transparent, secure, and compliant. We provide the infrastructure for a future where digital assets become mainstream without fostering crime.",
+      "title": "Our vision"
+    }
+  },
+  "footer": {
+    "blog": "בלוג",
+    "careers": "קריירה",
+    "company": "חברה",
+    "contact": "צור קשר",
+    "imprint": "ח.פ./חוקי",
+    "legal": "משפטי",
+    "privacy": "פרטיות",
+    "product": "מוצר",
+    "request_demo": "בקשת דמו",
+    "rights_reserved": "כל הזכויות שמורות.",
+    "security": "אבטחה",
+    "tagline": "בינה ארגונית לבלוקצ'יין לציות ולחקירות – מאובטח, מהיר, קביל לבית משפט.",
+    "terms": "תנאים"
+  },
+  "accessibility": {
+    "activate": "Activate",
+    "close_dialog": "Close dialog",
+    "font_size": "Font Size",
+    "font_size_large": "Large font size",
+    "font_size_normal": "Normal font size",
+    "font_size_xlarge": "Extra large font size",
+    "high_contrast_detected": "High contrast detected",
+    "keyboard_shortcuts": "Keyboard shortcuts",
+    "navigate_backward": "Navigate backward",
+    "navigate_forward": "Navigate forward",
+    "no_system_preferences": "No special system preferences detected",
+    "reduced_motion_detected": "Reduced motion detected",
+    "settings": "Accessibility Settings",
+    "skip_to_content": "Skip to content",
+    "system_preferences": "System Preferences"
+  },
+  "address_analysis": {
+    "title": "address_analysis.title",
+    "wip_desc": "address_analysis.wip_desc",
+    "wip_title": "address_analysis.wip_title"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI Agents",
+      "app_name": "App Name",
+      "cross_chain": "Cross-Chain",
+      "max_trace_depth": "Max Trace Depth",
+      "ml_clustering": "ML Clustering",
+      "title": "Configuration",
+      "version": "Version"
+    },
+    "disabled": "✗ Disabled",
+    "enabled": "✓ Enabled",
+    "error": "Error",
+    "health": {
+      "connected": "✓ Connected",
+      "disconnected": "✗ Disconnected",
+      "error": "Failed to load health status",
+      "title": "Database Health"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Fetches transactions from Ethereum RPC",
+        "ingesting": "Ingesting...",
+        "placeholder": "0x...",
+        "start": "Start Ingestion",
+        "success": "✓ Ingestion started in background",
+        "title": "Ingest Address Data"
+      },
+      "block": {
+        "help": "Imports all transactions from a block",
+        "ingesting": "Ingesting...",
+        "placeholder": "Block number",
+        "start": "Start Block Import",
+        "success": "✓ Block ingestion started",
+        "title": "Ingest Block Data"
+      }
+    },
+    "stats": {
+      "db_size": "DB Size",
+      "title": "System Statistics",
+      "total_addresses": "Total Addresses",
+      "total_traces": "Total Traces",
+      "total_transactions": "Total Transactions"
+    },
+    "subtitle": "Monitoring, Configuration & Data Management",
+    "tabs": {
+      "config": "Configuration",
+      "ingestion": "Data Ingestion",
+      "overview": "Overview",
+      "users": "User Management"
+    },
+    "title": "System Administration"
+  },
+  "agent": {
+    "cancel": "ביטול",
+    "error": "אירעה שגיאה.",
+    "error_unknown": "אירעה שגיאה בלתי צפויה. נסו שוב.",
+    "examples": {
+      "1": "בצעו Trace ל-0xABC… ב-5 הקפצות האחרונות",
+      "2": "בדקו חשיפה לסנקציות עבור הכתובת 0x…",
+      "3": "סכמו את התראות הסיכון הגבוה של היום",
+      "title": "הצעות מהירות"
+    },
+    "instructions": "אפשר לבקש ממני עקיבות, בדיקות סנקציות, ניהול תיקים או תובנות ניטור.",
+    "loading": "מבצע את הבקשה…",
+    "placeholder": "תארו מה נדרש. לדוגמה: Trace ל-0xABCD בעומק של 3 הקפצות",
+    "retry": "נסו שוב",
+    "send": "שליחה",
+    "subtitle": "קופילוט פורנזי לבלוקצ'יין",
+    "title": "הקופילוט הפורנזי",
+    "welcome": "שלום! אני מנתח ארנקים, עקיבות, התראות ותיקים. מאיפה מתחילים?"
+  },
+  "auth": {
+    "fields": {
+      "email": "Email",
+      "organization_opt": "Organization (optional)",
+      "password": "Password",
+      "password_confirm": "Confirm password",
+      "username": "Username"
+    },
+    "forgot": {
+      "back_to_login": "Back to login",
+      "dev_note": "Since no email service is configured, check the server logs for the reset link.",
+      "dev_note_label": "Note (dev mode):",
+      "error": "Failed to send",
+      "info_sent": "If an account with this email exists, a reset link has been sent.",
+      "sent": "Reset link sent!",
+      "submit": "Send reset link",
+      "submitting": "Sending...",
+      "subtitle": "No problem! Enter your email and we'll send you a reset link.",
+      "title": "Forgot password?",
+      "title_sent": "Email sent!"
+    },
+    "login": {
+      "failed": "Login failed",
+      "fill_all_fields": "Please fill in all fields",
+      "forgot_password": "Forgot password?",
+      "google": "Sign in with Google",
+      "google_retry": "Try again with Google",
+      "no_account": "No account yet?",
+      "oauth_failed": "OAuth failed. Please try again.",
+      "oauth_processing": "Processing OAuth sign-in…",
+      "or": "or",
+      "register_now": "Register now",
+      "remember_me": "Keep me signed in",
+      "submit": "Sign in",
+      "submitting": "Signing in...",
+      "subtitle": "Sign in to continue"
+    },
+    "placeholders": {
+      "email": "analyst@example.com",
+      "organization": "FBI, Chainalysis, etc.",
+      "password": "••••••••",
+      "username": "john_analyst"
+    },
+    "register": {
+      "accept": "I accept the",
+      "already": "Already registered?",
+      "and": "and",
+      "failed": "Registration failed",
+      "fill_all_fields": "Please fill in all required fields",
+      "google": "Register with Google",
+      "login_now": "Sign in now",
+      "password_hint": "At least 8 characters",
+      "password_too_short": "Password must be at least 8 characters long",
+      "passwords_no_match": "Passwords do not match",
+      "submit": "Register",
+      "submitting": "Registering...",
+      "subtitle": "Start your forensic analysis",
+      "title": "Create account"
+    }
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "corr.controls.min_severity",
+      "refresh": "corr.controls.refresh",
+      "title": "corr.controls.title",
+      "window": "corr.controls.window",
+      "window_15m": "corr.controls.window_15m",
+      "window_1h": "corr.controls.window_1h",
+      "window_24h": "corr.controls.window_24h",
+      "window_2h": "corr.controls.window_2h",
+      "window_30m": "corr.controls.window_30m",
+      "window_5m": "corr.controls.window_5m"
+    },
+    "header": {
+      "subtitle": "corr.header.subtitle",
+      "title": "corr.header.title"
+    },
+    "overview": {
+      "active_rules": "corr.overview.active_rules",
+      "analyzed": "corr.overview.analyzed",
+      "empty": "corr.overview.empty",
+      "found": "corr.overview.found",
+      "loading": "corr.overview.loading",
+      "min_sev": "corr.overview.min_sev",
+      "rate": "corr.overview.rate",
+      "title": "corr.overview.title",
+      "window": "corr.overview.window"
+    },
+    "rules": {
+      "empty": "corr.rules.empty",
+      "footer": "corr.rules.footer",
+      "loading": "corr.rules.loading",
+      "min": "corr.rules.min",
+      "minutes": "corr.rules.minutes",
+      "required_patterns": "corr.rules.required_patterns",
+      "title": "corr.rules.title",
+      "window": "corr.rules.window"
+    },
+    "sev": {
+      "critical": "corr.sev.critical",
+      "high": "corr.sev.high",
+      "low": "corr.sev.low",
+      "medium": "corr.sev.medium"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "corr.suppressions.breakdown.by_reason",
+        "by_type": "corr.suppressions.breakdown.by_type",
+        "title": "corr.suppressions.breakdown.title"
+      },
+      "rate": "corr.suppressions.rate",
+      "title": "corr.suppressions.title",
+      "top_entity": "corr.suppressions.top_entity",
+      "total": "corr.suppressions.total"
+    },
+    "test": {
+      "add_alert": "corr.test.add_alert",
+      "alerts_label": "corr.test.alerts_label",
+      "match": "corr.test.match",
+      "no_alerts": "corr.test.no_alerts",
+      "no_match": "corr.test.no_match",
+      "pick_rule": "corr.test.pick_rule",
+      "pick_rule_ph": "corr.test.pick_rule_ph",
+      "result": "corr.test.result",
+      "run": "corr.test.run",
+      "testing": "corr.test.testing",
+      "title": "corr.test.title"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "coverage.actions.copy_from",
+      "copy_mint": "coverage.actions.copy_mint",
+      "export_csv": "coverage.actions.export_csv",
+      "export_csv_page": "coverage.actions.export_csv_page",
+      "fetch": "coverage.actions.fetch"
+    },
+    "bitcoin": {
+      "block_title": "coverage.bitcoin.block_title",
+      "compute": "coverage.bitcoin.compute",
+      "decoded": "coverage.bitcoin.decoded",
+      "edges_title": "coverage.bitcoin.edges_title",
+      "height_ph": "coverage.bitcoin.height_ph",
+      "ingest_edges": "coverage.bitcoin.ingest_edges",
+      "method_heuristic": "coverage.bitcoin.method_heuristic",
+      "method_proportional": "coverage.bitcoin.method_proportional",
+      "normalized": "coverage.bitcoin.normalized",
+      "tx_title": "coverage.bitcoin.tx_title",
+      "txid_ph": "coverage.bitcoin.txid_ph"
+    },
+    "compliance": {
+      "add_watch": "coverage.compliance.add_watch",
+      "address_ph": "coverage.compliance.address_ph",
+      "chain_ph": "coverage.compliance.chain_ph",
+      "entries": "coverage.compliance.entries",
+      "error": "coverage.compliance.error",
+      "filter_address_ph": "coverage.compliance.filter_address_ph",
+      "filter_chain_ph": "coverage.compliance.filter_chain_ph",
+      "list_watch": "coverage.compliance.list_watch",
+      "screen": "coverage.compliance.screen",
+      "title": "coverage.compliance.title",
+      "watchlist": "coverage.compliance.watchlist"
+    },
+    "ethereum": {
+      "canonical": "coverage.ethereum.canonical",
+      "copy_hash": "coverage.ethereum.copy_hash",
+      "decoded": "coverage.ethereum.decoded",
+      "error": "coverage.ethereum.error",
+      "open_etherscan": "coverage.ethereum.open_etherscan",
+      "tx_hash_ph": "coverage.ethereum.tx_hash_ph",
+      "tx_title": "coverage.ethereum.tx_title"
+    },
+    "ingest": {
+      "canonical_notice": "coverage.ingest.canonical_notice",
+      "edges_notice": "coverage.ingest.edges_notice",
+      "loading": "coverage.ingest.loading"
+    },
+    "labels": {
+      "add": "coverage.labels.add",
+      "address_ph": "coverage.labels.address_ph",
+      "category_ph": "coverage.labels.category_ph",
+      "chain_ph": "coverage.labels.chain_ph",
+      "error": "coverage.labels.error",
+      "label_ph": "coverage.labels.label_ph",
+      "lookup": "coverage.labels.lookup",
+      "title": "coverage.labels.title"
+    },
+    "monitoring": {
+      "fetch": "coverage.monitoring.fetch",
+      "key_counters": "coverage.monitoring.key_counters",
+      "title": "coverage.monitoring.title"
+    },
+    "rpc_unavailable": "coverage.rpc_unavailable",
+    "solana": {
+      "canonical_error": "coverage.solana.canonical_error",
+      "canonical_title": "coverage.solana.canonical_title",
+      "error": "coverage.solana.error",
+      "ingest_canonical": "coverage.solana.ingest_canonical",
+      "signature_ph": "coverage.solana.signature_ph",
+      "title": "coverage.solana.title",
+      "transfers": "coverage.solana.transfers"
+    },
+    "table": {
+      "actions": "coverage.table.actions",
+      "address": "coverage.table.address",
+      "amount_ui": "coverage.table.amount_ui",
+      "chain": "coverage.table.chain",
+      "created": "coverage.table.created",
+      "decimals": "coverage.table.decimals",
+      "fee": "coverage.table.fee",
+      "from": "coverage.table.from",
+      "from_vout": "coverage.table.from_vout",
+      "method": "coverage.table.method",
+      "mint": "coverage.table.mint",
+      "reason": "coverage.table.reason",
+      "to": "coverage.table.to",
+      "to_vout": "coverage.table.to_vout",
+      "value_btc": "coverage.table.value_btc"
+    },
+    "totals": {
+      "page_sum": "coverage.totals.page_sum",
+      "page_sum_btc": "coverage.totals.page_sum_btc",
+      "total_amount": "coverage.totals.total_amount",
+      "total_value_btc": "coverage.totals.total_value_btc"
+    }
+  },
+  "dashboard": {
+    "actions": "פעולות",
+    "active": "פעיל",
+    "administration": "ניהול",
+    "alert_aging": "התיישנות התראות",
+    "alert_engine": "מנוע התראות",
+    "alert_monitoring": "ניטור התראות",
+    "alert_overview": "סקירת התראות",
+    "analyst_throughput": "תפוקת אנליסטים",
+    "audit_kpis": "מדדי ביקורת",
+    "backlog": "צבר",
+    "bucket_placeholder": "24ש',3ימים,7ימים,>7ימים",
+    "buckets": "דליים",
+    "case_management": "ניהול תיקים",
+    "connected": "מחובר",
+    "correlation_analysis": "ניתוח קורלציה",
+    "database": "מסד נתונים",
+    "database_response": "תגובת מסד נתונים",
+    "days": "ימים",
+    "disconnected": "מנותק",
+    "failed_actions": "פעולות כושלות",
+    "false_positive_rate": "שיעור חיובי שגוי",
+    "fp": "FP",
+    "graph_db": "מסד נתונים גרפי",
+    "graph_explorer": "סייר גרף",
+    "healthy": "תקין",
+    "inactive": "לא פעיל",
+    "issues": "תקלות",
+    "last_24h": "24 השעות האחרונות",
+    "last_update": "עדכון אחרון",
+    "mttr": "MTTR",
+    "open_alerts": "התראות פתוחות",
+    "open_cases": "תיקים פתוחים",
+    "performance": "ביצועים",
+    "priority_distribution": "התפלגות עדיפויות",
+    "quick_access": "גישה מהירה",
+    "recent_alerts": "התראות אחרונות",
+    "response_time": "זמן תגובה",
+    "rule_effectiveness": "יעילות כללים",
+    "sanctions_hits": "פגיעות סנקציות",
+    "service_status": "מצב שירות",
+    "severity_breakdown": "פירוט חומרה",
+    "sla_breach_rate": "שיעור הפרות SLA",
+    "sla_hours": "SLA (שעות)",
+    "status_breakdown": "פירוט סטטוסים",
+    "success_rate": "שיעור הצלחה",
+    "suppression_rate": "שיעור דיכוי",
+    "system_details": "פרטי מערכת",
+    "system_load": "עומס מערכת",
+    "system_overview": "סקירת מערכת",
+    "system_status": "מצב מערכת",
+    "title": "לוח מחוונים SIGMACODE לפורנזיקה לבלוקצ'יין",
+    "total_alerts": "סך התראות",
+    "total_cases": "סך תיקים",
+    "total_logs": "סך לוגים",
+    "transaction_tracing": "מעקב עסקאות",
+    "uptime": "זמן פעילות",
+    "welcome": "ברוך שובך",
+    "overview": "סקירה",
+    "recent_activity": "פעילות אחרונה",
+    "quick_actions": "פעולות מהירות",
+    "statistics": "סטטיסטיקה",
+    "notifications": "התראות",
+    "hero": {
+      "welcome": "Welcome back",
+      "subtitle": "Here is what's happening with your investigations today."
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "newTrace": "New Trace",
+      "newCase": "New Case",
+      "riskCheck": "Risk Check",
+      "aiAgent": "AI Agent"
+    },
+    "stats": {
+      "cases": "תיקים פעילים",
+      "traces": "מעקבים היום",
+      "alerts": "התראות",
+      "uptime": "זמן פעילות"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "צמתים פעילים",
+      "avg_degree": "דרגה ממוצעת",
+      "density": "צפיפות רשת",
+      "total_edges": "סך קשתות",
+      "total_nodes": "סך צמתים"
+    },
+    "centrality": {
+      "taint": "טיינט",
+      "title": "ניתוח מרכזיות"
+    },
+    "communities": {
+      "algorithm": "אלגוריתם",
+      "avg_size": "גודל ממוצע",
+      "avg_taint": "טיינט ממוצע",
+      "empty": "לחצו ",
+      "label_propagation": "הפצת תגים",
+      "loading": "מאתר קהילות...",
+      "louvain": "Louvain (מודולריות)",
+      "title": "גילוי קהילות",
+      "total": "סך קהילות"
+    },
+    "degree": {
+      "title": "התפלגות דרגות",
+      "x": "דרגה",
+      "y": "ספירה"
+    },
+    "filters": {
+      "cross_chain": "בין שרשרתי (שכבת גשר)",
+      "from": "מ- (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "עד (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "אנליטיקה מתקדמת של רשת וגילוי דפוסים",
+      "title": "אנליטיקה גרפית ומודיעין רשת"
+    },
+    "hubs": {
+      "in": "נכנס",
+      "out": "יוצא",
+      "title": "מרכזי רשת (צמתים בעלי דרגה גבוהה)",
+      "total": "סך הכול"
+    },
+    "loading": {
+      "stats": "טוען סטטיסטיקות..."
+    },
+    "patterns": {
+      "circle_length": "אורך מעגל",
+      "detected": "מעגלים שזוהו",
+      "empty_desc": "סימן טוב — לא נמצאו מעגלי הלבנת הון ברורים",
+      "empty_title": "לא נמצאו דפוסים מעגליים",
+      "high_risk": "סיכון גבוה",
+      "hops": "קפיצות",
+      "loading": "מאתר דפוסים...",
+      "more_addresses": "עוד כתובות",
+      "risk_score": "ניקוד סיכון",
+      "title": "דפוסים מעגליים (חשד להלבנת הון)",
+      "total": "סך הכול",
+      "total_value": "סך ערך",
+      "tx_path": "מסלול עסקה:"
+    },
+    "tabs": {
+      "communities": "גילוי קהילות",
+      "overview": "סקירת רשת",
+      "patterns": "גילוי דפוסים"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "investigator.actions.cluster",
+      "clustering": "investigator.actions.clustering",
+      "pause_timeline": "investigator.actions.pause_timeline",
+      "play_timeline": "investigator.actions.play_timeline",
+      "title": "investigator.actions.title"
+    },
+    "connected": {
+      "taint": "investigator.connected.taint",
+      "title": "investigator.connected.title",
+      "tx": "investigator.connected.tx"
+    },
+    "graph": {
+      "connections": "investigator.graph.connections",
+      "enter_address": "investigator.graph.enter_address",
+      "loading": "investigator.graph.loading",
+      "nodes": "investigator.graph.nodes",
+      "title": "investigator.graph.title"
+    },
+    "header": {
+      "subtitle": "investigator.header.subtitle",
+      "title": "investigator.header.title"
+    },
+    "path": {
+      "bridges": "investigator.path.bridges",
+      "hops": "investigator.path.hops",
+      "risk_score": "investigator.path.risk_score",
+      "title": "investigator.path.title",
+      "total_value": "investigator.path.total_value"
+    },
+    "search": {
+      "explore": "investigator.search.explore",
+      "placeholder": "investigator.search.placeholder",
+      "title": "investigator.search.title"
+    },
+    "settings": {
+      "from": "investigator.settings.from",
+      "hops_1": "investigator.settings.hops_1",
+      "hops_2": "investigator.settings.hops_2",
+      "hops_3": "investigator.settings.hops_3",
+      "hops_4": "investigator.settings.hops_4",
+      "hops_5": "investigator.settings.hops_5",
+      "include_bridges": "investigator.settings.include_bridges",
+      "max_hops": "investigator.settings.max_hops",
+      "title": "investigator.settings.title",
+      "to": "investigator.settings.to"
+    },
+    "timeline": {
+      "empty": "investigator.timeline.empty",
+      "events": "investigator.timeline.events",
+      "risk": "investigator.timeline.risk",
+      "select_address": "investigator.timeline.select_address",
+      "title": "investigator.timeline.title",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "layout": {
+    "main_navigation": "ניווט ראשי",
+    "quick_search_title": "חיפוש מהיר (Ctrl/⌘+K)",
+    "skip_to_content": "דלג לתוכן",
+    "quick_search_placeholder": "חיפוש מהיר...",
+    "quick_search_hint": "טיפ: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "כרזת עוגיות",
+    "title": "עוגיות ופרטיות",
+    "title_short": "עוגיות",
+    "description": "אנחנו משתמשים בעוגיות חיוניות כדי להפעיל אתר זה. עוגיות אנליטיקה אופציונליות עוזרות לנו להבין שימוש ולשפר את האתר. ניתן לקבל את כולן או לאפשר רק את ההכרחיות. ניתן לשנות בחירה בכל עת בהגדרות.",
+    "privacy_link": "מדיניות פרטיות",
+    "terms_link": "תנאי שירות",
+    "imprint_link": "ח.פ./חוקי",
+    "only_necessary": "הכרחיות בלבד",
+    "accept_all": "קבל הכל",
+    "preferences": "העדפות",
+    "save_preferences": "שמור העדפות",
+    "manage": "הגדרות עוגיות",
+    "analytics_title": "עוגיות אנליטיקה",
+    "analytics_desc": "מסייע להבין שימוש כדי לשפר את האתר.",
+    "marketing_title": "עוגיות שיווק",
+    "marketing_desc": "מאפשר תוכן והצעות מותאמות אישית.",
+    "all_optional_title": "אפשר את כל האופציונליות",
+    "all_optional_desc": "מאפשר גם אנליטיקה וגם שיווק."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "סגור",
+        "close_title": "סגור התראה",
+        "copy_alert_id_title": "העתק מזהה התראה",
+        "copy_entity": "העתק ישות",
+        "copy_entity_id_title": "העתק מזהה ישות",
+        "copy_id": "העתק מזהה",
+        "copy_rule": "העתק כלל",
+        "copy_rule_id_title": "העתק מזהה כלל",
+        "details": "פרטים",
+        "details_title": "הצג פרטים",
+        "reset": "איפוס"
+      },
+      "audit": {
+        "empty": "אין אירועים",
+        "title": "שרשרת ביקורת"
+      },
+      "csv": {
+        "export_all": "ייצוא CSV (הכול)",
+        "export_all_title": "ייצוא CSV של כל השורות המסוננות (שרת)",
+        "export_page": "ייצוא CSV (דף)",
+        "export_page_title": "ייצוא CSV של הדף הנוכחי",
+        "no_filtered_data": "אין נתונים מסוננים",
+        "no_page_data": "אין נתונים בדף זה"
+      },
+      "empty": "לא נמצאו התראות",
+      "filters": {
+        "all": "(הכול)",
+        "search_label": "חיפוש (rule_id / entity_id)",
+        "search_placeholder": "חיפוש...",
+        "severity": "חומרה",
+        "source": "מקור",
+        "source_persisted": "מאוחסן (KYT)",
+        "source_realtime": "בזמן אמת (מנוע התראות)",
+        "status": "מצב"
+      },
+      "kpi": {
+        "event_time_set": "הגדרת זמן אירוע (first_seen_at)",
+        "event_time_title": "זמן אירוע = first_seen_at",
+        "false_positive": "סמן כחיובי שגוי",
+        "title": "הערות KPI",
+        "true_positive": "סמן כחיובי אמיתי"
+      },
+      "loading": "טוען התראות...",
+      "modal": {
+        "alert_id": "מזהה התראה",
+        "chain": "רשת",
+        "context": "הקשר",
+        "entity": "ישות",
+        "rule_id": "מזהה כלל",
+        "severity": "חומרה",
+        "title": "פרטי התראה"
+      },
+      "pagination": {
+        "next": "הבא",
+        "page": "עמוד",
+        "prev": "הקודם"
+      },
+      "severity": {
+        "critical": "קריטי",
+        "high": "גבוה",
+        "low": "נמוך",
+        "medium": "בינוני"
+      },
+      "status": {
+        "assigned": "משויך",
+        "closed": "סגור",
+        "open": "פתוח",
+        "snoozed": "נדחה זמנית"
+      },
+      "subtitle": "כללים בזמן אמת והתראות מאוחסנות (KYT)",
+      "table": {
+        "first": "ראשון",
+        "last": "אחרון"
+      },
+      "title": "ניטור התראות",
+      "toasts": {
+        "copy_failed": "ההעתקה נכשלה",
+        "disposition_failed": "הגדרת דיספוזיציה נכשלה",
+        "disposition_set": "דיספוזיציה הוגדרה",
+        "entity_copied": "הישות הועתקה",
+        "event_time_failed": "הגדרת זמן אירוע נכשלה",
+        "event_time_set": "זמן אירוע הוגדר",
+        "export_failed": "הייצוא נכשל",
+        "export_started": "הייצוא התחיל",
+        "id_copied": "מזהה הועתק",
+        "rule_copied": "כלל הועתק"
+      }
+    }
+  },
+  "navigation": {
+    "about": "עלינו",
+    "analytics": "אנליטיקה",
+    "close_menu": "סגור ניווט",
+    "dashboard": "לוח מחוונים",
+    "features": "תכונות",
+    "home": "דף הבית",
+    "logout": "יציאה",
+    "open_menu": "פתח ניווט",
+    "pricing": "תמחור",
+    "settings": "הגדרות",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "רענן"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "ליבות",
+        "title": "שימוש CPU"
+      },
+      "db": {
+        "connected": "מחובר",
+        "disconnected": "מנותק",
+        "response": "תגובה",
+        "title": "מסד נתונים"
+      },
+      "memory": {
+        "available": "זמין",
+        "title": "שימוש בזיכרון"
+      },
+      "system_status": {
+        "healthy": "תקין",
+        "issues": "תקלות",
+        "title": "מצב מערכת",
+        "uptime": "זמן פעילות"
+      }
+    },
+    "common": {
+      "no": "לא",
+      "yes": "כן"
+    },
+    "header": {
+      "last_refresh": "רענון אחרון",
+      "subtitle": "ניטור מקיף של ביצועי מערכת, מדדים ו‑SLO",
+      "title": "לוח ביצועים וניטור"
+    },
+    "metrics": {
+      "empty": "אין נתוני מדדים זמינים",
+      "loading": "טוען מדדים...",
+      "max": "מקס",
+      "measurements": "מדידות",
+      "min": "מינ",
+      "title": "מדדי ביצועים (שעה אחת)",
+      "trend": "מגמה"
+    },
+    "recent_alerts": {
+      "empty": "אין התראות אחרונות",
+      "title": "התראות ביצועים אחרונות"
+    },
+    "services": {
+      "active": "פעיל",
+      "inactive": "לא פעיל",
+      "title": "מצב שירות"
+    },
+    "slo": {
+      "empty": "אין נתוני SLO זמינים",
+      "loading": "טוען SLO...",
+      "threshold": "סף",
+      "title": "ציות ל‑SLO",
+      "violations": "הפרות"
+    },
+    "system_details": {
+      "database": "מסד נתונים",
+      "db_connected": "מחובר",
+      "db_type": "סוג",
+      "debug": "ניפוי",
+      "environment": "סביבה",
+      "log_level": "רמת לוג",
+      "mode": "מצב",
+      "platform": "פלטפורמה",
+      "python_version": "גרסת פייתון",
+      "response_time": "זמן תגובה",
+      "system_info": "מידע מערכת",
+      "title": "פרטי מערכת",
+      "version": "גרסה"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "בלוקצ'יינים נוספים",
+        "i2": "מקומות משתמש נוספים",
+        "i3": "סנקציות פרימיום (רשימות מורחבות)",
+        "i4": "פורמטי יצוא מתקדמים",
+        "i5": "תמיכה בעדיפות",
+        "i6": "וויט‑לייבל (אנטרפרייז)",
+        "title": "תוספים זמינים"
+      },
+      "badge": "תוספים גמישים",
+      "overage": {
+        "extra_credits": "קרדיטים נוספים",
+        "monthly_cap": "תקרת חודש",
+        "note": "חורגים מהמכסה? אין בעיה — החיוב מחושב אוטומטית.",
+        "title": "תמחור חריגה"
+      },
+      "subtitle": "הרחיבו את התוכנית לפי צורך",
+      "title": "תוספים וחריגה"
+    },
+    "card": {
+      "custom": "מותאם",
+      "desc_business": "לצוותים גדולים",
+      "desc_community": "לחובבים וקוד פתוח",
+      "desc_enterprise": "לארגונים ורגולטורים",
+      "desc_pro": "לחברות בצמיחה",
+      "desc_starter": "לצוותים קטנים",
+      "per_month": "לחודש",
+      "popular": "פופולרי ביותר",
+      "popular_label": "פופולרי ביותר",
+      "save_year": "חסכו ${{amount}} לשנה"
+    },
+    "cta": {
+      "active_plan": "✓ תוכנית פעילה",
+      "contact_sales": "צרו קשר עם מכירות",
+      "demo": "בקשת דמו",
+      "more_about": "למידע נוסף עלינו",
+      "saving": "שומר...",
+      "set_tenant_plan": "קבע כתוכנית הדייר",
+      "start_now": "התחילו עכשיו",
+      "subscribe": "הירשם עכשיו",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "תוכנית נוכחית",
+    "enterprise": {
+      "card_desc": "לארגונים ורגולטורים",
+      "subtitle": "תמחור מותאם, SLA, אינטגרציות, on‑prem/VPC",
+      "title": "למוסדות פיננסיים ולרגולטורים"
+    },
+    "faq": {
+      "subtitle": "צרו קשר עם צוות המכירות לדמו אישי",
+      "title": "יש שאלות?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "בלוקצ'יינים",
+      "cases": "תיקים",
+      "credits": "קרדיטים/חודש",
+      "priority": "עדיפות",
+      "users": "משתמשים"
+    },
+    "header": {
+      "badge": "תמחור גמיש",
+      "subtitle": "מכלי קהילה חינמיים ועד אנטרפרייז עם White‑Label. התחילו היום והתרחבו עם הצמיחה.",
+      "title": "התוכנית המתאימה לכל צוות"
+    },
+    "included": {
+      "analytics": {
+        "i1": "סוכני AI",
+        "i2": "אנליטיקה גרפית",
+        "i3": "ניקוד סיכון",
+        "i4": "מודלי ML",
+        "title": "אנליטיקה מתקדמת"
+      },
+      "badge": "מה כלול?",
+      "performance": {
+        "i1": "התראות בזמן אמת",
+        "i2": "גישה ל‑API",
+        "i3": "תור בעדיפות",
+        "i4": "99.9% זמינות",
+        "title": "ביצועים"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "יומני ביקורת",
+        "i4": "תואם GDPR",
+        "title": "אבטחה וציות"
+      },
+      "team": {
+        "i1": "רב‑משתתפים",
+        "i2": "ניהול תיקים",
+        "i3": "שרשרת ראיות",
+        "i4": "שיתוף פעולה",
+        "title": "יכולות צוות"
+      },
+      "title": "כל התכונות במבט אחד"
+    },
+    "more": "עוד",
+    "seo": {
+      "description": "תמחור שקוף: מקהילה ועד אנטרפרייז. תוכניות גמישות לצוותים, חברות ורגולטורים.",
+      "title": "תמחור | SIGMACODE פורנזיקה לבלוקצ'יין"
+    },
+    "smb": {
+      "subtitle": "תוכניות בשירות עצמי לסטארטאפים ועד מיד‑מרקט",
+      "title": "לצוותים וחברות"
+    },
+    "toggle": {
+      "annual": "שנתי",
+      "monthly": "חודשי",
+      "save": "חסכו {{pct}}%"
+    },
+    "top_features": "תכונות מובילות",
+    "hero": {
+      "badge": "Pricing",
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your needs. All plans include core features. Upgrade anytime."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "רענן"
+    },
+    "audit": {
+      "empty": "אין רשומות שרשרת ביקורת זמינות",
+      "loading": "טוען את שרשרת הביקורת...",
+      "title": "רשומות שרשרת ביקורת אחרונות",
+      "user": "משתמש",
+      "view_all": "הצג הכול →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "תקינות שרשרת הביקורת"
+      },
+      "failed_logins": {
+        "title": "ניסיונות התחברות כושלים"
+      },
+      "gdpr": {
+        "title": "ציות ל‑GDPR"
+      },
+      "security_incidents": {
+        "title": "אירועי אבטחה"
+      }
+    },
+    "common": {
+      "implemented": "ממומש",
+      "not_implemented": "לא ממומש",
+      "unknown": "לא ידוע"
+    },
+    "compliance": {
+      "anonymization": "אנונימיזציה",
+      "certifications": "תעודות",
+      "consent_management": "ניהול הסכמה",
+      "data_portability": "ניידות נתונים",
+      "empty": "אין נתוני ציות זמינים",
+      "encryption": "הצפנה",
+      "loading": "טוען מצב ציות...",
+      "right_to_erasure": "זכות להימחק",
+      "title": "מצב ציות ל‑GDPR"
+    },
+    "header": {
+      "last_refresh": "רענון אחרון",
+      "subtitle": "שרשראות ביקורת, ציות ל‑GDPR וניטור אבטחה",
+      "title": "לוח בקרה — אבטחה וציות"
+    },
+    "quick_actions": {
+      "audit_export": "ייצוא שרשרת ביקורת",
+      "compliance_report": "דוח ציות",
+      "gdpr_status": "מצב GDPR",
+      "incident_report": "דוח אירוע",
+      "integrity_check": "בדיקת תקינות",
+      "security_scan": "סריקת אבטחה",
+      "title": "פעולות אבטחה וציות"
+    },
+    "retention": {
+      "days": "ימים",
+      "empty": "אין נתוני שמירת מידע זמינים",
+      "title": "ציות לשמירת מידע",
+      "violations": {
+        "count": "הפרות",
+        "days_old": "ימים",
+        "more": "ו",
+        "more_suffix": "נוספים",
+        "title": "הפרות שמירת מידע"
+      }
+    },
+    "security": {
+      "compliance_status": "מצב ציות",
+      "empty": "אין נתוני אבטחה זמינים",
+      "failed_logins": "התחברויות כושלות",
+      "incidents": "אירועי אבטחה",
+      "rate_limited_ips": "כתובות IP מוגבלות קצב",
+      "suspicious_activities": "פעילויות חשודות",
+      "title": "סקירת אבטחה"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "התראות פתוחות לפי דליי גיל (למשל, 24ש', 3ימים, 7ימים, >7ימים)",
+    "alert_engine": "ניטור בזמן אמת לעסקאות ודפוסים חשודים עם אלגוריתמי ML",
+    "alert_overview": "סקירה של כל התראות האבטחה הפעילות וחומרתן (קריטי/גבוה/בינוני/נמוך)",
+    "analyst_throughput": "מספר התיקים שנסגרו לכל אנליסט בחלון הנבחר",
+    "backlog": "סך הכול התראות פתוחות (שלא אושרו) ותיקים פתוחים",
+    "database": "מצב חיבור PostgreSQL/TimescaleDB וזמן תגובה לנתוני סדרות‑זמן",
+    "graph_db": "מסד גרפי Neo4j לניתוח קשרים מורכבים ומיפוי רשת",
+    "system_status": "מציג מצב נוכחי של כל רכיבי המערכת. ירוק = תקין, אדום = נמצאו בעיות",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "סיורים זמינים",
+    "completed": "הסתיים",
+    "finish": "סיום",
+    "no_tours_available": "אין סיורים זמינים לדף זה",
+    "of": "מתוך",
+    "select_tour_description": "בחרו סיור כדי להכיר את יכולות הפלטפורמה",
+    "skip": "דילוג",
+    "start": "tours.start",
+    "start_tour": "התחל סיור",
+    "step": "שלב",
+    "steps": "שלבים"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "trace.result.details",
+      "direction": "trace.result.direction",
+      "error_title": "trace.result.error_title",
+      "exec_time": "trace.result.exec_time",
+      "export": "trace.result.export",
+      "flow_graph": "trace.result.flow_graph",
+      "high_risk": "trace.result.high_risk",
+      "high_risk_title": "trace.result.high_risk_title",
+      "loading": "trace.result.loading",
+      "max_hop": "trace.result.max_hop",
+      "not_found": "trace.result.not_found",
+      "report": "trace.result.report",
+      "sanctioned_title": "trace.result.sanctioned_title",
+      "sanctioned_warning": "trace.result.sanctioned_warning",
+      "source": "trace.result.source",
+      "taint": "trace.result.taint",
+      "taint_model": "trace.result.taint_model",
+      "title": "trace.result.title",
+      "total_edges": "trace.result.total_edges",
+      "total_nodes": "trace.result.total_nodes"
+    },
+    "simple": {
+      "address_ph": "trace.simple.address_ph",
+      "chain_btc": "trace.simple.chain_btc",
+      "chain_eth": "trace.simple.chain_eth",
+      "chain_sol": "trace.simple.chain_sol",
+      "cluster": {
+        "clustering": "trace.simple.cluster.clustering",
+        "export_members": "trace.simple.cluster.export_members",
+        "label": "trace.simple.cluster.label",
+        "lookup": "trace.simple.cluster.lookup",
+        "member_address": "trace.simple.cluster.member_address",
+        "members": "trace.simple.cluster.members",
+        "title": "trace.simple.cluster.title"
+      },
+      "depth_ph": "trace.simple.depth_ph",
+      "edges": "trace.simple.edges",
+      "error_cluster": "trace.simple.error_cluster",
+      "error_trace": "trace.simple.error_trace",
+      "export_paths": "trace.simple.export_paths",
+      "export_targets": "trace.simple.export_targets",
+      "high_risk": "trace.simple.high_risk",
+      "model_fifo": "trace.simple.model_fifo",
+      "model_haircut": "trace.simple.model_haircut",
+      "model_proportional": "trace.simple.model_proportional",
+      "nodes": "trace.simple.nodes",
+      "run": "trace.simple.run",
+      "summary": "trace.simple.summary",
+      "th_path": "trace.simple.th_path",
+      "th_paths": "trace.simple.th_paths",
+      "th_taint": "trace.simple.th_taint",
+      "th_target": "trace.simple.th_target",
+      "threshold_ph": "trace.simple.threshold_ph",
+      "title": "trace.simple.title",
+      "tracing": "trace.simple.tracing"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "wallet.test.analytics.desc",
+        "title": "wallet.test.analytics.title",
+        "wip": "wallet.test.analytics.wip"
+      },
+      "export": {
+        "csv": "wallet.test.export.csv",
+        "desc": "wallet.test.export.desc",
+        "json": "wallet.test.export.json",
+        "pdf": "wallet.test.export.pdf",
+        "section_export": "wallet.test.export.section_export",
+        "section_import": "wallet.test.export.section_import",
+        "title": "wallet.test.export.title"
+      },
+      "header": {
+        "title": "wallet.test.header.title"
+      },
+      "import": {
+        "add_wallet": "wallet.test.import.add_wallet",
+        "json": "wallet.test.import.json",
+        "restore_backup": "wallet.test.import.restore_backup"
+      },
+      "multisig": {
+        "desc": "wallet.test.multisig.desc",
+        "title": "wallet.test.multisig.title",
+        "wip": "wallet.test.multisig.wip"
+      },
+      "overview": {
+        "active_wallets": "wallet.test.overview.active_wallets",
+        "activity": {
+          "liquidity": "wallet.test.overview.activity.liquidity",
+          "nft": "wallet.test.overview.activity.nft",
+          "receive": "wallet.test.overview.activity.receive"
+        },
+        "month_change": "wallet.test.overview.month_change",
+        "multisig": "wallet.test.overview.multisig",
+        "new_this_week": "wallet.test.overview.new_this_week",
+        "recent": "wallet.test.overview.recent",
+        "security_grade": "wallet.test.overview.security_grade",
+        "security_score": "wallet.test.overview.security_score",
+        "status": {
+          "2fa": "wallet.test.overview.status.2fa",
+          "active": "wallet.test.overview.status.active",
+          "backup": "wallet.test.overview.status.backup",
+          "backup_available": "wallet.test.overview.status.backup_available",
+          "hardware": "wallet.test.overview.status.hardware",
+          "hw_connected": "wallet.test.overview.status.hw_connected",
+          "recovery": "wallet.test.overview.status.recovery",
+          "secured": "wallet.test.overview.status.secured",
+          "title": "wallet.test.overview.status.title"
+        },
+        "total_volume": "wallet.test.overview.total_volume"
+      },
+      "sidebar": {
+        "title": "wallet.test.sidebar.title"
+      },
+      "tabs": {
+        "analytics": "wallet.test.tabs.analytics",
+        "crosschain": "wallet.test.tabs.crosschain",
+        "export": "wallet.test.tabs.export",
+        "multisig": "wallet.test.tabs.multisig",
+        "nft": "wallet.test.tabs.nft",
+        "overview": "wallet.test.tabs.overview",
+        "transactions": "wallet.test.tabs.transactions"
+      },
+      "transactions": {
+        "desc": "wallet.test.transactions.desc",
+        "export": "wallet.test.transactions.export",
+        "title": "wallet.test.transactions.title",
+        "wip": "wallet.test.transactions.wip"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "Web Analytics"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "מעקב"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "כתובת"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "סקירה"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "הפעל",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "מקוון",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

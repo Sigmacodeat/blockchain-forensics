@@ -1,0 +1,24 @@
+{
+  "hash": "0000000000000000000babcdef1234567890",
+  "height": 700001,
+  "time": 1631231000,
+  "tx": [
+    {
+      "txid": "tx_coinjoin_1",
+      "version": 2,
+      "locktime": 0,
+      "size": 350,
+      "vin": [
+        { "txid": "cj_prev_tx_1", "vout": 0 },
+        { "txid": "cj_prev_tx_2", "vout": 0 },
+        { "txid": "cj_prev_tx_3", "vout": 0 }
+      ],
+      "vout": [
+        { "n": 0, "value": 0.1, "scriptPubKey": { "addresses": ["1CJOutA"], "type": "pubkeyhash" } },
+        { "n": 1, "value": 0.1, "scriptPubKey": { "addresses": ["1CJOutB"], "type": "pubkeyhash" } },
+        { "n": 2, "value": 0.1, "scriptPubKey": { "addresses": ["1CJOutC"], "type": "pubkeyhash" } },
+        { "n": 3, "value": 0.05, "scriptPubKey": { "addresses": ["1CJChange"], "type": "pubkeyhash" } }
+      ]
+    }
+  ]
+}

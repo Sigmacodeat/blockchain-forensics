@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "test": "vitest",
+    "i18n:report": "node scripts/i18n-report.mjs en --fail-on-missing",
+    "i18n:verify": "python3 scripts/verify-i18n.py",
+    "i18n:quality": "node scripts/i18n-quality.mjs --base en --used-only --fail-on-issues"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "express": "^5.1.0",
+    "react-joyride": "^2.9.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.8.0",
+    "glob": "^11.0.3",
+    "jest-environment-jsdom": "^30.2.0",
+    "vitest": "^4.0.1"
+  }
+}

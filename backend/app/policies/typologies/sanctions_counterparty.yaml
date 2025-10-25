@@ -1,0 +1,8 @@
+rules:
+  - id: TYP-002
+    name: Sanctions Counterparty Contact
+    version: "1"
+    severity: critical
+    enabled: true
+    tags: [sanctions, counterparty, risk]
+    condition: "('sanctions' in labels) or (('counterparty_risk' in metadata) and (metadata['counterparty_risk'] >= 0.8))"

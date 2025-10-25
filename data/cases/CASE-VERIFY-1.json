@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "CASE-VERIFY-1",
+    "title": "Verify Test",
+    "description": "desc",
+    "lead_investigator": "bob",
+    "status": "active",
+    "created_at": "2025-10-23T11:29:10.981603"
+  },
+  "entities": [],
+  "evidence": [],
+  "format": "json",
+  "prev_checksum_sha256": "5657f1b11f39d5b27cd4858fcbb51e5973f121439d1bcc4a91aa895bf4f36b24",
+  "checksum_sha256": "c7d060caa77ea2ce6ed763d20c24826dbbe0172adeabac0e90702d2337ddc4d2",
+  "signature_hmac_sha256": "753f0fa6a55932458aad6e2551e8a2ce682768b1d8f6107a3fbbd8a8dd68f20f"
+}

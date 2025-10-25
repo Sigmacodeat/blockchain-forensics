@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow private/auth pages
+Disallow: /*/login
+Disallow: /*/register
+Disallow: /*/dashboard
+Disallow: /*/settings
+Disallow: /*/admin
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://sigmacode.io/sitemap.xml
+Sitemap: https://sigmacode.io/sitemap-index.xml

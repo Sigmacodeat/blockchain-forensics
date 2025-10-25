@@ -1,0 +1,186 @@
+{
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    },
+    "toolbar": {
+      "batch": "Batch",
+      "monitor": "Monitor",
+      "hide_monitor": "Hide monitor"
+    },
+    "monitor": {
+      "live": "Live",
+      "history": "History",
+      "last_7_days": "Last 7 days for",
+      "no_history": "No history found",
+      "export_csv": "CSV",
+      "loading": "Loading..."
+    },
+    "history_charts": {
+      "title": "History",
+      "risk_trends": "Risk Trends",
+      "exposure_over_time": "Exposure Over Time",
+      "range_7d": "7d",
+      "range_30d": "30d",
+      "range_90d": "90d"
+    },
+    "batch": {
+      "title": "Batch Universal Screening",
+      "subtitle": "Screen up to 50 addresses across all supported chains",
+      "close": "Close",
+      "placeholder": "One address per line (any chain):\n0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb\nbc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh\n...",
+      "hint": "Maximum 50 addresses. One per line.",
+      "csv_hint": "Upload CSV/TXT (addresses separated by newline/comma/semicolon)",
+      "run": "Run batch",
+      "running": "Screening...",
+      "clear": "Clear",
+      "summary": "{{success}} / {{total}} successfully screened"
+    }
+  },
+  "title": "Universal Wallet Screening",
+  "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+  "cross_chain_title": "Cross-Chain Screening",
+  "description": "Enter a wallet address to screen across all supported chains",
+  "search_placeholder": "0x... or bc1... or any wallet address",
+  "button_screen": "Screen",
+  "button_screening": "Screening...",
+  "error_empty": "Please enter a wallet address",
+  "error_failed": "Failed to screen address",
+  
+  "summary": {
+    "risk_level": "Risk Level",
+    "chains_screened": "Chains Screened",
+    "found_on": "Found on {{count}} chains",
+    "total_activity": "Total Activity",
+    "transactions": "transactions",
+    "counterparties": "counterparties",
+    "performance": "Performance",
+    "processing_time": "{{ms}}ms",
+    "cross_chain": "Cross-chain",
+    "single_chain": "Single chain"
+  },
+  
+  "alert": {
+    "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+  },
+  
+  "chain_results": {
+    "title": "Chain-Specific Results",
+    "description": "Detailed breakdown for each blockchain",
+    "transactions": "Transactions",
+    "value_usd": "Value (USD)",
+    "counterparties": "Counterparties",
+    "sanctioned_badge": "SANCTIONED",
+    "more_labels": "+{{count}} more"
+  },
+  
+  "attribution": {
+    "title": "View Attribution Evidence",
+    "count": "{{count}} evidence items",
+    "confidence": "{{percent}}% confidence",
+    "evidence_type": "Evidence Type",
+    "source": "Source",
+    "verification": "Verification"
+  },
+  
+  "labels": {
+    "title": "All Labels Across Chains",
+    "none": "No labels found"
+  },
+  
+  "export": {
+    "pdf": "Export PDF",
+    "csv": "Export CSV",
+    "json": "Export JSON"
+  },
+  "jurisdiction": {
+    "title": "Jurisdiction",
+    "options": {
+      "all": "All",
+      "ofac": "OFAC (US)",
+      "eu": "EU",
+      "uk": "UK",
+      "un": "UN"
+    }
+  },
+  "exposure": {
+    "title": "Exposure",
+    "direct": "Direct",
+    "indirect": "Indirect"
+  },
+  "defi": {
+    "title": "DeFi Insights"
+  },
+  "batch": {
+    "title": "Batch Universal Screening",
+    "subtitle": "Screen up to 50 addresses across all supported chains",
+    "close": "Close",
+    "placeholder": "Enter one address per line (any chain):\n0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb\nbc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh\n...",
+    "hint": "Max 50 addresses. One per line.",
+    "csv_hint": "Upload CSV/TXT (addresses separated by newline/comma/semicolon)",
+    "run": "Run Batch",
+    "running": "Screening...",
+    "clear": "Clear",
+    "summary": "{{success}} / {{total}} screened successfully"
+  }
+}

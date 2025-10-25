@@ -1,0 +1,35 @@
+{
+  "hash": "0000000000000000000cabcdef1234567890",
+  "height": 700002,
+  "time": 1631232000,
+  "tx": [
+    {
+      "txid": "tx_multi_input_1",
+      "version": 2,
+      "locktime": 0,
+      "size": 300,
+      "vin": [
+        { "txid": "mi_prev_tx_1", "vout": 0 },
+        { "txid": "mi_prev_tx_2", "vout": 0 }
+      ],
+      "vout": [
+        {
+          "n": 0,
+          "value": 0.8,
+          "scriptPubKey": {
+            "addresses": ["1Destination"],
+            "type": "pubkeyhash"
+          }
+        },
+        {
+          "n": 1,
+          "value": 0.1999,
+          "scriptPubKey": {
+            "addresses": ["1CommonOwner"],
+            "type": "pubkeyhash"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "case": {
+    "case_id": "AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323",
+    "title": "Auto Investigate 0xAbCDEF0000000000000000000000000000000123",
+    "description": "Chain=ethereum Depth=2 Settings={'report': False}",
+    "lead_investigator": "auto",
+    "status": "active",
+    "created_at": "2025-10-23T16:35:23.994812"
+  },
+  "entities": [],
+  "evidence": [
+    {
+      "case_id": "AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323",
+      "resource_id": "data/cases/AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323/attachments/ead58dfb6367b701d84bbfbf81131a070f33604bbe4e7207f5bc3b3201e08848_report_AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323.json",
+      "resource_type": "attachment",
+      "record_hash": "ead58dfb6367b701d84bbfbf81131a070f33604bbe4e7207f5bc3b3201e08848",
+      "notes": "Initial auto-investigation snapshot (JSON)",
+      "timestamp": "2025-10-23T16:35:23.997891"
+    },
+    {
+      "case_id": "AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323",
+      "resource_id": "data/cases/AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323/attachments/59b66cc72c08ba4aac60f4bd03c7d205f5aadf51779f7f3e35ad99f15d65942c_entities_AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323.csv",
+      "resource_type": "attachment",
+      "record_hash": "59b66cc72c08ba4aac60f4bd03c7d205f5aadf51779f7f3e35ad99f15d65942c",
+      "notes": "Entities CSV snapshot",
+      "timestamp": "2025-10-23T16:35:23.999605"
+    },
+    {
+      "case_id": "AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323",
+      "resource_id": "data/cases/AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323/attachments/c0c464799215738ee9966ea2721405e649ea46cb6f4e9dd4f383e62a29d870bd_evidence_AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323.csv",
+      "resource_type": "attachment",
+      "record_hash": "c0c464799215738ee9966ea2721405e649ea46cb6f4e9dd4f383e62a29d870bd",
+      "notes": "Evidence CSV snapshot",
+      "timestamp": "2025-10-23T16:35:24.001051"
+    },
+    {
+      "case_id": "AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323",
+      "resource_id": "data/cases/AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323/attachments/c8e669d2955f6120e9dfe8007ff3ea60364f3dcf09f9a4de22ebd229d4cc97de_risk_0xAbCDEF_1761237324.json",
+      "resource_type": "attachment",
+      "record_hash": "c8e669d2955f6120e9dfe8007ff3ea60364f3dcf09f9a4de22ebd229d4cc97de",
+      "notes": "Risk assessment for 0xAbCDEF0000000000000000000000000000000123 (score=0.1, level=low)",
+      "timestamp": "2025-10-23T16:35:24.002698"
+    },
+    {
+      "case_id": "AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323",
+      "resource_id": "data/cases/AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761237323/attachments/eecbd9263ee017c4ada055582dfd903cb4afcc38cacc0d13382111b2f9d958f3_bridge_0xAbCDEF_1761237324.json",
+      "resource_type": "attachment",
+      "record_hash": "eecbd9263ee017c4ada055582dfd903cb4afcc38cacc0d13382111b2f9d958f3",
+      "notes": "Bridge registry check for 0xAbCDEF0000000000000000000000000000000123 on ethereum",
+      "timestamp": "2025-10-23T16:35:24.004571"
+    }
+  ],
+  "format": "json",
+  "prev_checksum_sha256": "ad3c49fe0b815e40761d6064dfdfd53a67f43e1abb02a48e68c6597421bd7aa9",
+  "checksum_sha256": "f470be8d15573207ab02071c05ea9ad2da9064f65822cbf7bc014b43668ef185"
+}

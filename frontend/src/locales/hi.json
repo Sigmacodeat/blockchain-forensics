@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "डेमो बुक करें",
+      "pricing": "मूल्य देखें",
+      "subtitle": "अभी मुफ्त डेमो शुरू करें या हमारी टीम से संपर्क करें",
+      "title": "अभी शुरू करें"
+    },
+    "header": {
+      "badge": "हमारे बारे में",
+      "subtitle": "हम कानून प्रवर्तन, VASP, और वित्तीय संस्थानों को क्रिप्टोकरेंसी अपराध से लड़ने के लिए अग्रणी उद्यम मंच विकसित कर रहे हैं।",
+      "title": "ब्लॉकचेन फोरेंसिक का भविष्य"
+    },
+    "mission": {
+      "desc": "हम ब्लॉकचेन लेनदेन को पारदर्शी और ट्रैसेबल बनाते हैं। हमारा मिशन क्रिप्टोकरेंसी अपराध से लड़ना और वैध बाजार सहभागियों को अनुपालन आवश्यकताओं को पूरा करने और जोखिमों को कम करने के लिए उपकरण प्रदान करना है।",
+      "title": "हमारा मिशन"
+    },
+    "seo": {
+      "description": "अनुपालन, जांच और वैश्विक खुफिया जानकारी के लिए अग्रणी उद्यम ब्लॉकचेन फोरेंसिक मंच का निर्माण।",
+      "title": "हमारे बारे में | SIGMACODE ब्लॉकचेन फोरेंसिक"
+    },
+    "stats": {
+      "badge": "संख्याओं में",
+      "blockchains": "ब्लॉकचेन",
+      "enterprise_customers": "उद्यम ग्राहक",
+      "recovered_assets": "पुनर्प्राप्त संपत्तियां",
+      "sla_guaranteed": "SLA गारंटी",
+      "supported": "समर्थित",
+      "supported_by_tech": "हमारी तकनीक द्वारा समर्थित",
+      "title": "हमारा प्रभाव",
+      "uptime": "अपटाइम",
+      "worldwide": "विश्वव्यापी"
+    },
+    "team": {
+      "badge": "विशेषज्ञता",
+      "compliance": {
+        "desc": "AML/CFT और अंतरराष्ट्रीय प्रतिबंधों के नियामक विशेषज्ञ",
+        "h1": "पूर्व नियामक",
+        "h2": "AML विशेषज्ञ",
+        "h3": "कानूनी सलाहकार",
+        "title": "अनुपालन और कानूनी"
+      },
+      "forensics": {
+        "desc": "क्रिप्टोकरेंसी अपराध जांच में व्यापक अनुभव वाले पूर्व कानून प्रवर्तन सदस्य",
+        "h1": "FBI/BKA पूर्व कर्मचारी",
+        "h2": "डार्कनेट टेकडाउन",
+        "h3": "संपत्ति पुनर्प्राप्ति",
+        "title": "फोरेंसिक विशेषज्ञ"
+      },
+      "subtitle": "ब्लॉकचेन फोरेंसिक, कानून प्रवर्तन, फिनटेक, और मशीन लर्निंग विशेषज्ञ",
+      "tech": {
+        "desc": "शीर्ष तकनीकी कंपनियों से ब्लॉकचेन विशेषज्ञ इंजीनियर",
+        "h1": "पूर्व FAANG",
+        "h2": "ब्लॉकचेन कोर डेवलपर",
+        "h3": "सुरक्षा विशेषज्ञ",
+        "title": "तकनीकी विशेषज्ञ"
+      },
+      "title": "हमारी टीम"
+    },
+    "trust": {
+      "badge": "विश्वास",
+      "ce": {
+        "desc": "AML और लेनदेन निगरानी के लिए शीर्ष 10 एक्सचेंज",
+        "title": "क्रिप्टोकरेंसी एक्सचेंज"
+      },
+      "fi": {
+        "desc": "क्रिप्टो संपत्तियों के संपर्क में आने वाले शीर्ष स्तरीय बैंक",
+        "title": "बैंक और फिनटेक"
+      },
+      "le": {
+        "desc": "FBI, यूरोपोल, राष्ट्रीय कानून प्रवर्तन एजेंसियां",
+        "title": "कानून प्रवर्तन"
+      },
+      "reg": {
+        "desc": "बाजार निगरानी के लिए वित्तीय नियामक",
+        "title": "नियामक"
+      },
+      "subtitle": "विश्व की अग्रणी संगठन हमारी तकनीक पर भरोसा करते हैं",
+      "title": "कौन हम पर भरोसा करता है"
+    },
+    "values": {
+      "badge": "हमारे मूल्य",
+      "compliance": {
+        "desc": "GDPR, eIDAS, OFAC के अनुरूप। हम नियामक आवश्यकताओं को समझते और एकीकृत करते हैं।",
+        "title": "अनुपालन प्राथमिकता"
+      },
+      "customer": {
+        "desc": "कानून प्रवर्तन और उद्योग के साथ निकट सहयोग। आपकी आवश्यकताएं हमारे रोडमैप को आकार देती हैं।",
+        "title": "ग्राहक केंद्रित"
+      },
+      "global": {
+        "desc": "100 से अधिक ब्लॉकचेन, बहुभाषी समर्थन, और अंतरराष्ट्रीय प्रतिबंध सूचियों को कवर करता है।",
+        "title": "वैश्विक पहुंच"
+      },
+      "innovation": {
+        "desc": "अत्याधुनिक तकनीक: AI/ML, ग्राफ विश्लेषण, और रीयल-टाइम प्रसंस्करण से सर्वोत्तम परिणाम।",
+        "title": "नवाचार"
+      },
+      "team": {
+        "desc": "फोरेंसिक विशेषज्ञों, डेवलपर्स, और अनुपालन विशेषज्ञों की अंतर्विषयी टीम।",
+        "title": "टीमवर्क"
+      },
+      "title": "हमारी प्रेरणा",
+      "trust": {
+        "desc": "SOC2/ISO27001 प्रमाणन के साथ उद्यम-स्तरीय सुरक्षा। आपका डेटा सुरक्षित है।",
+        "title": "विश्वास और सुरक्षा"
+      }
+    },
+    "vision": {
+      "desc": "एक ऐसा विश्व जहां ब्लॉकचेन तकनीक अपनी पूरी क्षमता तक पहुंच सके—पारदर्शी, सुरक्षित, और अनुपालक। हम डिजिटल संपत्तियों को अपराध को बढ़ावा दिए बिना मुख्यधारा में लाने के लिए बुनियादी ढांचा बना रहे हैं।",
+      "title": "हमारा दृष्टिकोण"
+    }
+  },
+  "accessibility": {
+    "activate": "सक्रिय करें",
+    "close_dialog": "संवाद बंद करें",
+    "font_size": "फ़ॉन्ट आकार",
+    "font_size_large": "बड़ा फ़ॉन्ट आकार",
+    "font_size_normal": "सामान्य फ़ॉन्ट आकार",
+    "font_size_xlarge": "अतिरिक्त बड़ा फ़ॉन्ट आकार",
+    "high_contrast_detected": "उच्च कंट्रास्ट का पता चला",
+    "keyboard_shortcuts": "कीबोर्ड शॉर्टकट",
+    "navigate_backward": "पीछे नेविगेट करें",
+    "navigate_forward": "आगे नेविगेट करें",
+    "no_system_preferences": "कोई विशेष सिस्टम प्राथमिकताएं नहीं मिलीं",
+    "reduced_motion_detected": "कम गति का पता चला",
+    "settings": "पहुंच सेटिंग्स",
+    "skip_to_content": "सामग्री पर जाएं",
+    "system_preferences": "सिस्टम प्राथमिकताएं"
+  },
+  "address_analysis": {
+    "title": "पता विश्लेषण",
+    "wip_desc": "विवरण पर काम चल रहा है",
+    "wip_title": "पता निर्माणाधीन"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AI एजेंट",
+      "app_name": "ऐप का नाम",
+      "cross_chain": "क्रॉस-चेन",
+      "max_trace_depth": "अधिकतम ट्रेस गहराई",
+      "ml_clustering": "ML क्लस्टरिंग",
+      "title": "कॉन्फ़िगरेशन",
+      "version": "संस्करण"
+    },
+    "disabled": "✗ अक्षम",
+    "enabled": "✓ सक्षम",
+    "error": "त्रुटि",
+    "health": {
+      "connected": "✓ जुड़ा हुआ",
+      "disconnected": "✗ डिस्कनेक्ट",
+      "error": "स्वास्थ्य स्थिति लोड करने में विफल",
+      "title": "डेटाबेस स्वास्थ्य"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Ethereum RPC से लेनदेन प्राप्त करें",
+        "ingesting": "प्रवेश कर रहा है...",
+        "placeholder": "0x...",
+        "start": "प्रवेश शुरू करें",
+        "success": "✓ पृष्ठभूमि में प्रवेश शुरू हुआ",
+        "title": "पता डेटा प्रवेश"
+      },
+      "block": {
+        "help": "ब्लॉक से सभी लेनदेन आयात करें",
+        "ingesting": "प्रवेश कर रहा है...",
+        "placeholder": "ब्लॉक नंबर",
+        "start": "ब्लॉक आयात शुरू करें",
+        "success": "✓ ब्लॉक प्रवेश शुरू हुआ",
+        "title": "ब्लॉक डेटा प्रवेश"
+      }
+    },
+    "stats": {
+      "db_size": "डेटाबेस आकार",
+      "title": "सिस्टम आंकड़े",
+      "total_addresses": "कुल पते",
+      "total_traces": "कुल ट्रेस",
+      "total_transactions": "कुल लेनदेन"
+    },
+    "subtitle": "निगरानी, कॉन्फ़िगरेशन, और डेटा प्रबंधन",
+    "tabs": {
+      "config": "कॉन्फ़िगरेशन",
+      "ingestion": "डेटा प्रवेश",
+      "overview": "अवलोकन",
+      "users": "उपयोगकर्ता प्रबंधन"
+    },
+    "title": "सिस्टम प्रशासन"
+  },
+  "agent": {
+    "cancel": "रद्द करें",
+    "error": "त्रुटि",
+    "error_unknown": "अज्ञात त्रुटि",
+    "examples": {
+      "1": "उदाहरण 1",
+      "2": "उदाहरण 2",
+      "3": "उदाहरण 3",
+      "title": "उदाहरण"
+    },
+    "instructions": "निर्देश",
+    "loading": "लोड हो रहा है...",
+    "placeholder": "इनपुट प्लेसहोल्डर",
+    "retry": "पुनः प्रयास करें",
+    "send": "भेजें",
+    "subtitle": "एजेंट उपशीर्षक",
+    "title": "एजेंट शीर्षक",
+    "welcome": "स्वागत है"
+  },
+  "auth": {
+    "fields": {
+      "email": "ईमेल",
+      "organization_opt": "संगठन (वैकल्पिक)",
+      "password": "पासवर्ड",
+      "password_confirm": "पासवर्ड की पुष्टि करें",
+      "username": "उपयोगकर्ता नाम"
+    },
+    "forgot": {
+      "back_to_login": "लॉगिन पर वापस जाएं",
+      "dev_note": "ईमेल सेवा कॉन्फ़िगर नहीं होने के कारण, रीसेट लिंक के लिए सर्वर लॉग की जांच करें।",
+      "dev_note_label": "नोट (डेवलपर मोड):",
+      "error": "भेजने में त्रुटि",
+      "info_sent": "यदि इस ईमेल के लिए खाता मौजूद है, तो रीसेट लिंक भेजा गया है।",
+      "sent": "रीसेट लिंक भेजा गया!",
+      "submit": "रीसेट लिंक भेजें",
+      "submitting": "भेज रहा है...",
+      "subtitle": "चिंता न करें! अपना ईमेल दर्ज करें, हम रीसेट लिंक भेजेंगे।",
+      "title": "पासवर्ड भूल गए?",
+      "title_sent": "ईमेल भेजा गया!"
+    },
+    "login": {
+      "failed": "लॉगिन विफल",
+      "fill_all_fields": "कृपया सभी फ़ील्ड भरें",
+      "forgot_password": "पासवर्ड भूल गए?",
+      "google": "Google के साथ साइन इन करें",
+      "google_retry": "Google के साथ साइन इन पुनः प्रयास करें",
+      "no_account": "खाता नहीं है?",
+      "oauth_failed": "OAuth लॉगिन विफल, कृपया पुनः प्रयास करें।",
+      "oauth_processing": "OAuth लॉगिन प्रोसेसिंग...",
+      "or": "या",
+      "register_now": "अभी रजिस्टर करें",
+      "remember_me": "मुझे याद रखें",
+      "submit": "साइन इन",
+      "submitting": "लॉगिन कर रहा है...",
+      "subtitle": "जारी रखने के लिए साइन इन करें"
+    },
+    "placeholders": {
+      "email": "analyst@example.com",
+      "organization": "FBI, Chainalysis आदि",
+      "password": "••••••••",
+      "username": "john_analyst"
+    },
+    "register": {
+      "accept": "मैं सहमत हूँ",
+      "already": "पहले से ही रजिस्टर हैं?",
+      "and": "और",
+      "failed": "रजिस्ट्रेशन विफल",
+      "fill_all_fields": "कृपया सभी आवश्यक फ़ील्ड भरें",
+      "google": "Google के साथ रजिस्टर करें",
+      "login_now": "अभी साइन इन करें",
+      "password_hint": "न्यूनतम 8 अक्षर",
+      "password_too_short": "पासवर्ड कम से कम 8 अक्षर का होना चाहिए",
+      "passwords_no_match": "पासवर्ड मेल नहीं खाते",
+      "submit": "रजिस्टर",
+      "submitting": "रजिस्टर कर रहा है...",
+      "subtitle": "अपनी फोरेंसिक विश्लेषण शुरू करें",
+      "title": "खाता बनाएं"
+    }
+  },
+  "common": {
+    "access_denied": "पहुंच अस्वीकृत (केवल व्यवस्थापक)",
+    "account": "खाता",
+    "back": "वापस",
+    "close": "बंद करें",
+    "info": "जानकारी",
+    "language": "भाषा",
+    "loading": "लोड हो रहा है...",
+    "next": "अगला",
+    "page": "पृष्ठ",
+    "prev": "पिछला",
+    "refresh": "ताज़ा करें",
+    "search": "खोजें",
+    "success": "सफलता",
+    "theme": "थीम",
+    "view": "देखें",
+    "wip": {
+      "title": "जल्द आ रहा है",
+      "desc": "यह फीचर अभी विकासाधीन है।",
+      "cta": "और जानें"
+    },
+    "start_free": "मुफ्त शुरू करें",
+    "error": "त्रुटि",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "create": "बनाएं",
+    "finish": "समाप्त करें",
+    "open": "खोलें",
+    "yes": "हां",
+    "no": "नहीं",
+    "confirm": "पुष्टि करें",
+    "welcome": "स्वागत है",
+    "dashboard": "डैशबोर्ड",
+    "settings": "सेटिंग्स",
+    "profile": "प्रोफ़ाइल",
+    "logout": "लॉग आउट",
+    "login": "लॉग इन",
+    "register": "रजिस्टर करें",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "username": "उपयोगकर्ता नाम",
+    "documents": "दस्तावेज़",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "न्यूनतम गंभीरता",
+      "refresh": "ताज़ा करें",
+      "title": "नियंत्रण",
+      "window": "विंडो",
+      "window_15m": "15 मिनट",
+      "window_1h": "1 घंटा",
+      "window_24h": "24 घंटे",
+      "window_2h": "2 घंटे",
+      "window_30m": "30 मिनट",
+      "window_5m": "5 मिनट"
+    },
+    "header": {
+      "subtitle": "सहसंबंध उपशीर्षक",
+      "title": "सहसंबंध शीर्षक"
+    },
+    "overview": {
+      "active_rules": "सक्रिय नियम",
+      "analyzed": "विश्लेषित",
+      "empty": "खाली",
+      "found": "मिला",
+      "loading": "लोड हो रहा है...",
+      "min_sev": "न्यूनतम गंभीरता",
+      "rate": "दर",
+      "title": "सहसंबंध अवलोकन",
+      "window": "विंडो"
+    },
+    "rules": {
+      "empty": "कोई नियम नहीं",
+      "footer": "नियम पादलेख",
+      "loading": "नियम लोड हो रहे हैं...",
+      "min": "न्यूनतम",
+      "minutes": "मिनट",
+      "required_patterns": "आवश्यक पैटर्न",
+      "title": "सहसंबंध नियम",
+      "window": "नियम विंडो"
+    },
+    "sev": {
+      "critical": "गंभीर",
+      "high": "उच्च",
+      "low": "निम्न",
+      "medium": "मध्यम"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "कारण के आधार पर",
+        "by_type": "प्रकार के आधार पर",
+        "title": "दमन विवरण"
+      },
+      "rate": "दमन दर",
+      "title": "दमन",
+      "top_entity": "शीर्ष इकाई",
+      "total": "कुल"
+    },
+    "test": {
+      "add_alert": "चेतावनी जोड़ें",
+      "alerts_label": "चेतावनी लेबल",
+      "match": "मिलान",
+      "no_alerts": "कोई चेतावनी नहीं",
+      "no_match": "कोई मिलान नहीं",
+      "pick_rule": "नियम चुनें",
+      "pick_rule_ph": "नियम चयन",
+      "result": "परिणाम",
+      "run": "चलाएं",
+      "testing": "परीक्षण चल रहा है",
+      "title": "सहसंबंध परीक्षण"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "से कॉपी करें",
+      "copy_mint": "मिंट कॉपी करें",
+      "export_csv": "CSV निर्यात करें",
+      "export_csv_page": "CSV पेज निर्यात करें",
+      "fetch": "प्राप्त करें"
+    },
+    "bitcoin": {
+      "block_title": "ब्लॉक पता",
+      "compute": "गणना करें",
+      "decoded": "डिकोड किया गया",
+      "edges_title": "एज पता",
+      "height_ph": "ब्लॉक ऊंचाई",
+      "ingest_edges": "एज प्रवेश",
+      "method_heuristic": "ह्यूरिस्टिक विधि",
+      "method_proportional": "आनुपातिक विधि",
+      "normalized": "सामान्यीकृत",
+      "tx_title": "लेनदेन पता",
+      "txid_ph": "लेनदेन ID"
+    },
+    "compliance": {
+      "add_watch": "वॉचलिस्ट में जोड़ें",
+      "address_ph": "पता",
+      "chain_ph": "चेन",
+      "entries": "प्रविष्टियां",
+      "error": "त्रुटि",
+      "filter_address_ph": "पता फ़िल्टर",
+      "filter_chain_ph": "चेन फ़िल्टर",
+      "list_watch": "वॉचलिस्ट",
+      "screen": "स्क्रीन",
+      "title": "अनुपालन",
+      "watchlist": "वॉचलिस्ट"
+    },
+    "ethereum": {
+      "canonical": "कैनोनिकल",
+      "copy_hash": "हैश कॉपी करें",
+      "decoded": "डिकोड किया गया",
+      "error": "त्रुटि",
+      "open_etherscan": "Etherscan खोलें",
+      "tx_hash_ph": "लेनदेन हैश",
+      "tx_title": "लेनदेन पता"
+    },
+    "ingest": {
+      "canonical_notice": "कैनोनिकल नोटिस",
+      "edges_notice": "एज नोटिस",
+      "loading": "लोड हो रहा है..."
+    },
+    "labels": {
+      "add": "जोड़ें",
+      "address_ph": "पता",
+      "category_ph": "श्रेणी",
+      "chain_ph": "चेन",
+      "error": "त्रुटि",
+      "label_ph": "लेबल",
+      "lookup": "खोज",
+      "title": "लेबल"
+    },
+    "monitoring": {
+      "fetch": "प्राप्त करें",
+      "key_counters": "मुख्य काउंटर",
+      "title": "निगरानी"
+    },
+    "rpc_unavailable": "RPC अनुपलब्ध",
+    "solana": {
+      "canonical_error": "कैनोनिकल त्रुटि",
+      "canonical_title": "कैनोनिकल पता",
+      "error": "त्रुटि",
+      "ingest_canonical": "कैनोनिकल प्रवेश",
+      "signature_ph": "हस्ताक्षर",
+      "title": "Solana पता",
+      "transfers": "हस्तांतरण"
+    },
+    "table": {
+      "actions": "क्रियाएं",
+      "address": "पता",
+      "amount_ui": "राशि",
+      "chain": "चेन",
+      "created": "निर्मित",
+      "decimals": "दशमलव",
+      "fee": "शुल्क",
+      "from": "से",
+      "from_vout": "Vout से",
+      "method": "विधि",
+      "mint": "मिंट",
+      "reason": "कारण",
+      "to": "के लिए",
+      "to_vout": "Vout के लिए",
+      "value_btc": "BTC मूल्य"
+    },
+    "totals": {
+      "page_sum": "पेज योग",
+      "page_sum_btc": "पेज योग BTC",
+      "total_amount": "कुल राशि",
+      "total_value_btc": "कुल BTC मूल्य"
+    }
+  },
+  "dashboard": {
+    "actions": "क्रियाएं",
+    "active": "सक्रिय",
+    "administration": "प्रशासन",
+    "alert_aging": "चेतावनी उम्र",
+    "alert_engine": "चेतावनी इंजन",
+    "alert_monitoring": "चेतावनी निगरानी",
+    "alert_overview": "चेतावनी अवलोकन",
+    "analyst_throughput": "विश्लेषक थ्रूपुट",
+    "audit_kpis": "ऑडिट KPI",
+    "backlog": "बैकलॉग",
+    "bucket_placeholder": "24 घंटे, 3 दिन, 7 दिन, 7+ दिन",
+    "buckets": "बकेट",
+    "case_management": "केस प्रबंधन",
+    "connected": "जुड़ा हुआ",
+    "correlation_analysis": "सहसंबंध विश्लेषण",
+    "database": "डेटाबेस",
+    "database_response": "डेटाबेस प्रतिक्रिया",
+    "days": "दिन",
+    "disconnected": "डिस्कनेक्ट",
+    "failed_actions": "विफल क्रियाएं",
+    "false_positive_rate": "झूठी सकारात्मक दर",
+    "fp": "झूठी सकारात्मक",
+    "graph_db": "ग्राफ डेटाबेस",
+    "graph_explorer": "ग्राफ एक्सप्लोरर",
+    "healthy": "स्वस्थ",
+    "inactive": "निष्क्रिय",
+    "issues": "मुद्दे",
+    "last_24h": "पिछले 24 घंटे",
+    "last_update": "अंतिम अपडेट",
+    "mttr": "MTTR",
+    "open_alerts": "खुली चेतावनियां",
+    "open_cases": "खुले केस",
+    "performance": "प्रदर्शन",
+    "priority_distribution": "प्राथमिकता वितरण",
+    "quick_access": "त्वरित पहुंच",
+    "recent_alerts": "हाल की चेतावनियां",
+    "response_time": "प्रतिक्रिया समय",
+    "rule_effectiveness": "नियम प्रभावशीलता",
+    "sanctions_hits": "प्रतिबंध हिट",
+    "service_status": "सेवा स्थिति",
+    "severity_breakdown": "गंभीरता विवरण",
+    "sla_breach_rate": "SLA उल्लंघन दर",
+    "sla_hours": "SLA (घंटे)",
+    "status_breakdown": "स्थिति विवरण",
+    "success_rate": "सफलता दर",
+    "suppression_rate": "दमन दर",
+    "system_details": "सिस्टम विवरण",
+    "system_load": "सिस्टम लोड",
+    "system_overview": "सिस्टम अवलोकन",
+    "system_status": "सिस्टम स्थिति",
+    "title": "SIGMACODE ब्लॉकचेन फोरेंसिक डैशबोर्ड",
+    "total_alerts": "कुल चेतावनियां",
+    "total_cases": "कुल केस",
+    "total_logs": "कुल लॉग",
+    "transaction_tracing": "लेनदेन ट्रेसिंग",
+    "uptime": "अपटाइम",
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "recent_activity": "Recent Activity",
+    "quick_actions": "Quick Actions",
+    "statistics": "Statistics",
+    "notifications": "Notifications",
+    "hero": {
+      "welcome": "वापस स्वागत है",
+      "subtitle": "आज आपकी जांच के साथ क्या हो रहा है।"
+    },
+    "quickActions": {
+      "title": "त्वरित कार्रवाई",
+      "newTrace": "नई ट्रेसिंग",
+      "newCase": "नया केस",
+      "riskCheck": "जोखिम जांच",
+      "aiAgent": "AI एजेंट"
+    },
+    "stats": {
+      "cases": "सक्रिय मामले",
+      "traces": "आज के ट्रेस",
+      "alerts": "अलर्ट",
+      "uptime": "अपटाइम"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "LangChain और GPT-4 एकीकरण के साथ स्वायत्त एजेंट",
+        "title": "AI एजेंट"
+      },
+      "badge": "AI और मशीन लर्निंग",
+      "desc": "विसंगति पहचान, जोखिम स्कोरिंग, और 24/7 जांच के लिए स्वायत्त AI एजेंटों के लिए मशीन लर्निंग मॉडल।",
+      "pattern": {
+        "desc": "धोखाधड़ी पैटर्न पहचान और व्यवहार विश्लेषण",
+        "title": "पैटर्न पहचान"
+      },
+      "risk": {
+        "desc": "पते और लेनदेन के लिए ML-आधारित जोखिम मूल्यांकन",
+        "title": "जोखिम स्कोरिंग"
+      },
+      "smart_contract": {
+        "desc": "बाइटकोड समानता और कमजोरियों का पता लगाना",
+        "title": "स्मार्ट कॉन्ट्रैक्ट विश्लेषण"
+      },
+      "title": "AI-चालित विश्लेषण"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "ML-आधारित असामान्य लेनदेन पैटर्न पहचान",
+        "title": "विसंगति पहचान"
+      },
+      "badge": "रीयल-टाइम निगरानी",
+      "custom_rules": {
+        "desc": "नियम DSL और नीति इंजन के साथ कस्टम चेतावनी नियम",
+        "title": "कस्टम नियम"
+      },
+      "desc": "मशीन लर्निंग के साथ 15 से अधिक कॉन्फ़िगर करने योग्य चेतावनी नियम। प्रतिबंध, मिश्रण, उच्च-मूल्य स्थानांतरण, और विसंगतियों के लिए सूचनाएं प्राप्त करें।",
+      "mixing": {
+        "desc": "Tornado Cash, Blender.io, और अन्य मिश्रण सेवाएं",
+        "title": "मिश्रण पहचान"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK प्रतिबंध सूचियां, रोजाना अपडेट",
+        "title": "प्रतिबंध स्क्रीनिंग"
+      },
+      "title": "बुद्धिमान चेतावनी इंजन"
+    },
+    "case": {
+      "badge": "जांच वर्कफ़्लो",
+      "desc": "साक्ष्य की चेन-ऑफ-कस्टडी, eIDAS हस्ताक्षर, और अदालत में स्वीकार्य रिपोर्ट के साथ व्यापक जांच प्रबंधन।",
+      "eidas": {
+        "desc": "EU मानकों के अनुरूप योग्य इलेक्ट्रॉनिक हस्ताक्षर",
+        "title": "eIDAS हस्ताक्षर"
+      },
+      "evidence": {
+        "desc": "अदालत में स्वीकार्य साक्ष्य के लिए निर्बाध चेन-ऑफ-कस्टडी",
+        "title": "साक्ष्य चेन"
+      },
+      "export": {
+        "desc": "टाइमस्टैम्प और ऑडिट ट्रेल के साथ PDF/Excel निर्यात",
+        "title": "निर्यात और रिपोर्ट"
+      },
+      "title": "केस प्रबंधन और साक्ष्य चेन",
+      "tracking": {
+        "desc": "वर्कफ़्लो स्थिति के साथ संरचित केस प्रबंधन",
+        "title": "केस ट्रैकिंग"
+      }
+    },
+    "cta": {
+      "demo": "डेमो का अनुरोध करें",
+      "pricing": "मूल्य देखें",
+      "subtitle": "अभी मुफ्त डेमो शुरू करें",
+      "title": "पूरे सुइट के लिए तैयार हैं?",
+      "start": "मुफ्त शुरू करें"
+    },
+    "graph": {
+      "badge": "ग्राफ खुफिया",
+      "clustering": {
+        "desc": "संबंधित वॉलेट्स का स्वचालित क्लस्टरिंग",
+        "title": "वॉलेट क्लस्टरिंग"
+      },
+      "community": {
+        "desc": "सामान्य हितों वाले वॉलेट समूहों का पता लगाना",
+        "title": "समुदाय पहचान"
+      },
+      "desc": "Neo4j-आधारित ग्राफ डेटाबेस, जो इकाई क्लस्टरिंग, समुदाय पहचान, और दृश्य जांच के लिए है।",
+      "labels": {
+        "desc": "समुदाय खुफिया जानकारी के साथ एक्सचेंज/VASP/DeFi लेबल",
+        "title": "इकाई लेबल"
+      },
+      "title": "इकाई समाधान और नेटवर्क विश्लेषण",
+      "visual": {
+        "desc": "जटिल विश्लेषण के लिए इंटरैक्टिव ग्राफ एक्सप्लोरर",
+        "title": "दृश्य जांच"
+      }
+    },
+    "header": {
+      "badge": "पूर्ण सुविधाएं",
+      "cta_try": "मुफ्त में आजमाएं",
+      "subtitle": "लेनदेन ट्रैकिंग से लेकर AI-चालित विश्लेषण तक—पेशेवर जांच के लिए सभी उपकरण",
+      "title": "पूर्ण ब्लॉकचेन फोरेंसिक सुइट"
+    },
+    "security": {
+      "audit": {
+        "desc": "अनुपालन प्रमाण के लिए व्यापक ऑडिट ट्रेल",
+        "title": "ऑडिट लॉग"
+      },
+      "badge": "उद्यम-स्तरीय सुरक्षा",
+      "desc": "RBAC, SSO/SAML, ऑडिट लॉग, और GDPR अनुपालन के साथ उद्यम-स्तरीय सुरक्षा।",
+      "privacy": {
+        "desc": "GDPR अनुपालन के लिए व्यक्तिगत डेटा का अनामकरण",
+        "title": "डेटा गोपनीयता"
+      },
+      "rbac": {
+        "desc": "कस्टम भूमिकाओं के साथ बारीक-बारीक भूमिका-आधारित पहुंच नियंत्रण",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "SAML 2.0 और OAuth 2.0 के साथ एकल साइन-ऑन",
+        "title": "SSO/SAML"
+      },
+      "title": "सुरक्षा और अनुपालन"
+    },
+    "seo": {
+      "description": "एंटरप्राइज-ग्रेड ब्लॉकचेन फोरेंसिक: मल्टी-चेन ट्रेसिंग, AI एजेंट, रियल-टाइम जोखिम स्कोरिंग और अनुपालन उपकरण।",
+      "title": "विशेषताएं | SIGMACODE ब्लॉकचेन फोरेंसिक"
+    },
+    "stats": {
+      "accuracy": "सटीकता",
+      "ai_agents": "AI एजेंट",
+      "alert_rules": "चेतावनी नियम",
+      "blockchains": "ब्लॉकचेन",
+      "bridges": "ब्रिज प्रोटोकॉल",
+      "case_templates": "केस टेम्पलेट",
+      "compliance": "अनुपालन",
+      "encryption": "एन्क्रिप्शन",
+      "entities": "इकाइयां",
+      "evidence_types": "साक्ष्य प्रकार",
+      "false_positives": "झूठी सकारात्मक",
+      "max_depth": "अधिकतम ट्रेस गहराई",
+      "ml_models": "ML मॉडल",
+      "query_time": "क्वेरी समय",
+      "relationships": "संबंध",
+      "response_time": "प्रतिक्रिया समय",
+      "security_certs": "सुरक्षा प्रमाणपत्र",
+      "uptime_sla": "अपटाइम SLA"
+    },
+    "tracing": {
+      "badge": "लेनदेन ट्रैकिंग",
+      "bridge": {
+        "desc": "क्रॉस-चेन ब्रिज और रैप्ड संपत्तियों का स्वचालित पता लगाना",
+        "title": "ब्रिज पहचान"
+      },
+      "cross_chain": {
+        "desc": "100 से अधिक ब्लॉकचेन का समर्थन: EVM, UTXO, Solana, Cosmos आदि",
+        "title": "क्रॉस-चेन ट्रैकिंग"
+      },
+      "demixing": {
+        "desc": "Tornado Cash, मिक्सर, और गोपनीयता सिक्कों का ह्यूरिस्टिक विश्लेषण",
+        "title": "गोपनीयता सिक्का डीमिक्सिंग"
+      },
+      "desc": "सभी प्रमुख ब्लॉकचेन पर लेनदेन ट्रैकिंग। क्रॉस-चेन ब्रिज पहचान, गोपनीयता सिक्का डीमिक्सिंग, और रिकर्सिव फॉरवर्ड/बैकवर्ड ट्रैकिंग।",
+      "recursive": {
+        "desc": "कॉन्फ़िगर करने योग्य गहराई और फ़िल्टर के साथ फॉरवर्ड/बैकवर्ड ट्रैकिंग",
+        "title": "रिकर्सिव ट्रैकिंग"
+      },
+      "title": "मल्टी-चेन लेनदेन खुफिया"
+    },
+    "hero": {
+      "badge": "विशेषताएं",
+      "title": "एंटरप्राइज-ग्रेड ब्लॉकचेन फोरेंसिक",
+      "subtitle": "क्रिप्टो अपराधों की जांच, अनुपालन सुनिश्चित करने और अपने व्यवसाय की सुरक्षा के लिए आवश्यक सभी उपकरण।"
+    }
+  },
+  "footer": {
+    "blog": "ब्लॉग",
+    "careers": "करियर",
+    "company": "कंपनी",
+    "contact": "संपर्क",
+    "imprint": "इम्प्रिंट",
+    "legal": "कानूनी",
+    "privacy": "गोपनीयता",
+    "product": "उत्पाद",
+    "request_demo": "डेमो का अनुरोध करें",
+    "rights_reserved": "सर्वाधिकार सुरक्षित।",
+    "security": "सुरक्षा",
+    "tagline": "अनुपालन और जांच के लिए उद्यम-स्तरीय ब्लॉकचेन AI—सुरक्षित, तेज़, और अदालत में स्वीकार्य।",
+    "terms": "शर्तें"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "सक्रिय नोड्स",
+      "avg_degree": "औसत डिग्री",
+      "density": "नेटवर्क घनत्व",
+      "total_edges": "कुल एज",
+      "total_nodes": "कुल नोड्स"
+    },
+    "centrality": {
+      "taint": "प्रदूषण",
+      "title": "केंद्रीयता विश्लेषण"
+    },
+    "communities": {
+      "algorithm": "एल्गोरिदम",
+      "avg_size": "औसत आकार",
+      "avg_taint": "औसत प्रदूषण",
+      "empty": "क्लिक करें",
+      "label_propagation": "लेबल प्रचार",
+      "loading": "समुदाय पहचान चल रही है...",
+      "louvain": "लौवेन (मॉड्यूलरिटी)",
+      "title": "समुदाय पहचान",
+      "total": "कुल समुदाय"
+    },
+    "degree": {
+      "title": "डिग्री वितरण",
+      "x": "डिग्री",
+      "y": "गणना"
+    },
+    "filters": {
+      "cross_chain": "क्रॉस-चेन (ब्रिज लेयर)",
+      "from": "शुरू (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "अंत (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "उन्नत नेटवर्क विश्लेषण और पैटर्न पहचान",
+      "title": "ग्राफ विश्लेषण और नेटवर्क खुफिया"
+    },
+    "hubs": {
+      "in": "इनपुट",
+      "out": "आउटपुट",
+      "title": "नेटवर्क हब (उच्च डिग्री नोड्स)",
+      "total": "कुल"
+    },
+    "loading": {
+      "stats": "आंकड़े लोड हो रहे हैं..."
+    },
+    "patterns": {
+      "circle_length": "सर्कल लंबाई",
+      "detected": "पता चले सर्कल",
+      "empty_desc": "यह एक अच्छा संकेत है—कोई स्पष्ट मनी लॉन्ड्रिंग सर्कल नहीं मिला",
+      "empty_title": "सर्कुलर पैटर्न नहीं पाया गया",
+      "high_risk": "उच्च जोखिम",
+      "hops": "हॉप्स",
+      "loading": "पैटर्न पहचान चल रही है...",
+      "more_addresses": "अधिक पते",
+      "risk_score": "जोखिम स्कोर",
+      "title": "सर्कुलर पैटर्न (संभावित मनी लॉन्ड्रिंग)",
+      "total": "कुल",
+      "total_value": "कुल मूल्य",
+      "tx_path": "लेनदेन पथ:"
+    },
+    "tabs": {
+      "communities": "समुदाय पहचान",
+      "overview": "नेटवर्क अवलोकन",
+      "patterns": "पैटर्न पहचान"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "क्लस्टर",
+      "clustering": "क्लस्टरिंग",
+      "pause_timeline": "टाइमलाइन रोकें",
+      "play_timeline": "टाइमलाइन चलाएं",
+      "title": "जांचकर्ता क्रियाएं"
+    },
+    "connected": {
+      "taint": "प्रदूषण",
+      "title": "जुड़े पते",
+      "tx": "लेनदेन"
+    },
+    "graph": {
+      "connections": "कनेक्शन",
+      "enter_address": "पता दर्ज करें",
+      "loading": "लोड हो रहा है...",
+      "nodes": "नोड्स",
+      "title": "ग्राफ विश्लेषण"
+    },
+    "header": {
+      "subtitle": "जांचकर्ता उपशीर्षक",
+      "title": "जांचकर्ता शीर्षक"
+    },
+    "path": {
+      "bridges": "ब्रिज",
+      "hops": "हॉप्स",
+      "risk_score": "जोखिम स्कोर",
+      "title": "पथ विश्लेषण",
+      "total_value": "कुल मूल्य"
+    },
+    "search": {
+      "explore": "अन्वेषण करें",
+      "placeholder": "खोज इनपुट प्लेसहोल्डर",
+      "title": "खोज"
+    },
+    "settings": {
+      "from": "शुरू",
+      "hops_1": "1 हॉप",
+      "hops_2": "2 हॉप",
+      "hops_3": "3 हॉप",
+      "hops_4": "4 हॉप",
+      "hops_5": "5 हॉप",
+      "include_bridges": "ब्रिज शामिल करें",
+      "max_hops": "अधिकतम हॉप",
+      "title": "सेटिंग्स",
+      "to": "अंत"
+    },
+    "timeline": {
+      "empty": "खाली टाइमलाइन",
+      "events": "घटनाएं",
+      "risk": "जोखिम",
+      "select_address": "पता चुनें",
+      "title": "टाइमलाइन",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "अभी डेमो का अनुरोध करें",
+      "pricing": "मूल्य देखें"
+    },
+    "cta2": {
+      "demo": "मुफ्त डेमो का अनुरोध करें",
+      "pricing": "मूल्य देखें",
+      "subtitle": "अभी मुफ्त डेमो शुरू करें और ब्लॉकचेन फोरेंसिक के भविष्य का अनुभव करें",
+      "title": "उद्यम-स्तरीय ब्लॉकचेन खुफिया के लिए तैयार हैं?"
+    },
+    "features": {
+      "badge": "सुविधाएं",
+      "subtitle": "अनुपालन, जांच, और जोखिम प्रबंधन के लिए उद्यम-स्तरीय उपकरण",
+      "title": "ब्लॉकचेन फोरेंसिक के लिए आवश्यक सब कुछ"
+    },
+    "hero": {
+      "badge": "sigmacode.io · ब्लॉकचेन फोरेंसिक",
+      "point1": "100 से अधिक ब्लॉकचेन",
+      "point2": "OFAC/UN/EU प्रतिबंध",
+      "point3": "रीयल-टाइम निगरानी",
+      "subtitle": "AI-चालित अनुपालन, जांच, और जोखिम निगरानी—रीयल-टाइम और उद्यम-स्तरीय।",
+      "title": "उद्यम-स्तरीय ब्लॉकचेन खुफिया"
+    },
+    "pricing": {
+      "badge": "मूल्य निर्धारण",
+      "subtitle": "मुफ्त से लेकर उद्यम तक—अभी शुरू करें",
+      "title": "हर व्यवसाय आकार के लिए लचीले पैकेज",
+      "view_all": "सभी मूल्य देखें"
+    },
+    "seo": {
+      "description": "AI-चालित अनुपालन, जांच, और जोखिम निगरानी—रीयल-टाइम और उद्यम-स्तरीय। SIGMACODE ब्लॉकचेन फोरेंसिक।",
+      "title": "SIGMACODE | उद्यम-स्तरीय ब्लॉकचेन खुफिया"
+    },
+    "tech": {
+      "badge": "तकनीक",
+      "subtitle": "अधिकतम प्रदर्शन और सुरक्षा के लिए उद्यम-स्तरीय बुनियादी ढांचा",
+      "title": "अत्याधुनिक तकनीकी स्टैक"
+    },
+    "use_cases": {
+      "badge": "उपयोग के मामले",
+      "subtitle": "कानून प्रवर्तन से लेकर फिनटेक तक",
+      "title": "हर उपयोग के मामले के लिए सही समाधान"
+    }
+  },
+  "layout": {
+    "main_navigation": "मुख्य नेविगेशन",
+    "quick_search_title": "त्वरित खोज (Ctrl/⌘+K)",
+    "skip_to_content": "सामग्री पर जाएं",
+    "quick_search_placeholder": "त्वरित खोज...",
+    "quick_search_hint": "सुझाव: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie banner",
+    "title": "Cookies & Privacy",
+    "title_short": "Cookies",
+    "description": "We use essential cookies to operate this website. Optional analytics cookies help us understand and improve usage. You can accept all cookies or allow only necessary ones. You can change your choice at any time in the settings.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Service",
+    "imprint_link": "Imprint",
+    "only_necessary": "Only necessary",
+    "accept_all": "Accept all",
+    "preferences": "Preferences",
+    "save_preferences": "Save preferences",
+    "manage": "Cookie settings",
+    "analytics_title": "Analytics cookies",
+    "analytics_desc": "Helps us understand usage to improve the website.",
+    "marketing_title": "Marketing cookies",
+    "marketing_desc": "Enables personalized content and offers.",
+    "all_optional_title": "Enable all optional",
+    "all_optional_desc": "Enables both analytics and marketing cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "बंद करें",
+        "close_title": "चेतावनी बंद करें",
+        "copy_alert_id_title": "चेतावनी ID कॉपी करें",
+        "copy_entity": "इकाई कॉपी करें",
+        "copy_entity_id_title": "इकाई ID कॉपी करें",
+        "copy_id": "ID कॉपी करें",
+        "copy_rule": "नियम कॉपी करें",
+        "copy_rule_id_title": "नियम ID कॉपी करें",
+        "details": "विवरण",
+        "details_title": "विवरण देखें",
+        "reset": "रीसेट"
+      },
+      "audit": {
+        "empty": "कोई घटना नहीं",
+        "title": "ऑडिट ट्रेल"
+      },
+      "csv": {
+        "export_all": "CSV निर्यात (सभी)",
+        "export_all_title": "फ़िल्टर की गई सभी पंक्तियों का CSV निर्यात (सर्वर)",
+        "export_page": "CSV निर्यात (पेज)",
+        "export_page_title": "पेज CSV निर्यात",
+        "no_filtered_data": "कोई फ़िल्टर डेटा नहीं",
+        "no_page_data": "इस पेज पर कोई डेटा नहीं"
+      },
+      "empty": "कोई चेतावनी नहीं मिली",
+      "filters": {
+        "all": "(सभी)",
+        "search_label": "खोज (rule_id / entity_id)",
+        "search_placeholder": "खोज...",
+        "severity": "गंभीरता",
+        "source": "स्रोत",
+        "source_persisted": "स्थायी (KYT)",
+        "source_realtime": "रीयल-टाइम (चेतावनी इंजन)",
+        "status": "स्थिति"
+      },
+      "kpi": {
+        "event_time_set": "घटना समय सेट (first_seen_at)",
+        "event_time_title": "घटना समय = first_seen_at",
+        "false_positive": "झूठी सकारात्मक के रूप में चिह्नित",
+        "title": "KPI टिप्पणी",
+        "true_positive": "सच्ची सकारात्मक के रूप में चिह्नित"
+      },
+      "loading": "चेतावनियां लोड हो रही हैं...",
+      "modal": {
+        "alert_id": "चेतावनी ID",
+        "chain": "चेन",
+        "context": "संदर्भ",
+        "entity": "इकाई",
+        "rule_id": "नियम ID",
+        "severity": "गंभीरता",
+        "title": "चेतावनी विवरण"
+      },
+      "pagination": {
+        "next": "अगला",
+        "page": "पेज",
+        "prev": "पिछला"
+      },
+      "severity": {
+        "critical": "गंभीर",
+        "high": "उच्च",
+        "low": "निम्न",
+        "medium": "मध्यम"
+      },
+      "status": {
+        "assigned": "नियुक्त",
+        "closed": "बंद",
+        "open": "खुला",
+        "snoozed": "स्थगित"
+      },
+      "subtitle": "रीयल-टाइम नियम और स्थायी चेतावनियां (KYT)",
+      "table": {
+        "first": "पहला",
+        "last": "अंतिम"
+      },
+      "title": "चेतावनी निगरानी",
+      "toasts": {
+        "copy_failed": "कॉपी विफल",
+        "disposition_failed": "निपटान विफल",
+        "disposition_set": "निपटान सेट",
+        "entity_copied": "इकाई कॉपी की गई",
+        "event_time_failed": "घटना समय विफल",
+        "event_time_set": "घटना समय सेट",
+        "export_failed": "सर्वर निर्यात विफल",
+        "export_started": "सर्वर निर्यात शुरू",
+        "id_copied": "ID कॉपी किया गया",
+        "rule_copied": "नियम कॉपी किया गया"
+      }
+    }
+  },
+  "navigation": {
+    "about": "हमारे बारे में",
+    "analytics": "विश्लेषण",
+    "close_menu": "नेविगेशन बंद करें",
+    "dashboard": "डैशबोर्ड",
+    "features": "विशेषताएं",
+    "home": "होम",
+    "logout": "लॉग आउट",
+    "open_menu": "नेविगेशन खोलें",
+    "pricing": "मूल्य निर्धारण",
+    "settings": "सेटिंग्स",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "ताज़ा करें"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "कोर",
+        "title": "CPU उपयोग"
+      },
+      "db": {
+        "connected": "जुड़ा हुआ",
+        "disconnected": "डिस्कनेक्ट",
+        "response": "प्रतिक्रिया",
+        "title": "डेटाबेस"
+      },
+      "memory": {
+        "available": "उपलब्ध",
+        "title": "मेमोरी उपयोग"
+      },
+      "system_status": {
+        "healthy": "स्वस्थ",
+        "issues": "मुद्दे",
+        "title": "सिस्टम स्थिति",
+        "uptime": "अपटाइम"
+      }
+    },
+    "common": {
+      "no": "नहीं",
+      "yes": "हां"
+    },
+    "header": {
+      "last_refresh": "अंतिम ताज़ा",
+      "subtitle": "सिस्टम प्रदर्शन, मेट्रिक्स, और SLO की व्यापक निगरानी",
+      "title": "प्रदर्शन और अवलोकन डैशबोर्ड"
+    },
+    "metrics": {
+      "empty": "कोई मेट्रिक डेटा उपलब्ध नहीं",
+      "loading": "मेट्रिक्स लोड हो रहे हैं...",
+      "max": "अधिकतम",
+      "measurements": "माप",
+      "min": "न्यूनतम",
+      "title": "प्रदर्शन मेट्रिक्स (1 घंटा)",
+      "trend": "रुझान"
+    },
+    "recent_alerts": {
+      "empty": "कोई हाल की चेतावनी नहीं",
+      "title": "हाल की प्रदर्शन चेतावनियां"
+    },
+    "services": {
+      "active": "सक्रिय",
+      "inactive": "निष्क्रिय",
+      "title": "सेवा स्थिति"
+    },
+    "slo": {
+      "empty": "कोई SLO डेटा उपलब्ध नहीं",
+      "loading": "SLO लोड हो रहे हैं...",
+      "threshold": "थ्रेशोल्ड",
+      "title": "SLO अनुपालन",
+      "violations": "उल्लंघन"
+    },
+    "system_details": {
+      "database": "डेटाबेस",
+      "db_connected": "जुड़ा हुआ",
+      "db_type": "प्रकार",
+      "debug": "डीबग",
+      "environment": "पर्यावरण",
+      "log_level": "लॉग स्तर",
+      "mode": "मोड",
+      "platform": "प्लेटफ़ॉर्म",
+      "python_version": "Python संस्करण",
+      "response_time": "प्रतिक्रिया समय",
+      "system_info": "सिस्टम जानकारी",
+      "title": "सिस्टम विवरण",
+      "version": "संस्करण"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "अतिरिक्त ब्लॉकचेन",
+        "i2": "अतिरिक्त उपयोगकर्ता सीटें",
+        "i3": "प्रतिबंध प्रीमियम (विस्तारित सूची)",
+        "i4": "उन्नत निर्यात प्रारूप",
+        "i5": "प्राथमिकता समर्थन",
+        "i6": "व्हाइट लेबल (उद्यम)",
+        "title": "उपलब्ध ऐड-ऑन"
+      },
+      "badge": "लचीला विस्तार",
+      "overage": {
+        "extra_credits": "अतिरिक्त क्रेडिट",
+        "monthly_cap": "मासिक सीमा",
+        "note": "कोटा पार हो गया? चिंता न करें—अतिरिक्त उपयोग स्वचालित रूप से बिल किया जाएगा।",
+        "title": "अधिक उपयोग शुल्क"
+      },
+      "subtitle": "आवश्यकतानुसार अपनी योजना का विस्तार करें",
+      "title": "ऐड-ऑन और अधिक उपयोग"
+    },
+    "card": {
+      "custom": "कस्टम",
+      "desc_business": "बड़े टीमों के लिए",
+      "desc_community": "शौकियों और ओपन-सोर्स के लिए",
+      "desc_enterprise": "उद्यमों और नियामकों के लिए",
+      "desc_pro": "बढ़ते व्यवसायों के लिए",
+      "desc_starter": "छोटी टीमों के लिए",
+      "per_month": "प्रति माह",
+      "popular": "सबसे लोकप्रिय",
+      "popular_label": "सबसे लोकप्रिय",
+      "save_year": "${{amount}}/वर्ष बचाएं"
+    },
+    "cta": {
+      "active_plan": "✓ सक्रिय योजना",
+      "contact_sales": "बिक्री से संपर्क करें",
+      "demo": "डेमो का अनुरोध करें",
+      "more_about": "हमारे बारे में और जानें",
+      "saving": "सहेज रहा है…",
+      "set_tenant_plan": "टेनेंट योजना के रूप में सेट करें",
+      "start_now": "अभी शुरू करें",
+      "subscribe": "अभी सब्सक्राइब करें",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "वर्तमान योजना",
+    "enterprise": {
+      "card_desc": "उद्यमों और नियामकों के लिए",
+      "subtitle": "कस्टम मूल्य निर्धारण, SLA, एकीकरण, ऑन-प्रिमाइस/VPC",
+      "title": "वित्तीय संस्थानों और नियामकों के लिए"
+    },
+    "faq": {
+      "subtitle": "वैयक्तिक डेमो के लिए हमारी बिक्री टीम से संपर्क करें",
+      "title": "अभी भी सवाल हैं?"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "ब्लॉकचेन",
+      "cases": "केस",
+      "credits": "क्रेडिट/माह",
+      "priority": "प्राथमिकता",
+      "users": "उपयोगकर्ता"
+    },
+    "header": {
+      "badge": "लचीला मूल्य निर्धारण",
+      "subtitle": "मुफ्त समुदाय उपकरणों से लेकर व्हाइट-लेबल उद्यम तक। आज शुरू करें और अपने विकास के साथ स्केल करें।",
+      "title": "हर टीम के लिए सही योजना"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AI एजेंट",
+        "i2": "ग्राफ विश्लेषण",
+        "i3": "जोखिम स्कोरिंग",
+        "i4": "ML मॉडल",
+        "title": "उन्नत विश्लेषण"
+      },
+      "badge": "क्या शामिल है?",
+      "performance": {
+        "i1": "रीयल-टाइम चेतावनियां",
+        "i2": "API पहुंच",
+        "i3": "प्राथमिकता कतार",
+        "i4": "99.9% अपटाइम",
+        "title": "प्रदर्शन"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "ऑडिट लॉग",
+        "i4": "GDPR अनुपालन",
+        "title": "सुरक्षा और अनुपालन"
+      },
+      "team": {
+        "i1": "मल्टी-यूजर",
+        "i2": "केस प्रबंधन",
+        "i3": "साक्ष्य चेन",
+        "i4": "सहयोग",
+        "title": "टीम सुविधाएं"
+      },
+      "title": "सभी सुविधाओं का अवलोकन"
+    },
+    "more": "और देखें",
+    "seo": {
+      "description": "ब्लॉकचेन फोरेंसिक के लिए उचित और पारदर्शी मूल्य निर्धारण। मुफ्त कम्युनिटी प्लान से लेकर एंटरप्राइज तक। कभी भी रद्द करें।",
+      "title": "मूल्य निर्धारण | SIGMACODE ब्लॉकचेन फोरेंसिक"
+    },
+    "smb": {
+      "subtitle": "स्टार्टअप से मध्यम आकार के बाजारों के लिए स्व-सेवा योजनाएं",
+      "title": "टीमों और व्यवसायों के लिए"
+    },
+    "toggle": {
+      "annual": "वार्षिक",
+      "monthly": "मासिक",
+      "save": "{{pct}}% बचाएं"
+    },
+    "top_features": "शीर्ष सुविधाएं",
+    "hero": {
+      "badge": "मूल्य निर्धारण",
+      "title": "सरल और पारदर्शी मूल्य निर्धारण",
+      "subtitle": "अपनी आवश्यकताओं के अनुरूप योजना चुनें। सभी योजनाओं में मुख्य विशेषताएं शामिल हैं। कभी भी अपग्रेड करें।"
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "ताज़ा करें"
+    },
+    "audit": {
+      "empty": "कोई ऑडिट ट्रेल प्रविष्टियां उपलब्ध नहीं",
+      "loading": "ऑडिट ट्रेल लोड हो रहा है...",
+      "title": "हाल की ऑडिट ट्रेल प्रविष्टियां",
+      "user": "उपयोगकर्ता",
+      "view_all": "सभी देखें →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "ऑडिट ट्रेल अखंडता"
+      },
+      "failed_logins": {
+        "title": "विफल लॉगिन प्रयास"
+      },
+      "gdpr": {
+        "title": "GDPR अनुपालन"
+      },
+      "security_incidents": {
+        "title": "सुरक्षा घटनाएं"
+      }
+    },
+    "common": {
+      "implemented": "लागू किया गया",
+      "not_implemented": "लागू नहीं किया गया",
+      "unknown": "अज्ञात"
+    },
+    "compliance": {
+      "anonymization": "अनामकरण",
+      "certifications": "प्रमाणपत्र",
+      "consent_management": "सहमति प्रबंधन",
+      "data_portability": "डेटा पोर्टेबिलिटी",
+      "empty": "कोई अनुपालन डेटा उपलब्ध नहीं",
+      "encryption": "एन्क्रिप्शन",
+      "loading": "अनुपालन स्थिति लोड हो रही है...",
+      "right_to_erasure": "मिटाने का अधिकार",
+      "title": "GDPR अनुपालन स्थिति"
+    },
+    "header": {
+      "last_refresh": "अंतिम ताज़ा",
+      "subtitle": "ऑडिट ट्रेल, GDPR अनुपालन, और सुरक्षा निगरानी",
+      "title": "सुरक्षा और अनुपालन डैशबोर्ड"
+    },
+    "quick_actions": {
+      "audit_export": "ऑडिट निर्यात",
+      "compliance_report": "अनुपालन रिपोर्ट",
+      "gdpr_status": "GDPR स्थिति",
+      "incident_report": "घटना रिपोर्ट",
+      "integrity_check": "अखंडता जांच",
+      "security_scan": "सुरक्षा स्कैन",
+      "title": "सुरक्षा और अनुपालन क्रियाएं"
+    },
+    "retention": {
+      "days": "दिन",
+      "empty": "कोई डेटा प्रतिधारण डेटा उपलब्ध नहीं",
+      "title": "डेटा प्रतिधारण अनुपालन",
+      "violations": {
+        "count": "उल्लंघन",
+        "days_old": "दिन पुराना",
+        "more": "और",
+        "more_suffix": "अधिक",
+        "title": "प्रतिधारण उल्लंघन"
+      }
+    },
+    "security": {
+      "compliance_status": "अनुपालन स्थिति",
+      "empty": "कोई सुरक्षा डेटा उपलब्ध नहीं",
+      "failed_logins": "विफल लॉगिन",
+      "incidents": "सुरक्षा घटनाएं",
+      "rate_limited_ips": "दर-सीमित IP",
+      "suspicious_activities": "संदिग्ध गतिविधियां",
+      "title": "सुरक्षा अवलोकन"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "उम्र बकेट (उदाहरण: 24 घंटे, 3 दिन, 7 दिन, 7+ दिन) के आधार पर खुली चेतावनियां",
+    "alert_engine": "संदिग्ध लेनदेन और पैटर्न की रीयल-टाइम निगरानी के लिए ML एल्गोरिदम",
+    "alert_overview": "सभी सक्रिय सुरक्षा चेतावनियों और उनकी गंभीरता (गंभीर/उच्च/मध्यम/निम्न) का अवलोकन",
+    "analyst_throughput": "चयनित विंडो में प्रति विश्लेषक बंद किए गए केसों की संख्या",
+    "backlog": "खुली (अनपुष्ट) चेतावनियों और खुले केसों की कुल संख्या",
+    "database": "PostgreSQL/TimescaleDB कनेक्शन स्थिति और समय श्रृंखला डेटा के लिए प्रतिक्रिया समय",
+    "graph_db": "जटिल संबंध विश्लेषण और नेटवर्क मैपिंग के लिए Neo4j ग्राफ डेटाबेस",
+    "system_status": "सभी सिस्टम घटकों की वर्तमान स्थिति दिखाता है। हरा = स्वस्थ, लाल = समस्या का पता चला",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "उपलब्ध टूर",
+    "completed": "पूरा हुआ",
+    "finish": "समाप्त",
+    "no_tours_available": "इस पेज पर कोई टूर उपलब्ध नहीं",
+    "of": "का",
+    "select_tour_description": "प्लेटफ़ॉर्म सुविधाओं के बारे में जानने के लिए एक टूर चुनें",
+    "skip": "छोड़ें",
+    "start": "शुरू करें",
+    "start_tour": "टूर शुरू करें",
+    "step": "चरण",
+    "steps": "चरण"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "विवरण",
+      "direction": "दिशा",
+      "error_title": "परिणाम त्रुटि",
+      "exec_time": "निष्पादन समय",
+      "export": "निर्यात",
+      "flow_graph": "प्रवाह ग्राफ",
+      "high_risk": "उच्च जोखिम",
+      "high_risk_title": "उच्च जोखिम पते",
+      "loading": "लोड हो रहा है...",
+      "max_hop": "अधिकतम हॉप",
+      "not_found": "नहीं मिला",
+      "report": "रिपोर्ट",
+      "sanctioned_title": "प्रतिबंधित पते",
+      "sanctioned_warning": "प्रतिबंध चेतावनी",
+      "source": "स्रोत",
+      "taint": "प्रदूषण",
+      "taint_model": "प्रदूषण मॉडल",
+      "title": "ट्रेसिंग परिणाम",
+      "total_edges": "कुल एज",
+      "total_nodes": "कुल नोड्स"
+    },
+    "simple": {
+      "address_ph": "पता",
+      "chain_btc": "बिटकॉइन चेन",
+      "chain_eth": "एथेरियम चेन",
+      "chain_sol": "Solana चेन",
+      "cluster": {
+        "clustering": "क्लस्टरिंग",
+        "export_members": "सदस्य निर्यात करें",
+        "label": "लेबल",
+        "lookup": "खोज",
+        "member_address": "सदस्य पता",
+        "members": "सदस्य",
+        "title": "क्लस्टर पते"
+      },
+      "depth_ph": "गहराई",
+      "edges": "एज",
+      "error_cluster": "क्लस्टर त्रुटि",
+      "error_trace": "ट्रेस त्रुटि",
+      "export_paths": "पथ निर्यात करें",
+      "export_targets": "लक्ष्य निर्यात करें",
+      "high_risk": "उच्च जोखिम",
+      "model_fifo": "FIFO मॉडल",
+      "model_haircut": "हेयरकट मॉडल",
+      "model_proportional": "आनुपातिक मॉडल",
+      "nodes": "नोड्स",
+      "run": "चलाएं",
+      "summary": "सारांश",
+      "th_path": "पथ",
+      "th_paths": "पथ",
+      "th_taint": "प्रदूषण",
+      "th_target": "लक्ष्य",
+      "threshold_ph": "थ्रेशोल्ड",
+      "title": "साधारण ट्रेसिंग",
+      "tracing": "ट्रेसिंग"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "विश्लेषण विवरण",
+        "title": "विश्लेषण पता",
+        "wip": "निर्माणाधीन"
+      },
+      "export": {
+        "csv": "CSV निर्यात",
+        "desc": "निर्यात विवरण",
+        "json": "JSON निर्यात",
+        "pdf": "PDF निर्यात",
+        "section_export": "सेक्शन निर्यात",
+        "section_import": "सेक्शन आयात",
+        "title": "निर्यात पता"
+      },
+      "header": {
+        "title": "वॉलेट टेस्ट पता"
+      },
+      "import": {
+        "add_wallet": "वॉलेट जोड़ें",
+        "json": "JSON आयात",
+        "restore_backup": "बैकअप पुनर्स्थापित करें"
+      },
+      "multisig": {
+        "desc": "मल्टीसिग विवरण",
+        "title": "मल्टीसिग पता",
+        "wip": "निर्माणाधीन"
+      },
+      "overview": {
+        "active_wallets": "सक्रिय वॉलेट",
+        "activity": {
+          "liquidity": "तरलता",
+          "nft": "NFT",
+          "receive": "प्राप्त"
+        },
+        "month_change": "मासिक परिवर्तन",
+        "multisig": "मल्टीसिग",
+        "new_this_week": "इस सप्ताह नया",
+        "recent": "हाल का",
+        "security_grade": "सुरक्षा ग्रेड",
+        "security_score": "सुरक्षा स्कोर",
+        "status": {
+          "2fa": "2FA",
+          "active": "सक्रिय",
+          "backup": "बैकअप",
+          "backup_available": "बैकअप उपलब्ध",
+          "hardware": "हार्डवेयर",
+          "hw_connected": "हार्डवेयर जुड़ा हुआ",
+          "recovery": "पुनर्प्राप्ति",
+          "secured": "सुरक्षित",
+          "title": "स्थिति पता"
+        },
+        "total_volume": "कुल मात्रा"
+      },
+      "sidebar": {
+        "title": "साइडबार पता"
+      },
+      "tabs": {
+        "analytics": "विश्लेषण",
+        "crosschain": "क्रॉसचेन",
+        "export": "निर्यात",
+        "multisig": "मल्टीसिग",
+        "nft": "NFT",
+        "overview": "अवलोकन",
+        "transactions": "लेनदेन"
+      },
+      "transactions": {
+        "desc": "लेनदेन विवरण",
+        "export": "निर्यात",
+        "title": "लेनदेन पता",
+        "wip": "निर्माणाधीन"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "वेब विश्लेषण"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "ट्रेसिंग"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "पता"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "समीक्षा"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "निष्पादित करें",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "ऑनलाइन",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

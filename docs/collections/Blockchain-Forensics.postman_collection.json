@@ -1,0 +1,116 @@
+{
+  "info": {
+    "name": "Blockchain Forensics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Collection für häufige Endpunkte der Blockchain-Forensics-API"
+  },
+  "item": [
+    {
+      "name": "Healthz",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/healthz",
+          "host": ["{{baseUrl}}"],
+          "path": ["healthz"]
+        }
+      }
+    },
+    {
+      "name": "Alerts KPIs",
+      "request": {
+        "method": "GET",
+        "header": [
+          {"key": "Authorization", "value": "Bearer {{jwt}}"},
+          {"key": "X-API-Key", "value": "{{apiKey}}"}
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/alerts/kpis?days=30&sla_hours=48",
+          "host": ["{{baseUrl}}"],
+          "path": ["alerts", "kpis"],
+          "query": [
+            {"key": "days", "value": "30"},
+            {"key": "sla_hours", "value": "48"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Analyze Batch",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Authorization", "value": "Bearer {{jwt}}"},
+          {"key": "X-API-Key", "value": "{{apiKey}}"},
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"addresses\": [\"0x742d35Cc6634C0532925a3b844Bc454e4438f44e\"],\n  \"chains\": [\"ethereum\"],\n  \"analysis_types\": [\"risk\", \"pattern\"],\n  \"compliance_level\": \"standard\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/analyze/batch",
+          "host": ["{{baseUrl}}"],
+          "path": ["analyze", "batch"]
+        }
+      }
+    },
+    {
+      "name": "Evidence Collect",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Authorization", "value": "Bearer {{jwt}}"},
+          {"key": "X-API-Key", "value": "{{apiKey}}"},
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"resource_id\": \"0x742d35Cc6634C0532925a3b844Bc454e4438f44e\",\n  \"resource_type\": \"address\",\n  \"case_id\": \"CASE-123\",\n  \"collection_method\": \"api\",\n  \"handler_id\": \"user-1\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/evidence/collect",
+          "host": ["{{baseUrl}}"],
+          "path": ["evidence", "collect"]
+        }
+      }
+    },
+    {
+      "name": "Recent Alerts",
+      "request": {
+        "method": "GET",
+        "header": [
+          {"key": "Authorization", "value": "Bearer {{jwt}}"},
+          {"key": "X-API-Key", "value": "{{apiKey}}"}
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/alerts/recent?limit=50&severity=high",
+          "host": ["{{baseUrl}}"],
+          "path": ["alerts", "recent"],
+          "query": [
+            {"key": "limit", "value": "50"},
+            {"key": "severity", "value": "high"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Web Vitals (no auth)",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"LCP\",\n  \"id\": \"v3-16999999999\",\n  \"value\": 2200.5,\n  \"rating\": \"good\",\n  \"navigationType\": \"navigate\",\n  \"ts\": 1699999999900\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/metrics/webvitals",
+          "host": ["{{baseUrl}}"],
+          "path": ["metrics", "webvitals"]
+        }
+      }
+    }
+  ],
+  "variable": []
+}

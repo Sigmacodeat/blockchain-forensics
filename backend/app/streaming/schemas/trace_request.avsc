@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "TraceRequest",
+  "namespace": "com.forensics.blockchain",
+  "fields": [
+    {"name": "request_id", "type": "string"},
+    {"name": "op", "type": {"type": "enum", "name": "TraceOp", "symbols": ["trace", "taint", "cluster"]}},
+    {"name": "chain", "type": "string"},
+    {"name": "root_address", "type": "string"},
+    {"name": "max_depth", "type": "int", "default": 5},
+    {"name": "created_at", "type": {"type": "long", "logicalType": "timestamp-millis"}},
+    {"name": "metadata", "type": {"type": "map", "values": "string"}, "default": {}}
+  ]
+}

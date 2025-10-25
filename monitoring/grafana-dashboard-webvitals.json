@@ -1,0 +1,102 @@
+{
+  "__inputs": [],
+  "__requires": [
+    { "type": "grafana", "id": "grafana", "name": "Grafana", "version": "9.x" },
+    { "type": "datasource", "id": "postgres", "name": "PostgreSQL", "version": "1.x" }
+  ],
+  "title": "Web Vitals Overview",
+  "schemaVersion": 38,
+  "version": 1,
+  "tags": ["web", "vitals", "frontend"],
+  "timezone": "",
+  "time": { "from": "now-24h", "to": "now" },
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Avg LCP (s)",
+      "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 },
+      "options": { "reduceOptions": { "calcs": ["mean"], "fields": "name:LCP" }, "orientation": "auto" },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+          "format": "time_series",
+          "rawSql": "SELECT time_bucket('5 minutes', ts) AS time, AVG(value)/1000.0 AS avg_lcp FROM web_vitals WHERE name = 'LCP' AND ts BETWEEN $__timeFrom() AND $__timeTo() GROUP BY time ORDER BY time;",
+          "interval": ""
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Avg CLS",
+      "gridPos": { "x": 6, "y": 0, "w": 6, "h": 4 },
+      "options": { "reduceOptions": { "calcs": ["mean"], "fields": "name:CLS" }, "orientation": "auto" },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+          "format": "time_series",
+          "rawSql": "SELECT time_bucket('5 minutes', ts) AS time, AVG(value) AS avg_cls FROM web_vitals WHERE name = 'CLS' AND ts BETWEEN $__timeFrom() AND $__timeTo() GROUP BY time ORDER BY time;",
+          "interval": ""
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "INP & TTFB (ms)",
+      "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 },
+      "fieldConfig": { "defaults": { "unit": "ms" }, "overrides": [] },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+          "format": "time_series",
+          "rawSql": "SELECT time_bucket('5 minutes', ts) AS time, AVG(value) AS value, 'INP' AS metric FROM web_vitals WHERE name = 'INP' AND ts BETWEEN $__timeFrom() AND $__timeTo() GROUP BY time UNION ALL SELECT time_bucket('5 minutes', ts) AS time, AVG(value) AS value, 'TTFB' AS metric FROM web_vitals WHERE name = 'TTFB' AND ts BETWEEN $__timeFrom() AND $__timeTo() GROUP BY time ORDER BY time;",
+          "interval": ""
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Top Slow Paths (LCP)",
+      "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 },
+      "options": { "showHeader": true },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+          "format": "table",
+          "rawSql": "SELECT path, ROUND(AVG(value)/1000.0, 2) AS avg_lcp_s, COUNT(*) AS samples FROM web_vitals WHERE name='LCP' AND path IS NOT NULL AND ts BETWEEN $__timeFrom() AND $__timeTo() GROUP BY path ORDER BY avg_lcp_s DESC LIMIT 20;",
+          "interval": ""
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Recent Web Vitals",
+      "gridPos": { "x": 12, "y": 8, "w": 12, "h": 8 },
+      "options": { "showHeader": true },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+          "format": "table",
+          "rawSql": "SELECT ts, name, value, rating, navigation_type, path FROM web_vitals WHERE ts BETWEEN $__timeFrom() AND $__timeTo() ORDER BY ts DESC LIMIT 100;",
+          "interval": ""
+        }
+      ]
+    }
+  ],
+  "templating": {
+    "list": [
+      {
+        "name": "DS_POSTGRES",
+        "type": "datasource",
+        "label": "PostgreSQL",
+        "query": "postgres",
+        "regex": "",
+        "hide": 0
+      }
+    ]
+  }
+}

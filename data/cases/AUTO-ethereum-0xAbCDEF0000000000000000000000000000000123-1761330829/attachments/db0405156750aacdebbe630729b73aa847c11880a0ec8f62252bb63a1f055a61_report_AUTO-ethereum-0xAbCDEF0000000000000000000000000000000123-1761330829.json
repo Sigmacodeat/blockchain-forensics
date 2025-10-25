@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "AUTO-ethereum-0xAbCDEF0000000000000000000000000000000123-1761330829",
+    "title": "Auto Investigate 0xAbCDEF0000000000000000000000000000000123",
+    "description": "Chain=ethereum Depth=2 Settings={'report': False}",
+    "lead_investigator": "auto",
+    "status": "active",
+    "created_at": "2025-10-24T18:33:49.280684"
+  },
+  "entities": [],
+  "evidence": [],
+  "format": "json",
+  "prev_checksum_sha256": "44bcd9dc6aa2867a1f9462a7b77f7e4fbe003f477de84a9abf0de0b870a1392a",
+  "checksum_sha256": "4090bafb8844bac3b148d58885b0fb4ce899d35809a9f702d2960ee7e1da6487"
+}

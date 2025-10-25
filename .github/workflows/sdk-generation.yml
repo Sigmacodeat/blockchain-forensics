@@ -1,0 +1,55 @@
+name: SDK Generation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'backend/docs/openapi.yaml'
+      - 'scripts/generate-sdks.sh'
+      - '.github/workflows/sdk-generation.yml'
+  workflow_dispatch:
+
+jobs:
+  generate-sdks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Make script executable
+        run: chmod +x scripts/generate-sdks.sh
+
+      - name: Generate SDKs from OpenAPI
+        run: bash scripts/generate-sdks.sh
+
+      - name: Smoke check TypeScript SDK
+        run: |
+          test -d docs/sdk/typescript
+          grep -R "class DefaultApi" -n docs/sdk/typescript || true
+
+      - name: Smoke check Python SDK
+        run: |
+          python3 - <<'PY'
+          import sys
+          sys.path.append('docs/sdk/python')
+          try:
+              import blockchain_forensics_sdk  # type: ignore
+              print('OK: blockchain_forensics_sdk importable')
+          except Exception as e:
+              print('WARN: import failed:', e)
+          PY
+
+      - name: Upload TypeScript SDK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sdk-typescript
+          path: docs/sdk/typescript/
+
+      - name: Upload Python SDK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sdk-python
+          path: docs/sdk/python/

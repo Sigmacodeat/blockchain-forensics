@@ -1,0 +1,13 @@
+{
+  "txid": "prev_tx_1",
+  "vout": [
+    {
+      "n": 0,
+      "value": 1.0,
+      "scriptPubKey": {
+        "type": "pubkeyhash",
+        "addresses": ["1ChangeAddress456"]
+      }
+    }
+  ]
+}

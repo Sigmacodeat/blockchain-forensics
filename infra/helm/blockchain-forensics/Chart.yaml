@@ -1,0 +1,218 @@
+apiVersion: v2
+name: blockchain-forensics
+description: A Helm chart for Blockchain Forensics Platform
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+
+# Dependencies
+dependencies:
+  - name: prometheus
+    version: "15.0.0"
+    repository: "https://prometheus-community.github.io/helm-charts"
+    condition: prometheus.enabled
+  - name: grafana
+    version: "6.0.0"
+    repository: "https://grafana.github.io/helm-charts"
+    condition: grafana.enabled
+  - name: loki
+    version: "2.0.0"
+    repository: "https://grafana.github.io/helm-charts"
+    condition: loki.enabled
+
+# Global configuration
+global:
+  imageRegistry: ""
+  imagePullSecrets: []
+  storageClass: ""
+
+# Backend configuration
+backend:
+  enabled: true
+  image:
+    registry: docker.io
+    repository: forensics/backend
+    tag: "latest"
+    pullPolicy: IfNotPresent
+
+  replicaCount: 3
+
+  resources:
+    requests:
+      memory: "512Mi"
+      cpu: "250m"
+    limits:
+      memory: "1Gi"
+      cpu: "500m"
+
+  config:
+    debug: false
+    logLevel: "INFO"
+    corsOrigins: "https://your-domain.com"
+
+  secrets:
+    neo4jPassword: ""
+    postgresPassword: ""
+    redisPassword: ""
+    jwtSecret: ""
+
+# Frontend configuration
+frontend:
+  enabled: true
+  image:
+    registry: docker.io
+    repository: forensics/frontend
+    tag: "latest"
+    pullPolicy: IfNotPresent
+
+  replicaCount: 2
+
+  resources:
+    requests:
+      memory: "128Mi"
+      cpu: "100m"
+    limits:
+      memory: "256Mi"
+      cpu: "200m"
+
+  config:
+    apiUrl: "https://your-api-domain.com"
+
+# Database configuration
+databases:
+  neo4j:
+    enabled: true
+    image: neo4j:5.11-enterprise
+    auth:
+      username: "neo4j"
+      password: ""
+    resources:
+      requests:
+        memory: "2Gi"
+        cpu: "500m"
+      limits:
+        memory: "4Gi"
+        cpu: "1"
+
+  postgres:
+    enabled: true
+    image: timescale/timescaledb:latest-pg15
+    auth:
+      username: "forensics"
+      password: ""
+      database: "blockchain_forensics"
+    resources:
+      requests:
+        memory: "1Gi"
+        cpu: "500m"
+      limits:
+        memory: "2Gi"
+        cpu: "1"
+
+  redis:
+    enabled: true
+    image: redis:7-alpine
+    auth:
+      password: ""
+    resources:
+      requests:
+        memory: "256Mi"
+        cpu: "100m"
+      limits:
+        memory: "512Mi"
+        cpu: "200m"
+
+# Monitoring configuration
+monitoring:
+  prometheus:
+    enabled: true
+    retention: "200h"
+    resources:
+      requests:
+        memory: "1Gi"
+        cpu: "500m"
+      limits:
+        memory: "2Gi"
+        cpu: "1"
+
+  grafana:
+    enabled: true
+    adminPassword: "admin"
+    resources:
+      requests:
+        memory: "512Mi"
+        cpu: "250m"
+      limits:
+        memory: "1Gi"
+        cpu: "500m"
+
+  loki:
+    enabled: true
+    resources:
+      requests:
+        memory: "512Mi"
+        cpu: "250m"
+      limits:
+        memory: "1Gi"
+        cpu: "500m"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  hosts:
+    - host: your-domain.com
+      paths:
+        - path: /api/(.*)
+          pathType: Prefix
+          backend:
+            service:
+              name: forensics-backend
+              port:
+                number: 80
+        - path: /(.*)
+          pathType: Prefix
+          backend:
+            service:
+              name: forensics-frontend
+              port:
+                number: 80
+  tls:
+    - secretName: forensics-tls
+      hosts:
+        - your-domain.com
+
+# Horizontal Pod Autoscaler
+autoscaling:
+  enabled: true
+  backend:
+    minReplicas: 2
+    maxReplicas: 10
+    targetCPUUtilizationPercentage: 70
+    targetMemoryUtilizationPercentage: 80
+
+# Network Policies
+networkPolicies:
+  enabled: true
+  allowFromNamespaces: []
+
+# Persistent Volumes
+persistence:
+  neo4j:
+    size: "50Gi"
+    storageClass: ""
+  postgres:
+    size: "100Gi"
+    storageClass: ""
+  redis:
+    size: "10Gi"
+    storageClass: ""
+
+# Security Context
+securityContext:
+  runAsUser: 1000
+  runAsGroup: 1000
+  fsGroup: 1000

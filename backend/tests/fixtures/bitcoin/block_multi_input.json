@@ -1,0 +1,43 @@
+{
+  "height": 700002,
+  "hash": "0000000000000000000c7f8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f",
+  "time": 1631234767,
+  "tx": [
+    {
+      "txid": "tx_multi_input",
+      "size": 400,
+      "version": 2,
+      "locktime": 0,
+      "vin": [
+        {
+          "txid": "mi_prev_tx_1",
+          "vout": 0,
+          "sequence": 4294967295
+        },
+        {
+          "txid": "mi_prev_tx_2",
+          "vout": 0,
+          "sequence": 4294967295
+        }
+      ],
+      "vout": [
+        {
+          "n": 0,
+          "value": 0.8,
+          "scriptPubKey": {
+            "type": "pubkeyhash",
+            "addresses": ["1Destination"]
+          }
+        },
+        {
+          "n": 1,
+          "value": 0.195,
+          "scriptPubKey": {
+            "type": "pubkeyhash",
+            "addresses": ["1CommonOwner"]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "number": 150000000,
+  "hash": "0xarbblockhash",
+  "parentHash": "0xarbparent",
+  "timestamp": 1680000000,
+  "transactions": [
+    {
+      "blockHash": "0xarbblockhash",
+      "blockNumber": 150000000,
+      "from": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "gas": 21000,
+      "gasPrice": 20000000000,
+      "hash": "0xarbtxhash",
+      "input": "0x1234",
+      "nonce": "0x1",
+      "to": "0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef",
+      "transactionIndex": 0,
+      "value": 0
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+name: Monitoring and Agent Tools CI
+
+on:
+  push:
+    paths:
+      - 'monitoring/**'
+      - 'backend/app/api/v1/agent.py'
+      - 'backend/app/ai_agents/**'
+      - 'backend/tests/**'
+      - '.github/workflows/monitoring-validate.yml'
+  pull_request:
+    paths:
+      - 'monitoring/**'
+      - 'backend/app/api/v1/agent.py'
+      - 'backend/app/ai_agents/**'
+      - 'backend/tests/**'
+
+jobs:
+  promtool-validate:
+    name: Validate Prometheus config and rules
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check prometheus.yml
+        run: |
+          docker run --rm -v "$PWD/monitoring:/etc/prometheus" prom/prometheus:v2.48.0 \
+            promtool check config /etc/prometheus/prometheus.yml
+
+      - name: Check alerting and recording rules
+        run: |
+          docker run --rm -v "$PWD/monitoring:/etc/prometheus" prom/prometheus:v2.48.0 \
+            promtool check rules /etc/prometheus/alerts.yml /etc/prometheus/recording-rules.yml
+
+  agent-tools-tests:
+    name: Run Agent Tools API tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install -U pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f dev-requirements.txt ]; then pip install -r dev-requirements.txt; fi
+
+      - name: Run fast tests for Agent Tools
+        env:
+          SECRET_KEY: test-secret
+          ENABLE_AI_AGENTS: 'true'
+        run: |
+          source .venv/bin/activate
+          pytest -q tests/test_agent_tools_api.py tests/test_agent_health_capabilities_api.py

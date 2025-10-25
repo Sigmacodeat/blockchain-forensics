@@ -1,0 +1,47 @@
+name: Lighthouse i18n SEO Audits
+
+on:
+  schedule:
+    - cron: '0 3 * * 1' # weekly
+  workflow_dispatch: {}
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: URLs (matrix)
+        id: urls
+        run: |
+          echo "langs=en es ar ja" >> $GITHUB_OUTPUT
+      - name: Audit en
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            https://forensics.ai/en/chatbot
+          configPath: ./.github/workflows/lighthouse-config.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+      - name: Audit es
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            https://forensics.ai/es/chatbot
+          configPath: ./.github/workflows/lighthouse-config.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+      - name: Audit ar
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            https://forensics.ai/ar/chatbot
+          configPath: ./.github/workflows/lighthouse-config.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+      - name: Audit ja
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            https://forensics.ai/ja/chatbot
+          configPath: ./.github/workflows/lighthouse-config.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true

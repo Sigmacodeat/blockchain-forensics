@@ -1,0 +1,10 @@
+{
+  "address": "0xdead00000000000000000000000000000000beef",
+  "risk_score": 0.1,
+  "risk_level": "low",
+  "factors": [
+    "No significant risk indicators"
+  ],
+  "confidence": 0.7,
+  "model": "heuristic"
+}

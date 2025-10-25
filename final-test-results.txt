@@ -1,0 +1,6 @@
+🧪 Testing Critical User Journey - Lawyer Use Case
+==================================================
+
+Step 1: Check Backend Health
+-----------------------------
+Testing: Backend Health... 

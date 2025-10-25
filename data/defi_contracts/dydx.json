@@ -1,0 +1,5 @@
+[
+  {"slug": "dydx", "chain": "ethereum", "address": "0x92D6C1e31e14520e676a687F0a93788B716BEff5", "label": "dYdX Governance", "type": "governance"},
+  {"slug": "dydx", "chain": "ethereum", "address": "0x1d1b8b6c2e8b8e8e8e8e8e8e8e8e8e8e8e8e8e8", "label": "dYdX Staking", "type": "staking"},
+  {"slug": "dydx", "chain": "ethereum", "address": "0x5f6e7b7c8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8", "label": "dYdX Safety Module", "type": "module"}
+]

@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "デモをリクエスト",
+      "pricing": "価格を見る",
+      "subtitle": "今すぐ無料デモで始めるか、チームに連絡してください",
+      "title": "今すぐ始める"
+    },
+    "header": {
+      "badge": "About",
+      "subtitle": "私たちは、法執行機関、VASP、及び金融機関が暗号資産犯罪と戦うためのリーディングエンタープライズプラットフォームを開発しています。",
+      "title": "ブロックチェーンフォレンジックの未来"
+    },
+    "mission": {
+      "desc": "私たちはブロックチェーン取引を透明かつ追跡可能にします。私たちの使命は、暗号資産犯罪と闘い、合法的な市場参加者にコンプライアンス要件を満たし、リスクを軽減するためのツールを提供することです。",
+      "title": "私たちの使命"
+    },
+    "seo": {
+      "description": "ブロックチェーンフォレンジックのためのリーディングエンタープライズプラットフォームを構築：コンプライアンス、調査、及びグローバルなインテリジェンス。",
+      "title": "私たちについて | SIGMACODE ブロックチェーンフォレンジック"
+    },
+    "stats": {
+      "badge": "数字で見る",
+      "blockchains": "ブロックチェーン",
+      "enterprise_customers": "エンタープライズ顧客",
+      "recovered_assets": "回収された資産",
+      "sla_guaranteed": "SLAによる保証",
+      "supported": "サポート済み",
+      "supported_by_tech": "当社技術によるサポート",
+      "title": "私たちの影響",
+      "uptime": "稼働時間",
+      "worldwide": "世界中"
+    },
+    "team": {
+      "badge": "専門知識",
+      "compliance": {
+        "desc": "AML/CFT及び国際制裁に関する規制の専門家",
+        "h1": "元規制当局者",
+        "h2": "AMLスペシャリスト",
+        "h3": "法務アドバイザー",
+        "title": "コンプライアンス＆法務"
+      },
+      "forensics": {
+        "desc": "暗号資産犯罪の調査に豊富な経験を持つ元法執行機関メンバー",
+        "h1": "警察庁/Europol出身者",
+        "h2": "ダークネット摘発",
+        "h3": "資産回収",
+        "title": "フォレンジック専門家"
+      },
+      "subtitle": "ブロックチェーンフォレンジック、法執行機関、フィンテック、及び機械学習の専門家",
+      "tech": {
+        "desc": "ブロックチェーンに特化したトップテック企業出身のエンジニア",
+        "h1": "元FAANG",
+        "h2": "ブロックチェーンコア開発者",
+        "h3": "セキュリティ専門家",
+        "title": "技術スペシャリスト"
+      },
+      "title": "私たちのチーム"
+    },
+    "trust": {
+      "badge": "信頼",
+      "ce": {
+        "desc": "AML及びトランザクション監視のためのトップ10の取引所",
+        "title": "暗号資産取引所"
+      },
+      "fi": {
+        "desc": "暗号資産に露出のあるティア1銀行",
+        "title": "銀行＆フィンテック"
+      },
+      "le": {
+        "desc": "警察庁、Interpol、各都道府県警察本部",
+        "title": "法執行機関"
+      },
+      "reg": {
+        "desc": "市場監視のための金融規制当局",
+        "title": "規制当局"
+      },
+      "subtitle": "世界をリードする組織が当社の技術に信頼を寄せています",
+      "title": "誰が私たちを信頼しているか"
+    },
+    "values": {
+      "badge": "私たちの価値観",
+      "compliance": {
+        "desc": "GDPR、eIDAS、OFACに準拠。規制要件を理解し、統合します。",
+        "title": "コンプライアンス最優先"
+      },
+      "customer": {
+        "desc": "法執行機関及び業界との緊密な協力。お客様の要件が私たちのロードマップを形作ります。",
+        "title": "顧客重視"
+      },
+      "global": {
+        "desc": "100以上のブロックチェーン、多言語サポート、及び国際制裁リストをカバー。",
+        "title": "グローバルリーチ"
+      },
+      "innovation": {
+        "desc": "最先端技術：AI/ML、グラフ分析、及びリアルタイム処理で最適な結果を。",
+        "title": "イノベーション"
+      },
+      "team": {
+        "desc": "フォレンジック専門家、開発者、及びコンプライアンススペシャリストの学際的チーム。",
+        "title": "チームワーク"
+      },
+      "title": "私たちの原動力",
+      "trust": {
+        "desc": "SOC2/ISO27001認証によるエンタープライズ級のセキュリティ。あなたのデータは安全です。",
+        "title": "信頼＆セキュリティ"
+      }
+    },
+    "vision": {
+      "desc": "ブロックチェーン技術がその潜在能力を最大限に発揮できる世界—透明、安全、コンプライアンスを備えた世界。私たちは、デジタル資産が犯罪を助長せずに主流になる未来のインフラを構築しています。",
+      "title": "私たちのビジョン"
+    }
+  },
+  "accessibility": {
+    "activate": "有効化",
+    "close_dialog": "ダイアログを閉じる",
+    "font_size": "フォントサイズ",
+    "font_size_large": "大きいフォントサイズ",
+    "font_size_normal": "通常のフォントサイズ",
+    "font_size_xlarge": "特大フォントサイズ",
+    "high_contrast_detected": "高コントラストが検出されました",
+    "keyboard_shortcuts": "キーボードショートカット",
+    "navigate_backward": "後ろに移動",
+    "navigate_forward": "前に移動",
+    "no_system_preferences": "特別なシステム設定が検出されませんでした",
+    "reduced_motion_detected": "動きの削減が検出されました",
+    "settings": "アクセシビリティ設定",
+    "skip_to_content": "コンテンツにスキップ",
+    "system_preferences": "システム設定"
+  },
+  "address_analysis": {
+    "title": "アドレス分析",
+    "wip_desc": "作業中の説明",
+    "wip_title": "アドレス作業中"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "AIエージェント",
+      "app_name": "アプリ名",
+      "cross_chain": "クロスチェーン",
+      "max_trace_depth": "最大追跡深度",
+      "ml_clustering": "MLクラスタリング",
+      "title": "設定",
+      "version": "バージョン"
+    },
+    "disabled": "✗ 無効",
+    "enabled": "✓ 有効",
+    "error": "エラー",
+    "health": {
+      "connected": "✓ 接続済み",
+      "disconnected": "✗ 切断",
+      "error": "ヘルスステータスの読み込みに失敗",
+      "title": "データベースの健全性"
+    },
+    "ingestion": {
+      "address": {
+        "help": "Ethereum RPCからトランザクションを取得",
+        "ingesting": "取り込み中...",
+        "placeholder": "0x...",
+        "start": "取り込み開始",
+        "success": "✓ バックグラウンドで取り込み開始",
+        "title": "アドレスデータの取り込み"
+      },
+      "block": {
+        "help": "ブロックからすべてのトランザクションをインポート",
+        "ingesting": "取り込み中...",
+        "placeholder": "ブロック番号",
+        "start": "ブロックインポート開始",
+        "success": "✓ ブロック取り込み開始",
+        "title": "ブロックデータの取り込み"
+      }
+    },
+    "stats": {
+      "db_size": "データベースサイズ",
+      "title": "システム統計",
+      "total_addresses": "総アドレス数",
+      "total_traces": "総追跡数",
+      "total_transactions": "総トランザクション数"
+    },
+    "subtitle": "監視、設定、及びデータ管理",
+    "tabs": {
+      "config": "設定",
+      "ingestion": "データ取り込み",
+      "overview": "概要",
+      "users": "ユーザー管理"
+    },
+    "title": "システム管理"
+  },
+  "agent": {
+    "cancel": "キャンセル",
+    "error": "エラー",
+    "error_unknown": "不明なエラー",
+    "examples": {
+      "1": "例1",
+      "2": "例2",
+      "3": "例3",
+      "title": "例"
+    },
+    "instructions": "指示",
+    "loading": "読み込み中...",
+    "placeholder": "入力プレースホルダー",
+    "retry": "再試行",
+    "send": "送信",
+    "subtitle": "エージェントサブタイトル",
+    "title": "エージェントタイトル",
+    "welcome": "ようこそ"
+  },
+  "auth": {
+    "fields": {
+      "email": "メール",
+      "organization_opt": "組織（任意）",
+      "password": "パスワード",
+      "password_confirm": "パスワード確認",
+      "username": "ユーザー名"
+    },
+    "forgot": {
+      "back_to_login": "ログインに戻る",
+      "dev_note": "メールサービスが設定されていないため、リセットリンクはサーバーログを確認してください。",
+      "dev_note_label": "注（開発モード）：",
+      "error": "送信エラー",
+      "info_sent": "このメールでアカウントが存在する場合、リセットリンクが送信されました。",
+      "sent": "リセットリンクを送信しました！",
+      "submit": "リセットリンクを送信",
+      "submitting": "送信中...",
+      "subtitle": "ご心配なく！メールを入力してください、リセットリンクをお送りします。",
+      "title": "パスワードを忘れましたか？",
+      "title_sent": "メール送信済み！"
+    },
+    "login": {
+      "failed": "ログインに失敗しました",
+      "fill_all_fields": "すべてのフィールドを入力してください",
+      "forgot_password": "パスワードを忘れましたか？",
+      "google": "Googleでサインイン",
+      "google_retry": "Googleでのサインインを再試行",
+      "no_account": "アカウントがありませんか？",
+      "oauth_failed": "OAuthログインに失敗しました。もう一度お試しください。",
+      "oauth_processing": "OAuthログインを処理中…",
+      "or": "または",
+      "register_now": "今すぐ登録",
+      "remember_me": "ログイン状態を保持",
+      "submit": "サインイン",
+      "submitting": "ログイン中...",
+      "subtitle": "続行するにはサインインしてください"
+    },
+    "placeholders": {
+      "email": "analyst@example.com",
+      "organization": "FBI、Chainalysisなど",
+      "password": "••••••••",
+      "username": "john_analyst"
+    },
+    "register": {
+      "accept": "同意します",
+      "already": "すでに登録済みですか？",
+      "and": "及び",
+      "failed": "登録に失敗しました",
+      "fill_all_fields": "すべての必須フィールドを入力してください",
+      "google": "Googleで登録",
+      "login_now": "今すぐサインイン",
+      "password_hint": "最低8文字",
+      "password_too_short": "パスワードは8文字以上である必要があります",
+      "passwords_no_match": "パスワードが一致しません",
+      "submit": "登録",
+      "submitting": "登録中...",
+      "subtitle": "フォレンジック分析を開始",
+      "title": "アカウントを作成"
+    }
+  },
+  "common": {
+    "access_denied": "アクセス拒否（管理者のみ）",
+    "account": "アカウント",
+    "back": "戻る",
+    "close": "閉じる",
+    "info": "情報",
+    "language": "言語",
+    "loading": "読み込み中...",
+    "next": "次へ",
+    "page": "ページ",
+    "prev": "前へ",
+    "refresh": "更新",
+    "search": "検索",
+    "success": "成功",
+    "theme": "テーマ",
+    "view": "表示",
+    "wip": {
+      "title": "近日公開",
+      "desc": "この機能は現在開発中です。",
+      "cta": "詳細"
+    },
+    "start_free": "無料で始める",
+    "error": "エラー",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "create": "作成",
+    "finish": "完了",
+    "open": "開く",
+    "yes": "はい",
+    "no": "いいえ",
+    "confirm": "確認",
+    "welcome": "ようこそ",
+    "dashboard": "ダッシュボード",
+    "settings": "設定",
+    "profile": "プロフィール",
+    "logout": "ログアウト",
+    "login": "ログイン",
+    "register": "登録",
+    "email": "メール",
+    "password": "パスワード",
+    "username": "ユーザー名",
+    "documents": "ドキュメント",
+    "recent": "Recently used",
+    "no_results": "No results"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "最小重大度",
+      "refresh": "更新",
+      "title": "コントロール",
+      "window": "ウィンドウ",
+      "window_15m": "15分",
+      "window_1h": "1時間",
+      "window_24h": "24時間",
+      "window_2h": "2時間",
+      "window_30m": "30分",
+      "window_5m": "5分"
+    },
+    "header": {
+      "subtitle": "相関サブタイトル",
+      "title": "相関タイトル"
+    },
+    "overview": {
+      "active_rules": "アクティブなルール",
+      "analyzed": "分析済み",
+      "empty": "空",
+      "found": "発見",
+      "loading": "読み込み中...",
+      "min_sev": "最小重大度",
+      "rate": "率",
+      "title": "相関概要",
+      "window": "ウィンドウ"
+    },
+    "rules": {
+      "empty": "ルールなし",
+      "footer": "ルールフッター",
+      "loading": "ルールを読み込み中...",
+      "min": "最小",
+      "minutes": "分",
+      "required_patterns": "必須パターン",
+      "title": "相関ルール",
+      "window": "ルールウィンドウ"
+    },
+    "sev": {
+      "critical": "クリティカル",
+      "high": "高",
+      "low": "低",
+      "medium": "中"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "理由別",
+        "by_type": "タイプ別",
+        "title": "抑制の内訳"
+      },
+      "rate": "抑制率",
+      "title": "抑制",
+      "top_entity": "トップエンティティ",
+      "total": "合計"
+    },
+    "test": {
+      "add_alert": "アラートを追加",
+      "alerts_label": "アラートラベル",
+      "match": "一致",
+      "no_alerts": "アラートなし",
+      "no_match": "一致なし",
+      "pick_rule": "ルールを選択",
+      "pick_rule_ph": "ルール選択",
+      "result": "結果",
+      "run": "実行",
+      "testing": "テスト中",
+      "title": "相関テスト"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "コピー元",
+      "copy_mint": "ミントをコピー",
+      "export_csv": "CSVエクスポート",
+      "export_csv_page": "CSVページエクスポート",
+      "fetch": "取得"
+    },
+    "bitcoin": {
+      "block_title": "ブロックアドレス",
+      "compute": "計算",
+      "decoded": "デコード済み",
+      "edges_title": "エッジアドレス",
+      "height_ph": "ブロック高",
+      "ingest_edges": "エッジの取り込み",
+      "method_heuristic": "ヒューリスティックメソッド",
+      "method_proportional": "比例メソッド",
+      "normalized": "正規化",
+      "tx_title": "トランザクションアドレス",
+      "txid_ph": "トランザクションID"
+    },
+    "compliance": {
+      "add_watch": "ウォッチリストに追加",
+      "address_ph": "アドレス",
+      "chain_ph": "チェーン",
+      "entries": "エントリー",
+      "error": "エラー",
+      "filter_address_ph": "アドレスフィルター",
+      "filter_chain_ph": "チェーンフィルター",
+      "list_watch": "ウォッチリスト",
+      "screen": "スクリーン",
+      "title": "コンプライアンス",
+      "watchlist": "ウォッチリスト"
+    },
+    "ethereum": {
+      "canonical": "カノニカル",
+      "copy_hash": "ハッシュをコピー",
+      "decoded": "デコード済み",
+      "error": "エラー",
+      "open_etherscan": "Etherscanを開く",
+      "tx_hash_ph": "トランザクションハッシュ",
+      "tx_title": "トランザクションアドレス"
+    },
+    "ingest": {
+      "canonical_notice": "カノニカル通知",
+      "edges_notice": "エッジ通知",
+      "loading": "読み込み中..."
+    },
+    "labels": {
+      "add": "追加",
+      "address_ph": "アドレス",
+      "category_ph": "カテゴリー",
+      "chain_ph": "チェーン",
+      "error": "エラー",
+      "label_ph": "ラベル",
+      "lookup": "検索",
+      "title": "ラベル"
+    },
+    "monitoring": {
+      "fetch": "取得",
+      "key_counters": "キーカウンター",
+      "title": "監視"
+    },
+    "rpc_unavailable": "RPC利用不可",
+    "solana": {
+      "canonical_error": "カノニカルエラー",
+      "canonical_title": "カノニカルアドレス",
+      "error": "エラー",
+      "ingest_canonical": "カノニカル取り込み",
+      "signature_ph": "署名",
+      "title": "Solanaアドレス",
+      "transfers": "転送"
+    },
+    "table": {
+      "actions": "アクション",
+      "address": "アドレス",
+      "amount_ui": "金額",
+      "chain": "チェーン",
+      "created": "作成日",
+      "decimals": "小数点",
+      "fee": "手数料",
+      "from": "送信元",
+      "from_vout": "Voutから",
+      "method": "メソッド",
+      "mint": "ミント",
+      "reason": "理由",
+      "to": "送信先",
+      "to_vout": "Voutへ",
+      "value_btc": "BTC価値"
+    },
+    "totals": {
+      "page_sum": "ページ合計",
+      "page_sum_btc": "ページ合計BTC",
+      "total_amount": "総金額",
+      "total_value_btc": "総BTC価値"
+    }
+  },
+  "dashboard": {
+    "actions": "アクション",
+    "active": "アクティブ",
+    "administration": "管理",
+    "alert_aging": "アラート経過",
+    "alert_engine": "アラートエンジン",
+    "alert_monitoring": "アラート監視",
+    "alert_overview": "アラート概要",
+    "analyst_throughput": "アナリストスループット",
+    "audit_kpis": "監査KPI",
+    "backlog": "バックログ",
+    "bucket_placeholder": "24時間、3日、7日、7日以上",
+    "buckets": "バケット",
+    "case_management": "ケース管理",
+    "connected": "接続済み",
+    "correlation_analysis": "相関分析",
+    "database": "データベース",
+    "database_response": "データベース応答",
+    "days": "日",
+    "disconnected": "切断",
+    "failed_actions": "失敗したアクション",
+    "false_positive_rate": "偽陽性率",
+    "fp": "偽陽性",
+    "graph_db": "グラフデータベース",
+    "graph_explorer": "グラフエクスプローラー",
+    "healthy": "健全",
+    "inactive": "非アクティブ",
+    "issues": "問題",
+    "last_24h": "過去24時間",
+    "last_update": "最終更新",
+    "mttr": "MTTR",
+    "open_alerts": "オープンアラート",
+    "open_cases": "オープンケース",
+    "performance": "パフォーマンス",
+    "priority_distribution": "優先度分布",
+    "quick_access": "クイックアクセス",
+    "recent_alerts": "最近のアラート",
+    "response_time": "応答時間",
+    "rule_effectiveness": "ルール有効性",
+    "sanctions_hits": "制裁ヒット",
+    "service_status": "サービスステータス",
+    "severity_breakdown": "重大度内訳",
+    "sla_breach_rate": "SLA違反率",
+    "sla_hours": "SLA（時間）",
+    "status_breakdown": "ステータス内訳",
+    "success_rate": "成功率",
+    "suppression_rate": "抑制率",
+    "system_details": "システム詳細",
+    "system_load": "システム負荷",
+    "system_overview": "システム概要",
+    "system_status": "システムステータス",
+    "title": "SIGMACODE ブロックチェーンフォレンジックダッシュボード",
+    "total_alerts": "総アラート数",
+    "total_cases": "総ケース数",
+    "total_logs": "総ログ数",
+    "transaction_tracing": "トランザクション追跡",
+    "uptime": "稼働時間",
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "recent_activity": "Recent Activity",
+    "quick_actions": "Quick Actions",
+    "statistics": "Statistics",
+    "notifications": "Notifications",
+    "hero": {
+      "welcome": "おかえりなさい",
+      "subtitle": "今日の調査の進捗状況です。"
+    },
+    "quickActions": {
+      "title": "クイックアクション",
+      "newTrace": "新規追跡",
+      "newCase": "新規ケース",
+      "riskCheck": "リスクチェック",
+      "aiAgent": "AIエージェント"
+    },
+    "stats": {
+      "cases": "アクティブなケース",
+      "traces": "今日のトレース",
+      "alerts": "アラート",
+      "uptime": "稼働時間"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "分析"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "LangChain及びGPT-4統合による自律エージェント",
+        "title": "AIエージェント"
+      },
+      "badge": "AI＆機械学習",
+      "desc": "異常検知、リスクスコアリング、及び24/7調査のための自律AIエージェントのための機械学習モデル。",
+      "pattern": {
+        "desc": "詐欺パターンの検出及び行動分析",
+        "title": "パターン認識"
+      },
+      "risk": {
+        "desc": "アドレス及びトランザクションのMLベースのリスク評価",
+        "title": "リスクスコアリング"
+      },
+      "smart_contract": {
+        "desc": "バイトコードの類似性及び脆弱性の検出",
+        "title": "スマートコントラクト分析"
+      },
+      "title": "AI駆動のアナリティクス"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "異常なトランザクションパターンのMLベースの検出",
+        "title": "異常検知"
+      },
+      "badge": "リアルタイム監視",
+      "custom_rules": {
+        "desc": "ルールDSL及びポリシーエンジンによるカスタムアラートルール",
+        "title": "カスタムルール"
+      },
+      "desc": "機械学習を使用した15以上の設定可能なアラートルール。制裁、ミキシング、高額送金、及び異常に関する通知を受け取ります。",
+      "mixing": {
+        "desc": "Tornado Cash、Blender.io、その他のミキシングサービス",
+        "title": "ミキシング検出"
+      },
+      "sanctions": {
+        "desc": "OFAC/UN/EU/UK制裁リスト、毎日更新",
+        "title": "制裁スクリーニング"
+      },
+      "title": "インテリジェントアラートエンジン"
+    },
+    "case": {
+      "badge": "調査ワークフロー",
+      "desc": "証拠のチェーン・オブ・カストディ、eIDAS署名、及び裁判で認められるレポートを備えた包括的な調査管理。",
+      "eidas": {
+        "desc": "EU基準による適格電子署名",
+        "title": "eIDAS署名"
+      },
+      "evidence": {
+        "desc": "裁判で認められる証拠のためのシームレスなチェーン・オブ・カストディ",
+        "title": "証拠チェーン"
+      },
+      "export": {
+        "desc": "タイムスタンプ及び監査証跡付きのPDF/Excelエクスポート",
+        "title": "エクスポート＆レポート"
+      },
+      "title": "ケース管理＆証拠チェーン",
+      "tracking": {
+        "desc": "ワークフローステータス付きの構造化されたケース管理",
+        "title": "ケース追跡"
+      }
+    },
+    "cta": {
+      "demo": "デモをリクエスト",
+      "pricing": "価格を見る",
+      "subtitle": "今すぐ無料デモで開始",
+      "title": "フルスイートに準備はできていますか？",
+      "start": "無料で始める"
+    },
+    "graph": {
+      "badge": "グラフインテリジェンス",
+      "clustering": {
+        "desc": "関連するウォレットの自動クラスタリング",
+        "title": "ウォレットクラスタリング"
+      },
+      "community": {
+        "desc": "共通の関心を持つウォレットグループの検出",
+        "title": "コミュニティ検出"
+      },
+      "desc": "エンティティクラスタリング、コミュニティ検出、及びビジュアル調査のためのNeo4jベースのグラフデータベース。",
+      "labels": {
+        "desc": "コミュニティインテリジェンス付きの取引所/VASP/DeFiラベル",
+        "title": "エンティティラベル"
+      },
+      "title": "エンティティ解決＆ネットワーク分析",
+      "visual": {
+        "desc": "複雑な分析のためのインタラクティブなグラフエクスプローラー",
+        "title": "ビジュアル調査"
+      }
+    },
+    "header": {
+      "badge": "完全な機能",
+      "cta_try": "無料で試す",
+      "subtitle": "トランザクション追跡からAI駆動の分析まで—プロの調査のためのすべてのツール",
+      "title": "完全なブロックチェーンフォレンジックスイート"
+    },
+    "security": {
+      "audit": {
+        "desc": "コンプライアンス証明のための包括的な監査証跡",
+        "title": "監査ログ"
+      },
+      "badge": "エンタープライズセキュリティ",
+      "desc": "RBAC、SSO/SAML、監査ログ、及びGDPRコンプライアンスを備えたエンタープライズ級のセキュリティ。",
+      "privacy": {
+        "desc": "個人情報の匿名化によるGDPRコンプライアンス",
+        "title": "データプライバシー"
+      },
+      "rbac": {
+        "desc": "カスタムロール付きのきめ細かいロールベースのアクセス制御",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "SAML 2.0及びOAuth 2.0によるシングルサインオン",
+        "title": "SSO/SAML"
+      },
+      "title": "セキュリティ＆コンプライアンス"
+    },
+    "seo": {
+      "description": "エンタープライズグレードのブロックチェーンフォレンジック：マルチチェーン追跡、AIエージェント、リアルタイムリスクスコアリング、コンプライアンスツール。",
+      "title": "機能 | SIGMACODE ブロックチェーンフォレンジック"
+    },
+    "stats": {
+      "accuracy": "精度",
+      "ai_agents": "AIエージェント",
+      "alert_rules": "アラートルール",
+      "blockchains": "ブロックチェーン",
+      "bridges": "ブリッジプロトコル",
+      "case_templates": "ケーステンプレート",
+      "compliance": "コンプライアンス",
+      "encryption": "暗号化",
+      "entities": "エンティティ",
+      "evidence_types": "証拠タイプ",
+      "false_positives": "偽陽性",
+      "max_depth": "最大追跡深度",
+      "ml_models": "MLモデル",
+      "query_time": "クエリ時間",
+      "relationships": "関係",
+      "response_time": "応答時間",
+      "security_certs": "セキュリティ証明書",
+      "uptime_sla": "稼働時間SLA"
+    },
+    "tracing": {
+      "badge": "トランザクション追跡",
+      "bridge": {
+        "desc": "クロスチェーンブリッジ及びラップされた資産の自動検出",
+        "title": "ブリッジ検出"
+      },
+      "cross_chain": {
+        "desc": "100以上のブロックチェーンをサポート：EVM、UTXO、Solana、Cosmosなど",
+        "title": "クロスチェーン追跡"
+      },
+      "demixing": {
+        "desc": "Tornado Cash、ミキサー、及びプライバシーコインのヒューリスティック分析",
+        "title": "プライバシーコインデミキシング"
+      },
+      "desc": "すべての主要なブロックチェーンにわたるトランザクションの追跡。クロスチェーンブリッジ検出、プライバシーコインデミキシング、及び再帰的前後追跡。",
+      "recursive": {
+        "desc": "設定可能な深度及びフィルターによる前後追跡",
+        "title": "再帰的追跡"
+      },
+      "title": "マルチチェーントランザクションインテリジェンス"
+    },
+    "hero": {
+      "badge": "機能",
+      "title": "エンタープライズグレード ブロックチェーンフォレンジック",
+      "subtitle": "暗号犯罪の調査、コンプライアンスの確保、ビジネスの保護に必要なすべてのツール。"
+    }
+  },
+  "footer": {
+    "blog": "ブログ",
+    "careers": "キャリア",
+    "company": "会社",
+    "contact": "連絡先",
+    "imprint": "インプリント",
+    "legal": "法的情報",
+    "privacy": "プライバシー",
+    "product": "製品",
+    "request_demo": "デモをリクエスト",
+    "rights_reserved": "全権利予約。",
+    "security": "セキュリティ",
+    "tagline": "コンプライアンス及び調査のためのエンタープライズブロックチェーンAI—安全、迅速、裁判で認められる。",
+    "terms": "利用規約"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "アクティブノード",
+      "avg_degree": "平均次数",
+      "density": "ネットワーク密度",
+      "total_edges": "総エッジ数",
+      "total_nodes": "総ノード数"
+    },
+    "centrality": {
+      "taint": "汚染",
+      "title": "中心性分析"
+    },
+    "communities": {
+      "algorithm": "アルゴリズム",
+      "avg_size": "平均サイズ",
+      "avg_taint": "平均汚染",
+      "empty": "クリック",
+      "label_propagation": "ラベル伝播",
+      "loading": "コミュニティ検出中...",
+      "louvain": "ルーバン（モジュラリティ）",
+      "title": "コミュニティ検出",
+      "total": "総コミュニティ数"
+    },
+    "degree": {
+      "title": "次数分布",
+      "x": "次数",
+      "y": "カウント"
+    },
+    "filters": {
+      "cross_chain": "クロスチェーン（ブリッジレイヤー）",
+      "from": "開始（ISO）",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "終了（ISO）",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "高度なネットワーク分析及びパターン検出",
+      "title": "グラフ分析＆ネットワークインテリジェンス"
+    },
+    "hubs": {
+      "in": "入力",
+      "out": "出力",
+      "title": "ネットワークハブ（高次数ノード）",
+      "total": "合計"
+    },
+    "loading": {
+      "stats": "統計を読み込み中..."
+    },
+    "patterns": {
+      "circle_length": "サークル長",
+      "detected": "検出されたサークル",
+      "empty_desc": "これは良い兆候です—明らかなマネーロンダリングサークルは見つかりませんでした",
+      "empty_title": "循環パターン未検出",
+      "high_risk": "高リスク",
+      "hops": "ホップ",
+      "loading": "パターン検出中...",
+      "more_addresses": "さらにアドレス",
+      "risk_score": "リスクスコア",
+      "title": "循環パターン（潜在的マネーロンダリング）",
+      "total": "合計",
+      "total_value": "総価値",
+      "tx_path": "トランザクションパス："
+    },
+    "tabs": {
+      "communities": "コミュニティ検出",
+      "overview": "ネットワーク概要",
+      "patterns": "パターン検出"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "クラスタ",
+      "clustering": "クラスタリング",
+      "pause_timeline": "タイムラインを一時停止",
+      "play_timeline": "タイムラインを再生",
+      "title": "調査者アクション"
+    },
+    "connected": {
+      "taint": "汚染",
+      "title": "接続されたアドレス",
+      "tx": "トランザクション"
+    },
+    "graph": {
+      "connections": "接続",
+      "enter_address": "アドレスを入力",
+      "loading": "読み込み中...",
+      "nodes": "ノード",
+      "title": "グラフ分析"
+    },
+    "header": {
+      "subtitle": "調査者サブタイトル",
+      "title": "調査者タイトル"
+    },
+    "path": {
+      "bridges": "ブリッジ",
+      "hops": "ホップ",
+      "risk_score": "リスクスコア",
+      "title": "パス分析",
+      "total_value": "総価値"
+    },
+    "search": {
+      "explore": "探索",
+      "placeholder": "検索入力プレースホルダー",
+      "title": "検索"
+    },
+    "settings": {
+      "from": "開始",
+      "hops_1": "1ホップ",
+      "hops_2": "2ホップ",
+      "hops_3": "3ホップ",
+      "hops_4": "4ホップ",
+      "hops_5": "5ホップ",
+      "include_bridges": "ブリッジを含める",
+      "max_hops": "最大ホップ",
+      "title": "設定",
+      "to": "終了"
+    },
+    "timeline": {
+      "empty": "空のタイムライン",
+      "events": "イベント",
+      "risk": "リスク",
+      "select_address": "アドレスを選択",
+      "title": "タイムライン",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "今すぐデモをリクエスト",
+      "pricing": "価格を見る"
+    },
+    "cta2": {
+      "demo": "無料デモをリクエスト",
+      "pricing": "価格を見る",
+      "subtitle": "今すぐ無料デモで始め、ブロックチェーンフォレンジックの未来を体験してください",
+      "title": "エンタープライズブロックチェーンインテリジェンスの準備はできていますか？"
+    },
+    "features": {
+      "badge": "機能",
+      "subtitle": "コンプライアンス、調査、及びリスク管理のためのエンタープライズ級ツール",
+      "title": "ブロックチェーンフォレンジックに必要なすべて"
+    },
+    "hero": {
+      "badge": "sigmacode.io · ブロックチェーンフォレンジック",
+      "point1": "100以上のブロックチェーン",
+      "point2": "OFAC/UN/EU制裁",
+      "point3": "リアルタイム監視",
+      "subtitle": "AI駆動のコンプライアンス、調査、及びリスク監視—リアルタイムかつエンタープライズ級。",
+      "title": "エンタープライズブロックチェーンインテリジェンス"
+    },
+    "pricing": {
+      "badge": "価格",
+      "subtitle": "無料からエンタープライズまで—今すぐ開始",
+      "title": "あらゆるビジネスサイズに対応した柔軟なパッケージ",
+      "view_all": "すべての価格を見る"
+    },
+    "seo": {
+      "description": "AI駆動のコンプライアンス、調査、及びリスク監視—リアルタイムかつエンタープライズ級。SIGMACODE ブロックチェーンフォレンジック。",
+      "title": "SIGMACODE | エンタープライズブロックチェーンインテリジェンス"
+    },
+    "tech": {
+      "badge": "技術",
+      "subtitle": "最大のパフォーマンスとセキュリティのためのエンタープライズ級インフラ",
+      "title": "最先端の技術スタック"
+    },
+    "use_cases": {
+      "badge": "ユースケース",
+      "subtitle": "法執行機関からフィンテックまで",
+      "title": "すべてのユースケースに適切なソリューション"
+    }
+  },
+  "layout": {
+    "main_navigation": "メインナビゲーション",
+    "quick_search_title": "クイック検索（Ctrl/⌘+K）",
+    "skip_to_content": "コンテンツにスキップ",
+    "quick_search_placeholder": "クイック検索...",
+    "quick_search_hint": "ヒント：Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "クッキーバナー",
+    "title": "Cookie とプライバシー",
+    "title_short": "Cookie",
+    "description": "当サイトの運営には必須の Cookie を使用しています。任意の分析 Cookie は利用状況の理解と改善に役立ちます。すべての Cookie を許可するか、必要なもののみを許可できます。設定でいつでも変更できます。",
+    "privacy_link": "プライバシーポリシー",
+    "terms_link": "利用規約",
+    "imprint_link": "特定商取引法に基づく表記",
+    "only_necessary": "必須のみ",
+    "accept_all": "すべて許可",
+    "preferences": "設定",
+    "save_preferences": "設定を保存",
+    "manage": "Cookie 設定",
+    "analytics_title": "分析用 Cookie",
+    "analytics_desc": "利用状況を理解しサイトの改善に役立ちます。",
+    "marketing_title": "マーケティング用 Cookie",
+    "marketing_desc": "パーソナライズされたコンテンツやオファーを可能にします。",
+    "all_optional_title": "オプションをすべて有効化",
+    "all_optional_desc": "分析とマーケティングの Cookie を有効化します。"
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "閉じる",
+        "close_title": "アラートを閉じる",
+        "copy_alert_id_title": "アラートIDをコピー",
+        "copy_entity": "エンティティをコピー",
+        "copy_entity_id_title": "エンティティIDをコピー",
+        "copy_id": "IDをコピー",
+        "copy_rule": "ルールをコピー",
+        "copy_rule_id_title": "ルールIDをコピー",
+        "details": "詳細",
+        "details_title": "詳細を表示",
+        "reset": "リセット"
+      },
+      "audit": {
+        "empty": "イベントなし",
+        "title": "監査証跡"
+      },
+      "csv": {
+        "export_all": "CSVエクスポート（すべて）",
+        "export_all_title": "フィルタリングされたすべての行のCSVエクスポート（サーバー）",
+        "export_page": "CSVエクスポート（ページ）",
+        "export_page_title": "ページのCSVエクスポート",
+        "no_filtered_data": "フィルタリングされたデータなし",
+        "no_page_data": "このページにデータなし"
+      },
+      "empty": "アラートが見つかりませんでした",
+      "filters": {
+        "all": "（すべて）",
+        "search_label": "検索（rule_id / entity_id）",
+        "search_placeholder": "検索...",
+        "severity": "重大度",
+        "source": "ソース",
+        "source_persisted": "永続的（KYT）",
+        "source_realtime": "リアルタイム（アラートエンジン）",
+        "status": "ステータス"
+      },
+      "kpi": {
+        "event_time_set": "イベント時間設定（first_seen_at）",
+        "event_time_title": "イベント時間 = first_seen_at",
+        "false_positive": "偽陽性としてマーク",
+        "title": "KPI注釈",
+        "true_positive": "真陽性としてマーク"
+      },
+      "loading": "アラートを読み込み中...",
+      "modal": {
+        "alert_id": "アラートID",
+        "chain": "チェーン",
+        "context": "コンテキスト",
+        "entity": "エンティティ",
+        "rule_id": "ルールID",
+        "severity": "重大度",
+        "title": "アラート詳細"
+      },
+      "pagination": {
+        "next": "次へ",
+        "page": "ページ",
+        "prev": "前へ"
+      },
+      "severity": {
+        "critical": "クリティカル",
+        "high": "高",
+        "low": "低",
+        "medium": "中"
+      },
+      "status": {
+        "assigned": "割り当て済み",
+        "closed": "閉鎖",
+        "open": "オープン",
+        "snoozed": "保留"
+      },
+      "subtitle": "リアルタイムルール及び永続的アラート（KYT）",
+      "table": {
+        "first": "最初",
+        "last": "最後"
+      },
+      "title": "アラート監視",
+      "toasts": {
+        "copy_failed": "コピーに失敗",
+        "disposition_failed": "処分に失敗",
+        "disposition_set": "処分設定",
+        "entity_copied": "エンティティをコピー",
+        "event_time_failed": "イベント時間に失敗",
+        "event_time_set": "イベント時間設定",
+        "export_failed": "サーバーエクスポートに失敗",
+        "export_started": "サーバーエクスポート開始",
+        "id_copied": "IDをコピー",
+        "rule_copied": "ルールをコピー"
+      }
+    }
+  },
+  "navigation": {
+    "about": "会社概要",
+    "analytics": "アナリティクス",
+    "close_menu": "ナビゲーションを閉じる",
+    "dashboard": "ダッシュボード",
+    "features": "機能",
+    "home": "ホーム",
+    "logout": "ログアウト",
+    "open_menu": "ナビゲーションを開く",
+    "pricing": "料金",
+    "settings": "設定",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "更新"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "コア",
+        "title": "CPU使用率"
+      },
+      "db": {
+        "connected": "接続済み",
+        "disconnected": "切断",
+        "response": "応答",
+        "title": "データベース"
+      },
+      "memory": {
+        "available": "利用可能",
+        "title": "メモリ使用率"
+      },
+      "system_status": {
+        "healthy": "健全",
+        "issues": "問題",
+        "title": "システムステータス",
+        "uptime": "稼働時間"
+      }
+    },
+    "common": {
+      "no": "いいえ",
+      "yes": "はい"
+    },
+    "header": {
+      "last_refresh": "最終更新",
+      "subtitle": "システムパフォーマンス、メトリクス、及びSLOの包括的な監視",
+      "title": "パフォーマンス＆可観測性ダッシュボード"
+    },
+    "metrics": {
+      "empty": "メトリクスデータがありません",
+      "loading": "メトリクスを読み込み中...",
+      "max": "最大",
+      "measurements": "測定",
+      "min": "最小",
+      "title": "パフォーマンスメトリクス（1時間）",
+      "trend": "トレンド"
+    },
+    "recent_alerts": {
+      "empty": "最近のアラートなし",
+      "title": "最近のパフォーマンスアラート"
+    },
+    "services": {
+      "active": "アクティブ",
+      "inactive": "非アクティブ",
+      "title": "サービスステータス"
+    },
+    "slo": {
+      "empty": "SLOデータがありません",
+      "loading": "SLOを読み込み中...",
+      "threshold": "閾値",
+      "title": "SLOコンプライアンス",
+      "violations": "違反"
+    },
+    "system_details": {
+      "database": "データベース",
+      "db_connected": "接続済み",
+      "db_type": "タイプ",
+      "debug": "デバッグ",
+      "environment": "環境",
+      "log_level": "ログレベル",
+      "mode": "モード",
+      "platform": "プラットフォーム",
+      "python_version": "Pythonバージョン",
+      "response_time": "応答時間",
+      "system_info": "システム情報",
+      "title": "システム詳細",
+      "version": "バージョン"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "追加のブロックチェーン",
+        "i2": "追加のユーザーシート",
+        "i3": "制裁プレミアム（拡張リスト）",
+        "i4": "高度なエクスポート形式",
+        "i5": "優先サポート",
+        "i6": "ホワイトラベル（エンタープライズ）",
+        "title": "利用可能なアドオン"
+      },
+      "badge": "柔軟な拡張",
+      "overage": {
+        "extra_credits": "追加クレジット",
+        "monthly_cap": "月間上限",
+        "note": "クォータを超えましたか？心配無用—超過分は自動的に請求されます。",
+        "title": "超過料金"
+      },
+      "subtitle": "必要に応じてプランを拡張",
+      "title": "アドオン＆超過"
+    },
+    "card": {
+      "custom": "カスタム",
+      "desc_business": "大規模チーム向け",
+      "desc_community": "ホビースト及びオープンソース向け",
+      "desc_enterprise": "企業及び規制当局向け",
+      "desc_pro": "成長中のビジネス向け",
+      "desc_starter": "小規模チーム向け",
+      "per_month": "月額",
+      "popular": "最も人気",
+      "popular_label": "最も人気",
+      "save_year": "${{amount}}/年節約"
+    },
+    "cta": {
+      "active_plan": "✓ アクティブプラン",
+      "contact_sales": "セールスに連絡",
+      "demo": "デモをリクエスト",
+      "more_about": "私たちについて詳しく",
+      "saving": "保存中…",
+      "set_tenant_plan": "テナントプランとして設定",
+      "start_now": "今すぐ開始",
+      "subscribe": "今すぐサブスクライブ",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "現在のプラン",
+    "enterprise": {
+      "card_desc": "企業及び規制当局向け",
+      "subtitle": "カスタム価格、SLA、統合、オンプレミス/VPC",
+      "title": "金融機関及び規制当局向け"
+    },
+    "faq": {
+      "subtitle": "パーソナルデモのためにセールスチームにご連絡ください",
+      "title": "まだ質問がありますか？"
+    },
+    "features": {
+      "api": "API",
+      "blockchains": "ブロックチェーン",
+      "cases": "ケース",
+      "credits": "クレジット/月",
+      "priority": "優先度",
+      "users": "ユーザー"
+    },
+    "header": {
+      "badge": "柔軟な価格",
+      "subtitle": "無料のコミュニティツールからホワイトラベルのエンタープライズまで。今日から始めて成長に合わせてスケール。",
+      "title": "すべてのチームに最適なプラン"
+    },
+    "included": {
+      "analytics": {
+        "i1": "AIエージェント",
+        "i2": "グラフ分析",
+        "i3": "リスクスコアリング",
+        "i4": "MLモデル",
+        "title": "高度な分析"
+      },
+      "badge": "何が含まれていますか？",
+      "performance": {
+        "i1": "リアルタイムアラート",
+        "i2": "APIアクセス",
+        "i3": "優先キュー",
+        "i4": "99.9%稼働率",
+        "title": "パフォーマンス"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "監査ログ",
+        "i4": "GDPR準拠",
+        "title": "セキュリティ＆コンプライアンス"
+      },
+      "team": {
+        "i1": "マルチユーザー",
+        "i2": "ケース管理",
+        "i3": "証拠チェーン",
+        "i4": "コラボレーション",
+        "title": "チーム機能"
+      },
+      "title": "すべての機能の概要"
+    },
+    "more": "もっと見る",
+    "seo": {
+      "description": "ブロックチェーンフォレンジックの公正で透明な料金。無料のCommunityプランからEnterpriseまで。いつでもキャンセル可能。",
+      "title": "料金 | SIGMACODE ブロックチェーンフォレンジック"
+    },
+    "smb": {
+      "subtitle": "スタートアップから中規模市場向けのセルフサービスプラン",
+      "title": "チーム＆ビジネス向け"
+    },
+    "toggle": {
+      "annual": "年間",
+      "monthly": "月間",
+      "save": "{{pct}}%節約"
+    },
+    "top_features": "トップ機能",
+    "hero": {
+      "badge": "料金",
+      "title": "シンプルで透明な料金",
+      "subtitle": "ニーズに合ったプランをお選びください。すべてのプランにコア機能が含まれます。いつでもアップグレード可能。"
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "更新"
+    },
+    "audit": {
+      "empty": "監査証跡エントリーがありません",
+      "loading": "監査証跡を読み込み中...",
+      "title": "最近の監査証跡エントリー",
+      "user": "ユーザー",
+      "view_all": "すべて表示 →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "監査証跡の完全性"
+      },
+      "failed_logins": {
+        "title": "失敗したログイン試行"
+      },
+      "gdpr": {
+        "title": "GDPRコンプライアンス"
+      },
+      "security_incidents": {
+        "title": "セキュリティインシデント"
+      }
+    },
+    "common": {
+      "implemented": "実装済み",
+      "not_implemented": "未実装",
+      "unknown": "不明"
+    },
+    "compliance": {
+      "anonymization": "匿名化",
+      "certifications": "認証",
+      "consent_management": "同意管理",
+      "data_portability": "データポータビリティ",
+      "empty": "コンプライアンスデータがありません",
+      "encryption": "暗号化",
+      "loading": "コンプライアンスステータスを読み込み中...",
+      "right_to_erasure": "消去権",
+      "title": "GDPRコンプライアンスステータス"
+    },
+    "header": {
+      "last_refresh": "最終更新",
+      "subtitle": "監査証跡、GDPRコンプライアンス、及びセキュリティ監視",
+      "title": "セキュリティ＆コンプライアンスダッシュボード"
+    },
+    "quick_actions": {
+      "audit_export": "監査エクスポート",
+      "compliance_report": "コンプライアンスレポート",
+      "gdpr_status": "GDPRステータス",
+      "incident_report": "インシデントレポート",
+      "integrity_check": "完全性チェック",
+      "security_scan": "セキュリティスキャン",
+      "title": "セキュリティ＆コンプライアンスアクション"
+    },
+    "retention": {
+      "days": "日",
+      "empty": "リテンションデータがありません",
+      "title": "データリテンションコンプライアンス",
+      "violations": {
+        "count": "違反",
+        "days_old": "日数",
+        "more": "および",
+        "more_suffix": "その他",
+        "title": "リテンション違反"
+      }
+    },
+    "security": {
+      "compliance_status": "コンプライアンスステータス",
+      "empty": "セキュリティデータがありません",
+      "failed_logins": "失敗したログイン",
+      "incidents": "セキュリティインシデント",
+      "rate_limited_ips": "レート制限されたIP",
+      "suspicious_activities": "疑わしい活動",
+      "title": "セキュリティ概要"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "年齢バケット（例：24時間、3日、7日、7日以上）ごとのオープンアラート",
+    "alert_engine": "MLアルゴリズムによる疑わしいトランザクション及びパターンのリアルタイム監視",
+    "alert_overview": "すべてのアクティブなセキュリティアラート及びその重大度（クリティカル/高/中/低）の概要",
+    "analyst_throughput": "選択したウィンドウ内でアナリストごとの閉鎖されたケース数",
+    "backlog": "オープン（未確認）アラート及びオープンケースの総数",
+    "database": "時系列データのためのPostgreSQL/TimescaleDB接続ステータス及び応答時間",
+    "graph_db": "複雑な関係分析及びネットワークマッピングのためのNeo4jグラフデータベース",
+    "system_status": "すべてのシステムコンポーネントの現在のステータスを表示。緑 = 健全、赤 = 問題検出",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "利用可能なツアー",
+    "completed": "完了",
+    "finish": "終了",
+    "no_tours_available": "このページに利用可能なツアーはありません",
+    "of": "の",
+    "select_tour_description": "プラットフォーム機能について学ぶツアーを選択",
+    "skip": "スキップ",
+    "start": "開始",
+    "start_tour": "ツアーを開始",
+    "step": "ステップ",
+    "steps": "ステップ"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "詳細",
+      "direction": "方向",
+      "error_title": "結果エラー",
+      "exec_time": "実行時間",
+      "export": "エクスポート",
+      "flow_graph": "フログラフ",
+      "high_risk": "高リスク",
+      "high_risk_title": "高リスクアドレス",
+      "loading": "読み込み中...",
+      "max_hop": "最大ホップ",
+      "not_found": "見つかりません",
+      "report": "レポート",
+      "sanctioned_title": "制裁アドレス",
+      "sanctioned_warning": "制裁警告",
+      "source": "ソース",
+      "taint": "汚染",
+      "taint_model": "汚染モデル",
+      "title": "追跡結果",
+      "total_edges": "総エッジ数",
+      "total_nodes": "総ノード数"
+    },
+    "simple": {
+      "address_ph": "アドレス",
+      "chain_btc": "ビットコインチェーン",
+      "chain_eth": "イーサリアムチェーン",
+      "chain_sol": "Solanaチェーン",
+      "cluster": {
+        "clustering": "クラスタリング",
+        "export_members": "メンバーをエクスポート",
+        "label": "ラベル",
+        "lookup": "検索",
+        "member_address": "メンバーアドレス",
+        "members": "メンバー",
+        "title": "クラスタアドレス"
+      },
+      "depth_ph": "深度",
+      "edges": "エッジ",
+      "error_cluster": "クラスタエラー",
+      "error_trace": "追跡エラー",
+      "export_paths": "パスをエクスポート",
+      "export_targets": "ターゲットをエクスポート",
+      "high_risk": "高リスク",
+      "model_fifo": "FIFOモデル",
+      "model_haircut": "ヘアカットモデル",
+      "model_proportional": "比例モデル",
+      "nodes": "ノード",
+      "run": "実行",
+      "summary": "サマリー",
+      "th_path": "パス",
+      "th_paths": "パス",
+      "th_taint": "汚染",
+      "th_target": "ターゲット",
+      "threshold_ph": "閾値",
+      "title": "シンプル追跡",
+      "tracing": "追跡"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "アナリティクス説明",
+        "title": "アナリティクスアドレス",
+        "wip": "作業中"
+      },
+      "export": {
+        "csv": "CSVエクスポート",
+        "desc": "エクスポート説明",
+        "json": "JSONエクスポート",
+        "pdf": "PDFエクスポート",
+        "section_export": "セクションエクスポート",
+        "section_import": "セクションインポート",
+        "title": "エクスポートアドレス"
+      },
+      "header": {
+        "title": "ウォレットテストアドレス"
+      },
+      "import": {
+        "add_wallet": "ウォレットを追加",
+        "json": "JSONインポート",
+        "restore_backup": "バックアップを復元"
+      },
+      "multisig": {
+        "desc": "マルチシグ説明",
+        "title": "マルチシグアドレス",
+        "wip": "作業中"
+      },
+      "overview": {
+        "active_wallets": "アクティブウォレット",
+        "activity": {
+          "liquidity": "流動性",
+          "nft": "NFT",
+          "receive": "受信"
+        },
+        "month_change": "月間変化",
+        "multisig": "マルチシグ",
+        "new_this_week": "今週の新規",
+        "recent": "最近",
+        "security_grade": "セキュリティ等級",
+        "security_score": "セキュリティスコア",
+        "status": {
+          "2fa": "2FA",
+          "active": "アクティブ",
+          "backup": "バックアップ",
+          "backup_available": "バックアップ利用可能",
+          "hardware": "ハードウェア",
+          "hw_connected": "ハードウェア接続済み",
+          "recovery": "リカバリー",
+          "secured": "保護済み",
+          "title": "ステータスアドレス"
+        },
+        "total_volume": "総ボリューム"
+      },
+      "sidebar": {
+        "title": "サイドバーアドレス"
+      },
+      "tabs": {
+        "analytics": "アナリティクス",
+        "crosschain": "クロスチェーン",
+        "export": "エクスポート",
+        "multisig": "マルチシグ",
+        "nft": "NFT",
+        "overview": "概要",
+        "transactions": "トランザクション"
+      },
+      "transactions": {
+        "desc": "トランザクション説明",
+        "export": "エクスポート",
+        "title": "トランザクションアドレス",
+        "wip": "作業中"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "ウェブアナリティクス"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "追跡"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "アドレス"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "確認"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "実行",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "オンライン",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "ホーム",
+    "features": "機能",
+    "about": "概要",
+    "pricing": "価格",
+    "search": "検索",
+    "dashboards": "ダッシュボード",
+    "monitoring": "監視",
+    "legal": "法的情報",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "impressum": "会社情報"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

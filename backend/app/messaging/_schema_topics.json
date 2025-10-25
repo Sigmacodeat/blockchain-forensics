@@ -1,0 +1,8 @@
+{
+  "topics": {
+    "trace.events": {
+      "description": "Canonical Trace Events (ingest -> analytics)",
+      "schema": "backend/app/schemas/canonical_event.py"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: dsr-run-once
+  namespace: blockchain-forensics
+spec:
+  schedule: "*/15 * * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 2
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      template:
+        metadata:
+          labels:
+            app: dsr-run-once
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: dsr
+            image: your-registry/forensics-backend:latest
+            imagePullPolicy: IfNotPresent
+            command: ["python", "-m", "app.cli.dsr_run_once"]
+            envFrom:
+            - configMapRef:
+                name: forensics-config
+            env:
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: secret-key
+            - name: ETHEREUM_RPC_URL
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: ethereum-rpc-url
+            - name: ETHERSCAN_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: etherscan-api-key
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: openai-api-key
+            - name: NEO4J_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: neo4j-password
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: postgres-password
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: redis-password
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: aws-access-key-id
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: forensics-secrets
+                  key: aws-secret-access-key
+            volumeMounts:
+            - name: dsr-exports
+              mountPath: /var/dsr-exports
+          volumes:
+          - name: dsr-exports
+            emptyDir: {}

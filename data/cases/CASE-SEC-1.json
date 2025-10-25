@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "CASE-SEC-1",
+    "title": "Sec Test",
+    "description": "desc",
+    "lead_investigator": "alice",
+    "status": "active",
+    "created_at": "2025-10-25T07:58:47.434010"
+  },
+  "entities": [],
+  "evidence": [],
+  "format": "json",
+  "prev_checksum_sha256": "a7d7ad282adca457f92ae7ee09c999f17c0c0d08dc1d436388557fda9e93a41b",
+  "checksum_sha256": "b139ec707870edffeb623097aa832ed8cc78f8e18cbaaf4177e8e7b9261d7ff9"
+}

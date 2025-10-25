@@ -1,0 +1,64 @@
+{
+  "height": 700001,
+  "hash": "0000000000000000000b7f8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f8d8f",
+  "time": 1631234667,
+  "tx": [
+    {
+      "txid": "tx_coinjoin_1",
+      "size": 550,
+      "version": 2,
+      "locktime": 0,
+      "vin": [
+        {
+          "txid": "cj_prev_tx_1",
+          "vout": 0,
+          "sequence": 4294967295
+        },
+        {
+          "txid": "cj_prev_tx_2",
+          "vout": 0,
+          "sequence": 4294967295
+        },
+        {
+          "txid": "cj_prev_tx_3",
+          "vout": 0,
+          "sequence": 4294967295
+        }
+      ],
+      "vout": [
+        {
+          "n": 0,
+          "value": 0.1,
+          "scriptPubKey": {
+            "type": "pubkeyhash",
+            "addresses": ["1CJOutput1"]
+          }
+        },
+        {
+          "n": 1,
+          "value": 0.1,
+          "scriptPubKey": {
+            "type": "pubkeyhash",
+            "addresses": ["1CJOutput2"]
+          }
+        },
+        {
+          "n": 2,
+          "value": 0.1,
+          "scriptPubKey": {
+            "type": "pubkeyhash",
+            "addresses": ["1CJOutput3"]
+          }
+        },
+        {
+          "n": 3,
+          "value": 0.0995,
+          "scriptPubKey": {
+            "type": "pubkeyhash",
+            "addresses": ["1CJChange"]
+          }
+        }
+      ]
+    }
+  ]
+}

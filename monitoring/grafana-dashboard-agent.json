@@ -1,0 +1,96 @@
+{
+  "id": null,
+  "title": "Blockchain Forensics - AI Agent",
+  "timezone": "browser",
+  "schemaVersion": 38,
+  "version": 1,
+  "refresh": "10s",
+  "tags": ["blockchain", "forensics", "agent", "observability"],
+  "panels": [
+    { "type": "row", "title": "AI Agent Health & Heartbeat", "gridPos": { "h": 1, "w": 24, "x": 0, "y": 0 } },
+    {
+      "type": "stat",
+      "title": "Agent Health Calls (rate)",
+      "gridPos": { "h": 6, "w": 8, "x": 0, "y": 1 },
+      "targets": [ { "expr": "sum(rate(trace_requests_total{op=\"agent_health\",status=\"ok\"}[5m]))", "legendFormat": "ok", "refId": "A" } ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Agent Health Latency p95 (s)",
+      "gridPos": { "h": 6, "w": 8, "x": 8, "y": 1 },
+      "targets": [
+        { "expr": "histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op=\"agent_health\"}[5m])))", "legendFormat": "p95", "refId": "A" }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Agent Heartbeat (rate)",
+      "gridPos": { "h": 6, "w": 8, "x": 16, "y": 1 },
+      "targets": [ { "expr": "sum(rate(trace_requests_total{op=\"agent_heartbeat\",status=\"ok\"}[5m]))", "legendFormat": "ok", "refId": "A" } ]
+    },
+
+    { "type": "row", "title": "Investigations & Analysis", "gridPos": { "h": 1, "w": 24, "x": 0, "y": 7 } },
+    {
+      "type": "timeseries",
+      "title": "Investigate/Analyze/Trace Rates",
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 8 },
+      "targets": [
+        { "expr": "sum by (op) (rate(trace_requests_total{op=~\"investigate|analyze_address|trace_funds\",status=\"ok\"}[5m]))", "legendFormat": "{{op}}", "refId": "A" }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Investigate/Analyze/Trace Latency p95 (s)",
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 16 },
+      "targets": [
+        { "expr": "histogram_quantile(0.95, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~\"investigate|analyze_address|trace_funds\"}[5m])))", "legendFormat": "p95 {{op}}", "refId": "A" }
+      ]
+    },
+
+    { "type": "row", "title": "Errors", "gridPos": { "h": 1, "w": 24, "x": 0, "y": 24 } },
+    {
+      "type": "timeseries",
+      "title": "Agent Error Rate",
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 25 },
+      "targets": [
+        { "expr": "(sum(rate(trace_requests_total{op=~\"agent_health|agent_heartbeat|investigate|analyze_address|trace_funds|generate_report\",status!=\"ok\"}[5m])))/(sum(rate(trace_requests_total{op=~\"agent_health|agent_heartbeat|investigate|analyze_address|trace_funds|generate_report\"}[5m])))", "legendFormat": "error rate", "refId": "A" }
+      ],
+      "fieldConfig": { "defaults": { "unit": "percentunit" }, "overrides": [] }
+    },
+
+    { "type": "row", "title": "Agent Tools & Policy-Trace (Recording Rules)", "gridPos": { "h": 1, "w": 24, "x": 0, "y": 33 } },
+    {
+      "type": "timeseries",
+      "title": "Error Rate (tools / ops / policy)",
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 34 },
+      "targets": [
+        { "expr": "agent_tools_error_rate_5m", "legendFormat": "tools", "refId": "A" },
+        { "expr": "agent_ops_error_rate_5m", "legendFormat": "ops", "refId": "B" },
+        { "expr": "agent_trace_policy_error_rate_5m", "legendFormat": "policy", "refId": "C" }
+      ],
+      "fieldConfig": { "defaults": { "unit": "percentunit" }, "overrides": [] }
+    },
+    {
+      "type": "timeseries",
+      "title": "Latency p95 (tools / ops / policy)",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 42 },
+      "targets": [
+        { "expr": "agent_tools_latency_p95_5m", "legendFormat": "tools p95", "refId": "A" },
+        { "expr": "agent_ops_latency_p95_5m", "legendFormat": "ops p95", "refId": "B" },
+        { "expr": "agent_trace_policy_latency_p95_5m", "legendFormat": "policy p95", "refId": "C" }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Latency p99 (tools / ops / policy)",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 42 },
+      "targets": [
+        { "expr": "agent_tools_latency_p99_5m", "legendFormat": "tools p99", "refId": "A" },
+        { "expr": "agent_ops_latency_p99_5m", "legendFormat": "ops p99", "refId": "B" },
+        { "expr": "agent_trace_policy_latency_p99_5m", "legendFormat": "policy p99", "refId": "C" }
+      ]
+    }
+  ],
+  "templating": { "list": [] },
+  "time": { "from": "now-6h", "to": "now" }
+}

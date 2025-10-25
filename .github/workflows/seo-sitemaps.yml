@@ -1,0 +1,43 @@
+name: SEO Sitemaps
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'frontend/src/locales/**'
+      - 'scripts/generate-sitemaps.mjs'
+      - 'frontend/src/pages/ChatbotLandingPage.tsx'
+      - 'public/robots.txt'
+  workflow_dispatch: {}
+
+jobs:
+  generate-sitemaps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps (frontend only)
+        run: |
+          npm ci --silent || true
+
+      - name: Generate sitemaps
+        env:
+          VITE_SITE_URL: https://forensics.ai
+        run: |
+          node scripts/generate-sitemaps.mjs
+
+      - name: Upload sitemaps artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitemaps
+          path: |
+            dist/sitemap*.xml
+            frontend/public/sitemap*.xml
+            public/sitemap*.xml
+          if-no-files-found: warn

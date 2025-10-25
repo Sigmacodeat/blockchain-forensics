@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap für alle Sprachen
+Sitemap: https://forensics.ai/sitemap.xml
+
+# Crawl-delay für höfliche Bots
+Crawl-delay: 1
+
+# Blockieren von sensiblen Bereichen (falls vorhanden)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# Erlauben von wichtigen öffentlichen Bereichen
+Allow: /de/
+Allow: /en/
+Allow: /fr/
+Allow: /es/
+Allow: /ar/
+Allow: /zh-CN/
+Allow: /*.xml
+Allow: /*.txt
+Allow: /*.pdf

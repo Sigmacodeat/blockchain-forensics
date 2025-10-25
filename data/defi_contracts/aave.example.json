@@ -1,0 +1,4 @@
+[
+  {"slug": "aave", "chain": "ethereum", "address": "0xb53c1a33016b2dc2ff3653530bfda9f715a09d5f", "label": "Aave V2 LendingPoolAddressesProvider", "type": "core"},
+  {"slug": "aave", "chain": "ethereum", "address": "0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9", "label": "Aave V2 LendingPool", "type": "core"}
+]

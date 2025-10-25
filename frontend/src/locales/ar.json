@@ -1,0 +1,2031 @@
+{
+  "about": {
+    "cta": {
+      "demo": "احجز عرضًا توضيحيًا",
+      "pricing": "عرض الأسعار",
+      "subtitle": "ابدأ الآن بعرض توضيحي مجاني أو تواصل مع فريقنا",
+      "title": "ابدأ الآن"
+    },
+    "header": {
+      "badge": "معلومات عنا",
+      "subtitle": "نحن نطوّر المنصة الرائدة في مجال الذكاء حول البلوكتشين لدعم السلطات التنفيذية، وVASPs، والمؤسسات المالية في حمايتها من الجريمة الرقمية.",
+      "title": "مستقبل التحقيقات الشرعية في البلوكتشين"
+    },
+    "mission": {
+      "desc": "نجعل المعاملات في البلوكتشين شفافة ويمكن تتبعها. هدفنا هو محاربة الجريمة الرقمية وتوفير الأدوات للمشاركين المشروعين لتلبية متطلبات الامتثال وتقليل المخاطر.",
+      "title": "مهمتنا"
+    },
+    "seo": {
+      "description": "نبني المنصة الرائدة في التحقيقات الشرعية للبلوكتشين: الامتثال، التحقيقات، والذكاء عالميًا.",
+      "title": "معلومات عنا | SIGMACODE تحقيقات البلوكتشين"
+    },
+    "stats": {
+      "badge": "بالأرقام",
+      "blockchains": "بلوكتشينات",
+      "enterprise_customers": "عملاء المؤسسات",
+      "recovered_assets": "الأصول المستردة",
+      "sla_guaranteed": "مضمونة عبر SLA",
+      "supported": "مدعومة",
+      "supported_by_tech": "مدعومة بتكنولوجيتنا",
+      "title": "تأثيرنا",
+      "uptime": "وقت التشغيل",
+      "worldwide": "عالميًا"
+    },
+    "team": {
+      "badge": "الخبرة",
+      "compliance": {
+        "desc": "خبراء التنظيم لـ AML/CFT والعقوبات الدولية",
+        "h1": "المنظمين السابقين",
+        "h2": "متخصصو AML",
+        "h3": "الاستشارة القانونية",
+        "title": "الامتثال والقانون"
+      },
+      "forensics": {
+        "desc": "السلطات التنفيذية السابقة ذات الخبرة الطويلة في التحقيقات في الجرائم الرقمية",
+        "h1": "خريجو FBI/BKA",
+        "h2": "إغلاق الشبكات الداكنة",
+        "h3": "استرداد الأصول",
+        "title": "خبراء التحقيقات الشرعية"
+      },
+      "subtitle": "خبراء من مجال التحقيقات الشرعية في البلوكتشين، السلطات التنفيذية، FinTech، والتعلم الآلي",
+      "tech": {
+        "desc": "مهندسون من أفضل الشركات التكنولوجية ذات خبرة في البلوكتشين",
+        "h1": "خريجو FAANG",
+        "h2": "مطورو البلوكتشين الأساسيين",
+        "h3": "خبراء الأمان",
+        "title": "المتخصصون التكنولوجيون"
+      },
+      "title": "فريقنا"
+    },
+    "trust": {
+      "badge": "الثقة",
+      "ce": {
+        "desc": "أفضل 10 منصات تبادل لـ AML والمراقبة المالية",
+        "title": "منصات التبادل الرقمي"
+      },
+      "fi": {
+        "desc": "البنوك من الدرجة الأولى ذات التعرض للعملات الرقمية",
+        "title": "البنوك وFinTechs"
+      },
+      "le": {
+        "desc": "FBI، Europol، السلطات التنفيذية الوطنية",
+        "title": "السلطات التنفيذية"
+      },
+      "reg": {
+        "desc": "هيئات الرقابة المالية لمراقبة الأسواق",
+        "title": "المنظمات"
+      },
+      "subtitle": "المؤسسات الرائدة عالميًا تعتمد على تكنولوجيتنا",
+      "title": "من يثق بنا"
+    },
+    "values": {
+      "badge": "قيمنا",
+      "compliance": {
+        "desc": "متوافق مع GDPR، eIDAS، OFAC. نفهم المتطلبات التنظيمية وندمجها.",
+        "title": "الامتثال أولاً"
+      },
+      "customer": {
+        "desc": "تواصل وثيق مع السلطات التنفيذية والصناعة. متطلباتك هي خارطة طريقنا.",
+        "title": "توجيه العملاء"
+      },
+      "global": {
+        "desc": "أكثر من 100 بلوكتشين، دعم متعدد اللغات وقوائم العقوبات الدولية.",
+        "title": "التغطية العالمية"
+      },
+      "innovation": {
+        "desc": "تكنولوجيا متطورة: AI/ML، تحليل الرسوم البيانية، ومعالجة فورية لأفضل النتائج.",
+        "title": "الابتكار"
+      },
+      "team": {
+        "desc": "فريق متعدد التخصصات من خبراء التحقيقات، المطورين، ومتخصصي الامتثال.",
+        "title": "العمل الجماعي"
+      },
+      "title": "ما يحركنا",
+      "trust": {
+        "desc": "أمان من الدرجة التجارية مع شهادات SOC2/ISO27001. بياناتك آمنة معنا.",
+        "title": "الثقة والأمان"
+      }
+    },
+    "vision": {
+      "desc": "عالم يمكن فيه تكنولوجيا البلوكتشين من تحقيق إمكاناتها الكاملة – شفافة، آمنة، ومتوافقة. نحن نبني البنية التحتية لمستقبل يصبح فيه الأصول الرقمية رئيسية دون تعزيز الجريمة.",
+      "title": "رؤيتنا"
+    }
+  },
+  "accessibility": {
+    "activate": "تفعيل",
+    "close_dialog": "إغلاق الحوار",
+    "font_size": "حجم الخط",
+    "font_size_large": "حجم خط كبير",
+    "font_size_normal": "حجم خط طبيعي",
+    "font_size_xlarge": "حجم خط ضخم",
+    "high_contrast_detected": "تم اكتشاف تباين عالي",
+    "keyboard_shortcuts": "اختصارات لوحة المفاتيح",
+    "navigate_backward": "التنقل للخلف",
+    "navigate_forward": "التنقل للأمام",
+    "no_system_preferences": "لم يتم اكتشاف إعدادات نظام خاصة",
+    "reduced_motion_detected": "تم اكتشاف حركة منخفضة",
+    "settings": "إعدادات الوصول",
+    "skip_to_content": "الانتقال إلى المحتوى",
+    "system_preferences": "تفضيلات النظام"
+  },
+  "address_analysis": {
+    "title": "address_analysis.title",
+    "wip_desc": "address_analysis.wip_desc",
+    "wip_title": "address_analysis.wip_title"
+  },
+  "admin": {
+    "config": {
+      "ai_agents": "وكلاء الذكاء الاصطناعي",
+      "app_name": "اسم التطبيق",
+      "cross_chain": "عبر السلسلة",
+      "max_trace_depth": "أقصى عمق تتبع",
+      "ml_clustering": "تجميع التعلم الآلي",
+      "title": "التهيئة",
+      "version": "الإصدار"
+    },
+    "disabled": "✗ معطل",
+    "enabled": "✓ مفعل",
+    "error": "خطأ",
+    "health": {
+      "connected": "✓ متصل",
+      "disconnected": "✗ منقطع",
+      "error": "فشل في تحميل حالة الصحة",
+      "title": "صحة قاعدة البيانات"
+    },
+    "ingestion": {
+      "address": {
+        "help": "يجلب المعاملات من Ethereum RPC",
+        "ingesting": "جارٍ الاستيعاب...",
+        "placeholder": "0x...",
+        "start": "بدء الاستيعاب",
+        "success": "✓ تم بدء الاستيعاب في الخلفية",
+        "title": "استيعاب بيانات العناوين"
+      },
+      "block": {
+        "help": "يستورد جميع المعاملات من كتلة",
+        "ingesting": "جارٍ الاستيعاب...",
+        "placeholder": "رقم الكتلة",
+        "start": "بدء استيراد الكتلة",
+        "success": "✓ تم بدء استيعاب الكتلة",
+        "title": "استيعاب بيانات الكتلة"
+      }
+    },
+    "stats": {
+      "db_size": "حجم قاعدة البيانات",
+      "title": "إحصائيات النظام",
+      "total_addresses": "إجمالي العناوين",
+      "total_traces": "إجمالي التتبعات",
+      "total_transactions": "إجمالي المعاملات"
+    },
+    "subtitle": "المراقبة، التهيئة، وإدارة البيانات",
+    "tabs": {
+      "config": "التهيئة",
+      "ingestion": "استيعاب البيانات",
+      "overview": "نظرة عامة",
+      "users": "إدارة المستخدمين"
+    },
+    "title": "إدارة النظام"
+  },
+  "agent": {
+    "cancel": "إلغاء",
+    "error": "حدث خطأ ما.",
+    "error_unknown": "حدث خطأ غير متوقع. حاول مرة أخرى.",
+    "examples": {
+      "1": "تتبع 0xABC… خلال آخر 5 تحركات",
+      "2": "تحقق من حالة العقوبات للعنوان 0x…",
+      "3": "لخّص تنبيهات المخاطر العالية لليوم",
+      "title": "اقتراحات سريعة"
+    },
+    "instructions": "اطلب تتبعاً، فحصاً للعقوبات، تحليلاً للحالات أو رؤى مراقبة.",
+    "loading": "جارٍ تنفيذ طلبك…",
+    "placeholder": "اشرح ما تحتاجه. مثال: Trace للعنوان 0xABCD بعمق 3 تحركات",
+    "retry": "إعادة المحاولة",
+    "send": "إرسال",
+    "subtitle": "مساعد تحليلات جنائية لسلاسل الكتل",
+    "title": "المساعد الجنائي",
+    "welcome": "مرحباً! أستطيع تحليل المحافظ، التتبعات، التنبيهات والحالات. ما المهمة التالية؟"
+  },
+  "auth": {
+    "fields": {
+      "email": "البريد الإلكتروني",
+      "organization_opt": "المنظمة (اختياري)",
+      "password": "كلمة المرور",
+      "password_confirm": "تأكيد كلمة المرور",
+      "username": "اسم المستخدم"
+    },
+    "forgot": {
+      "back_to_login": "العودة إلى تسجيل الدخول",
+      "dev_note": "بما أنه لا يوجد خدمة بريد إلكتروني محددة، تحقق من سجلات الخادم للحصول على رابط إعادة التعيين.",
+      "dev_note_label": "ملاحظة (وضع التطوير):",
+      "error": "فشل في الإرسال",
+      "info_sent": "إذا كان هناك حساب بهذا البريد الإلكتروني، تم إرسال رابط إعادة التعيين.",
+      "sent": "تم إرسال رابط إعادة التعيين!",
+      "submit": "إرسال رابط إعادة التعيين",
+      "submitting": "جارٍ الإرسال...",
+      "subtitle": "لا مشكلة! أدخل بريدك الإلكتروني وسنرسل لك رابطًا لإعادة التعيين.",
+      "title": "نسيت كلمة المرور؟",
+      "title_sent": "تم إرسال البريد الإلكتروني!"
+    },
+    "login": {
+      "failed": "فشل تسجيل الدخول",
+      "fill_all_fields": "يرجى ملء جميع الحقول",
+      "forgot_password": "نسيت كلمة المرور؟",
+      "google": "تسجيل الدخول باستخدام Google",
+      "google_retry": "إعادة المحاولة باستخدام Google",
+      "no_account": "ليس لديك حساب؟",
+      "oauth_failed": "فشل OAuth. حاول مرة أخرى.",
+      "oauth_processing": "جارٍ معالجة تسجيل الدخول بـ OAuth…",
+      "or": "أو",
+      "register_now": "سجل الآن",
+      "remember_me": "تذكرني",
+      "submit": "تسجيل الدخول",
+      "submitting": "جارٍ تسجيل الدخول...",
+      "subtitle": "سجل الدخول للمتابعة"
+    },
+    "placeholders": {
+      "email": "analyst@example.com",
+      "organization": "FBI، Chainalysis، إلخ.",
+      "password": "••••••••",
+      "username": "john_analyst"
+    },
+    "register": {
+      "accept": "أوافق على",
+      "already": "مسجل بالفعل؟",
+      "and": "و",
+      "failed": "فشل التسجيل",
+      "fill_all_fields": "يرجى ملء جميع الحقول المطلوبة",
+      "google": "التسجيل باستخدام Google",
+      "login_now": "سجل الدخول الآن",
+      "password_hint": "8 أحرف كحد أدنى",
+      "password_too_short": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+      "passwords_no_match": "كلمتا المرور غير متطابقتين",
+      "submit": "تسجيل",
+      "submitting": "جارٍ التسجيل...",
+      "subtitle": "ابدأ تحليلك الشرعي",
+      "title": "إنشاء حساب"
+    }
+  },
+  "common": {
+    "access_denied": "تم رفض الوصول (للمسؤولين فقط)",
+    "account": "الحساب",
+    "back": "رجوع",
+    "close": "إغلاق",
+    "info": "معلومات",
+    "language": "اللغة",
+    "loading": "جارٍ التحميل...",
+    "next": "التالي",
+    "page": "الصفحة",
+    "prev": "السابق",
+    "refresh": "تحديث",
+    "search": "بحث",
+    "success": "نجاح",
+    "theme": "الثيم",
+    "view": "عرض",
+    "wip": {
+      "title": "قريباً",
+      "desc": "هذه الميزة قيد التطوير.",
+      "cta": "اعرف المزيد"
+    },
+    "start_free": "ابدأ مجانا",
+    "error": "خطأ",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "create": "إنشاء",
+    "finish": "إنهاء",
+    "open": "فتح",
+    "yes": "نعم",
+    "no": "لا",
+    "confirm": "تأكيد",
+    "welcome": "مرحباً",
+    "dashboard": "لوحة التحكم",
+    "settings": "الإعدادات",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "register": "تسجيل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "username": "اسم المستخدم",
+    "documents": "المستندات",
+    "recent": "مستخدم مؤخراً",
+    "no_results": "لا توجد نتائج"
+  },
+  "corr": {
+    "controls": {
+      "min_severity": "corr.controls.min_severity",
+      "refresh": "corr.controls.refresh",
+      "title": "corr.controls.title",
+      "window": "corr.controls.window",
+      "window_15m": "corr.controls.window_15m",
+      "window_1h": "corr.controls.window_1h",
+      "window_24h": "corr.controls.window_24h",
+      "window_2h": "corr.controls.window_2h",
+      "window_30m": "corr.controls.window_30m",
+      "window_5m": "corr.controls.window_5m"
+    },
+    "header": {
+      "subtitle": "corr.header.subtitle",
+      "title": "corr.header.title"
+    },
+    "overview": {
+      "active_rules": "corr.overview.active_rules",
+      "analyzed": "corr.overview.analyzed",
+      "empty": "corr.overview.empty",
+      "found": "corr.overview.found",
+      "loading": "corr.overview.loading",
+      "min_sev": "corr.overview.min_sev",
+      "rate": "corr.overview.rate",
+      "title": "corr.overview.title",
+      "window": "corr.overview.window"
+    },
+    "rules": {
+      "empty": "corr.rules.empty",
+      "footer": "corr.rules.footer",
+      "loading": "corr.rules.loading",
+      "min": "corr.rules.min",
+      "minutes": "corr.rules.minutes",
+      "required_patterns": "corr.rules.required_patterns",
+      "title": "corr.rules.title",
+      "window": "corr.rules.window"
+    },
+    "sev": {
+      "critical": "corr.sev.critical",
+      "high": "corr.sev.high",
+      "low": "corr.sev.low",
+      "medium": "corr.sev.medium"
+    },
+    "suppressions": {
+      "breakdown": {
+        "by_reason": "corr.suppressions.breakdown.by_reason",
+        "by_type": "corr.suppressions.breakdown.by_type",
+        "title": "corr.suppressions.breakdown.title"
+      },
+      "rate": "corr.suppressions.rate",
+      "title": "corr.suppressions.title",
+      "top_entity": "corr.suppressions.top_entity",
+      "total": "corr.suppressions.total"
+    },
+    "test": {
+      "add_alert": "corr.test.add_alert",
+      "alerts_label": "corr.test.alerts_label",
+      "match": "corr.test.match",
+      "no_alerts": "corr.test.no_alerts",
+      "no_match": "corr.test.no_match",
+      "pick_rule": "corr.test.pick_rule",
+      "pick_rule_ph": "corr.test.pick_rule_ph",
+      "result": "corr.test.result",
+      "run": "corr.test.run",
+      "testing": "corr.test.testing",
+      "title": "corr.test.title"
+    }
+  },
+  "coverage": {
+    "actions": {
+      "copy_from": "coverage.actions.copy_from",
+      "copy_mint": "coverage.actions.copy_mint",
+      "export_csv": "coverage.actions.export_csv",
+      "export_csv_page": "coverage.actions.export_csv_page",
+      "fetch": "coverage.actions.fetch"
+    },
+    "bitcoin": {
+      "block_title": "coverage.bitcoin.block_title",
+      "compute": "coverage.bitcoin.compute",
+      "decoded": "coverage.bitcoin.decoded",
+      "edges_title": "coverage.bitcoin.edges_title",
+      "height_ph": "coverage.bitcoin.height_ph",
+      "ingest_edges": "coverage.bitcoin.ingest_edges",
+      "method_heuristic": "coverage.bitcoin.method_heuristic",
+      "method_proportional": "coverage.bitcoin.method_proportional",
+      "normalized": "coverage.bitcoin.normalized",
+      "tx_title": "coverage.bitcoin.tx_title",
+      "txid_ph": "coverage.bitcoin.txid_ph"
+    },
+    "compliance": {
+      "add_watch": "coverage.compliance.add_watch",
+      "address_ph": "coverage.compliance.address_ph",
+      "chain_ph": "coverage.compliance.chain_ph",
+      "entries": "coverage.compliance.entries",
+      "error": "coverage.compliance.error",
+      "filter_address_ph": "coverage.compliance.filter_address_ph",
+      "filter_chain_ph": "coverage.compliance.filter_chain_ph",
+      "list_watch": "coverage.compliance.list_watch",
+      "screen": "coverage.compliance.screen",
+      "title": "coverage.compliance.title",
+      "watchlist": "coverage.compliance.watchlist"
+    },
+    "ethereum": {
+      "canonical": "coverage.ethereum.canonical",
+      "copy_hash": "coverage.ethereum.copy_hash",
+      "decoded": "coverage.ethereum.decoded",
+      "error": "coverage.ethereum.error",
+      "open_etherscan": "coverage.ethereum.open_etherscan",
+      "tx_hash_ph": "coverage.ethereum.tx_hash_ph",
+      "tx_title": "coverage.ethereum.tx_title"
+    },
+    "ingest": {
+      "canonical_notice": "coverage.ingest.canonical_notice",
+      "edges_notice": "coverage.ingest.edges_notice",
+      "loading": "coverage.ingest.loading"
+    },
+    "labels": {
+      "add": "coverage.labels.add",
+      "address_ph": "coverage.labels.address_ph",
+      "category_ph": "coverage.labels.category_ph",
+      "chain_ph": "coverage.labels.chain_ph",
+      "error": "coverage.labels.error",
+      "label_ph": "coverage.labels.label_ph",
+      "lookup": "coverage.labels.lookup",
+      "title": "coverage.labels.title"
+    },
+    "monitoring": {
+      "fetch": "coverage.monitoring.fetch",
+      "key_counters": "coverage.monitoring.key_counters",
+      "title": "coverage.monitoring.title"
+    },
+    "rpc_unavailable": "coverage.rpc_unavailable",
+    "solana": {
+      "canonical_error": "coverage.solana.canonical_error",
+      "canonical_title": "coverage.solana.canonical_title",
+      "error": "coverage.solana.error",
+      "ingest_canonical": "coverage.solana.ingest_canonical",
+      "signature_ph": "coverage.solana.signature_ph",
+      "title": "coverage.solana.title",
+      "transfers": "coverage.solana.transfers"
+    },
+    "table": {
+      "actions": "coverage.table.actions",
+      "address": "coverage.table.address",
+      "amount_ui": "coverage.table.amount_ui",
+      "chain": "coverage.table.chain",
+      "created": "coverage.table.created",
+      "decimals": "coverage.table.decimals",
+      "fee": "coverage.table.fee",
+      "from": "coverage.table.from",
+      "from_vout": "coverage.table.from_vout",
+      "method": "coverage.table.method",
+      "mint": "coverage.table.mint",
+      "reason": "coverage.table.reason",
+      "to": "coverage.table.to",
+      "to_vout": "coverage.table.to_vout",
+      "value_btc": "coverage.table.value_btc"
+    },
+    "totals": {
+      "page_sum": "coverage.totals.page_sum",
+      "page_sum_btc": "coverage.totals.page_sum_btc",
+      "total_amount": "coverage.totals.total_amount",
+      "total_value_btc": "coverage.totals.total_value_btc"
+    }
+  },
+  "dashboard": {
+    "actions": "الإجراءات",
+    "active": "نشط",
+    "administration": "الإدارة",
+    "alert_aging": "شيخوخة التنبيهات",
+    "alert_engine": "محرك التنبيهات",
+    "alert_monitoring": "مراقبة التنبيهات",
+    "alert_overview": "نظرة عامة على التنبيهات",
+    "analyst_throughput": "إنتاجية المحلل",
+    "audit_kpis": "مؤشرات الأداء للتدقيق",
+    "backlog": "التراكم",
+    "bucket_placeholder": "24س،3ي،7ي،>7ي",
+    "buckets": "المجموعات",
+    "case_management": "إدارة الحالات",
+    "connected": "متصل",
+    "correlation_analysis": "تحليل الارتباط",
+    "database": "قاعدة البيانات",
+    "database_response": "وقت استجابة قاعدة البيانات",
+    "days": "أيام",
+    "disconnected": "منقطع",
+    "failed_actions": "الإجراءات الفاشلة",
+    "false_positive_rate": "معدل الإيجابيات الكاذبة",
+    "fp": "إيجابي كاذب",
+    "graph_db": "قاعدة بيانات الرسم البياني",
+    "graph_explorer": "مستكشف الرسم البياني",
+    "healthy": "صحي",
+    "inactive": "غير نشط",
+    "issues": "المشكلات",
+    "last_24h": "آخر 24 ساعة",
+    "last_update": "آخر تحديث",
+    "mttr": "MTTR (متوسط وقت الاستجابة)",
+    "open_alerts": "التنبيهات المفتوحة",
+    "open_cases": "الحالات المفتوحة",
+    "performance": "الأداء",
+    "priority_distribution": "توزيع الأولويات",
+    "quick_access": "الوصول السريع",
+    "recent_alerts": "التنبيهات الأخيرة",
+    "response_time": "وقت الاستجابة",
+    "rule_effectiveness": "فعالية القواعد",
+    "sanctions_hits": "ضربات العقوبات",
+    "service_status": "حالة الخدمة",
+    "severity_breakdown": "تفصيل الشدة",
+    "sla_breach_rate": "معدل خرق SLA",
+    "sla_hours": "SLA (ساعات)",
+    "status_breakdown": "تفصيل الحالة",
+    "success_rate": "معدل النجاح",
+    "suppression_rate": "معدل القمع",
+    "system_details": "تفاصيل النظام",
+    "system_load": "حمل النظام",
+    "system_overview": "نظرة عامة على النظام",
+    "system_status": "حالة النظام",
+    "title": "لوحة تحكم SIGMACODE للتحقيقات الشرعية في البلوكتشين",
+    "total_alerts": "إجمالي التنبيهات",
+    "total_cases": "إجمالي الحالات",
+    "total_logs": "إجمالي السجلات",
+    "transaction_tracing": "تتبع المعاملات",
+    "uptime": "وقت التشغيل",
+    "welcome": "مرحبًا بعولتك",
+    "overview": "نظرة عامة",
+    "recent_activity": "النشاط الأخير",
+    "quick_actions": "إجراءات سريعة",
+    "statistics": "إحصائيات",
+    "notifications": "الإشعارات",
+    "hero": {
+      "welcome": "Welcome back",
+      "subtitle": "Here is what's happening with your investigations today."
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "newTrace": "New Trace",
+      "newCase": "New Case",
+      "riskCheck": "Risk Check",
+      "aiAgent": "AI Agent"
+    },
+    "stats": {
+      "cases": "الحالات النشطة",
+      "traces": "التتبعات اليوم",
+      "alerts": "التنبيهات",
+      "uptime": "وقت التشغيل"
+    },
+    "live_alerts": "Live Alerts",
+    "all_alerts": "All Alerts",
+    "trend_analysis": "Trend Analysis",
+    "detailed_analytics": "Detailed Analytics",
+    "analytics": "Analytics"
+  },
+  "features": {
+    "ai": {
+      "agents": {
+        "desc": "وكلاء مستقلون مع تكامل LangChain وGPT-4",
+        "title": "وكلاء الذكاء الاصطناعي"
+      },
+      "badge": "الذكاء الاصطناعي والتعلم الآلي",
+      "desc": "نماذج التعلم الآلي لكشف الشذوذ، تقييم المخاطر، ووكلاء ذكاء اصطناعي مستقلين للتحقيقات 24/7.",
+      "pattern": {
+        "desc": "كشف أنماط الاحتيال وتحليل السلوك",
+        "title": "التعرف على الأنماط"
+      },
+      "risk": {
+        "desc": "تقييم المخاطر القائم على التعلم الآلي للعناوين والمعاملات",
+        "title": "تقييم المخاطر"
+      },
+      "smart_contract": {
+        "desc": "تشابه البايتكود واكتشاف الثغرات",
+        "title": "تحليل العقود الذكية"
+      },
+      "title": "تحليلات مدعومة بالذكاء الاصطناعي"
+    },
+    "alerts": {
+      "anomaly": {
+        "desc": "اكتشاف الأنماط غير الطبيعية في المعاملات بناءً على التعلم الآلي",
+        "title": "اكتشاف الشذوذ"
+      },
+      "badge": "المراقبة في الوقت الفعلي",
+      "custom_rules": {
+        "desc": "قواعد تنبيه مخصصة باستخدام Rule DSL ومحرك السياسات",
+        "title": "القواعد المخصصة"
+      },
+      "desc": "15+ قاعدة تنبيه قابلة للتكوين مع التعلم الآلي. احصل على تنبيهات حول العقوبات، الخلط، التحويلات عالية القيمة، والشذوذ.",
+      "mixing": {
+        "desc": "Tornado Cash، Blender.io وخدمات الخلط الأخرى",
+        "title": "اكتشاف الخلط"
+      },
+      "sanctions": {
+        "desc": "قوائم العقوبات OFAC/UN/EU مع تحديثات يومية",
+        "title": "فرز العقوبات"
+      },
+      "title": "محرك التنبيهات الذكي"
+    },
+    "case": {
+      "badge": "تدفق العمل التحقيقي",
+      "desc": "إدارة التحقيقات الكاملة مع سلسلة حفظ الأدلة، التوقيعات الإلكترونية eIDAS، وتقارير صالحة للمحكمة.",
+      "eidas": {
+        "desc": "توقيعات إلكترونية مؤهلة وفقًا لمعايير الاتحاد الأوروبي",
+        "title": "توقيعات eIDAS"
+      },
+      "evidence": {
+        "desc": "سلسلة حفظ الأدلة الشاملة للأدلة صالحة للمحكمة",
+        "title": "سلسلة الأدلة"
+      },
+      "export": {
+        "desc": "تصدير PDF/Excel مع الطوابع الزمنية ومسار التدقيق",
+        "title": "التصدير والتقارير"
+      },
+      "title": "إدارة الحالات وسلسلة الأدلة",
+      "tracking": {
+        "desc": "إدارة الحالات المنظمة مع حالة سير العمل",
+        "title": "تتبع الحالات"
+      }
+    },
+    "cta": {
+      "demo": "طلب عرض توضيحي",
+      "pricing": "عرض الأسعار",
+      "subtitle": "ابدأ الآن بعرض توضيحي مجاني",
+      "title": "هل أنت جاهز للحصول على الحزمة الكاملة؟",
+      "start": "ابدأ مجانًا"
+    },
+    "graph": {
+      "badge": "الذكاء الرسومي",
+      "clustering": {
+        "desc": "تجميع تلقائي للمحافظ المرتبطة",
+        "title": "تجميع المحافظ"
+      },
+      "community": {
+        "desc": "اكتشاف مجموعات المحافظ ذات الاهتمامات المشتركة",
+        "title": "اكتشاف المجتمعات"
+      },
+      "desc": "قاعدة بيانات رسومية بناءً على Neo4j لتجميع الكيانات، اكتشاف المجتمعات، والتحقيقات البصرية.",
+      "labels": {
+        "desc": "تسميات Exchange/VASP/DeFi مع ذكاء المجتمع",
+        "title": "تسميات الكيانات"
+      },
+      "title": "حل الكيانات وتحليل الشبكة",
+      "visual": {
+        "desc": "مستكشف رسومي تفاعلي للتحليلات المعقدة",
+        "title": "التحقيقات البصرية"
+      }
+    },
+    "header": {
+      "badge": "الميزات الكاملة",
+      "cta_try": "جرب مجانًا",
+      "subtitle": "من تتبع المعاملات إلى التحليل المدعوم بالذكاء الاصطناعي – جميع الأدوات للتحقيقات المهنية",
+      "title": "حزمة التحقيقات الشرعية في البلوكتشين الكاملة"
+    },
+    "security": {
+      "audit": {
+        "desc": "مسارات تدقيق كاملة لإثبات الامتثال",
+        "title": "سجلات التدقيق"
+      },
+      "badge": "الأمان من الدرجة التجارية",
+      "desc": "أمان من الدرجة التجارية مع RBAC، SSO/SAML، سجلات التدقيق، وامتثال GDPR.",
+      "privacy": {
+        "desc": "امتثال GDPR مع تعمية PII",
+        "title": "الخصوصية البيانات"
+      },
+      "rbac": {
+        "desc": "التحكم بالوصول بناءً على الأدوار بدقة مع أدوار مخصصة",
+        "title": "RBAC"
+      },
+      "sso": {
+        "desc": "تسجيل الدخول الموحد باستخدام SAML 2.0 وOAuth 2.0",
+        "title": "SSO/SAML"
+      },
+      "title": "الأمان والامتثال"
+    },
+    "seo": {
+      "description": "حزمة التحقيقات الشرعية في البلوكتشين الكاملة: تتبع، تنبيهات، تحليلات الرسوم، AI/ML، إدارة الحالات، والأمان.",
+      "title": "الميزات | SIGMACODE تحقيقات البلوكتشين"
+    },
+    "stats": {
+      "accuracy": "الدقة",
+      "ai_agents": "وكلاء الذكاء الاصطناعي",
+      "alert_rules": "قواعد التنبيه",
+      "blockchains": "البلوكتشينات",
+      "bridges": "بروتوكولات الجسر",
+      "case_templates": "قوالب الحالات",
+      "compliance": "الامتثال",
+      "encryption": "التشفير",
+      "entities": "الكيانات",
+      "evidence_types": "أنواع الأدلة",
+      "false_positives": "الإيجابيات الكاذبة",
+      "max_depth": "أقصى عمق التتبع",
+      "ml_models": "نماذج التعلم الآلي",
+      "query_time": "وقت الاستعلام",
+      "relationships": "العلاقات",
+      "response_time": "وقت الاستجابة",
+      "security_certs": "شهادات الأمان",
+      "uptime_sla": "SLA وقت التشغيل"
+    },
+    "tracing": {
+      "badge": "تتبع المعاملات",
+      "bridge": {
+        "desc": "اكتشاف الجسور عبر السلسلة والأصول الملفوفة تلقائيًا",
+        "title": "اكتشاف الجسر"
+      },
+      "cross_chain": {
+        "desc": "100+ بلوكتشين مدعوم: EVM، UTXO، Solana، Cosmos وأكثر",
+        "title": "تتبع عبر السلسلة"
+      },
+      "demixing": {
+        "desc": "تحليل تعقيمي لـ Tornado Cash، Mixer، والعملات الخاصة",
+        "title": "فصل العملات الخاصة"
+      },
+      "desc": "تتبع المعاملات عبر جميع البلوكتشينات الرئيسية. مع اكتشاف الجسور عبر السلسلة، فصل العملات الخاصة، وتتبع الأمامي/الخلفي المتكرر.",
+      "recursive": {
+        "desc": "تتبع أمامي/خلفي متكرر بعمق وفلاتر قابلة للتكوين",
+        "title": "التتبع المتكرر"
+      },
+      "title": "الذكاء المعاملي متعدد السلسلة"
+    },
+    "hero": {
+      "badge": "Features",
+      "title": "Enterprise-Grade Blockchain Forensics",
+      "subtitle": "All tools you need to investigate crypto crime, ensure compliance, and protect your business."
+    }
+  },
+  "footer": {
+    "blog": "المدونة والمقالات",
+    "careers": "وظائف",
+    "company": "الشركة",
+    "contact": "اتصال",
+    "imprint": "الطبعة",
+    "legal": "القانوني",
+    "privacy": "الخصوصية",
+    "product": "المنتج",
+    "request_demo": "طلب عرض توضيحي",
+    "rights_reserved": "جميع الحقوق محفوظة.",
+    "security": "الأمان",
+    "tagline": "ذكاء البلوكتشين من الدرجة التجارية للامتثال والتحقيقات – آمن، سريع، صالح للمحكمة.",
+    "terms": "الشروط"
+  },
+  "graph": {
+    "cards": {
+      "active_nodes": "العُقد النشطة",
+      "avg_degree": "الدرجة المتوسطة",
+      "density": "كثافة الشبكة",
+      "total_edges": "إجمالي الحدود",
+      "total_nodes": "إجمالي العُقد"
+    },
+    "centrality": {
+      "taint": "التلوث",
+      "title": "تحليل المركزية"
+    },
+    "communities": {
+      "algorithm": "الخوارزمية",
+      "avg_size": "الحجم المتوسط",
+      "avg_taint": "متوسط التلوث",
+      "empty": "انقر",
+      "label_propagation": "نشر التسميات",
+      "loading": "جارٍ اكتشاف المجتمعات...",
+      "louvain": "Louvain (الوحدة)",
+      "title": "اكتشاف المجتمعات",
+      "total": "إجمالي المجتمعات"
+    },
+    "degree": {
+      "title": "توزيع الدرجات",
+      "x": "الدرجة",
+      "y": "العدد"
+    },
+    "filters": {
+      "cross_chain": "عبر السلسلة (طبقة الجسر)",
+      "from": "من (ISO)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "to": "إلى (ISO)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "header": {
+      "subtitle": "التحليلات الشبكية المتقدمة واكتشاف الأنماط",
+      "title": "تحليلات الرسوم البيانية والذكاء الشبكي"
+    },
+    "hubs": {
+      "in": "داخل",
+      "out": "خارج",
+      "title": "عُقد الشبكة الرئيسية (عُقد درجة عالية)",
+      "total": "الإجمالي"
+    },
+    "loading": {
+      "stats": "جارٍ تحميل الإحصائيات..."
+    },
+    "patterns": {
+      "circle_length": "طول الدائرة",
+      "detected": "الدوائر المكتشفة",
+      "empty_desc": "هذا علامة جيدة - لم يتم العثور على دوائر غسيل أموال واضحة",
+      "empty_title": "لم يتم اكتشاف أنماط دائرية",
+      "high_risk": "مخاطر عالية",
+      "hops": "قفزات",
+      "loading": "جارٍ اكتشاف الأنماط...",
+      "more_addresses": "عناوين إضافية",
+      "risk_score": "درجة المخاطر",
+      "title": "الأنماط الدائرية (غسيل الأموال المحتمل)",
+      "total": "الإجمالي",
+      "total_value": "القيمة الإجمالية",
+      "tx_path": "مسار المعاملة:"
+    },
+    "tabs": {
+      "communities": "اكتشاف المجتمعات",
+      "overview": "نظرة عامة على الشبكة",
+      "patterns": "اكتشاف الأنماط"
+    }
+  },
+  "investigator": {
+    "actions": {
+      "cluster": "investigator.actions.cluster",
+      "clustering": "investigator.actions.clustering",
+      "pause_timeline": "investigator.actions.pause_timeline",
+      "play_timeline": "investigator.actions.play_timeline",
+      "title": "investigator.actions.title"
+    },
+    "connected": {
+      "taint": "investigator.connected.taint",
+      "title": "investigator.connected.title",
+      "tx": "investigator.connected.tx"
+    },
+    "graph": {
+      "connections": "investigator.graph.connections",
+      "enter_address": "investigator.graph.enter_address",
+      "loading": "investigator.graph.loading",
+      "nodes": "investigator.graph.nodes",
+      "title": "investigator.graph.title"
+    },
+    "header": {
+      "subtitle": "investigator.header.subtitle",
+      "title": "investigator.header.title"
+    },
+    "path": {
+      "bridges": "investigator.path.bridges",
+      "hops": "investigator.path.hops",
+      "risk_score": "investigator.path.risk_score",
+      "title": "investigator.path.title",
+      "total_value": "investigator.path.total_value"
+    },
+    "search": {
+      "explore": "investigator.search.explore",
+      "placeholder": "investigator.search.placeholder",
+      "title": "investigator.search.title"
+    },
+    "settings": {
+      "from": "investigator.settings.from",
+      "hops_1": "investigator.settings.hops_1",
+      "hops_2": "investigator.settings.hops_2",
+      "hops_3": "investigator.settings.hops_3",
+      "hops_4": "investigator.settings.hops_4",
+      "hops_5": "investigator.settings.hops_5",
+      "include_bridges": "investigator.settings.include_bridges",
+      "max_hops": "investigator.settings.max_hops",
+      "title": "investigator.settings.title",
+      "to": "investigator.settings.to"
+    },
+    "timeline": {
+      "empty": "investigator.timeline.empty",
+      "events": "investigator.timeline.events",
+      "risk": "investigator.timeline.risk",
+      "select_address": "investigator.timeline.select_address",
+      "title": "investigator.timeline.title",
+      "value_eth": "{{value}} ETH"
+    }
+  },
+  "landing": {
+    "cta": {
+      "demo": "طلب عرض توضيحي الآن",
+      "pricing": "عرض الأسعار"
+    },
+    "cta2": {
+      "demo": "طلب عرض توضيحي مجاني",
+      "pricing": "عرض الأسعار",
+      "subtitle": "ابدأ الآن بعرض توضيحي مجاني واكتشف مستقبل التحقيقات الشرعية في البلوكتشين",
+      "title": "هل أنت جاهز للذكاء البلوكتشين من الدرجة التجارية؟"
+    },
+    "features": {
+      "badge": "الميزات",
+      "subtitle": "أدوات من الدرجة التجارية للامتثال، التحقيقات، وإدارة المخاطر",
+      "title": "كل ما تحتاجه للتحقيقات الشرعية في البلوكتشين"
+    },
+    "hero": {
+      "badge": "sigmacode.io · تحقيقات البلوكتشين",
+      "point1": "100+ بلوكتشين",
+      "point2": "عقوبات OFAC/UN/EU",
+      "point3": "المراقبة في الوقت الفعلي",
+      "subtitle": "الامتثال المدعوم بالذكاء الاصطناعي، التحقيقات، ومراقبة المخاطر – في الوقت الفعلي ومن الدرجة التجارية.",
+      "title": "الذكاء البلوكتشين من الدرجة التجارية"
+    },
+    "pricing": {
+      "badge": "الأسعار",
+      "subtitle": "من مجاني إلى ترفيهي - ابدأ الآن",
+      "title": "حزم مرنة لكل حجم مؤسسة",
+      "view_all": "عرض جميع الأسعار"
+    },
+    "seo": {
+      "description": "الامتثال المدعوم بالذكاء الاصطناعي، التحقيقات، ومراقبة المخاطر – في الوقت الفعلي ومن الدرجة التجارية. SIGMACODE تحقيقات البلوكتشين.",
+      "title": "SIGMACODE | الذكاء البلوكتشين من الدرجة التجارية"
+    },
+    "tech": {
+      "badge": "التكنولوجيا",
+      "subtitle": "بنية تحتية من الدرجة التجارية لأقصى أداء وأمان",
+      "title": "تكنولوجيا الجيل التالي"
+    },
+    "use_cases": {
+      "badge": "حالات الاستخدام",
+      "subtitle": "من السلطات التنفيذية إلى FinTech",
+      "title": "الحل المناسب لكل حالة استخدام"
+    }
+  },
+  "layout": {
+    "main_navigation": "التنقل الرئيسي",
+    "quick_search_title": "البحث السريع (Ctrl/⌘+K)",
+    "skip_to_content": "الانتقال إلى المحتوى",
+    "quick_search_placeholder": "بحث سريع...",
+    "quick_search_hint": "نصيحة: Cmd/Ctrl+K",
+    "header": {
+      "title": "SIGMACODE",
+      "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "docs": "Docs"
+      }
+    },
+    "footer": {
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "cookie": {
+    "banner_aria": "Cookie banner",
+    "title": "Cookies & Privacy",
+    "title_short": "Cookies",
+    "description": "We use essential cookies to operate this website. Optional analytics cookies help us understand and improve usage. You can accept all cookies or allow only necessary ones. You can change your choice at any time in the settings.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Service",
+    "imprint_link": "Imprint",
+    "only_necessary": "Only necessary",
+    "accept_all": "Accept all",
+    "preferences": "Preferences",
+    "save_preferences": "Save preferences",
+    "manage": "Cookie settings",
+    "analytics_title": "Analytics cookies",
+    "analytics_desc": "Helps us understand usage to improve the website.",
+    "marketing_title": "Marketing cookies",
+    "marketing_desc": "Enables personalized content and offers.",
+    "all_optional_title": "Enable all optional",
+    "all_optional_desc": "Enables both analytics and marketing cookies."
+  },
+  "monitor": {
+    "alerts": {
+      "actions": {
+        "close": "إغلاق",
+        "close_title": "إغلاق التنبيه",
+        "copy_alert_id_title": "نسخ معرف التنبيه",
+        "copy_entity": "نسخ الكيان",
+        "copy_entity_id_title": "نسخ معرف الكيان",
+        "copy_id": "نسخ المعرف",
+        "copy_rule": "نسخ القاعدة",
+        "copy_rule_id_title": "نسخ معرف القاعدة",
+        "details": "التفاصيل",
+        "details_title": "عرض التفاصيل",
+        "reset": "إعادة تعيين"
+      },
+      "audit": {
+        "empty": "لا توجد أحداث",
+        "title": "مسار التدقيق"
+      },
+      "csv": {
+        "export_all": "تصدير CSV (الكل)",
+        "export_all_title": "تصدير CSV لجميع الصفوف المصفاة (الخادم)",
+        "export_page": "تصدير CSV (الصفحة)",
+        "export_page_title": "تصدير CSV للصفحة",
+        "no_filtered_data": "لا توجد بيانات مصفاة",
+        "no_page_data": "لا توجد بيانات في هذه الصفحة"
+      },
+      "empty": "لم يتم العثور على تنبيهات",
+      "filters": {
+        "all": "(الكل)",
+        "search_label": "البحث (rule_id / entity_id)",
+        "search_placeholder": "ابحث...",
+        "severity": "الشدة",
+        "source": "المصدر",
+        "source_persisted": "مُدمج (KYT)",
+        "source_realtime": "في الوقت الفعلي (محرك التنبيهات)",
+        "status": "الحالة"
+      },
+      "kpi": {
+        "event_time_set": "تحديد وقت الحدث (first_seen_at)",
+        "event_time_title": "وقت الحدث = first_seen_at",
+        "false_positive": "تحديد كإيجابي كاذب",
+        "title": "تعليقات مؤشرات الأداء",
+        "true_positive": "تحديد كإيجابي حقيقي"
+      },
+      "loading": "جارٍ تحميل التنبيهات...",
+      "modal": {
+        "alert_id": "معرف التنبيه",
+        "chain": "السلسلة",
+        "context": "السياق",
+        "entity": "الكيان",
+        "rule_id": "معرف القاعدة",
+        "severity": "الشدة",
+        "title": "تفاصيل التنبيه"
+      },
+      "pagination": {
+        "next": "التالي",
+        "page": "الصفحة",
+        "prev": "السابق"
+      },
+      "severity": {
+        "critical": "حرج",
+        "high": "عالي",
+        "low": "منخفض",
+        "medium": "متوسط"
+      },
+      "status": {
+        "assigned": "مُعين",
+        "closed": "مغلق",
+        "open": "مفتوح",
+        "snoozed": "معلق"
+      },
+      "subtitle": "القواعد في الوقت الفعلي والتنبيهات المدمجة (KYT)",
+      "table": {
+        "first": "الأول",
+        "last": "الأخير"
+      },
+      "title": "Monitoring Alerts",
+      "toasts": {
+        "copy_failed": "فشل النسخ",
+        "disposition_failed": "فشل تحديد التصرف",
+        "disposition_set": "تم تحديد التصرف",
+        "entity_copied": "تم نسخ الكيان",
+        "event_time_failed": "فشل تحديد وقت الحدث",
+        "event_time_set": "تم تحديد وقت الحدث",
+        "export_failed": "فشل تصدير الخادم",
+        "export_started": "تم بدء تصدير الخادم",
+        "id_copied": "تم نسخ المعرف",
+        "rule_copied": "تم نسخ القاعدة"
+      }
+    }
+  },
+  "navigation": {
+    "about": "معلومات عنا",
+    "analytics": "التحليلات",
+    "close_menu": "إغلاق التنقل",
+    "dashboard": "لوحة القيادة",
+    "features": "الميزات",
+    "home": "الصفحة الرئيسية",
+    "logout": "تسجيل الخروج",
+    "open_menu": "فتح التنقل",
+    "pricing": "الأسعار",
+    "settings": "الإعدادات",
+    "use_cases": "Use Cases",
+    "businessplan": "Businessplan & Funding",
+    "group_product": "Product",
+    "group_company": "Company",
+    "group_preferences": "Preferences"
+  },
+  "perf": {
+    "actions": {
+      "refresh": "تحديث"
+    },
+    "cards": {
+      "cpu": {
+        "cores": "النوى",
+        "title": "استخدام وحدة المعالجة المركزية"
+      },
+      "db": {
+        "connected": "متصل",
+        "disconnected": "منقطع",
+        "response": "الاستجابة",
+        "title": "قاعدة البيانات"
+      },
+      "memory": {
+        "available": "متوفر",
+        "title": "استخدام الذاكرة"
+      },
+      "system_status": {
+        "healthy": "صحي",
+        "issues": "المشكلات",
+        "title": "حالة النظام",
+        "uptime": "وقت التشغيل"
+      }
+    },
+    "common": {
+      "no": "لا",
+      "yes": "نعم"
+    },
+    "header": {
+      "last_refresh": "آخر تحديث",
+      "subtitle": "مراقبة شاملة لأداء النظام، المقاييس، وSLOs",
+      "title": "لوحة الأداء والمراقبة"
+    },
+    "metrics": {
+      "empty": "لا توجد بيانات مقاييس متاحة",
+      "loading": "جارٍ تحميل المقاييس...",
+      "max": "الحد الأقصى",
+      "measurements": "القياسات",
+      "min": "الحد الأدنى",
+      "title": "مقاييس الأداء (ساعة واحدة)",
+      "trend": "الاتجاه"
+    },
+    "recent_alerts": {
+      "empty": "لا توجد تنبيهات حالية",
+      "title": "التنبيهات الأدائية الأخيرة"
+    },
+    "services": {
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "title": "حالة الخدمات"
+    },
+    "slo": {
+      "empty": "لا توجد بيانات SLO متاحة",
+      "loading": "جارٍ تحميل SLOs...",
+      "threshold": "الحد الأقصى",
+      "title": "امتثال SLO",
+      "violations": "المخالفات"
+    },
+    "system_details": {
+      "database": "قاعدة البيانات",
+      "db_connected": "متصل",
+      "db_type": "النوع",
+      "debug": "التدقيق",
+      "environment": "البيئة",
+      "log_level": "مستوى السجل",
+      "mode": "الوضع",
+      "platform": "المنصة",
+      "python_version": "إصدار Python",
+      "response_time": "وقت الاستجابة",
+      "system_info": "معلومات النظام",
+      "title": "تفاصيل النظام",
+      "version": "الإصدار"
+    }
+  },
+  "pricing": {
+    "addons": {
+      "available": {
+        "i1": "بلوكتشينات إضافية",
+        "i2": "مقاعد مستخدمين إضافية",
+        "i3": "عقوبات متطورة (قوائم موسعة)",
+        "i4": "صيغ تصدير متقدمة",
+        "i5": "دعم أولوية",
+        "i6": "White-Label (تجاري)",
+        "title": "الإضافات المتاحة"
+      },
+      "badge": "التوسعات المرنة",
+      "overage": {
+        "extra_credits": "رصيد إضافي",
+        "monthly_cap": "الحد الشهري",
+        "note": "هل تستخدم أكثر من حصتك؟ لا مشكلة - يتم احتساب الزيادة تلقائيًا.",
+        "title": "أسعار الزيادة"
+      },
+      "subtitle": "وسّع خطتك حسب الحاجة",
+      "title": "الإضافات والزيادات"
+    },
+    "card": {
+      "custom": "مخصص",
+      "desc_business": "للفرق الأكبر",
+      "desc_community": "للهواة ومصادر مفتوحة",
+      "desc_enterprise": "للمؤسسات والمنظمين",
+      "desc_pro": "للشركات الناشئة",
+      "desc_starter": "للفرق الصغيرة",
+      "per_month": "لكل شهر",
+      "popular": "الأكثر شيوعًا",
+      "popular_label": "الأكثر شيوعًا",
+      "save_year": "وفر ${{amount}}/سنة"
+    },
+    "cta": {
+      "active_plan": "✓ خطة نشطة",
+      "contact_sales": "اتصل بالمبيعات",
+      "demo": "طلب عرض توضيحي",
+      "more_about": "معلومات أكثر عنا",
+      "saving": "جارٍ الحفظ…",
+      "set_tenant_plan": "كخطة مستأجر",
+      "start_now": "ابدأ الآن",
+      "subscribe": "اشترك الآن",
+      "start": "Start Free",
+      "upgrade": "Upgrade",
+      "contact": "Contact Sales"
+    },
+    "current_plan": "الخطة الحالية",
+    "enterprise": {
+      "card_desc": "للمؤسسات والمنظمين",
+      "subtitle": "أسعار مخصصة، SLA، التكاملات، On-Prem/VPC",
+      "title": "للمؤسسات المالية والمنظمين"
+    },
+    "faq": {
+      "subtitle": "اتصل بفريق المبيعات لعرض توضيحي شخصي",
+      "title": "هل لديك أسئلة؟"
+    },
+    "features": {
+      "api": "واجهة برمجية",
+      "blockchains": "البلوكتشينات",
+      "cases": "الحالات",
+      "credits": "الرصيد/الشهر",
+      "priority": "الأولوية",
+      "users": "المستخدمون"
+    },
+    "header": {
+      "badge": "أسعار مرنة",
+      "subtitle": "من أدوات المجتمع المجانية إلى تجاري مع White-Label. ابدأ اليوم ووسّع عندما تنمو.",
+      "title": "الخطة المناسبة لكل فريق"
+    },
+    "included": {
+      "analytics": {
+        "i1": "وكلاء الذكاء الاصطناعي",
+        "i2": "تحليلات الرسوم البيانية",
+        "i3": "تقييم المخاطر",
+        "i4": "نماذج التعلم الآلي",
+        "title": "التحليلات المتقدمة"
+      },
+      "badge": "ما الذي يُدرج؟",
+      "performance": {
+        "i1": "التنبيهات في الوقت الفعلي",
+        "i2": "واجهة برمجية",
+        "i3": "الطابور الأولوي",
+        "i4": "وقت تشغيل 99.9%",
+        "title": "الأداء"
+      },
+      "security": {
+        "i1": "RBAC",
+        "i2": "SSO/SAML",
+        "i3": "سجلات التدقيق",
+        "i4": "متوافق مع GDPR",
+        "title": "الأمان والامتثال"
+      },
+      "team": {
+        "i1": "متعدد المستخدمين",
+        "i2": "إدارة الحالات",
+        "i3": "سلسلة الأدلة",
+        "i4": "التعاون",
+        "title": "ميزات الفريق"
+      },
+      "title": "جميع الميزات في نظرة عامة"
+    },
+    "more": "أكثر",
+    "seo": {
+      "description": "أسعار شفافة: من المجتمع إلى التجاري. خطط مرنة للفرق، الشركات، والمنظمين.",
+      "title": "الأسعار | SIGMACODE تحقيقات البلوكتشين"
+    },
+    "smb": {
+      "subtitle": "خطط ذاتية الخدمة للشركات الناشئة حتى السوق المتوسطة",
+      "title": "للفرق والشركات"
+    },
+    "toggle": {
+      "annual": "سنوي",
+      "monthly": "شهري",
+      "save": "وفر {{pct}}%"
+    },
+    "top_features": "الميزات الأعلى",
+    "hero": {
+      "badge": "Pricing",
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your needs. All plans include core features. Upgrade anytime."
+    },
+    "plans": {
+      "community": "Community",
+      "starter": "Starter",
+      "plus": "Plus",
+      "pro": "Pro",
+      "business": "Business",
+      "enterprise": "Enterprise"
+    }
+  },
+  "sec": {
+    "actions": {
+      "refresh": "تحديث"
+    },
+    "audit": {
+      "empty": "لا توجد إدخالات مسار تدقيق متاحة",
+      "loading": "جارٍ تحميل مسار التدقيق...",
+      "title": "إدخالات مسار التدقيق الحالية",
+      "user": "المستخدم",
+      "view_all": "عرض الكل →"
+    },
+    "cards": {
+      "audit_integrity": {
+        "title": "سلامة مسار التدقيق"
+      },
+      "failed_logins": {
+        "title": "محاولات تسجيل الدخول الفاشلة"
+      },
+      "gdpr": {
+        "title": "امتثال GDPR"
+      },
+      "security_incidents": {
+        "title": "حوادث الأمان"
+      }
+    },
+    "common": {
+      "implemented": "مُنفذ",
+      "not_implemented": "غير منفذ",
+      "unknown": "غير معروف"
+    },
+    "compliance": {
+      "anonymization": "التهيئة",
+      "certifications": "الشهادات",
+      "consent_management": "إدارة الموافقة",
+      "data_portability": "تحويل البيانات",
+      "empty": "لا توجد بيانات امتثال متاحة",
+      "encryption": "التشفير",
+      "loading": "جارٍ تحميل حالة الامتثال...",
+      "right_to_erasure": "حق الحذف",
+      "title": "حالة امتثال GDPR"
+    },
+    "header": {
+      "last_refresh": "آخر تحديث",
+      "subtitle": "مسارات التدقيق، امتثال GDPR، ومراقبة الأمان",
+      "title": "لوحة الأمان والامتثال"
+    },
+    "quick_actions": {
+      "audit_export": "تصدير التدقيق",
+      "compliance_report": "تقرير الامتثال",
+      "gdpr_status": "حالة GDPR",
+      "incident_report": "تقرير الحادث",
+      "integrity_check": "فحص السلامة",
+      "security_scan": "فحص الأمان",
+      "title": "إجراءات الأمان والامتثال"
+    },
+    "retention": {
+      "days": "أيام",
+      "empty": "لا توجد بيانات حفظ متاحة",
+      "title": "امتثال حفظ البيانات",
+      "violations": {
+        "count": "المخالفات",
+        "days_old": "أيام قديمة",
+        "more": "و",
+        "more_suffix": "إضافية",
+        "title": "مخالفات الحفظ"
+      }
+    },
+    "security": {
+      "compliance_status": "حالة الامتثال",
+      "empty": "لا توجد بيانات أمان متاحة",
+      "failed_logins": "تسجيلات الدخول الفاشلة",
+      "incidents": "حوادث الأمان",
+      "rate_limited_ips": "عناوين IP المحدودة",
+      "suspicious_activities": "أنشطة مشبوهة",
+      "title": "نظرة عامة على الأمان"
+    }
+  },
+  "tooltips": {
+    "alert_aging": "التنبيهات المفتوحة حسب فئات العمر (مثل 24س، 3ي، 7ي، >7ي)",
+    "alert_engine": "المراقبة في الوقت الفعلي للمعاملات والأنماط المشبوهة باستخدام خوارزميات التعلم الآلي",
+    "alert_overview": "نظرة عامة على جميع التنبيهات الأمنية النشطة وشدتها (حرج/عالي/متوسط/منخفض)",
+    "analyst_throughput": "عدد الحالات المغلقة لكل محلل في الفترة الزمنية المحددة",
+    "backlog": "إجمالي التنبيهات المفتوحة (غير المؤكدة) والحالات المفتوحة",
+    "database": "حالة اتصال PostgreSQL/TimescaleDB ووقت الاستجابة للبيانات الزمنية",
+    "graph_db": "قاعدة بيانات رسومية Neo4j لتحليل العلاقات المعقدة وتعيين الشبكة",
+    "system_status": "يعرض حالة جميع مكونات النظام الحالية. أخضر = صحي، أحمر = تم اكتشاف مشكلات",
+    "false_positive_rate": "Percentage of false alerts out of all alerts",
+    "mttr": "Average time to response/resolution (Mean Time To Response/Resolution)",
+    "sla_breach_rate": "Percentage of cases/alerts exceeding the defined SLA",
+    "sanctions_hits": "Number of hits against sanctions lists (OFAC/UN/EU/UK)",
+    "trend_analysis": "Visualization of traces, alerts, and risk distribution over time",
+    "trend_analysis_admin": "System-wide visualization of all traces, alerts, and risk distribution (Admin view)",
+    "live_alerts": "Real-time stream of the latest security warnings via WebSocket"
+  },
+  "tours": {
+    "available_tours": "الجولات المتاحة",
+    "completed": "مكتمل",
+    "finish": "إنهاء",
+    "no_tours_available": "لا توجد جولات متاحة لهذه الصفحة",
+    "of": "من",
+    "select_tour_description": "اختر جولة للتعرف على وظائف المنصة",
+    "skip": "تخطي",
+    "start": "tours.start",
+    "start_tour": "بدء الجولة",
+    "step": "خطوة",
+    "steps": "الخطوات"
+  },
+  "trace": {
+    "actions": {
+      "reset": "Reset",
+      "submit": "Start trace",
+      "submitting": "Starting trace..."
+    },
+    "agent": {
+      "address": "Address",
+      "address_ph": "0x...",
+      "dir_backward": "backward",
+      "dir_both": "both",
+      "dir_forward": "forward",
+      "direction": "Direction",
+      "enable_bridge": "Enable Bridge",
+      "enable_utxo": "Enable UTXO",
+      "error_title": "Agent Tool Trace Error",
+      "from": "From (ISO Timestamp)",
+      "from_ph": "2021-01-01T00:00:00Z",
+      "max_depth": "Max. Depth",
+      "min_taint": "Min. Taint",
+      "run": "Run Agent Tool Trace",
+      "submitting": "Agent trace running...",
+      "title": "Agent Tool Trace (Time Window, No Persistence)",
+      "to": "To (ISO Timestamp)",
+      "to_ph": "2023-12-31T23:59:59Z"
+    },
+    "banner": {
+      "insufficient": "Insufficient credits for trace.",
+      "upgrade": "Upgrade plan now"
+    },
+    "error": {
+      "title": "Error starting trace",
+      "unknown": "Unknown error"
+    },
+    "form": {
+      "dir_backward": "Backward (trace inputs)",
+      "dir_both": "Both (both directions)",
+      "dir_forward": "Forward (trace outputs)",
+      "direction": "Trace Direction",
+      "max_depth": "Max. Depth",
+      "max_depth_help": "Maximum hop count (1-10)",
+      "max_nodes": "Max. Nodes",
+      "max_nodes_help": "Maximum number of addresses",
+      "min_taint": "Min. Taint Threshold",
+      "min_taint_help": "Minimum taint value to continue tracing (0-1, e.g. 0.01 = 1%)",
+      "model_fifo": "FIFO (First-In-First-Out)",
+      "model_haircut": "Haircut (Fixed Deduction)",
+      "model_help": "Proportional: Taint is distributed proportionally to value ratio",
+      "model_proportional": "Proportional (Recommended)",
+      "source": "Source Address",
+      "source_help": "Ethereum address to trace from",
+      "source_ph": "0x...",
+      "taint_model": "Taint Model"
+    },
+    "header": {
+      "subtitle": "Recursive N-hop tracing with taint propagation for forensic fund flow tracking",
+      "title": "Transaction Tracing"
+    },
+    "info": {
+      "item1": "Traces can take seconds to minutes depending on depth and nodes",
+      "item2": "Results are saved in Neo4j for later analysis",
+      "item3": "High-risk addresses are automatically flagged",
+      "item4": "Sanctioned entities (OFAC) are detected immediately",
+      "title": "ℹ️ Notes"
+    },
+    "plan": {
+      "current": "Current Tenant Plan",
+      "loading": "Loading credits…",
+      "remaining": "Credits available",
+      "to_pricing": "Go to Pricing",
+      "unlimited": "Credits: Unlimited"
+    },
+    "result": {
+      "details": "trace.result.details",
+      "direction": "trace.result.direction",
+      "error_title": "trace.result.error_title",
+      "exec_time": "trace.result.exec_time",
+      "export": "trace.result.export",
+      "flow_graph": "trace.result.flow_graph",
+      "high_risk": "trace.result.high_risk",
+      "high_risk_title": "trace.result.high_risk_title",
+      "loading": "trace.result.loading",
+      "max_hop": "trace.result.max_hop",
+      "not_found": "trace.result.not_found",
+      "report": "trace.result.report",
+      "sanctioned_title": "trace.result.sanctioned_title",
+      "sanctioned_warning": "trace.result.sanctioned_warning",
+      "source": "trace.result.source",
+      "taint": "trace.result.taint",
+      "taint_model": "trace.result.taint_model",
+      "title": "trace.result.title",
+      "total_edges": "trace.result.total_edges",
+      "total_nodes": "trace.result.total_nodes"
+    },
+    "simple": {
+      "address_ph": "trace.simple.address_ph",
+      "chain_btc": "trace.simple.chain_btc",
+      "chain_eth": "trace.simple.chain_eth",
+      "chain_sol": "trace.simple.chain_sol",
+      "cluster": {
+        "clustering": "trace.simple.cluster.clustering",
+        "export_members": "trace.simple.cluster.export_members",
+        "label": "trace.simple.cluster.label",
+        "lookup": "trace.simple.cluster.lookup",
+        "member_address": "trace.simple.cluster.member_address",
+        "members": "trace.simple.cluster.members",
+        "title": "trace.simple.cluster.title"
+      },
+      "depth_ph": "trace.simple.depth_ph",
+      "edges": "trace.simple.edges",
+      "error_cluster": "trace.simple.error_cluster",
+      "error_trace": "trace.simple.error_trace",
+      "export_paths": "trace.simple.export_paths",
+      "export_targets": "trace.simple.export_targets",
+      "high_risk": "trace.simple.high_risk",
+      "model_fifo": "trace.simple.model_fifo",
+      "model_haircut": "trace.simple.model_haircut",
+      "model_proportional": "trace.simple.model_proportional",
+      "nodes": "trace.simple.nodes",
+      "run": "trace.simple.run",
+      "summary": "trace.simple.summary",
+      "th_path": "trace.simple.th_path",
+      "th_paths": "trace.simple.th_paths",
+      "th_taint": "trace.simple.th_taint",
+      "th_target": "trace.simple.th_target",
+      "threshold_ph": "trace.simple.threshold_ph",
+      "title": "trace.simple.title",
+      "tracing": "trace.simple.tracing"
+    }
+  },
+  "wallet": {
+    "test": {
+      "analytics": {
+        "desc": "wallet.test.analytics.desc",
+        "title": "wallet.test.analytics.title",
+        "wip": "wallet.test.analytics.wip"
+      },
+      "export": {
+        "csv": "wallet.test.export.csv",
+        "desc": "wallet.test.export.desc",
+        "json": "wallet.test.export.json",
+        "pdf": "wallet.test.export.pdf",
+        "section_export": "wallet.test.export.section_export",
+        "section_import": "wallet.test.export.section_import",
+        "title": "wallet.test.export.title"
+      },
+      "header": {
+        "title": "wallet.test.header.title"
+      },
+      "import": {
+        "add_wallet": "wallet.test.import.add_wallet",
+        "json": "wallet.test.import.json",
+        "restore_backup": "wallet.test.import.restore_backup"
+      },
+      "multisig": {
+        "desc": "wallet.test.multisig.desc",
+        "title": "wallet.test.multisig.title",
+        "wip": "wallet.test.multisig.wip"
+      },
+      "overview": {
+        "active_wallets": "wallet.test.overview.active_wallets",
+        "activity": {
+          "liquidity": "wallet.test.overview.activity.liquidity",
+          "nft": "wallet.test.overview.activity.nft",
+          "receive": "wallet.test.overview.activity.receive"
+        },
+        "month_change": "wallet.test.overview.month_change",
+        "multisig": "wallet.test.overview.multisig",
+        "new_this_week": "wallet.test.overview.new_this_week",
+        "recent": "wallet.test.overview.recent",
+        "security_grade": "wallet.test.overview.security_grade",
+        "security_score": "wallet.test.overview.security_score",
+        "status": {
+          "2fa": "wallet.test.overview.status.2fa",
+          "active": "wallet.test.overview.status.active",
+          "backup": "wallet.test.overview.status.backup",
+          "backup_available": "wallet.test.overview.status.backup_available",
+          "hardware": "wallet.test.overview.status.hardware",
+          "hw_connected": "wallet.test.overview.status.hw_connected",
+          "recovery": "wallet.test.overview.status.recovery",
+          "secured": "wallet.test.overview.status.secured",
+          "title": "wallet.test.overview.status.title"
+        },
+        "total_volume": "wallet.test.overview.total_volume"
+      },
+      "sidebar": {
+        "title": "wallet.test.sidebar.title"
+      },
+      "tabs": {
+        "analytics": "wallet.test.tabs.analytics",
+        "crosschain": "wallet.test.tabs.crosschain",
+        "export": "wallet.test.tabs.export",
+        "multisig": "wallet.test.tabs.multisig",
+        "nft": "wallet.test.tabs.nft",
+        "overview": "wallet.test.tabs.overview",
+        "transactions": "wallet.test.tabs.transactions"
+      },
+      "transactions": {
+        "desc": "wallet.test.transactions.desc",
+        "export": "wallet.test.transactions.export",
+        "title": "wallet.test.transactions.title",
+        "wip": "wallet.test.transactions.wip"
+      }
+    }
+  },
+  "web_analytics": {
+    "title": "تحليلات الويب"
+  },
+  "onboarding": {
+    "back": "Back",
+    "close": "Close",
+    "finish": "Finish",
+    "next": "Next",
+    "open": "Open dialog",
+    "skip": "Skip tour",
+    "restart": "Restart tour",
+    "restart_short": "Restart tour",
+    "welcome_title": "Welcome to Blockchain Forensics!",
+    "welcome_message": "Would you like to take a quick tour through the dashboard?",
+    "maybe_later": "Maybe later",
+    "start_tour": "Start tour"
+  },
+  "universal_screening": {
+    "title": "Universal Wallet Screening",
+    "subtitle": "Screen any wallet address across 90+ blockchains simultaneously",
+    "cross_chain_title": "Cross-Chain Screening",
+    "description": "Enter a wallet address to screen across all supported chains",
+    "search_placeholder": "0x... or bc1... or any wallet address",
+    "button_screen": "Screen",
+    "button_screening": "Screening...",
+    "errors": {
+      "enter_address": "Please enter a wallet address",
+      "screening_failed": "Screening failed",
+      "failed_to_screen": "Failed to screen address"
+    },
+    "export": {
+      "json": "Export JSON",
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "options": {
+        "all": "All",
+        "ofac": "OFAC (US)",
+        "eu": "EU",
+        "uk": "UK",
+        "un": "UN"
+      }
+    },
+    "summary": {
+      "risk_level": "Risk Level",
+      "chains_screened": "Chains Screened",
+      "found_on_chains": "Found on {{count}} chains",
+      "total_activity": "Total Activity",
+      "counterparties_count": "{{count}} counterparties",
+      "performance": "Performance",
+      "cross_chain": "Cross-chain",
+      "single_chain": "Single chain"
+    },
+    "alert": {
+      "sanctioned": "⚠️ SANCTIONED ENTITY DETECTED - This address appears on sanctions lists"
+    },
+    "chain_results": {
+      "title": "Chain-Specific Results",
+      "description": "Detailed breakdown for each blockchain",
+      "transactions": "Transactions",
+      "value_usd": "Value (USD)",
+      "counterparties": "Counterparties",
+      "sanctioned_badge": "SANCTIONED",
+      "more_labels": "+{{count}} more"
+    },
+    "exposure": {
+      "title": "Exposure",
+      "direct": "Direct",
+      "indirect": "Indirect"
+    },
+    "defi": {
+      "title": "DeFi Insights"
+    },
+    "attribution_evidence": {
+      "title": "View Attribution Evidence ({{count}})"
+    },
+    "all_labels": {
+      "title": "All Labels Across Chains"
+    }
+  },
+  "chatbot": {
+    "meta": {
+      "title": "AI Chatbot for Web3 | Voice, Crypto-Payments & Blockchain Forensics",
+      "description": "The only AI chatbot with voice input (43 languages), crypto payments (30+ coins), and integrated blockchain forensics.",
+      "keywords": "chatbot, web3, crypto, blockchain, ai, voice input, crypto payments, forensics",
+      "ogTitle": "AI Chatbot for Web3 | SIGMACODE",
+      "ogDescription": "Voice input, crypto payments, and blockchain forensics in one widget.",
+      "twitterTitle": "AI Chatbot for Web3",
+      "twitterDescription": "Voice input, crypto payments & blockchain forensics."
+    },
+    "hero": {
+      "badge": "AI Chatbot • Web3 Ready • 43 Languages",
+      "title": "The Chatbot for Web3 with Blockchain Superpowers",
+      "subtitle": "Voice input, crypto payments, real-time risk scoring, and integrated blockchain forensics.",
+      "pill": {
+        "languages": "43 Languages",
+        "payments": "Crypto Payments",
+        "risk": "Risk Scoring",
+        "whitelabel": "White Label"
+      },
+      "demo": "Live Demo",
+      "demoHint": "The chat widget is active. Open it bottom-right.",
+      "demoTip": "Tip: Ask about voice, crypto, risk."
+    },
+    "cta": {
+      "startFree": "Start Free",
+      "viewPricing": "View Pricing"
+    },
+    "features": {
+      "title": "Everything Modern Teams Need",
+      "subtitle": "Unique AI automation and blockchain features.",
+      "cards": {
+        "voiceTitle": "Voice Input (43 Languages)",
+        "voiceDesc": "Hands-free chat in browser.",
+        "paymentsTitle": "Crypto Payments (30+ Coins)",
+        "paymentsDesc": "Accept payments in chat.",
+        "forensicsTitle": "Blockchain Forensics",
+        "forensicsDesc": "Address lookup, transaction tracing.",
+        "riskTitle": "Risk Scoring <100ms",
+        "riskDesc": "Real-time sanctions/mixer detection.",
+        "whitelabelTitle": "White Label",
+        "whitelabelDesc": "Your branding and domain.",
+        "analyticsTitle": "Analytics & A/B",
+        "analyticsDesc": "Conversion optimization."
+      }
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Sign Up",
+        "desc": "Create account, get API key."
+      },
+      "step2": {
+        "title": "Integrate",
+        "desc": "1 script tag, optional config."
+      },
+      "step3": {
+        "title": "Launch",
+        "desc": "Chat ready immediately."
+      },
+      "example": "Example:"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Fair, transparent, scalable.",
+      "tiers": {
+        "community": {
+          "name": "Community",
+          "f1": "1,000 messages",
+          "f2": "Basic AI",
+          "f3": "Basic analytics",
+          "cta": "Start Free"
+        },
+        "plus": {
+          "name": "Plus",
+          "f1": "50k messages",
+          "f2": "Voice (43)",
+          "f3": "Multilingual",
+          "cta": "Upgrade"
+        },
+        "pro": {
+          "name": "Pro",
+          "f1": "Unlimited",
+          "f2": "Crypto Payments",
+          "f3": "Forensics Tools",
+          "cta": "Get Pro"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "f1": "White Label",
+          "f2": "Custom Domain",
+          "f3": "SLA 99.9%",
+          "cta": "Contact"
+        }
+      }
+    },
+    "final": {
+      "title": "Ready to Start?",
+      "subtitle": "Start free in 30 seconds.",
+      "cta": "Start Free Now"
+    }
+  },
+  "wizard": {
+    "title": "Guided Forensic Workflow",
+    "desc": "This dialog guides you through a forensic action in multiple steps. Use Tab to navigate through elements, ESC closes the dialog.",
+    "choose_action": "Choose an action",
+    "trace": {
+      "desc": "Analyze address or transaction",
+      "title": "التتبع"
+    },
+    "case": {
+      "title": "Create Case",
+      "desc": "Create new case with priority"
+    },
+    "sanctions": {
+      "title": "Sanctions Check",
+      "desc": "Check OFAC/UN/EU/UK etc."
+    },
+    "labels": {
+      "address_opt": "Address (optional)",
+      "tx_opt": "Transaction Hash (optional)",
+      "time_range": "Time Range:",
+      "case_title": "Case Title",
+      "priority": "Priority:",
+      "notes_opt": "Notes / Context (optional)",
+      "address": "العنوان"
+    },
+    "placeholders": {
+      "address": "e.g. 0x... or bc1...",
+      "tx": "e.g. 0x...",
+      "case_title": "e.g. Bridge Exploit Investigation",
+      "notes": "e.g. Related to alerts #123/#124"
+    },
+    "review": {
+      "hint": "The assistant will automatically execute the appropriate tool chain.",
+      "title": "مراجعة"
+    },
+    "errors": {
+      "address_invalid": "Address appears invalid. Expected EVM (0x...) or Bech32 (bc1...).",
+      "tx_invalid": "Transaction hash appears invalid (must be 66 characters, 0x... hex).",
+      "case_title_required": "Title is required."
+    },
+    "execute": "تنفيذ",
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish"
+  },
+  "chat": {
+    "error_fetch": "Error while fetching the response. Please try again.",
+    "loading_agent": "Agent is analyzing...",
+    "assistant_title": "Forensic Assistant",
+    "powered_by_ai": "Powered by AI",
+    "empty_title": "How can I help?",
+    "empty_desc": "Ask forensic questions or use the quick actions below",
+    "command_palette": {
+      "title": "Forensic Commands",
+      "desc": "Choose a template or press ESC to close. Use Tab to navigate."
+    },
+    "input_placeholder": "Ask a forensic question... (Ctrl+K for commands)",
+    "input_aria_label": "Enter forensic command",
+    "help_text": "Press Ctrl or Cmd and K to open the command palette. Press Enter to send the message.",
+    "quick_actions": {
+      "high_risk_trace": {
+        "label": "🔍 High-Risk Trace",
+        "query": "Show me all high-risk transactions from the last 7 days with risk score above 70"
+      },
+      "mixer_activity": {
+        "label": "🌪️ Mixer Activity",
+        "query": "Find all Tornado Cash and mixer interactions in the last 24 hours"
+      },
+      "daily_summary": {
+        "label": "📊 Daily Summary",
+        "query": "Summarize today's forensic activity: transactions analyzed, alerts triggered, cases created"
+      },
+      "sanctions_check": {
+        "label": "⚠️ Sanctions Check",
+        "query": "Show me all OFAC sanctions hits from this week"
+      },
+      "bridge_transfers": {
+        "label": "🔗 Bridge Transfers",
+        "query": "List recent cross-chain bridge transfers with high value (>$100k)"
+      },
+      "active_cases": {
+        "label": "📁 Active Cases",
+        "query": "Show me all open cases assigned to me with priority high or critical"
+      }
+    },
+    "online": "متصل",
+    "title": "Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "retry": "Retry",
+    "loading": "Connecting..."
+  },
+  "nav": {
+    "_bridge-transfers_": {
+      "label": "Bridge Transfers"
+    }
+  },
+  "breadcrumb": {
+    "monitoring_dashboard": "Monitoring Dashboard",
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "pricing": "Pricing",
+    "search": "Search",
+    "dashboards": "Dashboards",
+    "monitoring": "Monitoring",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "impressum": "Imprint"
+  },
+  "use_case_financial_institutions": {
+    "hero": {
+      "badge": "For Banks & Fintech",
+      "title": "Crypto Risk Management for Banks",
+      "subtitle": "Enterprise-Grade Blockchain Forensics for Financial Institutions. Real-Time Transaction Monitoring, KYC/AML Compliance, Travel Rule Implementation. FATF-compliant and Bank-Grade Security.",
+      "demo_button": "Request Demo",
+      "pricing_button": "Enterprise Pricing"
+    },
+    "stats": {
+      "transaction_screening": "< 100ms Transaction Screening",
+      "blockchain_networks": "35+ Blockchain Networks",
+      "uptime_sla": "99.9% Uptime SLA",
+      "iso_certified": "ISO 27001 Certified"
+    },
+    "challenges": {
+      "title": "Your Banking Challenges with Crypto",
+      "customer_onboarding": {
+        "challenge": "Crypto-onboarding Customers",
+        "solution": "KYC/AML for Crypto Assets",
+        "description": "Expand your banking for crypto-affine customers. Fully automated KYC/AML for Bitcoin, Ethereum, Stablecoins.",
+        "features": [
+          "Wallet Screening",
+          "Source of Funds",
+          "Ongoing Monitoring"
+        ]
+      },
+      "regulatory_compliance": {
+        "challenge": "Regulatory Compliance",
+        "solution": "FATF/BaFin-compliant",
+        "description": "Meet all regulatory requirements: Travel Rule, Sanctions Screening, MiCA-compliant.",
+        "features": [
+          "FATF Travel Rule",
+          "9 Sanctions Lists",
+          "MiCA ready"
+        ]
+      },
+      "transaction_monitoring": {
+        "challenge": "Transaction Monitoring",
+        "solution": "Real-Time Risk Scoring",
+        "description": "Monitor your customers crypto transactions in real-time. Automatic flagging for High-Risk Activities.",
+        "features": [
+          "Real-Time Alerts",
+          "ML Risk Scoring",
+          "Auto-SAR"
+        ]
+      },
+      "fraud_prevention": {
+        "challenge": "Fraud Prevention",
+        "solution": "Scam/Fraud Detection",
+        "description": "Protect your customers from crypto scams, phishing, ransomware. Proactive warnings for suspicious transfers.",
+        "features": [
+          "Scam Detection",
+          "Ransomware Tracker",
+          "Phishing Alerts"
+        ]
+      },
+      "cross_border_payments": {
+        "challenge": "Cross-Border Payments",
+        "solution": "VASP-Verification",
+        "description": "Verify receiving VASPs for cross-border crypto payments. Travel Rule Messages automatically.",
+        "features": [
+          "VASP Directory",
+          "IVMS101 Format",
+          "Auto-Verification"
+        ]
+      },
+      "audit_reporting": {
+        "challenge": "Audit & Reporting",
+        "solution": "Regulator-Ready Reports",
+        "description": "Automatically generate compliance reports for BaFin, ECB, EBA. Complete audit trails.",
+        "features": [
+          "BaFin Reports",
+          "Audit Trails",
+          "CSV/PDF Export"
+        ]
+      }
+    },
+    "workflow": {
+      "title": "Crypto-Banking Workflow",
+      "customer_onboarding": {
+        "step": "Customer Onboarding",
+        "description": "Customer wants to use crypto banking services",
+        "auto": "KYC/AML Check incl. Wallet Screening",
+        "time": "< 5 Min"
+      },
+      "wallet_verification": {
+        "step": "Wallet Verification",
+        "description": "Customers crypto wallets are analyzed: Source of Funds, Risk Score, Sanctions",
+        "auto": "Automatic Wallet Screening (35+ Chains)",
+        "time": "< 30 Sec"
+      },
+      "ongoing_monitoring": {
+        "step": "Ongoing Monitoring",
+        "description": "Continuous monitoring of all customer crypto transactions",
+        "auto": "Real-Time Transaction Monitoring",
+        "time": "< 100ms/TX"
+      },
+      "risk_assessment": {
+        "step": "Risk Assessment",
+        "description": "For suspicious transactions: Automatic Risk Scoring & Alerting",
+        "auto": "ML-based Risk Scoring",
+        "time": "Instant"
+      },
+      "compliance_reporting": {
+        "step": "Compliance Reporting",
+        "description": "Automatic SAR generation for Suspicious Activity, regular compliance reports",
+        "auto": "Auto-SAR & BaFin Reports",
+        "time": "Daily"
+      }
+    },
+    "enterprise_features": {
+      "title": "Enterprise-Grade Features for Banks",
+      "bank_grade_security": {
+        "title": "Bank-Grade Security",
+        "description": "ISO 27001, SOC 2 Type II, GDPR-compliant. Multi-factor Authentication, Role-based Access Control."
+      },
+      "uptime_sla": {
+        "title": "99.9% Uptime SLA",
+        "description": "Enterprise SLA with guaranteed availability. 24/7 Support, Disaster Recovery, Redundant Infrastructure."
+      },
+      "white_label": {
+        "title": "White-Label Solution",
+        "description": "Fully branded solution for your bank. Custom Domain, Logo, Colors. API-First Architecture."
+      },
+      "on_premise": {
+        "title": "On-Premise Deployment",
+        "description": "Hosted in your own infrastructure. Full data control. Dedicated Support."
+      },
+      "multi_entity": {
+        "title": "Multi-Entity Support",
+        "description": "Manage multiple banking entities in one platform. Consolidated Reporting, Shared Intelligence."
+      },
+      "custom_integration": {
+        "title": "Custom Integration",
+        "description": "Integration with your Core Banking System. REST API, Webhooks, CSV Import/Export."
+      }
+    },
+    "cta": {
+      "title": "Enterprise Demo for Your Bank",
+      "subtitle": "Free demo including custom integration consulting. See how we automate your crypto compliance.",
+      "demo_button": "Request Enterprise Demo",
+      "contact_button": "Contact"
+    }
+  }
+}

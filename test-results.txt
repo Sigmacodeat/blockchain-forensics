@@ -1,0 +1,18 @@
+🧪 Testing Critical User Journey - Lawyer Use Case
+==================================================
+
+Step 1: Check Backend Health
+-----------------------------
+Testing: Backend Health... [0;32m✓ PASSED[0m (HTTP 200)
+{"status":"healthy","version":"0.1.0","service":"Blockchain Forensics Platform"}
+
+Step 2: User Registration
+-------------------------
+Testing: User Signup... [0;31m✗ FAILED[0m (Expected 201, got 500)
+Response: {"detail":"Registration failed: 'organization_type' is an invalid keyword argument for UserORM"}
+⚠ Signup failed - trying login with existing user
+
+Step 3: User Login
+------------------
+[0;31m✗ Login failed - no token received[0m
+Response: {"detail":"Ungültige Email oder Passwort"}

@@ -1,0 +1,44 @@
+{
+  "type": "record",
+  "name": "CanonicalEvent",
+  "namespace": "com.forensics.blockchain",
+  "fields": [
+    {"name": "event_id", "type": "string"},
+    {"name": "chain", "type": "string"},
+    {"name": "block_number", "type": "long"},
+    {"name": "block_timestamp", "type": {"type": "long", "logicalType": "timestamp-millis"}},
+    {"name": "tx_hash", "type": "string"},
+    {"name": "tx_index", "type": "int"},
+    {"name": "from_address", "type": "string"},
+    {"name": "to_address", "type": ["null", "string"], "default": null},
+    {"name": "value", "type": "string"},
+    {"name": "value_usd", "type": ["null", "string"], "default": null},
+    {"name": "gas_used", "type": ["null", "long"], "default": null},
+    {"name": "gas_price", "type": ["null", "long"], "default": null},
+    {"name": "fee", "type": ["null", "string"], "default": null},
+    {"name": "status", "type": "int"},
+    {"name": "error_message", "type": ["null", "string"], "default": null},
+    {"name": "event_type", "type": "string"},
+    {"name": "contract_address", "type": ["null", "string"], "default": null},
+    {"name": "method_name", "type": ["null", "string"], "default": null},
+    {"name": "token_address", "type": ["null", "string"], "default": null},
+    {"name": "token_symbol", "type": ["null", "string"], "default": null},
+    {"name": "token_decimals", "type": ["null", "int"], "default": null},
+    {"name": "risk_score", "type": ["null", "float"], "default": null},
+    {"name": "cluster_id", "type": ["null", "string"], "default": null},
+    {
+      "name": "cross_chain_links",
+      "type": {
+        "type": "array",
+        "items": {"type": "map", "values": "string"}
+      },
+      "default": []
+    },
+    {"name": "labels", "type": {"type": "array", "items": "string"}, "default": []},
+    {"name": "tags", "type": {"type": "array", "items": "string"}, "default": []},
+    {"name": "ingested_at", "type": {"type": "long", "logicalType": "timestamp-millis"}},
+    {"name": "source", "type": "string"},
+    {"name": "idempotency_key", "type": "string"},
+    {"name": "metadata", "type": {"type": "map", "values": "string"}, "default": {}}
+  ]
+}

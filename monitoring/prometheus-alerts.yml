@@ -1,0 +1,893 @@
+groups:
+  - name: blockchain-forensics-error-rates
+    interval: 30s
+    rules:
+      - alert: PostgresDown
+        expr: postgres_up == 0
+        for: 2m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: postgres
+        annotations:
+            summary: "Postgres nicht erreichbar"
+            description: |
+              postgres_up ist 0 seit >2m. Prüfe Datenbank/Netzwerk.
+            runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#postgres-runbook"
+
+      - alert: RedisDown
+        expr: redis_up == 0
+        for: 2m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: redis
+        annotations:
+            summary: "Redis nicht erreichbar"
+            description: |
+              redis_up ist 0 seit >2m. Prüfe Redis/Netzwerk oder REDIS_URL.
+            runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#redis-runbook"
+      - alert: ChainHighErrorRateWarning
+        expr: (sum(rate(chain_requests_total{status!="ok"}[5m])) / sum(rate(chain_requests_total[5m]))) > 0.02
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: chain
+        annotations:
+          summary: "Warnung: Hohe Fehlerquote bei Chain-Endpunkten (>2%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }} (>2%).
+            Prüfe Logs, Rate Limits und Downstream-Abhängigkeiten.
+
+      - alert: ChainHighErrorRateCritical
+        expr: (sum(rate(chain_requests_total{status!="ok"}[5m])) / sum(rate(chain_requests_total[5m]))) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: chain
+        annotations:
+          summary: "Kritisch: Sehr hohe Fehlerquote bei Chain-Endpunkten (>5%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }} (>5%).
+            Sofortmaßnahmen erforderlich.
+          runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#chain-endpoints-error-budget"
+
+      - alert: LabelHighErrorRateWarning
+        expr: (sum(rate(label_requests_total{status!="ok"}[5m])) / sum(rate(label_requests_total[5m]))) > 0.02
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: labels
+        annotations:
+          summary: "Warnung: Hohe Fehlerquote bei Labels-Endpunkten (>2%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }} (>2%).
+
+      - alert: LabelHighErrorRateCritical
+        expr: (sum(rate(label_requests_total{status!="ok"}[5m])) / sum(rate(label_requests_total[5m]))) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: labels
+        annotations:
+          summary: "Kritisch: Sehr hohe Fehlerquote bei Labels-Endpunkten (>5%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }} (>5%).
+
+      - alert: ComplianceHighErrorRateWarning
+        expr: (sum(rate(compliance_requests_total{status!="ok"}[5m])) / sum(rate(compliance_requests_total[5m]))) > 0.02
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: compliance
+        annotations:
+          summary: "Warnung: Hohe Fehlerquote bei Compliance-Endpunkten (>2%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }} (>2%).
+
+      - alert: ComplianceHighErrorRateCritical
+        expr: (sum(rate(compliance_requests_total{status!="ok"}[5m])) / sum(rate(compliance_requests_total[5m]))) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: compliance
+        annotations:
+          summary: "Kritisch: Sehr hohe Fehlerquote bei Compliance-Endpunkten (>5%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }} (>5%).
+
+      # Trace Error Rates
+      - alert: TraceHighErrorRateWarning
+        expr: (sum(rate(trace_requests_total{status!="ok"}[5m])) / sum(rate(trace_requests_total[5m]))) > 0.02
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: trace
+        annotations:
+          summary: "Warnung: Hohe Fehlerquote bei Trace-Endpunkten (>2%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }} (>2%).
+
+      - alert: TraceHighErrorRateCritical
+        expr: (sum(rate(trace_requests_total{status!="ok"}[5m])) / sum(rate(trace_requests_total[5m]))) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: trace
+        annotations:
+          summary: "Kritisch: Sehr hohe Fehlerquote bei Trace-Endpunkten (>5%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }} (>5%).
+
+  - name: blockchain-forensics-latency
+    interval: 30s
+    rules:
+      - alert: ChainLatencyP99High
+        expr: histogram_quantile(0.99, sum by (le,op) (rate(chain_request_latency_seconds_bucket[5m]))) > 5
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: chain
+        annotations:
+          summary: "Warnung: Hohe P99-Latenz bei Chain (>{{ $value }}s)"
+          description: |
+            P99-Latenz (5m Fenster) über 5s. Prüfe RPC-Anbieter und Cache.
+
+      - alert: TraceLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le,op) (rate(trace_request_latency_seconds_bucket[5m]))) > 3
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: trace
+        annotations:
+          summary: "Warnung: Hohe P95-Latenz bei Trace (> {{ $value }}s)"
+          description: |
+            P95-Latenz (5m Fenster) über 3s. Prüfe Neo4j, Query-Plan und Limits.
+          runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#trace-latency-runbook"
+
+      - alert: TraceSLOFastBurn
+        expr: trace_slo_burn_rate_5m > 14
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: trace
+        annotations:
+          summary: "Trace SLO Fast Burn"
+          description: |
+            Fehlerbudget der Trace-API wird sehr schnell verbraucht (5m Burn Rate {{ $value | printf "%.2f" }} >14). Sofortmaßnahmen erforderlich.
+          runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#trace-slo-runbook"
+
+      - alert: TraceSLOSlowBurn
+        expr: trace_slo_burn_rate_1h > 2
+        for: 30m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: trace
+        annotations:
+          summary: "Trace SLO Slow Burn"
+          description: |
+            Fehlerbudget der Trace-API wird kontinuierlich verbraucht (1h Burn Rate {{ $value | printf "%.2f" }} >2). Plane Ursachenanalyse.
+          runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#trace-slo-runbook"
+
+  - name: blockchain-forensics-databases
+    interval: 30s
+    rules:
+      - alert: Neo4jDown
+        expr: neo4j_up == 0
+        for: 2m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: neo4j
+        annotations:
+          summary: "Neo4j Graph Database nicht erreichbar"
+          description: |
+            neo4j_up ist 0 seit >2m. Prüfe Neo4j Container/Service.
+            Graph-Queries werden fehlschlagen.
+          runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#neo4j-runbook"
+
+      - alert: Neo4jQueryLatencyHigh
+        expr: histogram_quantile(0.99, sum by (le) (rate(neo4j_query_latency_seconds_bucket[5m]))) > 10
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: neo4j
+        annotations:
+          summary: "Neo4j Query Latenz sehr hoch (>10s P99)"
+          description: |
+            P99 Latenz über 10s. Prüfe Indexes, Query-Komplexität und DB-Load.
+
+      - alert: Neo4jActiveQueriesHigh
+        expr: neo4j_active_queries > 100
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: neo4j
+        annotations:
+          summary: "Sehr viele gleichzeitige Neo4j Queries (>100)"
+          description: |
+            {{ $value }} aktive Queries. Mögliche Query-Explosion oder Slow Queries.
+
+      - alert: QdrantDown
+        expr: qdrant_up == 0
+        for: 2m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: qdrant
+        annotations:
+          summary: "Qdrant Vector Database nicht erreichbar"
+          description: |
+            qdrant_up ist 0 seit >2m. AI/ML Features werden eingeschränkt sein.
+
+      - alert: QdrantSearchLatencyHigh
+        expr: histogram_quantile(0.95, sum by (le) (rate(qdrant_search_latency_seconds_bucket[5m]))) > 2
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: qdrant
+        annotations:
+          summary: "Qdrant Vector Search Latenz hoch (>2s P95)"
+          description: |
+            Vector-Search dauert länger als erwartet. Prüfe Collection-Größe und Index-Config.
+
+  - name: blockchain-forensics-ai-ml
+    interval: 30s
+    rules:
+      - alert: OpenAIHighErrorRate
+        expr: (sum(rate(openai_api_calls_total{status!="success"}[5m])) / sum(rate(openai_api_calls_total[5m]))) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: ai
+        annotations:
+          summary: "Hohe OpenAI API Fehlerrate (>10%)"
+          description: |
+            {{ $value | printf "%.2f" }} Fehlerrate bei OpenAI Calls.
+            Prüfe API-Key, Rate Limits und Service-Status.
+          runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#ai-api-runbook"
+
+      - alert: SyntheticTraceHealthDown
+        expr: probe_success{job="synthetic-checks",check="trace_api"} == 0
+        for: 2m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: synthetic
+        annotations:
+          summary: "Synthetic Trace Health fehlgeschlagen"
+          description: |
+            Der synthetische Health-Check für die Trace-API schlägt fehl. Prüfe Endpoint /api/v1/monitoring/health und Upstream-Dienste.
+          runbook_url: "https://github.com/msc/blockchain-forensics/blob/main/monitoring/EXAMPLES.md#synthetic-checks"
+
+      - alert: OpenAITokenUsageHigh
+        expr: sum(increase(openai_tokens_used_total[1h])) > 500000
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: ai
+        annotations:
+          summary: "Sehr hoher OpenAI Token-Verbrauch (>500k/h)"
+          description: |
+            {{ $value }} Tokens in letzter Stunde. Prüfe unerwartete AI-Agent-Nutzung.
+
+      - alert: MLRiskScoringFailed
+        expr: rate(ml_risk_score_requests_total{status="error"}[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: ml
+        annotations:
+          summary: "ML Risk Scoring schlägt fehl"
+          description: |
+            Risk Scorer produziert            Prüfe ML-Model und Feature-Extraction.
+          
+  - name: blockchain-forensics-agent
+    interval: 30s
+    rules:
+      - alert: AgentHealthErrorRateHigh
+        expr: (sum(rate(trace_requests_total{op="agent_health",status!="ok"}[5m])) / sum(rate(trace_requests_total{op="agent_health"}[5m]))) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Erhöhte Fehlerquote beim Agent Health Endpoint (>5%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }}. Prüfe AI-Agent Subsystem/Config.
+
+      - alert: AgentHeartbeatMissing
+        expr: sum(rate(trace_requests_total{op="agent_heartbeat"}[10m])) == 0
+        for: 10m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Keine Agent Heartbeats in den letzten 10 Minuten"
+          description: |
+            Heartbeat wird nicht mehr gesendet. Prüfe Scheduler/Prober.
+
+      - alert: AgentOpsErrorRateHigh
+        expr: (sum(rate(trace_requests_total{op=~"investigate|analyze_address|trace_funds|generate_report",status!="ok"}[5m])) / sum(rate(trace_requests_total{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m]))) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Hohe Fehlerquote bei Agent-Operationen (>10%)"
+          description: |
+            {{ $value | printf "%.2f" }} Fehlerrate. Prüfe Upstream-Services (LLM/DB) und Tool-Ausführungen.
+
+      - alert: AgentOpsLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m]))) > 5
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Hohe P95-Latenz bei Agent-Operationen (>{{ $value }}s)"
+          description: |
+            P95-Latenz über 5s. Prüfe Tool-Latenzen (Neo4j, ML, RPC) und Modellantwortzeiten.
+
+  - name: blockchain-forensics-agent-recording
+    interval: 30s
+    rules:
+      # Error Rate (5m) Recording Rules
+      - record: agent_tools_error_rate_5m
+        expr: (sum(rate(trace_requests_total{op=~"tool\\..+",status!="ok"}[5m])))/(sum(rate(trace_requests_total{op=~"tool\\..+"}[5m])))
+      - record: agent_ops_error_rate_5m
+        expr: (sum(rate(trace_requests_total{op=~"investigate|analyze_address|trace_funds|generate_report",status!="ok"}[5m])))/(sum(rate(trace_requests_total{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m])))
+      - record: agent_trace_policy_error_rate_5m
+        expr: (sum(rate(trace_requests_total{op="agent_trace_policy",status!="ok"}[5m])))/(sum(rate(trace_requests_total{op="agent_trace_policy"}[5m])))
+
+      # Latency p95 (5m) Recording Rules
+      - record: agent_tools_latency_p95_5m
+        expr: histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op=~"tool\\..+"}[5m])))
+      - record: agent_ops_latency_p95_5m
+        expr: histogram_quantile(0.95, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m])))
+      - record: agent_trace_policy_latency_p95_5m
+        expr: histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op="agent_trace_policy"}[5m])))
+
+      # Latency p99 (5m) Recording Rules
+      - record: agent_tools_latency_p99_5m
+        expr: histogram_quantile(0.99, sum by (le) (rate(trace_request_latency_seconds_bucket{op=~"tool\\..+"}[5m])))
+      - record: agent_ops_latency_p99_5m
+        expr: histogram_quantile(0.99, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m])))
+      - record: agent_trace_policy_latency_p99_5m
+        expr: histogram_quantile(0.99, sum by (le) (rate(trace_request_latency_seconds_bucket{op="agent_trace_policy"}[5m])))
+
+  - name: blockchain-forensics-agent-tools
+    interval: 30s
+    rules:
+      - alert: AgentToolsErrorRateHigh
+        expr: agent_tools_error_rate_5m > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent-tools
+        annotations:
+          summary: "Hohe Fehlerquote bei Agent-Tools (>10%)"
+          description: |
+            Fehlerquote (5m) liegt bei {{ $value | printf "%.2f" }}. Prüfe Tool-Endpunkte und Backends.
+
+      - alert: AgentToolsLatencyP95High
+        expr: agent_tools_latency_p95_5m > 3
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent-tools
+        annotations:
+          summary: "Hohe P95-Latenz bei Agent-Tools (>{{ $value }}s)"
+          description: |
+            P95-Latenz über 3s. Prüfe ML/Neo4j/RPC und Tool-Ausführungen.
+      - alert: AgentOpsErrorRateCritical
+        expr: (sum(rate(trace_requests_total{op=~"investigate|analyze_address|trace_funds|generate_report",status!="ok"}[5m])) / sum(rate(trace_requests_total{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m]))) > 0.2
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Kritisch: Sehr hohe Fehlerquote bei Agent-Operationen (>20%)"
+          description: |
+            {{ $value | printf "%.2f" }} Fehlerrate. Sofortmaßnahmen: Logs/Backends prüfen (LLM/DB/RPC), Rollbacks erwägen.
+
+      - alert: AgentOpsLatencyP99Critical
+        expr: histogram_quantile(0.99, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"investigate|analyze_address|trace_funds|generate_report"}[5m]))) > 8
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Kritisch: Sehr hohe P99-Latenz bei Agent-Operationen (>{{ $value }}s)"
+          description: |
+            P99 über 8s. Ursachen: DB-/RPC-Engpässe, große Traces, ML-Zeitouts. Rate-Limits/Time-boxing prüfen.
+
+      - alert: AgentToolsErrorRateHigh
+        expr: (sum(rate(trace_requests_total{op=~"tool\\..+",status!="ok"}[5m])) / sum(rate(trace_requests_total{op=~"tool\\..+"}[5m]))) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Hohe Fehlerquote bei Agent-Tool-Endpunkten (>10%)"
+          description: |
+            {{ $value | printf "%.2f" }} Fehlerrate. Prüfe neue Tool-Endpoints und abhängige Services.
+
+      - alert: AgentToolsLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"tool\\..+"}[5m]))) > 3
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Hohe P95-Latenz bei Agent-Tool-Endpunkten (>{{ $value }}s)"
+          description: |
+            P95-Latenz über 3s. Prüfe Risiko-Engine, Bridge-Registry, Alert-Engine und DB-Verbindungen.
+
+      - alert: AgentToolsErrorRateCritical
+        expr: (sum(rate(trace_requests_total{op=~"tool\\..+",status!="ok"}[5m])) / sum(rate(trace_requests_total{op=~"tool\\..+"}[5m]))) > 0.2
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Kritisch: Sehr hohe Fehlerquote bei Agent-Tool-Endpunkten (>20%)"
+          description: |
+            {{ $value | printf "%.2f" }} Fehlerrate. Sofortmaßnahmen: Logs prüfen, Backends (Neo4j/RPC/ML) verifizieren.
+
+      - alert: AgentToolsLatencyP99Critical
+        expr: histogram_quantile(0.99, sum by (le,op) (rate(trace_request_latency_seconds_bucket{op=~"tool\\..+"}[5m]))) > 8
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Kritisch: Sehr hohe P99-Latenz bei Agent-Tool-Endpunkten (>{{ $value }}s)"
+          description: |
+            P99-Latenz über 8s. Mögliche Engpässe in Datenbank/RPC/ML oder übergroße Anfragen.
+
+      - alert: AgentTracePolicyErrorRateHigh
+        expr: (sum(rate(trace_requests_total{op="agent_trace_policy",status!="ok"}[5m])) / sum(rate(trace_requests_total{op="agent_trace_policy"}[5m]))) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Hohe Fehlerquote bei Policy-Trace (>10%)"
+          description: |
+            {{ $value | printf "%.2f" }} Fehlerrate beim Endpoint /agent/trace/policy-simulate.
+            Prüfe Tracer-Konfiguration, Limits (max_nodes/depth) und Downstream (Neo4j/RPC).
+
+      - alert: AgentTracePolicyLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le) (rate(trace_request_latency_seconds_bucket{op="agent_trace_policy"}[5m]))) > 5
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Hohe P95-Latenz beim Policy-Trace (>{{ $value }}s)"
+          description: |
+            P95-Latenz über 5s. Prüfe Query-Komplexität, Decay-Parameter und Datenbank-/RPC-Backends.
+
+      - alert: AgentTracePolicyLatencyP99Critical
+        expr: histogram_quantile(0.99, sum by (le) (rate(trace_request_latency_seconds_bucket{op="agent_trace_policy"}[5m]))) > 8
+        for: 5m
+        labels:
+          severity: critical
+          service: blockchain-forensics
+          component: agent
+        annotations:
+          summary: "Kritisch: Sehr hohe P99-Latenz beim Policy-Trace (>{{ $value }}s)"
+          description: |
+            P99-Latenz über 8s. Begrenze max_nodes/max_depth oder erhöhe Ressourcen/optimierte Indizes.
+
+  - name: blockchain-forensics-websocket
+    interval: 30s
+    rules:
+      - alert: WebSocketHighDisconnectRate
+        expr: rate(websocket_disconnections_total[5m]) > 5
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: websocket
+        annotations:
+          summary: "Hohe WebSocket Disconnect-Rate (>5/s)"
+          description: |
+            Viele WebSocket-Verbindungen brechen ab. Prüfe Netzwerk-Stabilität und Backend-Load.
+
+      - alert: WebSocketConnectionsHigh
+        expr: websocket_connections_active > 1000
+        for: 10m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: websocket
+        annotations:
+          summary: "Sehr viele aktive WebSocket-Verbindungen (>1000)"
+          description: |
+            {{ $value }} aktive Connections. Prüfe Memory-Usage und Connection-Limits.
+
+  - name: blockchain-forensics-auth
+    interval: 30s
+    rules:
+      - alert: HighFailedLoginRate
+        expr: rate(auth_events_total{event="login_failed"}[5m]) > 1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: auth
+        annotations:
+          summary: "Hohe Rate fehlgeschlagener Logins (>1/s)"
+          description: |
+            Möglicher Brute-Force-Angriff. Prüfe IP-Adressen und aktiviere zusätzlichen Schutz.
+
+      - alert: RateLimitExceededFrequent
+        expr: sum(rate(rate_limit_exceeded_total[5m])) > 10
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: security
+        annotations:
+          summary: "Rate Limits werden häufig überschritten (>10/s)"
+          description: |
+            Clients überschreiten Rate Limits. Mögliche API-Missbrauch oder falsch konfigurierte Clients.
+
+      - alert: ActiveSessionsHigh
+        expr: auth_active_sessions > 500
+        for: 10m
+        labels:
+          severity: info
+          service: blockchain-forensics
+          component: auth
+        annotations:
+          summary: "Viele aktive Sessions (>500)"
+          description: |
+            {{ $value }} gleichzeitige Sessions. Erhöhte Nutzung oder Session-Leak prüfen.
+
+  - name: blockchain-forensics-exports
+    interval: 30s
+    rules:
+      - alert: ExportGenerationSlow
+        expr: histogram_quantile(0.95, sum by (le,type) (rate(report_generation_latency_seconds_bucket[5m]))) > 30
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: export
+        annotations:
+          summary: "Report-Generierung sehr langsam (>30s P95)"
+          description: |
+            {{ $value | printf "%.1f" }}s für Report-Generierung.
+            Prüfe Datenvolumen und Optimierungsmöglichkeiten.
+
+      - alert: EmailDeliveryFailed
+        expr: (sum(rate(email_sent_total{status!="success"}[5m])) / sum(rate(email_sent_total[5m]))) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: email
+        annotations:
+          summary: "Email-Zustellung schlägt häufig fehl (>10%)"
+          description: |
+            Fehlerrate: {{ $value | printf "%.2f" }}.
+            Prüfe SMTP-Konfiguration und Email-Service-Status.
+
+  - name: blockchain-forensics-trace-edges
+    interval: 30s
+    rules:
+      - alert: TraceEdgesCreatedZero
+        expr: sum(rate(trace_edges_created_total[10m])) == 0
+        for: 10m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: trace
+        annotations:
+          summary: "Keine neuen Trace-Kanten in den letzten 10 Minuten"
+          description: |
+            Möglicher Stillstand der Trace-Pipeline oder fehlender Traffic.
+
+      - alert: TraceEdgesBridgeMissing
+        expr: sum(rate(trace_edges_created_total{event_type="bridge"}[10m])) == 0
+        for: 15m
+        labels:
+          severity: info
+          service: blockchain-forensics
+          component: trace
+        annotations:
+          summary: "Keine Bridge-Kanten in den letzten 15 Minuten"
+          description: |
+            Prüfe Bridge-Detection/Links. Erwartest du Cross-Chain-Flows in diesem Zeitraum?
+
+      - alert: TraceEdgesTypeSkew
+        expr: |
+          (
+            sum(rate(trace_edges_created_total{event_type!="bridge"}[5m])) > 0
+          )
+          and
+          (
+            max by (event_type) (rate(trace_edges_created_total[5m])) / sum(rate(trace_edges_created_total[5m])) > 0.9
+          )
+        for: 10m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: trace
+        annotations:
+          summary: "Starke Schieflage der Trace-Kanten nach Typ (>90% ein Typ)"
+          description: |
+            Ein Event-Typ dominiert >90% der Kanten. Prüfe Parser/Adapter und Datenqualität.
+
+  - name: blockchain-forensics-kyt
+    interval: 30s
+    rules:
+      - alert: RuleEvalErrorRateHigh
+        expr: (sum(rate(rule_eval_total{outcome="error"}[5m])) / sum(rate(rule_eval_total[5m]))) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: kyt
+        annotations:
+          summary: "Hohe Fehlerquote bei Regel-Evaluierungen (>5%)"
+          description: |
+            {{ $value | printf "%.2f" }} Fehlerrate bei RuleEngine. Prüfe fehlerhafte Regeln/DSL und Event-Struktur.
+
+      - alert: RuleEvalLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le) (rate(rule_eval_latency_seconds_bucket[5m]))) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: kyt
+        annotations:
+          summary: "Hohe P95 Latenz bei Regel-Evaluierung (>100ms)"
+          description: |
+            P95 über 100ms. Prüfe komplexe Regeln, Datengröße der Events und CPU-Last der Worker.
+
+      - alert: EventToAlertLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le) (rate(e2e_event_alert_latency_seconds_bucket[5m]))) > 0.5
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: kyt
+        annotations:
+          summary: "E2E Event→Alert Latenz hoch (P95 > 0.5s)"
+          description: |
+            End-to-End Latenz von Event bis Alert-Persist ist hoch. Prüfe Kafka-Lag, DB und Worker-Kapazität.
+
+      - alert: AlertsCreatedZero
+        expr: sum(rate(alerts_created_total[10m])) == 0
+        for: 15m
+        labels:
+          severity: info
+          service: blockchain-forensics
+          component: kyt
+        annotations:
+          summary: "Keine neuen KYT Alerts in den letzten 15 Minuten"
+          description: |
+            Möglicher Stillstand der KYT-Pipeline oder fehlender Traffic. Prüfe Rules, Consumer und Topics.
+
+      # Bridge Activity Spike: nutzt rule_eval_total mit Rule-Name der DB-Regel
+      - alert: BridgeActivitySpike
+        expr: rate(rule_eval_total{outcome="hit", rule=~"Bridge Activity.*"}[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: kyt
+        annotations:
+          summary: "Bridge-Aktivitäts-Spike erkannt"
+          description: |
+            Rate der Bridge-Aktivitäts-Hits > 0.1/s (5m). Prüfe Cross-Chain-Bridges und On-Chain-Ereignisse.
+
+      # Cross-Chain Exposure Spike: nutzt rule_eval_total mit Rule-Name der DB-Regel
+      - alert: CrossChainExposureSpike
+        expr: rate(rule_eval_total{outcome="hit", rule=~"Cross-Chain Exposure.*"}[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: kyt
+        annotations:
+          summary: "Cross-Chain-Exposure-Spike erkannt"
+          description: |
+            Rate der Cross-Chain-Exposure-Hits > 0.05/s (5m). Prüfe Chains, Bridges und involvierte Entitäten.
+
+  - name: blockchain-forensics-webhooks
+    interval: 30s
+    rules:
+      - alert: WebhookInvalidSignatureRateHigh
+        expr: sum(rate(webhook_invalid_signature_total[5m])) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: webhooks
+        annotations:
+          summary: "Hohe Invalid-Signature-Rate bei Webhooks"
+          description: |
+            Summe der invaliden Signaturen > 0.05/s (5m). Prüfe Secrets/Signierlogik und Header.
+
+      - alert: WebhookDLQRateHigh
+        expr: sum(rate(webhook_worker_dlq_total[5m])) > 0.01
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: webhooks
+        annotations:
+          summary: "Hohe DLQ-Rate im Webhook-Worker"
+          description: |
+            DLQ-Zugänge > 0.01/s (5m). Prüfe Schema-Validierung, Verarbeitung und Retries.
+
+      - alert: WebhookNoProcessing10m
+        expr: increase(webhook_worker_processed_total[10m]) == 0
+        for: 10m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: webhooks
+        annotations:
+          summary: "Keine Webhook-Verarbeitung in den letzten 10 Minuten"
+          description: |
+            Der Worker verarbeitet keine Nachrichten. Prüfe Stream, Consumer-Group und Worker-Status.
+
+      - alert: WebhookLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le) (rate(webhook_request_duration_seconds_bucket[5m]))) > 0.5
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: webhooks
+        annotations:
+          summary: "Hohe P95-Latenz des Webhook-Handlers (>{{ $value }}s)"
+          description: |
+            P95 der Handler-Latenz > 0.5s (5m). Prüfe Netzwerk, Rate-Limit, Redis und Event-Handling.
+
+  - name: blockchain-forensics-sanctions-intel
+    interval: 30s
+    rules:
+      - alert: SanctionsNoFetch30m
+        expr: absent_over_time(sanctions_fetch_total[30m]) == 1
+        for: 30m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: sanctions
+        annotations:
+          summary: "Keine Sanctions-Fetches in den letzten 30 Minuten"
+          description: |
+            Keine Fetch-Aktivität erkannt. Prüfe Scheduler/Jobs und Remote-Quellen.
+
+      - alert: SanctionsSourceStale24h
+        expr: (time() - sanctions_update_timestamp) > 86400
+        for: 30m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: sanctions
+        annotations:
+          summary: "Sanctions-Quelle ohne Update >24h"
+          description: |
+            Quelle {{ $labels.source }} ist länger als 24h nicht aktualisiert. Prüfe Loader/Remote-API.
+      - alert: SanctionsUpdateErrorsHigh
+        expr: sum(rate(sanctions_update_errors_total[10m])) > 0
+        for: 10m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: sanctions
+        annotations:
+          summary: "Sanctions Update Errors erkannt"
+          description: |
+            Fehler beim Sanctions-Update in den letzten 10m. Prüfe Quellen/Parser/Netzwerk.
+
+      - alert: SanctionsFetchLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le,source) (rate(sanctions_fetch_duration_seconds_bucket[5m]))) > 10
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: sanctions
+        annotations:
+          summary: "Hohe P95 Fetch-Latenz bei Sanctions (>{{ $value }}s)"
+          description: |
+            P95 Fetch-Latenz über 10s in den letzten 5m. Prüfe Remote-APIs und Timeouts.
+
+      - alert: IntelWebhookInvalidSignatureSpike
+        expr: (sum(rate(intel_webhook_ingest_total{status="invalid_sig"}[5m])) / sum(rate(intel_webhook_ingest_total[5m]))) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: webhooks
+        annotations:
+          summary: "Hohe Invalid-Signature-Quote bei Intel-Webhooks (>10%)"
+          description: |
+            Invalid-Signature Anteil liegt bei {{ $value | printf "%.2f" }}. Prüfe Secrets/Signaturen.
+
+      - alert: IntelWebhookNoSecretSpike
+        expr: (sum(rate(intel_webhook_ingest_total{status="no_secret"}[5m])) / sum(rate(intel_webhook_ingest_total[5m]))) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: webhooks
+        annotations:
+          summary: "Viele Intel-Webhooks ohne Secret (>5%)"
+          description: |
+            Anteil an Requests ohne Secret ist hoch. Prüfe Provider-Konfigurationen.
+
+      - alert: SanctionsWorkerDown
+        expr: worker_status{worker="sanctions_update"} == 0
+        for: 2m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: sanctions
+        annotations:
+          summary: "Sanctions Worker down"
+          description: |
+            Sanctions-Update Worker meldet Status 0 seit >2m. Prüfe Logs/Deployment.
+
+      - alert: IntelFeedsWorkerDown
+        expr: worker_status{worker="threat_intel_worker"} == 0
+        for: 2m
+        labels:
+          severity: warning
+          service: blockchain-forensics
+          component: webhooks
+        annotations:
+          summary: "Intel Feeds Worker down"
+          description: |
+            Intel-Feeds Worker (threat_intel_worker) meldet Status 0 seit >2m. Prüfe Scheduler/Jobs.
+
+      - alert: IntelWebhookNoTraffic5m
+        expr: sum(rate(intel_webhook_ingest_total{status="ok"}[5m])) == 0
+        for: 10m
+        labels:
+          severity: info
+          service: blockchain-forensics
+          component: webhooks
+        annotations:
+          summary: "Keine erfolgreichen Intel-Webhooks in den letzten 10 Minuten"
+          description: |
+            Möglicher Ingest-Stillstand oder niedriger Traffic. Prüfe Provider-Queues und Secrets.

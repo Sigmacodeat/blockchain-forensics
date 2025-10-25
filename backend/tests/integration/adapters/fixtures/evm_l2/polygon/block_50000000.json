@@ -1,0 +1,34 @@
+{
+  "number": 50000000,
+  "hash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+  "parentHash": "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+  "timestamp": 1668361413,
+  "transactions": [
+    {
+      "blockHash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "blockNumber": 50000000,
+      "from": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb0",
+      "gas": 21000,
+      "gasPrice": 20000000000,
+      "hash": "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+      "input": "0xa9059cbb00000000000000000000000040ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": "0x1",
+      "to": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "transactionIndex": 0,
+      "value": 0
+    },
+    {
+      "blockHash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "blockNumber": 50000000,
+      "from": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb0",
+      "gas": 21000,
+      "gasPrice": 20000000000,
+      "hash": "0xbridge1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+      "input": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "nonce": "0x2",
+      "to": "0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf",
+      "transactionIndex": 1,
+      "value": 0
+    }
+  ]
+}

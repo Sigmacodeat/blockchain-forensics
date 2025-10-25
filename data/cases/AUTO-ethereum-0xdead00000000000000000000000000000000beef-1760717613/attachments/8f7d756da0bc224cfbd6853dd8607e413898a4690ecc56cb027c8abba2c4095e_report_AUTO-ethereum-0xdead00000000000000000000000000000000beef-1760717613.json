@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "AUTO-ethereum-0xdead00000000000000000000000000000000beef-1760717613",
+    "title": "Auto Investigate 0xdead00000000000000000000000000000000beef",
+    "description": "Chain=ethereum Depth=1 Settings={}",
+    "lead_investigator": "auto",
+    "status": "active",
+    "created_at": "2025-10-17T16:13:33.063285"
+  },
+  "entities": [],
+  "evidence": [],
+  "format": "json",
+  "prev_checksum_sha256": "1849dab25d3b5f40f32a6ac26e9691733b6dcf2311e15581e4879d2d3c87daf0",
+  "checksum_sha256": "5a942c4756bbe06c990c9e8e48de559c0d66275ff1bc4f179eff47b39684ef27"
+}
