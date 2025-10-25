@@ -624,13 +624,126 @@ async def get_payment_qr_code(
         raise HTTPException(status_code=500, detail="Failed to generate QR code")
 
 # ============================================================================
+# BTC Invoice Management (NEW)
+# ============================================================================
+
+from app.services.btc_invoice_service import btc_invoice_service
+
+
+class CreateInvoiceRequest(BaseModel):
+    """Request to create a BTC invoice"""
+    plan_name: str
+    amount_btc: float
+    expires_hours: int = 24
+
+
+class InvoiceResponse(BaseModel):
+    """BTC invoice response"""
+    order_id: str
+    address: str
+    expected_amount_btc: str
+    expires_at: str
+    plan_name: str
+
+
+class InvoiceStatusResponse(BaseModel):
+    """BTC invoice status response"""
+    order_id: str
+    status: str
+    received_amount_btc: Optional[str] = None
+    expected_amount_btc: Optional[str] = None
+    address: Optional[str] = None
+    txid: Optional[str] = None
+    paid_at: Optional[str] = None
+
+
+@router.post("/invoice", response_model=InvoiceResponse)
+async def create_btc_invoice(
+    request: CreateInvoiceRequest,
+    current_user: dict = Depends(get_current_user_strict)
+):
+    """Create a new BTC invoice with unique address."""
+    try:
+        invoice = btc_invoice_service.create_invoice(
+            user_id=str(current_user["id"]),
+            plan_name=request.plan_name,
+            amount_btc=request.amount_btc,
+            expires_hours=request.expires_hours
+        )
+        return InvoiceResponse(**invoice)
+    except Exception as e:
+        logger.error(f"Invoice creation failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to create invoice")
+
+
+@router.get("/invoice/{order_id}", response_model=InvoiceStatusResponse)
+async def get_invoice_status(
+    order_id: str,
+    current_user: dict = Depends(get_current_user_strict)
+):
+    """Get invoice payment status."""
+    try:
+        status = btc_invoice_service.check_payment_status(order_id)
+
+        # Check if user owns this invoice
+        if status.get("status") != "not_found":
+            db: Session = next(get_db())
+            try:
+                from app.models.crypto_payment import CryptoDepositAddress
+                deposit_addr = db.query(CryptoDepositAddress).filter(
+                    CryptoDepositAddress.order_id == order_id
+                ).first()
+                if deposit_addr and str(deposit_addr.user_id) != str(current_user["id"]):
+                    raise HTTPException(status_code=403, detail="Access denied")
+            finally:
+                db.close()
+
+        return InvoiceStatusResponse(
+            order_id=order_id,
+            status=status["status"],
+            received_amount_btc=status.get("received_amount_btc"),
+            expected_amount_btc=status.get("expected_amount_btc"),
+            address=status.get("address"),
+            txid=status.get("txid"),
+            paid_at=status.get("paid_at")
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Invoice status check failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to check invoice status")
+
+
+@router.post("/admin/invoice/monitor", response_model=dict)
+async def monitor_invoices(current_user: dict = Depends(require_admin)):
+    """Monitor all pending invoices (admin only)."""
+    try:
+        pending = btc_invoice_service.get_pending_invoices()
+
+        # Update all pending invoices
+        for inv in pending:
+            btc_invoice_service.check_payment_status(inv["order_id"])
+
+        updated_pending = btc_invoice_service.get_pending_invoices()
+
+        return {
+            "message": "Invoice monitoring completed",
+            "pending_count": len(updated_pending),
+            "checked_count": len(pending)
+        }
+    except Exception as e:
+        logger.error(f"Invoice monitoring failed: {e}")
+        raise HTTPException(status_code=500, detail="Failed to monitor invoices")
+
+
+# ============================================================================
 # Internal BTC Wallet Management (Admin Only)
 # ============================================================================
 
 from app.services.btc_wallet_service import btc_wallet_service
 from app.auth.dependencies import require_admin
 from app.models.crypto_payment import CryptoWallet
-from app.db.postgres import get_db
+from app.db.session import get_db
 from sqlalchemy.orm import Session
 
 

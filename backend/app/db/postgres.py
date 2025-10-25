@@ -110,6 +110,26 @@ class PostgresClient:
                 )
             """)
 
+            # Internal crypto deposit addresses (per-invoice address generation)
+            await conn.execute("""
+                CREATE TABLE IF NOT EXISTS crypto_deposit_addresses (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    user_id TEXT NOT NULL,
+                    order_id TEXT UNIQUE NOT NULL,
+                    plan_name VARCHAR(50) NOT NULL,
+                    currency VARCHAR(10) NOT NULL DEFAULT 'BTC',
+                    address TEXT NOT NULL UNIQUE,
+                    private_key_encrypted TEXT NOT NULL,
+                    expected_amount_btc DOUBLE PRECISION NOT NULL DEFAULT 0,
+                    received_amount_btc DOUBLE PRECISION NOT NULL DEFAULT 0,
+                    status VARCHAR(20) NOT NULL DEFAULT 'pending', -- pending, paid, expired
+                    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                    expires_at TIMESTAMPTZ,
+                    paid_at TIMESTAMPTZ,
+                    txid TEXT
+                )
+            """)
+
             # Knowledge base documents (simple RAG store)
             await conn.execute("""
                 CREATE TABLE IF NOT EXISTS kb_docs (
@@ -278,7 +298,10 @@ class PostgresClient:
                 CREATE INDEX IF NOT EXISTS idx_web_events_session ON web_events(session_id);
                 CREATE INDEX IF NOT EXISTS idx_kb_docs_ts ON kb_docs(ts DESC);
                 CREATE INDEX IF NOT EXISTS idx_kb_docs_title ON kb_docs(title);
-                -- embeddings index optional (if vector ext is present)
+                CREATE INDEX IF NOT EXISTS idx_crypto_deposit_addresses_user ON crypto_deposit_addresses(user_id);
+                CREATE INDEX IF NOT EXISTS idx_crypto_deposit_addresses_order_id ON crypto_deposit_addresses(order_id);
+                CREATE INDEX IF NOT EXISTS idx_crypto_deposit_addresses_status ON crypto_deposit_addresses(status);
+                CREATE INDEX IF NOT EXISTS idx_crypto_deposit_addresses_created_at ON crypto_deposit_addresses(created_at DESC);
             """)
             try:
                 await conn.execute("""

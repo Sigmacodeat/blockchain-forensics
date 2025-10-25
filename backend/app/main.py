@@ -469,6 +469,18 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"❌ Failed to start Auto-Investigate worker: {e}")
 
+    # Start BTC Invoice Monitor (for HD wallet payments)
+    btc_invoice_monitor_task = None
+    try:
+        if os.getenv("TEST_MODE") != "1":
+            from app.workers.btc_invoice_monitor import start_btc_invoice_monitor
+            btc_invoice_monitor_task = asyncio.create_task(start_btc_invoice_monitor())
+            logger.info("✅ BTC Invoice Monitor started")
+        else:
+            logger.info("ℹ️ BTC Invoice Monitor disabled in TEST_MODE")
+    except Exception as e:
+        logger.error(f"❌ Failed to start BTC Invoice Monitor: {e}")
+
     # Übergabe an die App-Laufzeit, danach folgt Shutdown
     yield
 
@@ -619,6 +631,15 @@ async def lifespan(app: FastAPI):
                 pass
     except Exception as e:
         logger.error(f"Error stopping Auto-Investigate worker: {e}")
+    
+    # Stop BTC Invoice Monitor
+    try:
+        if btc_invoice_monitor_task and not btc_invoice_monitor_task.done():
+            from app.workers.btc_invoice_monitor import stop_btc_invoice_monitor
+            stop_btc_invoice_monitor()
+            await asyncio.sleep(0.2)
+    except Exception as e:
+        logger.error(f"Error stopping BTC Invoice Monitor: {e}")
     
     # Stop Mempool Monitor
     try:

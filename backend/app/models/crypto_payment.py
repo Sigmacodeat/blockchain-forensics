@@ -6,6 +6,7 @@ from datetime import datetime
 from sqlalchemy import Column, Integer, String, DateTime, Float, Boolean, ForeignKey, Enum, Text
 from sqlalchemy.orm import relationship
 import enum
+import uuid
 
 from app.db.database import Base
 
@@ -113,6 +114,62 @@ class CryptoPayment(Base):
             "last_webhook_at": self.last_webhook_at.isoformat() if self.last_webhook_at else None,
             "webhook_count": self.webhook_count,
             "notes": self.notes
+        }
+
+
+class CryptoDepositAddress(Base):
+    """
+    Per-invoice deposit addresses for HD wallet
+    Tracks unique addresses generated for each invoice/payment
+    """
+    __tablename__ = "crypto_deposit_addresses"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()), index=True)
+
+    # User & Order
+    user_id = Column(String(255), nullable=False, index=True)
+    order_id = Column(String(255), unique=True, nullable=False, index=True)
+    plan_name = Column(String(50), nullable=False)
+
+    # Currency
+    currency = Column(String(10), nullable=False, default="BTC")
+
+    # Address & Keys
+    address = Column(String(255), nullable=False, unique=True, index=True)
+    private_key_encrypted = Column(Text, nullable=False)
+
+    # Amounts
+    expected_amount_btc = Column(Float, nullable=False, default=0.0)
+    received_amount_btc = Column(Float, nullable=False, default=0.0)
+
+    # Status
+    status = Column(String(20), nullable=False, default="pending")  # pending, paid, expired
+    txid = Column(String(255))
+
+    # Timestamps
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False, index=True)
+    expires_at = Column(DateTime)
+    paid_at = Column(DateTime)
+
+    def __repr__(self):
+        return f"<CryptoDepositAddress {self.order_id} - {self.status} - {self.address[:8]}...>"
+
+    def to_dict(self):
+        """Convert to dictionary"""
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "order_id": self.order_id,
+            "plan_name": self.plan_name,
+            "currency": self.currency,
+            "address": self.address,
+            "expected_amount_btc": self.expected_amount_btc,
+            "received_amount_btc": self.received_amount_btc,
+            "status": self.status,
+            "txid": self.txid,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "expires_at": self.expires_at.isoformat() if self.expires_at else None,
+            "paid_at": self.paid_at.isoformat() if self.paid_at else None
         }
 
 

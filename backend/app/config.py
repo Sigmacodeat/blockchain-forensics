@@ -31,6 +31,8 @@ class Settings(BaseSettings):
     BITCOIN_RPC_PASSWORD: str = ""
     # Esplora-compatible API base (Blockstream/mempool.space)
     BTC_ESPLORA_BASE_URL: str = Field("https://blockstream.info/api", json_schema_extra={"env": "BTC_ESPLORA_BASE_URL"})
+    # XPUB for HD address derivation (optional, generates test XPUB if unset in dev)
+    BTC_XPUB: Optional[str] = Field(None, json_schema_extra={"env": "BTC_XPUB"})
     
     # Databases
     NEO4J_URI: str = "bolt://localhost:7687"
