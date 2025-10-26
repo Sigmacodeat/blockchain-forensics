@@ -45,12 +45,10 @@ async def news_sitemap():
 
 
 @router.get("/sitemap-news")
-async def news_sitemap_google():
-    """Google-News-optimierte Sitemap (news:news Namespace)."""
+async def news_sitemap_news(lang: Optional[str] = None):
     base_url = os.getenv("FRONTEND_URL", getattr(settings, "FRONTEND_URL", "http://localhost:5173"))
-    # Verwende DEFAULT_LANGUAGE für URL-Pfade
-    lang = os.getenv("DEFAULT_LANGUAGE", getattr(settings, "DEFAULT_LANGUAGE", "en"))
-    xml = news_service.generate_google_news_sitemap(base_url=base_url, lang=lang, max_items=50)
+    target_lang = lang or os.getenv("DEFAULT_LANGUAGE", getattr(settings, "DEFAULT_LANGUAGE", "en"))
+    xml = news_service.generate_google_news_sitemap(base_url=base_url, lang=target_lang, max_items=50)
     return Response(content=xml, media_type="application/xml")
 
 
