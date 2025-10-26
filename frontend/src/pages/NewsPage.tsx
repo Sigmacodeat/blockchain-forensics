@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, useSearchParams, Link } from 'react-router-dom'
 import { useI18n } from '@/contexts/I18nContext'
 
-const API_URL = import.meta.env.VITE_API_URL || ''
+const API_BASE: string | undefined = import.meta.env.VITE_API_URL
 
 interface NewsItem {
   id: string
@@ -35,7 +35,7 @@ export default function NewsPage() {
     setLoading(true)
     setError(null)
     try {
-      const url = new URL('/api/v1/news', API_URL)
+      const url = new URL('/api/v1/news', API_BASE || window.location.origin)
       if (q) url.searchParams.set('q', q)
       if (tag) url.searchParams.set('tag', tag)
       url.searchParams.set('lang', targetLang)

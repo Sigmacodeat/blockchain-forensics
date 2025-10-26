@@ -85,6 +85,26 @@ services:
       - key: NOWPAYMENTS_SANDBOX
         value: "true"
 
+      # Social Automation (placeholders; set in Render Dashboard)
+      - key: SLACK_WEBHOOK_URL
+        sync: false
+      - key: DISCORD_WEBHOOK_URL
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_WEBHOOK_SECRET
+        generateValue: true
+      - key: TELEGRAM_DEFAULT_CHAT_ID
+        sync: false
+      - key: AYRSHARE_API_KEY
+        sync: false
+      - key: ENABLE_SOCIAL_SCHEDULER
+        value: "0"
+      - key: SOCIAL_SCHEDULER_INTERVAL_MINUTES
+        value: "180"
+      - key: SOCIAL_DEFAULT_CHANNELS
+        value: "telegram"
+
   - type: web
     name: appsumo-admin-backend
     env: docker
