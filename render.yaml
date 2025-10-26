@@ -24,15 +24,17 @@ services:
         value: "[*]"
       - key: CORS_ORIGINS
         value: "[\"*\"]"
+      - key: TEST_MODE
+        value: "1"
       - key: POSTGRES_URL
-        # e.g. from Neon
-        value: "postgresql://USER:PASSWORD@HOST:5432/DBNAME"
+        # Empty to trigger TEST_MODE on Free tier (no external DB)
+        value: ""
       - key: REDIS_URL
-        # e.g. from Upstash
-        value: "rediss://:PASSWORD@HOST:PORT/0"
+        # Empty to trigger TEST_MODE on Free tier (no external Redis)
+        value: ""
       - key: NEO4J_URI
-        # e.g. AuraDB Free bolt URL
-        value: "neo4j+s://YOUR_AURA_HOST:7687"
+        # Empty to trigger TEST_MODE on Free tier (no external Neo4j)
+        value: ""
       - key: NEO4J_USER
         value: "neo4j"
       - key: NEO4J_PASSWORD
@@ -52,6 +54,19 @@ services:
         value: "0"
       - key: ENABLE_MEMPOOL_WS
         value: "0"
+      # News & Translation
+      - key: ENABLE_NEWS_FEEDS_WORKER
+        value: "1"
+      - key: NEWS_FEEDS_UPDATE_INTERVAL_MINUTES
+        value: "180"
+      - key: NEWS_FEEDS_URLS_JSON
+        value: '{"chainalysis":"https://blog.chainalysis.com/feed/","coindesk_policy":"https://www.coindesk.com/policy/rss/","elliptic":"https://www.elliptic.co/blog/rss.xml","trm_labs":"https://www.trmlabs.com/blog/rss.xml","theblock_policy":"https://www.theblock.co/rss?category=policy-and-regulation"}'
+      - key: TRANSLATION_PROVIDER
+        value: "none"
+      - key: DEEPL_API_KEY
+        sync: false
+      - key: GOOGLE_TRANSLATE_API_KEY
+        sync: false
       - key: GOOGLE_CLIENT_ID
         # Required for OAuth (see frontend VITE_GOOGLE_CLIENT_ID)
         sync: false
@@ -69,3 +84,16 @@ services:
         sync: false
       - key: NOWPAYMENTS_SANDBOX
         value: "true"
+
+  - type: web
+    name: appsumo-admin-backend
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./appsumo-products/admin-backend/backend/Dockerfile
+    dockerContext: ./appsumo-products/admin-backend/backend
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: APPSUMO_WEBHOOK_SECRET
+        generateValue: true

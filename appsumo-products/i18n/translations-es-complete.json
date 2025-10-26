@@ -1,0 +1,616 @@
+{
+  "common": {
+    "cta": {
+      "getLifetimeDeal": "Obtener oferta de por vida",
+      "startFreeTrial": "Iniciar prueba gratuita",
+      "learnMore": "Aprender más",
+      "contactSales": "Contactar ventas",
+      "buyNow": "Buy Now",
+      "tryFree": "Try Free"
+    },
+    "pricing": {
+      "perMonth": "por mes",
+      "perYear": "per year",
+      "lifetime": "de por vida",
+      "save": "Ahorrar",
+      "mostPopular": "Más popular",
+      "bestseller": "Bestseller"
+    },
+    "navigation": {
+      "home": "Inicio",
+      "products": "Productos",
+      "blog": "Blog",
+      "about": "About",
+      "contact": "Contact",
+      "dashboard": "Panel de control",
+      "logout": "Logout",
+      "login": "Login"
+    },
+    "forms": {
+      "email": "Email",
+      "password": "Password",
+      "name": "Name",
+      "message": "Message",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "save": "Save",
+      "delete": "Delete",
+      "edit": "Edit",
+      "add": "Add"
+    },
+    "errors": {
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email",
+      "networkError": "Network error. Please try again.",
+      "notFound": "Page not found",
+      "serverError": "Server error. Please try again later."
+    }
+  },
+  "blog": {
+    "ui": {
+      "readMore": "Read More",
+      "published": "Published",
+      "author": "Author",
+      "tags": "Tags",
+      "categories": "Categories",
+      "comments": "Comments",
+      "shares": "Shares",
+      "views": "Views",
+      "likes": "Likes",
+      "bookmarks": "Bookmarks",
+      "relatedPosts": "Related Posts",
+      "latestPosts": "Latest Posts",
+      "popularPosts": "Popular Posts"
+    },
+    "categories": {
+      "blockchain": "Blockchain",
+      "cryptocurrency": "Cryptocurrency",
+      "security": "Security",
+      "forensics": "Forensics",
+      "analysis": "Analysis",
+      "news": "News",
+      "guides": "Guides",
+      "tutorials": "Tutorials"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "overview": "Overview",
+      "statistics": "Statistics",
+      "posts": "Posts",
+      "pages": "Pages",
+      "users": "Users",
+      "comments": "Comments",
+      "analytics": "Analytics",
+      "settings": "Settings"
+    },
+    "posts": {
+      "allPosts": "All Posts",
+      "addNew": "Add New",
+      "published": "Published",
+      "draft": "Draft",
+      "trash": "Trash",
+      "title": "Title",
+      "content": "Content",
+      "excerpt": "Excerpt",
+      "featuredImage": "Featured Image",
+      "categories": "Categories",
+      "tags": "Tags",
+      "status": "Status",
+      "publish": "Publish",
+      "update": "Update"
+    },
+    "forms": {
+      "save": "Save",
+      "saving": "Saving...",
+      "saved": "Saved successfully",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "confirmDelete": "Are you sure you want to delete this?",
+      "edit": "Edit",
+      "view": "View",
+      "duplicate": "Duplicate"
+    }
+  },
+  "products": {
+    "common": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "reviews": "Reviews",
+      "faq": "FAQ",
+      "support": "Support",
+      "documentation": "Documentation",
+      "download": "Download",
+      "trial": "Free Trial",
+      "lifetime": "Lifetime Access"
+    }
+  },
+  "analytics": {
+    "advanced": {
+      "title": "Análisis Avanzado",
+      "subtitle": "Información en tiempo real e inteligencia de amenazas"
+    },
+    "refresh": "Actualizar",
+    "export": {
+      "csv": "Exportar como CSV",
+      "excel": "Exportar como Excel",
+      "pdf": "Exportar como PDF",
+      "success": "Exportación exitosa",
+      "error": "Error de exportación"
+    },
+    "exporting": "Exportando...",
+    "dateRange": {
+      "today": "Hoy",
+      "week": "Esta Semana",
+      "month": "Este Mes",
+      "custom": "Rango Personalizado"
+    },
+    "metrics": {
+      "activeTraces": "Seguimientos Activos",
+      "activeCases": "Casos Activos",
+      "criticalAlerts": "Alertas Críticas",
+      "activeUsers": "Usuarios Activos"
+    },
+    "charts": {
+      "riskDistribution": "Distribución de Riesgo en el Tiempo",
+      "threatCategories": "Principales Categorías de Amenazas",
+      "topExchanges": "Principales Exchanges por Volumen",
+      "topMixers": "Principales Mixers por Volumen",
+      "geographic": "Distribución Geográfica"
+    },
+    "noData": "No hay datos disponibles",
+    "noDataDesc": "Intenta seleccionar un rango de fechas diferente",
+    "loading": "Cargando análisis...",
+    "error": "Error al cargar datos de análisis",
+    "riskLevels": {
+      "critical": "Crítico",
+      "high": "Alto",
+      "medium": "Medio",
+      "low": "Bajo"
+    },
+    "categories": {
+      "mixer": "Actividad de Mixer",
+      "sanctions": "Contacto con Sanciones",
+      "scam": "Estafa/Phishing",
+      "ransomware": "Ransomware",
+      "theft": "Robo/Hack",
+      "exchange": "Actividad de Exchange"
+    }
+  },
+  "bridge": {
+    "title": "Transferencias Bridge",
+    "subtitle": "Analiza enlaces Bridge Cross-Chain y transacciones",
+    "kpi": {
+      "total_transactions": "Total de Transacciones Bridge",
+      "unique_addresses": "Direcciones Únicas",
+      "top_bridges": "Bridges Soportados"
+    },
+    "charts": {
+      "chain_distribution": "Distribución por Chain de Origen",
+      "top_bridges": "Principales Bridges por Transacciones"
+    },
+    "filter": {
+      "title": "Filtros y Búsqueda",
+      "address": "Dirección",
+      "chain_from": "Origen (Chain)",
+      "chain_to": "Destino (Chain)",
+      "limit": "Límite",
+      "search": "Buscar",
+      "reset": "Restablecer",
+      "export": "Exportar CSV"
+    },
+    "loading": "Cargando enlaces bridge...",
+    "error": {
+      "title": "Error de Carga",
+      "message": "No se pudieron cargar los enlaces bridge. Por favor, inténtalo de nuevo."
+    },
+    "table": {
+      "time": "Hora",
+      "bridge": "Bridge",
+      "from_address": "Desde (Dir)",
+      "to_address": "Hacia (Dir)",
+      "chain_from": "Chain Desde",
+      "chain_to": "Chain Hacia",
+      "tx_hash": "Hash de TX",
+      "value": "Valor",
+      "no_data": "No se encontraron datos",
+      "no_data_hint": "Intenta con diferentes criterios de filtro"
+    }
+  },
+  "patterns": {
+    "title": "Detección de Patrones",
+    "subtitle": "Análisis de comportamiento impulsado por IA",
+    "analysis": {
+      "title": "Análisis de Patrones",
+      "description": "Detecta cadenas peel, movimientos rápidos y patrones sospechosos con evidencia"
+    },
+    "form": {
+      "address": "Dirección",
+      "addressPlaceholder": "0x... o bc1...",
+      "patterns": "Patrones (opcional)",
+      "patternsPlaceholder": "peel_chain,rapid_movement",
+      "minScore": "Puntuación Mínima",
+      "limit": "Límite",
+      "analyze": "Analizar",
+      "analyzing": "Analizando...",
+      "askAssistant": "Preguntar al Asistente",
+      "openInvestigator": "Abrir en Investigator",
+      "expandInvestigator": "Expandir en Investigator"
+    },
+    "validation": {
+      "invalidAddress": "Dirección inválida. Se esperaba 0x... o bc1...",
+      "addressRequired": "Dirección requerida"
+    },
+    "status": {
+      "analyzing": "Análisis en progreso...",
+      "complete": "Análisis completo",
+      "waiting": "Por favor espera, se están detectando patrones."
+    },
+    "results": {
+      "title": "Resultados para",
+      "patternsFound": "{{count}} patrón encontrado",
+      "patternsFound_plural": "{{count}} patrones encontrados",
+      "noPatterns": "No se encontraron patrones.",
+      "export": {
+        "csv": "Exportar CSV",
+        "json": "Exportar JSON"
+      }
+    },
+    "pattern": {
+      "score": "Puntuación {{score}}%",
+      "evidence": "Evidencia",
+      "noEvidence": "No hay evidencia disponible."
+    },
+    "table": {
+      "tx": "Transacción",
+      "from": "Desde",
+      "to": "Hacia",
+      "amount": "Cantidad",
+      "time": "Hora",
+      "actions": "Acciones",
+      "investigator": "Investigator",
+      "expand": "Expandir",
+      "path": "Ruta",
+      "copy": "Copiar"
+    },
+    "patterns": {
+      "peel_chain": "Cadena Peel",
+      "rapid_movement": "Movimiento Rápido",
+      "layering": "Estratificación",
+      "structuring": "Estructuración",
+      "round_amount": "Cantidades Redondas"
+    },
+    "error": "Error durante el análisis. Por favor, inténtalo de nuevo."
+  },
+  "cases": {
+    "title": "Gestión de Casos",
+    "subtitle": "Gestiona casos de investigación y cadenas de evidencia",
+    "loading": "Cargando casos...",
+    "new_case": "Nuevo Caso",
+    "batch_screen": "Pantalla por Lotes",
+    "search_placeholder": "Buscar casos por título, ID o investigador...",
+    "filters": "Filtros",
+    "filters_title": "Filtros Avanzados",
+    "showing": "Mostrando",
+    "of": "de",
+    "cases": "casos",
+    "stats": {
+      "total": "Total de Casos",
+      "active": "Activos",
+      "closed": "Cerrados",
+      "pending": "Pendientes"
+    },
+    "filter": {
+      "status": "Estado",
+      "investigator": "Investigador",
+      "from_date": "Desde Fecha",
+      "to_date": "Hasta Fecha",
+      "all_statuses": "Todos los Estados",
+      "all_investigators": "Todos los Investigadores",
+      "select_start_date": "Seleccionar fecha de inicio",
+      "select_end_date": "Seleccionar fecha de fin"
+    },
+    "status": {
+      "active": "Activo",
+      "closed": "Cerrado",
+      "pending": "Pendiente"
+    },
+    "empty": {
+      "title": "No se encontraron casos",
+      "adjust_filters": "Intenta ajustar tus filtros o términos de búsqueda",
+      "create_first": "Crea tu primer caso para comenzar"
+    },
+    "create_case": "Crear Caso",
+    "create_new": "Crear Nuevo Caso",
+    "success": {
+      "created": "Caso Creado",
+      "created_message": "Tu nuevo caso ha sido creado exitosamente."
+    },
+    "error": {
+      "load": "Error al cargar casos",
+      "load_message": "Hubo un problema al cargar tus casos. Por favor, inténtalo de nuevo.",
+      "create": "Error al crear caso. Por favor, inténtalo de nuevo."
+    },
+    "no_description": "No se proporcionó descripción",
+    "investigator": "Investigador",
+    "created": "Creado",
+    "entities": "Entidades",
+    "evidence": "Evidencia",
+    "view": "Ver",
+    "form": {
+      "case_id": "ID de Caso",
+      "case_id_placeholder": "ej., CASO-2025-001",
+      "title": "Título",
+      "title_placeholder": "Título breve del caso",
+      "description": "Descripción",
+      "description_placeholder": "Descripción detallada de la investigación",
+      "description_hint": "Opcional: Proporciona contexto adicional sobre este caso",
+      "lead_investigator": "Investigador Principal",
+      "investigator_placeholder": "Nombre o correo electrónico",
+      "creating": "Creando...",
+      "create": "Crear Caso",
+      "cancel": "Cancelar",
+      "error": {
+        "case_id_required": "ID de Caso es requerido",
+        "title_required": "Título es requerido",
+        "investigator_required": "Investigador Principal es requerido"
+      }
+    }
+  },
+  "automation": {
+    "title": "Automatización",
+    "subtitle": "Define reglas, crea casos automáticamente, inicia seguimientos y genera informes. Prueba con simulación.",
+    "settings": {
+      "title": "Configuración",
+      "description": "Reglas de automatización y umbrales",
+      "enabled": "Activado",
+      "enabledDesc": "Activar o desactivar automatización",
+      "riskThreshold": "Umbral de Riesgo",
+      "riskThresholdValue": "Umbral de Riesgo: {{value}}",
+      "riskThresholdTooltip": "La automatización se activa cuando la puntuación de riesgo excede este umbral (0-1). Recomendado: 0.60-0.80.",
+      "riskThresholdHelp": "Umbrales más altos reducen falsos positivos pero pueden perder coincidencias importantes.",
+      "minAmount": "Cantidad Mínima (USD)",
+      "minAmountTooltip": "Solo se considerarán transacciones por encima de esta cantidad en USD.",
+      "minAmountHelp": "Solo se considerarán transacciones por encima de esta cantidad en USD.",
+      "traceDepth": "Profundidad de Auto-Seguimiento (0-10)",
+      "traceDepthHelp": "Mayor profundidad aumenta el tiempo de ejecución y costos; Recomendado: 3-5.",
+      "autoCreateCase": "Crear Casos Automáticamente",
+      "reportTemplate": "Plantilla de Informe",
+      "reportTemplates": {
+        "standard": "Estándar",
+        "legal": "Legal (Admisible en Corte)",
+        "summary": "Resumen Ejecutivo"
+      },
+      "save": "Guardar",
+      "saving": "Guardando..."
+    },
+    "simulation": {
+      "title": "Simulación",
+      "description": "Vista previa de cuántos casos/seguimientos se activarían",
+      "hours": "Período de Tiempo (Horas)",
+      "sample": "Tamaño de Muestra",
+      "simulate": "Simular",
+      "simulating": "Simulando...",
+      "results": {
+        "evaluated": "Evaluados",
+        "createCases": "Crear Casos",
+        "triggerTraces": "Activar Seguimientos",
+        "highPriority": "Alta Prioridad"
+      }
+    },
+    "recent": {
+      "title": "Trabajos Recientes de Auto-Investigación",
+      "description": "Últimas entradas de la cola de trabajos",
+      "noJobs": "No hay trabajos disponibles",
+      "chain": "Chain",
+      "depth": "Profundidad",
+      "status": {
+        "done": "Hecho",
+        "queued": "En Cola",
+        "failed": "Fallido"
+      }
+    }
+  },
+  "privacyDemixing": {
+    "title": "Desmezclado de Tornado Cash",
+    "subtitle": "Desanonimiza transacciones de mixer con forense impulsado por IA",
+    "description": "Tecnología avanzada de desmezclado para rastrear fondos a través de Tornado Cash y otros protocolos de privacidad",
+    "form": {
+      "address": "Dirección de Billetera",
+      "addressPlaceholder": "0x...",
+      "chain": "Blockchain",
+      "timeWindow": "Ventana de Tiempo (horas)",
+      "maxHops": "Saltos Máximos",
+      "startButton": "Iniciar Análisis de Desmezclado",
+      "analyzing": "Analizando..."
+    },
+    "chains": {
+      "ethereum": "Ethereum",
+      "bsc": "BNB Smart Chain",
+      "polygon": "Polygon"
+    },
+    "results": {
+      "title": "Resultados del Análisis",
+      "confidence": "Puntuación de Confianza",
+      "depositsFound": "Depósitos Encontrados",
+      "likelyWithdrawals": "Retiros Probables",
+      "uniqueAddresses": "Direcciones Únicas",
+      "deposits": "Depósitos de Tornado Cash",
+      "withdrawals": "Retiros Identificados",
+      "paths": "Rutas Post-Mixer",
+      "pool": "Pool",
+      "viewTx": "Ver Transacción",
+      "match": "Coincidencia",
+      "noResults": "No se encontraron resultados",
+      "noResultsDesc": "Intenta ajustar tus parámetros de búsqueda"
+    },
+    "error": {
+      "title": "Error de Análisis",
+      "generic": "Ocurrió un error durante el análisis",
+      "invalidAddress": "Por favor ingresa una dirección de billetera válida",
+      "networkError": "Error de red. Por favor, inténtalo de nuevo."
+    },
+    "features": {
+      "aiPowered": "Análisis Impulsado por IA",
+      "realTime": "Procesamiento en Tiempo Real",
+      "multiChain": "Soporte Multi-Chain",
+      "forensicGrade": "Resultados de Grado Forense"
+    },
+    "info": {
+      "howItWorks": "Cómo Funciona",
+      "step1": "Ingresa la dirección de billetera que interactuó con Tornado Cash",
+      "step2": "Nuestra IA analiza patrones de transacción y temporización",
+      "step3": "El aprendizaje automático identifica direcciones de retiro probables",
+      "step4": "Rastrea fondos a través de múltiples saltos hasta destinos finales"
+    }
+  },
+  "address": {
+    "title": "Análisis de Dirección",
+    "no_address": "No se proporcionó dirección",
+    "balance": "Saldo",
+    "transactions": "Transacciones",
+    "first_seen": "Primera Vez Visto",
+    "last_seen": "Última Vez Visto",
+    "labels": "Etiquetas de Entidad",
+    "recent_tx": "Transacciones Recientes",
+    "view_explorer": "Ver en Explorer",
+    "tx_hash": "Hash de TX",
+    "from": "Desde",
+    "to": "Hacia",
+    "value": "Valor",
+    "time": "Hora",
+    "create_case": "Crear Caso",
+    "case_created": "Caso creado exitosamente",
+    "case_error": "Error al crear caso",
+    "open_investigator": "Abrir Gráfico"
+  },
+  "trace": {
+    "simple": {
+      "title": "Herramientas de Seguimiento de Transacciones",
+      "subtitle": "Rastrea transacciones a través de múltiples saltos e identifica clusters de billeteras",
+      "taint_analysis": "Análisis de Contaminación",
+      "taint_desc": "Rastrea el flujo de fondos a través de la red",
+      "chain": "Chain",
+      "chain_eth": "Ethereum",
+      "chain_btc": "Bitcoin",
+      "chain_sol": "Solana",
+      "address": "Dirección",
+      "address_ph": "0x...",
+      "depth": "Profundidad",
+      "depth_ph": "Profundidad",
+      "threshold": "Umbral",
+      "threshold_ph": "Umbral",
+      "model": "Modelo",
+      "model_proportional": "Proporcional",
+      "model_fifo": "FIFO",
+      "model_haircut": "Haircut",
+      "run": "Ejecutar Seguimiento",
+      "tracing": "Rastreando...",
+      "success_trace": "Seguimiento completado exitosamente",
+      "error_trace": "Error en seguimiento",
+      "trace_complete": "Seguimiento Completo",
+      "nodes": "Nodos",
+      "edges": "Aristas",
+      "high_risk": "Alto Riesgo",
+      "export_success": "Exportación exitosa",
+      "export_error": "Error de exportación",
+      "export_paths": "Exportar Rutas",
+      "export_targets": "Exportar Objetivos",
+      "paths_title": "Rutas de Contaminación",
+      "targets_title": "Direcciones Objetivo",
+      "th_taint": "Contaminación",
+      "th_path": "Ruta",
+      "th_target": "Objetivo",
+      "th_risk": "Riesgo",
+      "th_paths": "Rutas",
+      "create_case": "Crear Caso",
+      "creating_case": "Creando Caso...",
+      "case_created": "Caso creado exitosamente",
+      "case_error": "Error al crear caso",
+      "cluster": {
+        "title": "Agrupación de Billeteras",
+        "desc": "Identifica direcciones de billetera relacionadas",
+        "lookup": "Buscar Cluster",
+        "clustering": "Agrupando...",
+        "success_cluster": "Búsqueda de cluster exitosa",
+        "error_cluster": "Error en búsqueda de cluster",
+        "label": "ID de Cluster",
+        "members": "Miembros",
+        "members_list": "Miembros del Cluster",
+        "member_address": "Dirección de Miembro",
+        "export_members": "Exportar Miembros"
+      }
+    }
+  },
+  "useCases": {
+    "title": "Anwendungsfälle",
+    "subtitle": "Konkrete Workflows für verschiedene Zielgruppen",
+    "items": {
+      "financialInstitutions": {
+        "title": "Finanzinstitute",
+        "desc": "Kundenüberwachung, KYT, Case Management und Berichte"
+      },
+      "lawEnforcement": {
+        "title": "Strafverfolgung",
+        "desc": "Tracing, Evidenzsicherung, gerichtsfeste Reports"
+      },
+      "exchanges": {
+        "title": "Börsen",
+        "desc": "Ein- und Auszahlungs-Überwachung, Sanktions-Checks"
+      },
+      "defiProtocols": {
+        "title": "DeFi Protokolle",
+        "desc": "Exploit-Analyse, Asset-Recovery und Monitoring"
+      },
+      "compliance": {
+        "title": "Compliance",
+        "desc": "Travel Rule, Risk Scoring und Audit-Trails"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "desc": "Token-Flows, Clustering und Netzwerk-Analysen"
+      }
+    }
+  },
+  "tour": {
+    "title": "Geführte Tour",
+    "subtitle": "Lerne die wichtigsten Bereiche in wenigen Schritten kennen",
+    "steps": {
+      "welcome": {
+        "title": "Willkommen",
+        "desc": "Kurze Einführung in Dashboard, Tracing und Cases"
+      },
+      "navigation": {
+        "title": "Navigation",
+        "desc": "Linke Sidebar für Forensik-Bereiche und Filter"
+      },
+      "createCase": {
+        "title": "Case erstellen",
+        "desc": "Neue Untersuchung anlegen und Team zuweisen"
+      },
+      "filters": {
+        "title": "Filter & Suche",
+        "desc": "Schnell die relevanten Cases und Transaktionen finden"
+      },
+      "investigator": {
+        "title": "Investigator Graph",
+        "desc": "Adressen, Cluster und Pfade visuell analysieren"
+      },
+      "reports": {
+        "title": "Reports",
+        "desc": "Gerichtsfeste Berichte mit Evidenz generieren"
+      },
+      "finish": {
+        "title": "Fertig",
+        "desc": "Du bist startklar – viel Erfolg bei den Analysen!"
+      }
+    },
+    "buttons": {
+      "next": "Weiter",
+      "prev": "Zurück",
+      "skip": "Überspringen",
+      "done": "Fertig"
+    }
+  }
+}

@@ -54,6 +54,8 @@ export default function CentralDashboard() {
   ])
 
   const [refreshing, setRefreshing] = useState(false)
+  const [kpis, setKpis] = useState(null)
+  const KPI_API = import.meta?.env?.VITE_KPI_API_URL || 'http://localhost:8000'
 
   const checkHealth = async (productId, backendPort) => {
     try {
@@ -80,6 +82,16 @@ export default function CentralDashboard() {
       })
     )
     setProducts(updatedProducts)
+    // Fetch admin KPIs
+    try {
+      const res = await fetch(`${KPI_API}/api/admin/kpis`)
+      if (res.ok) {
+        const data = await res.json()
+        setKpis(data)
+      }
+    } catch (e) {
+      // ignore
+    }
     setRefreshing(false)
   }
 
@@ -191,6 +203,28 @@ export default function CentralDashboard() {
             trend="Last 30 days"
             color="indigo"
           />
+        </div>
+
+        {/* Admin KPIs */}
+        <div className="mb-8 bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-lg font-bold text-white">Admin KPIs (AppSumo)</h3>
+            <div className="flex gap-2">
+              <a
+                href={`data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(kpis || {}, null, 2))}`}
+                download="appsumo-kpis.json"
+                className="px-3 py-2 bg-slate-700/40 hover:bg-slate-700/60 border border-slate-600 rounded-lg text-slate-300 text-sm"
+              >
+                Download JSON
+              </a>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-4 gap-4">
+            <StatCard icon={<BarChart3 className="text-emerald-400" />} label="Total Events" value={kpis?.total_events ?? '-'} trend="webhooks" color="emerald" />
+            <StatCard icon={<CheckCircle className="text-green-400" />} label="Total Licenses" value={kpis?.total_licenses ?? '-'} trend="all products" color="green" />
+            <StatCard icon={<Zap className="text-blue-400" />} label="Active Licenses" value={kpis?.active_licenses ?? '-'} trend="current" color="blue" />
+            <StatCard icon={<XCircle className="text-red-400" />} label="Refunded" value={kpis?.refunded_licenses ?? '-'} trend="lifetime" color="red" />
+          </div>
         </div>
 
         {/* Products Grid */}

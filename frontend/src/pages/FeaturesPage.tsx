@@ -126,11 +126,50 @@ export default function FeaturesPage() {
         </div>
       </div>
 
+      {/* Table of Contents */}
+      <div className="border-b">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6 py-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <Badge className="mb-3" variant="scan-border">{t('features.toc.badge', 'Inhaltsverzeichnis')}</Badge>
+              <h2 className="text-2xl font-bold">{t('features.toc.title', 'Springe direkt zu den Features')}</h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4 text-sm">
+              <a href="#tracing" className="flex items-center gap-2 p-3 rounded-lg border hover:border-primary hover:bg-primary/5 transition-colors">
+                <Search className="h-4 w-4 text-primary" />
+                <span>{t('features.toc.tracing', 'Transaction Tracing')}</span>
+              </a>
+              <a href="#alerts" className="flex items-center gap-2 p-3 rounded-lg border hover:border-primary hover:bg-primary/5 transition-colors">
+                <Bell className="h-4 w-4 text-primary" />
+                <span>{t('features.toc.alerts', 'Real-Time Alerts')}</span>
+              </a>
+              <a href="#graph" className="flex items-center gap-2 p-3 rounded-lg border hover:border-primary hover:bg-primary/5 transition-colors">
+                <Network className="h-4 w-4 text-primary" />
+                <span>{t('features.toc.graph', 'Graph Analytics')}</span>
+              </a>
+              <a href="#ai" className="flex items-center gap-2 p-3 rounded-lg border hover:border-primary hover:bg-primary/5 transition-colors">
+                <Brain className="h-4 w-4 text-primary" />
+                <span>{t('features.toc.ai', 'AI & ML')}</span>
+              </a>
+              <a href="#case" className="flex items-center gap-2 p-3 rounded-lg border hover:border-primary hover:bg-primary/5 transition-colors">
+                <FileText className="h-4 w-4 text-primary" />
+                <span>{t('features.toc.case', 'Case Management')}</span>
+              </a>
+              <a href="#security" className="flex items-center gap-2 p-3 rounded-lg border hover:border-primary hover:bg-primary/5 transition-colors">
+                <Lock className="h-4 w-4 text-primary" />
+                <span>{t('features.toc.security', 'Security')}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Main Features */}
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 py-16">
         <div className="space-y-32">
           {/* Transaction Tracing */}
           <FeatureSection
+            id="tracing"
             badge={t('features.tracing.badge', 'Transaction Tracing')}
             title={t('features.tracing.title', 'Multi-Chain Transaction Intelligence')}
             description={t('features.tracing.desc', 'Verfolge Transaktionen über alle wichtigen Blockchains hinweg. Mit Cross-Chain-Bridge-Detection, Privacy-Coin-Demixing und rekursivem Forward/Backward-Tracing.')}
@@ -166,6 +205,7 @@ export default function FeaturesPage() {
 
           {/* Real-Time Alerts */}
           <FeatureSection
+            id="alerts"
             badge={t('features.alerts.badge', 'Real-Time Monitoring')}
             title={t('features.alerts.title', 'Intelligente Alert-Engine')}
             description={t('features.alerts.desc', '15+ konfigurierbare Alert-Regeln mit Machine Learning. Erhalte Benachrichtigungen über Sanktionen, Mixing, High-Value-Transfers und Anomalien.')}
@@ -201,6 +241,7 @@ export default function FeaturesPage() {
 
           {/* Graph Analytics */}
           <FeatureSection
+            id="graph"
             badge={t('features.graph.badge', 'Graph Intelligence')}
             title={t('features.graph.title', 'Entity Resolution & Network Analysis')}
             description={t('features.graph.desc', 'Neo4j-basierte Graph-Datenbank für Entity Clustering, Community Detection und Visual Investigation.')}
@@ -236,6 +277,7 @@ export default function FeaturesPage() {
 
           {/* AI & ML */}
           <FeatureSection
+            id="ai"
             badge={t('features.ai.badge', 'AI & Machine Learning')}
             title={t('features.ai.title', 'KI-gestützte Analysen')}
             description={t('features.ai.desc', 'Machine Learning Models für Anomaly Detection, Risk Scoring und autonome AI-Agents für 24/7 Investigations.')}
@@ -271,6 +313,7 @@ export default function FeaturesPage() {
 
           {/* Case Management */}
           <FeatureSection
+            id="case"
             badge={t('features.case.badge', 'Investigation Workflow')}
             title={t('features.case.title', 'Case Management & Evidence Chain')}
             description={t('features.case.desc', 'Vollständiges Investigation Management mit Evidence Chain-of-Custody, eIDAS-Signaturen und Court-Admissible Reports.')}
@@ -306,6 +349,7 @@ export default function FeaturesPage() {
 
           {/* Security & Compliance */}
           <FeatureSection
+            id="security"
             badge={t('features.security.badge', 'Enterprise Security')}
             title={t('features.security.title', 'Security & Compliance')}
             description={t('features.security.desc', 'Enterprise-Grade-Sicherheit mit RBAC, SSO/SAML, Audit Logs und GDPR-Compliance.')}
@@ -396,6 +440,7 @@ export default function FeaturesPage() {
 }
 
 interface FeatureSectionProps {
+  id?: string
   badge: string
   title: string
   description: string
@@ -470,9 +515,10 @@ function AnimatedStat({ value, label, delay = 0 }: { value: string; label: strin
   )
 }
 
-function FeatureSection({ badge, title, description, icon, features, stats }: FeatureSectionProps) {
+function FeatureSection({ id, badge, title, description, icon, features, stats }: FeatureSectionProps) {
   return (
     <motion.div 
+      id={id}
       className="grid md:grid-cols-2 gap-12 items-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}

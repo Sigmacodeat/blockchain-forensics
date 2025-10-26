@@ -61,6 +61,10 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
   const settingsRef = React.useRef<HTMLDivElement | null>(null)
   const registerRef = React.useRef<HTMLDivElement | null>(null)
   const registerFirstItemRef = React.useRef<HTMLAnchorElement | null>(null)
+  const [megaOpen, setMegaOpen] = React.useState(false)
+  const megaRef = React.useRef<HTMLDivElement | null>(null)
+  const megaButtonRef = React.useRef<HTMLButtonElement | null>(null)
+  const hoverTimerMega = React.useRef<number | null>(null)
   const settingsMenuId = 'settings-menu'
   const registerMenuId = 'auth-register-menu'
   const settingsButtonId = 'settings-button'
@@ -102,9 +106,14 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
       if (menuRef.current && !menuRef.current.contains(target)) setMenuOpen(false)
       if (settingsRef.current && !settingsRef.current.contains(target)) setSettingsOpen(false)
       if (registerRef.current && !registerRef.current.contains(target)) setRegisterOpen(false)
+      if (megaOpen) {
+        const inPanel = megaRef.current && megaRef.current.contains(target)
+        const inButton = megaButtonRef.current && megaButtonRef.current.contains(target)
+        if (!inPanel && !inButton) setMegaOpen(false)
+      }
     }
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') { setMenuOpen(false); setSettingsOpen(false); setRegisterOpen(false) }
+      if (e.key === 'Escape') { setMenuOpen(false); setSettingsOpen(false); setRegisterOpen(false); setMegaOpen(false) }
     }
     document.addEventListener('mousedown', onDocClick)
     document.addEventListener('keydown', onKey)
@@ -182,6 +191,96 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
             </Link>
             
             <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+              {/* Desktop Mega Menu Trigger */}
+              <div className="relative hidden md:block" ref={megaRef}>
+                <button
+                  type="button"
+                  ref={megaButtonRef}
+                  onClick={() => setMegaOpen((v) => !v)}
+                  onMouseEnter={() => {
+                    if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                    hoverTimerMega.current = window.setTimeout(() => setMegaOpen(true), 100)
+                  }}
+                  onMouseLeave={(e) => {
+                    const to = e.relatedTarget as Node | null
+                    if (to && megaRef.current && megaRef.current.contains(to)) return
+                    if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                    hoverTimerMega.current = window.setTimeout(() => setMegaOpen(false), 140)
+                  }}
+                  aria-haspopup="true"
+                  aria-expanded={megaOpen}
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-300 dark:border-slate-600 bg-background hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                >
+                  <LayoutGrid className="h-4 w-4" aria-hidden />
+                  <span className="text-sm font-medium">{t('navigation.explore', { defaultValue: 'Entdecken' })}</span>
+                  <svg className={`h-4 w-4 transition-transform ${megaOpen ? 'rotate-180' : ''}`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.085l3.71-3.855a.75.75 0 111.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.24-4.4a.75.75 0 01.02-1.06z" clipRule="evenodd"/></svg>
+                </button>
+                <AnimatePresence>
+                {megaOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -4, scale: 0.98 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -4, scale: 0.98 }}
+                    transition={{ duration: prefersReducedMotion ? 0 : 0.12, ease: 'easeOut' }}
+                    className="absolute right-0 mt-2 w-[720px] max-w-[calc(100vw-2rem)] rounded-xl border border-border bg-background shadow-2xl ring-1 ring-primary/10 p-4 z-50"
+                    onMouseEnter={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current) }}
+                    onMouseLeave={() => {
+                      if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                      hoverTimerMega.current = window.setTimeout(() => setMegaOpen(false), 140)
+                    }}
+                    role="menu"
+                    aria-label="Site Navigation"
+                  >
+                    <div className="grid grid-cols-3 gap-4">
+                      {/* Product */}
+                      <div>
+                        <div className="px-2 mb-2 text-[10px] font-semibold text-muted-foreground uppercase tracking-wider">{t('navigation.group_product', { defaultValue: 'Product' })}</div>
+                        <div className="space-y-1">
+                          <Link to={`/${currentLanguage}`} onClick={() => setMegaOpen(false)} className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${isActive('/') ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>🏠 {t('navigation.home', { defaultValue: 'Home' })}</Link>
+                          <Link to={`/${currentLanguage}/features`} onClick={() => setMegaOpen(false)} className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${isActive('/features') ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>✨ {t('navigation.features')}</Link>
+                          <Link to={`/${currentLanguage}/use-cases`} onClick={() => setMegaOpen(false)} className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${(isActive('/use-cases') || location.pathname.includes('/use-cases/')) ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>🧭 {t('navigation.use_cases')}</Link>
+                          <Link to={`/${currentLanguage}/news`} onClick={() => setMegaOpen(false)} className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${isActive('/news') ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>📰 {t('navigation.news', { defaultValue: 'News' })}</Link>
+                          <Link to={`/${currentLanguage}/pricing`} onClick={() => setMegaOpen(false)} className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${isActive('/pricing') ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>💳 {t('navigation.pricing')}</Link>
+                        </div>
+                      </div>
+                      {/* Company */}
+                      <div>
+                        <div className="px-2 mb-2 text-[10px] font-semibold text-muted-foreground uppercase tracking-wider">{t('navigation.group_company', { defaultValue: 'Company' })}</div>
+                        <div className="space-y-1">
+                          <Link to={`/${currentLanguage}/about`} onClick={() => setMegaOpen(false)} className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${isActive('/about') ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>🏢 {t('navigation.about')}</Link>
+                          <Link to={`/${currentLanguage}/businessplan`} onClick={() => setMegaOpen(false)} className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors hover:bg-muted">📄 {t('navigation.businessplan', { defaultValue: 'Businessplan & Funding' })}</Link>
+                          <a href="#" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors hover:bg-muted">✉️ {t('footer.contact')}</a>
+                        </div>
+                      </div>
+                      {/* Preferences / Resources */}
+                      <div>
+                        <div className="px-2 mb-2 text-[10px] font-semibold text-muted-foreground uppercase tracking-wider">{t('navigation.group_preferences', { defaultValue: 'Preferences' })}</div>
+                        <div className="space-y-1">
+                          <button onClick={() => { setMegaOpen(false); openCookieConsent(true) }} className="w-full text-left flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors hover:bg-muted">🍪 {t('cookie.manage', { defaultValue: 'Cookie-Einstellungen' })}</button>
+                          <div className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm">
+                            <span className="text-xs text-muted-foreground">{t('common.theme')}</span>
+                            <ThemeToggle />
+                          </div>
+                          <div className="px-3 py-2">
+                            <div className="text-xs text-muted-foreground mb-1">{t('common.language')}</div>
+                            <div className="flex flex-wrap gap-1.5 max-h-24 overflow-y-auto pr-1">
+                              {sortedLanguages.slice(0, 18).map((l) => (
+                                <button
+                                  key={l.code}
+                                  onClick={() => { changeLanguage(l.code); setMegaOpen(false) }}
+                                  className={`px-2 py-1 rounded border text-xs ${currentLanguage === l.code ? 'border-primary bg-primary/5 text-primary' : 'border-border hover:bg-muted/50'}`}
+                                  aria-label={l.nativeName}
+                                >{l.flag} {l.code}</button>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+                </AnimatePresence>
+              </div>
               <button
                 type="button"
                 className="inline-flex items-center justify-center rounded-md p-2 hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
@@ -484,6 +583,7 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
                 <Link to={`/${currentLanguage}`} className={`block px-4 py-3 text-sm ${isActive('/') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'} transition`}>{t('navigation.home', { defaultValue: 'Home' })}</Link>
                 <Link to={`/${currentLanguage}/features`} className={`block px-4 py-3 text-sm ${isActive('/features') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'} transition`}>{t('navigation.features', { defaultValue: 'Features' })}</Link>
                 <Link to={`/${currentLanguage}/use-cases`} className={`block px-4 py-3 text-sm ${isActive('/use-cases') || location.pathname.includes('/use-cases/') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'} transition`}>{t('navigation.use_cases', { defaultValue: 'Use Cases' })}</Link>
+                <Link to={`/${currentLanguage}/news`} className={`block px-4 py-3 text-sm ${isActive('/news') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'} transition`}>{t('navigation.news', { defaultValue: 'News' })}</Link>
                 <Link to={`/${currentLanguage}/pricing`} className={`block px-4 py-3 text-sm ${isActive('/pricing') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'} transition`}>{t('navigation.pricing', { defaultValue: 'Pricing' })}</Link>
               </div>
             </div>
@@ -631,6 +731,7 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
               <h4 className="font-semibold mb-4">{t('footer.product')}</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><Link to={`/${currentLanguage}/features`} className="hover:text-primary">{t('navigation.features')}</Link></li>
+                <li><Link to={`/${currentLanguage}/news`} className="hover:text-primary">{t('navigation.news', { defaultValue: 'News' })}</Link></li>
                 <li><Link to={`/${currentLanguage}/chatbot`} className="hover:text-primary">Chatbot</Link></li>
                 <li><Link to={`/${currentLanguage}/pricing`} className="hover:text-primary">{t('navigation.pricing')}</Link></li>
                 <li><Link to={`/${currentLanguage}/dashboard`} className="hover:text-primary">{t('navigation.dashboard')}</Link></li>

@@ -68,6 +68,10 @@ export default function Layout({ children }: LayoutProps) {
   const paletteInputRef = useRef<HTMLInputElement | null>(null)
   const paletteRef = useRef<HTMLDivElement | null>(null)
   const paletteButtonRef = useRef<HTMLButtonElement | null>(null)
+  const [showMega, setShowMega] = useState(false)
+  const megaRef = useRef<HTMLDivElement | null>(null)
+  const megaButtonRef = useRef<HTMLButtonElement | null>(null)
+  const megaHoverTimer = useRef<number | null>(null)
   const [recentPalette, setRecentPalette] = useState<Array<{ path: string; label: string }>>(() => {
     try {
       const raw = localStorage.getItem('palette_recent')
@@ -207,9 +211,21 @@ export default function Layout({ children }: LayoutProps) {
       if (isPaletteOpen && paletteRef.current && !paletteRef.current.contains(target)) {
         setPaletteOpen(false)
       }
+      if (showMega) {
+        const inPanel = megaRef.current && megaRef.current.contains(target)
+        const inButton = megaButtonRef.current && megaButtonRef.current.contains(target)
+        if (!inPanel && !inButton) setShowMega(false)
+      }
     }
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') { setShowUserMenu(false); if (isPaletteOpen) { setPaletteOpen(false); requestAnimationFrame(() => paletteButtonRef.current?.focus()) } }
+      if (e.key === 'Escape') { 
+        setShowUserMenu(false)
+        setShowMega(false)
+        if (isPaletteOpen) { 
+          setPaletteOpen(false)
+          requestAnimationFrame(() => paletteButtonRef.current?.focus()) 
+        }
+      }
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault()
         setPaletteOpen((v) => {
@@ -524,6 +540,117 @@ export default function Layout({ children }: LayoutProps) {
               {/* Product Switcher - Zeigt AppSumo-Produkte */}
               {user && <ProductSwitcher />}
               
+              <div className="relative hidden lg:block" ref={megaRef}>
+                <button
+                  type="button"
+                  ref={megaButtonRef}
+                  onClick={() => setShowMega((v) => !v)}
+                  onMouseEnter={() => {
+                    if (megaHoverTimer.current) window.clearTimeout(megaHoverTimer.current)
+                    megaHoverTimer.current = window.setTimeout(() => setShowMega(true), 100)
+                  }}
+                  onMouseLeave={(e) => {
+                    const to = e.relatedTarget as Node | null
+                    if (to && megaRef.current && megaRef.current.contains(to)) return
+                    if (megaHoverTimer.current) window.clearTimeout(megaHoverTimer.current)
+                    megaHoverTimer.current = window.setTimeout(() => setShowMega(false), 150)
+                  }}
+                  aria-haspopup="true"
+                  aria-expanded={showMega}
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-200 dark:border-slate-700 shadow-sm transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                >
+                  <Menu className="w-5 h-5" aria-hidden />
+                  <span className="text-sm font-medium">{t('layout.navigation', 'Navigation')}</span>
+                  <ChevronDown className={`w-4 h-4 text-gray-500 dark:text-gray-400 transition-transform ${showMega ? 'rotate-180' : ''}`} />
+                </button>
+                <AnimatePresence>
+                {showMega && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -4, scale: 0.98 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -4, scale: 0.98 }}
+                    transition={{ duration: prefersReducedMotion ? 0 : 0.12, ease: 'easeOut' }}
+                    className="absolute right-0 mt-2 w-[720px] max-w-[calc(100vw-2rem)] rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 shadow-2xl p-4 z-50"
+                    onMouseEnter={() => { if (megaHoverTimer.current) window.clearTimeout(megaHoverTimer.current) }}
+                    onMouseLeave={() => {
+                      if (megaHoverTimer.current) window.clearTimeout(megaHoverTimer.current)
+                      megaHoverTimer.current = window.setTimeout(() => setShowMega(false), 150)
+                    }}
+                    role="menu"
+                  >
+                    <div className="grid grid-cols-3 gap-4">
+                      <div>
+                        <div className="px-2 mb-2 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t('nav._dashboard_.label', 'Hauptbereich')}</div>
+                        <div className="space-y-1">
+                          {visibleNavItems.slice(0, 3).map((item) => {
+                            const Icon = item.icon
+                            return (
+                              <Link
+                                key={item.path}
+                                to={item.path}
+                                onClick={() => { setShowMega(false); track('nav_click', { path: item.path, label: item.label }) }}
+                                onMouseEnter={() => prefetchRouteDebounced(item.path)}
+                                className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${isActive(item.path) ? 'bg-primary-600 text-white' : 'hover:bg-muted text-foreground'}`}
+                                aria-current={isActive(item.path) ? 'page' : undefined}
+                                role="menuitem"
+                              >
+                                <Icon className="w-4 h-4" aria-hidden />
+                                <span>{t(`nav.${navKeyFromPath(item.path)}.label`, item.label)}</span>
+                              </Link>
+                            )
+                          })}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="px-2 mb-2 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t('common.analysis_tools', 'Analyse & Tools')}</div>
+                        <div className="space-y-1">
+                          {visibleNavItems.slice(3, 10).map((item) => {
+                            const Icon = item.icon
+                            return (
+                              <Link
+                                key={item.path}
+                                to={item.path}
+                                onClick={() => { setShowMega(false); track('nav_click', { path: item.path, label: item.label }) }}
+                                onMouseEnter={() => prefetchRouteDebounced(item.path)}
+                                className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${isActive(item.path) ? 'bg-primary-600 text-white' : 'hover:bg-muted text-foreground'}`}
+                                aria-current={isActive(item.path) ? 'page' : undefined}
+                                role="menuitem"
+                              >
+                                <Icon className="w-4 h-4" aria-hidden />
+                                <span>{t(`nav.${navKeyFromPath(item.path)}.label`, item.label)}</span>
+                              </Link>
+                            )
+                          })}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="px-2 mb-2 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t('common.system_admin', 'System & Admin')}</div>
+                        <div className="space-y-1">
+                          {visibleNavItems.slice(10).map((item) => {
+                            const Icon = item.icon
+                            return (
+                              <Link
+                                key={item.path}
+                                to={item.path}
+                                onClick={() => { setShowMega(false); track('nav_click', { path: item.path, label: item.label }) }}
+                                onMouseEnter={() => prefetchRouteDebounced(item.path)}
+                                className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${isActive(item.path) ? 'bg-primary-600 text-white' : 'hover:bg-muted text-foreground'}`}
+                                aria-current={isActive(item.path) ? 'page' : undefined}
+                                role="menuitem"
+                              >
+                                <Icon className="w-4 h-4" aria-hidden />
+                                <span>{t(`nav.${navKeyFromPath(item.path)}.label`, item.label)}</span>
+                              </Link>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+                </AnimatePresence>
+              </div>
+
               <button
                 type="button"
                 className="hidden sm:inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-200 dark:border-slate-700 shadow-sm transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
@@ -681,7 +808,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
               {!showSidebar && (
                 <nav
-                  className="flex gap-1 overflow-x-auto whitespace-nowrap scrollbar-thin"
+                  className="flex gap-1 overflow-x-auto whitespace-nowrap scrollbar-thin lg:hidden"
                   role="navigation"
                   aria-label={t('layout.main_navigation', 'Hauptnavigation')}
                   aria-orientation="horizontal"

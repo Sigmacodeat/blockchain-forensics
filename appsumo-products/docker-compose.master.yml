@@ -57,19 +57,22 @@ services:
   inspector-frontend:
     build: ./transaction-inspector/frontend
     ports:
-      - "3003:3000"
+      - "3004:3000"
     environment:
-      - VITE_API_URL=http://localhost:8003
+      - VITE_API_URL=http://localhost:8004
     networks:
       - appsumo-network
 
   inspector-backend:
     build: ./transaction-inspector/backend
     ports:
-      - "8003:8000"
+      - "8004:8000"
     environment:
       - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/inspector
       - REDIS_URL=redis://redis:6379/3
+      - MAIN_BACKEND_URL=${MAIN_BACKEND_URL:-}
+      - MAIN_BACKEND_API_KEY=${MAIN_BACKEND_API_KEY:-}
+      - MAIN_BACKEND_JWT=${MAIN_BACKEND_JWT:-}
     depends_on:
       - postgres
       - redis
@@ -89,10 +92,13 @@ services:
   analytics-backend:
     build: ./analytics-pro/backend
     ports:
-      - "8004:8000"
+      - "8003:8000"
     environment:
       - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/analytics
       - REDIS_URL=redis://redis:6379/4
+      - MAIN_BACKEND_URL=${MAIN_BACKEND_URL:-}
+      - MAIN_BACKEND_API_KEY=${MAIN_BACKEND_API_KEY:-}
+      - MAIN_BACKEND_JWT=${MAIN_BACKEND_JWT:-}
     depends_on:
       - postgres
       - redis
@@ -139,6 +145,9 @@ services:
     environment:
       - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/nft
       - REDIS_URL=redis://redis:6379/6
+      - MAIN_BACKEND_URL=${MAIN_BACKEND_URL:-}
+      - MAIN_BACKEND_API_KEY=${MAIN_BACKEND_API_KEY:-}
+      - MAIN_BACKEND_JWT=${MAIN_BACKEND_JWT:-}
     depends_on:
       - postgres
       - redis
@@ -162,6 +171,9 @@ services:
     environment:
       - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/defi
       - REDIS_URL=redis://redis:6379/7
+      - MAIN_BACKEND_URL=${MAIN_BACKEND_URL:-}
+      - MAIN_BACKEND_API_KEY=${MAIN_BACKEND_API_KEY:-}
+      - MAIN_BACKEND_JWT=${MAIN_BACKEND_JWT:-}
     depends_on:
       - postgres
       - redis
@@ -254,6 +266,9 @@ services:
     environment:
       - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/security
       - REDIS_URL=redis://redis:6379/11
+      - MAIN_BACKEND_URL=${MAIN_BACKEND_URL:-}
+      - MAIN_BACKEND_API_KEY=${MAIN_BACKEND_API_KEY:-}
+      - MAIN_BACKEND_JWT=${MAIN_BACKEND_JWT:-}
     depends_on:
       - postgres
       - redis
@@ -306,7 +321,7 @@ services:
 
   # ===== APPSUMO ADMIN DASHBOARD =====
   admin-dashboard:
-    build: ./admin-dashboard
+    build: ./central-dashboard
     ports:
       - "3000:3000"
     environment:
@@ -315,12 +330,13 @@ services:
       - appsumo-network
 
   admin-backend:
-    build: ./admin-backend
+    build: ./admin-backend/backend
     ports:
       - "8000:8000"
     environment:
       - DATABASE_URL=postgresql://appsumo:appsumo123@postgres:5432/admin
       - REDIS_URL=redis://redis:6379/0
+      - APPSUMO_WEBHOOK_SECRET=${APPSUMO_WEBHOOK_SECRET:-dev-secret}
     depends_on:
       - postgres
       - redis

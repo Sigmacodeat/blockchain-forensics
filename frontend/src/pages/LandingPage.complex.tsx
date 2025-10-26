@@ -133,6 +133,11 @@ export default function LandingPage() {
                   {t('landing.cta.pricing', 'Pricing')}
                 </Button>
               </Link>
+              <Link to={`/${lang}/businessplan`}>
+                <Button size="lg" variant="ghost" className="text-lg px-8 font-medium">
+                  {t('landing.cta.businessplan', 'Businessplan ansehen')}
+                </Button>
+              </Link>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm text-muted-foreground px-2">
               <div className="flex items-center gap-2">

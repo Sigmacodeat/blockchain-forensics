@@ -31,6 +31,12 @@ class UltimateAnalyticsPayload(BaseModel):
     page: UltimateAnalyticsPage
     consent_version: Optional[str] = Field(None, max_length=64)
     events_count: Optional[int] = Field(None, ge=0)
+    utm_source: Optional[str] = Field(None, max_length=256)
+    utm_medium: Optional[str] = Field(None, max_length=256)
+    utm_campaign: Optional[str] = Field(None, max_length=256)
+    utm_term: Optional[str] = Field(None, max_length=256)
+    utm_content: Optional[str] = Field(None, max_length=256)
+    social_source: Optional[str] = Field(None, max_length=64)
 
 
 @router.post("/analytics/track")
@@ -89,9 +95,15 @@ async def ingest_ultimate_analytics(req: Request, payload: UltimateAnalyticsPayl
                     page_url,
                     page_title,
                     referrer,
+                    utm_source,
+                    utm_medium,
+                    utm_campaign,
+                    utm_term,
+                    utm_content,
+                    social_source,
                     timestamp
                 )
-                VALUES ($1, $2, $3, $4, $5::jsonb, $6::jsonb, $7::jsonb, $8::jsonb, $9::jsonb, $10, $11, $12, $13)
+                VALUES ($1, $2, $3, $4, $5::jsonb, $6::jsonb, $7::jsonb, $8::jsonb, $9::jsonb, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19)
                 """,
                 uuid4(),
                 payload.session_id.strip(),
@@ -105,6 +117,12 @@ async def ingest_ultimate_analytics(req: Request, payload: UltimateAnalyticsPayl
                 page_url,
                 page_title,
                 referrer,
+                payload.utm_source,
+                payload.utm_medium,
+                payload.utm_campaign,
+                payload.utm_term,
+                payload.utm_content,
+                payload.social_source,
                 timestamp,
             )
     except Exception as exc:

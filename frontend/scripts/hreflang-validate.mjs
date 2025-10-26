@@ -53,7 +53,7 @@ const CORE_ROUTES = [
   '/dashboards',
   '/monitoring',
   '/monitoring/dashboard',
-  '/blog'
+  '/businessplan'
 ]
 
 function readHtml(locale, route) {

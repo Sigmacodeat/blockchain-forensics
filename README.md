@@ -10,6 +10,7 @@ Ultimative Blockchain-Analyse-Plattform für forensische Untersuchungen mit AI-U
 - 📋 **Features**: `/features` - Detaillierte Feature-Dokumentation
 - 💰 **Pricing**: `/pricing` - 5 Pläne (Community bis Enterprise)
 - 🏢 **About**: `/about` - Unternehmen, Mission, Team
+ - 📄 **Businessplan**: `/businessplan` - Plan, Förderung, Roadmap & KPIs
 
 ## 🎉 Features (Phase 0 - COMPLETE)
 

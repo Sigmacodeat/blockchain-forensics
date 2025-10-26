@@ -1,0 +1,43 @@
+<!-- Structured data for transaction-inspector -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Transaction Inspector",
+  "description": "Professional transaction inspector for crypto analysis",
+  "brand": {
+    "@type": "Brand",
+    "name": "Blockchain Forensics"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "59",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31"
+    },
+    {
+      "@type": "Offer",
+      "price": "119",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31"
+    },
+    {
+      "@type": "Offer",
+      "price": "199",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31"
+    }
+  ],
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "127"
+  }
+}
+</script>

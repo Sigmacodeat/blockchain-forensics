@@ -1,0 +1,19 @@
+{
+  "gtag_id": "GA_MEASUREMENT_ID",
+  "custom_dimensions": {
+    "dimension1": "user_tier",
+    "dimension2": "product_slug",
+    "dimension3": "license_key",
+    "dimension4": "referrer_source"
+  },
+  "custom_metrics": {
+    "metric1": "feature_usage_count",
+    "metric2": "api_calls_count"
+  },
+  "conversion_events": [
+    "license_activated",
+    "tier_upgrade",
+    "feature_used",
+    "support_contacted"
+  ]
+}

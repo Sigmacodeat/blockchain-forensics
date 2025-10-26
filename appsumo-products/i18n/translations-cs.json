@@ -1,0 +1,42 @@
+{
+  "products": {},
+  "common": {
+    "cta": {
+      "getLifetimeDeal": "Get Lifetime Deal",
+      "startFreeTrial": "Start Free Trial",
+      "learnMore": "Learn More",
+      "contactSales": "Contact Sales"
+    },
+    "pricing": {
+      "perMonth": "per month",
+      "lifetime": "lifetime",
+      "save": "Save",
+      "mostPopular": "Most Popular"
+    }
+  },
+  "blog": {
+    "categories": {},
+    "tags": {},
+    "ui": {
+      "readMore": "Read More",
+      "published": "Published",
+      "author": "Author",
+      "tags": "Tags",
+      "categories": "Categories"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Dashboard",
+      "stats": "Statistics",
+      "posts": "Posts",
+      "users": "Users"
+    },
+    "forms": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit"
+    }
+  }
+}

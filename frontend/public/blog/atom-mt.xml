@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://forensics.ai/mt/blog</id>
+  <title>SIGMACODE Forensics Blog - MT</title>
+  <updated>2025-10-26T07:04:25.676Z</updated>
+  <link rel="self" type="application/atom+xml" href="https://forensics.ai/atom-mt.xml"/>
+  <link rel="alternate" type="text/html" href="https://forensics.ai/mt/blog"/>
+  <author><name>SIGMACODE Editorial</name></author>
+  <entry>
+  <id>https://forensics.ai/mt/blog/welcome-to-sigmacode-forensics</id>
+  <title>Welcome to SIGMACODE Forensics</title>
+  <summary type="html">Launch of our AI-powered blockchain forensics blog.</summary>
+  <content type="html"><![CDATA[Launch of our AI-powered blockchain forensics blog.]]></content>
+  <link rel="alternate" type="text/html" href="https://forensics.ai/mt/blog/welcome-to-sigmacode-forensics"/>
+  <published>2025-10-25T20:00:00Z</published>
+  <updated>2025-10-25T20:00:00Z</updated>
+  <author><name>SIGMACODE Editorial</name></author>
+  <category term="Announcements"/>
+</entry>
+</feed>

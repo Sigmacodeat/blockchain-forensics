@@ -379,3 +379,7 @@ try:
 except Exception:
     os.environ["TEST_MODE"] = "1"
     postgres_client = PostgresClient()
+
+def get_postgres():
+    """Get Postgres client instance for dependency injection"""
+    return postgres_client

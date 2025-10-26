@@ -99,14 +99,15 @@ class ApiKeyMiddleware(BaseHTTPMiddleware):
         # Skip only if neither static keys nor DB-backed keys are available
         if not self._keys and (os.getenv("TEST_MODE") == "1" or not getattr(postgres_client, "pool", None)):
             return await call_next(request)
-        # Exempt paths (exact match or prefix for docs assets)
+        # Exempt paths (exact match; plus treat entries as prefix roots)
         path = request.url.path
-        # Exemptions: docs, public NewsCases WS, and read-only public snapshot of a specific NewsCase
-        if (
-            path in self._exempt
-            or path.startswith("/docs")
-            or path.startswith("/api/v1/ws/news-cases")
-            or (path.startswith("/api/v1/news-cases/") and path.endswith("/public"))
+        # quick prefix check for any configured exempt entries
+        for ex in list(self._exempt):
+            if path == ex or path.startswith(ex + "/"):
+                return await call_next(request)
+        # Additional exemptions: docs assets, public NewsCases WS, and read-only public snapshot
+        if path.startswith("/docs") or path.startswith("/api/v1/ws/news-cases") or (
+            path.startswith("/api/v1/news-cases/") and path.endswith("/public")
         ):
             return await call_next(request)
 

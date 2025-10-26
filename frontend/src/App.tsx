@@ -54,6 +54,7 @@ const ForgotPasswordPage = React.lazy(() => import('@/pages/ForgotPasswordPage')
 const NotFoundPage = React.lazy(() => import('@/pages/NotFoundPage'))
 // ChatbotLandingPage wird über Subdomain bereitgestellt (chatbot.blocksigmakode.ai)
 const NewsCasePublicPage = React.lazy(() => import('@/pages/NewsCasePublicPage'))
+const NewsPage = React.lazy(() => import('@/pages/NewsPage'))
 
 // Demo pages (Two-Tier Demo System)
 const DemoSandboxPage = React.lazy(() => import('@/pages/DemoSandboxPage'))
@@ -200,6 +201,7 @@ function App() {
                   <Route path="pricing" element={<PublicLayout><React.Suspense fallback={<div />}> <PricingPage /> </React.Suspense></PublicLayout>} />
                   <Route path="checkout/:orderId" element={<PublicLayout><React.Suspense fallback={<div />}> <CheckoutPage /> </React.Suspense></PublicLayout>} />
                   <Route path="news/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <NewsCasePublicPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="news" element={<PublicLayout><React.Suspense fallback={<div />}> <NewsPage /> </React.Suspense></PublicLayout>} />
                   {/* Chatbot-Route entfernt - wird über chatbot.blocksigmakode.ai bereitgestellt */}
                   <Route path="about" element={<PublicLayout><React.Suspense fallback={<div />}> <AboutPage /> </React.Suspense></PublicLayout>} />
                   <Route path="businessplan" element={<PublicLayout><React.Suspense fallback={<div />}> <BusinessPlanPage /> </React.Suspense></PublicLayout>} />
@@ -208,7 +210,12 @@ function App() {
                   <Route path="legal/terms" element={<PublicLayout><React.Suspense fallback={<div />}> <TermsPage /> </React.Suspense></PublicLayout>} />
                   <Route path="legal/impressum" element={<PublicLayout><React.Suspense fallback={<div />}> <ImpressumPage /> </React.Suspense></PublicLayout>} />
                   
-                  {/* Use Case Pages (Marketing/SEO) - AI-AGENT FOKUS */}
+                  {/* Blog routes */}
+                  <Route path="blog" element={<PublicLayout><React.Suspense fallback={<div />}> <BlogListPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="blog/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <BlogPostPage /> </React.Suspense></PublicLayout>} />
+                  {/* Multi-tenant blog routes for AppSumo products */}
+                  <Route path="projects/:tenant/blog" element={<PublicLayout><React.Suspense fallback={<div />}> <BlogListPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="projects/:tenant/blog/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <BlogPostPage /> </React.Suspense></PublicLayout>} />
                   <Route path="use-cases" element={<PublicLayout><React.Suspense fallback={<div />}> <UseCasesOverview /> </React.Suspense></PublicLayout>} />
                   <Route path="use-cases/law-enforcement" element={<PublicLayout><React.Suspense fallback={<div />}> <UseCaseLawEnforcement /> </React.Suspense></PublicLayout>} />
                   <Route path="use-cases/compliance" element={<PublicLayout><React.Suspense fallback={<div />}> <UseCaseCompliance /> </React.Suspense></PublicLayout>} />

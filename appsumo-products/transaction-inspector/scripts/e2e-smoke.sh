@@ -24,7 +24,7 @@ main() {
   wait_health "${API_BASE}"
 
   note "1) Simple TX trace"
-  curl -fsS -X POST "${API_BASE}/api/trace" \
+  curl -fsS -X POST "${API_BASE}/api/trace/tx" \
     -H 'Content-Type: application/json' \
     -d '{"tx_hash":"0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef","chain":"ethereum"}' | tee /tmp/tx_trace.json >/dev/null
   ok "TX trace OK"

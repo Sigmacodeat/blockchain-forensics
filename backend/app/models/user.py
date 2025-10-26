@@ -15,7 +15,7 @@ import hashlib
 import uuid
 
 # SQLAlchemy ORM imports for persistent storage
-from sqlalchemy import Column, String, DateTime, Boolean, JSON, ForeignKey, Text
+from sqlalchemy import Column, String, DateTime, Boolean, JSON, ForeignKey, Text, Float
 from sqlalchemy.dialects.postgresql import UUID as PGUUID
 from sqlalchemy import String as SAString
 import os

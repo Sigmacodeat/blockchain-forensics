@@ -299,6 +299,7 @@ async def lifespan(app: FastAPI):
 
     # Start Threat Intelligence Feed Updater
     threat_intel_task = None
+    social_scheduler_task = None
     try:
         from app.workers.threat_intel_worker import start_threat_intel_updater
         threat_intel_task = asyncio.create_task(start_threat_intel_updater())
@@ -315,6 +316,17 @@ async def lifespan(app: FastAPI):
         logger.info("✅ KPI background worker started")
     except Exception as e:
         logger.error(f"❌ Failed to start KPI background worker: {e}")
+
+    # Start Social Scheduler (periodic posting)
+    try:
+        if os.getenv("ENABLE_SOCIAL_SCHEDULER", "0") == "1":
+            from app.workers.social_scheduler import start_social_scheduler_worker
+            social_scheduler_task = asyncio.create_task(start_social_scheduler_worker())
+            logger.info("✅ Social Scheduler worker started")
+        else:
+            logger.info("ℹ️ Social Scheduler disabled (ENABLE_SOCIAL_SCHEDULER!=1)")
+    except Exception as e:
+        logger.error(f"❌ Failed to start Social Scheduler worker: {e}")
 
     # Start DSR (Privacy) Worker
     dsr_worker = None
@@ -445,6 +457,18 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"❌ Failed to start Intel feeds update worker: {e}")
 
+    # Start News Feeds Update Worker (periodic)
+    news_feeds_task = None
+    try:
+        if os.getenv("ENABLE_NEWS_FEEDS_WORKER", "0") == "1":
+            from app.workers.news_worker import start_news_feeds_worker
+            news_feeds_task = asyncio.create_task(start_news_feeds_worker())
+            logger.info("✅ News feeds update worker started")
+        else:
+            logger.info("ℹ️ News feeds update worker disabled (ENABLE_NEWS_FEEDS_WORKER!=1)")
+    except Exception as e:
+        logger.error(f"❌ Failed to start News feeds update worker: {e}")
+
     # Start VASP Risk Worker (periodic)
     vasp_risk_task = None
     try:
@@ -566,6 +590,15 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"Error stopping KPI background worker: {e}")
 
+    # Stop Social Scheduler
+    try:
+        if social_scheduler_task and not social_scheduler_task.done():
+            from app.workers.social_scheduler import stop_social_scheduler_worker
+            stop_social_scheduler_worker()
+            await asyncio.sleep(0.2)
+    except Exception as e:
+        logger.error(f"Error stopping Social Scheduler worker: {e}")
+
     # Stop Offline Indexer
     try:
         if offline_index_task and not offline_index_task.done():
@@ -592,6 +625,15 @@ async def lifespan(app: FastAPI):
             await asyncio.sleep(0.2)
     except Exception as e:
         logger.error(f"Error stopping Intel feeds update worker: {e}")
+
+    # Stop News Feeds Update Worker
+    try:
+        if news_feeds_task and not news_feeds_task.done():
+            from app.workers.news_worker import stop_news_feeds_worker
+            stop_news_feeds_worker()
+            await asyncio.sleep(0.2)
+    except Exception as e:
+        logger.error(f"Error stopping News feeds update worker: {e}")
 
     # Stop VASP Risk Worker
     try:
@@ -755,6 +797,8 @@ if ((not os.getenv("PYTEST_CURRENT_TEST")) or os.getenv("ENABLE_APIKEY_MW_UNDER_
             "/api/v1/system/health",
             "/api/v1/agent/health",  # allow external probes without API key
             "/api/v1/intel/webhooks",  # allow inbound intel webhooks (signature-based)
+            "/api/v1/social/telegram/webhook",  # allow Telegram bot webhook (secret header)
+            "/api/v1/links/s",  # public shortlink redirect
             "/api/healthz",
             "/api/health/detailed",
             "/api/health/ready",
@@ -771,6 +815,10 @@ if ((not os.getenv("PYTEST_CURRENT_TEST")) or os.getenv("ENABLE_APIKEY_MW_UNDER_
             "/api/v1/i18n/languages",
             "/api/v1/analytics/events",
             "/api/v1/metrics/webvitals",
+            "/api/v1/news",
+            "/api/v1/news/",
+            "/api/v1/news/sitemap",
+            "/api/v1/news/sitemap-news",
             "/api/v1/admin/chatbot-config/public",
             "/api/v1/chatbot-config/public",
             "/api/v1/enrich/sanctions-check",

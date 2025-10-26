@@ -1,0 +1,146 @@
+{
+  "en": {
+    "common": {
+      "cta": {
+        "getLifetimeDeal": "Get Lifetime Deal",
+        "startFreeTrial": "Start Free Trial",
+        "learnMore": "Learn More",
+        "contactSales": "Contact Sales"
+      },
+      "pricing": {
+        "perMonth": "per month",
+        "lifetime": "lifetime",
+        "save": "Save",
+        "mostPopular": "Most Popular"
+      },
+      "features": {
+        "title": "Features",
+        "included": "Included",
+        "notIncluded": "Not Included"
+      },
+      "support": {
+        "title": "Support",
+        "email": "Email Support",
+        "priority": "Priority Support",
+        "phone": "Phone Support"
+      }
+    },
+    "products": {
+      "wallet-guardian": {
+        "hero": {
+          "headline": "Web3 Wallet Guardian: Real-Time Crypto Security",
+          "subheadline": "Detect threats before they strike. Protect your crypto with enterprise-grade security powered by machine learning.",
+          "cta": "Protect Your Crypto Now"
+        },
+        "features": {
+          "title": "Advanced Security Features",
+          "items": [
+            {
+              "title": "15 ML Security Models",
+              "description": "Advanced AI detects scams, hacks, and suspicious activity"
+            },
+            {
+              "title": "Real-Time Scanning",
+              "description": "<300ms response time for instant threat detection"
+            },
+            {
+              "title": "Multi-Chain Support",
+              "description": "35+ blockchains including Ethereum, Polygon, BSC, and more"
+            }
+          ]
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": ["Basic scanning", "Email alerts", "1 wallet"]
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": ["Advanced ML models", "SMS alerts", "5 wallets", "API access"]
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": ["Enterprise features", "Unlimited wallets", "Priority support", "Custom rules"]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "de": {
+    "common": {
+      "cta": {
+        "getLifetimeDeal": "Lifetime-Deal sichern",
+        "startFreeTrial": "Kostenlose Testversion starten",
+        "learnMore": "Mehr erfahren",
+        "contactSales": "Vertrieb kontaktieren"
+      },
+      "pricing": {
+        "perMonth": "pro Monat",
+        "lifetime": "lebenslang",
+        "save": "Sparen",
+        "mostPopular": "Beliebteste"
+      },
+      "features": {
+        "title": "Funktionen",
+        "included": "Enthalten",
+        "notIncluded": "Nicht enthalten"
+      },
+      "support": {
+        "title": "Support",
+        "email": "E-Mail-Support",
+        "priority": "Prioritätssupport",
+        "phone": "Telefon-Support"
+      }
+    },
+    "products": {
+      "wallet-guardian": {
+        "hero": {
+          "headline": "Web3 Wallet Guardian: Echtzeit-Krypto-Sicherheit",
+          "subheadline": "Bedrohungen erkennen, bevor sie zuschlagen. Schützen Sie Ihr Krypto mit unternehmensweiter Sicherheit, angetrieben von maschinellem Lernen.",
+          "cta": "Schützen Sie Ihr Krypto jetzt"
+        },
+        "features": {
+          "title": "Erweiterte Sicherheitsfunktionen",
+          "items": [
+            {
+              "title": "15 ML-Sicherheitsmodelle",
+              "description": "Fortschrittliche KI erkennt Betrug, Hacks und verdächtige Aktivitäten"
+            },
+            {
+              "title": "Echtzeit-Scanning",
+              "description": "<300ms Reaktionszeit für sofortige Bedrohungserkennung"
+            },
+            {
+              "title": "Multi-Chain-Unterstützung",
+              "description": "35+ Blockchains einschließlich Ethereum, Polygon, BSC und mehr"
+            }
+          ]
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "59€",
+              "features": ["Basis-Scanning", "E-Mail-Benachrichtigungen", "1 Wallet"]
+            },
+            {
+              "name": "Pro",
+              "price": "119€",
+              "features": ["Erweiterte ML-Modelle", "SMS-Benachrichtigungen", "5 Wallets", "API-Zugang"]
+            },
+            {
+              "name": "Enterprise",
+              "price": "199€",
+              "features": ["Enterprise-Funktionen", "Unbegrenzte Wallets", "Prioritätssupport", "Benutzerdefinierte Regeln"]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

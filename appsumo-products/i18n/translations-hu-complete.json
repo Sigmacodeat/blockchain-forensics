@@ -1,0 +1,17 @@
+{
+  "common": {
+    "cta": {
+      "getLifetimeDeal": "[TRANSLATE:hu] Get Lifetime Deal",
+      "startFreeTrial": "[TRANSLATE:hu] Start Free Trial",
+      "learnMore": "[TRANSLATE:hu] Learn More",
+      "contactSales": "[TRANSLATE:hu] Contact Sales"
+    },
+    "pricing": {
+      "perMonth": "[TRANSLATE:hu] per month",
+      "lifetime": "[TRANSLATE:hu] lifetime",
+      "save": "[TRANSLATE:hu] Save",
+      "mostPopular": "[TRANSLATE:hu] Most Popular"
+    }
+  },
+  "note": "This language (hu) needs translation. Placeholder text will be replaced with actual translations."
+}

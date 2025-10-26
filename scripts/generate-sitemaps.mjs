@@ -59,7 +59,7 @@ const PAGES = [
   { path: '/legal/privacy', priority: 0.4, changefreq: 'monthly' },
   { path: '/legal/terms', priority: 0.4, changefreq: 'monthly' },
   { path: '/legal/impressum', priority: 0.3, changefreq: 'yearly' }, // nur DE
-  { path: '/blog', priority: 0.8, changefreq: 'daily' }
+  { path: '/businessplan', priority: 0.8, changefreq: 'daily' }
 ]
 
 /**
@@ -94,6 +94,7 @@ async function readBlogIndex(lang) {
   try { return JSON.parse(await fs.readFile(p, 'utf-8')) } catch { return [] }
 }
 
+// Funktion erweitert: tenant-spezifische Blog-URLs hinzufügen
 async function generateSitemapXML(lang, pages, allLangs) {
   const lastmod = new Date().toISOString().split('T')[0]
   
@@ -137,6 +138,33 @@ async function generateSitemapXML(lang, pages, allLangs) {
 ${alts}\n${xDefault}
   </url>`
     }).join('\n')
+
+    // Tenant-spezifische Blog-Einträge (z.B. für AppSumo-Produkte)
+    // Annahme: tenant in item.tenant gespeichert, z.B. ['wallet-guardian']
+    const tenantSlugs = new Set()
+    blogItems.forEach(item => {
+      if (item.tenant) tenantSlugs.add(item.tenant)
+    })
+    for (const tenant of tenantSlugs) {
+      blogEntries += '\n' + blogItems.map(item => {
+        const slug = item.slug
+        const loc = `${SITE_URL}/${lang}/projects/${tenant}/blog/${slug}`
+        const langsWith = Array.from(slugMap.get(slug) || [])
+        const alts = langsWith.map(l => {
+          const href = `${SITE_URL}/${l}/projects/${tenant}/blog/${slug}`
+          return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}" />`
+        }).join('\n')
+        const defaultLang = allLangs.includes('en') ? 'en' : (allLangs[0] || 'en')
+        const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/${defaultLang}/projects/${tenant}/blog/${slug}" />`
+        return `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+${alts}\n${xDefault}
+  </url>`
+      }).join('\n')
+    }
   }
 
   return `<?xml version="1.0" encoding="UTF-8"?>

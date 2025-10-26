@@ -1,0 +1,17 @@
+{
+  "common": {
+    "cta": {
+      "getLifetimeDeal": "[TRANSLATE:fi] Get Lifetime Deal",
+      "startFreeTrial": "[TRANSLATE:fi] Start Free Trial",
+      "learnMore": "[TRANSLATE:fi] Learn More",
+      "contactSales": "[TRANSLATE:fi] Contact Sales"
+    },
+    "pricing": {
+      "perMonth": "[TRANSLATE:fi] per month",
+      "lifetime": "[TRANSLATE:fi] lifetime",
+      "save": "[TRANSLATE:fi] Save",
+      "mostPopular": "[TRANSLATE:fi] Most Popular"
+    }
+  },
+  "note": "This language (fi) needs translation. Placeholder text will be replaced with actual translations."
+}

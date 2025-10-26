@@ -15,8 +15,8 @@ from typing import Optional, List, Dict, Any
 from datetime import datetime
 
 from app.auth.dependencies import require_plan
-from app.database.neo4j_client import get_neo4j
-from app.database.postgres import get_postgres
+from app.db.neo4j_client import get_neo4j
+from app.db.postgres import get_postgres
 from app.tracing.privacy_demixing import PrivacyDemixer, PrivacyCoinTracer
 from app.services.case_service import log_case_action
 

@@ -2,8 +2,6 @@ import React from 'react'
 import { useI18n } from '@/contexts/I18nContext'
 import { useToastSuccess, useToastError } from '@/components/ui/toast'
 
-import { useWebSocket } from '@/hooks/useWebSocket'
-
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 type CaseItem = {
@@ -64,34 +62,49 @@ export default function NewsCasesManager() {
 
   // Für jeden gelisteten Item WS-Verbindung aufbauen
   React.useEffect(() => {
-    const wsConnections: Record<string, any> = {}
+    const wsConnections: Record<string, WebSocket> = {}
     items.forEach(item => {
       const wsUrl = `${API_URL.replace('http', 'ws')}/api/v1/ws/news-cases/${item.slug}?backlog=50`
-      const { isConnected, lastMessage } = useWebSocket(wsUrl, true)
-      
-      if (isConnected !== wsStates[item.slug]?.connected) {
-        updateWsState(item.slug, { connected: isConnected })
+      const ws = new WebSocket(wsUrl)
+
+      ws.onopen = () => {
+        console.log('WebSocket connected:', wsUrl)
+        updateWsState(item.slug, { connected: true })
       }
-      
-      if (lastMessage) {
-        const event = lastMessage as unknown as NewsCaseEvent
-        if (event.type === 'news_case.tx') {
-          updateWsState(item.slug, { txCount: (wsStates[item.slug]?.txCount || 0) + 1, lastUpdate: Date.now() })
-        } else if (event.type === 'news_case.kyt') {
-          updateWsState(item.slug, { kytAlerts: (wsStates[item.slug]?.kytAlerts || 0) + 1, lastUpdate: Date.now() })
-        } else if (event.type === 'news_case.status' || event.type === 'news_case.snapshot') {
-          updateWsState(item.slug, { lastUpdate: Date.now() })
+
+      ws.onmessage = (event) => {
+        try {
+          const message = JSON.parse(event.data)
+          const eventData = message as unknown as NewsCaseEvent
+          if (eventData.type === 'news_case.tx') {
+            updateWsState(item.slug, { txCount: (wsStates[item.slug]?.txCount || 0) + 1, lastUpdate: Date.now() })
+          } else if (eventData.type === 'news_case.kyt') {
+            updateWsState(item.slug, { kytAlerts: (wsStates[item.slug]?.kytAlerts || 0) + 1, lastUpdate: Date.now() })
+          } else if (eventData.type === 'news_case.status' || eventData.type === 'news_case.snapshot') {
+            updateWsState(item.slug, { lastUpdate: Date.now() })
+          }
+        } catch (e) {
+          console.error('Failed to parse WebSocket message:', e)
         }
       }
-      
-      wsConnections[item.slug] = { isConnected, lastMessage }
+
+      ws.onerror = (error) => {
+        console.error('WebSocket error:', error)
+      }
+
+      ws.onclose = () => {
+        console.log('WebSocket disconnected')
+        updateWsState(item.slug, { connected: false })
+      }
+
+      wsConnections[item.slug] = ws
     })
-    
+
     return () => {
       // Cleanup wenn Items ändern
-      Object.values(wsConnections).forEach(conn => conn?.close?.())
+      Object.values(wsConnections).forEach(ws => ws.close())
     }
-  }, [items, wsStates, updateWsState])
+  }, [items, updateWsState])
 
   // Simple chain/address validation
   const validateAddress = (chain: string, address: string): string | null => {

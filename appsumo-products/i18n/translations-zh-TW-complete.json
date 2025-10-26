@@ -1,0 +1,17 @@
+{
+  "common": {
+    "cta": {
+      "getLifetimeDeal": "[TRANSLATE:zh-TW] Get Lifetime Deal",
+      "startFreeTrial": "[TRANSLATE:zh-TW] Start Free Trial",
+      "learnMore": "[TRANSLATE:zh-TW] Learn More",
+      "contactSales": "[TRANSLATE:zh-TW] Contact Sales"
+    },
+    "pricing": {
+      "perMonth": "[TRANSLATE:zh-TW] per month",
+      "lifetime": "[TRANSLATE:zh-TW] lifetime",
+      "save": "[TRANSLATE:zh-TW] Save",
+      "mostPopular": "[TRANSLATE:zh-TW] Most Popular"
+    }
+  },
+  "note": "This language (zh-TW) needs translation. Placeholder text will be replaced with actual translations."
+}

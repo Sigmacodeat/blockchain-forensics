@@ -1,5 +1,6 @@
-from fastapi import FastAPI, HTTPException, Response
+from fastapi import FastAPI, HTTPException, Response, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 from typing import List, Dict, Optional
 import random
@@ -40,6 +41,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+security = HTTPBearer()
+
 class TraceRequest(BaseModel):
     tx_hash: str
     chain: str = "ethereum"
@@ -51,6 +54,40 @@ class TransactionScan(BaseModel):
     value: str
     data: Optional[str] = ""
     gas: Optional[int] = 21000
+
+class AppSumoActivation(BaseModel):
+    license_key: str
+    email: str
+
+class TokenResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    user: dict
+
+async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)) -> TokenData:
+    if not TokenData:
+        raise HTTPException(status_code=501, detail="Auth not configured")
+    token_data = decode_access_token(credentials.credentials)
+    if not token_data:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token")
+    return token_data
+
+@app.post("/api/auth/appsumo/activate")
+async def activate_appsumo_license(req: AppSumoActivation):
+    user_data = await activate_license(req.license_key, req.email, "transaction-inspector")
+    if not user_data:
+        raise HTTPException(status_code=400, detail="Invalid license key")
+    token = create_access_token({
+        "sub": user_data["email"],
+        "user_id": user_data["email"],
+        "plan": user_data["plan"],
+        "plan_tier": user_data["plan_tier"],
+    })
+    return TokenResponse(access_token=token, user=user_data)
+
+@app.get("/api/auth/me")
+async def get_me(user: TokenData = Depends(get_current_user)):
+    return {"email": user.email, "plan": user.plan}
 
 @app.get("/")
 def root():

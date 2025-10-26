@@ -707,3 +707,7 @@ if (os.getenv("PYTEST_CURRENT_TEST") or os.getenv("TEST_MODE") == "1") and getat
                     return None
             return _DummySession()
     neo4j_client.driver = _PatchableStubDriver()
+
+def get_neo4j():
+    """Get Neo4j client instance for dependency injection"""
+    return neo4j_client

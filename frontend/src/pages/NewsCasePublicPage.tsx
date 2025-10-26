@@ -16,7 +16,7 @@ function explorerUrl(chain: string, kind: 'address' | 'tx', value: string): stri
     case 'arbitrum':
     case 'optimism':
     case 'polygon':
-    case 'bsc':
+    case 'bsc': {
       // Etherscan-Familie / ähnliche
       const map: Record<string, string> = {
         ethereum: 'https://etherscan.io',
@@ -29,6 +29,7 @@ function explorerUrl(chain: string, kind: 'address' | 'tx', value: string): stri
       const root = map[c]
       if (!root) return null
       return `${root}/${kind === 'address' ? 'address' : 'tx'}/${value}`
+    }
     case 'gnosis':
       return `https://gnosisscan.io/${kind === 'address' ? 'address' : 'tx'}/${value}`
     case 'bitcoin':

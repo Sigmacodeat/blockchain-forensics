@@ -1,0 +1,17 @@
+{
+  "common": {
+    "cta": {
+      "getLifetimeDeal": "[TRANSLATE:nl] Get Lifetime Deal",
+      "startFreeTrial": "[TRANSLATE:nl] Start Free Trial",
+      "learnMore": "[TRANSLATE:nl] Learn More",
+      "contactSales": "[TRANSLATE:nl] Contact Sales"
+    },
+    "pricing": {
+      "perMonth": "[TRANSLATE:nl] per month",
+      "lifetime": "[TRANSLATE:nl] lifetime",
+      "save": "[TRANSLATE:nl] Save",
+      "mostPopular": "[TRANSLATE:nl] Most Popular"
+    }
+  },
+  "note": "This language (nl) needs translation. Placeholder text will be replaced with actual translations."
+}

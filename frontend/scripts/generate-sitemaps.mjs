@@ -33,7 +33,7 @@ const CORE_ROUTES = [
   '/monitoring',
   '/monitoring/dashboard',
   // Blog routes
-  '/blog'
+  '/businessplan'
 ]
 
 // Discover base locales from src/locales/*.json

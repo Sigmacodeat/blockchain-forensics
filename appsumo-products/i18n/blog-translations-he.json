@@ -1,0 +1,55 @@
+{
+  "blog": {
+    "ui": {
+      "readMore": "[he] Read More",
+      "published": "[he] Published",
+      "author": "[he] Author",
+      "tags": "[he] Tags",
+      "categories": "[he] Categories",
+      "comments": "[he] Comments",
+      "shares": "[he] Shares",
+      "views": "[he] Views",
+      "likes": "[he] Likes",
+      "bookmarks": "[he] Bookmarks",
+      "relatedPosts": "[he] Related Posts",
+      "latestPosts": "[he] Latest Posts",
+      "popularPosts": "[he] Popular Posts",
+      "search": "[he] Search",
+      "filter": "[he] Filter",
+      "sortBy": "[he] Sort by",
+      "date": "[he] Date",
+      "title": "[he] Title"
+    },
+    "categories": {
+      "blockchain-security": "[he] Blockchain Security",
+      "crypto-analysis": "[he] Crypto Analysis", 
+      "forensic-tools": "[he] Forensic Tools",
+      "market-analysis": "[he] Market Analysis",
+      "defi-protocols": "[he] DeFi Protocols",
+      "nft-marketplace": "[he] NFT Marketplace",
+      "compliance": "[he] Compliance",
+      "regulatory": "[he] Regulatory"
+    },
+    "tags": {
+      "bitcoin": "[he] Bitcoin",
+      "ethereum": "[he] Ethereum",
+      "security": "[he] Security",
+      "analysis": "[he] Analysis",
+      "tools": "[he] Tools",
+      "blockchain": "[he] Blockchain",
+      "cryptocurrency": "[he] Cryptocurrency",
+      "forensics": "[he] Forensics"
+    },
+    "pagination": {
+      "previous": "[he] Previous",
+      "next": "[he] Next",
+      "page": "[he] Page",
+      "of": "[he] of"
+    },
+    "errors": {
+      "postNotFound": "[he] Post not found",
+      "loadingError": "[he] Error loading content",
+      "networkError": "[he] Network error"
+    }
+  }
+}

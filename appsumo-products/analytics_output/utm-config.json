@@ -1,0 +1,15 @@
+{
+  "base_params": {
+    "utm_source": "appsumo",
+    "utm_medium": "cpc",
+    "utm_campaign": "lifetime-deals"
+  },
+  "product_mapping": {
+    "wallet-guardian": "wg",
+    "transaction-inspector": "ti",
+    "analytics-pro": "ap",
+    "nft-manager": "nm",
+    "complete-security": "cs",
+    "defi-tracker": "dt"
+  }
+}

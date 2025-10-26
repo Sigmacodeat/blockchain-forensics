@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SIGMACODE Forensics Blog - LT</title>
+    <description>Blog about blockchain forensics, tracing techniques, and case studies.</description>
+    <link>https://forensics.ai/lt/blog</link>
+    <language>lt</language>
+    <lastBuildDate>Sun, 26 Oct 2025 07:04:25 GMT</lastBuildDate>
+    <generator>SIGMACODE Blog RSS Generator</generator>
+    <item>
+  <title>Welcome to SIGMACODE Forensics</title>
+  <description>Launch of our AI-powered blockchain forensics blog.</description>
+  <content:encoded><![CDATA[Launch of our AI-powered blockchain forensics blog.]]></content:encoded>
+  <link>https://forensics.ai/lt/blog/welcome-to-sigmacode-forensics</link>
+  <guid isPermaLink="true">https://forensics.ai/lt/blog/welcome-to-sigmacode-forensics</guid>
+  <pubDate>Sat, 25 Oct 2025 20:00:00 GMT</pubDate>
+  <author>SIGMACODE Editorial</author>
+  <category>Announcements</category>
+</item>
+  </channel>
+</rss>

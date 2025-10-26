@@ -1,0 +1,2678 @@
+{
+  "en": {
+    "products": {
+      "wallet-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "transaction-inspector": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "analytics-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-manager": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "complete-security": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "defi-tracker": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "ai-contract-audit": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-fraud-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "chatbot-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "power-suite": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "tax-reporter": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "agency-reseller": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "trader-pack": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      }
+    }
+  },
+  "de": {
+    "products": {
+      "wallet-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "transaction-inspector": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "analytics-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-manager": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "complete-security": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "defi-tracker": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "ai-contract-audit": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-fraud-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "chatbot-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "power-suite": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "tax-reporter": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "agency-reseller": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "trader-pack": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      }
+    }
+  },
+  "es": {
+    "products": {
+      "wallet-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "transaction-inspector": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "analytics-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-manager": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "complete-security": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "defi-tracker": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "ai-contract-audit": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-fraud-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "chatbot-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "power-suite": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "tax-reporter": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "agency-reseller": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "trader-pack": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      }
+    }
+  },
+  "fr": {
+    "products": {
+      "wallet-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "transaction-inspector": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "analytics-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-manager": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "complete-security": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "defi-tracker": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "ai-contract-audit": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-fraud-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "chatbot-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "power-suite": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "tax-reporter": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "agency-reseller": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "trader-pack": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      }
+    }
+  },
+  "it": {
+    "products": {
+      "wallet-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "transaction-inspector": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "analytics-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-manager": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "complete-security": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "defi-tracker": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "ai-contract-audit": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-fraud-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "chatbot-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "power-suite": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "tax-reporter": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "agency-reseller": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "trader-pack": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      }
+    }
+  },
+  "pt": {
+    "products": {
+      "wallet-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "transaction-inspector": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "analytics-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-manager": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "complete-security": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "defi-tracker": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "ai-contract-audit": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "nft-fraud-guardian": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "chatbot-pro": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "power-suite": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "tax-reporter": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "agency-reseller": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      },
+      "trader-pack": {
+        "hero": {
+          "headline": "",
+          "subheadline": "",
+          "cta": "Get Lifetime Deal"
+        },
+        "features": {
+          "title": "Key Features",
+          "items": []
+        },
+        "pricing": {
+          "tiers": [
+            {
+              "name": "Basic",
+              "price": "$59",
+              "features": []
+            },
+            {
+              "name": "Pro",
+              "price": "$119",
+              "features": []
+            },
+            {
+              "name": "Enterprise",
+              "price": "$199",
+              "features": []
+            }
+          ]
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "items": []
+        }
+      }
+    }
+  }
+}

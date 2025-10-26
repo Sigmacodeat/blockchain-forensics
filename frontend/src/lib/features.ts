@@ -126,6 +126,9 @@ export const ROUTE_GATES: Record<string, { minPlan?: PlanId; roles?: string[] }>
   // Plus+
   '/ai-agent': { minPlan: 'plus' },                // AI-Assistent
   
+  // Intelligence Network (Pro+)
+  '/intelligence-network': { minPlan: 'pro' },    // Threat Intelligence
+  
   // ========================================
   // ADMIN-ROUTEN (System-Management)
   // ========================================

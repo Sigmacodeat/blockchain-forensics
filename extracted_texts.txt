@@ -1,0 +1,48 @@
+                               ?.split('=')[1]
+                             document.cookie.split('; ')
+                  onClick={() => hideToast(toast.id)}
+        const newEtag = res.headers.get('ETag')
+        const saved = orgs.find((o: Organization) => o.id === parseInt(savedOrgId));
+      await authService.logout()
+      clearTimeout(timeout)
+      const response = await axios.get(
+      const response = await axios.post(
+      for (const w of localWallets) byId.set(w.id, w)
+      for (const w of serverWallets) byId.set(w.id, w)
+      hideToast(id)
+      if (offlineUntil && Date.now() < parseInt(offlineUntil)) {
+      return String(i18nInstance.t(key, options))
+    const rtlLangs = new Set(['ar', 'he', 'fa', 'ur'])
+    const timeout = setTimeout(() => controller.abort(), 3000) // Reduced timeout
+    return rtf.format(-Math.floor(diffInSeconds / 3600), 'hour')
+    return rtf.format(-Math.floor(diffInSeconds / 60), 'minute')
+    return rtf.format(-Math.floor(diffInSeconds / 86400), 'day')
+    return rtf.format(-diffInSeconds, 'second')
+    setTimeout(() => {
+  AuthProvider: ({ children }: { children: React.ReactNode }) => React.createElement('div', { 'data-testid': 'auth-provider' }, children),
+  React.useEffect(() => {
+  Sentry.init({ dsn: _dsn, tracesSampleRate: 1.0 })
+  const context = useContext(AuthContext)
+  const context = useContext(ChatContext)
+  const context = useContext(I18nContext)
+  const context = useContext(OnboardingContext);
+  const context = useContext(OrganizationContext);
+  const context = useContext(ThemeContext)
+  const context = useContext(ToastContext)
+  const context = useContext(WalletContext)
+  const rtf = new Intl.RelativeTimeFormat(language || 'en-US', { numeric: 'auto' })
+  const translatedText = t(i18nKey, values)
+  disconnect() {
+  return new Intl.DateTimeFormat(language || 'en-US', {
+  return new Intl.NumberFormat(language || 'en-US').format(number)
+  return new Intl.NumberFormat(locale, {
+  return useContext(FeatureFlagsContext)
+  useEffect(() => {
+  }).format(amount)
+  }).format(dateObj)
+ReactDOM.createRoot(document.getElementById('root')!).render(
+const _consent = getCookieConsent()
+const queryClient = new QueryClient({
+function LangLayout() {
+function getCookieConsent(): { analytics?: boolean } | null {
+initWebSocket()

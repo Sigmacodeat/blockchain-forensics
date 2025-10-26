@@ -116,8 +116,13 @@ from .usage import router as usage_router
 from .evidence import router as evidence_router
 from .exports import router as exports_router
 from .bitcoin_script import router as bitcoin_script_router
-from .demixing import router as demixing_router
+# from .demixing import router as demixing_router
 from .tools import router as tools_router
+from .news import router as news_router
+try:
+    from .link_tracking import router as link_tracking_router
+except Exception:
+    link_tracking_router = None
 try:
     from .universal_screening import router as universal_screening_router
 except Exception:
@@ -208,6 +213,10 @@ try:
     from .graph_engine_v2 import router as graph_engine_v2_router
 except Exception:
     graph_engine_v2_router = None
+try:
+    from .social import router as social_router
+except Exception:
+    social_router = None
 
 # Optional routers that may pull heavy deps (web3, etc.)
 _TEST_MODE = bool(os.getenv("PYTEST_CURRENT_TEST") or os.getenv("TEST_MODE") == "1")
@@ -297,6 +306,8 @@ if cases_router is not None:
     router.include_router(cases_router, prefix="/cases", tags=["Cases"])
 router.include_router(comments_router, prefix="/comments", tags=["Comments"])
 router.include_router(notifications_router, prefix="/notifications", tags=["Notifications"])
+if social_router is not None:
+    router.include_router(social_router, tags=["Social"])
 router.include_router(support_router, tags=["Support"])  # Support-System
 if security_enhancements_router is not None:
     router.include_router(security_enhancements_router, prefix="/security", tags=["🔒 Security Enhancements"])  # Support-System
@@ -342,8 +353,11 @@ router.include_router(usage_router, tags=["Usage"])
 router.include_router(evidence_router, prefix="/evidence", tags=["Evidence"])
 router.include_router(exports_router, tags=["Exports"])  # /exports/* (BigQuery optional)
 router.include_router(bitcoin_script_router, tags=["Bitcoin Script"])  # /bitcoin-script/*
-router.include_router(demixing_router, tags=["Privacy Demixing"])  # /demixing/*
+# router.include_router(demixing_router, tags=["Privacy Demixing"])  # /demixing/*
 router.include_router(tools_router, tags=["Tools Registry"])  # /tools/*
+router.include_router(news_router, prefix="/news", tags=["News"])  # /news/*
+if link_tracking_router is not None:
+    router.include_router(link_tracking_router, tags=["Link Tracking"])  # /links/*
 if scam_detection_router is not None:
     router.include_router(scam_detection_router, tags=["Scam Detection"])
 if chatbot_config_router is not None:

@@ -1,0 +1,100 @@
+{
+  "admin": {
+    "dashboard": {
+      "title": "[ur] Admin Dashboard",
+      "overview": "[ur] Overview",
+      "statistics": "[ur] Statistics",
+      "analytics": "[ur] Analytics",
+      "posts": "[ur] Posts",
+      "pages": "[ur] Pages",
+      "users": "[ur] Users",
+      "comments": "[ur] Comments",
+      "media": "[ur] Media",
+      "settings": "[ur] Settings",
+      "plugins": "[ur] Plugins",
+      "themes": "[ur] Themes",
+      "tools": "[ur] Tools",
+      "export": "[ur] Export",
+      "import": "[ur] Import"
+    },
+    "posts": {
+      "allPosts": "[ur] All Posts",
+      "addNew": "[ur] Add New",
+      "published": "[ur] Published",
+      "draft": "[ur] Draft",
+      "pending": "[ur] Pending Review",
+      "trash": "[ur] Trash",
+      "title": "[ur] Title",
+      "content": "[ur] Content",
+      "excerpt": "[ur] Excerpt",
+      "featuredImage": "[ur] Featured Image",
+      "categories": "[ur] Categories",
+      "tags": "[ur] Tags",
+      "status": "[ur] Status",
+      "visibility": "[ur] Visibility",
+      "publish": "[ur] Publish",
+      "schedule": "[ur] Schedule",
+      "update": "[ur] Update",
+      "preview": "[ur] Preview",
+      "permalink": "[ur] Permalink",
+      "seo": "[ur] SEO",
+      "social": "[ur] Social Sharing"
+    },
+    "forms": {
+      "save": "[ur] Save",
+      "saving": "[ur] Saving...",
+      "saved": "[ur] Saved successfully",
+      "cancel": "[ur] Cancel",
+      "delete": "[ur] Delete",
+      "confirmDelete": "[ur] Are you sure you want to delete this?",
+      "edit": "[ur] Edit",
+      "view": "[ur] View",
+      "duplicate": "[ur] Duplicate",
+      "moveToTrash": "[ur] Move to Trash",
+      "restore": "[ur] Restore",
+      "bulkActions": "[ur] Bulk Actions",
+      "apply": "[ur] Apply",
+      "selectAll": "[ur] Select All",
+      "deselectAll": "[ur] Deselect All"
+    },
+    "messages": {
+      "success": {
+        "postPublished": "[ur] Post published successfully",
+        "postUpdated": "[ur] Post updated successfully",
+        "postDeleted": "[ur] Post deleted successfully",
+        "settingsSaved": "[ur] Settings saved successfully"
+      },
+      "errors": {
+        "postNotFound": "[ur] Post not found",
+        "permissionDenied": "[ur] Permission denied",
+        "validationError": "[ur] Validation error",
+        "serverError": "[ur] Server error",
+        "networkError": "[ur] Network error"
+      },
+      "warnings": {
+        "unsavedChanges": "[ur] You have unsaved changes",
+        "confirmAction": "[ur] Are you sure you want to proceed?"
+      }
+    },
+    "navigation": {
+      "dashboard": "[ur] Dashboard",
+      "posts": "[ur] Posts",
+      "media": "[ur] Media",
+      "pages": "[ur] Pages",
+      "comments": "[ur] Comments",
+      "appearance": "[ur] Appearance",
+      "plugins": "[ur] Plugins",
+      "users": "[ur] Users",
+      "tools": "[ur] Tools",
+      "settings": "[ur] Settings"
+    },
+    "table": {
+      "noItems": "[ur] No items found",
+      "loading": "[ur] Loading...",
+      "search": "[ur] Search",
+      "filter": "[ur] Filter",
+      "sort": "[ur] Sort",
+      "actions": "[ur] Actions"
+    }
+  }
+}

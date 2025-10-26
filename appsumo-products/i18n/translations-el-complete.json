@@ -1,0 +1,17 @@
+{
+  "common": {
+    "cta": {
+      "getLifetimeDeal": "[TRANSLATE:el] Get Lifetime Deal",
+      "startFreeTrial": "[TRANSLATE:el] Start Free Trial",
+      "learnMore": "[TRANSLATE:el] Learn More",
+      "contactSales": "[TRANSLATE:el] Contact Sales"
+    },
+    "pricing": {
+      "perMonth": "[TRANSLATE:el] per month",
+      "lifetime": "[TRANSLATE:el] lifetime",
+      "save": "[TRANSLATE:el] Save",
+      "mostPopular": "[TRANSLATE:el] Most Popular"
+    }
+  },
+  "note": "This language (el) needs translation. Placeholder text will be replaced with actual translations."
+}
