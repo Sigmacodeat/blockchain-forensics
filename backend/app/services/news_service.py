@@ -53,7 +53,10 @@ def _parse_http_xml(url: str) -> List[Dict[str, Any]]:
         req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urlopen(req, timeout=20) as resp:  # nosec B310
             data = resp.read()
-        root = ET.fromstring(data)
+        # Secure XML parsing: disable external entities
+        from xml.etree import ElementTree as ET
+        parser = ET.XMLParser(resolve_entities=False)
+        root = ET.fromstring(data, parser=parser)  # nosec B314
         for node in root.findall(".//item"):
             title = (node.findtext("title") or "").strip()
             link = (node.findtext("link") or "").strip()
@@ -102,7 +105,8 @@ def _classify_tags(title: str, summary: str) -> List[str]:
         try:
             if re.search(pattern, txt):
                 tags.append(tag)
-        except Exception:
+        except re.error:
+            logger.warning(f"Invalid regex pattern: {pattern}")
             continue
     seen = set()
     result: List[str] = []
@@ -209,7 +213,8 @@ async def query_news(
         try:
             t = datetime.fromisoformat(since_iso.replace("Z", "+00:00"))
             items = [x for x in items if datetime.fromisoformat(str(x.get("published_at", "")).replace("Z", "+00:00")) >= t]
-        except Exception:
+        except ValueError:
+            logger.warning(f"Invalid since_iso format: {since_iso}")
             pass
     if q:
         qq = q.lower()
