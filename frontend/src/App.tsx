@@ -52,6 +52,7 @@ const ForgotPasswordPage = React.lazy(() => import('@/pages/ForgotPasswordPage')
 const NotFoundPage = React.lazy(() => import('@/pages/NotFoundPage'))
 // ChatbotLandingPage wird über Subdomain bereitgestellt (chatbot.blocksigmakode.ai)
 const NewsCasePublicPage = React.lazy(() => import('@/pages/NewsCasePublicPage'))
+const NewsPage = React.lazy(() => import('@/pages/NewsPage'))
 
 // Demo pages (Two-Tier Demo System)
 const DemoSandboxPage = React.lazy(() => import('@/pages/DemoSandboxPage'))
@@ -191,6 +192,7 @@ function App() {
                   <Route index element={<PublicLayout><React.Suspense fallback={<div />}> <LandingPage /> </React.Suspense></PublicLayout>} />
                   <Route path="features" element={<PublicLayout><React.Suspense fallback={<div />}> <FeaturesPage /> </React.Suspense></PublicLayout>} />
                   <Route path="pricing" element={<PublicLayout><React.Suspense fallback={<div />}> <PricingPage /> </React.Suspense></PublicLayout>} />
+                  <Route path="news" element={<PublicLayout><React.Suspense fallback={<div />}> <NewsPage /> </React.Suspense></PublicLayout>} />
                   <Route path="news/:slug" element={<PublicLayout><React.Suspense fallback={<div />}> <NewsCasePublicPage /> </React.Suspense></PublicLayout>} />
                   {/* Chatbot-Route entfernt - wird über chatbot.blocksigmakode.ai bereitgestellt */}
                   <Route path="about" element={<PublicLayout><React.Suspense fallback={<div />}> <AboutPage /> </React.Suspense></PublicLayout>} />

@@ -69,3 +69,16 @@ services:
         sync: false
       - key: NOWPAYMENTS_SANDBOX
         value: "true"
+      # News & Translation
+      - key: ENABLE_NEWS_FEEDS_WORKER
+        value: "1"
+      - key: NEWS_FEEDS_UPDATE_INTERVAL_MINUTES
+        value: "180"
+      - key: NEWS_FEEDS_URLS_JSON
+        value: '{"chainalysis":"https://blog.chainalysis.com/feed/","coindesk_policy":"https://www.coindesk.com/policy/rss/","elliptic":"https://www.elliptic.co/blog/rss.xml","trm_labs":"https://www.trmlabs.com/blog/rss.xml","theblock_policy":"https://www.theblock.co/rss?category=policy-and-regulation"}'
+      - key: TRANSLATION_PROVIDER
+        value: "none"
+      - key: DEEPL_API_KEY
+        sync: false
+      - key: GOOGLE_TRANSLATE_API_KEY
+        sync: false

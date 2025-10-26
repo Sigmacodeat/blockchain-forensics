@@ -431,6 +431,18 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"❌ Failed to start Intel feeds update worker: {e}")
 
+    # Start News Feeds Update Worker (periodic)
+    news_feeds_task = None
+    try:
+        if os.getenv("ENABLE_NEWS_FEEDS_WORKER", "0") == "1":
+            from app.workers.news_worker import start_news_feeds_worker
+            news_feeds_task = asyncio.create_task(start_news_feeds_worker())
+            logger.info("✅ News feeds update worker started")
+        else:
+            logger.info("ℹ️ News feeds update worker disabled (ENABLE_NEWS_FEEDS_WORKER!=1)")
+    except Exception as e:
+        logger.error(f"❌ Failed to start News feeds update worker: {e}")
+
     # Start VASP Risk Worker (periodic)
     vasp_risk_task = None
     try:
@@ -557,6 +569,15 @@ async def lifespan(app: FastAPI):
             await asyncio.sleep(0.2)
     except Exception as e:
         logger.error(f"Error stopping Intel feeds update worker: {e}")
+
+    # Stop News Feeds Update Worker
+    try:
+        if 'news_feeds_task' in locals() and news_feeds_task and not news_feeds_task.done():
+            from app.workers.news_worker import stop_news_feeds_worker
+            stop_news_feeds_worker()
+            await asyncio.sleep(0.2)
+    except Exception as e:
+        logger.error(f"Error stopping News feeds update worker: {e}")
 
     # Stop VASP Risk Worker
     try:
@@ -731,6 +752,9 @@ if ((not os.getenv("PYTEST_CURRENT_TEST")) or os.getenv("ENABLE_APIKEY_MW_UNDER_
             "/api/v1/chatbot-config/public",
             "/api/v1/enrich/sanctions-check",
             "/api/v1/chat",
+            "/api/v1/news",
+            "/api/v1/news/sitemap",
+            "/api/v1/news/sitemap-news",
             "/api/v1/ws/news-cases",  # public slug-based dashboard WS
             "/ws/chat",
             "/favicon.ico",

@@ -73,6 +73,10 @@ try:
 except Exception:
     news_cases_router = None
 try:
+    from .news import router as news_router
+except Exception:
+    news_router = None
+try:
     from .alerts_v2 import router as alerts_v2_router
 except Exception:
     alerts_v2_router = None
@@ -255,6 +259,8 @@ router.include_router(kb_router, tags=["Knowledge Base"])
 router.include_router(privacy_router, prefix="/privacy", tags=["Privacy"])
 router.include_router(chat_router, tags=["Chat"])
 router.include_router(kyt_router, tags=["KYT"])
+if news_router is not None:
+    router.include_router(news_router, tags=["News"])
 if news_cases_router is not None:
     router.include_router(news_cases_router, tags=["NewsCases"])
 if news_cases_ws_router is not None:
