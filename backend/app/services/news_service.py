@@ -53,10 +53,16 @@ def _parse_http_xml(url: str) -> List[Dict[str, Any]]:
         req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urlopen(req, timeout=20) as resp:  # nosec B310
             data = resp.read()
-        # Secure XML parsing: disable external entities
-        from xml.etree import ElementTree as ET
-        parser = ET.XMLParser(resolve_entities=False)
-        root = ET.fromstring(data, parser=parser)  # nosec B314
+        # Secure XML parsing with defusedxml
+        try:
+            from defusedxml import ElementTree as ET
+        except ImportError:
+            from xml.etree import ElementTree as ET
+            logger.warning("defusedxml not available, using standard ET with resolve_entities=False")
+            parser = ET.XMLParser(resolve_entities=False)
+            root = ET.fromstring(data, parser=parser)  # nosec B314
+        else:
+            root = ET.fromstring(data)
         for node in root.findall(".//item"):
             title = (node.findtext("title") or "").strip()
             link = (node.findtext("link") or "").strip()
