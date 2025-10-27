@@ -23,7 +23,9 @@ services:
       - key: TRUSTED_HOSTS
         value: "[\"blockchain-forensics-backend.onrender.com\"]"
       - key: CORS_ORIGINS
-        value: "[\"https://YOUR_NETLIFY_SITE.netlify.app\"]"
+        value: "[\"https://YOUR_NETLIFY_SITE.netlify.app\", \"http://localhost:5173\", \"http://localhost:3000\"]"
+      - key: CORS_ALLOW_ORIGIN_REGEX
+        value: "https://.*\\.netlify\\.app"
       - key: BACKEND_URL
         value: "https://blockchain-forensics-backend.onrender.com"
       - key: FRONTEND_URL
