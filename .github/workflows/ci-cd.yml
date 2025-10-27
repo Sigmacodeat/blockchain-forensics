@@ -181,7 +181,8 @@ jobs:
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
-    - name: Build and push Frontend image
+    - name: Build and push Frontend image (disabled, Netlify hosts frontend)
+      if: ${{ false }}
       uses: docker/build-push-action@v5
       with:
         context: .

@@ -4,6 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  VITE_API_URL = "https://blockchain-forensics-backend.onrender.com"
 
 # API proxy to Render backend (must come before SPA redirect)
 [[redirects]]

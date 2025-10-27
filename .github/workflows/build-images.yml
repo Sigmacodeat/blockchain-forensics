@@ -49,6 +49,7 @@ jobs:
             ghcr.io/${{ steps.vars.outputs.owner_lower }}/${{ steps.vars.outputs.repo_lower }}-backend:sha-${{ github.sha }}
 
   build-frontend:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
