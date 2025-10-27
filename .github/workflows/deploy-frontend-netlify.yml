@@ -11,12 +11,23 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    if: ${{ secrets.NETLIFY_AUTH_TOKEN != '' && secrets.NETLIFY_SITE_ID != '' }}
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN || '' }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID || '' }}
+      VITE_GOOGLE_CLIENT_ID: ${{ secrets.VITE_GOOGLE_CLIENT_ID || '' }}
     steps:
+      - name: Secrets check
+        if: ${{ env.NETLIFY_AUTH_TOKEN == '' || env.NETLIFY_SITE_ID == '' }}
+        run: |
+          echo "Netlify secrets missing. Skipping frontend deploy."
+          echo "Required: NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID repository secrets."
+
       - name: Checkout
+        if: ${{ env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != '' }}
         uses: actions/checkout@v4
 
       - name: Use Node 18
+        if: ${{ env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != '' }}
         uses: actions/setup-node@v4
         with:
           node-version: '18'
@@ -24,19 +35,22 @@ jobs:
           cache-dependency-path: 'frontend/package-lock.json'
 
       - name: Install deps
+        if: ${{ env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != '' }}
         working-directory: frontend
         run: npm ci
 
       - name: Build
+        if: ${{ env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != '' }}
         working-directory: frontend
         run: npm run build
         env:
           VITE_API_URL: https://blockchain-forensics-backend.onrender.com
-          VITE_GOOGLE_CLIENT_ID: ${{ secrets.VITE_GOOGLE_CLIENT_ID }}
+          VITE_GOOGLE_CLIENT_ID: ${{ env.VITE_GOOGLE_CLIENT_ID }}
 
       - name: Deploy to Netlify
+        if: ${{ env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != '' }}
         uses: netlify/actions/cli@v4
         with:
-          args: deploy --dir=frontend/dist --prod --site ${{ secrets.NETLIFY_SITE_ID }} --message "CI deploy"
+          args: deploy --dir=frontend/dist --prod --site ${{ env.NETLIFY_SITE_ID }} --message "CI deploy"
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ env.NETLIFY_AUTH_TOKEN }}

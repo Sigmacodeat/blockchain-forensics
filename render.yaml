@@ -42,6 +42,8 @@ services:
         value: "0"
       - key: TEST_MODE
         value: "1"
+      - key: DISABLE_LIFESPAN
+        value: "1"
       - key: POSTGRES_URL
         # e.g. from Neon
         value: "postgresql://USER:PASSWORD@HOST:5432/DBNAME"
@@ -89,7 +91,7 @@ services:
         value: "true"
       # News & Translation
       - key: ENABLE_NEWS_FEEDS_WORKER
-        value: "1"
+        value: "0"
       - key: NEWS_FEEDS_UPDATE_INTERVAL_MINUTES
         value: "180"
       - key: NEWS_FEEDS_URLS_JSON

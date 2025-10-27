@@ -89,3 +89,8 @@ docker-compose.override.yml
 *.backup
 backend/.env.backup
 .render-env
+
+# Frontend build outputs
+frontend/dist/
+frontend/storybook-static/
+frontend/.netlify-env

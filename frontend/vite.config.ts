@@ -25,6 +25,8 @@ export default defineConfig({
     port: 3000,
     strictPort: true, // WICHTIG: Fail wenn Port 3000 belegt ist
     host: '0.0.0.0',
+    // Erlaube LocalTunnel Domains wie *.loca.lt für Tests/Previews
+    allowedHosts: ['.loca.lt'],
     proxy: {
       '/api': {
         target: 'http://localhost:8000',

@@ -74,7 +74,7 @@ USER forensics
 
 # Health check (use $PORT for PaaS compatibility)
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:$PORT/health || exit 1
+    CMD curl -f http://localhost:$PORT/api/healthz || exit 1
 
 # Expose port (default 8000, Render uses $PORT)
 EXPOSE 8000

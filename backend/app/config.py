@@ -93,6 +93,7 @@ class Settings(BaseSettings):
     CORS_ALLOW_METHODS: List[str] = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
     CORS_ALLOW_HEADERS: List[str] = ["*"]
     CORS_ALLOW_CREDENTIALS: bool = True
+    CORS_ALLOW_ORIGIN_REGEX: Optional[str] = None
     FORCE_HTTPS_REDIRECT: bool = Field(False, json_schema_extra={"env": "FORCE_HTTPS_REDIRECT"})
     TRUSTED_HOSTS: List[str] = ["*"]
 
