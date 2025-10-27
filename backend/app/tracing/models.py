@@ -114,3 +114,8 @@ class TraceRequest(BaseModel):
     token_decay: float = Field(default=1.0, ge=0.0, le=1.0)
     bridge_decay: float = Field(default=0.9, ge=0.0, le=1.0)
     utxo_decay: float = Field(default=1.0, ge=0.0, le=1.0)
+
+    # Robustness & Progress
+    io_timeout_seconds: float = Field(default=5.0, ge=0.1, le=60.0, description="Timeout for single I/O calls")
+    max_execution_seconds: int = Field(default=25, ge=1, le=300, description="Wall-clock timeout for entire trace")
+    progress_emit_interval_ms: int = Field(default=500, ge=50, le=10000, description="Throttle for progress emits")

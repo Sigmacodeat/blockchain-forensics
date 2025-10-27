@@ -1,9 +1,27 @@
 {
   "compilerOptions": {
-    "baseUrl": "./frontend",
+    "baseUrl": "./frontend/src",
     "paths": {
-      "@/*": ["src/*"]
-    }
+      "@/*": ["./*"]
+    },
+    "lib": ["ES2022", "DOM"],
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2020",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
   },
-  "include": ["frontend/src"]
+  "include": [
+    "frontend/src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

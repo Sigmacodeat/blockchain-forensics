@@ -183,7 +183,7 @@ export default function CasesPage() {
                 className="w-16 h-16 border-4 border-primary-500 border-t-transparent rounded-full mx-auto mb-4"
               />
               <p className="text-slate-600 dark:text-slate-400 font-medium">
-                {t('cases.loading', 'Loading cases...')}
+                {t('cases.loading', 'Lade Fälle...')}
               </p>
             </div>
           </div>
@@ -209,7 +209,7 @@ export default function CasesPage() {
               {t('cases.error.load', 'Failed to load cases')}
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-6">
-              {t('cases.error.load_message', 'There was a problem loading your cases. Please try again.')}
+              {t('cases.error.load_message', 'Beim Laden der Fälle ist ein Problem aufgetreten. Bitte versuche es erneut.')}
             </p>
             <Button onClick={() => window.location.reload()} size="lg">
               {t('common.retry', 'Retry')}
@@ -236,7 +236,7 @@ export default function CasesPage() {
                 {t('cases.title', 'Cases')}
               </h1>
               <p className="text-lg text-slate-600 dark:text-slate-400">
-                {t('cases.subtitle', 'Manage investigation cases and evidence chains')}
+                {t('cases.subtitle', 'Verwalte Ermittlungsfälle und Beweisketten')}
               </p>
             </div>
 
@@ -276,7 +276,7 @@ export default function CasesPage() {
         >
           <StatsCard
             icon={Folder}
-            label={t('cases.stats.total', 'Total Cases')}
+            label={t('cases.stats.total', 'Gesamtfälle')}
             value={stats.total}
             color="blue"
           />
@@ -446,7 +446,7 @@ export default function CasesPage() {
               <CardContent className="p-12">
                 <FileText className="h-20 w-20 text-slate-300 dark:text-slate-600 mx-auto mb-6" />
                 <h3 aria-hidden="true" className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
-                  {t('cases.empty.title', 'No cases found')}
+                  {t('cases.empty.title', 'Keine Fälle gefunden')}
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-8 text-lg">
                   {searchTerm || selectedStatus !== 'all' || selectedInvestigator !== 'all' || dateFrom || dateTo
@@ -472,7 +472,7 @@ export default function CasesPage() {
               className="flex items-center justify-between mb-6"
             >
               <p className="text-sm font-medium text-slate-600 dark:text-slate-400">
-                {t('cases.showing', 'Showing')} <span className="font-bold text-slate-900 dark:text-white">{filteredCases.length}</span> {t('cases.of', 'of')} <span className="font-bold text-slate-900 dark:text-white">{cases.length}</span> {t('cases.cases', 'cases')}
+                {t('cases.showing', 'Anzeigen')} <span className="font-bold text-slate-900 dark:text-white">{filteredCases.length}</span> {t('cases.of', 'von')} <span className="font-bold text-slate-900 dark:text-white">{cases.length}</span> {t('cases.cases', 'Fälle')}
               </p>
             </motion.div>
             

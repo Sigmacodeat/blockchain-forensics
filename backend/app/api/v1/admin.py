@@ -9,7 +9,7 @@ from fastapi import APIRouter, HTTPException, BackgroundTasks, Query, Depends
 from pydantic import BaseModel, Field
 
 from app.ingest.blockchain_ingester import blockchain_ingester
-from app.auth.dependencies import get_current_user_strict
+from app.auth.dependencies import require_admin_strict, get_current_user_strict
 from app.config import settings
 
 logger = logging.getLogger(__name__)
@@ -42,7 +42,7 @@ class SystemStatsResponse(BaseModel):
 async def ingest_address(
     request: IngestAddressRequest,
     background_tasks: BackgroundTasks,
-    current_user = Depends(get_current_user_strict),
+    current_user = Depends(require_admin_strict),
 ):
     """
     Ingest transactions for an address
@@ -83,7 +83,7 @@ async def ingest_address(
 async def ingest_block(
     request: IngestBlockRequest,
     background_tasks: BackgroundTasks,
-    current_user = Depends(get_current_user_strict),
+    current_user = Depends(require_admin_strict),
 ):
     """
     Ingest all transactions from a block
@@ -112,7 +112,7 @@ async def ingest_block(
 
 
 @router.get("/stats")
-async def get_system_stats(current_user = Depends(get_current_user_strict)):
+async def get_system_stats(current_user = Depends(require_admin_strict)):
     """
     Get system statistics
 
@@ -196,7 +196,7 @@ async def get_system_stats(current_user = Depends(get_current_user_strict)):
 
 
 @router.get("/health/db")
-async def check_database_health(current_user = Depends(get_current_user_strict)):
+async def check_database_health(current_user = Depends(require_admin_strict)):
     """
     Check database connectivity
 
@@ -235,7 +235,7 @@ async def check_database_health(current_user = Depends(get_current_user_strict))
 
 
 @router.delete("/cache/clear")
-async def clear_cache(current_user = Depends(get_current_user_strict)):
+async def clear_cache(current_user = Depends(require_admin_strict)):
     """
     Clear Redis cache
 
@@ -243,10 +243,6 @@ async def clear_cache(current_user = Depends(get_current_user_strict)):
     """
     try:
         from app.db.redis_client import redis_client
-        # Only ADMIN may clear cache
-        role = str(getattr(current_user, "role", getattr(current_user, "get", lambda k, d=None: None)("role")))
-        if (role or "").upper() != "ADMIN":
-            raise HTTPException(status_code=403, detail="Admin only")
         deleted = await redis_client.clear_cache()
         return {"status": "success", "deleted": int(deleted)}
 
@@ -256,7 +252,7 @@ async def clear_cache(current_user = Depends(get_current_user_strict)):
 
 
 @router.get("/config")
-async def get_config():
+async def get_config(current_user = Depends(require_admin_strict)):
     """
     Get current configuration
 
@@ -279,7 +275,7 @@ async def get_config():
 
 @router.get("/users")
 async def list_users(
-    current_user = Depends(get_current_user_strict),
+    current_user = Depends(require_admin_strict),
 ):
     """
     List all users (Admin only)
@@ -294,7 +290,6 @@ async def list_users(
                     "id": "user-1",
                     "email": "test@example.com",
                     "plan": "pro",
-                    "role": "user",
                     "created_at": "2024-01-01T00:00:00Z"
                 }
             ],
@@ -306,10 +301,10 @@ async def list_users(
 
 
 # Include chatbot config routes from admin package
-# try:
-#     from .admin.chatbot_config import router as chatbot_config_router
-#     router.include_router(chatbot_config_router, tags=["Chatbot Config"])
-# except Exception as e:
-#     logger.warning(f"Could not include chatbot config routes: {e}")
+try:
+    from .admin.chatbot_config import router as chatbot_config_router
+    router.include_router(chatbot_config_router, tags=["Chatbot Config"])
+except Exception as e:
+    logger.warning(f"Could not include chatbot config routes: {e}")
 
 print("DEBUG: admin.py loaded, router has", len(router.routes), "routes")

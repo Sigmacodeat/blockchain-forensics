@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "python3 scripts/ensure-en-i18n-minimal.py && python3 scripts/backfill-i18n-10pct.py && python3 scripts/validate-i18n-keys.py && python3 scripts/full-merge-i18n.py",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc -p tsconfig.build.json && vite build",
     "build:analyze": "vite-bundle-visualizer && vite build",
     "build:optimized": "npm run i18n:audit && npm run seo:generate && npm run build",
     "export:static": "node scripts/export-static-routes.mjs",
@@ -115,6 +115,17 @@
     "terser": "^5.44.0",
     "typescript": "^5.3.3",
     "vite": "^7.1.10",
-    "vitest": "^2.1.4"
+    "vitest": "^4.0.3"
+  },
+  "overrides": {
+    "monaco-editor": {
+      "dompurify": "^3.2.4"
+    },
+    "vitest": {
+      "esbuild": "^0.25.11"
+    },
+    "vite-node": {
+      "esbuild": "^0.25.11"
+    }
   }
 }

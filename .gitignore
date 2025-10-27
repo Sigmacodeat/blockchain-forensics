@@ -88,3 +88,4 @@ docker-compose.override.yml
 *.bak.*
 *.backup
 backend/.env.backup
+.render-env

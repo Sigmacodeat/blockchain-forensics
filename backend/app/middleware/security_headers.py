@@ -26,6 +26,16 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         # Legacy XSS header (harmless for modern browsers)
         response.headers.setdefault("X-XSS-Protection", "1; mode=block")
 
+        # Cross-origin isolation and resource policy
+        response.headers.setdefault("Cross-Origin-Opener-Policy", "same-origin")
+        response.headers.setdefault("Cross-Origin-Embedder-Policy", "require-corp")
+        response.headers.setdefault("Cross-Origin-Resource-Policy", "same-site")
+
+        # Extra hardening
+        response.headers.setdefault("X-Download-Options", "noopen")
+        response.headers.setdefault("X-Permitted-Cross-Domain-Policies", "none")
+        response.headers.setdefault("Origin-Agent-Cluster", "?1")
+
         # API-safe CSP (no inline; allow self and data: for images)
         # Static assets CSP is handled by Nginx; this one protects API/HTML fallbacks
         csp = (
@@ -44,6 +54,12 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
             "Permissions-Policy",
             "geolocation=(), microphone=(), camera=(), payment=(), usb=()",
         )
+
+        # Remove Server header to avoid version leakage
+        try:
+            del response.headers["server"]
+        except Exception:
+            pass
 
         # HSTS (only when TLS is used at the edge)
         if self.enable_hsts and request.url.scheme == "https":

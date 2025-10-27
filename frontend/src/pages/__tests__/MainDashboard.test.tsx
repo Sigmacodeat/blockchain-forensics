@@ -6,12 +6,14 @@ import { BrowserRouter } from 'react-router-dom'
 
 import MainDashboard from '../MainDashboard'
 import type { User } from '@/lib/auth'
+import { AuthContext } from '@/contexts/AuthContext'
 
 const apiGetMock = vi.fn()
 
 vi.mock('react-i18next', () => ({
   useTranslation: () => ({
     t: (key: string, fallback?: string) => fallback ?? key,
+    i18n: { language: 'en' },
   }),
 }))
 
@@ -65,7 +67,17 @@ const renderDashboard = () =>
   render(
     <QueryClientProvider client={buildQueryClient()}>
       <BrowserRouter>
-        <MainDashboard />
+        <AuthContext.Provider value={{
+          user: { id: '1', email: 'user@example.com', plan: 'pro', role: 'user' } as any,
+          isAuthenticated: true,
+          isLoading: false,
+          login: vi.fn(),
+          register: vi.fn(),
+          logout: vi.fn(),
+          refreshUser: vi.fn(),
+        }}>
+          <MainDashboard />
+        </AuthContext.Provider>
       </BrowserRouter>
     </QueryClientProvider>
   )

@@ -8,15 +8,17 @@ from typing import List, cast
 from datetime import datetime
 from fastapi import APIRouter, HTTPException, status, Depends
 from app.auth.models import User, UserRole
-from app.auth.dependencies import get_current_user
-from app.auth.dependencies import require_admin
+from app.auth.dependencies import (
+    get_current_user_strict,
+    require_admin_strict,
+)
 from app.api.v1.auth import users_db
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
 
 @router.get("/me", response_model=User)
-async def me(current_user: dict = Depends(get_current_user)):
+async def me(current_user: dict = Depends(get_current_user_strict)):
     """Return current user details; JWT enforced."""
     user_dict = users_db.get(cast(str, current_user["user_id"]))
     if not user_dict:
@@ -36,7 +38,7 @@ async def me(current_user: dict = Depends(get_current_user)):
 
 
 @router.get("/", response_model=List[User])
-async def list_users(current_user: dict = Depends(require_admin)):
+async def list_users(current_user: dict = Depends(require_admin_strict)):
     """
     List all users (Admin only)
     
@@ -74,7 +76,7 @@ class UserCreateRequest(BaseModel):
 @router.post("/", response_model=User, status_code=201)
 async def create_user(
     request: UserCreateRequest,
-    current_user: dict = Depends(require_admin)
+    current_user: dict = Depends(require_admin_strict)
 ):
     """
     Create a new user (Admin only)
@@ -122,7 +124,7 @@ async def create_user(
 
 
 @router.get("/{user_id}", response_model=User)
-async def get_user(user_id: str, current_user: dict = Depends(require_admin)):
+async def get_user(user_id: str, current_user: dict = Depends(require_admin_strict)):
     """
     Get user by ID (Admin only)
     
@@ -151,7 +153,7 @@ async def get_user(user_id: str, current_user: dict = Depends(require_admin)):
 async def update_user_role(
     user_id: str,
     role: UserRole,
-    current_user: dict = Depends(require_admin)
+    current_user: dict = Depends(require_admin_strict)
 ):
     """
     Update user role (Admin only)
@@ -178,7 +180,7 @@ async def update_user_role(
 async def update_user_status(
     user_id: str,
     is_active: bool,
-    current_user: dict = Depends(require_admin)
+    current_user: dict = Depends(require_admin_strict)
 ):
     """
     Activate/Deactivate user (Admin only)
@@ -212,7 +214,7 @@ async def update_user_status(
 @router.delete("/{user_id}")
 async def delete_user(
     user_id: str,
-    current_user: dict = Depends(require_admin)
+    current_user: dict = Depends(require_admin_strict)
 ):
     """
     Delete user (Admin only)

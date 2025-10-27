@@ -33,8 +33,14 @@ class TwoFactorAuth:
     """2FA-Implementierung mit TOTP"""
 
     def __init__(self, secret_key: Optional[str] = None):
-        self.secret_key = secret_key or Fernet.generate_key()
-        self.fernet = Fernet(self.secret_key) if _TWO_FA_AVAILABLE else None
+        # Initialize depending on library availability
+        if _TWO_FA_AVAILABLE:
+            self.secret_key = secret_key or Fernet.generate_key()
+            self.fernet = Fernet(self.secret_key)
+        else:
+            # Fallback: generate a random secret without Fernet
+            self.secret_key = secret_key or secrets.token_urlsafe(32)
+            self.fernet = None
 
         if _TWO_FA_AVAILABLE:
             # Standard-TOTP-Konfiguration

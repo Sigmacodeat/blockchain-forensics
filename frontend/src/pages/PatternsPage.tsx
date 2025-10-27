@@ -189,15 +189,15 @@ export default function PatternsPage({ debounceMs = 300 }: { debounceMs?: number
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="md:col-span-2">
                   <label htmlFor="addr" className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
-                    {t('patterns.form.address')}
+                    {t('patterns.form.address', 'Adresse')}
                   </label>
                   <Input
                     id="addr"
                     value={addrInput}
                     onChange={(e) => setAddrInput(e.target.value)}
-                    placeholder={t('patterns.form.addressPlaceholder')}
+                    placeholder={t('patterns.form.addressPlaceholder', 'Adresse oder bc1…')}
                     className="border-slate-300 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
-                    aria-label={t('patterns.form.address')}
+                    aria-label={t('patterns.form.address', 'Adresse')}
                   />
                 </div>
                 <div>
@@ -254,7 +254,7 @@ export default function PatternsPage({ debounceMs = 300 }: { debounceMs?: number
                   className="bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white shadow-lg"
                 >
                   <Search className="w-4 h-4 mr-2" />
-                  {detectMutation.isPending ? t('patterns.form.analyzing') : t('patterns.form.analyze')}
+                  {detectMutation.isPending ? t('patterns.form.analyzing', 'Analysieren') : t('patterns.form.analyze', 'Analysieren')}
                 </Button>
                 <Button
                   variant="outline"
@@ -265,36 +265,6 @@ export default function PatternsPage({ debounceMs = 300 }: { debounceMs?: number
                   <Brain className="w-4 h-4 mr-2" />
                   {t('patterns.form.askAssistant')}
                 </Button>
-                {address && (
-                  <Button
-                    variant="outline"
-                    onClick={() => openInInvestigator(address)}
-                    disabled={!addrValid}
-                    className="border border-border hover:bg-muted"
-                  >
-                    <LinkIcon className="w-4 h-4 mr-2" />
-                    {t('patterns.form.openInvestigator')}
-                  </Button>
-                )}
-                {addrValid && (
-                  <Button
-                    variant="outline"
-                    onClick={() => {
-                      try {
-                        const m = window.location.pathname.match(/^\/([a-zA-Z]{2}(?:-[A-Z]{2})?)/);
-                        const lang = m ? m[1] : 'en';
-                        const params = new URLSearchParams({ address: address.trim(), action: 'expand' });
-                        window.open(`/${lang}/investigator?${params.toString()}`, '_self');
-                      } catch {
-                        window.open(`/investigator?address=${encodeURIComponent(address.trim())}&action=expand`, '_self');
-                      }
-                    }}
-                    className="border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800"
-                  >
-                    <TrendingUp className="w-4 h-4 mr-2" />
-                    {t('patterns.form.expandInvestigator')}
-                  </Button>
-                )}
               </div>
               <div role="status" aria-live="polite" className="sr-only">
                 {detectMutation.isPending ? t('patterns.status.analyzing') : detectMutation.data ? t('patterns.status.complete') : ''}
@@ -476,88 +446,70 @@ export default function PatternsPage({ debounceMs = 300 }: { debounceMs?: number
                                               {e.tx_hash.slice(0, 10)}… <ExternalLink className="w-3 h-3" />
                                             </button>
                                           </TableCell>
-<TableCell className="font-mono text-slate-700 dark:text-slate-300">{e.from_address.slice(0, 10)}…</TableCell>
-<TableCell className="font-mono text-slate-700 dark:text-slate-300">{e.to_address.slice(0, 10)}…</TableCell>
-<TableCell className="text-slate-700 dark:text-slate-300">{e.amount}</TableCell>
-<TableCell className="text-xs text-slate-600 dark:text-slate-400">{e.timestamp}</TableCell>
-<TableCell className="text-right">
-<div className="flex items-center gap-2 justify-end">
-<Button
-size="sm"
-variant="outline"
-onClick={() => openInInvestigator(e.to_address)}
-className="border border-border hover:bg-muted"
->
-<LinkIcon className="w-3 h-3 mr-1" />
-{t('patterns.table.investigator')}
-</Button>
-<Button
-size="sm"
-variant="outline"
-onClick={() => {
-try {
-const m = window.location.pathname.match(/^\/([a-zA-Z]{2}(?:-[A-Z]{2})?)/);
-const lang = m ? m[1] : 'en';
-const params = new URLSearchParams({ address: e.to_address, action: 'expand' });
-window.open(`/${lang}/investigator?${params.toString()}`, '_self');
-} catch {
-window.open(`/investigator?address=${encodeURIComponent(e.to_address)}&action=expand`, '_self');
-}
-}}
-className="border border-border hover:bg-muted"
->
-{t('patterns.table.expand')}
-</Button>
-<Button
-size="sm"
-variant="outline"
-onClick={() => {
-try {
-const m = window.location.pathname.match(/^\/([a-zA-Z]{2}(?:-[A-Z]{2})?)/);
-const lang = m ? m[1] : 'en';
-const params = new URLSearchParams({ address: e.from_address, action: 'path', target: e.to_address });
-window.open(`/${lang}/investigator?${params.toString()}`, '_self');
-} catch {
-window.open(`/investigator?address=${encodeURIComponent(e.from_address)}&action=path&target=${encodeURIComponent(e.to_address)}`, '_self');
-}
-}}
-className="border border-border hover:bg-muted"
->
-{t('patterns.table.path')}
-</Button>
-<Button
-size="sm"
-variant="outline"
-onClick={() => navigator.clipboard?.writeText(JSON.stringify(e))}
-className="border border-border hover:bg-muted"
->
-<Clipboard className="w-3 h-3 mr-1" />
-{t('patterns.table.copy')}
-</Button>
-</div>
-</TableCell>
-</TableRow>
-))}
-</TableBody>
-</Table>
-</div>
-) : (
-<div className="text-sm text-slate-600 dark:text-slate-400 text-center py-8">
-{t('patterns.pattern.noEvidence')}
-</div>
-)}
-</CardContent>
-</Card>
-</motion.div>
-))}
-</div>
-)}
-</CardContent>
-</Card>
-</motion.div>
-)}
-</AnimatePresence>
-</div>
-</div>
-);
+                                          <TableCell className="font-mono text-slate-700 dark:text-slate-300">{e.from_address.slice(0, 10)}…</TableCell>
+                                          <TableCell className="font-mono text-slate-700 dark:text-slate-300">{e.to_address.slice(0, 10)}…</TableCell>
+                                          <TableCell className="text-slate-700 dark:text-slate-300">{e.amount}</TableCell>
+                                          <TableCell className="text-xs text-slate-600 dark:text-slate-400">{e.timestamp}</TableCell>
+                                          <TableCell className="text-right">
+                                            <div className="flex items-center gap-2 justify-end">
+                                              <Button
+                                                size="sm"
+                                                variant="outline"
+                                                onClick={() => openInInvestigator(e.tx_hash)}
+                                                className="border border-border hover:bg-muted"
+                                              >
+                                                <LinkIcon className="w-3 h-3 mr-1" />
+                                                {t('patterns.table.investigator')}
+                                              </Button>
+                                              <Button
+                                                size="sm"
+                                                variant="outline"
+                                                onClick={() => { try { const m = window.location.pathname.match(/^\/([a-zA-Z]{2}(?:-[A-Z]{2})?)/); const lang = m ? m[1] : 'en'; const params = new URLSearchParams({ address: e.to_address, action: 'expand' }); window.open(`/${lang}/investigator?${params.toString()}`, '_self'); } catch { window.open(`/investigator?address=${encodeURIComponent(e.to_address)}&action=expand`, '_self'); } }}
+                                                className="border border-border hover:bg-muted"
+                                              >
+                                                {t('patterns.table.expand')}
+                                              </Button>
+                                              <Button
+                                                size="sm"
+                                                variant="outline"
+                                                onClick={() => { try { const m = window.location.pathname.match(/^\/([a-zA-Z]{2}(?:-[A-Z]{2})?)/); const lang = m ? m[1] : 'en'; const params = new URLSearchParams({ address: e.from_address, action: 'path', target: e.to_address }); window.open(`/${lang}/investigator?${params.toString()}`, '_self'); } catch { window.open(`/investigator?address=${encodeURIComponent(e.from_address)}&action=path&target=${encodeURIComponent(e.to_address)}`, '_self'); } }}
+                                                className="border border-border hover:bg-muted"
+                                              >
+                                                {t('patterns.table.path')}
+                                              </Button>
+                                              <Button
+                                                size="sm"
+                                                variant="outline"
+                                                onClick={() => navigator.clipboard?.writeText(JSON.stringify(e))}
+                                                className="border border-border hover:bg-muted"
+                                              >
+                                                <Clipboard className="w-3 h-3 mr-1" />
+                                                {t('patterns.table.copy')}
+                                              </Button>
+                                            </div>
+                                          </TableCell>
+                                        </TableRow>
+                                      ))}
+                                    </TableBody>
+                                  </Table>
+                                </div>
+                              ) : (
+                                <div className="text-sm text-slate-600 dark:text-slate-400 text-center py-8">
+                                  {t('patterns.pattern.noEvidence')}
+                                </div>
+                              )}
+                            </CardContent>
+                          </Card>
+                        </motion.div>
+                      ))}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </div>
+  );
 }

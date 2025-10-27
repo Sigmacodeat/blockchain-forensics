@@ -82,6 +82,9 @@ export default function Layout({ children }: LayoutProps) {
   const userMenuId = 'dashboard-user-menu'
   const userMenuButtonId = 'dashboard-user-button'
   const hoverTimerUser = useRef<number | null>(null)
+  const [megaOpen, setMegaOpen] = useState<null | 'workspace' | 'analysis' | 'compliance' | 'admin'>(null)
+  const hoverTimerMega = useRef<number | null>(null)
+  const megaRef = useRef<HTMLDivElement | null>(null)
   const prefersReducedMotion = useMemo(() =>
     typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches
   , [])
@@ -145,6 +148,7 @@ export default function Layout({ children }: LayoutProps) {
     pageview(user?.username)
     setShowUserMenu(false)
     setPaletteOpen(false)
+    setMegaOpen(null)
     const label = (Object.fromEntries(navItems.map((n) => [n.path, n.label])) as Record<string, string>)[location.pathname]
     setAnnouncement(label || location.pathname)
   }, [location.pathname])
@@ -180,6 +184,7 @@ export default function Layout({ children }: LayoutProps) {
   useEffect(() => () => {
     if (hoverTimerUser.current) window.clearTimeout(hoverTimerUser.current)
     if (prefetchTimerRef.current) window.clearTimeout(prefetchTimerRef.current)
+    if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
   }, [])
 
   // Scroll-lock when user menu is open
@@ -204,12 +209,15 @@ export default function Layout({ children }: LayoutProps) {
       if (userMenuRef.current && !userMenuRef.current.contains(target)) {
         setShowUserMenu(false)
       }
+      if (megaRef.current && !megaRef.current.contains(target)) {
+        setMegaOpen(null)
+      }
       if (isPaletteOpen && paletteRef.current && !paletteRef.current.contains(target)) {
         setPaletteOpen(false)
       }
     }
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') { setShowUserMenu(false); if (isPaletteOpen) { setPaletteOpen(false); requestAnimationFrame(() => paletteButtonRef.current?.focus()) } }
+      if (e.key === 'Escape') { setShowUserMenu(false); setMegaOpen(null); if (isPaletteOpen) { setPaletteOpen(false); requestAnimationFrame(() => paletteButtonRef.current?.focus()) } }
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault()
         setPaletteOpen((v) => {
@@ -225,6 +233,12 @@ export default function Layout({ children }: LayoutProps) {
       document.removeEventListener('mousedown', onDocClick)
       document.removeEventListener('keydown', onKey)
     }
+  }, [])
+
+  useEffect(() => {
+    const onScroll = () => setMegaOpen(null)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   useEffect(() => {
@@ -254,6 +268,7 @@ export default function Layout({ children }: LayoutProps) {
     }
   }, [isPaletteOpen])
 
+  type NavItem = { path: string; label: string; icon: any; roles?: string[]; minPlan?: PlanId }
   const navItems = useMemo(() => [
     // HAUPT-DASHBOARD (Zentrale Übersicht)
     { path: `/${currentLanguage}/dashboard`, label: 'Dashboard Hub', icon: LayoutDashboard, minPlan: 'community' as PlanId },
@@ -292,9 +307,9 @@ export default function Layout({ children }: LayoutProps) {
     { path: `/${currentLanguage}/monitoring/dashboard`, label: 'Monitoring Dashboard', icon: Activity, roles: ['admin'] as Array<string> },
     { path: `/${currentLanguage}/orgs`, label: 'Orgs', icon: Building2, roles: ['admin'] as Array<string> },
     { path: `/${currentLanguage}/admin`, label: 'Admin', icon: Settings, roles: ['admin'] as Array<string> },
-  ] as Array<{ path: string; label: string; icon: any; roles?: string[]; minPlan?: PlanId }>, [currentLanguage])
+  ] as Array<NavItem>, [currentLanguage])
 
-  const visibleNavItems = navItems.filter((item) => {
+  const visibleNavItems: NavItem[] = navItems.filter((item) => {
     // Role-based filter
     if (item.roles && !item.roles.includes((user?.role as string) || 'guest')) {
       return false
@@ -305,6 +320,17 @@ export default function Layout({ children }: LayoutProps) {
     }
     return true
   })
+
+  // Mega-Menü Gruppierung (nur Desktop-Header ohne Sidebar)
+  const withoutLang = (p: string) => p.replace(/^\/[a-z]{2}(?:-[A-Z]{2})?/, '') || '/'
+  const setWorkspace = useMemo(() => new Set(['/dashboard','/forensics','/cases','/dashboards','/bridge-transfers']), [])
+  const setAnalysis = useMemo(() => new Set(['/trace','/investigator','/correlation','/patterns','/privacy-demixing','/performance']), [])
+  const setCompliance = useMemo(() => new Set(['/policies','/automation','/api-keys','/webhooks','/intelligence-network','/wallet-scanner','/universal-screening','/vasp-compliance']), [])
+  const setAdmin = useMemo(() => new Set(['/analytics','/web-analytics','/monitoring','/monitoring/dashboard','/orgs','/admin','/admin/appsumo','/admin/appsumo/manager','/security','/bitcoin-investigation','/advanced-indirect-risk','/billing']), [])
+  const groupWorkspace = useMemo<NavItem[]>(() => visibleNavItems.filter((i) => setWorkspace.has(withoutLang(i.path))), [visibleNavItems, setWorkspace])
+  const groupAnalysis = useMemo<NavItem[]>(() => visibleNavItems.filter((i) => setAnalysis.has(withoutLang(i.path))), [visibleNavItems, setAnalysis])
+  const groupCompliance = useMemo<NavItem[]>(() => visibleNavItems.filter((i) => setCompliance.has(withoutLang(i.path))), [visibleNavItems, setCompliance])
+  const groupAdmin = useMemo<NavItem[]>(() => visibleNavItems.filter((i) => setAdmin.has(withoutLang(i.path))), [visibleNavItems, setAdmin])
 
   const labelMap = Object.fromEntries(navItems.map((n) => [n.path, n.label])) as Record<string, string>
   const buildBreadcrumbs = () => {
@@ -680,39 +706,156 @@ export default function Layout({ children }: LayoutProps) {
                 </AnimatePresence>
               </div>
               {!showSidebar && (
-                <nav
-                  className="flex gap-1 overflow-x-auto whitespace-nowrap scrollbar-thin"
-                  role="navigation"
-                  aria-label={t('layout.main_navigation', 'Hauptnavigation')}
-                  aria-orientation="horizontal"
-                  ref={navRef}
-                  onKeyDown={onNavKeyDown}
-                >
-                  {visibleNavItems.map((item) => {
-                    const Icon = item.icon
-                    return (
-                      <Link
-                        key={item.path}
-                        to={item.path}
-                        onClick={() => track('nav_click', { path: item.path, label: item.label })}
-                        onMouseEnter={() => prefetchRouteDebounced(item.path)}
-                        className={`
-                          relative flex items-center gap-2 px-3 py-2 rounded-lg transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/50
-                          ${
-                            isActive(item.path)
-                              ? 'bg-primary-600 text-white font-semibold shadow-sm dark:bg-primary-500 dark:text-white'
-                              : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-slate-300 dark:hover:bg-slate-700 dark:hover:text-white'
-                          }
-                        `}
-                        aria-current={isActive(item.path) ? 'page' : undefined}
-                        title={item.label}
+                <div className="hidden lg:flex items-center gap-1" ref={megaRef}>
+                  <div
+                    onMouseEnter={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen('workspace'), 100) }}
+                    onMouseLeave={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150) }}
+                    className="relative"
+                  >
+                    <button
+                      type="button"
+                      className="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 dark:hover:bg-slate-700 inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary/50"
+                      aria-haspopup="true"
+                      aria-expanded={megaOpen === 'workspace'}
+                      onClick={() => setMegaOpen(megaOpen === 'workspace' ? null : 'workspace')}
+                      onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setMegaOpen('workspace') } if (e.key === 'Escape') { setMegaOpen(null) } }}
+                    >
+                      Workspace
+                      <ChevronDown className={`w-4 h-4 transition-transform ${megaOpen === 'workspace' ? 'rotate-180' : ''}`} />
+                    </button>
+                  </div>
+                  <div
+                    onMouseEnter={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen('analysis'), 100) }}
+                    onMouseLeave={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150) }}
+                    className="relative"
+                  >
+                    <button
+                      type="button"
+                      className="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 dark:hover:bg-slate-700 inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary/50"
+                      aria-haspopup="true"
+                      aria-expanded={megaOpen === 'analysis'}
+                      onClick={() => setMegaOpen(megaOpen === 'analysis' ? null : 'analysis')}
+                      onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setMegaOpen('analysis') } if (e.key === 'Escape') { setMegaOpen(null) } }}
+                    >
+                      Analysis
+                      <ChevronDown className={`w-4 h-4 transition-transform ${megaOpen === 'analysis' ? 'rotate-180' : ''}`} />
+                    </button>
+                  </div>
+                  <div
+                    onMouseEnter={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen('compliance'), 100) }}
+                    onMouseLeave={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150) }}
+                    className="relative"
+                  >
+                    <button
+                      type="button"
+                      className="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 dark:hover:bg-slate-700 inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary/50"
+                      aria-haspopup="true"
+                      aria-expanded={megaOpen === 'compliance'}
+                      onClick={() => setMegaOpen(megaOpen === 'compliance' ? null : 'compliance')}
+                      onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setMegaOpen('compliance') } if (e.key === 'Escape') { setMegaOpen(null) } }}
+                    >
+                      Compliance
+                      <ChevronDown className={`w-4 h-4 transition-transform ${megaOpen === 'compliance' ? 'rotate-180' : ''}`} />
+                    </button>
+                  </div>
+                  <div
+                    onMouseEnter={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen('admin'), 100) }}
+                    onMouseLeave={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150) }}
+                    className="relative"
+                  >
+                    <button
+                      type="button"
+                      className="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 dark:hover:bg-slate-700 inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary/50"
+                      aria-haspopup="true"
+                      aria-expanded={megaOpen === 'admin'}
+                      onClick={() => setMegaOpen(megaOpen === 'admin' ? null : 'admin')}
+                      onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setMegaOpen('admin') } if (e.key === 'Escape') { setMegaOpen(null) } }}
+                    >
+                      Admin
+                      <ChevronDown className={`w-4 h-4 transition-transform ${megaOpen === 'admin' ? 'rotate-180' : ''}`} />
+                    </button>
+                  </div>
+                  <AnimatePresence>
+                    {megaOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -4, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: -4, scale: 0.98 }}
+                        transition={{ duration: prefersReducedMotion ? 0 : 0.12, ease: 'easeOut' }}
+                        className="absolute left-0 right-0 top-12 mt-2 z-40"
+                        onMouseEnter={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current) }}
+                        onMouseLeave={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current); hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150) }}
                       >
-                        <Icon className="w-5 h-5" aria-hidden />
-                        <span className="hidden sm:inline">{t(`nav.${navKeyFromPath(item.path.replace(/^\/[a-z]{2}(?:-[A-Z]{2})?/, '') )}.label`, item.label)}</span>
-                      </Link>
-                    )
-                  })}
-                </nav>
+                        <div className="mx-auto max-w-6xl rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-xl ring-1 ring-primary/10 p-4">
+                          {megaOpen === 'workspace' && (
+                            <div>
+                              <div className="px-1 pb-2 text-[11px] uppercase tracking-wide text-muted-foreground">Workspace</div>
+                              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                                {groupWorkspace.map((item: NavItem) => { const Icon = item.icon; return (
+                                  <Link key={item.path} to={item.path} onClick={() => { setMegaOpen(null); track('nav_click', { path: item.path, label: item.label }) }} onMouseEnter={() => prefetchRouteDebounced(item.path)} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition ${isActive(item.path) ? 'ring-1 ring-primary/30' : ''}`}>
+                                    <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Icon className="h-5 w-5" /></span>
+                                    <span>
+                                      <span className="block text-sm font-semibold leading-5">{item.label}</span>
+                                      <span className="block text-xs text-muted-foreground">{item.path}</span>
+                                    </span>
+                                  </Link>
+                                ) })}
+                              </div>
+                            </div>
+                          )}
+                          {megaOpen === 'analysis' && (
+                            <div>
+                              <div className="px-1 pb-2 text-[11px] uppercase tracking-wide text-muted-foreground">Analysis</div>
+                              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                                {groupAnalysis.map((item: NavItem) => { const Icon = item.icon; return (
+                                  <Link key={item.path} to={item.path} onClick={() => { setMegaOpen(null); track('nav_click', { path: item.path, label: item.label }) }} onMouseEnter={() => prefetchRouteDebounced(item.path)} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition ${isActive(item.path) ? 'ring-1 ring-primary/30' : ''}`}>
+                                    <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Icon className="h-5 w-5" /></span>
+                                    <span>
+                                      <span className="block text-sm font-semibold leading-5">{item.label}</span>
+                                      <span className="block text-xs text-muted-foreground">{item.path}</span>
+                                    </span>
+                                  </Link>
+                                ) })}
+                              </div>
+                            </div>
+                          )}
+                          {megaOpen === 'compliance' && (
+                            <div>
+                              <div className="px-1 pb-2 text-[11px] uppercase tracking-wide text-muted-foreground">Compliance</div>
+                              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                                {groupCompliance.map((item: NavItem) => { const Icon = item.icon; return (
+                                  <Link key={item.path} to={item.path} onClick={() => { setMegaOpen(null); track('nav_click', { path: item.path, label: item.label }) }} onMouseEnter={() => prefetchRouteDebounced(item.path)} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition ${isActive(item.path) ? 'ring-1 ring-primary/30' : ''}`}>
+                                    <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Icon className="h-5 w-5" /></span>
+                                    <span>
+                                      <span className="block text-sm font-semibold leading-5">{item.label}</span>
+                                      <span className="block text-xs text-muted-foreground">{item.path}</span>
+                                    </span>
+                                  </Link>
+                                ) })}
+                              </div>
+                            </div>
+                          )}
+                          {megaOpen === 'admin' && (
+                            <div>
+                              <div className="px-1 pb-2 text-[11px] uppercase tracking-wide text-muted-foreground">Admin</div>
+                              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                                {groupAdmin.map((item: NavItem) => { const Icon = item.icon; return (
+                                  <Link key={item.path} to={item.path} onClick={() => { setMegaOpen(null); track('nav_click', { path: item.path, label: item.label }) }} onMouseEnter={() => prefetchRouteDebounced(item.path)} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition ${isActive(item.path) ? 'ring-1 ring-primary/30' : ''}`}>
+                                    <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Icon className="h-5 w-5" /></span>
+                                    <span>
+                                      <span className="block text-sm font-semibold leading-5">{item.label}</span>
+                                      <span className="block text-xs text-muted-foreground">{item.path}</span>
+                                    </span>
+                                  </Link>
+                                ) })}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
               )}
             </div>
           </div>

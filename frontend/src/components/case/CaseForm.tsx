@@ -42,6 +42,13 @@ export function CaseForm({ onSubmit, onCancel, isLoading = false, initialData }:
     }
 
     setErrors(newErrors)
+    if (Object.keys(newErrors).length > 0) {
+      // Mark invalid fields as touched so error messages are displayed immediately
+      setTouched(prev => ({
+        ...prev,
+        ...Object.fromEntries(Object.keys(newErrors).map((k) => [k, true]))
+      }))
+    }
 
     if (Object.keys(newErrors).length === 0) {
       onSubmit(formData)

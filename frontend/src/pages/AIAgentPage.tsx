@@ -71,7 +71,7 @@ export default function AIAgentPage() {
         {messages.length === 0 ? (
           <div className="text-center py-12">
             <Bot className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('agent.welcome', 'Willkommen beim AI Forensic Agent')}</h3>
+            <h3 aria-hidden className="text-lg font-semibold text-gray-900 mb-2">{t('agent.welcome', 'Willkommen')}</h3>
             <p className="text-gray-600 mb-6">
               {t('agent.instructions', 'Stelle Fragen in natürlicher Sprache. Der Agent nutzt spezialisierte Tools für Tracing, Risk-Scoring und Sanctions-Screening.')}
             </p>
@@ -81,6 +81,7 @@ export default function AIAgentPage() {
                 {exampleQueries.map((example, idx) => (
                   <li key={idx}>
                     <button
+                      tabIndex={-1}
                       onClick={() => {
                         if (typing) return
                         const userMsg = { role: 'user' as const, content: example }
@@ -163,14 +164,19 @@ export default function AIAgentPage() {
         )}
       </div>
 
+      {/* Screenreader status announcements */}
+      <div role="status" aria-live="polite" className="sr-only">
+        {typing ? t('agent.status_typing', 'Agent typing') : t('agent.status_idle', 'Idle')}
+      </div>
+
       {/* Input Form */}
       <form onSubmit={handleSubmit} className="card p-4">
         <div className="flex gap-2">
           <input
             type="text"
             className="input flex-1"
-            placeholder={t('agent.placeholder', 'Stelle eine forensische Frage...')}
-            aria-label={t('agent.inputLabel', 'Nachricht eingeben')}
+            placeholder={`${t('agent.placeholder', 'Stelle eine forensische Frage...')} | ${t('agent.placeholder_en', 'Ask me anything')}`}
+            aria-label={`${t('agent.inputLabel', 'Nachricht eingeben')}, ${t('agent.inputLabel_en', 'message input')}`}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             disabled={typing}
@@ -181,7 +187,8 @@ export default function AIAgentPage() {
             className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
             <Send className="w-4 h-4" />
-            {t('agent.send', 'Senden')}
+            <span>{t('agent.send', 'Senden')}</span>
+            <span className="sr-only">{t('agent.send_en', 'Send')}</span>
           </button>
         </div>
       </form>

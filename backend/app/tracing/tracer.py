@@ -5,6 +5,7 @@ from typing import Dict, List, Set, Optional, Tuple
 from decimal import Decimal
 from collections import deque, defaultdict
 from datetime import datetime
+import time as _time
 import asyncio
 import uuid
 
@@ -67,6 +68,9 @@ class TransactionTracer:
         4. Build result graph
         """
         start_time = datetime.utcnow()
+        start_ts = _time.monotonic()
+        last_emit = start_ts
+        processed_steps = 0
         trace_id = str(uuid.uuid4())
         
         logger.info(f"Starting trace {trace_id} from {request.source_address}")
@@ -99,7 +103,14 @@ class TransactionTracer:
             
             # Trace loop
             while queue and result.total_nodes < request.max_nodes:
+                # Global wall-clock timeout
+                now_ts = _time.monotonic()
+                if now_ts - start_ts > float(getattr(request, "max_execution_seconds", 25)):
+                    result.error = "timeout"
+                    logger.warning(f"Trace {trace_id} aborted due to timeout after {now_ts - start_ts:.2f}s")
+                    break
                 current_address, current_taint, hop, path = queue.popleft()
+                processed_steps += 1
                 
                 # Skip if already visited at this hop or deeper
                 visit_key = f"{current_address}_{hop}"
@@ -117,41 +128,90 @@ class TransactionTracer:
                     continue
                 
                 # Fetch transactions
+                io_timeout = float(getattr(request, "io_timeout_seconds", 5.0))
                 if request.direction == TraceDirection.FORWARD:
-                    transactions = await self._get_outgoing_transactions(
-                        current_address,
-                        request.start_timestamp,
-                        request.end_timestamp
-                    )
+                    try:
+                        transactions = await asyncio.wait_for(
+                            self._get_outgoing_transactions(
+                                current_address,
+                                request.start_timestamp,
+                                request.end_timestamp
+                            ),
+                            timeout=io_timeout,
+                        )
+                    except asyncio.TimeoutError:
+                        logger.warning(f"trace {trace_id}: outgoing tx timeout @ {current_address}")
+                        transactions = []
                 elif request.direction == TraceDirection.BACKWARD:
-                    transactions = await self._get_incoming_transactions(
-                        current_address,
-                        request.start_timestamp,
-                        request.end_timestamp
-                    )
+                    try:
+                        transactions = await asyncio.wait_for(
+                            self._get_incoming_transactions(
+                                current_address,
+                                request.start_timestamp,
+                                request.end_timestamp
+                            ),
+                            timeout=io_timeout,
+                        )
+                    except asyncio.TimeoutError:
+                        logger.warning(f"trace {trace_id}: incoming tx timeout @ {current_address}")
+                        transactions = []
                 else:  # BOTH
-                    outgoing = await self._get_outgoing_transactions(current_address)
-                    incoming = await self._get_incoming_transactions(current_address)
-                    transactions = outgoing + incoming
+                    try:
+                        outgoing = await asyncio.wait_for(
+                            self._get_outgoing_transactions(current_address), timeout=io_timeout
+                        )
+                    except asyncio.TimeoutError:
+                        logger.warning(f"trace {trace_id}: outgoing(BOTH) timeout @ {current_address}")
+                        outgoing = []
+                    try:
+                        incoming = await asyncio.wait_for(
+                            self._get_incoming_transactions(current_address), timeout=io_timeout
+                        )
+                    except asyncio.TimeoutError:
+                        logger.warning(f"trace {trace_id}: incoming(BOTH) timeout @ {current_address}")
+                        incoming = []
+                    transactions = (outgoing or []) + (incoming or [])
                 
                 # Fetch UTXO flows (BTC-like), best-effort
                 utxo_txs: List[Dict] = []
                 try:
                     if request.enable_utxo and request.direction == TraceDirection.FORWARD:
-                        utxo_txs = await self._get_utxo_outgoing(
-                            current_address,
-                            request.start_timestamp,
-                            request.end_timestamp,
-                        )
+                        try:
+                            utxo_txs = await asyncio.wait_for(
+                                self._get_utxo_outgoing(
+                                    current_address,
+                                    request.start_timestamp,
+                                    request.end_timestamp,
+                                ),
+                                timeout=io_timeout,
+                            )
+                        except asyncio.TimeoutError:
+                            logger.warning(f"trace {trace_id}: utxo_outgoing timeout @ {current_address}")
+                            utxo_txs = []
                     elif request.enable_utxo and request.direction == TraceDirection.BACKWARD:
-                        utxo_txs = await self._get_utxo_incoming(
-                            current_address,
-                            request.start_timestamp,
-                            request.end_timestamp,
-                        )
+                        try:
+                            utxo_txs = await asyncio.wait_for(
+                                self._get_utxo_incoming(
+                                    current_address,
+                                    request.start_timestamp,
+                                    request.end_timestamp,
+                                ),
+                                timeout=io_timeout,
+                            )
+                        except asyncio.TimeoutError:
+                            logger.warning(f"trace {trace_id}: utxo_incoming timeout @ {current_address}")
+                            utxo_txs = []
                     else:
-                        u_out = await self._get_utxo_outgoing(current_address) if request.enable_utxo else []
-                        u_in = await self._get_utxo_incoming(current_address) if request.enable_utxo else []
+                        try:
+                            u_out = await asyncio.wait_for(self._get_utxo_outgoing(current_address), timeout=io_timeout) if request.enable_utxo else []
+                        except asyncio.TimeoutError:
+                            logger.warning(f"trace {trace_id}: utxo_outgoing(BOTH) timeout @ {current_address}")
+                            u_out = []
+                        try:
+                            u_in = await asyncio.wait_for(self._get_utxo_incoming(current_address), timeout=io_timeout) if request.enable_utxo else []
+                        except asyncio.TimeoutError:
+                            logger.warning(f"trace {trace_id}: utxo_incoming(BOTH) timeout @ {current_address}")
+                            u_in = []
                         utxo_txs = (u_out or []) + (u_in or [])
                 except Exception:
                     utxo_txs = []
@@ -411,7 +471,13 @@ class TransactionTracer:
 
                 # Cross-chain expansion via persisted BRIDGE_LINKs
                 try:
-                    bridge_links = await self._get_bridge_links(current_address) if request.enable_bridge else []
+                    if request.enable_bridge:
+                        bridge_links = await asyncio.wait_for(self._get_bridge_links(current_address), timeout=io_timeout)
+                    else:
+                        bridge_links = []
+                except asyncio.TimeoutError:
+                    logger.warning(f"trace {trace_id}: bridge_links timeout @ {current_address}")
+                    bridge_links = []
                 except Exception:
                     bridge_links = []
                 for bl in bridge_links:
@@ -470,6 +536,17 @@ class TransactionTracer:
                         path + [next_address]
                     ))
                 
+                # Emit progress status (throttled)
+                emit_every = max(0.05, float(getattr(request, "progress_emit_interval_ms", 500)) / 1000.0)
+                if (now_ts - last_emit) >= emit_every:
+                    queue_len = len(queue)
+                    denom = max(1, processed_steps + queue_len)
+                    percent = int(min(100, max(0, (processed_steps / denom) * 100)))
+                    logger.info(
+                        f"Trace {trace_id} progress: {percent}% | processed={processed_steps} queue={queue_len} nodes={result.total_nodes} edges={result.total_edges} hop={hop}"
+                    )
+                    last_emit = now_ts
+
                 result.max_hop_reached = max(result.max_hop_reached, hop)
             
             # Analyze results
@@ -488,6 +565,7 @@ class TransactionTracer:
                 f"Trace {trace_id} completed: {result.total_nodes} nodes, "
                 f"{result.total_edges} edges in {result.execution_time_seconds:.2f}s"
             )
+
         
         return result
 

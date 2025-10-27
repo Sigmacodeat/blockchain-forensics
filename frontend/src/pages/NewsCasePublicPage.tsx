@@ -17,18 +17,21 @@ function explorerUrl(chain: string, kind: 'address' | 'tx', value: string): stri
     case 'optimism':
     case 'polygon':
     case 'bsc':
-      // Etherscan-Familie / ähnliche
-      const map: Record<string, string> = {
-        ethereum: 'https://etherscan.io',
-        base: 'https://basescan.org',
-        arbitrum: 'https://arbiscan.io',
-        optimism: 'https://optimistic.etherscan.io',
-        polygon: 'https://polygonscan.com',
-        bsc: 'https://bscscan.com',
+      {
+        // Etherscan-Familie / ähnliche
+        const map: Record<string, string> = {
+          ethereum: 'https://etherscan.io',
+          base: 'https://basescan.org',
+          arbitrum: 'https://arbiscan.io',
+          optimism: 'https://optimistic.etherscan.io',
+          polygon: 'https://polygonscan.com',
+          bsc: 'https://bscscan.com',
+        }
+        const root = map[c]
+        if (!root) return null
+        return `${root}/${kind === 'address' ? 'address' : 'tx'}/${value}`
       }
-      const root = map[c]
-      if (!root) return null
-      return `${root}/${kind === 'address' ? 'address' : 'tx'}/${value}`
+      break
     case 'gnosis':
       return `https://gnosisscan.io/${kind === 'address' ? 'address' : 'tx'}/${value}`
     case 'bitcoin':

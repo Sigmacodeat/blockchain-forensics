@@ -10,7 +10,7 @@ services:
       args:
         - USE_LITE=1
     autoDeploy: true
-    healthCheckPath: /health
+    healthCheckPath: /api/healthz
     envVars:
       - key: ENVIRONMENT
         value: production
@@ -21,9 +21,25 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: TRUSTED_HOSTS
-        value: "[*]"
+        value: "[\"blockchain-forensics-backend.onrender.com\"]"
       - key: CORS_ORIGINS
-        value: "[\"*\"]"
+        value: "[\"https://YOUR_NETLIFY_SITE.netlify.app\"]"
+      - key: BACKEND_URL
+        value: "https://blockchain-forensics-backend.onrender.com"
+      - key: FRONTEND_URL
+        value: "https://YOUR_NETLIFY_SITE.netlify.app"
+      - key: ENABLE_HSTS
+        value: "true"
+      - key: FORCE_HTTPS_REDIRECT
+        value: "true"
+      - key: ENABLE_RATE_LIMIT
+        value: "1"
+      - key: MAX_REQUEST_SIZE_BYTES
+        value: "2097152"
+      - key: MIN_API_KEY_LENGTH
+        value: "32"
+      - key: ENFORCE_2FA_FOR_ADMINS
+        value: "0"
       - key: POSTGRES_URL
         # e.g. from Neon
         value: "postgresql://USER:PASSWORD@HOST:5432/DBNAME"

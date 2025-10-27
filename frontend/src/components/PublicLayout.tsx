@@ -2,7 +2,7 @@ import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
-import { Shield, Github, Twitter, Linkedin, Mail, Menu, X, LayoutGrid, LogOut, Settings, FileText, LogIn, UserPlus } from 'lucide-react'
+import { Shield, Github, Twitter, Linkedin, Mail, Menu, X, LayoutGrid, LogOut, Settings, FileText, LogIn, UserPlus, ChevronDown, Radar, Network, Sparkles, CreditCard, Building2 } from 'lucide-react'
 import { ThemeToggle } from '@/contexts/ThemeContext'
 import { useI18n } from '@/contexts/I18nContext'
 import { openCookieConsent } from '@/components/legal/CookieConsent'
@@ -32,6 +32,9 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
   const [registerOpen, setRegisterOpen] = React.useState(false)
   const [groupsOpen, setGroupsOpen] = React.useState<{ [k: string]: boolean }>({ product: true, resources: true, company: true })
   const { currentLanguage, setLanguage, languages } = useI18n()
+  const [megaOpen, setMegaOpen] = React.useState<null | 'product' | 'usecases' | 'resources' | 'company'>(null)
+  const megaRef = React.useRef<HTMLDivElement | null>(null)
+  const hoverTimerMega = React.useRef<number | null>(null)
   const sortedLanguages = React.useMemo(() => {
     // Alle 42 Sprachen anzeigen (keine Allowlist mehr)
     return [...languages].sort((a, b) => {
@@ -79,10 +82,21 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
     return { size, dur, delay, dur2, delay2 }
   }, [])
 
+  // Close mega on route change and on scroll
+  React.useEffect(() => {
+    setMegaOpen(null)
+  }, [location.pathname])
+  React.useEffect(() => {
+    const onScroll = () => setMegaOpen(null)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   // Cleanup hover timers on unmount
   React.useEffect(() => () => {
     if (hoverTimerSettings.current) window.clearTimeout(hoverTimerSettings.current)
     if (hoverTimerRegister.current) window.clearTimeout(hoverTimerRegister.current)
+    if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
   }, [])
 
   // Focus first item when auth dropdown opens
@@ -102,9 +116,10 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
       if (menuRef.current && !menuRef.current.contains(target)) setMenuOpen(false)
       if (settingsRef.current && !settingsRef.current.contains(target)) setSettingsOpen(false)
       if (registerRef.current && !registerRef.current.contains(target)) setRegisterOpen(false)
+      if (megaRef.current && !megaRef.current.contains(target)) setMegaOpen(null)
     }
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') { setMenuOpen(false); setSettingsOpen(false); setRegisterOpen(false) }
+      if (e.key === 'Escape') { setMenuOpen(false); setSettingsOpen(false); setRegisterOpen(false); setMegaOpen(null) }
     }
     document.addEventListener('mousedown', onDocClick)
     document.addEventListener('keydown', onKey)
@@ -162,7 +177,7 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-gray-200 dark:border-slate-800 z-50">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 py-2.5 sm:py-3.5">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between relative">
             <Link to={`/${currentLanguage}`} className="group flex items-center space-x-2">
               <span className="relative inline-flex h-8 w-8 items-center justify-center">
                 <span
@@ -180,6 +195,284 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
                 <div className="text-xs text-muted-foreground mt-0.5">Blockchain Forensics</div>
               </div>
             </Link>
+            <div className="hidden md:flex items-center gap-1" ref={megaRef}>
+              <div
+                onMouseEnter={() => {
+                  if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                  hoverTimerMega.current = window.setTimeout(() => setMegaOpen('product'), 100)
+                }}
+                onMouseLeave={() => {
+                  if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                  hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150)
+                }}
+                className="relative"
+              >
+                <button
+                  type="button"
+                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-muted inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary/50"
+                  aria-haspopup="true"
+                  aria-expanded={megaOpen === 'product'}
+                  aria-controls={megaOpen === 'product' ? 'mega-product' : undefined}
+                  onClick={() => setMegaOpen(megaOpen === 'product' ? null : 'product')}
+                  onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setMegaOpen('product') } if (e.key === 'Escape') { setMegaOpen(null) } }}
+                >
+                  {t('navigation.group_product', { defaultValue: 'Product' })}
+                  <ChevronDown className={`h-4 w-4 transition-transform ${megaOpen === 'product' ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+              <div
+                onMouseEnter={() => {
+                  if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                  hoverTimerMega.current = window.setTimeout(() => setMegaOpen('usecases'), 100)
+                }}
+                onMouseLeave={() => {
+                  if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                  hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150)
+                }}
+                className="relative"
+              >
+                <button
+                  type="button"
+                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-muted inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary/50"
+                  aria-haspopup="true"
+                  aria-expanded={megaOpen === 'usecases'}
+                  aria-controls={megaOpen === 'usecases' ? 'mega-usecases' : undefined}
+                  onClick={() => setMegaOpen(megaOpen === 'usecases' ? null : 'usecases')}
+                  onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setMegaOpen('usecases') } if (e.key === 'Escape') { setMegaOpen(null) } }}
+                >
+                  {t('navigation.use_cases', { defaultValue: 'Use Cases' })}
+                  <ChevronDown className={`h-4 w-4 transition-transform ${megaOpen === 'usecases' ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+              <div
+                onMouseEnter={() => {
+                  if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                  hoverTimerMega.current = window.setTimeout(() => setMegaOpen('resources'), 100)
+                }}
+                onMouseLeave={() => {
+                  if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                  hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150)
+                }}
+                className="relative"
+              >
+                <button
+                  type="button"
+                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-muted inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary/50"
+                  aria-haspopup="true"
+                  aria-expanded={megaOpen === 'resources'}
+                  aria-controls={megaOpen === 'resources' ? 'mega-resources' : undefined}
+                  onClick={() => setMegaOpen(megaOpen === 'resources' ? null : 'resources')}
+                  onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setMegaOpen('resources') } if (e.key === 'Escape') { setMegaOpen(null) } }}
+                >
+                  {t('navigation.resources', { defaultValue: 'Resources' })}
+                  <ChevronDown className={`h-4 w-4 transition-transform ${megaOpen === 'resources' ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+              <div
+                onMouseEnter={() => {
+                  if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                  hoverTimerMega.current = window.setTimeout(() => setMegaOpen('company'), 100)
+                }}
+                onMouseLeave={() => {
+                  if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                  hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150)
+                }}
+                className="relative"
+              >
+                <button
+                  type="button"
+                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-muted inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary/50"
+                  aria-haspopup="true"
+                  aria-expanded={megaOpen === 'company'}
+                  aria-controls={megaOpen === 'company' ? 'mega-company' : undefined}
+                  onClick={() => setMegaOpen(megaOpen === 'company' ? null : 'company')}
+                  onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setMegaOpen('company') } if (e.key === 'Escape') { setMegaOpen(null) } }}
+                >
+                  {t('navigation.group_company', { defaultValue: 'Company' })}
+                  <ChevronDown className={`h-4 w-4 transition-transform ${megaOpen === 'company' ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+              <AnimatePresence>
+                {megaOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -4, scale: 0.98 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -4, scale: 0.98 }}
+                    transition={{ duration: prefersReducedMotion ? 0 : 0.12, ease: 'easeOut' }}
+                    className="absolute left-0 right-0 top-10 mt-2 z-50"
+                    onMouseEnter={() => { if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current) }}
+                    onMouseLeave={() => {
+                      if (hoverTimerMega.current) window.clearTimeout(hoverTimerMega.current)
+                      hoverTimerMega.current = window.setTimeout(() => setMegaOpen(null), 150)
+                    }}
+                  >
+                    <div className="rounded-lg border border-border bg-background shadow-xl ring-1 ring-primary/10 p-5">
+                      {megaOpen === 'product' && (
+                        <div id="mega-product">
+                          <div className="px-1 pb-2 text-[11px] uppercase tracking-wide text-muted-foreground">{t('navigation.group_product', { defaultValue: 'Product' })}</div>
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                          <Link to={`/${currentLanguage}/features`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/features`, label: 'Features' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/features`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Sparkles className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">{t('navigation.features', { defaultValue: 'Features' })}</span>
+                              <span className="block text-xs text-muted-foreground">Module und Fähigkeiten im Überblick</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/pricing`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/pricing`, label: 'Pricing' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/pricing`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><CreditCard className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">{t('navigation.pricing', { defaultValue: 'Pricing' })}</span>
+                              <span className="block text-xs text-muted-foreground">Pläne, Limits und Add-ons</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/dashboard`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/dashboard`, label: 'Dashboard' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/dashboard`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><LayoutGrid className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">{t('navigation.dashboard', { defaultValue: 'Dashboard' })}</span>
+                              <span className="block text-xs text-muted-foreground">Zentrale Arbeitsoberfläche</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/forensics`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/forensics`, label: 'Forensics Hub' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/forensics`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Shield className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Forensics Hub</span>
+                              <span className="block text-xs text-muted-foreground">Workflows und Case-Management</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/investigator`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/investigator`, label: 'Graph Explorer' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/investigator`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Network className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Graph Explorer</span>
+                              <span className="block text-xs text-muted-foreground">Interaktive Netzwerkanalyse</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/trace`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/trace`, label: 'Transaction Tracing' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/trace`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Radar className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Transaction Tracing</span>
+                              <span className="block text-xs text-muted-foreground">On-Chain Geldflüsse verfolgen</span>
+                            </span>
+                          </Link>
+                          </div>
+                        </div>
+                      )}
+                      {megaOpen === 'usecases' && (
+                        <div id="mega-usecases">
+                          <div className="px-1 pb-2 text-[11px] uppercase tracking-wide text-muted-foreground">{t('navigation.use_cases', { defaultValue: 'Use Cases' })}</div>
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                          <Link to={`/${currentLanguage}/use-cases`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/use-cases`, label: 'Use Cases Overview' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/use-cases`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Sparkles className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">{t('navigation.use_cases', { defaultValue: 'Use Cases Overview' })}</span>
+                              <span className="block text-xs text-muted-foreground">Anwendungsfälle und Demos</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/use-cases/law-enforcement`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/use-cases/law-enforcement`, label: 'Law Enforcement' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/use-cases/law-enforcement`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Shield className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Law Enforcement</span>
+                              <span className="block text-xs text-muted-foreground">Ermittlungen, Beweise, Reports</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/use-cases/compliance`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/use-cases/compliance`, label: 'Compliance' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/use-cases/compliance`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Shield className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Compliance</span>
+                              <span className="block text-xs text-muted-foreground">Sanktionen, AML, Screening</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/use-cases/police`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/use-cases/police`, label: 'Police' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/use-cases/police`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Shield className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Police</span>
+                              <span className="block text-xs text-muted-foreground">Operative Forensik-Workflows</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/use-cases/private-investigators`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/use-cases/private-investigators`, label: 'Private Investigators' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/use-cases/private-investigators`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Network className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Private Investigators</span>
+                              <span className="block text-xs text-muted-foreground">Recherche und Asset-Recovery</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/use-cases/financial-institutions`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/use-cases/financial-institutions`, label: 'Financial Institutions' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/use-cases/financial-institutions`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><CreditCard className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Financial Institutions</span>
+                              <span className="block text-xs text-muted-foreground">Transaktionsrisiken und Monitoring</span>
+                            </span>
+                          </Link>
+                          </div>
+                        </div>
+                      )}
+                      {megaOpen === 'resources' && (
+                        <div id="mega-resources">
+                          <div className="px-1 pb-2 text-[11px] uppercase tracking-wide text-muted-foreground">{t('navigation.resources', { defaultValue: 'Resources' })}</div>
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                          <Link to={`/${currentLanguage}/news`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/news`, label: 'News' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/news`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><FileText className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">News</span>
+                              <span className="block text-xs text-muted-foreground">Aktuelle Fälle und Produkt-Updates</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/businessplan`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/businessplan`, label: 'Businessplan' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/businessplan`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><FileText className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">{t('navigation.businessplan', { defaultValue: 'Businessplan & Funding' })}</span>
+                              <span className="block text-xs text-muted-foreground">Strategie, Förderung und Roadmap</span>
+                            </span>
+                          </Link>
+                          </div>
+                        </div>
+                      )}
+                      {megaOpen === 'company' && (
+                        <div id="mega-company">
+                          <div className="px-1 pb-2 text-[11px] uppercase tracking-wide text-muted-foreground">{t('navigation.group_company', { defaultValue: 'Company' })}</div>
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                          <Link to={`/${currentLanguage}/about`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/about`, label: 'About' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/about`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Building2 className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">{t('navigation.about', { defaultValue: 'About' })}</span>
+                              <span className="block text-xs text-muted-foreground">Mission und Team</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/contact`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/contact`, label: 'Contact' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/contact`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Mail className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">{t('navigation.contact', { defaultValue: 'Contact' })}</span>
+                              <span className="block text-xs text-muted-foreground">Support und Anfragen</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/legal/privacy`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/legal/privacy`, label: 'Privacy' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/legal/privacy`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><Shield className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Privacy</span>
+                              <span className="block text-xs text-muted-foreground">Datenschutz und Verarbeitung</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/legal/terms`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/legal/terms`, label: 'Terms' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/legal/terms`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><FileText className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Terms</span>
+                              <span className="block text-xs text-muted-foreground">AGB und Nutzungsbedingungen</span>
+                            </span>
+                          </Link>
+                          <Link to={`/${currentLanguage}/legal/impressum`} onClick={() => { try { track('nav_click', { area: 'public_mega', path: `/${currentLanguage}/legal/impressum`, label: 'Impressum' }) } catch {} setMegaOpen(null) }} className={`flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition ${location.pathname.startsWith(`/${currentLanguage}/legal/impressum`) ? 'ring-1 ring-primary/30' : ''}`}>
+                            <span className="inline-flex items-center justify-center h-9 w-9 rounded-md bg-primary/10 text-primary"><FileText className="h-5 w-5" /></span>
+                            <span>
+                              <span className="block text-sm font-semibold leading-5">Impressum</span>
+                              <span className="block text-xs text-muted-foreground">Anbieterkennzeichnung</span>
+                            </span>
+                          </Link>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             
             <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
               <button

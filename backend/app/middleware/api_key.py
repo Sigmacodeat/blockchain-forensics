@@ -7,6 +7,7 @@ import os
 import time
 import asyncio
 import hashlib
+import hmac
 from app.db.postgres import postgres_client
 from app.db.redis_client import redis_client
 
@@ -38,6 +39,7 @@ class ApiKeyMiddleware(BaseHTTPMiddleware):
             "pro": int(os.getenv("API_RATE_LIMIT_PRO", "50")),
             "enterprise": int(os.getenv("API_RATE_LIMIT_ENTERPRISE", "200")),
         }
+        self._min_len = int(os.getenv("MIN_API_KEY_LENGTH", "32"))
 
     async def _check_db_key(self, api_key: str) -> Tuple[bool, str | None]:
         # Compute SHA-256 of provided key and look up non-revoked record
@@ -111,10 +113,10 @@ class ApiKeyMiddleware(BaseHTTPMiddleware):
             return await call_next(request)
 
         api_key = request.headers.get("x-api-key") or request.query_params.get("api_key")
-        if not api_key:
+        if not api_key or len(api_key) < self._min_len:
             return JSONResponse({"detail": "Unauthorized: missing or invalid API key"}, status_code=401)
         # allow if present in static configured keys (treat as enterprise tier)
-        if api_key in self._keys:
+        if any(hmac.compare_digest(api_key, k) for k in self._keys):
             allowed, limit, remaining, reset = await self._rate_limit(api_key, "enterprise")
             if not allowed:
                 return JSONResponse({"detail": "Rate limit exceeded"}, status_code=429, headers={

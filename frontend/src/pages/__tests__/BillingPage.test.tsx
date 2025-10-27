@@ -9,10 +9,11 @@ import userEvent from '@testing-library/user-event';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
 
-import BillingPage from '../BillingPage';
 
-const mockGet = vi.fn();
-const mockPost = vi.fn();
+const { mockGet, mockPost } = vi.hoisted(() => ({
+  mockGet: vi.fn(),
+  mockPost: vi.fn(),
+}))
 const mockNavigate = vi.fn();
 
 vi.mock('@/lib/api', () => ({
@@ -22,7 +23,7 @@ vi.mock('@/lib/api', () => ({
   },
 }));
 
-vi.mock('@/hooks/useAuth', () => ({
+vi.mock('@/contexts/AuthContext', () => ({
   useAuth: () => ({
     user: {
       id: 'user-1',
@@ -32,6 +33,7 @@ vi.mock('@/hooks/useAuth', () => ({
       subscription_status: 'active',
     },
     isAuthenticated: true,
+    isLoading: false,
   }),
 }));
 
@@ -60,6 +62,9 @@ vi.mock('react-router-dom', async () => {
     useNavigate: () => mockNavigate,
   };
 });
+
+// Import after mocks so that mocked api and hooks are applied
+import BillingPage from '../BillingPage';
 
 type ApiOverrides = {
   subscription?: Record<string, any> | null;
@@ -158,7 +163,7 @@ describe('BillingPage', () => {
     mockGet.mockReset();
     mockPost.mockReset();
     mockNavigate.mockReset();
-    window.history.pushState({}, '', 'https://app.local/billing');
+    window.history.pushState({}, '', '/billing');
   });
 
   afterEach(() => {
@@ -167,11 +172,14 @@ describe('BillingPage', () => {
 
   it('zeigt aktuellen Plan, Status und nächstes Abrechnungsdatum an', async () => {
     setupApiMocks();
-    const { getByText } = renderBillingPage();
-    await waitFor(() => {
-      expect(getByText('Pro')).toBeInTheDocument();
-      expect(getByText('Active')).toBeInTheDocument();
-      expect(getByText('Next billing date:')).toBeInTheDocument();
-    });
+    renderBillingPage();
+    // Titel des Abschnitts
+    expect(await screen.findByText(/Aktueller Plan/i)).toBeInTheDocument();
+    // Betrag/Intervall (Stripe: 19900 -> 199.00 USD / Monat)
+    expect(await screen.findByText(/199\.00\s*USD\s*\/\s*Monat/i)).toBeInTheDocument();
+    // Status-Badge
+    expect(await screen.findByText(/Aktiv/i)).toBeInTheDocument();
+    // Nächste Abrechnung
+    expect(await screen.findByText(/Nächste Abrechnung:/i)).toBeInTheDocument();
   });
 });

@@ -17,11 +17,21 @@ from app.config import settings
 from sqlalchemy.orm import Session
 
 from app.auth.models import UserCreate, UserLogin, User, Token, AuthResponse, UserRole
-from app.auth.jwt import create_access_token, create_refresh_token, verify_password, get_password_hash, decode_token
-from app.auth.dependencies import get_current_user, get_current_user_optional, require_admin
+from app.auth.jwt import create_access_token, create_refresh_token, verify_password, get_password_hash, decode_token, REFRESH_TOKEN_EXPIRE_DAYS
+from app.auth.dependencies import (
+    get_current_user,
+    get_current_user_optional,
+    get_current_user_strict,
+    require_admin,
+    require_admin_strict,
+)
 from app.db.session import get_db
 from app.models.user import UserORM, SubscriptionPlan
 from app.services.partner_service import partner_service
+from app.services.two_factor_auth import two_fa_manager
+from app.db.redis_client import redis_client
+from jose import jwt as jose_jwt
+from app.security.ssrf_guard import is_url_allowed
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -194,7 +204,7 @@ async def register(user_data: UserCreate, db: Session = Depends(get_db)):
 
 
 @router.post("/login", response_model=AuthResponse, response_model_exclude_unset=False)
-async def login(credentials: UserLogin, db: Session = Depends(get_db)):
+async def login(credentials: UserLogin, db: Session = Depends(get_db), request: Request = None):
     """
     User Login
     
@@ -210,6 +220,18 @@ async def login(credentials: UserLogin, db: Session = Depends(get_db)):
         # Find user by email
         user_row = db.query(UserORM).filter(UserORM.email == str(credentials.email)).first()
         if not user_row:
+            # Brute-force backoff (best-effort)
+            try:
+                await redis_client._ensure_connected()
+                if redis_client.client and request is not None:
+                    ip = request.client.host if request and request.client else "unknown"
+                    key = f"auth:bf:{str(credentials.email).lower()}:{ip}"
+                    cnt = await redis_client.client.incr(key)
+                    await redis_client.client.expire(key, 900)  # 15 minutes
+                    if int(cnt) > 5:
+                        raise HTTPException(status_code=429, detail="Too many attempts. Try later.")
+            except Exception:
+                pass
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Ungültige Email oder Passwort"
@@ -217,6 +239,18 @@ async def login(credentials: UserLogin, db: Session = Depends(get_db)):
         
         # Verify password
         if not verify_password(credentials.password, cast(str, user_row.hashed_password)):
+            # Brute-force backoff (best-effort)
+            try:
+                await redis_client._ensure_connected()
+                if redis_client.client and request is not None:
+                    ip = request.client.host if request and request.client else "unknown"
+                    key = f"auth:bf:{str(credentials.email).lower()}:{ip}"
+                    cnt = await redis_client.client.incr(key)
+                    await redis_client.client.expire(key, 900)
+                    if int(cnt) > 5:
+                        raise HTTPException(status_code=429, detail="Too many attempts. Try later.")
+            except Exception:
+                pass
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Ungültige Email oder Passwort"
@@ -228,6 +262,20 @@ async def login(credentials: UserLogin, db: Session = Depends(get_db)):
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="Account deaktiviert"
             )
+        # Optional 2FA enforcement for admins
+        try:
+            if os.getenv("ENFORCE_2FA_FOR_ADMINS") == "1" and str(user_row.role) == str(UserRole.ADMIN):
+                # Only enforce if 2FA is set up for the user
+                uid = str(user_row.id)
+                if uid in two_fa_manager.user_secrets:
+                    otp = request.headers.get("x-otp") if request is not None else None
+                    if not otp or not two_fa_manager.verify_2fa_login(uid, otp):
+                        raise HTTPException(status_code=401, detail="2FA erforderlich")
+        except HTTPException:
+            raise
+        except Exception:
+            # fail-closed would be safer, but keep compatibility: fail-open if 2FA infra missing
+            pass
     except HTTPException:
         raise
     except Exception as e:
@@ -277,7 +325,7 @@ async def login(credentials: UserLogin, db: Session = Depends(get_db)):
 
 
 @router.post("/logout")
-async def logout(current_user: dict = Depends(get_current_user)):
+async def logout(current_user: dict = Depends(get_current_user_strict)):
     """
     User Logout
     
@@ -288,7 +336,7 @@ async def logout(current_user: dict = Depends(get_current_user)):
 
 
 @router.get("/me", response_model=User, response_model_exclude_unset=False)
-async def get_current_user_info(current_user: dict = Depends(get_current_user), db: Session = Depends(get_db)):
+async def get_current_user_info(current_user: dict = Depends(get_current_user_strict), db: Session = Depends(get_db)):
     """
     Get Current User Info
     
@@ -328,6 +376,22 @@ async def refresh_access_token(refresh_token: str, db: Session = Depends(get_db)
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Ungültiger Refresh Token"
         )
+    # Check token type and rotation blacklist
+    try:
+        claims = jose_jwt.get_unverified_claims(refresh_token)
+        if claims.get("type") != "refresh":
+            raise HTTPException(status_code=401, detail="Ungültiger Token-Typ")
+        old_jti = claims.get("jti")
+        if old_jti:
+            await redis_client._ensure_connected()
+            if redis_client.client:
+                blkey = f"rt:blacklist:{old_jti}"
+                if await redis_client.client.exists(blkey):
+                    raise HTTPException(status_code=401, detail="Token widerrufen")
+    except HTTPException:
+        raise
+    except Exception:
+        pass
     
     # Get user
     user_row = db.query(UserORM).filter(UserORM.id == token_data.user_id).first()
@@ -350,6 +414,13 @@ async def refresh_access_token(refresh_token: str, db: Session = Depends(get_db)
         features=cast(list[str], features)
     )
     new_refresh_token = create_refresh_token(cast(str, user_row.id))
+    # Revoke old refresh token jti (best-effort)
+    try:
+        if old_jti and redis_client and getattr(redis_client, "client", None):
+            ttl = 86400 * int(REFRESH_TOKEN_EXPIRE_DAYS)
+            await redis_client.client.setex(f"rt:blacklist:{old_jti}", ttl, "1")
+    except Exception:
+        pass
     
     return Token(
         access_token=access_token,
@@ -363,7 +434,7 @@ async def refresh_access_token(refresh_token: str, db: Session = Depends(get_db)
 async def admin_create_user(
     user_data: UserCreate,
     role: UserRole = UserRole.VIEWER,
-    current_user: dict = Depends(require_admin),  # ✅ FIX: require_admin statt manueller Check
+    current_user: dict = Depends(require_admin_strict),
     db: Session = Depends(get_db),
 ):
     """
@@ -495,6 +566,17 @@ async def oauth_google_callback(request: Request, code: str | None = None, state
         frontend_redirect = state_obj.get("redirect_uri")
         if not frontend_redirect:
             raise ValueError("redirect_uri fehlt")
+        # Validate decoded frontend redirect target
+        allowed_frontend_host = None
+        try:
+            from urllib.parse import urlparse
+            if getattr(settings, "FRONTEND_URL", None):
+                allowed_frontend_host = urlparse(settings.FRONTEND_URL).hostname
+        except Exception:
+            allowed_frontend_host = None
+        allowed_hosts = [allowed_frontend_host] if allowed_frontend_host else None
+        if not is_url_allowed(frontend_redirect, allowed_hosts=allowed_hosts):
+            raise HTTPException(status_code=400, detail="Ungültige redirect_uri")
     except Exception as e:
         logger.error(f"Failed to decode state: {e}")
         raise HTTPException(status_code=400, detail="Ungültiger state")

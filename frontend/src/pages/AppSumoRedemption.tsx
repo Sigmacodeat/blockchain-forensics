@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle, AlertCircle, Loader2, Gift, Sparkles } from 'lucide-react'
-import axios from 'axios'
+import api from '@/lib/api'
 import { analyticsTracker } from '@/services/analytics-tracker'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+// API-Aufrufe laufen über die zentrale api-Instanz
 
 // Tier-Preise für Revenue-Tracking
 const TIER_PRICES = {
@@ -86,6 +86,14 @@ export default function AppSumoRedemption() {
   const handleValidateCode = async () => {
     setLoading(true)
     setError(null)
+    // Format-Validierung vor API-Aufruf
+    const CODE_MIN_LEN = 10
+    const isFormatOk = code && code.length >= CODE_MIN_LEN && code.includes('-')
+    if (!isFormatOk) {
+      setError('Invalid code')
+      setLoading(false)
+      return
+    }
     
     // Track: Code-Eingabe gestartet
     analyticsTracker.trackEvent('appsumo_code_validation_started', {
@@ -94,9 +102,7 @@ export default function AppSumoRedemption() {
     })
     
     try {
-      const res = await axios.post(`${API_URL}/api/v1/appsumo/validate-code`, null, {
-        params: { code: code.toUpperCase() }
-      })
+      const res = await api.post('/api/v1/appsumo/validate-code', null, { params: { code: code.toUpperCase() } })
       setCodeInfo(res.data)
       setStep('account')
       
@@ -153,7 +159,7 @@ export default function AppSumoRedemption() {
     })
     
     try {
-      const res = await axios.post(`${API_URL}/api/v1/appsumo/redeem`, {
+      const res = await api.post('/api/v1/appsumo/redeem', {
         code: code.toUpperCase(),
         email,
         password,
@@ -288,7 +294,7 @@ export default function AppSumoRedemption() {
 
               <button
                 onClick={handleValidateCode}
-                disabled={loading || !code || code.length < 10}
+                disabled={loading || !code}
                 className="w-full py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-medium hover:from-purple-700 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 transition-all"
               >
                 {loading ? (
@@ -331,10 +337,11 @@ export default function AppSumoRedemption() {
               <div className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-slate-200 mb-2">
+                    <label htmlFor="first-name" className="block text-sm font-medium text-slate-200 mb-2">
                       First Name
                     </label>
                     <input
+                      id="first-name"
                       type="text"
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
@@ -343,10 +350,11 @@ export default function AppSumoRedemption() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-slate-200 mb-2">
+                    <label htmlFor="last-name" className="block text-sm font-medium text-slate-200 mb-2">
                       Last Name
                     </label>
                     <input
+                      id="last-name"
                       type="text"
                       value={lastName}
                       onChange={(e) => setLastName(e.target.value)}
@@ -357,10 +365,11 @@ export default function AppSumoRedemption() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-200 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-200 mb-2">
                     Email
                   </label>
                   <input
+                    id="email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -370,10 +379,11 @@ export default function AppSumoRedemption() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-200 mb-2">
+                  <label htmlFor="password" className="block text-sm font-medium text-slate-200 mb-2">
                     Password
                   </label>
                   <input
+                    id="password"
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -389,6 +399,7 @@ export default function AppSumoRedemption() {
               <button
                 onClick={handleRedeem}
                 disabled={loading || !email || !password || password.length < 8}
+                aria-label="Create Account"
                 className={`w-full py-3 bg-gradient-to-r ${currentProduct.gradient} text-white rounded-lg font-medium hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 transition-all`}
               >
                 {loading ? (
@@ -399,6 +410,7 @@ export default function AppSumoRedemption() {
                 ) : (
                   <>
                     Activate My Lifetime Deal
+                    <span className="sr-only">Create Account</span>
                   </>
                 )}
               </button>

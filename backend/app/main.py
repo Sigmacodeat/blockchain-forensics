@@ -20,6 +20,7 @@ from typing import Optional
 
 from app.config import settings
 from app.middleware.security_headers import SecurityHeadersMiddleware
+from app.middleware.request_size_limit import RequestSizeLimitMiddleware
 from app.middleware.prometheus_http import PrometheusHTTPMiddleware
 neo4j_client = None  # Lazy-imported in lifespan
 postgres_client = None  # Lazy-imported in lifespan
@@ -31,7 +32,7 @@ from app.api.health import router as health_router
 from app.api.v1.system import router as system_router
 from app.api.tours import router as tours_router
 from app.middleware.security import SecurityAuditMiddleware, GDPRComplianceMiddleware
-from app.middleware.rate_limit import RateLimitMiddleware as SimpleRateLimitMiddleware
+from app.middleware.rate_limit import RateLimitMiddleware
 from app.middleware.org_access import OrgAccessMiddleware
 from app.middleware.security_headers import SecurityHeadersMiddleware
 from app.middleware.idempotency import IdempotencyMiddleware
@@ -643,14 +644,24 @@ app = FastAPI(
     lifespan=_lifespan_ctx
 )
 
-# Middleware
+# CORS Middleware - More restrictive configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
-    allow_credentials=settings.CORS_ALLOW_CREDENTIALS,
-    allow_methods=settings.CORS_ALLOW_METHODS,
-    allow_headers=settings.CORS_ALLOW_HEADERS,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=[
+        "Authorization",
+        "Content-Type",
+        "X-Requested-With",
+        "X-API-Key",
+        "X-Request-ID",
+        "Idempotency-Key"
+    ],
+    expose_headers=["Content-Length", "X-Request-ID", "X-RateLimit-Limit", "X-RateLimit-Remaining"],
+    max_age=600  # Cache preflight for 10 minutes
 )
+
 if getattr(settings, "FORCE_HTTPS_REDIRECT", False):
     app.add_middleware(HTTPSRedirectMiddleware)
 if getattr(settings, "TRUSTED_HOSTS", None):
@@ -660,11 +671,19 @@ if getattr(settings, "TRUSTED_HOSTS", None):
             app.add_middleware(TrustedHostMiddleware, allowed_hosts=hosts)
     except Exception:
         pass
-app.add_middleware(GZipMiddleware, minimum_size=1024)
+
+# Security Headers Middleware (matches constructor signature)
+app.add_middleware(
+    SecurityHeadersMiddleware,
+    enable_hsts=getattr(settings, "ENABLE_HSTS", False),
+)
+
+# Limit request size for write methods (defaults to 2 MiB, configurable via MAX_REQUEST_SIZE_BYTES)
+app.add_middleware(RequestSizeLimitMiddleware)
+
 if ErrorMiddleware:
     app.add_middleware(ErrorMiddleware)
-# Strict security headers (CSP for API, HSTS disabled here; enable at TLS edge)
-app.add_middleware(SecurityHeadersMiddleware, enable_hsts=False)
+
 # HTTP metrics for Prometheus (http_requests_total, http_request_duration_seconds)
 app.add_middleware(PrometheusHTTPMiddleware)
 app.add_middleware(SecurityAuditMiddleware)
@@ -708,9 +727,27 @@ if _otel_instrumented:
     except Exception as _inst_err:
         logger.warning(f"⚠️ Failed to instrument FastAPI/HTTP with OpenTelemetry: {_inst_err}")
 
-# Disable rate limiting during pytest or when explicitly disabled
-if (os.getenv("ENABLE_RATELIMIT_TEST") == "1") or (not _security_disabled):
-    app.add_middleware(SimpleRateLimitMiddleware)
+# Rate Limiting Middleware (Enhanced Version with Environment Controls)
+if os.getenv("ENABLE_RATE_LIMIT", "true").lower() == "true":
+    # Skip rate limiting in test mode or when explicitly disabled
+    enable_rate_limit = not (os.getenv("TEST_MODE") == "1" or os.getenv("PYTEST_CURRENT_TEST"))
+    
+    # Configure rate limits from environment (requests per minute)
+    rate_limit_config = {
+        "RATE_LIMIT_ADMIN": os.getenv("RATE_LIMIT_ADMIN", "1000"),
+        "RATE_LIMIT_ANALYST": os.getenv("RATE_LIMIT_ANALYST", "300"),
+        "RATE_LIMIT_AUDITOR": os.getenv("RATE_LIMIT_AUDITOR", "100"),
+        "RATE_LIMIT_VIEWER": os.getenv("RATE_LIMIT_VIEWER", "100"),
+        "RATE_LIMIT_ANONYMOUS": os.getenv("RATE_LIMIT_ANONYMOUS", "60"),
+    }
+    
+    logger.info(f"Rate limiting {'enabled' if enable_rate_limit else 'disabled'}. Config: {rate_limit_config}")
+    
+    # Add rate limiting middleware with configuration
+    app.add_middleware(
+        RateLimitMiddleware,
+        enable_rate_limit=enable_rate_limit,
+    )
     app.add_middleware(
         IdempotencyMiddleware,
         header_name="Idempotency-Key",

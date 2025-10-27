@@ -1,7 +1,7 @@
 """
 Admin API Routes
 """
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends, HTTPException
 
 # Import admin routers
 try:
@@ -39,22 +39,16 @@ import threading
 _test_user = threading.local()
 
 if os.getenv("TEST_MODE") == "1" or os.getenv("PYTEST_CURRENT_TEST"):
-    # In test mode, check test user from thread local
+    # In test mode, still require strict admin auth to avoid false 200s
+    from app.auth.dependencies import require_admin_strict
 
     @router.get("/users")
-    async def list_users():
+    async def list_users(current_user: dict = Depends(require_admin_strict)):
         """
         List all users (Admin only)
         
         Returns basic user information for admin management
         """
-        # Check admin role from test user
-        user = getattr(_test_user, 'current', None)
-        if user:
-            role = str(getattr(user, "role", getattr(user, "get", lambda k, d=None: None)("role")))
-            if (role or "").upper() != "ADMIN":
-                raise HTTPException(status_code=403, detail="Admin only")
-            
         try:
             # Mock response for testing - in production, query actual users
             return {
@@ -76,7 +70,7 @@ if os.getenv("TEST_MODE") == "1" or os.getenv("PYTEST_CURRENT_TEST"):
             raise HTTPException(status_code=500, detail=str(e))
 
     @router.get("/users/{user_id}")
-    async def get_user_detail(user_id: str):
+    async def get_user_detail(user_id: str, current_user: dict = Depends(require_admin_strict)):
         """
         Get detailed user information
         
@@ -105,7 +99,7 @@ if os.getenv("TEST_MODE") == "1" or os.getenv("PYTEST_CURRENT_TEST"):
             raise HTTPException(status_code=500, detail=str(e))
 
     @router.put("/users/{user_id}")
-    async def update_user(user_id: str, user_data: dict = None):
+    async def update_user(user_id: str, user_data: dict = None, current_user: dict = Depends(require_admin_strict)):
         """
         Update user information
         
@@ -127,7 +121,7 @@ if os.getenv("TEST_MODE") == "1" or os.getenv("PYTEST_CURRENT_TEST"):
             raise HTTPException(status_code=500, detail=str(e))
 
     @router.post("/users")
-    async def create_user(user_data: dict = None):
+    async def create_user(user_data: dict = None, current_user: dict = Depends(require_admin_strict)):
         """
         Create new user account
         
@@ -151,7 +145,7 @@ if os.getenv("TEST_MODE") == "1" or os.getenv("PYTEST_CURRENT_TEST"):
             raise HTTPException(status_code=500, detail=str(e))
 
     @router.delete("/users/{user_id}")
-    async def delete_user(user_id: str):
+    async def delete_user(user_id: str, current_user: dict = Depends(require_admin_strict)):
         """
         Delete user account
         
@@ -169,22 +163,17 @@ if os.getenv("TEST_MODE") == "1" or os.getenv("PYTEST_CURRENT_TEST"):
 else:
     # Production mode with auth
     from fastapi import Depends
-    from app.auth.dependencies import get_current_user_strict
+    from app.auth.dependencies import require_admin_strict
 
     @router.get("/users")
     async def list_users(
-        current_user = Depends(get_current_user_strict),
+        current_user = Depends(require_admin_strict),
     ):
         """
         List all users (Admin only)
         
         Returns basic user information for admin management
         """
-        # Check admin role
-        role = str(getattr(current_user, "role", getattr(current_user, "get", lambda k, d=None: None)("role")))
-        if (role or "").upper() != "ADMIN":
-            raise HTTPException(status_code=403, detail="Admin only")
-        
         try:
             # TODO: Implement actual user listing from database
             return {
